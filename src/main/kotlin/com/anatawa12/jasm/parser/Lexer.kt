@@ -172,11 +172,13 @@ class Lexer(private val reading: Reader) : ILexer {
         fun readInternalNameBody(allowLastSlash: Boolean = false): String? = buildString {
             var afterSlash = true
             while (true) {
-                val cur = getAndNextOrNull()
+                val cur = getOrNull()
                 if (cur.isWardChar()) {
+                    getAndNext()
                     append(cur)
                     afterSlash = false
                 } else if (cur == '/')  {
+                    getAndNext()
                     if (afterSlash) return null
                     append(cur)
                     afterSlash = true
