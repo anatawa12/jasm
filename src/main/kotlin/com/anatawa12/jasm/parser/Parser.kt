@@ -556,8 +556,8 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
                 lex.read(dotSignature)
                 FieldSignature(lex.read(TokenType.String))
             }
-            lex.isNext(annotation_block.start) -> {
-                FieldAnnotation(annotation_block())
+            lex.isNext(member_annotation_block.start) -> {
+                FieldAnnotation(member_annotation_block())
             }
             else -> lex.unexpectTokenError(
                 setOf(
