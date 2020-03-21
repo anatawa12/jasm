@@ -2,6 +2,7 @@ package com.anatawa12.jasm.assembler
 
 import com.anatawa12.jasm.tree.*
 import com.anatawa12.jasm.tree.Annotation
+import com.anatawa12.jasm.tree.Handle
 import org.objectweb.asm.*
 import org.objectweb.asm.Opcodes.*
 
@@ -140,24 +141,82 @@ class Assembler(val options: AssemblerOptions) {
                     lastLocals = locals
                     methodWriter.visitFrame(F_FULL, locals.size, assembleFrame(locals, table), stacks.size, assembleFrame(stacks, table))
                 }
-                is Insn -> TODO()
-                is IntInsn -> TODO()
-                is FieldInsn -> TODO()
-                is IincInsn -> TODO()
-                is InvokeDynamicInsn -> TODO()
-                is JumpInsn -> TODO()
-                is LdcInsn -> TODO()
-                is LookupSwitchInsn -> TODO()
-                is MethodInsn -> TODO()
-                is MultiANewArrayInsn -> TODO()
-                is TableSwitchInsn -> TODO()
-                is TypeInsn -> TODO()
-                is VarInsn -> TODO()
+
+                is Insn -> {
+                    methodWriter.visitInsn(statement.opcode)
+                }
+                is IntInsn -> {
+                    methodWriter.visitIntInsn(statement.opcode, statement.operand)
+                }
+                is VarInsn -> {
+                    methodWriter.visitVarInsn(statement.opcode, statement.variable)
+                }
+                is TypeInsn -> {
+                    methodWriter.visitTypeInsn(statement.opcode, statement.type)
+                }
+                is FieldInsn -> {
+                    methodWriter.visitFieldInsn(statement.opcode, statement.owner, statement.name, statement.desc)
+                }
+                is MethodInsn -> {
+                    methodWriter.visitMethodInsn(statement.opcode, statement.owner, statement.name, statement.desc, statement.itf)
+                }
+                is InvokeDynamicInsn -> {
+                    methodWriter.visitInvokeDynamicInsn(
+                        statement.name, statement.desc,
+                        assembleHandle(statement.bsm),
+                        Array(statement.bsmArgs.size) { assembleLdcConstant(statement.bsmArgs[it]) }
+                    )
+                }
+                is JumpInsn -> {
+                    methodWriter.visitJumpInsn(statement.opcode, table[statement.label])
+                }
+                is LdcInsn -> {
+                    methodWriter.visitLdcInsn(assembleLdcConstant(statement.cst))
+                }
+                is IincInsn -> {
+                    methodWriter.visitIincInsn(statement.variable, statement.increment)
+                }
+                is TableSwitchInsn -> {
+                    methodWriter.visitTableSwitchInsn(statement.min, statement.min + statement.labels.size - 1,
+                        table[statement.dflt], *Array(statement.labels.size) { table[statement.labels[it]] })
+                }
+                is LookupSwitchInsn -> {
+                    methodWriter.visitLookupSwitchInsn(table[statement.dflt],
+                        IntArray(statement.pairs.size) { statement.pairs[it].first },
+                        Array(statement.pairs.size) { table[statement.pairs[it].second] })
+
+                }
+                is MultiANewArrayInsn -> {
+                    methodWriter.visitMultiANewArrayInsn(statement.desc, statement.dims)
+                }
 
                 is StackLimit, is LocalLimit, is Throws, is MethodSignature, is MethodDeprecated, is MethodAnnotation -> {}
             }
         }
         methodWriter.visitMaxs(maxStack, maxLocal)
+    }
+
+    private fun assembleLdcConstant(cst: BranchNode): Any? = when (cst) {
+        is Value<*> -> cst.value
+        is ClassName -> Type.getType(cst.desc)
+        is MethodType -> Type.getType(cst.desc)
+        is Handle -> assembleHandle(cst)
+        else -> error("unsupported cst type: ${cst.javaClass}")
+    }
+
+    private fun assembleHandle(bsm: Handle): org.objectweb.asm.Handle? {
+        val type = when (bsm.type) {
+            HandleType.GetField -> H_GETFIELD
+            HandleType.GetStatic -> H_GETSTATIC
+            HandleType.PutField -> H_PUTFIELD
+            HandleType.PutStatic -> H_PUTSTATIC
+            HandleType.InvokeVirtual -> H_INVOKEVIRTUAL
+            HandleType.InvokeStatic -> H_INVOKESTATIC
+            HandleType.InvokeSpecial -> H_INVOKESPECIAL
+            HandleType.NewInvokeSpecial -> H_NEWINVOKESPECIAL
+            HandleType.InvokeInterface -> H_INVOKEINTERFACE
+        }
+        return org.objectweb.asm.Handle(type, bsm.owner, bsm.name, bsm.desc, bsm.itf)
     }
 
     private fun assembleFrame(locals: List<StackFrameType>, table: LabelTable): Array<Any?> {
