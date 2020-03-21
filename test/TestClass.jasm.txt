@@ -5,13 +5,44 @@
 
 .method private <init> ()V
 
-.limit local 1
-.limit stack 1
+  .limit local 1
+  .limit stack 1
 
-aload 0
-invokespecial java/lang/Object/<init> ()V
-return
+  aload 0
+  invokespecial java/lang/Object/<init> ()V
+  return
 
 .end method
 
+.field private static INSTANCE Ltest/TestClass;
+
+  .annotation visible org/jetbrains/annotations/NotNull
+  .end annotation
+
+.end field
+
+.method private static <clinit> ()V
+
+  .limit local 0
+  .limit stack 2
+
+  new test/JavaClass
+  dup
+  invokespecial test/TestClass/<init> ()V
+  putstatic test/TestClass/INSTANCE Ltest/TestClass;
+
+.end method
+
+.method public static getInstance ()Ltest/TestClass;
+
+  .annotation visible org/jetbrains/annotations/NotNull
+  .end annotation
+
+  .limit local 0
+  .limit stack 1
+
+  getstatic test/TestClass/INSTANCE Ltest/TestClass;
+  areturn
+
+.end method
 
