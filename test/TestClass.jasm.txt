@@ -1,0 +1,17 @@
+.bytecode 52.0
+
+.class public test/TestClass
+.super java/lang/Object
+
+.method private <init> ()V
+
+.limit local 1
+.limit stack 1
+
+aload 0
+invokespecial java/lang/Object/<init> ()V
+return
+
+.end method
+
+

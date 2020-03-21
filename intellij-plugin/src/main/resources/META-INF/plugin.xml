@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>com.anatawa12.jasm.intellij-plugin</id>
+    <name>Jasm Plugin</name>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+    <description><![CDATA[
+        language support for Jasm.
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <fileType name="jasm file" implementationClass="com.anatawa12.jasm.plugin.intellij.JasmFileType"
+                  fieldName="INSTANCE"  language="jasm" extensions="jasm"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
