@@ -116,11 +116,10 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
     }
 
     val method_statement = grammar({
-        annotation_block.start +
+        member_annotation_block.start +
                 stack_block.start +
                 instruction.start +
                 label_definition.start +
-                annotation_block.start +
                 setOf(
                     dotLimit,
                     dotLine,
@@ -199,8 +198,8 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
                 lex.read(dotDeprecated)
                 MethodDeprecated()
             }
-            lex.isNext(annotation_block.start) -> {
-                MethodAnnotation(annotation_block())
+            lex.isNext(member_annotation_block.start) -> {
+                MethodAnnotation(member_annotation_block())
             }
             lex.isNext(stack_block.start) -> {
                 stack_block()
