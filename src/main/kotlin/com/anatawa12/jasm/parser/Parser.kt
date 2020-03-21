@@ -545,7 +545,7 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
         setOf(
             dotDeprecated,
             dotSignature
-        ) + annotation_block.start
+        ) + member_annotation_block.start
     }) {
         when {
             lex.isNext(dotDeprecated) -> {
