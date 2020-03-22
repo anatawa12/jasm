@@ -250,63 +250,63 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
     }
 
     val stackmap_type = grammar(
-        keyTop,
-        keyInteger,
-        keyFloat,
-        keyLong,
-        keyDouble,
-        keyNull,
-        keyUninitializedThis,
-        keyObject,
-        keyUninitialized
+        keyStackTop,
+        keyStackInteger,
+        keyStackFloat,
+        keyStackLong,
+        keyStackDouble,
+        keyStackNull,
+        keyStackUninitializedThis,
+        keyStackObject,
+        keyStackUninitialized
     ) {
         when {
-            lex.isNext(keyTop) -> {
-                lex.read(keyTop)
+            lex.isNext(keyStackTop) -> {
+                lex.read(keyStackTop)
                 StackFrameType.Top()
             }
-            lex.isNext(keyInteger) -> {
-                lex.read(keyInteger)
+            lex.isNext(keyStackInteger) -> {
+                lex.read(keyStackInteger)
                 StackFrameType.Integer()
             }
-            lex.isNext(keyFloat) -> {
-                lex.read(keyFloat)
+            lex.isNext(keyStackFloat) -> {
+                lex.read(keyStackFloat)
                 StackFrameType.Float()
             }
-            lex.isNext(keyLong) -> {
-                lex.read(keyLong)
+            lex.isNext(keyStackLong) -> {
+                lex.read(keyStackLong)
                 StackFrameType.Long()
             }
-            lex.isNext(keyDouble) -> {
-                lex.read(keyDouble)
+            lex.isNext(keyStackDouble) -> {
+                lex.read(keyStackDouble)
                 StackFrameType.Double()
             }
-            lex.isNext(keyNull) -> {
-                lex.read(keyNull)
+            lex.isNext(keyStackNull) -> {
+                lex.read(keyStackNull)
                 StackFrameType.Null()
             }
-            lex.isNext(keyUninitializedThis) -> {
-                lex.read(keyUninitializedThis)
+            lex.isNext(keyStackUninitializedThis) -> {
+                lex.read(keyStackUninitializedThis)
                 StackFrameType.UninitializedThis()
             }
-            lex.isNext(keyObject) -> {
-                lex.read(keyObject)
+            lex.isNext(keyStackObject) -> {
+                lex.read(keyStackObject)
                 StackFrameType.Object(lex.read(TokenType.InternalName))
             }
-            lex.isNext(keyUninitialized) -> {
-                lex.read(keyUninitialized)
+            lex.isNext(keyStackUninitialized) -> {
+                lex.read(keyStackUninitialized)
                 StackFrameType.Uninitialized(label())
             }
             else -> lex.unexpectTokenError(
-                keyTop,
-                keyInteger,
-                keyFloat,
-                keyLong,
-                keyDouble,
-                keyNull,
-                keyUninitializedThis,
-                keyObject,
-                keyUninitialized
+                keyStackTop,
+                keyStackInteger,
+                keyStackFloat,
+                keyStackLong,
+                keyStackDouble,
+                keyStackNull,
+                keyStackUninitializedThis,
+                keyStackObject,
+                keyStackUninitialized
             )
         }
     }
@@ -938,15 +938,15 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
         val keyInvisiblePararm = TokenType.KeyWord("invisiblepararm")
         //val keyDefault = Token.KeyWord("default")
 
-        val keyTop = TokenType.KeyWord("Top")
-        val keyInteger = TokenType.KeyWord("Integer")
-        val keyFloat = TokenType.KeyWord("Float")
-        val keyLong = TokenType.KeyWord("Long")
-        val keyDouble = TokenType.KeyWord("Double")
-        val keyNull = TokenType.KeyWord("Null")
-        val keyUninitializedThis = TokenType.KeyWord("UninitializedThis")
-        val keyObject = TokenType.KeyWord("Object")
-        val keyUninitialized = TokenType.KeyWord("Uninitialized")
+        val keyStackTop = TokenType.KeyWord("Top")
+        val keyStackInteger = TokenType.KeyWord("Integer")
+        val keyStackFloat = TokenType.KeyWord("Float")
+        val keyStackLong = TokenType.KeyWord("Long")
+        val keyStackDouble = TokenType.KeyWord("Double")
+        val keyStackNull = TokenType.KeyWord("Null")
+        val keyStackUninitializedThis = TokenType.KeyWord("UninitializedThis")
+        val keyStackObject = TokenType.KeyWord("Object")
+        val keyStackUninitialized = TokenType.KeyWord("Uninitialized")
 
         val keyPublic = TokenType.KeyWord("public")
         val keyPrivate = TokenType.KeyWord("private")
