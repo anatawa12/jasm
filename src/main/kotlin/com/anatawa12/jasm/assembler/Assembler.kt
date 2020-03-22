@@ -164,7 +164,7 @@ class Assembler(val options: AssemblerOptions) {
                     methodWriter.visitInvokeDynamicInsn(
                         statement.name, statement.desc,
                         assembleHandle(statement.bsm),
-                        Array(statement.bsmArgs.size) { assembleLdcConstant(statement.bsmArgs[it]) }
+                        *Array(statement.bsmArgs.size) { assembleLdcConstant(statement.bsmArgs[it]) }
                     )
                 }
                 is JumpInsn -> {
