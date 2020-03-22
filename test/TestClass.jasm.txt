@@ -46,3 +46,28 @@
 
 .end method
 
+.method private static lambdaTest ()Ljava/lang/Runnable;
+
+  .limit local 0
+  .limit stack 0
+
+  invokedynamic lambdaTest ()Ljava/lang/Runnable;
+      invokestatic java/lang/invoke/LambdaMetafactory/metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+          methodtype ()V
+          handle invokestatic test/TestClass/lambdaImpl ()V
+          methodtype ()V
+  areturn
+
+.end method
+
+.method private static lambdaImpl ()V
+
+  .limit local 0
+  .limit stack 2
+
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  ldc "Hello jasm from lambda!"
+  invokedynamic java/io/PrintStream/println (Ljava/lang/String;)V
+  return
+
+.end method
