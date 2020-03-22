@@ -101,6 +101,11 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
         when {
             lex.isNext(method_block.start) -> method_block()
             lex.isNext(field_block.start) -> field_block()
+            lex.isNext(member_annotation_block.start) -> ClassAnnotation(member_annotation_block())
+            lex.isNext(dotDeprecated) -> {
+                lex.read(dotDeprecated)
+                ClassDeprecated()
+            }
             else -> lex.unexpectTokenError(method_block.start, field_block.start)
         }
     }

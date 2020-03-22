@@ -61,6 +61,8 @@ inner_class_directive
 class_element
   : method_block
   | field_block
+  | '.deprecated'
+  | member_annotation_block
   ;
 
 method_block

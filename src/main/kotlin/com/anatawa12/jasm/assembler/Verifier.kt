@@ -9,10 +9,18 @@ import com.anatawa12.jasm.tree.Annotation
 class Verifier {
     fun verify(file: JasmFile) {
         verify(file.jasmHeader);
+        var hadDeprecated = false
         for (element in file.elements) {
             when (element) {
                 is MethodBlock -> verify(element)
                 is FieldBlock -> verify(element)
+                is ClassDeprecated -> {
+                    if (hadDeprecated) addError(TwoOrMoreDeprecated, element)
+                    hadDeprecated = true
+                }
+                is ClassAnnotation -> {
+                    verify(element.annotation, isMethod = false)
+                }
             }
         }
     }
