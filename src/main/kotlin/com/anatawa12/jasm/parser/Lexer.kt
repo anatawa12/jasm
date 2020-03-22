@@ -154,13 +154,12 @@ class Lexer(private val reading: Reader) : ILexer {
                 if (read == "\"") break
                 str.append(char)
             }
-            if (getAndNext() != '"') return null
             return str.toString()
         }
 
         override fun visitString(tokenType: TokenType.String): String? {
             val result = readStringBody() ?: return null
-            if (!getAndNext().isTokenSplitChar()) return null
+            if (!get().isTokenSplitChar()) return null
             return result
         }
 

@@ -44,8 +44,8 @@ internal class LexerTest {
     @Test
     fun doReadOwnerAndName() {
         val ownerAndNames = listOf(
-            " java/lang/Object/toString aaaa" to "java/lang/Object/toString",
-            " java/lang/Object/<init> aaaa" to "java/lang/Object/<init>"
+            " java/lang/Object/toString aaaa" to ("java/lang/Object" to "toString"),
+            " java/lang/Object/<init> aaaa" to ("java/lang/Object" to "<init>")
         )
         for ((str, ownerAndName) in ownerAndNames) withTesting(str) {
             assertEquals(ownerAndName, Lexer(StringLexerReader(str)).doRead(TokenType.OwnerAndName))
