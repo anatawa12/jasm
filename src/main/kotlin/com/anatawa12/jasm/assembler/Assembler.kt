@@ -46,7 +46,7 @@ class Assembler(val options: AssemblerOptions) {
 
     private fun assembleVersion(bytecode: BytecodeDirective?): Int {
         if (bytecode == null) return V1_8
-        return bytecode.minor shl 16 + bytecode.major
+        return bytecode.minor shl 16 or bytecode.major
     }
 
     private fun assembleMethod(method: MethodBlock) {
