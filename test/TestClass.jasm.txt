@@ -60,14 +60,14 @@
 
 .end method
 
-.method private static lambdaImpl ()V
+.method private synthetic static lambdaImpl ()V
 
   .limit local 0
   .limit stack 2
 
   getstatic java/lang/System/out Ljava/io/PrintStream;
   ldc "Hello jasm from lambda!"
-  invokedynamic java/io/PrintStream/println (Ljava/lang/String;)V
+  invokevirtual java/io/PrintStream/println (Ljava/lang/String;)V
   return
 
 .end method
