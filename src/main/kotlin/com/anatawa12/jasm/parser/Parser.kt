@@ -1,6 +1,7 @@
 package com.anatawa12.jasm.parser
 
 import com.anatawa12.jasm.tree.*
+import org.objectweb.asm.Opcodes
 
 class Parser(lex: ILexer) : AbstractParser(lex) {
     val jasm_file = grammar({ jasm_header.start }) {
@@ -322,6 +323,20 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
                 InstrucionType.IntInsn -> {
                     val operand = lex.read(TokenType.Integer)
                     return@grammar IntInsn(insn.opcode, operand)
+                }
+                InstrucionType.NewarrayInsn -> {
+                    val type = when {
+                        lex.isNext(keyBoolean) -> Opcodes.T_BOOLEAN
+                        lex.isNext(keyChar) -> Opcodes.T_CHAR
+                        lex.isNext(keyFloat) -> Opcodes.T_FLOAT
+                        lex.isNext(keyDouble) -> Opcodes.T_DOUBLE
+                        lex.isNext(keyByte) -> Opcodes.T_BYTE
+                        lex.isNext(keyShort) -> Opcodes.T_SHORT
+                        lex.isNext(keyInt) -> Opcodes.T_INT
+                        lex.isNext(keyLong) -> Opcodes.T_LONG
+                        else -> lex.unexpectTokenError(keyBoolean, keyChar, keyFloat, keyDouble, keyByte, keyShort, keyInt, keyLong)
+                    }
+                    return@grammar IntInsn(insn.opcode, type)
                 }
                 InstrucionType.VarInsn -> {
                     val variable = lex.read(TokenType.Integer)
@@ -947,6 +962,15 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
         val keyStackUninitializedThis = TokenType.KeyWord("UninitializedThis")
         val keyStackObject = TokenType.KeyWord("Object")
         val keyStackUninitialized = TokenType.KeyWord("Uninitialized")
+
+        val keyBoolean = TokenType.KeyWord("boolean")
+        val keyChar = TokenType.KeyWord("char")
+        val keyFloat = TokenType.KeyWord("float")
+        val keyDouble = TokenType.KeyWord("double")
+        val keyByte = TokenType.KeyWord("byte")
+        val keyShort = TokenType.KeyWord("short")
+        val keyInt = TokenType.KeyWord("int")
+        val keyLong = TokenType.KeyWord("long")
 
         val keyPublic = TokenType.KeyWord("public")
         val keyPrivate = TokenType.KeyWord("private")
