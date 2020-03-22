@@ -1,5 +1,6 @@
 package com.anatawa12.jasm.assembler
 
+import com.anatawa12.jasm.DeprecatedAttribute
 import com.anatawa12.jasm.tree.*
 import com.anatawa12.jasm.tree.Annotation
 import com.anatawa12.jasm.tree.Handle
@@ -105,7 +106,7 @@ class Assembler(val options: AssemblerOptions) {
             }
         }
 
-        // TODO: Deprecated attribute
+        if (isDeprecated) methodWriter.visitAttribute(DeprecatedAttribute)
 
         if (maxLocal != -1)
             assembleCode(methodWriter, method.statements, maxStack, maxLocal)
@@ -250,7 +251,7 @@ class Assembler(val options: AssemblerOptions) {
         val fieldWriter = classWriter.visitField(assembleAccess(field.accessFlags),
             field.name, field.descriptor, signature, field.default?.value)
 
-        // TODO: Deprecated attribute
+        if (isDeprecated) fieldWriter.visitAttribute(DeprecatedAttribute)
 
         for (annotation in annotations) {
             when (annotation.type) {

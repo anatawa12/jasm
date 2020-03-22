@@ -47,6 +47,7 @@
 .end method
 
 .method private static lambdaTest ()Ljava/lang/Runnable;
+  .deprecated
 
   .limit local 0
   .limit stack 0
