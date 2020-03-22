@@ -51,4 +51,14 @@ internal class LexerTest {
             assertEquals(ownerAndName, Lexer(StringLexerReader(str)).doRead(TokenType.OwnerAndName))
         }
     }
+
+    @Test
+    fun doReadString() {
+        val strings = listOf(
+            """ "Hello jasm from lambda!" test string here""" to "Hello jasm from lambda!"
+        )
+        for ((str, string) in strings) withTesting(str){
+            assertEquals(string, Lexer(StringLexerReader(str)).doRead(TokenType.String))
+        }
+    }
 }
