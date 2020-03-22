@@ -34,7 +34,9 @@ fun main(args: Array<String>) {
     if (verifier.errors.isNotEmpty())
         exitProcess(1)
 
-    val assembler = Assembler(AssemblerOptions())
+    val options = AssemblerOptions.parse(jasmFile.header)
+
+    val assembler = Assembler(options)
 
     assembler.assemble(jasmFile)
 
