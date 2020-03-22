@@ -5,7 +5,19 @@ import org.objectweb.asm.Opcodes
 
 class Parser(lex: ILexer) : AbstractParser(lex) {
     val jasm_file = grammar({ class_header.start }) {
-        JasmFile(class_header(), class_element.many())
+        JasmFile(jasm_header(), class_header(), class_element.many())
+    }
+
+    val jasm_header = grammar({jasm_header_element.start}) { JasmHeader(jasm_header_element.many()) }
+
+    val jasm_header_element = grammar(dotAutoline) {
+        when {
+            lex.isNext(dotAutoline) -> {
+                lex.read(dotAutoline)
+                JasmAutoline()
+            }
+            else -> lex.unexpectTokenError(dotAutoline)
+        }
     }
 
     val class_header = grammar({ bytecode_directive.start + source_directive.start + class_directive.start }) {
@@ -896,6 +908,7 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
     }
 
     companion object {
+        val dotAutoline = TokenType.DotedKeyWord("autoline")
         val dotBytecode = TokenType.DotedKeyWord("bytecode")
         val dotSource = TokenType.DotedKeyWord("source")
         val dotClass = TokenType.DotedKeyWord("class")

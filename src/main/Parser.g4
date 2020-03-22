@@ -5,8 +5,17 @@ package com.anatawa12.jasm;
 }
 
 jasm_file
-  : class_header
+  : jasm_header
+    class_header
     class_element*
+  ;
+
+jasm_header
+  : jasm_header_element*
+  ;
+
+jasm_header_element
+  : '.autoline'
   ;
 
 class_header
