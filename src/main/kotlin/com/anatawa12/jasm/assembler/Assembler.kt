@@ -118,9 +118,15 @@ class Assembler(val options: AssemblerOptions) {
         methodWriter.visitCode()
         var lastLocals: List<StackFrameType>? = null
         val table = LabelTable()
-        for (statement in statements) {
+        loop@ for (statement in statements) {
+            if (options.autoLine && statement is Instruction) {
+                val label = Label()
+                methodWriter.visitLabel(label)
+                methodWriter.visitLineNumber(statement.tokens.first().begin.line, label)
+            }
             when (statement) {
                 is LineNumber -> {
+                    if (options.autoLine) continue@loop
                     val label = Label()
                     methodWriter.visitLabel(label)
                     methodWriter.visitLineNumber(statement.line, label)
