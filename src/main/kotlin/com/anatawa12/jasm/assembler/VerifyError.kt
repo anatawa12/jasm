@@ -84,4 +84,5 @@ data class VerifyingWarn(val warn: VerifyingWarnType, val at: Node, val params: 
 enum class VerifyingWarnType(val message: String) {
     NoSuperClass("no .super directive is specified"),
     SeemsNestedButNoEnclosing("class seems nested class but there is not .enclosing directive"),
+    LineNumberWillIgnoredOnAutoLineMode(".line will be ignored because .autoline mode is enabled"),
 }

@@ -1,8 +1,7 @@
 package com.anatawa12.jasm.assembler
 
 import com.anatawa12.jasm.assembler.VerifyingErrorType.*
-import com.anatawa12.jasm.assembler.VerifyingWarnType.SeemsNestedButNoEnclosing
-import com.anatawa12.jasm.assembler.VerifyingWarnType.NoSuperClass
+import com.anatawa12.jasm.assembler.VerifyingWarnType.*
 import com.anatawa12.jasm.tree.*
 import com.anatawa12.jasm.tree.Annotation
 
@@ -100,7 +99,11 @@ class Verifier(val options: AssemblerOptions) {
                     if (hadLocalLimit) addError(TwoOrMoreLocalLimit, statement)
                     hadLocalLimit = true
                 }
-                is LineNumber,
+                is LineNumber -> {
+                    hadInstructionMetadata = true
+                    if (options.autoLine)
+                        addWarn(LineNumberWillIgnoredOnAutoLineMode, statement)
+                }
                 is LocalVar,
                 is TryCatch,
                 is LabelDefinition,
