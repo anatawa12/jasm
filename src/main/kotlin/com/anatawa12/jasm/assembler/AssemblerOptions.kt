@@ -17,5 +17,7 @@ class AssemblerOptions(
             }
             return AssemblerOptions(autoLine)
         }
+
+        val default = AssemblerOptions(false)
     }
 }

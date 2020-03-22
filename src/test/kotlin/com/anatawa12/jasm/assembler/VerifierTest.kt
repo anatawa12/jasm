@@ -13,7 +13,7 @@ internal class VerifierTest {
             "java/lang/Object"
         )
         for (internalName in internalNames) withTesting(internalName) {
-            val verifier = Verifier()
+            val verifier = Verifier(AssemblerOptions.default)
             verifier.verifyInternalName(internalName, Token.TEST)
             assertEquals(emptyList<Nothing>(), verifier.errors)
         }
@@ -27,7 +27,7 @@ internal class VerifierTest {
             "()Ljava/lang/String;"
         )
         for (descriptor in descriptors) withTesting(descriptor) {
-            val verifier = Verifier()
+            val verifier = Verifier(AssemblerOptions.default)
             verifier.verifyMethodDescriptor(descriptor, Token.TEST)
             assertEquals(emptyList<Nothing>(), verifier.errors)
         }
@@ -41,7 +41,7 @@ internal class VerifierTest {
             "V" to listOf(VerifyingError(VerifyingErrorType.InvalidFieldDescriptor, Token.TEST, emptyArray()))
         )
         for ((descriptor, errors) in descriptors) withTesting(descriptor) {
-            val verifier = Verifier()
+            val verifier = Verifier(AssemblerOptions.default)
             verifier.verifyFieldDescriptor(descriptor, Token.TEST)
             assertEquals(errors, verifier.errors)
         }

@@ -6,7 +6,7 @@ import com.anatawa12.jasm.assembler.VerifyingWarnType.NoSuperClass
 import com.anatawa12.jasm.tree.*
 import com.anatawa12.jasm.tree.Annotation
 
-class Verifier {
+class Verifier(val options: AssemblerOptions) {
     fun verify(file: JasmFile) {
         verify(file.classHeader);
         var hadDeprecated = false

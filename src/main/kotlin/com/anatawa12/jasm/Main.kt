@@ -21,7 +21,9 @@ fun main(args: Array<String>) {
         exitProcess(1)
     }
 
-    val verifier = Verifier()
+    val options = AssemblerOptions.parse(jasmFile.header)
+
+    val verifier = Verifier(options)
     verifier.verify(jasmFile)
     for (error in verifier.errors) {
         val at = error.at.tokens.first().begin
@@ -33,8 +35,6 @@ fun main(args: Array<String>) {
     }
     if (verifier.errors.isNotEmpty())
         exitProcess(1)
-
-    val options = AssemblerOptions.parse(jasmFile.header)
 
     val assembler = Assembler(options)
 
