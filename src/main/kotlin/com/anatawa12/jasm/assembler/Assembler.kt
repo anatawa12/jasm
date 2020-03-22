@@ -11,10 +11,10 @@ class Assembler(val options: AssemblerOptions) {
     val classWriter = ClassWriter(0)
 
     fun assemble(file: JasmFile) {
-        classWriter.visit(assembleVersion(file.jasmHeader.bytecode), assembleAccess(file.jasmHeader.className.accessFlags),
-            file.jasmHeader.className.internalName, file.jasmHeader.signature?.signature,
-            file.jasmHeader.superName?.internalName, file.jasmHeader.implements.map { it.internalName }.toTypedArray())
-        assembleHeader(file.jasmHeader)
+        classWriter.visit(assembleVersion(file.classHeader.bytecode), assembleAccess(file.classHeader.className.accessFlags),
+            file.classHeader.className.internalName, file.classHeader.signature?.signature,
+            file.classHeader.superName?.internalName, file.classHeader.implements.map { it.internalName }.toTypedArray())
+        assembleHeader(file.classHeader)
         for (element in file.elements) {
             when (element) {
                 is MethodBlock -> {
@@ -28,19 +28,19 @@ class Assembler(val options: AssemblerOptions) {
         classWriter.visitEnd()
     }
 
-    private fun assembleHeader(jasmHeader: JasmHeader) {
-        jasmHeader.enclosing?.let { enclosing ->
+    private fun assembleHeader(classHeader: ClassHeader) {
+        classHeader.enclosing?.let { enclosing ->
             when (enclosing) {
                 is EnclosingClassDirective -> classWriter.visitOuterClass(enclosing.owner, null, null)
                 is EnclosingMethodDirective -> classWriter.visitOuterClass(enclosing.owner, enclosing.name, enclosing.descriptor)
             }
         }
 
-        if (jasmHeader.source != null || jasmHeader.debug != null) {
-            classWriter.visitSource(jasmHeader.source?.sourceFile, jasmHeader.debug?.debugData)
+        if (classHeader.source != null || classHeader.debug != null) {
+            classWriter.visitSource(classHeader.source?.sourceFile, classHeader.debug?.debugData)
         }
 
-        for (innerClass in jasmHeader.innerClasses) {
+        for (innerClass in classHeader.innerClasses) {
             classWriter.visitInnerClass(innerClass.name, innerClass.outerName, innerClass.innerName, assembleAccess(innerClass.accessFlags))
         }
     }

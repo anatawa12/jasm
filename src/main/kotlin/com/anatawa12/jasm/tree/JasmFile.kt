@@ -1,6 +1,6 @@
 package com.anatawa12.jasm.tree
 
 data class JasmFile(
-    val jasmHeader: JasmHeader,
+    val classHeader: ClassHeader,
     val elements: List<ClassElement>
 ) : BranchNode()

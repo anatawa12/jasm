@@ -1,6 +1,6 @@
 package com.anatawa12.jasm.tree
 
-data class JasmHeader(
+data class ClassHeader(
     val bytecode: BytecodeDirective?,
     val source: SourceDirective?,
     val className: ClassDirective,

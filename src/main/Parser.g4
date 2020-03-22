@@ -5,11 +5,11 @@ package com.anatawa12.jasm;
 }
 
 jasm_file
-  : jasm_header
+  : class_header
     class_element*
   ;
 
-jasm_header
+class_header
   : bytecode_directive?
     source_directive?
     class_directive

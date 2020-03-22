@@ -4,12 +4,12 @@ import com.anatawa12.jasm.tree.*
 import org.objectweb.asm.Opcodes
 
 class Parser(lex: ILexer) : AbstractParser(lex) {
-    val jasm_file = grammar({ jasm_header.start }) {
-        JasmFile(jasm_header(), class_element.many())
+    val jasm_file = grammar({ class_header.start }) {
+        JasmFile(class_header(), class_element.many())
     }
 
-    val jasm_header = grammar({ bytecode_directive.start + source_directive.start + class_directive.start }) {
-        JasmHeader(
+    val class_header = grammar({ bytecode_directive.start + source_directive.start + class_directive.start }) {
+        ClassHeader(
             bytecode_directive.optional(),
             source_directive.optional(),
             class_directive(),

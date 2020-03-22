@@ -8,7 +8,7 @@ import com.anatawa12.jasm.tree.Annotation
 
 class Verifier {
     fun verify(file: JasmFile) {
-        verify(file.jasmHeader);
+        verify(file.classHeader);
         var hadDeprecated = false
         for (element in file.elements) {
             when (element) {
@@ -27,7 +27,7 @@ class Verifier {
 
     // region jasm header
 
-    private fun verify(header: JasmHeader) {
+    private fun verify(header: ClassHeader) {
         if (header.bytecode != null) {
             verify(header.bytecode.major in 45..52, UnsupportedBytecode, header.bytecode)
         }
