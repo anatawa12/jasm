@@ -146,7 +146,7 @@ class Assembler(val options: AssemblerOptions) {
                     val locals = statement.locals ?: lastLocals!!
                     val stacks = statement.stacks
                     lastLocals = locals
-                    methodWriter.visitFrame(F_FULL, locals.size, assembleFrame(locals, table), stacks.size, assembleFrame(stacks, table))
+                    methodWriter.visitFrame(F_NEW, locals.size, assembleFrame(locals, table), stacks.size, assembleFrame(stacks, table))
                 }
 
                 is Insn -> {
@@ -165,7 +165,7 @@ class Assembler(val options: AssemblerOptions) {
                     methodWriter.visitFieldInsn(statement.opcode, statement.owner, statement.name, statement.desc)
                 }
                 is MethodInsn -> {
-                    methodWriter.visitMethodInsn(statement.opcode, statement.owner, statement.name, statement.desc, statement.itf)
+                    methodWriter.visitMethodInsn(statement.opcode, statement.owner, statement.name, statement.desc, statement.itf || statement.opcode == INVOKEINTERFACE)
                 }
                 is InvokeDynamicInsn -> {
                     methodWriter.visitInvokeDynamicInsn(
