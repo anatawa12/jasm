@@ -346,14 +346,38 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
                 }
                 InstrucionType.NewarrayInsn -> {
                     val type = when {
-                        lex.isNext(keyBoolean) -> Opcodes.T_BOOLEAN
-                        lex.isNext(keyChar) -> Opcodes.T_CHAR
-                        lex.isNext(keyFloat) -> Opcodes.T_FLOAT
-                        lex.isNext(keyDouble) -> Opcodes.T_DOUBLE
-                        lex.isNext(keyByte) -> Opcodes.T_BYTE
-                        lex.isNext(keyShort) -> Opcodes.T_SHORT
-                        lex.isNext(keyInt) -> Opcodes.T_INT
-                        lex.isNext(keyLong) -> Opcodes.T_LONG
+                        lex.isNext(keyBoolean) -> {
+                            lex.read(keyBoolean)
+                            Opcodes.T_BOOLEAN
+                        }
+                        lex.isNext(keyChar) -> {
+                            lex.read(keyChar)
+                            Opcodes.T_CHAR
+                        }
+                        lex.isNext(keyFloat) -> {
+                            lex.read(keyFloat)
+                            Opcodes.T_FLOAT
+                        }
+                        lex.isNext(keyDouble) -> {
+                            lex.read(keyDouble)
+                            Opcodes.T_DOUBLE
+                        }
+                        lex.isNext(keyByte) -> {
+                            lex.read(keyByte)
+                            Opcodes.T_BYTE
+                        }
+                        lex.isNext(keyShort) -> {
+                            lex.read(keyShort)
+                            Opcodes.T_SHORT
+                        }
+                        lex.isNext(keyInt) -> {
+                            lex.read(keyInt)
+                            Opcodes.T_INT
+                        }
+                        lex.isNext(keyLong) -> {
+                            lex.read(keyLong)
+                            Opcodes.T_LONG
+                        }
                         else -> lex.unexpectTokenError(keyBoolean, keyChar, keyFloat, keyDouble, keyByte, keyShort, keyInt, keyLong)
                     }
                     return@grammar IntInsn(insn.opcode, type)
