@@ -386,10 +386,4 @@ class Lexer(private val reading: Reader) : ILexer {
         fun getOrNull(pos: Int): Char?
         fun error(message: String): Nothing
     }
-
-    private fun Char?.isWardChar()
-            = this != null && (this.isJavaIdentifierPart() || this == '<' || this == '>')
-
-    private fun Char?.isTokenSplitChar()
-            = this == null || this.isWhitespace() || this == ':' || this == '.'
 }
