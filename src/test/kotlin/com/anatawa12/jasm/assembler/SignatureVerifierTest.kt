@@ -84,7 +84,12 @@ internal class SignatureVerifierTest {
 
     @Test
     fun readInternalName() {
-
+        val signatures = listOf(
+            Triple("org/objectweb/asm/MethodVisitor<;", true, '<'),
+            Triple("Type<;", true, '<'),
+            Triple("T<;", true, '<')
+        )
+        readTest(signatures) { it.readInternalName() }
     }
 
     @Test
@@ -131,22 +136,34 @@ internal class SignatureVerifierTest {
 
     @Test
     fun readTypeParameters() {
-
+        val signatures = listOf(
+            Triple("<E:Ljava/lang/Object;>-", true, '-')
+        )
+        readTest(signatures) { it.readTypeParameters() }
     }
 
     @Test
     fun readTypeParameter() {
-
+        val signatures = listOf(
+            Triple("E:Ljava/lang/Object;-", true, '-')
+        )
+        readTest(signatures) { it.readTypeParameter() }
     }
 
     @Test
     fun readClassBound() {
-
+        val signatures = listOf(
+            Triple(":Ljava/lang/Object;-", true, '-')
+        )
+        readTest(signatures) { it.readClassBound() }
     }
 
     @Test
     fun readInterfaceBound() {
-
+        val signatures = listOf(
+            Triple(":Ljava/lang/Object;-", true, '-')
+        )
+        readTest(signatures) { it.readInterfaceBound() }
     }
 
     @Test
@@ -163,7 +180,8 @@ internal class SignatureVerifierTest {
     fun readMethodSignature() {
         val signatures = listOf(
             Triple("(Lorg/objectweb/asm/MethodVisitor;Ljava/util/List<+Lcom/anatawa12/jasm/tree/MethodStatement;>;II)V-", true, '-'),
-            Triple("<E:Ljava/lang/Object;>(Ljava/util/List<*>;)TE;-", true, '-')
+            Triple("<E:Ljava/lang/Object;>(Ljava/util/List<*>;)TE;-", true, '-'),
+            Triple("<E:Ljava/lang/Object;>(Ljava/util/List<*>;Lkotlin/jvm/functions/Function1<-TE;Ljava/lang/Boolean;>;)TE;-", true, '-')
         )
         readTest(signatures) { it.readMethodSignature() }
     }
