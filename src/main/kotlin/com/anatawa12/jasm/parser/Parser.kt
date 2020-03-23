@@ -98,18 +98,19 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
         lex.read(dotInner)
         val access = access_flags()
         val name = lex.read(TokenType.InternalName)
-        val outerName = if (lex.isNext(keyOuter)) {
-            lex.read(keyOuter)
-            lex.read(TokenType.InternalName)
-        } else null
         val innerName = if (lex.isNext(keyInner)) {
             lex.read(keyInner)
             lex.read(TokenType.Name)
         } else null
+        val outerName = if (lex.isNext(keyOuter)) {
+            lex.read(keyOuter)
+            lex.read(TokenType.InternalName)
+        } else null
         InnerClassDirective(access, name, outerName, innerName)
     }
 
-    val class_element = grammar({ method_block.start + field_block.start }) {
+    val class_element = grammar({ method_block.start + field_block.start +
+            member_annotation_block.start + setOf(dotDeprecated) }) {
         when {
             lex.isNext(method_block.start) -> method_block()
             lex.isNext(field_block.start) -> field_block()
