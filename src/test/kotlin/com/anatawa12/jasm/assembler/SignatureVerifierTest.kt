@@ -162,7 +162,8 @@ internal class SignatureVerifierTest {
     @Test
     fun readMethodSignature() {
         val signatures = listOf(
-            Triple("(Lorg/objectweb/asm/MethodVisitor;Ljava/util/List<+Lcom/anatawa12/jasm/tree/MethodStatement;>;II)V-", true, '-')
+            Triple("(Lorg/objectweb/asm/MethodVisitor;Ljava/util/List<+Lcom/anatawa12/jasm/tree/MethodStatement;>;II)V-", true, '-'),
+            Triple("<E:Ljava/lang/Object;>(Ljava/util/List<*>;)TE;-", true, '-')
         )
         readTest(signatures) { it.readMethodSignature() }
     }
