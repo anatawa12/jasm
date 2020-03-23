@@ -17,6 +17,26 @@ class Assembler(val options: AssemblerOptions) {
         assembleHeader(file.classHeader)
         for (element in file.elements) {
             when (element) {
+                is ClassAnnotation-> {
+                    when (element.annotation.type) {
+                        is AnnotationType.Visible -> {
+                            assembleAnnotation(element.annotation, classWriter.visitAnnotation("L${element.annotation.internalName};", true))
+                        }
+                        is AnnotationType.Invisible -> {
+                            assembleAnnotation(element.annotation, classWriter.visitAnnotation("L${element.annotation.internalName};", false))
+                        }
+                        is AnnotationType.VisiblePararm,
+                        is AnnotationType.InvisiblePararm,
+                        is AnnotationType.Default -> error("invalid annotation type for field")
+                    }
+                }
+                is ClassDeprecated -> {
+                    classWriter.visitAttribute(DeprecatedAttribute)
+                }
+            }
+        }
+        for (element in file.elements) {
+            when (element) {
                 is MethodBlock -> {
                     assembleMethod(element)
                 }
