@@ -98,12 +98,12 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
         lex.read(dotInner)
         val access = access_flags()
         val name = lex.read(TokenType.InternalName)
-        val outerName = if (lex.isNext(keyInner)) {
-            lex.read(keyInner)
-            lex.read(TokenType.Name)
-        } else null
-        val innerName = if (lex.isNext(keyOuter)) {
+        val outerName = if (lex.isNext(keyOuter)) {
             lex.read(keyOuter)
+            lex.read(TokenType.InternalName)
+        } else null
+        val innerName = if (lex.isNext(keyInner)) {
+            lex.read(keyInner)
             lex.read(TokenType.Name)
         } else null
         InnerClassDirective(access, name, outerName, innerName)
@@ -254,6 +254,8 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
             locals.many()
         }
         val stacks = stacks.many()
+        lex.read(dotEnd)
+        lex.read(keyStack)
         StackFrame(locals, stacks)
     }
 

@@ -63,7 +63,7 @@ debug_directive
   ;
 
 inner_class_directive
-  : '.inner' access_flags internal_name ('inner' ID)? ('outer' ID)?
+  : '.inner' access_flags internal_name ('inner' ID)? ('outer' internal_name)?
   ;
 
 
