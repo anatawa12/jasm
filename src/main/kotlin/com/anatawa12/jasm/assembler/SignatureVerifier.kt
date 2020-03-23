@@ -73,6 +73,7 @@ class SignatureVerifier(val signature: String) {
         readInternalName().ifFalse { return false }
         if (get() == '<') readTypeArguments().ifFalse { return false }
         while (get() == '.') readClassTypeSignatureSuffix().ifFalse { return false }
+        if (getAndNext() != ';') return false
         return true
     }
 
