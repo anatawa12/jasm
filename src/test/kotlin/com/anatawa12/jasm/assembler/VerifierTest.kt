@@ -46,4 +46,16 @@ internal class VerifierTest {
             assertEquals(errors, verifier.errors)
         }
     }
+
+    @Test
+    fun verifyMethodSignature() {
+        val signatures = listOf(
+            "(Lorg/objectweb/asm/MethodVisitor;Ljava/util/List<+Lcom/anatawa12/jasm/tree/MethodStatement;>;II)V"
+        )
+        for (signature in signatures) withTesting(signature) {
+            val verifier = Verifier(AssemblerOptions.default)
+            verifier.verifyMethodSignature(signature, Token.TEST)
+            assertEquals(emptyList<Nothing>(), verifier.errors)
+        }
+    }
 }

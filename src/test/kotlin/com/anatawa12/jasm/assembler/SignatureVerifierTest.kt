@@ -1,10 +1,23 @@
 package com.anatawa12.jasm.assembler
 
+import com.anatawa12.jasm.tree.Token
 import com.anatawa12.jasm.withTesting
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
 internal class SignatureVerifierTest {
+    private inline fun readTest(tests: List<Triple<String, Boolean, Char>>, tester: (SignatureVerifier) -> Boolean) {
+        for ((test, result, next) in tests) withTesting(test) {
+            val verifier = SignatureVerifier(test)
+            if (result) {
+                assertTrue(tester(verifier))
+            } else {
+                assertFalse(tester(verifier))
+            }
+            assertEquals(next, verifier.get())
+        }
+    }
+
     @Test
     fun readIdentifier() {
         val identifiers = listOf(
@@ -12,15 +25,7 @@ internal class SignatureVerifierTest {
             Triple("java/lang", true, '/'),
             Triple("/", false, '/')
         )
-        for ((id, result, next) in identifiers) withTesting(id) {
-            val verifier = SignatureVerifier(id)
-            if (result) {
-                assertTrue(verifier.readIdentifier())
-            } else {
-                assertFalse(verifier.readIdentifier())
-            }
-            assertEquals(next, verifier.get())
-        }
+        readTest(identifiers) { it.readIdentifier() }
     }
 
     @Test
@@ -60,7 +65,11 @@ internal class SignatureVerifierTest {
 
     @Test
     fun readReferenceTypeSignature() {
-
+        val signatures = listOf(
+            Triple("Lorg/objectweb/asm/MethodVisitor;-=", true, '-'),
+            Triple("Ljava/util/List<+Lcom/anatawa12/jasm/tree/MethodStatement;>;-=", true, '-')
+        )
+        readTest(signatures) { it.readReferenceTypeSignature() }
     }
 
     @Test
@@ -140,7 +149,10 @@ internal class SignatureVerifierTest {
 
     @Test
     fun readMethodSignature() {
-
+        val signatures = listOf(
+            Triple("(Lorg/objectweb/asm/MethodVisitor;Ljava/util/List<+Lcom/anatawa12/jasm/tree/MethodStatement;>;II)V-", true, '-')
+        )
+        readTest(signatures) { it.readMethodSignature() }
     }
 
     @Test
