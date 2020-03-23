@@ -10,8 +10,8 @@ class SignatureVerifier(val signature: String) {
     fun next() { index++ }
 
     fun readIdentifier(): Boolean {
-        if (get() in ".;[/<>") return false
-        while (get() !in ".;[/<>") getAndNext()
+        if (get() in ".;[/<>:") return false
+        while (get() !in ".;[/<>:") getAndNext()
         return true
     }
 
