@@ -151,14 +151,6 @@ class Assembler(val options: AssemblerOptions) {
                     methodWriter.visitLabel(label)
                     methodWriter.visitLineNumber(statement.line, label)
                 }
-                is LocalVar -> {
-                    methodWriter.visitLocalVariable(statement.name, statement.descriptor, statement.signature,
-                        table[statement.from], table[statement.to], statement.variable)
-                }
-                is TryCatch -> {
-                    methodWriter.visitTryCatchBlock(table[statement.from], table[statement.to],
-                        table[statement.using], statement.exception)
-                }
                 is LabelDefinition -> {
                     methodWriter.visitLabel(table[statement.name])
                 }
@@ -217,6 +209,23 @@ class Assembler(val options: AssemblerOptions) {
                     methodWriter.visitMultiANewArrayInsn(statement.desc, statement.dims)
                 }
 
+                is LocalVar, is TryCatch, is StackLimit, is LocalLimit, is Throws,
+                is MethodSignature, is MethodDeprecated, is MethodAnnotation -> {}
+            }
+        }
+        for (statement in statements) {
+            when (statement) {
+                is LocalVar -> {
+                    methodWriter.visitLocalVariable(statement.name, statement.descriptor, statement.signature,
+                        table[statement.from], table[statement.to], statement.variable)
+                }
+                is TryCatch -> {
+                    methodWriter.visitTryCatchBlock(table[statement.from], table[statement.to],
+                        table[statement.using], statement.exception)
+                }
+                is LabelDefinition, is StackFrame,
+                is Insn, is IntInsn, is VarInsn, is TypeInsn, is FieldInsn, is MethodInsn, is InvokeDynamicInsn,
+                is JumpInsn, is LdcInsn, is IincInsn, is TableSwitchInsn, is LookupSwitchInsn, is MultiANewArrayInsn,
                 is StackLimit, is LocalLimit, is Throws, is MethodSignature, is MethodDeprecated, is MethodAnnotation -> {}
             }
         }
