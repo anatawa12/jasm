@@ -266,7 +266,7 @@ class Disassembler {
                                 .nl()
                         }
                         for (localVariableNode in method.localVariables.filter { it.start == instruction }) {
-                            file.key(".var").key("${localVariableNode.index}")
+                            file.key(".var").key("${localVariableNode.index}").key("is")
                                 .name(localVariableNode.name).name(localVariableNode.desc)
                                 .also {
                                     if (localVariableNode.signature != null)
