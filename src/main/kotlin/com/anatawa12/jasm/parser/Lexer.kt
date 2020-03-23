@@ -141,7 +141,25 @@ class Lexer(private val reading: Reader) : ILexer {
             val char = getAndNext()
             if (char == '\\') {
                 val escaped = getAndNext()
-                return "$char$escaped" to escaped
+                when (escaped) {
+                    't' -> return "\\t" to '\t'
+                    'b' -> return "\\b" to '\b'
+                    'n' -> return "\\n" to '\n'
+                    'r' -> return "\\r" to '\r'
+                    '\'' -> return "\\\'" to '\''
+                    '\"' -> return "\\\"" to '\"'
+                    '\\' -> return "\\\\" to '\\'
+                    '$' -> return "\\$" to '\$'
+                    'u' -> {
+                        val chars = "${getAndNext()}${getAndNext()}${getAndNext()}${getAndNext()}"
+                        val c = chars.toIntOrNull(16) ?: TODO("error")
+                        return "\\$chars" to c.toChar()
+                    }
+                    else -> {
+                        //TODO: error
+                        return "$char$escaped" to escaped
+                    }
+                }
             }
             return "$char" to char
         }
