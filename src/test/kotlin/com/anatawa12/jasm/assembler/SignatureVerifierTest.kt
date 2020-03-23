@@ -23,7 +23,8 @@ internal class SignatureVerifierTest {
         val identifiers = listOf(
             Triple("java;", true, ';'),
             Triple("java/lang", true, '/'),
-            Triple("/", false, '/')
+            Triple("/", false, '/'),
+            Triple("E:Ljava/lang/Object;-", true, ':')
         )
         readTest(identifiers) { it.readIdentifier() }
     }
@@ -87,7 +88,8 @@ internal class SignatureVerifierTest {
         val signatures = listOf(
             Triple("org/objectweb/asm/MethodVisitor<;", true, '<'),
             Triple("Type<;", true, '<'),
-            Triple("T<;", true, '<')
+            Triple("T<;", true, '<'),
+            Triple("E:Ljava/lang/Object;-", true, ':')
         )
         readTest(signatures) { it.readInternalName() }
     }
