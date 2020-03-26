@@ -52,7 +52,7 @@ fun verifyFile(fileName: String, jasmFile: JasmFile, options: AssemblerOptions):
     return true
 }
 
-fun assembleJasmFile(fileName: String, jasmFile: JasmFile, options: AssemblerOptions): ByteArray? {
+fun assembleJasmFile(fileName: String, jasmFile: JasmFile, options: AssemblerOptions): ByteArray {
     val assembler = Assembler(options)
 
     assembler.assemble(jasmFile)
