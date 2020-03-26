@@ -14,7 +14,7 @@ import kotlin.system.exitProcess
 
 fun main(args: Array<String>) {
     val fileName = args[0]
-    val jasmFile = parseJasmFile(File(fileName).readText()) ?: exitProcess(1)
+    val jasmFile = parseJasmFile(fileName, File(fileName).readText()) ?: exitProcess(1)
     val options = AssemblerOptions.parse(jasmFile.header)
 
     if (!verifyFile(fileName, jasmFile, options)) exitProcess(1)
