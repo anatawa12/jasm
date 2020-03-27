@@ -32,7 +32,7 @@ open class CompileJasmTask : DefaultTask() {
     private fun compileFile(file: File, outputDir: File): Boolean {
         val content = file.readText()
 
-        val fileName = file.name
+        val fileName = file.path
         val jasmFile = parseJasmFile(fileName, content) ?: return false
         val options = AssemblerOptions.parse(jasmFile.header)
 
