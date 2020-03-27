@@ -42,7 +42,9 @@ open class CompileJasmTask : DefaultTask() {
 
         val classInternalName = jasmFile.classHeader.className.internalName
 
-        outputDir.resolve("$classInternalName.class").writeBytes(classFile)
+        outputDir.resolve("$classInternalName.class")
+            .apply { parentFile.mkdirs() }
+            .writeBytes(classFile)
 
         return true
     }

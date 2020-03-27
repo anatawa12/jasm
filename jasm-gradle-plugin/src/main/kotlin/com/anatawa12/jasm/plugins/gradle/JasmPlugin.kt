@@ -19,12 +19,15 @@ open class JasmPlugin : Plugin<Project> {
             extension.jasm.filter.include("*.jasm")
             extension.jasm.outputDir = project.buildDir.resolve("classes/jasm/${sourceSet.name}")
 
+            sourceSet.output.dir(project.provider { extension.jasm.outputDir })
+
             val taskName = sourceSet.getCompileTaskName("jasm")
             val compileJasm = project.tasks.create(taskName, CompileJasmTask::class.java).apply {
                 this.extension = extension
             }
 
             project.tasks.getByName(sourceSet.compileJavaTaskName).dependsOn(compileJasm)
+            project.tasks.getByName(sourceSet.classesTaskName).dependsOn(compileJasm)
         }
     }
 }
