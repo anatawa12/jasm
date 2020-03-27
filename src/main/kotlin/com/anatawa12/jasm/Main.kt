@@ -45,7 +45,7 @@ fun verifyFile(fileName: String, jasmFile: JasmFile, options: AssemblerOptions):
     }
     for (warn in verifier.warns) {
         val at = warn.at.tokens.first().begin
-        System.err.println("w: ${fileName}: (${at.line}, ${at.column}): ${warn.warn.message}")
+        System.out.println("w: ${fileName}: (${at.line}, ${at.column}): ${warn.warn.message}")
     }
     if (verifier.errors.isNotEmpty())
         return false
