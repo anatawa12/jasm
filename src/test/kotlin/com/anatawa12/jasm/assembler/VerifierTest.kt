@@ -58,4 +58,16 @@ internal class VerifierTest {
             assertEquals(emptyList<Nothing>(), verifier.errors)
         }
     }
+
+    @Test
+    fun verifyClassSignature() {
+        val signatures = listOf(
+            "Lcom/anatawa12/jasm/tree/AnnotationValue;Ljava/util/List<Lcom/anatawa12/jasm/tree/AnnotationValue;>;Lkotlin/jvm/internal/markers/KMappedMarker;"
+        )
+        for (signature in signatures) withTesting(signature) {
+            val verifier = Verifier(AssemblerOptions.default)
+            verifier.verifyClassSignature(signature, Token.TEST)
+            assertEquals(emptyList<Nothing>(), verifier.errors)
+        }
+    }
 }

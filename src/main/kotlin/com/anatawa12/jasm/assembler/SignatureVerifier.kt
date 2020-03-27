@@ -134,7 +134,7 @@ class SignatureVerifier(val signature: String) {
     fun readClassSignature(): Boolean {
         if (get() == '<') readTypeParameters()
         readSuperclassSignature()
-        readSuperinterfaceSignature()
+        while (get() == 'L')readSuperinterfaceSignature()
         return true
     }
 

@@ -68,6 +68,7 @@ internal class SignatureVerifierTest {
     fun readReferenceTypeSignature() {
         val signatures = listOf(
             Triple("Lorg/objectweb/asm/MethodVisitor;-=", true, '-'),
+            Triple("Ljava/util/List<Lcom/anatawa12/jasm/tree/AnnotationValue;>;-=", true, '-'),
             Triple("TType;-=", true, '-'),
             Triple("[I-=", true, '-')
         )
@@ -78,6 +79,7 @@ internal class SignatureVerifierTest {
     fun readClassTypeSignature() {
         val signatures = listOf(
             Triple("Lorg/objectweb/asm/MethodVisitor;-=", true, '-'),
+            Triple("Ljava/util/List<Lcom/anatawa12/jasm/tree/AnnotationValue;>;-=", true, '-'),
             Triple("Ljava/util/List<+Lcom/anatawa12/jasm/tree/MethodStatement;>;-=", true, '-')
         )
         readTest(signatures) { it.readClassTypeSignature() }
@@ -133,7 +135,10 @@ internal class SignatureVerifierTest {
 
     @Test
     fun readClassSignature() {
-
+        val signatures = listOf(
+            Triple("Lcom/anatawa12/jasm/tree/AnnotationValue;Ljava/util/List<Lcom/anatawa12/jasm/tree/AnnotationValue;>;Lkotlin/jvm/internal/markers/KMappedMarker;-", true, '-')
+        )
+        readTest(signatures) { it.readClassSignature() }
     }
 
     @Test
