@@ -448,6 +448,7 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
                     val pairs = mutableListOf<Pair<Int, LabelName>>()
                     while (!lex.isNext(keyDefault)) {
                         val value = lex.read(TokenType.Integer)
+                        lex.read(colon)
                         val label = label()
                         pairs.add(value to label)
                     }
