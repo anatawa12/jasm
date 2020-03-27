@@ -1,0 +1,13 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath files(file("${rootProject.projectDir}/jasm-gradle-plugin/build/libs/jasm-gradle-plugin-1.0-SNAPSHOT.jar"))
+        classpath files(file("${rootProject.projectDir}/build/libs/jasm-1.0-SNAPSHOT.jar"))
+        classpath("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.70")
+        classpath("org.ow2.asm:asm-debug-all:5.2")
+    }
+}
+
+apply plugin: "com.anatawa12.jasm"
