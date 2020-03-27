@@ -11,6 +11,10 @@ import com.github.ajalt.clikt.parameters.arguments.argument
 import com.github.ajalt.clikt.parameters.types.file
 import kotlin.system.exitProcess
 
+class Root : CliktCommand() {
+    override fun run() {}
+}
+
 class Assemble : CliktCommand(name = "assemble") {
     val jasmFile by argument("jasm file")
         .file(mustExist = true, mustBeReadable = true, canBeDir = false)
@@ -44,4 +48,4 @@ class Disassemble : CliktCommand(name = "disassemble") {
     }
 }
 
-fun main(args: Array<String>) = Assemble().subcommands(Assemble(), Disassemble()).main(args)
+fun main(args: Array<String>) = Root().subcommands(Assemble(), Disassemble()).main(args)
