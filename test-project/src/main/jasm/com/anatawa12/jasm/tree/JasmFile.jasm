@@ -4,415 +4,415 @@
 .super com/anatawa12/jasm/tree/BranchNode
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u000c\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B#\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u000c\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\u0002\u0010\tJ\t\u0010\u0010\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0011\u001a\u00020\u0005HÆ\u0003J\u000f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\b0\u0007HÆ\u0003J-\u0010\u0013\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007HÆ\u0001J\u0013\u0010\u0014\u001a\u00020\u00152\b\u0010\u0016\u001a\u0004\u0018\u00010\u0017HÖ\u0003J\t\u0010\u0018\u001a\u00020\u0019HÖ\u0001J\t\u0010\u001a\u001a\u00020\u001bHÖ\u0001R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0017\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u000c\u0010\rR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000f¨\u0006\u001c"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/tree/JasmFile;"
-      s = "Lcom/anatawa12/jasm/tree/BranchNode;"
-      s = "header"
-      s = "Lcom/anatawa12/jasm/tree/JasmHeader;"
-      s = "classHeader"
-      s = "Lcom/anatawa12/jasm/tree/ClassHeader;"
-      s = "elements"
-      s = ""
-      s = "Lcom/anatawa12/jasm/tree/ClassElement;"
-      s = "(Lcom/anatawa12/jasm/tree/JasmHeader;Lcom/anatawa12/jasm/tree/ClassHeader;Ljava/util/List;)V"
-      s = "getClassHeader"
-      s = "()Lcom/anatawa12/jasm/tree/ClassHeader;"
-      s = "getElements"
-      s = "()Ljava/util/List;"
-      s = "getHeader"
-      s = "()Lcom/anatawa12/jasm/tree/JasmHeader;"
-      s = "component1"
-      s = "component2"
-      s = "component3"
-      s = "copy"
-      s = "equals"
-      s = ""
-      s = "other"
-      s = ""
-      s = "hashCode"
-      s = ""
-      s = "toString"
-      s = ""
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u000c\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B#\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u000c\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\u0002\u0010\tJ\t\u0010\u0010\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0011\u001a\u00020\u0005HÆ\u0003J\u000f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\b0\u0007HÆ\u0003J-\u0010\u0013\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007HÆ\u0001J\u0013\u0010\u0014\u001a\u00020\u00152\b\u0010\u0016\u001a\u0004\u0018\u00010\u0017HÖ\u0003J\t\u0010\u0018\u001a\u00020\u0019HÖ\u0001J\t\u0010\u001a\u001a\u00020\u001bHÖ\u0001R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0017\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u000c\u0010\rR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000f¨\u0006\u001c"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/tree/JasmFile;"
+        s = "Lcom/anatawa12/jasm/tree/BranchNode;"
+        s = "header"
+        s = "Lcom/anatawa12/jasm/tree/JasmHeader;"
+        s = "classHeader"
+        s = "Lcom/anatawa12/jasm/tree/ClassHeader;"
+        s = "elements"
+        s = ""
+        s = "Lcom/anatawa12/jasm/tree/ClassElement;"
+        s = "(Lcom/anatawa12/jasm/tree/JasmHeader;Lcom/anatawa12/jasm/tree/ClassHeader;Ljava/util/List;)V"
+        s = "getClassHeader"
+        s = "()Lcom/anatawa12/jasm/tree/ClassHeader;"
+        s = "getElements"
+        s = "()Ljava/util/List;"
+        s = "getHeader"
+        s = "()Lcom/anatawa12/jasm/tree/JasmHeader;"
+        s = "component1"
+        s = "component2"
+        s = "component3"
+        s = "copy"
+        s = "equals"
+        s = ""
+        s = "other"
+        s = ""
+        s = "hashCode"
+        s = ""
+        s = "toString"
+        s = ""
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public getHeader ()Lcom/anatawa12/jasm/tree/JasmHeader;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 4
-   .var 0 is this Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/header Lcom/anatawa12/jasm/tree/JasmHeader;
-   areturn
+    .line 4
+    .var 0 is this Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/header Lcom/anatawa12/jasm/tree/JasmHeader;
+    areturn
 L_0005:
 .end method
 
 .method public getClassHeader ()Lcom/anatawa12/jasm/tree/ClassHeader;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 5
-   .var 0 is this Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/classHeader Lcom/anatawa12/jasm/tree/ClassHeader;
-   areturn
+    .line 5
+    .var 0 is this Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/classHeader Lcom/anatawa12/jasm/tree/ClassHeader;
+    areturn
 L_0005:
 .end method
 
 .method public getElements ()Ljava/util/List;
-   .signature "()Ljava/util/List<Lcom/anatawa12/jasm/tree/ClassElement;>;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .signature "()Ljava/util/List<Lcom/anatawa12/jasm/tree/ClassElement;>;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 6
-   .var 0 is this Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/elements Ljava/util/List;
-   areturn
+    .line 6
+    .var 0 is this Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/elements Ljava/util/List;
+    areturn
 L_0005:
 .end method
 
 .method public <init> (Lcom/anatawa12/jasm/tree/JasmHeader;Lcom/anatawa12/jasm/tree/ClassHeader;Ljava/util/List;)V
-   .signature "(Lcom/anatawa12/jasm/tree/JasmHeader;Lcom/anatawa12/jasm/tree/ClassHeader;Ljava/util/List<+Lcom/anatawa12/jasm/tree/ClassElement;>;)V"
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 4
+    .signature "(Lcom/anatawa12/jasm/tree/JasmHeader;Lcom/anatawa12/jasm/tree/ClassHeader;Ljava/util/List<+Lcom/anatawa12/jasm/tree/ClassElement;>;)V"
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 4
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_001a
-   .var 1 is header Lcom/anatawa12/jasm/tree/JasmHeader; from L_0000 to L_001a
-   .var 2 is classHeader Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_001a
-   .var 3 is elements Ljava/util/List; from L_0000 to L_001a
-   aload 1
-   ldc "header"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 2
-   ldc "classHeader"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 3
-   ldc "elements"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_001a
+    .var 1 is header Lcom/anatawa12/jasm/tree/JasmHeader; from L_0000 to L_001a
+    .var 2 is classHeader Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_001a
+    .var 3 is elements Ljava/util/List; from L_0000 to L_001a
+    aload 1
+    ldc "header"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 2
+    ldc "classHeader"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 3
+    ldc "elements"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_000a:
-   .line 3
-   aload 0
+    .line 3
+    aload 0
 L_000d:
-   .line 7
-   invokespecial com/anatawa12/jasm/tree/BranchNode/<init> ()V
-   aload 0
-   aload 1
-   putfield com/anatawa12/jasm/tree/JasmFile/header Lcom/anatawa12/jasm/tree/JasmHeader;
-   aload 0
-   aload 2
-   putfield com/anatawa12/jasm/tree/JasmFile/classHeader Lcom/anatawa12/jasm/tree/ClassHeader;
-   aload 0
-   aload 3
-   putfield com/anatawa12/jasm/tree/JasmFile/elements Ljava/util/List;
-   return
+    .line 7
+    invokespecial com/anatawa12/jasm/tree/BranchNode/<init> ()V
+    aload 0
+    aload 1
+    putfield com/anatawa12/jasm/tree/JasmFile/header Lcom/anatawa12/jasm/tree/JasmHeader;
+    aload 0
+    aload 2
+    putfield com/anatawa12/jasm/tree/JasmFile/classHeader Lcom/anatawa12/jasm/tree/ClassHeader;
+    aload 0
+    aload 3
+    putfield com/anatawa12/jasm/tree/JasmFile/elements Ljava/util/List;
+    return
 L_001a:
 .end method
 
 .method public component1 ()Lcom/anatawa12/jasm/tree/JasmHeader;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_0004
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/header Lcom/anatawa12/jasm/tree/JasmHeader;
-   areturn
+    .var 0 is this Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_0004
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/header Lcom/anatawa12/jasm/tree/JasmHeader;
+    areturn
 L_0004:
 .end method
 
 .method public component2 ()Lcom/anatawa12/jasm/tree/ClassHeader;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_0004
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/classHeader Lcom/anatawa12/jasm/tree/ClassHeader;
-   areturn
+    .var 0 is this Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_0004
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/classHeader Lcom/anatawa12/jasm/tree/ClassHeader;
+    areturn
 L_0004:
 .end method
 
 .method public component3 ()Ljava/util/List;
-   .signature "()Ljava/util/List<Lcom/anatawa12/jasm/tree/ClassElement;>;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .signature "()Ljava/util/List<Lcom/anatawa12/jasm/tree/ClassElement;>;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_0004
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/elements Ljava/util/List;
-   areturn
+    .var 0 is this Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_0004
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/elements Ljava/util/List;
+    areturn
 L_0004:
 .end method
 
 .method public copy (Lcom/anatawa12/jasm/tree/JasmHeader;Lcom/anatawa12/jasm/tree/ClassHeader;Ljava/util/List;)Lcom/anatawa12/jasm/tree/JasmFile;
-   .signature "(Lcom/anatawa12/jasm/tree/JasmHeader;Lcom/anatawa12/jasm/tree/ClassHeader;Ljava/util/List<+Lcom/anatawa12/jasm/tree/ClassElement;>;)Lcom/anatawa12/jasm/tree/JasmFile;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 5
-   .limit local 4
+    .signature "(Lcom/anatawa12/jasm/tree/JasmHeader;Lcom/anatawa12/jasm/tree/ClassHeader;Ljava/util/List<+Lcom/anatawa12/jasm/tree/ClassElement;>;)Lcom/anatawa12/jasm/tree/JasmFile;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 5
+    .limit local 4
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_0011
-   .var 1 is header Lcom/anatawa12/jasm/tree/JasmHeader; from L_0000 to L_0011
-   .var 2 is classHeader Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0011
-   .var 3 is elements Ljava/util/List; from L_0000 to L_0011
-   aload 1
-   ldc "header"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 2
-   ldc "classHeader"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 3
-   ldc "elements"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   new com/anatawa12/jasm/tree/JasmFile
-   dup
-   aload 1
-   aload 2
-   aload 3
-   invokespecial com/anatawa12/jasm/tree/JasmFile/<init> (Lcom/anatawa12/jasm/tree/JasmHeader;Lcom/anatawa12/jasm/tree/ClassHeader;Ljava/util/List;)V
-   areturn
+    .var 0 is this Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_0011
+    .var 1 is header Lcom/anatawa12/jasm/tree/JasmHeader; from L_0000 to L_0011
+    .var 2 is classHeader Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0011
+    .var 3 is elements Ljava/util/List; from L_0000 to L_0011
+    aload 1
+    ldc "header"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 2
+    ldc "classHeader"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 3
+    ldc "elements"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    new com/anatawa12/jasm/tree/JasmFile
+    dup
+    aload 1
+    aload 2
+    aload 3
+    invokespecial com/anatawa12/jasm/tree/JasmFile/<init> (Lcom/anatawa12/jasm/tree/JasmHeader;Lcom/anatawa12/jasm/tree/ClassHeader;Ljava/util/List;)V
+    areturn
 L_0011:
 .end method
 
 .method public copy$default (Lcom/anatawa12/jasm/tree/JasmFile;Lcom/anatawa12/jasm/tree/JasmHeader;Lcom/anatawa12/jasm/tree/ClassHeader;Ljava/util/List;ILjava/lang/Object;)Lcom/anatawa12/jasm/tree/JasmFile;
-   .limit stack 4
-   .limit local 6
-   iload 4
-   iconst_1
-   iand
-   ifeq L_0007
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/header Lcom/anatawa12/jasm/tree/JasmHeader;
-   astore 1
+    .limit stack 4
+    .limit local 6
+    iload 4
+    iconst_1
+    iand
+    ifeq L_0007
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/header Lcom/anatawa12/jasm/tree/JasmHeader;
+    astore 1
 L_0007:
-   .stack
-      locals Object com/anatawa12/jasm/tree/JasmFile
-      locals Object com/anatawa12/jasm/tree/JasmHeader
-      locals Object com/anatawa12/jasm/tree/ClassHeader
-      locals Object java/util/List
-      locals Integer
-      locals Object java/lang/Object
-   .end stack
-   iload 4
-   iconst_2
-   iand
-   ifeq L_0010
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/classHeader Lcom/anatawa12/jasm/tree/ClassHeader;
-   astore 2
+    .stack
+        locals Object com/anatawa12/jasm/tree/JasmFile
+        locals Object com/anatawa12/jasm/tree/JasmHeader
+        locals Object com/anatawa12/jasm/tree/ClassHeader
+        locals Object java/util/List
+        locals Integer
+        locals Object java/lang/Object
+    .end stack
+    iload 4
+    iconst_2
+    iand
+    ifeq L_0010
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/classHeader Lcom/anatawa12/jasm/tree/ClassHeader;
+    astore 2
 L_0010:
-   .stack use locals
-   .end stack
-   iload 4
-   iconst_4
-   iand
-   ifeq L_0019
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/elements Ljava/util/List;
-   astore 3
+    .stack use locals
+    .end stack
+    iload 4
+    iconst_4
+    iand
+    ifeq L_0019
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/elements Ljava/util/List;
+    astore 3
 L_0019:
-   .stack use locals
-   .end stack
-   aload 0
-   aload 1
-   aload 2
-   aload 3
-   invokevirtual com/anatawa12/jasm/tree/JasmFile/copy (Lcom/anatawa12/jasm/tree/JasmHeader;Lcom/anatawa12/jasm/tree/ClassHeader;Ljava/util/List;)Lcom/anatawa12/jasm/tree/JasmFile;
-   areturn
+    .stack use locals
+    .end stack
+    aload 0
+    aload 1
+    aload 2
+    aload 3
+    invokevirtual com/anatawa12/jasm/tree/JasmFile/copy (Lcom/anatawa12/jasm/tree/JasmHeader;Lcom/anatawa12/jasm/tree/ClassHeader;Ljava/util/List;)Lcom/anatawa12/jasm/tree/JasmFile;
+    areturn
 .end method
 
 .method public toString ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 1
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   ldc "JasmFile(header="
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/header Lcom/anatawa12/jasm/tree/JasmHeader;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
-   ldc ", classHeader="
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/classHeader Lcom/anatawa12/jasm/tree/ClassHeader;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
-   ldc ", elements="
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/elements Ljava/util/List;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
-   ldc ")"
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   areturn
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 1
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    ldc "JasmFile(header="
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/header Lcom/anatawa12/jasm/tree/JasmHeader;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    ldc ", classHeader="
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/classHeader Lcom/anatawa12/jasm/tree/ClassHeader;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    ldc ", elements="
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/elements Ljava/util/List;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    ldc ")"
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    areturn
 .end method
 
 .method public hashCode ()I
-   .limit stack 3
-   .limit local 1
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/header Lcom/anatawa12/jasm/tree/JasmHeader;
-   dup
-   ifnull L_0006
-   invokevirtual java/lang/Object/hashCode ()I
-   goto L_000a
+    .limit stack 3
+    .limit local 1
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/header Lcom/anatawa12/jasm/tree/JasmHeader;
+    dup
+    ifnull L_0006
+    invokevirtual java/lang/Object/hashCode ()I
+    goto L_000a
 L_0006:
-   .stack
-      locals Object com/anatawa12/jasm/tree/JasmFile
-      stacks Object com/anatawa12/jasm/tree/JasmHeader
-   .end stack
-   pop
-   iconst_0
+    .stack
+        locals Object com/anatawa12/jasm/tree/JasmFile
+        stacks Object com/anatawa12/jasm/tree/JasmHeader
+    .end stack
+    pop
+    iconst_0
 L_000a:
-   .stack use locals
-      stacks Integer
-   .end stack
-   bipush 31
-   imul
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/classHeader Lcom/anatawa12/jasm/tree/ClassHeader;
-   dup
-   ifnull L_0014
-   invokevirtual java/lang/Object/hashCode ()I
-   goto L_0018
+    .stack use locals
+        stacks Integer
+    .end stack
+    bipush 31
+    imul
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/classHeader Lcom/anatawa12/jasm/tree/ClassHeader;
+    dup
+    ifnull L_0014
+    invokevirtual java/lang/Object/hashCode ()I
+    goto L_0018
 L_0014:
-   .stack use locals
-      stacks Integer
-      stacks Object com/anatawa12/jasm/tree/ClassHeader
-   .end stack
-   pop
-   iconst_0
+    .stack use locals
+        stacks Integer
+        stacks Object com/anatawa12/jasm/tree/ClassHeader
+    .end stack
+    pop
+    iconst_0
 L_0018:
-   .stack use locals
-      stacks Integer
-      stacks Integer
-   .end stack
-   iadd
-   bipush 31
-   imul
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/elements Ljava/util/List;
-   dup
-   ifnull L_0023
-   invokevirtual java/lang/Object/hashCode ()I
-   goto L_0027
+    .stack use locals
+        stacks Integer
+        stacks Integer
+    .end stack
+    iadd
+    bipush 31
+    imul
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/elements Ljava/util/List;
+    dup
+    ifnull L_0023
+    invokevirtual java/lang/Object/hashCode ()I
+    goto L_0027
 L_0023:
-   .stack use locals
-      stacks Integer
-      stacks Object java/util/List
-   .end stack
-   pop
-   iconst_0
+    .stack use locals
+        stacks Integer
+        stacks Object java/util/List
+    .end stack
+    pop
+    iconst_0
 L_0027:
-   .stack use locals
-      stacks Integer
-      stacks Integer
-   .end stack
-   iadd
-   ireturn
+    .stack use locals
+        stacks Integer
+        stacks Integer
+    .end stack
+    iadd
+    ireturn
 .end method
 
 .method public equals (Ljava/lang/Object;)Z
-   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
-   .end annotation
-   .limit stack 2
-   .limit local 3
-   aload 0
-   aload 1
-   if_acmpeq L_001b
-   aload 1
-   instanceof com/anatawa12/jasm/tree/JasmFile
-   ifeq L_001f
-   aload 1
-   checkcast com/anatawa12/jasm/tree/JasmFile
-   astore 2
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/header Lcom/anatawa12/jasm/tree/JasmHeader;
-   aload 2
-   getfield com/anatawa12/jasm/tree/JasmFile/header Lcom/anatawa12/jasm/tree/JasmHeader;
-   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
-   ifeq L_001f
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/classHeader Lcom/anatawa12/jasm/tree/ClassHeader;
-   aload 2
-   getfield com/anatawa12/jasm/tree/JasmFile/classHeader Lcom/anatawa12/jasm/tree/ClassHeader;
-   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
-   ifeq L_001f
-   aload 0
-   getfield com/anatawa12/jasm/tree/JasmFile/elements Ljava/util/List;
-   aload 2
-   getfield com/anatawa12/jasm/tree/JasmFile/elements Ljava/util/List;
-   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
-   ifeq L_001f
+    .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+    .end annotation
+    .limit stack 2
+    .limit local 3
+    aload 0
+    aload 1
+    if_acmpeq L_001b
+    aload 1
+    instanceof com/anatawa12/jasm/tree/JasmFile
+    ifeq L_001f
+    aload 1
+    checkcast com/anatawa12/jasm/tree/JasmFile
+    astore 2
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/header Lcom/anatawa12/jasm/tree/JasmHeader;
+    aload 2
+    getfield com/anatawa12/jasm/tree/JasmFile/header Lcom/anatawa12/jasm/tree/JasmHeader;
+    invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+    ifeq L_001f
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/classHeader Lcom/anatawa12/jasm/tree/ClassHeader;
+    aload 2
+    getfield com/anatawa12/jasm/tree/JasmFile/classHeader Lcom/anatawa12/jasm/tree/ClassHeader;
+    invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+    ifeq L_001f
+    aload 0
+    getfield com/anatawa12/jasm/tree/JasmFile/elements Ljava/util/List;
+    aload 2
+    getfield com/anatawa12/jasm/tree/JasmFile/elements Ljava/util/List;
+    invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+    ifeq L_001f
 L_001b:
-   .stack
-      locals Object com/anatawa12/jasm/tree/JasmFile
-      locals Object java/lang/Object
-   .end stack
-   iconst_1
-   ireturn
+    .stack
+        locals Object com/anatawa12/jasm/tree/JasmFile
+        locals Object java/lang/Object
+    .end stack
+    iconst_1
+    ireturn
 L_001f:
-   .stack use locals
-   .end stack
-   iconst_0
-   ireturn
+    .stack use locals
+    .end stack
+    iconst_0
+    ireturn
 .end method
 
 .field private header Lcom/anatawa12/jasm/tree/JasmHeader;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 
 .field private classHeader Lcom/anatawa12/jasm/tree/ClassHeader;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 
 .field private elements Ljava/util/List;
-   .signature "Ljava/util/List<Lcom/anatawa12/jasm/tree/ClassElement;>;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .signature "Ljava/util/List<Lcom/anatawa12/jasm/tree/ClassElement;>;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 

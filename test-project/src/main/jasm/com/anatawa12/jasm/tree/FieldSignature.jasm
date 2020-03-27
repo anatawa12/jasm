@@ -4,213 +4,213 @@
 .super com/anatawa12/jasm/tree/FieldAttributes
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\t\u0010\u0007\u001a\u00020\u0003HÆ\u0003J\u0013\u0010\b\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\t\u001a\u00020\n2\b\u0010\u000b\u001a\u0004\u0018\u00010\u000cHÖ\u0003J\t\u0010\r\u001a\u00020\u000eHÖ\u0001J\t\u0010\u000f\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006¨\u0006\u0010"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/tree/FieldSignature;"
-      s = "Lcom/anatawa12/jasm/tree/FieldAttributes;"
-      s = "signature"
-      s = ""
-      s = "(Ljava/lang/String;)V"
-      s = "getSignature"
-      s = "()Ljava/lang/String;"
-      s = "component1"
-      s = "copy"
-      s = "equals"
-      s = ""
-      s = "other"
-      s = ""
-      s = "hashCode"
-      s = ""
-      s = "toString"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\t\u0010\u0007\u001a\u00020\u0003HÆ\u0003J\u0013\u0010\b\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\t\u001a\u00020\n2\b\u0010\u000b\u001a\u0004\u0018\u00010\u000cHÖ\u0003J\t\u0010\r\u001a\u00020\u000eHÖ\u0001J\t\u0010\u000f\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006¨\u0006\u0010"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/tree/FieldSignature;"
+        s = "Lcom/anatawa12/jasm/tree/FieldAttributes;"
+        s = "signature"
+        s = ""
+        s = "(Ljava/lang/String;)V"
+        s = "getSignature"
+        s = "()Ljava/lang/String;"
+        s = "component1"
+        s = "copy"
+        s = "equals"
+        s = ""
+        s = "other"
+        s = ""
+        s = "hashCode"
+        s = ""
+        s = "toString"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public getSignature ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 5
-   .var 0 is this Lcom/anatawa12/jasm/tree/FieldSignature; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/tree/FieldSignature/signature Ljava/lang/String;
-   areturn
+    .line 5
+    .var 0 is this Lcom/anatawa12/jasm/tree/FieldSignature; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/tree/FieldSignature/signature Ljava/lang/String;
+    areturn
 L_0005:
 .end method
 
 .method public <init> (Ljava/lang/String;)V
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 2
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/tree/FieldSignature; from L_0000 to L_000d
-   .var 1 is signature Ljava/lang/String; from L_0000 to L_000d
-   aload 1
-   ldc "signature"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/tree/FieldSignature; from L_0000 to L_000d
+    .var 1 is signature Ljava/lang/String; from L_0000 to L_000d
+    aload 1
+    ldc "signature"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 5
-   aload 0
-   aconst_null
-   invokespecial com/anatawa12/jasm/tree/FieldAttributes/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-   aload 0
-   aload 1
-   putfield com/anatawa12/jasm/tree/FieldSignature/signature Ljava/lang/String;
-   return
+    .line 5
+    aload 0
+    aconst_null
+    invokespecial com/anatawa12/jasm/tree/FieldAttributes/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    aload 0
+    aload 1
+    putfield com/anatawa12/jasm/tree/FieldSignature/signature Ljava/lang/String;
+    return
 L_000d:
 .end method
 
 .method public component1 ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/tree/FieldSignature; from L_0000 to L_0004
-   aload 0
-   getfield com/anatawa12/jasm/tree/FieldSignature/signature Ljava/lang/String;
-   areturn
+    .var 0 is this Lcom/anatawa12/jasm/tree/FieldSignature; from L_0000 to L_0004
+    aload 0
+    getfield com/anatawa12/jasm/tree/FieldSignature/signature Ljava/lang/String;
+    areturn
 L_0004:
 .end method
 
 .method public copy (Ljava/lang/String;)Lcom/anatawa12/jasm/tree/FieldSignature;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 3
-   .limit local 2
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 3
+    .limit local 2
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/tree/FieldSignature; from L_0000 to L_0009
-   .var 1 is signature Ljava/lang/String; from L_0000 to L_0009
-   aload 1
-   ldc "signature"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   new com/anatawa12/jasm/tree/FieldSignature
-   dup
-   aload 1
-   invokespecial com/anatawa12/jasm/tree/FieldSignature/<init> (Ljava/lang/String;)V
-   areturn
+    .var 0 is this Lcom/anatawa12/jasm/tree/FieldSignature; from L_0000 to L_0009
+    .var 1 is signature Ljava/lang/String; from L_0000 to L_0009
+    aload 1
+    ldc "signature"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    new com/anatawa12/jasm/tree/FieldSignature
+    dup
+    aload 1
+    invokespecial com/anatawa12/jasm/tree/FieldSignature/<init> (Ljava/lang/String;)V
+    areturn
 L_0009:
 .end method
 
 .method public copy$default (Lcom/anatawa12/jasm/tree/FieldSignature;Ljava/lang/String;ILjava/lang/Object;)Lcom/anatawa12/jasm/tree/FieldSignature;
-   .limit stack 2
-   .limit local 4
-   iload 2
-   iconst_1
-   iand
-   ifeq L_0007
-   aload 0
-   getfield com/anatawa12/jasm/tree/FieldSignature/signature Ljava/lang/String;
-   astore 1
+    .limit stack 2
+    .limit local 4
+    iload 2
+    iconst_1
+    iand
+    ifeq L_0007
+    aload 0
+    getfield com/anatawa12/jasm/tree/FieldSignature/signature Ljava/lang/String;
+    astore 1
 L_0007:
-   .stack
-      locals Object com/anatawa12/jasm/tree/FieldSignature
-      locals Object java/lang/String
-      locals Integer
-      locals Object java/lang/Object
-   .end stack
-   aload 0
-   aload 1
-   invokevirtual com/anatawa12/jasm/tree/FieldSignature/copy (Ljava/lang/String;)Lcom/anatawa12/jasm/tree/FieldSignature;
-   areturn
+    .stack
+        locals Object com/anatawa12/jasm/tree/FieldSignature
+        locals Object java/lang/String
+        locals Integer
+        locals Object java/lang/Object
+    .end stack
+    aload 0
+    aload 1
+    invokevirtual com/anatawa12/jasm/tree/FieldSignature/copy (Ljava/lang/String;)Lcom/anatawa12/jasm/tree/FieldSignature;
+    areturn
 .end method
 
 .method public toString ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 1
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   ldc "FieldSignature(signature="
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 0
-   getfield com/anatawa12/jasm/tree/FieldSignature/signature Ljava/lang/String;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   ldc ")"
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   areturn
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 1
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    ldc "FieldSignature(signature="
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 0
+    getfield com/anatawa12/jasm/tree/FieldSignature/signature Ljava/lang/String;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    ldc ")"
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    areturn
 .end method
 
 .method public hashCode ()I
-   .limit stack 2
-   .limit local 1
-   aload 0
-   getfield com/anatawa12/jasm/tree/FieldSignature/signature Ljava/lang/String;
-   dup
-   ifnull L_0006
-   invokevirtual java/lang/Object/hashCode ()I
-   goto L_000a
+    .limit stack 2
+    .limit local 1
+    aload 0
+    getfield com/anatawa12/jasm/tree/FieldSignature/signature Ljava/lang/String;
+    dup
+    ifnull L_0006
+    invokevirtual java/lang/Object/hashCode ()I
+    goto L_000a
 L_0006:
-   .stack
-      locals Object com/anatawa12/jasm/tree/FieldSignature
-      stacks Object java/lang/String
-   .end stack
-   pop
-   iconst_0
+    .stack
+        locals Object com/anatawa12/jasm/tree/FieldSignature
+        stacks Object java/lang/String
+    .end stack
+    pop
+    iconst_0
 L_000a:
-   .stack use locals
-      stacks Integer
-   .end stack
-   ireturn
+    .stack use locals
+        stacks Integer
+    .end stack
+    ireturn
 .end method
 
 .method public equals (Ljava/lang/Object;)Z
-   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
-   .end annotation
-   .limit stack 2
-   .limit local 3
-   aload 0
-   aload 1
-   if_acmpeq L_000f
-   aload 1
-   instanceof com/anatawa12/jasm/tree/FieldSignature
-   ifeq L_0013
-   aload 1
-   checkcast com/anatawa12/jasm/tree/FieldSignature
-   astore 2
-   aload 0
-   getfield com/anatawa12/jasm/tree/FieldSignature/signature Ljava/lang/String;
-   aload 2
-   getfield com/anatawa12/jasm/tree/FieldSignature/signature Ljava/lang/String;
-   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
-   ifeq L_0013
+    .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+    .end annotation
+    .limit stack 2
+    .limit local 3
+    aload 0
+    aload 1
+    if_acmpeq L_000f
+    aload 1
+    instanceof com/anatawa12/jasm/tree/FieldSignature
+    ifeq L_0013
+    aload 1
+    checkcast com/anatawa12/jasm/tree/FieldSignature
+    astore 2
+    aload 0
+    getfield com/anatawa12/jasm/tree/FieldSignature/signature Ljava/lang/String;
+    aload 2
+    getfield com/anatawa12/jasm/tree/FieldSignature/signature Ljava/lang/String;
+    invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+    ifeq L_0013
 L_000f:
-   .stack
-      locals Object com/anatawa12/jasm/tree/FieldSignature
-      locals Object java/lang/Object
-   .end stack
-   iconst_1
-   ireturn
+    .stack
+        locals Object com/anatawa12/jasm/tree/FieldSignature
+        locals Object java/lang/Object
+    .end stack
+    iconst_1
+    ireturn
 L_0013:
-   .stack use locals
-   .end stack
-   iconst_0
-   ireturn
+    .stack use locals
+    .end stack
+    iconst_0
+    ireturn
 .end method
 
 .field private signature Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 

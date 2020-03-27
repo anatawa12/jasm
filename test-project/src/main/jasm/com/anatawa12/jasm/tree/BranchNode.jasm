@@ -4,99 +4,99 @@
 .super com/anatawa12/jasm/tree/Node
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0007\b&\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002R>\u0010\u0006\u001a\u000e\u0012\n\b\u0001\u0012\u0006\u0012\u0002\b\u00030\u00050\u00042\u0012\u0010\u0003\u001a\u000e\u0012\n\b\u0001\u0012\u0006\u0012\u0002\b\u00030\u00050\u0004@PX\u0096.¢\u0006\u0010\n\u0002\u0010\u000b\u001a\u0004\b\u0007\u0010\b\"\u0004\b\t\u0010\n¨\u0006\u000c"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/tree/BranchNode;"
-      s = "Lcom/anatawa12/jasm/tree/Node;"
-      s = "()V"
-      s = "<set-?>"
-      s = ""
-      s = "Lcom/anatawa12/jasm/tree/Token;"
-      s = "tokens"
-      s = "getTokens"
-      s = "()[Lcom/anatawa12/jasm/tree/Token;"
-      s = "setTokens\$jasm"
-      s = "([Lcom/anatawa12/jasm/tree/Token;)V"
-      s = "[Lcom/anatawa12/jasm/tree/Token;"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0007\b&\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002R>\u0010\u0006\u001a\u000e\u0012\n\b\u0001\u0012\u0006\u0012\u0002\b\u00030\u00050\u00042\u0012\u0010\u0003\u001a\u000e\u0012\n\b\u0001\u0012\u0006\u0012\u0002\b\u00030\u00050\u0004@PX\u0096.¢\u0006\u0010\n\u0002\u0010\u000b\u001a\u0004\b\u0007\u0010\b\"\u0004\b\t\u0010\n¨\u0006\u000c"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/tree/BranchNode;"
+        s = "Lcom/anatawa12/jasm/tree/Node;"
+        s = "()V"
+        s = "<set-?>"
+        s = ""
+        s = "Lcom/anatawa12/jasm/tree/Token;"
+        s = "tokens"
+        s = "getTokens"
+        s = "()[Lcom/anatawa12/jasm/tree/Token;"
+        s = "setTokens\$jasm"
+        s = "([Lcom/anatawa12/jasm/tree/Token;)V"
+        s = "[Lcom/anatawa12/jasm/tree/Token;"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public getTokens "()[Lcom/anatawa12/jasm/tree/Token;"
-   .signature "()[Lcom/anatawa12/jasm/tree/Token<*>;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 1
+    .signature "()[Lcom/anatawa12/jasm/tree/Token<*>;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 1
 L_0000:
-   .line 4
-   .var 0 is this Lcom/anatawa12/jasm/tree/BranchNode; from L_0000 to L_000b
-   aload 0
-   getfield com/anatawa12/jasm/tree/BranchNode/tokens "[Lcom/anatawa12/jasm/tree/Token;"
-   dup
-   ifnonnull L_0008
-   ldc "tokens"
-   invokestatic kotlin/jvm/internal/Intrinsics/throwUninitializedPropertyAccessException (Ljava/lang/String;)V
+    .line 4
+    .var 0 is this Lcom/anatawa12/jasm/tree/BranchNode; from L_0000 to L_000b
+    aload 0
+    getfield com/anatawa12/jasm/tree/BranchNode/tokens "[Lcom/anatawa12/jasm/tree/Token;"
+    dup
+    ifnonnull L_0008
+    ldc "tokens"
+    invokestatic kotlin/jvm/internal/Intrinsics/throwUninitializedPropertyAccessException (Ljava/lang/String;)V
 L_0008:
-   .stack
-      locals Object com/anatawa12/jasm/tree/BranchNode
-      stacks Object "[Lcom/anatawa12/jasm/tree/Token;"
-   .end stack
-   areturn
+    .stack
+        locals Object com/anatawa12/jasm/tree/BranchNode
+        stacks Object "[Lcom/anatawa12/jasm/tree/Token;"
+    .end stack
+    areturn
 L_000b:
 .end method
 
 .method public setTokens$jasm "([Lcom/anatawa12/jasm/tree/Token;)V"
-   .signature "([Lcom/anatawa12/jasm/tree/Token<*>;)V"
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 2
+    .signature "([Lcom/anatawa12/jasm/tree/Token<*>;)V"
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/tree/BranchNode; from L_0000 to L_000a
-   .var 1 is "<set-?>" "[Lcom/anatawa12/jasm/tree/Token;" from L_0000 to L_000a
-   aload 1
-   ldc "<set-?>"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/tree/BranchNode; from L_0000 to L_000a
+    .var 1 is "<set-?>" "[Lcom/anatawa12/jasm/tree/Token;" from L_0000 to L_000a
+    aload 1
+    ldc "<set-?>"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 4
-   aload 0
-   aload 1
-   putfield com/anatawa12/jasm/tree/BranchNode/tokens "[Lcom/anatawa12/jasm/tree/Token;"
-   return
+    .line 4
+    aload 0
+    aload 1
+    putfield com/anatawa12/jasm/tree/BranchNode/tokens "[Lcom/anatawa12/jasm/tree/Token;"
+    return
 L_000a:
 .end method
 
 .method public <init> ()V
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 3
-   .var 0 is this Lcom/anatawa12/jasm/tree/BranchNode; from L_0000 to L_0007
-   aload 0
+    .line 3
+    .var 0 is this Lcom/anatawa12/jasm/tree/BranchNode; from L_0000 to L_0007
+    aload 0
 L_0003:
-   .line 3
-   invokespecial com/anatawa12/jasm/tree/Node/<init> ()V
-   return
+    .line 3
+    invokespecial com/anatawa12/jasm/tree/Node/<init> ()V
+    return
 L_0007:
 .end method
 
 .field public tokens "[Lcom/anatawa12/jasm/tree/Token;"
-   .signature "[Lcom/anatawa12/jasm/tree/Token<*>;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .signature "[Lcom/anatawa12/jasm/tree/Token<*>;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 

@@ -6,120 +6,120 @@
 .inner public com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl inner GrammarScopeImpl outer com/anatawa12/jasm/parser/AbstractParser
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b&\u0018\u00002\u00020\u0001:\u0001\rB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J#\u0010\u0007\u001a\u0002H\b\"\b\b\u0000\u0010\b*\u00020\t2\u000c\u0010\n\u001a\b\u0012\u0004\u0012\u0002H\b0\u000b¢\u0006\u0002\u0010\u000cR\u0014\u0010\u0002\u001a\u00020\u0003X\u0084\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006¨\u0006\u000e"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/parser/AbstractParser;"
-      s = ""
-      s = "lex"
-      s = "Lcom/anatawa12/jasm/parser/ILexer;"
-      s = "(Lcom/anatawa12/jasm/parser/ILexer;)V"
-      s = "getLex"
-      s = "()Lcom/anatawa12/jasm/parser/ILexer;"
-      s = "run"
-      s = "T"
-      s = "Lcom/anatawa12/jasm/tree/Node;"
-      s = "grammar"
-      s = "Lcom/anatawa12/jasm/parser/Grammar;"
-      s = "(Lcom/anatawa12/jasm/parser/Grammar;)Lcom/anatawa12/jasm/tree/Node;"
-      s = "GrammarScopeImpl"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b&\u0018\u00002\u00020\u0001:\u0001\rB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J#\u0010\u0007\u001a\u0002H\b\"\b\b\u0000\u0010\b*\u00020\t2\u000c\u0010\n\u001a\b\u0012\u0004\u0012\u0002H\b0\u000b¢\u0006\u0002\u0010\u000cR\u0014\u0010\u0002\u001a\u00020\u0003X\u0084\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006¨\u0006\u000e"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/parser/AbstractParser;"
+        s = ""
+        s = "lex"
+        s = "Lcom/anatawa12/jasm/parser/ILexer;"
+        s = "(Lcom/anatawa12/jasm/parser/ILexer;)V"
+        s = "getLex"
+        s = "()Lcom/anatawa12/jasm/parser/ILexer;"
+        s = "run"
+        s = "T"
+        s = "Lcom/anatawa12/jasm/tree/Node;"
+        s = "grammar"
+        s = "Lcom/anatawa12/jasm/parser/Grammar;"
+        s = "(Lcom/anatawa12/jasm/parser/Grammar;)Lcom/anatawa12/jasm/tree/Node;"
+        s = "GrammarScopeImpl"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public run (Lcom/anatawa12/jasm/parser/Grammar;)Lcom/anatawa12/jasm/tree/Node;
-   .signature "<T:Lcom/anatawa12/jasm/tree/Node;>(Lcom/anatawa12/jasm/parser/Grammar<TT;>;)TT;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 3
-   .limit local 7
+    .signature "<T:Lcom/anatawa12/jasm/tree/Node;>(Lcom/anatawa12/jasm/parser/Grammar<TT;>;)TT;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 3
+    .limit local 7
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParser; from L_0000 to L_001d
-   .var 1 is grammar Lcom/anatawa12/jasm/parser/Grammar; from L_0000 to L_001d
-   aload 1
-   ldc "grammar"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParser; from L_0000 to L_001d
+    .var 1 is grammar Lcom/anatawa12/jasm/parser/Grammar; from L_0000 to L_001d
+    aload 1
+    ldc "grammar"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 53
-   new com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl
-   dup
-   aload 0
-   invokespecial com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/<init> (Lcom/anatawa12/jasm/parser/AbstractParser;)V
-   astore 2
-   iconst_0
-   istore 3
-   iconst_0
-   istore 4
-   aload 2
-   astore 5
+    .line 53
+    new com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl
+    dup
+    aload 0
+    invokespecial com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/<init> (Lcom/anatawa12/jasm/parser/AbstractParser;)V
+    astore 2
+    iconst_0
+    istore 3
+    iconst_0
+    istore 4
+    aload 2
+    astore 5
 L_0011:
-   .var 5 is $this$run Lcom/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl; from L_0011 to L_0019
-   iconst_0
-   istore 6
+    .var 5 is $this$run Lcom/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl; from L_0011 to L_0019
+    iconst_0
+    istore 6
 L_0014:
-   .line 53
-   .var 6 is "\$i\$a\$-run-AbstractParser\$run\$1" I from L_0014 to L_0019
-   aload 5
-   aload 1
-   invokevirtual com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/invoke (Lcom/anatawa12/jasm/parser/Grammar;)Lcom/anatawa12/jasm/tree/Node;
+    .line 53
+    .var 6 is "\$i\$a\$-run-AbstractParser\$run\$1" I from L_0014 to L_0019
+    aload 5
+    aload 1
+    invokevirtual com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/invoke (Lcom/anatawa12/jasm/parser/Grammar;)Lcom/anatawa12/jasm/tree/Node;
 L_0019:
-   .line 53
-   areturn
+    .line 53
+    areturn
 L_001d:
 .end method
 
 .method protected getLex ()Lcom/anatawa12/jasm/parser/ILexer;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 25
-   .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParser; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/parser/AbstractParser/lex Lcom/anatawa12/jasm/parser/ILexer;
-   areturn
+    .line 25
+    .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParser; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/parser/AbstractParser/lex Lcom/anatawa12/jasm/parser/ILexer;
+    areturn
 L_0005:
 .end method
 
 .method public <init> (Lcom/anatawa12/jasm/parser/ILexer;)V
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 2
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParser; from L_0000 to L_000c
-   .var 1 is lex Lcom/anatawa12/jasm/parser/ILexer; from L_0000 to L_000c
-   aload 1
-   ldc "lex"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParser; from L_0000 to L_000c
+    .var 1 is lex Lcom/anatawa12/jasm/parser/ILexer; from L_0000 to L_000c
+    aload 1
+    ldc "lex"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 25
-   aload 0
-   invokespecial java/lang/Object/<init> ()V
-   aload 0
-   aload 1
-   putfield com/anatawa12/jasm/parser/AbstractParser/lex Lcom/anatawa12/jasm/parser/ILexer;
-   return
+    .line 25
+    aload 0
+    invokespecial java/lang/Object/<init> ()V
+    aload 0
+    aload 1
+    putfield com/anatawa12/jasm/parser/AbstractParser/lex Lcom/anatawa12/jasm/parser/ILexer;
+    return
 L_000c:
 .end method
 
 .field private lex Lcom/anatawa12/jasm/parser/ILexer;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 

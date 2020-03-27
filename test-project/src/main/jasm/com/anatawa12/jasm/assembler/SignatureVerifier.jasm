@@ -5,2718 +5,2727 @@
 .debug "SMAP\nSignatureVerifier.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SignatureVerifier.kt\ncom/anatawa12/jasm/assembler/SignatureVerifier\n*L\n1#1,242:1\n239#1,2:243\n239#1,2:245\n239#1,2:247\n239#1,2:249\n239#1,2:251\n239#1,2:253\n239#1,2:255\n239#1,2:257\n239#1,2:259\n239#1,2:261\n239#1,2:263\n239#1,2:265\n239#1,2:267\n239#1,2:269\n239#1,2:271\n239#1,2:273\n239#1,2:275\n239#1,2:277\n239#1,2:279\n239#1,2:281\n239#1,2:283\n239#1,2:285\n239#1,2:287\n239#1,2:289\n239#1,2:291\n239#1,2:293\n239#1,2:295\n239#1,2:297\n239#1,2:299\n239#1,2:301\n239#1,2:303\n239#1,2:305\n239#1,2:307\n*E\n*S KotlinDebug\n*F\n+ 1 SignatureVerifier.kt\ncom/anatawa12/jasm/assembler/SignatureVerifier\n*L\n41#1,2:243\n48#1,2:245\n53#1,2:247\n73#1,2:249\n74#1,2:251\n75#1,2:253\n81#1,2:255\n84#1,2:257\n90#1,2:259\n91#1,2:261\n97#1,2:263\n111#1,2:265\n117#1,2:267\n123#1,2:269\n130#1,2:271\n143#1,2:273\n149#1,2:275\n150#1,2:277\n152#1,2:279\n158#1,2:281\n164#1,2:283\n173#1,2:285\n176#1,2:287\n179#1,2:289\n181#1,2:291\n188#1,2:293\n189#1,2:295\n196#1,2:297\n204#1,2:299\n211#1,2:301\n218#1,2:303\n225#1,2:305\n232#1,2:307\n*E\n"
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000<\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0007\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000c\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u001d\n\u0002\u0018\u0002\n\u0002\u0010\u0001\n\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0006\u0010\r\u001a\u00020\u000eJ\u0006\u0010\u000f\u001a\u00020\u000eJ\u0006\u0010\u0010\u001a\u00020\u000eJ\u0006\u0010\u0011\u001a\u00020\u0012J\u0006\u0010\u0013\u001a\u00020\u0012J\u0006\u0010\u0014\u001a\u00020\u000eJ\u0006\u0010\u0015\u001a\u00020\u000eJ\u0006\u0010\u0016\u001a\u00020\u0017J\u0006\u0010\u0018\u001a\u00020\u000eJ\u0006\u0010\u0019\u001a\u00020\u000eJ\u0006\u0010\u001a\u001a\u00020\u000eJ\u0006\u0010\u001b\u001a\u00020\u000eJ\u0006\u0010\u001c\u001a\u00020\u000eJ\u0006\u0010\u001d\u001a\u00020\u000eJ\u0006\u0010\u001e\u001a\u00020\u000eJ\u0006\u0010\u001f\u001a\u00020\u000eJ\u0006\u0010 \u001a\u00020\u000eJ\u0006\u0010!\u001a\u00020\u000eJ\u0006\u0010\"\u001a\u00020\u000eJ\u0006\u0010#\u001a\u00020\u000eJ\u0006\u0010\$\u001a\u00020\u000eJ\u0006\u0010%\u001a\u00020\u000eJ\u0006\u0010&\u001a\u00020\u000eJ\u0006\u0010\'\u001a\u00020\u000eJ\u0006\u0010(\u001a\u00020\u000eJ\u0006\u0010)\u001a\u00020\u000eJ\u0006\u0010*\u001a\u00020\u000eJ\u0006\u0010+\u001a\u00020\u000eJ\u0006\u0010,\u001a\u00020\u000eJ\u0006\u0010-\u001a\u00020\u000eJ\u0006\u0010.\u001a\u00020\u000eJ\u0006\u0010/\u001a\u00020\u000eJ\u0006\u00100\u001a\u00020\u000eJ\u0006\u00101\u001a\u00020\u000eJ\u0006\u00102\u001a\u00020\u000eJ\u001b\u00103\u001a\u00020\u0017*\u00020\u000e2\u000c\u00104\u001a\b\u0012\u0004\u0012\u00020605H\u0082\bR\u001a\u0010\u0005\u001a\u00020\u0006X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0007\u0010\b\"\u0004\b\t\u0010\nR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\u000c¨\u00067"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/assembler/SignatureVerifier;"
-      s = ""
-      s = "signature"
-      s = ""
-      s = "(Ljava/lang/String;)V"
-      s = "index"
-      s = ""
-      s = "getIndex"
-      s = "()I"
-      s = "setIndex"
-      s = "(I)V"
-      s = "getSignature"
-      s = "()Ljava/lang/String;"
-      s = "classSignature"
-      s = ""
-      s = "fieldDescriptor"
-      s = "fieldSignature"
-      s = "get"
-      s = ""
-      s = "getAndNext"
-      s = "methodDescriptor"
-      s = "methodSignature"
-      s = "next"
-      s = ""
-      s = "readArrayType"
-      s = "readArrayTypeSignature"
-      s = "readBaseType"
-      s = "readClassBound"
-      s = "readClassSignature"
-      s = "readClassTypeSignature"
-      s = "readClassTypeSignatureSuffix"
-      s = "readFieldDescriptor"
-      s = "readFieldSignature"
-      s = "readFieldType"
-      s = "readIdentifier"
-      s = "readInterfaceBound"
-      s = "readInternalName"
-      s = "readJavaTypeSignature"
-      s = "readMethodDescriptor"
-      s = "readMethodSignature"
-      s = "readObjectType"
-      s = "readReferenceTypeSignature"
-      s = "readSimpleClassTypeSignature"
-      s = "readSuperclassSignature"
-      s = "readSuperinterfaceSignature"
-      s = "readThrowsSignature"
-      s = "readTypeArgument"
-      s = "readTypeArguments"
-      s = "readTypeParameter"
-      s = "readTypeParameters"
-      s = "readTypeVariableSignature"
-      s = "ifFalse"
-      s = "block"
-      s = "Lkotlin/Function0;"
-      s = ""
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000<\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0007\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u000c\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u001d\n\u0002\u0018\u0002\n\u0002\u0010\u0001\n\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0006\u0010\r\u001a\u00020\u000eJ\u0006\u0010\u000f\u001a\u00020\u000eJ\u0006\u0010\u0010\u001a\u00020\u000eJ\u0006\u0010\u0011\u001a\u00020\u0012J\u0006\u0010\u0013\u001a\u00020\u0012J\u0006\u0010\u0014\u001a\u00020\u000eJ\u0006\u0010\u0015\u001a\u00020\u000eJ\u0006\u0010\u0016\u001a\u00020\u0017J\u0006\u0010\u0018\u001a\u00020\u000eJ\u0006\u0010\u0019\u001a\u00020\u000eJ\u0006\u0010\u001a\u001a\u00020\u000eJ\u0006\u0010\u001b\u001a\u00020\u000eJ\u0006\u0010\u001c\u001a\u00020\u000eJ\u0006\u0010\u001d\u001a\u00020\u000eJ\u0006\u0010\u001e\u001a\u00020\u000eJ\u0006\u0010\u001f\u001a\u00020\u000eJ\u0006\u0010 \u001a\u00020\u000eJ\u0006\u0010!\u001a\u00020\u000eJ\u0006\u0010\"\u001a\u00020\u000eJ\u0006\u0010#\u001a\u00020\u000eJ\u0006\u0010\$\u001a\u00020\u000eJ\u0006\u0010%\u001a\u00020\u000eJ\u0006\u0010&\u001a\u00020\u000eJ\u0006\u0010\'\u001a\u00020\u000eJ\u0006\u0010(\u001a\u00020\u000eJ\u0006\u0010)\u001a\u00020\u000eJ\u0006\u0010*\u001a\u00020\u000eJ\u0006\u0010+\u001a\u00020\u000eJ\u0006\u0010,\u001a\u00020\u000eJ\u0006\u0010-\u001a\u00020\u000eJ\u0006\u0010.\u001a\u00020\u000eJ\u0006\u0010/\u001a\u00020\u000eJ\u0006\u00100\u001a\u00020\u000eJ\u0006\u00101\u001a\u00020\u000eJ\u0006\u00102\u001a\u00020\u000eJ\u001b\u00103\u001a\u00020\u0017*\u00020\u000e2\u000c\u00104\u001a\b\u0012\u0004\u0012\u00020605H\u0082\bR\u001a\u0010\u0005\u001a\u00020\u0006X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0007\u0010\b\"\u0004\b\t\u0010\nR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\u000c¨\u00067"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/assembler/SignatureVerifier;"
+        s = ""
+        s = "signature"
+        s = ""
+        s = "(Ljava/lang/String;)V"
+        s = "index"
+        s = ""
+        s = "getIndex"
+        s = "()I"
+        s = "setIndex"
+        s = "(I)V"
+        s = "getSignature"
+        s = "()Ljava/lang/String;"
+        s = "classSignature"
+        s = ""
+        s = "fieldDescriptor"
+        s = "fieldSignature"
+        s = "get"
+        s = ""
+        s = "getAndNext"
+        s = "methodDescriptor"
+        s = "methodSignature"
+        s = "next"
+        s = ""
+        s = "readArrayType"
+        s = "readArrayTypeSignature"
+        s = "readBaseType"
+        s = "readClassBound"
+        s = "readClassSignature"
+        s = "readClassTypeSignature"
+        s = "readClassTypeSignatureSuffix"
+        s = "readFieldDescriptor"
+        s = "readFieldSignature"
+        s = "readFieldType"
+        s = "readIdentifier"
+        s = "readInterfaceBound"
+        s = "readInternalName"
+        s = "readJavaTypeSignature"
+        s = "readMethodDescriptor"
+        s = "readMethodSignature"
+        s = "readObjectType"
+        s = "readReferenceTypeSignature"
+        s = "readSimpleClassTypeSignature"
+        s = "readSuperclassSignature"
+        s = "readSuperinterfaceSignature"
+        s = "readThrowsSignature"
+        s = "readTypeArgument"
+        s = "readTypeArguments"
+        s = "readTypeParameter"
+        s = "readTypeParameters"
+        s = "readTypeVariableSignature"
+        s = "ifFalse"
+        s = "block"
+        s = "Lkotlin/Function0;"
+        s = ""
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public getIndex ()I
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 7
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
-   ireturn
+    .line 7
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
+    ireturn
 L_0005:
 .end method
 
 .method public setIndex (I)V
-   .limit stack 2
-   .limit local 2
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .line 7
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0006
-   .var 1 is "<set-?>" I from L_0000 to L_0006
-   aload 0
-   iload 1
-   putfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
-   return
+    .line 7
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0006
+    .var 1 is "<set-?>" I from L_0000 to L_0006
+    aload 0
+    iload 1
+    putfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
+    return
 L_0006:
 .end method
 
 .method public get ()C
-   .limit stack 2
-   .limit local 1
+    .limit stack 2
+    .limit local 1
 L_0000:
-   .line 8
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0008
-   aload 0
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
-   aload 0
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
-   invokevirtual java/lang/String/charAt (I)C
-   ireturn
+    .line 8
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0008
+    aload 0
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
+    aload 0
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
+    invokevirtual java/lang/String/charAt (I)C
+    ireturn
 L_0008:
 .end method
 
 .method public getAndNext ()C
-   .limit stack 4
-   .limit local 2
+    .limit stack 4
+    .limit local 2
 L_0000:
-   .line 9
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_000f
-   aload 0
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
-   aload 0
-   dup
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
-   dup
-   istore 1
-   iconst_1
-   iadd
-   putfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
-   iload 1
-   invokevirtual java/lang/String/charAt (I)C
-   ireturn
+    .line 9
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_000f
+    aload 0
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
+    aload 0
+    dup
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
+    dup
+    istore 1
+    iconst_1
+    iadd
+    putfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
+    iload 1
+    invokevirtual java/lang/String/charAt (I)C
+    ireturn
 L_000f:
 .end method
 
 .method public next ()V
-   .limit stack 3
-   .limit local 2
+    .limit stack 3
+    .limit local 2
 L_0000:
-   .line 10
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_000b
-   aload 0
-   dup
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
-   dup
-   istore 1
-   iconst_1
-   iadd
-   putfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
-   return
+    .line 10
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_000b
+    aload 0
+    dup
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
+    dup
+    istore 1
+    iconst_1
+    iadd
+    putfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
+    return
 L_000b:
 .end method
 
 .method public readIdentifier ()Z
-   .limit stack 5
-   .limit local 1
+    .limit stack 5
+    .limit local 1
 L_0000:
-   .line 13
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0022
-   ldc ".;[/<>:"
-   checkcast java/lang/CharSequence
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   iconst_0
-   iconst_2
-   aconst_null
-   invokestatic kotlin/text/StringsKt/contains$default (Ljava/lang/CharSequence;CZILjava/lang/Object;)Z
-   ifeq L_000d
-   iconst_0
-   ireturn
+    .line 13
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0022
+    ldc ".;[/<>:"
+    checkcast java/lang/CharSequence
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    iconst_0
+    iconst_2
+    aconst_null
+    invokestatic kotlin/text/StringsKt/contains$default (Ljava/lang/CharSequence;CZILjava/lang/Object;)Z
+    ifeq L_000d
+    iconst_0
+    ireturn
 L_000d:
-   .line 14
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   ldc ".;[/<>:"
-   checkcast java/lang/CharSequence
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   iconst_0
-   iconst_2
-   aconst_null
-   invokestatic kotlin/text/StringsKt/contains$default (Ljava/lang/CharSequence;CZILjava/lang/Object;)Z
-   ifne L_001d
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   pop
-   goto L_000d
+    .line 14
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    ldc ".;[/<>:"
+    checkcast java/lang/CharSequence
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    iconst_0
+    iconst_2
+    aconst_null
+    invokestatic kotlin/text/StringsKt/contains$default (Ljava/lang/CharSequence;CZILjava/lang/Object;)Z
+    ifne L_001d
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    pop
+    goto L_000d
 L_001d:
-   .line 15
-   .stack use locals
-   .end stack
-   iconst_1
-   ireturn
+    .line 15
+    .stack use locals
+    .end stack
+    iconst_1
+    ireturn
 L_0022:
 .end method
 
 .method public readFieldDescriptor ()Z
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 18
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0005
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readFieldType ()Z
-   ireturn
+    .line 18
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0005
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readFieldType ()Z
+    ireturn
 L_0005:
 .end method
 
 .method public readFieldType ()Z
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 21
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_001a
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   lookupswitch
-      76: L_0005
-      91: L_000b
-      default: L_0011
+    .line 21
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_001a
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    lookupswitch
+        76: L_0005
+        91: L_000b
+        default: L_0011
 L_0005:
-   .line 22
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readObjectType ()Z
-   goto L_0016
+    .line 22
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readObjectType ()Z
+    goto L_0016
 L_000b:
-   .line 23
-   .stack use locals
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readArrayType ()Z
-   goto L_0016
+    .line 23
+    .stack use locals
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readArrayType ()Z
+    goto L_0016
 L_0011:
-   .line 24
-   .stack use locals
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readBaseType ()Z
+    .line 24
+    .stack use locals
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readBaseType ()Z
 L_0016:
-   .line 21
-   .stack use locals
-      stacks Integer
-   .end stack
-   ireturn
+    .line 21
+    .stack use locals
+        stacks Integer
+    .end stack
+    ireturn
 L_001a:
 .end method
 
 .method public readBaseType ()Z
-   .limit stack 5
-   .limit local 1
+    .limit stack 5
+    .limit local 1
 L_0000:
-   .line 29
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_000b
-   ldc "BCDFIJSZ"
-   checkcast java/lang/CharSequence
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   iconst_0
-   iconst_2
-   aconst_null
-   invokestatic kotlin/text/StringsKt/contains$default (Ljava/lang/CharSequence;CZILjava/lang/Object;)Z
-   ireturn
+    .line 29
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_000b
+    ldc "BCDFIJSZ"
+    checkcast java/lang/CharSequence
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    iconst_0
+    iconst_2
+    aconst_null
+    invokestatic kotlin/text/StringsKt/contains$default (Ljava/lang/CharSequence;CZILjava/lang/Object;)Z
+    ireturn
 L_000b:
 .end method
 
 .method public readObjectType ()Z
-   .limit stack 2
-   .limit local 1
+    .limit stack 2
+    .limit local 1
 L_0000:
-   .line 33
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_001b
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 76
-   if_icmpeq L_0008
-   iconst_0
-   ireturn
+    .line 33
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_001b
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 76
+    if_icmpeq L_0008
+    iconst_0
+    ireturn
 L_0008:
-   .line 34
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readInternalName ()Z
-   pop
+    .line 34
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readInternalName ()Z
+    pop
 L_000e:
-   .line 35
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 59
-   if_icmpeq L_0016
-   iconst_0
-   ireturn
+    .line 35
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 59
+    if_icmpeq L_0016
+    iconst_0
+    ireturn
 L_0016:
-   .line 36
-   .stack use locals
-   .end stack
-   iconst_1
-   ireturn
+    .line 36
+    .stack use locals
+    .end stack
+    iconst_1
+    ireturn
 L_001b:
 .end method
 
 .method public readArrayType ()Z
-   .limit stack 2
-   .limit local 5
+    .limit stack 2
+    .limit local 5
 L_0000:
-   .line 40
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0025
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 91
-   if_icmpeq L_0008
-   iconst_0
-   ireturn
+    .line 40
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0025
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 91
+    if_icmpeq L_0008
+    iconst_0
+    ireturn
 L_0008:
-   .line 41
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readFieldType ()Z
-   istore 2
-   astore 1
+    .line 41
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readFieldType ()Z
+    istore 2
+    astore 1
 L_0010:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0010 to L_0021
-   .var 2 is $this$ifFalse$iv Z from L_0010 to L_0021
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0010 to L_0021
+    .var 2 is $this$ifFalse$iv Z from L_0010 to L_0021
+    iconst_0
+    istore 3
 L_0013:
-   .line 243
-   .var 3 is $i$f$ifFalse I from L_0013 to L_0021
-   iload 2
-   ifne L_001d
-   iconst_0
-   istore 4
+    .line 243
+    .var 3 is $i$f$ifFalse I from L_0013 to L_0021
+    iload 2
+    ifne L_001d
+    iconst_0
+    istore 4
 L_0019:
-   .line 41
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readArrayType\$1" I from L_0019 to L_001d
-   iconst_0
-   ireturn
+    .line 41
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readArrayType\$1" I from L_0019 to L_001d
+    iconst_0
+    ireturn
 L_001d:
-   .line 244
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 244
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0021:
-   .line 42
-   iconst_1
-   ireturn
+    .line 42
+    iconst_1
+    ireturn
 L_0025:
 .end method
 
 .method public readMethodDescriptor ()Z
-   .limit stack 2
-   .limit local 5
+    .limit stack 2
+    .limit local 5
 L_0000:
-   .line 46
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_005e
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 40
-   if_icmpeq L_0008
-   iconst_0
-   ireturn
+    .line 46
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_005e
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 40
+    if_icmpeq L_0008
+    iconst_0
+    ireturn
 L_0008:
-   .line 47
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   bipush 41
-   if_icmpeq L_002a
+    .line 47
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    bipush 41
+    if_icmpeq L_002a
 L_000f:
-   .line 48
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readFieldType ()Z
-   istore 2
-   astore 1
+    .line 48
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readFieldType ()Z
+    istore 2
+    astore 1
 L_0016:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0016 to L_0027
-   .var 2 is $this$ifFalse$iv Z from L_0016 to L_0027
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0016 to L_0027
+    .var 2 is $this$ifFalse$iv Z from L_0016 to L_0027
+    iconst_0
+    istore 3
 L_0019:
-   .line 245
-   .var 3 is $i$f$ifFalse I from L_0019 to L_0027
-   iload 2
-   ifne L_0023
-   iconst_0
-   istore 4
+    .line 245
+    .var 3 is $i$f$ifFalse I from L_0019 to L_0027
+    iload 2
+    ifne L_0023
+    iconst_0
+    istore 4
 L_001f:
-   .line 48
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readMethodDescriptor\$1" I from L_001f to L_0023
-   iconst_0
-   ireturn
+    .line 48
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readMethodDescriptor\$1" I from L_001f to L_0023
+    iconst_0
+    ireturn
 L_0023:
-   .line 246
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 246
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0027:
-   .line 47
-   goto L_0008
+    .line 47
+    goto L_0008
 L_002a:
-   .line 49
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 41
-   if_icmpeq L_0033
-   iconst_0
-   ireturn
+    .line 49
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 41
+    if_icmpeq L_0033
+    iconst_0
+    ireturn
 L_0033:
-   .line 50
-   .stack use locals
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   bipush 86
-   if_icmpne L_003f
+    .line 50
+    .stack use locals
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    bipush 86
+    if_icmpne L_003f
 L_003a:
-   .line 51
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/next ()V
-   goto L_0058
+    .line 51
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/next ()V
+    goto L_0058
 L_003f:
-   .line 53
-   .stack use locals
-   .end stack
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readFieldType ()Z
-   istore 2
-   astore 1
+    .line 53
+    .stack use locals
+    .end stack
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readFieldType ()Z
+    istore 2
+    astore 1
 L_0047:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0047 to L_0058
-   .var 2 is $this$ifFalse$iv Z from L_0047 to L_0058
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0047 to L_0058
+    .var 2 is $this$ifFalse$iv Z from L_0047 to L_0058
+    iconst_0
+    istore 3
 L_004a:
-   .line 247
-   .var 3 is $i$f$ifFalse I from L_004a to L_0058
-   iload 2
-   ifne L_0054
-   iconst_0
-   istore 4
+    .line 247
+    .var 3 is $i$f$ifFalse I from L_004a to L_0058
+    iload 2
+    ifne L_0054
+    iconst_0
+    istore 4
 L_0050:
-   .line 53
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readMethodDescriptor\$2" I from L_0050 to L_0054
-   iconst_0
-   ireturn
+    .line 53
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readMethodDescriptor\$2" I from L_0050 to L_0054
+    iconst_0
+    ireturn
 L_0054:
-   .line 248
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 248
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0058:
-   .line 55
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   iconst_1
-   ireturn
+    .line 55
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    iconst_1
+    ireturn
 L_005e:
 .end method
 
 .method public readJavaTypeSignature ()Z
-   .limit stack 5
-   .limit local 1
+    .limit stack 5
+    .limit local 1
 L_0000:
-   .line 59
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0015
-   ldc "L[T"
-   checkcast java/lang/CharSequence
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   iconst_0
-   iconst_2
-   aconst_null
-   invokestatic kotlin/text/StringsKt/contains$default (Ljava/lang/CharSequence;CZILjava/lang/Object;)Z
-   ifeq L_000e
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readReferenceTypeSignature ()Z
-   goto L_0012
+    .line 59
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0015
+    ldc "L[T"
+    checkcast java/lang/CharSequence
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    iconst_0
+    iconst_2
+    aconst_null
+    invokestatic kotlin/text/StringsKt/contains$default (Ljava/lang/CharSequence;CZILjava/lang/Object;)Z
+    ifeq L_000e
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readReferenceTypeSignature ()Z
+    goto L_0012
 L_000e:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readBaseType ()Z
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readBaseType ()Z
 L_0012:
-   .stack use locals
-      stacks Integer
-   .end stack
-   ireturn
+    .stack use locals
+        stacks Integer
+    .end stack
+    ireturn
 L_0015:
 .end method
 
 .method public readReferenceTypeSignature ()Z
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 63
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_001f
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   lookupswitch
-      76: L_0005
-      84: L_000b
-      91: L_0011
-      default: L_0017
+    .line 63
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_001f
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    lookupswitch
+        76: L_0005
+        84: L_000b
+        91: L_0011
+        default: L_0017
 L_0005:
-   .line 64
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readClassTypeSignature ()Z
-   goto L_001b
+    .line 64
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readClassTypeSignature ()Z
+    goto L_001b
 L_000b:
-   .line 65
-   .stack use locals
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readTypeVariableSignature ()Z
-   goto L_001b
+    .line 65
+    .stack use locals
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readTypeVariableSignature ()Z
+    goto L_001b
 L_0011:
-   .line 66
-   .stack use locals
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readArrayTypeSignature ()Z
-   goto L_001b
+    .line 66
+    .stack use locals
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readArrayTypeSignature ()Z
+    goto L_001b
 L_0017:
-   .line 67
-   .stack use locals
-   .end stack
-   iconst_0
+    .line 67
+    .stack use locals
+    .end stack
+    iconst_0
 L_001b:
-   .line 63
-   .stack use locals
-      stacks Integer
-   .end stack
-   ireturn
+    .line 63
+    .stack use locals
+        stacks Integer
+    .end stack
+    ireturn
 L_001f:
 .end method
 
 .method public readClassTypeSignature ()Z
-   .limit stack 2
-   .limit local 5
+    .limit stack 2
+    .limit local 5
 L_0000:
-   .line 72
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_006b
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 76
-   if_icmpeq L_0008
-   iconst_0
-   ireturn
+    .line 72
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_006b
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 76
+    if_icmpeq L_0008
+    iconst_0
+    ireturn
 L_0008:
-   .line 73
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readInternalName ()Z
-   istore 2
-   astore 1
+    .line 73
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readInternalName ()Z
+    istore 2
+    astore 1
 L_0010:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0010 to L_0021
-   .var 2 is $this$ifFalse$iv Z from L_0010 to L_0021
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0010 to L_0021
+    .var 2 is $this$ifFalse$iv Z from L_0010 to L_0021
+    iconst_0
+    istore 3
 L_0013:
-   .line 249
-   .var 3 is $i$f$ifFalse I from L_0013 to L_0021
-   iload 2
-   ifne L_001d
-   iconst_0
-   istore 4
+    .line 249
+    .var 3 is $i$f$ifFalse I from L_0013 to L_0021
+    iload 2
+    ifne L_001d
+    iconst_0
+    istore 4
 L_0019:
-   .line 73
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readClassTypeSignature\$1" I from L_0019 to L_001d
-   iconst_0
-   ireturn
+    .line 73
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readClassTypeSignature\$1" I from L_0019 to L_001d
+    iconst_0
+    ireturn
 L_001d:
-   .line 250
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 250
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0021:
-   .line 74
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   bipush 60
-   if_icmpne L_003d
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readTypeArguments ()Z
-   istore 2
-   astore 1
+    .line 74
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    bipush 60
+    if_icmpne L_003d
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readTypeArguments ()Z
+    istore 2
+    astore 1
 L_002c:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_002c to L_003d
-   .var 2 is $this$ifFalse$iv Z from L_002c to L_003d
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_002c to L_003d
+    .var 2 is $this$ifFalse$iv Z from L_002c to L_003d
+    iconst_0
+    istore 3
 L_002f:
-   .line 251
-   .var 3 is $i$f$ifFalse I from L_002f to L_003d
-   iload 2
-   ifne L_0039
-   iconst_0
-   istore 4
+    .line 251
+    .var 3 is $i$f$ifFalse I from L_002f to L_003d
+    iload 2
+    ifne L_0039
+    iconst_0
+    istore 4
 L_0035:
-   .line 74
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readClassTypeSignature\$2" I from L_0035 to L_0039
-   iconst_0
-   ireturn
+    .line 74
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readClassTypeSignature\$2" I from L_0035 to L_0039
+    iconst_0
+    ireturn
 L_0039:
-   .line 252
-   .stack use locals
-   .end stack
-   nop
+    .line 252
+    .stack use locals
+    .end stack
+    nop
 L_003d:
-   .line 75
-   .stack use locals
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   bipush 46
-   if_icmpne L_005d
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readClassTypeSignatureSuffix ()Z
-   istore 2
-   astore 1
+    .line 75
+    .stack use locals
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    bipush 46
+    if_icmpne L_005d
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readClassTypeSignatureSuffix ()Z
+    istore 2
+    astore 1
 L_0049:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0049 to L_005a
-   .var 2 is $this$ifFalse$iv Z from L_0049 to L_005a
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0049 to L_005a
+    .var 2 is $this$ifFalse$iv Z from L_0049 to L_005a
+    iconst_0
+    istore 3
 L_004c:
-   .line 253
-   .var 3 is $i$f$ifFalse I from L_004c to L_005a
-   iload 2
-   ifne L_0056
-   iconst_0
-   istore 4
+    .line 253
+    .var 3 is $i$f$ifFalse I from L_004c to L_005a
+    iload 2
+    ifne L_0056
+    iconst_0
+    istore 4
 L_0052:
-   .line 75
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readClassTypeSignature\$3" I from L_0052 to L_0056
-   iconst_0
-   ireturn
+    .line 75
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readClassTypeSignature\$3" I from L_0052 to L_0056
+    iconst_0
+    ireturn
 L_0056:
-   .line 254
-   .stack use locals
-   .end stack
-   nop
+    .line 254
+    .stack use locals
+    .end stack
+    nop
 L_005a:
-   .line 75
-   goto L_003d
+    .line 75
+    goto L_003d
 L_005d:
-   .line 76
-   .stack use locals
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 59
-   if_icmpeq L_0066
-   iconst_0
-   ireturn
+    .line 76
+    .stack use locals
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 59
+    if_icmpeq L_0066
+    iconst_0
+    ireturn
 L_0066:
-   .line 77
-   .stack use locals
-   .end stack
-   iconst_1
-   ireturn
+    .line 77
+    .stack use locals
+    .end stack
+    iconst_1
+    ireturn
 L_006b:
 .end method
 
 .method public readInternalName ()Z
-   .limit stack 2
-   .limit local 5
+    .limit stack 2
+    .limit local 5
 L_0000:
-   .line 81
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0043
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readIdentifier ()Z
-   istore 2
-   astore 1
+    .line 81
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0043
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readIdentifier ()Z
+    istore 2
+    astore 1
 L_0007:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0007 to L_0018
-   .var 2 is $this$ifFalse$iv Z from L_0007 to L_0018
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0007 to L_0018
+    .var 2 is $this$ifFalse$iv Z from L_0007 to L_0018
+    iconst_0
+    istore 3
 L_000a:
-   .line 255
-   .var 3 is $i$f$ifFalse I from L_000a to L_0018
-   iload 2
-   ifne L_0014
-   iconst_0
-   istore 4
+    .line 255
+    .var 3 is $i$f$ifFalse I from L_000a to L_0018
+    iload 2
+    ifne L_0014
+    iconst_0
+    istore 4
 L_0010:
-   .line 81
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readInternalName\$1" I from L_0010 to L_0014
-   iconst_0
-   ireturn
+    .line 81
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readInternalName\$1" I from L_0010 to L_0014
+    iconst_0
+    ireturn
 L_0014:
-   .line 256
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 256
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0018:
-   .line 82
-   .stack use locals
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   bipush 47
-   if_icmpne L_003e
+    .line 82
+    .stack use locals
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    bipush 47
+    if_icmpne L_003e
 L_001f:
-   .line 83
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/next ()V
+    .line 83
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/next ()V
 L_0023:
-   .line 84
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readIdentifier ()Z
-   istore 2
-   astore 1
+    .line 84
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readIdentifier ()Z
+    istore 2
+    astore 1
 L_002a:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_002a to L_003b
-   .var 2 is $this$ifFalse$iv Z from L_002a to L_003b
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_002a to L_003b
+    .var 2 is $this$ifFalse$iv Z from L_002a to L_003b
+    iconst_0
+    istore 3
 L_002d:
-   .line 257
-   .var 3 is $i$f$ifFalse I from L_002d to L_003b
-   iload 2
-   ifne L_0037
-   iconst_0
-   istore 4
+    .line 257
+    .var 3 is $i$f$ifFalse I from L_002d to L_003b
+    iload 2
+    ifne L_0037
+    iconst_0
+    istore 4
 L_0033:
-   .line 84
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readInternalName\$2" I from L_0033 to L_0037
-   iconst_0
-   ireturn
+    .line 84
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readInternalName\$2" I from L_0033 to L_0037
+    iconst_0
+    ireturn
 L_0037:
-   .line 258
-   .stack use locals
-   .end stack
-   nop
+    .line 258
+    .stack use locals
+    .end stack
+    nop
 L_003b:
-   .line 82
-   goto L_0018
+    .line 82
+    goto L_0018
 L_003e:
-   .line 86
-   .stack use locals
-   .end stack
-   iconst_1
-   ireturn
+    .line 86
+    .stack use locals
+    .end stack
+    iconst_1
+    ireturn
 L_0043:
 .end method
 
 .method public readSimpleClassTypeSignature ()Z
-   .limit stack 2
-   .limit local 5
+    .limit stack 2
+    .limit local 5
 L_0000:
-   .line 90
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0034
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readIdentifier ()Z
-   istore 2
-   astore 1
+    .line 90
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0034
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readIdentifier ()Z
+    istore 2
+    astore 1
 L_0007:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0007 to L_0018
-   .var 2 is $this$ifFalse$iv Z from L_0007 to L_0018
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0007 to L_0018
+    .var 2 is $this$ifFalse$iv Z from L_0007 to L_0018
+    iconst_0
+    istore 3
 L_000a:
-   .line 259
-   .var 3 is $i$f$ifFalse I from L_000a to L_0018
-   iload 2
-   ifne L_0014
-   iconst_0
-   istore 4
+    .line 259
+    .var 3 is $i$f$ifFalse I from L_000a to L_0018
+    iload 2
+    ifne L_0014
+    iconst_0
+    istore 4
 L_0010:
-   .line 90
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readSimpleClassTypeSignature\$1" I from L_0010 to L_0014
-   iconst_0
-   ireturn
+    .line 90
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readSimpleClassTypeSignature\$1" I from L_0010 to L_0014
+    iconst_0
+    ireturn
 L_0014:
-   .line 260
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 260
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0018:
-   .line 91
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readTypeParameters ()Z
-   istore 2
-   astore 1
+    .line 91
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readTypeParameters ()Z
+    istore 2
+    astore 1
 L_001f:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_001f to L_0030
-   .var 2 is $this$ifFalse$iv Z from L_001f to L_0030
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_001f to L_0030
+    .var 2 is $this$ifFalse$iv Z from L_001f to L_0030
+    iconst_0
+    istore 3
 L_0022:
-   .line 261
-   .var 3 is $i$f$ifFalse I from L_0022 to L_0030
-   iload 2
-   ifne L_002c
-   iconst_0
-   istore 4
+    .line 261
+    .var 3 is $i$f$ifFalse I from L_0022 to L_0030
+    iload 2
+    ifne L_002c
+    iconst_0
+    istore 4
 L_0028:
-   .line 91
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readSimpleClassTypeSignature\$2" I from L_0028 to L_002c
-   iconst_0
-   ireturn
+    .line 91
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readSimpleClassTypeSignature\$2" I from L_0028 to L_002c
+    iconst_0
+    ireturn
 L_002c:
-   .line 262
-   .stack use locals
-   .end stack
-   nop
+    .line 262
+    .stack use locals
+    .end stack
+    nop
 L_0030:
-   .line 92
-   iconst_1
-   ireturn
+    .line 92
+    iconst_1
+    ireturn
 L_0034:
 .end method
 
 .method public readTypeArguments ()Z
-   .limit stack 2
-   .limit local 5
+    .limit stack 2
+    .limit local 5
 L_0000:
-   .line 96
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0036
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 60
-   if_icmpeq L_0008
-   iconst_0
-   ireturn
+    .line 96
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0036
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 60
+    if_icmpeq L_0008
+    iconst_0
+    ireturn
 L_0008:
-   .line 97
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   bipush 62
-   if_icmpeq L_0028
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readTypeArgument ()Z
-   istore 2
-   astore 1
+    .line 97
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    bipush 62
+    if_icmpeq L_0028
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readTypeArgument ()Z
+    istore 2
+    astore 1
 L_0014:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0014 to L_0025
-   .var 2 is $this$ifFalse$iv Z from L_0014 to L_0025
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0014 to L_0025
+    .var 2 is $this$ifFalse$iv Z from L_0014 to L_0025
+    iconst_0
+    istore 3
 L_0017:
-   .line 263
-   .var 3 is $i$f$ifFalse I from L_0017 to L_0025
-   iload 2
-   ifne L_0021
-   iconst_0
-   istore 4
+    .line 263
+    .var 3 is $i$f$ifFalse I from L_0017 to L_0025
+    iload 2
+    ifne L_0021
+    iconst_0
+    istore 4
 L_001d:
-   .line 97
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readTypeArguments\$1" I from L_001d to L_0021
-   iconst_0
-   ireturn
+    .line 97
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readTypeArguments\$1" I from L_001d to L_0021
+    iconst_0
+    ireturn
 L_0021:
-   .line 264
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 264
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0025:
-   .line 97
-   goto L_0008
+    .line 97
+    goto L_0008
 L_0028:
-   .line 98
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 62
-   if_icmpeq L_0031
-   iconst_0
-   ireturn
+    .line 98
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 62
+    if_icmpeq L_0031
+    iconst_0
+    ireturn
 L_0031:
-   .line 99
-   .stack use locals
-   .end stack
-   iconst_1
-   ireturn
+    .line 99
+    .stack use locals
+    .end stack
+    iconst_1
+    ireturn
 L_0036:
 .end method
 
 .method public readTypeArgument ()Z
-   .limit stack 2
-   .limit local 5
+    .limit stack 2
+    .limit local 5
 L_0000:
-   .line 103
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0044
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   bipush 43
-   if_icmpne L_000b
+    .line 103
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0044
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    bipush 43
+    if_icmpne L_000b
 L_0006:
-   .line 104
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/next ()V
-   goto L_0026
+    .line 104
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/next ()V
+    goto L_0026
 L_000b:
-   .line 105
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   bipush 45
-   if_icmpne L_0017
+    .line 105
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    bipush 45
+    if_icmpne L_0017
 L_0012:
-   .line 106
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/next ()V
-   goto L_0026
+    .line 106
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/next ()V
+    goto L_0026
 L_0017:
-   .line 107
-   .stack use locals
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   bipush 42
-   if_icmpne L_0026
+    .line 107
+    .stack use locals
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    bipush 42
+    if_icmpne L_0026
 L_001e:
-   .line 108
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/next ()V
+    .line 108
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/next ()V
 L_0022:
-   .line 109
-   iconst_1
-   ireturn
+    .line 109
+    iconst_1
+    ireturn
 L_0026:
-   .line 111
-   .stack use locals
-   .end stack
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readReferenceTypeSignature ()Z
-   istore 2
-   astore 1
+    .line 111
+    .stack use locals
+    .end stack
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readReferenceTypeSignature ()Z
+    istore 2
+    astore 1
 L_002f:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_002f to L_0040
-   .var 2 is $this$ifFalse$iv Z from L_002f to L_0040
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_002f to L_0040
+    .var 2 is $this$ifFalse$iv Z from L_002f to L_0040
+    iconst_0
+    istore 3
 L_0032:
-   .line 265
-   .var 3 is $i$f$ifFalse I from L_0032 to L_0040
-   iload 2
-   ifne L_003c
-   iconst_0
-   istore 4
+    .line 265
+    .var 3 is $i$f$ifFalse I from L_0032 to L_0040
+    iload 2
+    ifne L_003c
+    iconst_0
+    istore 4
 L_0038:
-   .line 111
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readTypeArgument\$1" I from L_0038 to L_003c
-   iconst_0
-   ireturn
+    .line 111
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readTypeArgument\$1" I from L_0038 to L_003c
+    iconst_0
+    ireturn
 L_003c:
-   .line 266
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 266
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0040:
-   .line 112
-   iconst_1
-   ireturn
+    .line 112
+    iconst_1
+    ireturn
 L_0044:
 .end method
 
 .method public readClassTypeSignatureSuffix ()Z
-   .limit stack 2
-   .limit local 5
+    .limit stack 2
+    .limit local 5
 L_0000:
-   .line 116
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0025
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 46
-   if_icmpeq L_0008
-   iconst_0
-   ireturn
+    .line 116
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0025
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 46
+    if_icmpeq L_0008
+    iconst_0
+    ireturn
 L_0008:
-   .line 117
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readSimpleClassTypeSignature ()Z
-   istore 2
-   astore 1
+    .line 117
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readSimpleClassTypeSignature ()Z
+    istore 2
+    astore 1
 L_0010:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0010 to L_0021
-   .var 2 is $this$ifFalse$iv Z from L_0010 to L_0021
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0010 to L_0021
+    .var 2 is $this$ifFalse$iv Z from L_0010 to L_0021
+    iconst_0
+    istore 3
 L_0013:
-   .line 267
-   .var 3 is $i$f$ifFalse I from L_0013 to L_0021
-   iload 2
-   ifne L_001d
-   iconst_0
-   istore 4
+    .line 267
+    .var 3 is $i$f$ifFalse I from L_0013 to L_0021
+    iload 2
+    ifne L_001d
+    iconst_0
+    istore 4
 L_0019:
-   .line 117
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readClassTypeSignatureSuffix\$1" I from L_0019 to L_001d
-   iconst_0
-   ireturn
+    .line 117
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readClassTypeSignatureSuffix\$1" I from L_0019 to L_001d
+    iconst_0
+    ireturn
 L_001d:
-   .line 268
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 268
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0021:
-   .line 118
-   iconst_1
-   ireturn
+    .line 118
+    iconst_1
+    ireturn
 L_0025:
 .end method
 
 .method public readTypeVariableSignature ()Z
-   .limit stack 2
-   .limit local 5
+    .limit stack 2
+    .limit local 5
 L_0000:
-   .line 122
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_002e
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 84
-   if_icmpeq L_0008
-   iconst_0
-   ireturn
+    .line 122
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_002e
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 84
+    if_icmpeq L_0008
+    iconst_0
+    ireturn
 L_0008:
-   .line 123
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readIdentifier ()Z
-   istore 2
-   astore 1
+    .line 123
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readIdentifier ()Z
+    istore 2
+    astore 1
 L_0010:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0010 to L_0021
-   .var 2 is $this$ifFalse$iv Z from L_0010 to L_0021
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0010 to L_0021
+    .var 2 is $this$ifFalse$iv Z from L_0010 to L_0021
+    iconst_0
+    istore 3
 L_0013:
-   .line 269
-   .var 3 is $i$f$ifFalse I from L_0013 to L_0021
-   iload 2
-   ifne L_001d
-   iconst_0
-   istore 4
+    .line 269
+    .var 3 is $i$f$ifFalse I from L_0013 to L_0021
+    iload 2
+    ifne L_001d
+    iconst_0
+    istore 4
 L_0019:
-   .line 123
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readTypeVariableSignature\$1" I from L_0019 to L_001d
-   iconst_0
-   ireturn
+    .line 123
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readTypeVariableSignature\$1" I from L_0019 to L_001d
+    iconst_0
+    ireturn
 L_001d:
-   .line 270
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 270
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0021:
-   .line 124
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 59
-   if_icmpeq L_0029
-   iconst_0
-   ireturn
+    .line 124
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 59
+    if_icmpeq L_0029
+    iconst_0
+    ireturn
 L_0029:
-   .line 125
-   .stack use locals
-   .end stack
-   iconst_1
-   ireturn
+    .line 125
+    .stack use locals
+    .end stack
+    iconst_1
+    ireturn
 L_002e:
 .end method
 
 .method public readArrayTypeSignature ()Z
-   .limit stack 2
-   .limit local 5
+    .limit stack 2
+    .limit local 5
 L_0000:
-   .line 129
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0025
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 91
-   if_icmpeq L_0008
-   iconst_0
-   ireturn
+    .line 129
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0025
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 91
+    if_icmpeq L_0008
+    iconst_0
+    ireturn
 L_0008:
-   .line 130
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readJavaTypeSignature ()Z
-   istore 2
-   astore 1
+    .line 130
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readJavaTypeSignature ()Z
+    istore 2
+    astore 1
 L_0010:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0010 to L_0021
-   .var 2 is $this$ifFalse$iv Z from L_0010 to L_0021
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0010 to L_0021
+    .var 2 is $this$ifFalse$iv Z from L_0010 to L_0021
+    iconst_0
+    istore 3
 L_0013:
-   .line 271
-   .var 3 is $i$f$ifFalse I from L_0013 to L_0021
-   iload 2
-   ifne L_001d
-   iconst_0
-   istore 4
+    .line 271
+    .var 3 is $i$f$ifFalse I from L_0013 to L_0021
+    iload 2
+    ifne L_001d
+    iconst_0
+    istore 4
 L_0019:
-   .line 130
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readArrayTypeSignature\$1" I from L_0019 to L_001d
-   iconst_0
-   ireturn
+    .line 130
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readArrayTypeSignature\$1" I from L_0019 to L_001d
+    iconst_0
+    ireturn
 L_001d:
-   .line 272
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 272
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0021:
-   .line 131
-   iconst_1
-   ireturn
+    .line 131
+    iconst_1
+    ireturn
 L_0025:
 .end method
 
 .method public readClassSignature ()Z
-   .limit stack 2
-   .limit local 1
+    .limit stack 2
+    .limit local 1
 L_0000:
-   .line 135
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0018
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   bipush 60
-   if_icmpne L_0009
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readTypeParameters ()Z
-   pop
+    .line 135
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_001f
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    bipush 60
+    if_icmpne L_0009
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readTypeParameters ()Z
+    pop
 L_0009:
-   .line 136
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readSuperclassSignature ()Z
-   pop
+    .line 136
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readSuperclassSignature ()Z
+    pop
 L_000f:
-   .line 137
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readSuperinterfaceSignature ()Z
-   pop
-L_0014:
-   .line 138
-   iconst_1
-   ireturn
-L_0018:
+    .line 137
+    .stack use locals
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    bipush 76
+    if_icmpne L_001a
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readSuperinterfaceSignature ()Z
+    pop
+    goto L_000f
+L_001a:
+    .line 138
+    .stack use locals
+    .end stack
+    iconst_1
+    ireturn
+L_001f:
 .end method
 
 .method public readTypeParameters ()Z
-   .limit stack 2
-   .limit local 5
+    .limit stack 2
+    .limit local 5
 L_0000:
-   .line 142
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0036
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 60
-   if_icmpeq L_0008
-   iconst_0
-   ireturn
+    .line 142
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0036
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 60
+    if_icmpeq L_0008
+    iconst_0
+    ireturn
 L_0008:
-   .line 143
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   bipush 62
-   if_icmpeq L_0028
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readTypeParameter ()Z
-   istore 2
-   astore 1
+    .line 143
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    bipush 62
+    if_icmpeq L_0028
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readTypeParameter ()Z
+    istore 2
+    astore 1
 L_0014:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0014 to L_0025
-   .var 2 is $this$ifFalse$iv Z from L_0014 to L_0025
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0014 to L_0025
+    .var 2 is $this$ifFalse$iv Z from L_0014 to L_0025
+    iconst_0
+    istore 3
 L_0017:
-   .line 273
-   .var 3 is $i$f$ifFalse I from L_0017 to L_0025
-   iload 2
-   ifne L_0021
-   iconst_0
-   istore 4
+    .line 273
+    .var 3 is $i$f$ifFalse I from L_0017 to L_0025
+    iload 2
+    ifne L_0021
+    iconst_0
+    istore 4
 L_001d:
-   .line 143
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readTypeParameters\$1" I from L_001d to L_0021
-   iconst_0
-   ireturn
+    .line 143
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readTypeParameters\$1" I from L_001d to L_0021
+    iconst_0
+    ireturn
 L_0021:
-   .line 274
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 274
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0025:
-   .line 143
-   goto L_0008
+    .line 143
+    goto L_0008
 L_0028:
-   .line 144
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 62
-   if_icmpeq L_0031
-   iconst_0
-   ireturn
+    .line 144
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 62
+    if_icmpeq L_0031
+    iconst_0
+    ireturn
 L_0031:
-   .line 145
-   .stack use locals
-   .end stack
-   iconst_1
-   ireturn
+    .line 145
+    .stack use locals
+    .end stack
+    iconst_1
+    ireturn
 L_0036:
 .end method
 
 .method public readTypeParameter ()Z
-   .limit stack 2
-   .limit local 5
+    .limit stack 2
+    .limit local 5
 L_0000:
-   .line 149
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0057
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readInternalName ()Z
-   istore 2
-   astore 1
+    .line 149
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0057
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readInternalName ()Z
+    istore 2
+    astore 1
 L_0007:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0007 to L_0018
-   .var 2 is $this$ifFalse$iv Z from L_0007 to L_0018
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0007 to L_0018
+    .var 2 is $this$ifFalse$iv Z from L_0007 to L_0018
+    iconst_0
+    istore 3
 L_000a:
-   .line 275
-   .var 3 is $i$f$ifFalse I from L_000a to L_0018
-   iload 2
-   ifne L_0014
-   iconst_0
-   istore 4
+    .line 275
+    .var 3 is $i$f$ifFalse I from L_000a to L_0018
+    iload 2
+    ifne L_0014
+    iconst_0
+    istore 4
 L_0010:
-   .line 149
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readTypeParameter\$1" I from L_0010 to L_0014
-   iconst_0
-   ireturn
+    .line 149
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readTypeParameter\$1" I from L_0010 to L_0014
+    iconst_0
+    ireturn
 L_0014:
-   .line 276
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 276
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0018:
-   .line 150
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readClassBound ()Z
-   istore 2
-   astore 1
+    .line 150
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readClassBound ()Z
+    istore 2
+    astore 1
 L_001f:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_001f to L_0030
-   .var 2 is $this$ifFalse$iv Z from L_001f to L_0030
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_001f to L_0030
+    .var 2 is $this$ifFalse$iv Z from L_001f to L_0030
+    iconst_0
+    istore 3
 L_0022:
-   .line 277
-   .var 3 is $i$f$ifFalse I from L_0022 to L_0030
-   iload 2
-   ifne L_002c
-   iconst_0
-   istore 4
+    .line 277
+    .var 3 is $i$f$ifFalse I from L_0022 to L_0030
+    iload 2
+    ifne L_002c
+    iconst_0
+    istore 4
 L_0028:
-   .line 150
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readTypeParameter\$2" I from L_0028 to L_002c
-   iconst_0
-   ireturn
+    .line 150
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readTypeParameter\$2" I from L_0028 to L_002c
+    iconst_0
+    ireturn
 L_002c:
-   .line 278
-   .stack use locals
-   .end stack
-   nop
+    .line 278
+    .stack use locals
+    .end stack
+    nop
 L_0030:
-   .line 151
-   .stack use locals
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   bipush 58
-   if_icmpne L_0052
+    .line 151
+    .stack use locals
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    bipush 58
+    if_icmpne L_0052
 L_0037:
-   .line 152
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readInterfaceBound ()Z
-   istore 2
-   astore 1
+    .line 152
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readInterfaceBound ()Z
+    istore 2
+    astore 1
 L_003e:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_003e to L_004f
-   .var 2 is $this$ifFalse$iv Z from L_003e to L_004f
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_003e to L_004f
+    .var 2 is $this$ifFalse$iv Z from L_003e to L_004f
+    iconst_0
+    istore 3
 L_0041:
-   .line 279
-   .var 3 is $i$f$ifFalse I from L_0041 to L_004f
-   iload 2
-   ifne L_004b
-   iconst_0
-   istore 4
+    .line 279
+    .var 3 is $i$f$ifFalse I from L_0041 to L_004f
+    iload 2
+    ifne L_004b
+    iconst_0
+    istore 4
 L_0047:
-   .line 152
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readTypeParameter\$3" I from L_0047 to L_004b
-   iconst_0
-   ireturn
+    .line 152
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readTypeParameter\$3" I from L_0047 to L_004b
+    iconst_0
+    ireturn
 L_004b:
-   .line 280
-   .stack use locals
-   .end stack
-   nop
+    .line 280
+    .stack use locals
+    .end stack
+    nop
 L_004f:
-   .line 151
-   goto L_0030
+    .line 151
+    goto L_0030
 L_0052:
-   .line 153
-   .stack use locals
-   .end stack
-   iconst_1
-   ireturn
+    .line 153
+    .stack use locals
+    .end stack
+    iconst_1
+    ireturn
 L_0057:
 .end method
 
 .method public readClassBound ()Z
-   .limit stack 5
-   .limit local 5
+    .limit stack 5
+    .limit local 5
 L_0000:
-   .line 157
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_002f
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 58
-   if_icmpeq L_0008
-   iconst_0
-   ireturn
+    .line 157
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_002f
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 58
+    if_icmpeq L_0008
+    iconst_0
+    ireturn
 L_0008:
-   .line 158
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   ldc "LT["
-   checkcast java/lang/CharSequence
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   iconst_0
-   iconst_2
-   aconst_null
-   invokestatic kotlin/text/StringsKt/contains$default (Ljava/lang/CharSequence;CZILjava/lang/Object;)Z
-   ifeq L_002a
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readReferenceTypeSignature ()Z
-   istore 2
-   astore 1
+    .line 158
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    ldc "LT["
+    checkcast java/lang/CharSequence
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    iconst_0
+    iconst_2
+    aconst_null
+    invokestatic kotlin/text/StringsKt/contains$default (Ljava/lang/CharSequence;CZILjava/lang/Object;)Z
+    ifeq L_002a
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readReferenceTypeSignature ()Z
+    istore 2
+    astore 1
 L_0019:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0019 to L_002a
-   .var 2 is $this$ifFalse$iv Z from L_0019 to L_002a
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0019 to L_002a
+    .var 2 is $this$ifFalse$iv Z from L_0019 to L_002a
+    iconst_0
+    istore 3
 L_001c:
-   .line 281
-   .var 3 is $i$f$ifFalse I from L_001c to L_002a
-   iload 2
-   ifne L_0026
-   iconst_0
-   istore 4
+    .line 281
+    .var 3 is $i$f$ifFalse I from L_001c to L_002a
+    iload 2
+    ifne L_0026
+    iconst_0
+    istore 4
 L_0022:
-   .line 158
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readClassBound\$1" I from L_0022 to L_0026
-   iconst_0
-   ireturn
+    .line 158
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readClassBound\$1" I from L_0022 to L_0026
+    iconst_0
+    ireturn
 L_0026:
-   .line 282
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 282
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_002a:
-   .line 159
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   iconst_1
-   ireturn
+    .line 159
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    iconst_1
+    ireturn
 L_002f:
 .end method
 
 .method public readInterfaceBound ()Z
-   .limit stack 2
-   .limit local 5
+    .limit stack 2
+    .limit local 5
 L_0000:
-   .line 163
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0025
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 58
-   if_icmpeq L_0008
-   iconst_0
-   ireturn
+    .line 163
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0025
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 58
+    if_icmpeq L_0008
+    iconst_0
+    ireturn
 L_0008:
-   .line 164
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readReferenceTypeSignature ()Z
-   istore 2
-   astore 1
+    .line 164
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readReferenceTypeSignature ()Z
+    istore 2
+    astore 1
 L_0010:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0010 to L_0021
-   .var 2 is $this$ifFalse$iv Z from L_0010 to L_0021
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0010 to L_0021
+    .var 2 is $this$ifFalse$iv Z from L_0010 to L_0021
+    iconst_0
+    istore 3
 L_0013:
-   .line 283
-   .var 3 is $i$f$ifFalse I from L_0013 to L_0021
-   iload 2
-   ifne L_001d
-   iconst_0
-   istore 4
+    .line 283
+    .var 3 is $i$f$ifFalse I from L_0013 to L_0021
+    iload 2
+    ifne L_001d
+    iconst_0
+    istore 4
 L_0019:
-   .line 164
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readInterfaceBound\$1" I from L_0019 to L_001d
-   iconst_0
-   ireturn
+    .line 164
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readInterfaceBound\$1" I from L_0019 to L_001d
+    iconst_0
+    ireturn
 L_001d:
-   .line 284
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 284
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0021:
-   .line 165
-   iconst_1
-   ireturn
+    .line 165
+    iconst_1
+    ireturn
 L_0025:
 .end method
 
 .method public readSuperclassSignature ()Z
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 168
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0005
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readClassTypeSignature ()Z
-   ireturn
+    .line 168
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0005
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readClassTypeSignature ()Z
+    ireturn
 L_0005:
 .end method
 
 .method public readSuperinterfaceSignature ()Z
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 169
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0005
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readClassTypeSignature ()Z
-   ireturn
+    .line 169
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0005
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readClassTypeSignature ()Z
+    ireturn
 L_0005:
 .end method
 
 .method public readMethodSignature ()Z
-   .limit stack 2
-   .limit local 5
+    .limit stack 2
+    .limit local 5
 L_0000:
-   .line 172
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_009d
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   bipush 60
-   if_icmpne L_001e
+    .line 172
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_009d
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    bipush 60
+    if_icmpne L_001e
 L_0006:
-   .line 173
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readTypeParameters ()Z
-   istore 2
-   astore 1
+    .line 173
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readTypeParameters ()Z
+    istore 2
+    astore 1
 L_000d:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_000d to L_001e
-   .var 2 is $this$ifFalse$iv Z from L_000d to L_001e
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_000d to L_001e
+    .var 2 is $this$ifFalse$iv Z from L_000d to L_001e
+    iconst_0
+    istore 3
 L_0010:
-   .line 285
-   .var 3 is $i$f$ifFalse I from L_0010 to L_001e
-   iload 2
-   ifne L_001a
-   iconst_0
-   istore 4
+    .line 285
+    .var 3 is $i$f$ifFalse I from L_0010 to L_001e
+    iload 2
+    ifne L_001a
+    iconst_0
+    istore 4
 L_0016:
-   .line 173
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readMethodSignature\$1" I from L_0016 to L_001a
-   iconst_0
-   ireturn
+    .line 173
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readMethodSignature\$1" I from L_0016 to L_001a
+    iconst_0
+    ireturn
 L_001a:
-   .line 286
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 286
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_001e:
-   .line 174
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 40
-   if_icmpeq L_0027
-   iconst_0
-   ireturn
+    .line 174
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 40
+    if_icmpeq L_0027
+    iconst_0
+    ireturn
 L_0027:
-   .line 175
-   .stack use locals
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   bipush 41
-   if_icmpeq L_0049
+    .line 175
+    .stack use locals
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    bipush 41
+    if_icmpeq L_0049
 L_002e:
-   .line 176
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readJavaTypeSignature ()Z
-   istore 2
-   astore 1
+    .line 176
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readJavaTypeSignature ()Z
+    istore 2
+    astore 1
 L_0035:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0035 to L_0046
-   .var 2 is $this$ifFalse$iv Z from L_0035 to L_0046
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0035 to L_0046
+    .var 2 is $this$ifFalse$iv Z from L_0035 to L_0046
+    iconst_0
+    istore 3
 L_0038:
-   .line 287
-   .var 3 is $i$f$ifFalse I from L_0038 to L_0046
-   iload 2
-   ifne L_0042
-   iconst_0
-   istore 4
+    .line 287
+    .var 3 is $i$f$ifFalse I from L_0038 to L_0046
+    iload 2
+    ifne L_0042
+    iconst_0
+    istore 4
 L_003e:
-   .line 176
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readMethodSignature\$2" I from L_003e to L_0042
-   iconst_0
-   ireturn
+    .line 176
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readMethodSignature\$2" I from L_003e to L_0042
+    iconst_0
+    ireturn
 L_0042:
-   .line 288
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 288
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0046:
-   .line 175
-   goto L_0027
+    .line 175
+    goto L_0027
 L_0049:
-   .line 177
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 41
-   if_icmpeq L_0052
-   iconst_0
-   ireturn
+    .line 177
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 41
+    if_icmpeq L_0052
+    iconst_0
+    ireturn
 L_0052:
-   .line 178
-   .stack use locals
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   bipush 86
-   if_icmpne L_005c
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/next ()V
-   goto L_0075
+    .line 178
+    .stack use locals
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    bipush 86
+    if_icmpne L_005c
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/next ()V
+    goto L_0075
 L_005c:
-   .line 179
-   .stack use locals
-   .end stack
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readJavaTypeSignature ()Z
-   istore 2
-   astore 1
+    .line 179
+    .stack use locals
+    .end stack
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readJavaTypeSignature ()Z
+    istore 2
+    astore 1
 L_0064:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0064 to L_0075
-   .var 2 is $this$ifFalse$iv Z from L_0064 to L_0075
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0064 to L_0075
+    .var 2 is $this$ifFalse$iv Z from L_0064 to L_0075
+    iconst_0
+    istore 3
 L_0067:
-   .line 289
-   .var 3 is $i$f$ifFalse I from L_0067 to L_0075
-   iload 2
-   ifne L_0071
-   iconst_0
-   istore 4
+    .line 289
+    .var 3 is $i$f$ifFalse I from L_0067 to L_0075
+    iload 2
+    ifne L_0071
+    iconst_0
+    istore 4
 L_006d:
-   .line 179
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readMethodSignature\$3" I from L_006d to L_0071
-   iconst_0
-   ireturn
+    .line 179
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readMethodSignature\$3" I from L_006d to L_0071
+    iconst_0
+    ireturn
 L_0071:
-   .line 290
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 290
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0075:
-   .line 180
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   bipush 94
-   if_icmpne L_0098
+    .line 180
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    bipush 94
+    if_icmpne L_0098
 L_007d:
-   .line 181
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readThrowsSignature ()Z
-   istore 2
-   astore 1
+    .line 181
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readThrowsSignature ()Z
+    istore 2
+    astore 1
 L_0084:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0084 to L_0095
-   .var 2 is $this$ifFalse$iv Z from L_0084 to L_0095
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0084 to L_0095
+    .var 2 is $this$ifFalse$iv Z from L_0084 to L_0095
+    iconst_0
+    istore 3
 L_0087:
-   .line 291
-   .var 3 is $i$f$ifFalse I from L_0087 to L_0095
-   iload 2
-   ifne L_0091
-   iconst_0
-   istore 4
+    .line 291
+    .var 3 is $i$f$ifFalse I from L_0087 to L_0095
+    iload 2
+    ifne L_0091
+    iconst_0
+    istore 4
 L_008d:
-   .line 181
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readMethodSignature\$4" I from L_008d to L_0091
-   iconst_0
-   ireturn
+    .line 181
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readMethodSignature\$4" I from L_008d to L_0091
+    iconst_0
+    ireturn
 L_0091:
-   .line 292
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 292
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0095:
-   .line 180
-   goto L_0075
+    .line 180
+    goto L_0075
 L_0098:
-   .line 182
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   iconst_1
-   ireturn
+    .line 182
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    iconst_1
+    ireturn
 L_009d:
 .end method
 
 .method public readThrowsSignature ()Z
-   .limit stack 2
-   .limit local 5
+    .limit stack 2
+    .limit local 5
 L_0000:
-   .line 186
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_004f
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
-   bipush 94
-   if_icmpeq L_0008
-   iconst_0
-   ireturn
+    .line 186
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_004f
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/getAndNext ()C
+    bipush 94
+    if_icmpeq L_0008
+    iconst_0
+    ireturn
 L_0008:
-   .line 187
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
-   lookupswitch
-      76: L_000e
-      84: L_0029
-      default: L_0044
+    .line 187
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/get ()C
+    lookupswitch
+        76: L_000e
+        84: L_0029
+        default: L_0044
 L_000e:
-   .line 188
-   .stack use locals
-   .end stack
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readClassTypeSignature ()Z
-   istore 2
-   astore 1
+    .line 188
+    .stack use locals
+    .end stack
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readClassTypeSignature ()Z
+    istore 2
+    astore 1
 L_0016:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0016 to L_0027
-   .var 2 is $this$ifFalse$iv Z from L_0016 to L_0027
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0016 to L_0027
+    .var 2 is $this$ifFalse$iv Z from L_0016 to L_0027
+    iconst_0
+    istore 3
 L_0019:
-   .line 293
-   .var 3 is $i$f$ifFalse I from L_0019 to L_0027
-   iload 2
-   ifne L_0023
-   iconst_0
-   istore 4
+    .line 293
+    .var 3 is $i$f$ifFalse I from L_0019 to L_0027
+    iload 2
+    ifne L_0023
+    iconst_0
+    istore 4
 L_001f:
-   .line 188
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readThrowsSignature\$1" I from L_001f to L_0023
-   iconst_0
-   ireturn
+    .line 188
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readThrowsSignature\$1" I from L_001f to L_0023
+    iconst_0
+    ireturn
 L_0023:
-   .line 294
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 294
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0027:
-   goto L_0049
+    goto L_0049
 L_0029:
-   .line 189
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readTypeVariableSignature ()Z
-   istore 2
-   astore 1
+    .line 189
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readTypeVariableSignature ()Z
+    istore 2
+    astore 1
 L_0031:
-   .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0031 to L_0042
-   .var 2 is $this$ifFalse$iv Z from L_0031 to L_0042
-   iconst_0
-   istore 3
+    .var 1 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0031 to L_0042
+    .var 2 is $this$ifFalse$iv Z from L_0031 to L_0042
+    iconst_0
+    istore 3
 L_0034:
-   .line 295
-   .var 3 is $i$f$ifFalse I from L_0034 to L_0042
-   iload 2
-   ifne L_003e
-   iconst_0
-   istore 4
+    .line 295
+    .var 3 is $i$f$ifFalse I from L_0034 to L_0042
+    iload 2
+    ifne L_003e
+    iconst_0
+    istore 4
 L_003a:
-   .line 189
-   .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readThrowsSignature\$2" I from L_003a to L_003e
-   iconst_0
-   ireturn
+    .line 189
+    .var 4 is "\$i\$a\$-ifFalse-SignatureVerifier\$readThrowsSignature\$2" I from L_003a to L_003e
+    iconst_0
+    ireturn
 L_003e:
-   .line 296
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 296
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0042:
-   goto L_0049
+    goto L_0049
 L_0044:
-   .line 190
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-   .end stack
-   iconst_0
-   ireturn
+    .line 190
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+    .end stack
+    iconst_0
+    ireturn
 L_0049:
-   .line 192
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Integer
-   .end stack
-   iconst_1
-   ireturn
+    .line 192
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Integer
+    .end stack
+    iconst_1
+    ireturn
 L_004f:
 .end method
 
 .method public readFieldSignature ()Z
-   .limit stack 2
-   .limit local 9
+    .limit stack 2
+    .limit local 9
 L_0000:
-   .line 196
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0052
-   iconst_0
-   istore 2
+    .line 196
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0052
+    iconst_0
+    istore 2
 L_0004:
-   .catch java/lang/Throwable from L_0004 to L_002f using L_0031
-   nop
-   getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
-   astore 3
-   iconst_0
-   istore 4
+    .catch java/lang/Throwable from L_0004 to L_002f using L_0031
+    nop
+    getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
+    astore 3
+    iconst_0
+    istore 4
 L_000a:
-   .line 197
-   .var 4 is "\$i\$a\$-runCatching-SignatureVerifier\$readFieldSignature\$result\$1" I from L_000a to L_0025
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readReferenceTypeSignature ()Z
-   istore 5
-   astore 6
+    .line 197
+    .var 4 is "\$i\$a\$-runCatching-SignatureVerifier\$readFieldSignature\$result\$1" I from L_000a to L_0025
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readReferenceTypeSignature ()Z
+    istore 5
+    astore 6
 L_0011:
-   .var 6 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0011 to L_0022
-   .var 5 is $this$ifFalse$iv Z from L_0011 to L_0022
-   iconst_0
-   istore 7
+    .var 6 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0011 to L_0022
+    .var 5 is $this$ifFalse$iv Z from L_0011 to L_0022
+    iconst_0
+    istore 7
 L_0014:
-   .line 297
-   .var 7 is $i$f$ifFalse I from L_0014 to L_0022
-   iload 5
-   ifne L_001e
-   iconst_0
-   istore 8
+    .line 297
+    .var 7 is $i$f$ifFalse I from L_0014 to L_0022
+    iload 5
+    ifne L_001e
+    iconst_0
+    istore 8
 L_001a:
-   .line 197
-   .var 8 is "\$i\$a\$-ifFalse-SignatureVerifier\$readFieldSignature\$result\$1\$1" I from L_001a to L_001e
-   iconst_0
-   ireturn
+    .line 197
+    .var 8 is "\$i\$a\$-ifFalse-SignatureVerifier\$readFieldSignature\$result\$1\$1" I from L_001a to L_001e
+    iconst_0
+    ireturn
 L_001e:
-   .line 298
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      locals Object kotlin/Result$Companion
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-   .end stack
-   nop
+    .line 298
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        locals Object kotlin/Result$Companion
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+    .end stack
+    nop
 L_0022:
-   .line 198
-   nop
+    .line 198
+    nop
 L_0025:
-   getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
+    getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
 L_0027:
-   .line 196
-   astore 4
-   iconst_0
-   istore 5
-   aload 4
-   invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
-   astore 3
+    .line 196
+    astore 4
+    iconst_0
+    istore 5
+    aload 4
+    invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
+    astore 3
 L_002f:
-   goto L_003c
+    goto L_003c
 L_0031:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      stacks Object java/lang/Throwable
-   .end stack
-   astore 4
-   getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
-   astore 5
-   iconst_0
-   istore 6
-   aload 4
-   invokestatic kotlin/ResultKt/createFailure (Ljava/lang/Throwable;)Ljava/lang/Object;
-   invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
-   astore 3
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        stacks Object java/lang/Throwable
+    .end stack
+    astore 4
+    getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
+    astore 5
+    iconst_0
+    istore 6
+    aload 4
+    invokestatic kotlin/ResultKt/createFailure (Ljava/lang/Throwable;)Ljava/lang/Object;
+    invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
+    astore 3
 L_003c:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      locals Object java/lang/Object
-      locals Object java/lang/Object
-   .end stack
-   aload 3
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        locals Object java/lang/Object
+        locals Object java/lang/Object
+    .end stack
+    aload 3
 L_003f:
-   .line 196
-   astore 1
+    .line 196
+    astore 1
 L_0042:
-   .line 199
-   .var 1 is result Ljava/lang/Object; from L_0042 to L_0052
-   aload 0
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
-   aload 0
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
-   invokevirtual java/lang/String/length ()I
-   if_icmpne L_004c
-   iconst_1
-   goto L_004f
+    .line 199
+    .var 1 is result Ljava/lang/Object; from L_0042 to L_0052
+    aload 0
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
+    aload 0
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
+    invokevirtual java/lang/String/length ()I
+    if_icmpne L_004c
+    iconst_1
+    goto L_004f
 L_004c:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object java/lang/Object
-      locals Integer
-      locals Object java/lang/Object
-      locals Object java/lang/Object
-   .end stack
-   iconst_0
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object java/lang/Object
+        locals Integer
+        locals Object java/lang/Object
+        locals Object java/lang/Object
+    .end stack
+    iconst_0
 L_004f:
-   .stack use locals
-      stacks Integer
-   .end stack
-   ireturn
+    .stack use locals
+        stacks Integer
+    .end stack
+    ireturn
 L_0052:
 .end method
 
 .method public classSignature ()Z
-   .limit stack 2
-   .limit local 9
+    .limit stack 2
+    .limit local 9
 L_0000:
-   .line 204
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0052
-   iconst_0
-   istore 2
+    .line 204
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0052
+    iconst_0
+    istore 2
 L_0004:
-   .catch java/lang/Throwable from L_0004 to L_002f using L_0031
-   nop
-   getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
-   astore 3
-   iconst_0
-   istore 4
+    .catch java/lang/Throwable from L_0004 to L_002f using L_0031
+    nop
+    getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
+    astore 3
+    iconst_0
+    istore 4
 L_000a:
-   .line 205
-   .var 4 is "\$i\$a\$-runCatching-SignatureVerifier\$classSignature\$result\$1" I from L_000a to L_0025
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readClassSignature ()Z
-   istore 5
-   astore 6
+    .line 205
+    .var 4 is "\$i\$a\$-runCatching-SignatureVerifier\$classSignature\$result\$1" I from L_000a to L_0025
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readClassSignature ()Z
+    istore 5
+    astore 6
 L_0011:
-   .var 6 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0011 to L_0022
-   .var 5 is $this$ifFalse$iv Z from L_0011 to L_0022
-   iconst_0
-   istore 7
+    .var 6 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0011 to L_0022
+    .var 5 is $this$ifFalse$iv Z from L_0011 to L_0022
+    iconst_0
+    istore 7
 L_0014:
-   .line 299
-   .var 7 is $i$f$ifFalse I from L_0014 to L_0022
-   iload 5
-   ifne L_001e
-   iconst_0
-   istore 8
+    .line 299
+    .var 7 is $i$f$ifFalse I from L_0014 to L_0022
+    iload 5
+    ifne L_001e
+    iconst_0
+    istore 8
 L_001a:
-   .line 205
-   .var 8 is "\$i\$a\$-ifFalse-SignatureVerifier\$classSignature\$result\$1\$1" I from L_001a to L_001e
-   iconst_0
-   ireturn
+    .line 205
+    .var 8 is "\$i\$a\$-ifFalse-SignatureVerifier\$classSignature\$result\$1\$1" I from L_001a to L_001e
+    iconst_0
+    ireturn
 L_001e:
-   .line 300
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      locals Object kotlin/Result$Companion
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-   .end stack
-   nop
+    .line 300
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        locals Object kotlin/Result$Companion
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+    .end stack
+    nop
 L_0022:
-   .line 206
-   nop
+    .line 206
+    nop
 L_0025:
-   getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
+    getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
 L_0027:
-   .line 204
-   astore 4
-   iconst_0
-   istore 5
-   aload 4
-   invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
-   astore 3
+    .line 204
+    astore 4
+    iconst_0
+    istore 5
+    aload 4
+    invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
+    astore 3
 L_002f:
-   goto L_003c
+    goto L_003c
 L_0031:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      stacks Object java/lang/Throwable
-   .end stack
-   astore 4
-   getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
-   astore 5
-   iconst_0
-   istore 6
-   aload 4
-   invokestatic kotlin/ResultKt/createFailure (Ljava/lang/Throwable;)Ljava/lang/Object;
-   invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
-   astore 3
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        stacks Object java/lang/Throwable
+    .end stack
+    astore 4
+    getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
+    astore 5
+    iconst_0
+    istore 6
+    aload 4
+    invokestatic kotlin/ResultKt/createFailure (Ljava/lang/Throwable;)Ljava/lang/Object;
+    invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
+    astore 3
 L_003c:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      locals Object java/lang/Object
-      locals Object java/lang/Object
-   .end stack
-   aload 3
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        locals Object java/lang/Object
+        locals Object java/lang/Object
+    .end stack
+    aload 3
 L_003f:
-   .line 204
-   astore 1
+    .line 204
+    astore 1
 L_0042:
-   .line 207
-   .var 1 is result Ljava/lang/Object; from L_0042 to L_0052
-   aload 0
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
-   aload 0
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
-   invokevirtual java/lang/String/length ()I
-   if_icmpne L_004c
-   iconst_1
-   goto L_004f
+    .line 207
+    .var 1 is result Ljava/lang/Object; from L_0042 to L_0052
+    aload 0
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
+    aload 0
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
+    invokevirtual java/lang/String/length ()I
+    if_icmpne L_004c
+    iconst_1
+    goto L_004f
 L_004c:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object java/lang/Object
-      locals Integer
-      locals Object java/lang/Object
-      locals Object java/lang/Object
-   .end stack
-   iconst_0
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object java/lang/Object
+        locals Integer
+        locals Object java/lang/Object
+        locals Object java/lang/Object
+    .end stack
+    iconst_0
 L_004f:
-   .stack use locals
-      stacks Integer
-   .end stack
-   ireturn
+    .stack use locals
+        stacks Integer
+    .end stack
+    ireturn
 L_0052:
 .end method
 
 .method public methodDescriptor ()Z
-   .limit stack 2
-   .limit local 9
+    .limit stack 2
+    .limit local 9
 L_0000:
-   .line 211
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0052
-   iconst_0
-   istore 2
+    .line 211
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0052
+    iconst_0
+    istore 2
 L_0004:
-   .catch java/lang/Throwable from L_0004 to L_002f using L_0031
-   nop
-   getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
-   astore 3
-   iconst_0
-   istore 4
+    .catch java/lang/Throwable from L_0004 to L_002f using L_0031
+    nop
+    getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
+    astore 3
+    iconst_0
+    istore 4
 L_000a:
-   .line 212
-   .var 4 is "\$i\$a\$-runCatching-SignatureVerifier\$methodDescriptor\$result\$1" I from L_000a to L_0025
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readMethodDescriptor ()Z
-   istore 5
-   astore 6
+    .line 212
+    .var 4 is "\$i\$a\$-runCatching-SignatureVerifier\$methodDescriptor\$result\$1" I from L_000a to L_0025
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readMethodDescriptor ()Z
+    istore 5
+    astore 6
 L_0011:
-   .var 6 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0011 to L_0022
-   .var 5 is $this$ifFalse$iv Z from L_0011 to L_0022
-   iconst_0
-   istore 7
+    .var 6 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0011 to L_0022
+    .var 5 is $this$ifFalse$iv Z from L_0011 to L_0022
+    iconst_0
+    istore 7
 L_0014:
-   .line 301
-   .var 7 is $i$f$ifFalse I from L_0014 to L_0022
-   iload 5
-   ifne L_001e
-   iconst_0
-   istore 8
+    .line 301
+    .var 7 is $i$f$ifFalse I from L_0014 to L_0022
+    iload 5
+    ifne L_001e
+    iconst_0
+    istore 8
 L_001a:
-   .line 212
-   .var 8 is "\$i\$a\$-ifFalse-SignatureVerifier\$methodDescriptor\$result\$1\$1" I from L_001a to L_001e
-   iconst_0
-   ireturn
+    .line 212
+    .var 8 is "\$i\$a\$-ifFalse-SignatureVerifier\$methodDescriptor\$result\$1\$1" I from L_001a to L_001e
+    iconst_0
+    ireturn
 L_001e:
-   .line 302
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      locals Object kotlin/Result$Companion
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-   .end stack
-   nop
+    .line 302
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        locals Object kotlin/Result$Companion
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+    .end stack
+    nop
 L_0022:
-   .line 213
-   nop
+    .line 213
+    nop
 L_0025:
-   getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
+    getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
 L_0027:
-   .line 211
-   astore 4
-   iconst_0
-   istore 5
-   aload 4
-   invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
-   astore 3
+    .line 211
+    astore 4
+    iconst_0
+    istore 5
+    aload 4
+    invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
+    astore 3
 L_002f:
-   goto L_003c
+    goto L_003c
 L_0031:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      stacks Object java/lang/Throwable
-   .end stack
-   astore 4
-   getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
-   astore 5
-   iconst_0
-   istore 6
-   aload 4
-   invokestatic kotlin/ResultKt/createFailure (Ljava/lang/Throwable;)Ljava/lang/Object;
-   invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
-   astore 3
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        stacks Object java/lang/Throwable
+    .end stack
+    astore 4
+    getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
+    astore 5
+    iconst_0
+    istore 6
+    aload 4
+    invokestatic kotlin/ResultKt/createFailure (Ljava/lang/Throwable;)Ljava/lang/Object;
+    invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
+    astore 3
 L_003c:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      locals Object java/lang/Object
-      locals Object java/lang/Object
-   .end stack
-   aload 3
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        locals Object java/lang/Object
+        locals Object java/lang/Object
+    .end stack
+    aload 3
 L_003f:
-   .line 211
-   astore 1
+    .line 211
+    astore 1
 L_0042:
-   .line 214
-   .var 1 is result Ljava/lang/Object; from L_0042 to L_0052
-   aload 0
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
-   aload 0
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
-   invokevirtual java/lang/String/length ()I
-   if_icmpne L_004c
-   iconst_1
-   goto L_004f
+    .line 214
+    .var 1 is result Ljava/lang/Object; from L_0042 to L_0052
+    aload 0
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
+    aload 0
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
+    invokevirtual java/lang/String/length ()I
+    if_icmpne L_004c
+    iconst_1
+    goto L_004f
 L_004c:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object java/lang/Object
-      locals Integer
-      locals Object java/lang/Object
-      locals Object java/lang/Object
-   .end stack
-   iconst_0
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object java/lang/Object
+        locals Integer
+        locals Object java/lang/Object
+        locals Object java/lang/Object
+    .end stack
+    iconst_0
 L_004f:
-   .stack use locals
-      stacks Integer
-   .end stack
-   ireturn
+    .stack use locals
+        stacks Integer
+    .end stack
+    ireturn
 L_0052:
 .end method
 
 .method public methodSignature ()Z
-   .limit stack 2
-   .limit local 9
+    .limit stack 2
+    .limit local 9
 L_0000:
-   .line 218
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0052
-   iconst_0
-   istore 2
+    .line 218
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0052
+    iconst_0
+    istore 2
 L_0004:
-   .catch java/lang/Throwable from L_0004 to L_002f using L_0031
-   nop
-   getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
-   astore 3
-   iconst_0
-   istore 4
+    .catch java/lang/Throwable from L_0004 to L_002f using L_0031
+    nop
+    getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
+    astore 3
+    iconst_0
+    istore 4
 L_000a:
-   .line 219
-   .var 4 is "\$i\$a\$-runCatching-SignatureVerifier\$methodSignature\$result\$1" I from L_000a to L_0025
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readMethodSignature ()Z
-   istore 5
-   astore 6
+    .line 219
+    .var 4 is "\$i\$a\$-runCatching-SignatureVerifier\$methodSignature\$result\$1" I from L_000a to L_0025
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readMethodSignature ()Z
+    istore 5
+    astore 6
 L_0011:
-   .var 6 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0011 to L_0022
-   .var 5 is $this$ifFalse$iv Z from L_0011 to L_0022
-   iconst_0
-   istore 7
+    .var 6 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0011 to L_0022
+    .var 5 is $this$ifFalse$iv Z from L_0011 to L_0022
+    iconst_0
+    istore 7
 L_0014:
-   .line 303
-   .var 7 is $i$f$ifFalse I from L_0014 to L_0022
-   iload 5
-   ifne L_001e
-   iconst_0
-   istore 8
+    .line 303
+    .var 7 is $i$f$ifFalse I from L_0014 to L_0022
+    iload 5
+    ifne L_001e
+    iconst_0
+    istore 8
 L_001a:
-   .line 219
-   .var 8 is "\$i\$a\$-ifFalse-SignatureVerifier\$methodSignature\$result\$1\$1" I from L_001a to L_001e
-   iconst_0
-   ireturn
+    .line 219
+    .var 8 is "\$i\$a\$-ifFalse-SignatureVerifier\$methodSignature\$result\$1\$1" I from L_001a to L_001e
+    iconst_0
+    ireturn
 L_001e:
-   .line 304
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      locals Object kotlin/Result$Companion
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-   .end stack
-   nop
+    .line 304
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        locals Object kotlin/Result$Companion
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+    .end stack
+    nop
 L_0022:
-   .line 220
-   nop
+    .line 220
+    nop
 L_0025:
-   getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
+    getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
 L_0027:
-   .line 218
-   astore 4
-   iconst_0
-   istore 5
-   aload 4
-   invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
-   astore 3
+    .line 218
+    astore 4
+    iconst_0
+    istore 5
+    aload 4
+    invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
+    astore 3
 L_002f:
-   goto L_003c
+    goto L_003c
 L_0031:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      stacks Object java/lang/Throwable
-   .end stack
-   astore 4
-   getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
-   astore 5
-   iconst_0
-   istore 6
-   aload 4
-   invokestatic kotlin/ResultKt/createFailure (Ljava/lang/Throwable;)Ljava/lang/Object;
-   invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
-   astore 3
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        stacks Object java/lang/Throwable
+    .end stack
+    astore 4
+    getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
+    astore 5
+    iconst_0
+    istore 6
+    aload 4
+    invokestatic kotlin/ResultKt/createFailure (Ljava/lang/Throwable;)Ljava/lang/Object;
+    invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
+    astore 3
 L_003c:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      locals Object java/lang/Object
-      locals Object java/lang/Object
-   .end stack
-   aload 3
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        locals Object java/lang/Object
+        locals Object java/lang/Object
+    .end stack
+    aload 3
 L_003f:
-   .line 218
-   astore 1
+    .line 218
+    astore 1
 L_0042:
-   .line 221
-   .var 1 is result Ljava/lang/Object; from L_0042 to L_0052
-   aload 0
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
-   aload 0
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
-   invokevirtual java/lang/String/length ()I
-   if_icmpne L_004c
-   iconst_1
-   goto L_004f
+    .line 221
+    .var 1 is result Ljava/lang/Object; from L_0042 to L_0052
+    aload 0
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
+    aload 0
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
+    invokevirtual java/lang/String/length ()I
+    if_icmpne L_004c
+    iconst_1
+    goto L_004f
 L_004c:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object java/lang/Object
-      locals Integer
-      locals Object java/lang/Object
-      locals Object java/lang/Object
-   .end stack
-   iconst_0
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object java/lang/Object
+        locals Integer
+        locals Object java/lang/Object
+        locals Object java/lang/Object
+    .end stack
+    iconst_0
 L_004f:
-   .stack use locals
-      stacks Integer
-   .end stack
-   ireturn
+    .stack use locals
+        stacks Integer
+    .end stack
+    ireturn
 L_0052:
 .end method
 
 .method public fieldDescriptor ()Z
-   .limit stack 2
-   .limit local 9
+    .limit stack 2
+    .limit local 9
 L_0000:
-   .line 225
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0052
-   iconst_0
-   istore 2
+    .line 225
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0052
+    iconst_0
+    istore 2
 L_0004:
-   .catch java/lang/Throwable from L_0004 to L_002f using L_0031
-   nop
-   getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
-   astore 3
-   iconst_0
-   istore 4
+    .catch java/lang/Throwable from L_0004 to L_002f using L_0031
+    nop
+    getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
+    astore 3
+    iconst_0
+    istore 4
 L_000a:
-   .line 226
-   .var 4 is "\$i\$a\$-runCatching-SignatureVerifier\$fieldDescriptor\$result\$1" I from L_000a to L_0025
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readFieldDescriptor ()Z
-   istore 5
-   astore 6
+    .line 226
+    .var 4 is "\$i\$a\$-runCatching-SignatureVerifier\$fieldDescriptor\$result\$1" I from L_000a to L_0025
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readFieldDescriptor ()Z
+    istore 5
+    astore 6
 L_0011:
-   .var 6 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0011 to L_0022
-   .var 5 is $this$ifFalse$iv Z from L_0011 to L_0022
-   iconst_0
-   istore 7
+    .var 6 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0011 to L_0022
+    .var 5 is $this$ifFalse$iv Z from L_0011 to L_0022
+    iconst_0
+    istore 7
 L_0014:
-   .line 305
-   .var 7 is $i$f$ifFalse I from L_0014 to L_0022
-   iload 5
-   ifne L_001e
-   iconst_0
-   istore 8
+    .line 305
+    .var 7 is $i$f$ifFalse I from L_0014 to L_0022
+    iload 5
+    ifne L_001e
+    iconst_0
+    istore 8
 L_001a:
-   .line 226
-   .var 8 is "\$i\$a\$-ifFalse-SignatureVerifier\$fieldDescriptor\$result\$1\$1" I from L_001a to L_001e
-   iconst_0
-   ireturn
+    .line 226
+    .var 8 is "\$i\$a\$-ifFalse-SignatureVerifier\$fieldDescriptor\$result\$1\$1" I from L_001a to L_001e
+    iconst_0
+    ireturn
 L_001e:
-   .line 306
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      locals Object kotlin/Result$Companion
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-   .end stack
-   nop
+    .line 306
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        locals Object kotlin/Result$Companion
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+    .end stack
+    nop
 L_0022:
-   .line 227
-   nop
+    .line 227
+    nop
 L_0025:
-   getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
+    getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
 L_0027:
-   .line 225
-   astore 4
-   iconst_0
-   istore 5
-   aload 4
-   invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
-   astore 3
+    .line 225
+    astore 4
+    iconst_0
+    istore 5
+    aload 4
+    invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
+    astore 3
 L_002f:
-   goto L_003c
+    goto L_003c
 L_0031:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      stacks Object java/lang/Throwable
-   .end stack
-   astore 4
-   getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
-   astore 5
-   iconst_0
-   istore 6
-   aload 4
-   invokestatic kotlin/ResultKt/createFailure (Ljava/lang/Throwable;)Ljava/lang/Object;
-   invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
-   astore 3
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        stacks Object java/lang/Throwable
+    .end stack
+    astore 4
+    getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
+    astore 5
+    iconst_0
+    istore 6
+    aload 4
+    invokestatic kotlin/ResultKt/createFailure (Ljava/lang/Throwable;)Ljava/lang/Object;
+    invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
+    astore 3
 L_003c:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      locals Object java/lang/Object
-      locals Object java/lang/Object
-   .end stack
-   aload 3
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        locals Object java/lang/Object
+        locals Object java/lang/Object
+    .end stack
+    aload 3
 L_003f:
-   .line 225
-   astore 1
+    .line 225
+    astore 1
 L_0042:
-   .line 228
-   .var 1 is result Ljava/lang/Object; from L_0042 to L_0052
-   aload 0
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
-   aload 0
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
-   invokevirtual java/lang/String/length ()I
-   if_icmpne L_004c
-   iconst_1
-   goto L_004f
+    .line 228
+    .var 1 is result Ljava/lang/Object; from L_0042 to L_0052
+    aload 0
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
+    aload 0
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
+    invokevirtual java/lang/String/length ()I
+    if_icmpne L_004c
+    iconst_1
+    goto L_004f
 L_004c:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object java/lang/Object
-      locals Integer
-      locals Object java/lang/Object
-      locals Object java/lang/Object
-   .end stack
-   iconst_0
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object java/lang/Object
+        locals Integer
+        locals Object java/lang/Object
+        locals Object java/lang/Object
+    .end stack
+    iconst_0
 L_004f:
-   .stack use locals
-      stacks Integer
-   .end stack
-   ireturn
+    .stack use locals
+        stacks Integer
+    .end stack
+    ireturn
 L_0052:
 .end method
 
 .method public fieldSignature ()Z
-   .limit stack 2
-   .limit local 9
+    .limit stack 2
+    .limit local 9
 L_0000:
-   .line 232
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0052
-   iconst_0
-   istore 2
+    .line 232
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0052
+    iconst_0
+    istore 2
 L_0004:
-   .catch java/lang/Throwable from L_0004 to L_002f using L_0031
-   nop
-   getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
-   astore 3
-   iconst_0
-   istore 4
+    .catch java/lang/Throwable from L_0004 to L_002f using L_0031
+    nop
+    getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
+    astore 3
+    iconst_0
+    istore 4
 L_000a:
-   .line 233
-   .var 4 is "\$i\$a\$-runCatching-SignatureVerifier\$fieldSignature\$result\$1" I from L_000a to L_0025
-   aload 0
-   aload 0
-   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readFieldSignature ()Z
-   istore 5
-   astore 6
+    .line 233
+    .var 4 is "\$i\$a\$-runCatching-SignatureVerifier\$fieldSignature\$result\$1" I from L_000a to L_0025
+    aload 0
+    aload 0
+    invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/readFieldSignature ()Z
+    istore 5
+    astore 6
 L_0011:
-   .var 6 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0011 to L_0022
-   .var 5 is $this$ifFalse$iv Z from L_0011 to L_0022
-   iconst_0
-   istore 7
+    .var 6 is this_$iv Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0011 to L_0022
+    .var 5 is $this$ifFalse$iv Z from L_0011 to L_0022
+    iconst_0
+    istore 7
 L_0014:
-   .line 307
-   .var 7 is $i$f$ifFalse I from L_0014 to L_0022
-   iload 5
-   ifne L_001e
-   iconst_0
-   istore 8
+    .line 307
+    .var 7 is $i$f$ifFalse I from L_0014 to L_0022
+    iload 5
+    ifne L_001e
+    iconst_0
+    istore 8
 L_001a:
-   .line 233
-   .var 8 is "\$i\$a\$-ifFalse-SignatureVerifier\$fieldSignature\$result\$1\$1" I from L_001a to L_001e
-   iconst_0
-   ireturn
+    .line 233
+    .var 8 is "\$i\$a\$-ifFalse-SignatureVerifier\$fieldSignature\$result\$1\$1" I from L_001a to L_001e
+    iconst_0
+    ireturn
 L_001e:
-   .line 308
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      locals Object kotlin/Result$Companion
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-   .end stack
-   nop
+    .line 308
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        locals Object kotlin/Result$Companion
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+    .end stack
+    nop
 L_0022:
-   .line 234
-   nop
+    .line 234
+    nop
 L_0025:
-   getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
+    getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
 L_0027:
-   .line 232
-   astore 4
-   iconst_0
-   istore 5
-   aload 4
-   invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
-   astore 3
+    .line 232
+    astore 4
+    iconst_0
+    istore 5
+    aload 4
+    invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
+    astore 3
 L_002f:
-   goto L_003c
+    goto L_003c
 L_0031:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      stacks Object java/lang/Throwable
-   .end stack
-   astore 4
-   getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
-   astore 5
-   iconst_0
-   istore 6
-   aload 4
-   invokestatic kotlin/ResultKt/createFailure (Ljava/lang/Throwable;)Ljava/lang/Object;
-   invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
-   astore 3
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        stacks Object java/lang/Throwable
+    .end stack
+    astore 4
+    getstatic kotlin/Result/Companion Lkotlin/Result$Companion;
+    astore 5
+    iconst_0
+    istore 6
+    aload 4
+    invokestatic kotlin/ResultKt/createFailure (Ljava/lang/Throwable;)Ljava/lang/Object;
+    invokestatic kotlin/Result/"constructor-impl" (Ljava/lang/Object;)Ljava/lang/Object;
+    astore 3
 L_003c:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Top
-      locals Integer
-      locals Object java/lang/Object
-      locals Object java/lang/Object
-   .end stack
-   aload 3
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Top
+        locals Integer
+        locals Object java/lang/Object
+        locals Object java/lang/Object
+    .end stack
+    aload 3
 L_003f:
-   .line 232
-   astore 1
+    .line 232
+    astore 1
 L_0042:
-   .line 235
-   .var 1 is result Ljava/lang/Object; from L_0042 to L_0052
-   aload 0
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
-   aload 0
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
-   invokevirtual java/lang/String/length ()I
-   if_icmpne L_004c
-   iconst_1
-   goto L_004f
+    .line 235
+    .var 1 is result Ljava/lang/Object; from L_0042 to L_0052
+    aload 0
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/index I
+    aload 0
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
+    invokevirtual java/lang/String/length ()I
+    if_icmpne L_004c
+    iconst_1
+    goto L_004f
 L_004c:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Object java/lang/Object
-      locals Integer
-      locals Object java/lang/Object
-      locals Object java/lang/Object
-   .end stack
-   iconst_0
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Object java/lang/Object
+        locals Integer
+        locals Object java/lang/Object
+        locals Object java/lang/Object
+    .end stack
+    iconst_0
 L_004f:
-   .stack use locals
-      stacks Integer
-   .end stack
-   ireturn
+    .stack use locals
+        stacks Integer
+    .end stack
+    ireturn
 L_0052:
 .end method
 
 .method private ifFalse (ZLkotlin/jvm/functions/Function0;)V
-   .limit stack 2
-   .limit local 4
+    .limit stack 2
+    .limit local 4
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_000f
-   .var 1 is $this$ifFalse Z from L_0000 to L_000f
-   .var 2 is block Lkotlin/jvm/functions/Function0; from L_0000 to L_000f
-   ldc 0
-   istore 3
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_000f
+    .var 1 is $this$ifFalse Z from L_0000 to L_000f
+    .var 2 is block Lkotlin/jvm/functions/Function0; from L_0000 to L_000f
+    ldc 0
+    istore 3
 L_0003:
-   .line 239
-   .var 3 is $i$f$ifFalse I from L_0003 to L_000f
-   iload 1
-   ifne L_000b
-   aload 2
-   invokeinterface kotlin/jvm/functions/Function0/invoke ()Ljava/lang/Object;
-   aconst_null
-   athrow
+    .line 239
+    .var 3 is $i$f$ifFalse I from L_0003 to L_000f
+    iload 1
+    ifne L_000b
+    aload 2
+    invokeinterface kotlin/jvm/functions/Function0/invoke ()Ljava/lang/Object;
+    aconst_null
+    athrow
 L_000b:
-   .line 240
-   .stack
-      locals Object com/anatawa12/jasm/assembler/SignatureVerifier
-      locals Integer
-      locals Object kotlin/jvm/functions/Function0
-      locals Integer
-   .end stack
-   return
+    .line 240
+    .stack
+        locals Object com/anatawa12/jasm/assembler/SignatureVerifier
+        locals Integer
+        locals Object kotlin/jvm/functions/Function0
+        locals Integer
+    .end stack
+    return
 L_000f:
 .end method
 
 .method public getSignature ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 6
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
-   areturn
+    .line 6
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
+    areturn
 L_0005:
 .end method
 
 .method public <init> (Ljava/lang/String;)V
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 2
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_000c
-   .var 1 is signature Ljava/lang/String; from L_0000 to L_000c
-   aload 1
-   ldc "signature"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/assembler/SignatureVerifier; from L_0000 to L_000c
+    .var 1 is signature Ljava/lang/String; from L_0000 to L_000c
+    aload 1
+    ldc "signature"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 6
-   aload 0
-   invokespecial java/lang/Object/<init> ()V
-   aload 0
-   aload 1
-   putfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
-   return
+    .line 6
+    aload 0
+    invokespecial java/lang/Object/<init> ()V
+    aload 0
+    aload 1
+    putfield com/anatawa12/jasm/assembler/SignatureVerifier/signature Ljava/lang/String;
+    return
 L_000c:
 .end method
 
@@ -2724,7 +2733,7 @@ L_000c:
 .end field
 
 .field private signature Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 

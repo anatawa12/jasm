@@ -8,68 +8,68 @@
 .inner static com/anatawa12/jasm/parser/AbstractParserKt$grammar$1
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 3
-   d1 [ = .annotation array
-      s = "\u0000\u0012\n\u0000\n\u0002\u0010\"\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u000c\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00020\u0001\"\b\b\u0000\u0010\u0003*\u00020\u0004H\n¢\u0006\u0002\b\u0005"
-   .end annotation
-   d2 [ = .annotation array
-      s = "<anonymous>"
-      s = ""
-      s = "Lcom/anatawa12/jasm/parser/TokenType;"
-      s = "T"
-      s = "Lcom/anatawa12/jasm/tree/Node;"
-      s = "invoke"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 3
+    d1 [ = .annotation array
+        s = "\u0000\u0012\n\u0000\n\u0002\u0010\"\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u000c\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00020\u0001\"\b\b\u0000\u0010\u0003*\u00020\u0004H\n¢\u0006\u0002\b\u0005"
+    .end annotation
+    d2 [ = .annotation array
+        s = "<anonymous>"
+        s = ""
+        s = "Lcom/anatawa12/jasm/parser/TokenType;"
+        s = "T"
+        s = "Lcom/anatawa12/jasm/tree/Node;"
+        s = "invoke"
+    .end annotation
 .end annotation
 
 .method public invoke ()Ljava/lang/Object;
-   .limit stack 1
-   .limit local 1
-   aload 0
-   invokevirtual com/anatawa12/jasm/parser/AbstractParserKt$grammar$1/invoke ()Ljava/util/Set;
-   areturn
+    .limit stack 1
+    .limit local 1
+    aload 0
+    invokevirtual com/anatawa12/jasm/parser/AbstractParserKt$grammar$1/invoke ()Ljava/util/Set;
+    areturn
 .end method
 
 .method public invoke ()Ljava/util/Set;
-   .signature "()Ljava/util/Set<Lcom/anatawa12/jasm/parser/TokenType<*>;>;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 1
+    .signature "()Ljava/util/Set<Lcom/anatawa12/jasm/parser/TokenType<*>;>;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 1
 L_0000:
-   .line 8
-   .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParserKt$grammar$1; from L_0000 to L_000a
-   aload 0
-   getfield com/anatawa12/jasm/parser/AbstractParserKt$grammar$1/$starts "[Lcom/anatawa12/jasm/parser/TokenType;"
-   dup
-   arraylength
-   invokestatic java/util/Arrays/copyOf "([Ljava/lang/Object;I)[Ljava/lang/Object;"
-   checkcast "[Lcom/anatawa12/jasm/parser/TokenType;"
-   invokestatic kotlin/collections/SetsKt/setOf "([Ljava/lang/Object;)Ljava/util/Set;"
-   areturn
+    .line 8
+    .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParserKt$grammar$1; from L_0000 to L_000a
+    aload 0
+    getfield com/anatawa12/jasm/parser/AbstractParserKt$grammar$1/$starts "[Lcom/anatawa12/jasm/parser/TokenType;"
+    dup
+    arraylength
+    invokestatic java/util/Arrays/copyOf "([Ljava/lang/Object;I)[Ljava/lang/Object;"
+    checkcast "[Lcom/anatawa12/jasm/parser/TokenType;"
+    invokestatic kotlin/collections/SetsKt/setOf "([Ljava/lang/Object;)Ljava/util/Set;"
+    areturn
 L_000a:
 .end method
 
 .method <init> "([Lcom/anatawa12/jasm/parser/TokenType;)V"
-   .limit stack 2
-   .limit local 2
-   aload 0
-   aload 1
-   putfield com/anatawa12/jasm/parser/AbstractParserKt$grammar$1/$starts "[Lcom/anatawa12/jasm/parser/TokenType;"
-   aload 0
-   iconst_0
-   invokespecial kotlin/jvm/internal/Lambda/<init> (I)V
-   return
+    .limit stack 2
+    .limit local 2
+    aload 0
+    aload 1
+    putfield com/anatawa12/jasm/parser/AbstractParserKt$grammar$1/$starts "[Lcom/anatawa12/jasm/parser/TokenType;"
+    aload 0
+    iconst_0
+    invokespecial kotlin/jvm/internal/Lambda/<init> (I)V
+    return
 .end method
 
 .field final $starts "[Lcom/anatawa12/jasm/parser/TokenType;"

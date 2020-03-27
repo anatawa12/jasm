@@ -5,38 +5,38 @@
 .inner public com/anatawa12/jasm/tree/AccessFlag$Final inner Final outer com/anatawa12/jasm/tree/AccessFlag
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002¨\u0006\u0003"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Final;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag;"
-      s = "()V"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002¨\u0006\u0003"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Final;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag;"
+        s = "()V"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public <init> ()V
-   .limit stack 2
-   .limit local 1
+    .limit stack 2
+    .limit local 1
 L_0000:
-   .line 36
-   .var 0 is this Lcom/anatawa12/jasm/tree/AccessFlag$Final; from L_0000 to L_0006
-   aload 0
-   aconst_null
-   invokespecial com/anatawa12/jasm/tree/AccessFlag/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-   return
+    .line 36
+    .var 0 is this Lcom/anatawa12/jasm/tree/AccessFlag$Final; from L_0000 to L_0006
+    aload 0
+    aconst_null
+    invokespecial com/anatawa12/jasm/tree/AccessFlag/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    return
 L_0006:
 .end method
 

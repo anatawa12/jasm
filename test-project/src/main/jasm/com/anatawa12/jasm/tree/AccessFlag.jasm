@@ -24,148 +24,148 @@
 .inner public com/anatawa12/jasm/tree/AccessFlag$Mandated inner Mandated outer com/anatawa12/jasm/tree/AccessFlag
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0015\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0013\u0007\b\t\n\u000b\u000c\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006\u0082\u0001\u0013\u001a\u001b\u001c\u001d\u001e\u001f !\"#\$%&\'()*+,¨\u0006-"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag;"
-      s = "Lcom/anatawa12/jasm/tree/BranchNode;"
-      s = "()V"
-      s = "name"
-      s = ""
-      s = "getName"
-      s = "()Ljava/lang/String;"
-      s = "Abstract"
-      s = "Annotation"
-      s = "Bridge"
-      s = "Enum"
-      s = "Final"
-      s = "Interface"
-      s = "Mandated"
-      s = "Native"
-      s = "Private"
-      s = "Protected"
-      s = "Public"
-      s = "Static"
-      s = "Strict"
-      s = "Super"
-      s = "Synchronized"
-      s = "Synthetic"
-      s = "Transient"
-      s = "Varargs"
-      s = "Volatile"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Public;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Private;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Protected;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Static;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Final;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Super;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Synchronized;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Volatile;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Bridge;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Varargs;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Transient;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Native;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Interface;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Abstract;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Strict;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Synthetic;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Annotation;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Enum;"
-      s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Mandated;"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0015\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0013\u0007\b\t\n\u000b\u000c\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006\u0082\u0001\u0013\u001a\u001b\u001c\u001d\u001e\u001f !\"#\$%&\'()*+,¨\u0006-"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag;"
+        s = "Lcom/anatawa12/jasm/tree/BranchNode;"
+        s = "()V"
+        s = "name"
+        s = ""
+        s = "getName"
+        s = "()Ljava/lang/String;"
+        s = "Abstract"
+        s = "Annotation"
+        s = "Bridge"
+        s = "Enum"
+        s = "Final"
+        s = "Interface"
+        s = "Mandated"
+        s = "Native"
+        s = "Private"
+        s = "Protected"
+        s = "Public"
+        s = "Static"
+        s = "Strict"
+        s = "Super"
+        s = "Synchronized"
+        s = "Synthetic"
+        s = "Transient"
+        s = "Varargs"
+        s = "Volatile"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Public;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Private;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Protected;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Static;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Final;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Super;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Synchronized;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Volatile;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Bridge;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Varargs;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Transient;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Native;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Interface;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Abstract;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Strict;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Synthetic;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Annotation;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Enum;"
+        s = "Lcom/anatawa12/jasm/tree/AccessFlag\$Mandated;"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public getName ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 31
-   .var 0 is this Lcom/anatawa12/jasm/tree/AccessFlag; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/tree/AccessFlag/name Ljava/lang/String;
-   areturn
+    .line 31
+    .var 0 is this Lcom/anatawa12/jasm/tree/AccessFlag; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/tree/AccessFlag/name Ljava/lang/String;
+    areturn
 L_0005:
 .end method
 
 .method private <init> ()V
-   .limit stack 4
-   .limit local 5
+    .limit stack 4
+    .limit local 5
 L_0000:
-   .line 30
-   .var 0 is this Lcom/anatawa12/jasm/tree/AccessFlag; from L_0000 to L_0024
-   aload 0
-   invokespecial com/anatawa12/jasm/tree/BranchNode/<init> ()V
+    .line 30
+    .var 0 is this Lcom/anatawa12/jasm/tree/AccessFlag; from L_0000 to L_0024
+    aload 0
+    invokespecial com/anatawa12/jasm/tree/BranchNode/<init> ()V
 L_0004:
-   .line 31
-   aload 0
-   aload 0
-   invokevirtual java/lang/Object/getClass ()Ljava/lang/Class;
-   invokevirtual java/lang/Class/getSimpleName ()Ljava/lang/String;
-   dup
-   ldc "javaClass.simpleName"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   astore 1
-   astore 3
-   iconst_0
-   istore 2
-   aload 1
-   dup
-   ifnonnull L_0019
-   new kotlin/TypeCastException
-   dup
-   ldc "null cannot be cast to non-null type java.lang.String"
-   invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
-   athrow
+    .line 31
+    aload 0
+    aload 0
+    invokevirtual java/lang/Object/getClass ()Ljava/lang/Class;
+    invokevirtual java/lang/Class/getSimpleName ()Ljava/lang/String;
+    dup
+    ldc "javaClass.simpleName"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    astore 1
+    astore 3
+    iconst_0
+    istore 2
+    aload 1
+    dup
+    ifnonnull L_0019
+    new kotlin/TypeCastException
+    dup
+    ldc "null cannot be cast to non-null type java.lang.String"
+    invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
+    athrow
 L_0019:
-   .stack
-      locals Object com/anatawa12/jasm/tree/AccessFlag
-      locals Object java/lang/String
-      locals Integer
-      locals Object com/anatawa12/jasm/tree/AccessFlag
-      stacks Object java/lang/String
-   .end stack
-   invokevirtual java/lang/String/toLowerCase ()Ljava/lang/String;
-   dup
-   ldc "(this as java.lang.String).toLowerCase()"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   astore 4
-   aload 3
-   aload 4
-   putfield com/anatawa12/jasm/tree/AccessFlag/name Ljava/lang/String;
-   return
+    .stack
+        locals Object com/anatawa12/jasm/tree/AccessFlag
+        locals Object java/lang/String
+        locals Integer
+        locals Object com/anatawa12/jasm/tree/AccessFlag
+        stacks Object java/lang/String
+    .end stack
+    invokevirtual java/lang/String/toLowerCase ()Ljava/lang/String;
+    dup
+    ldc "(this as java.lang.String).toLowerCase()"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    astore 4
+    aload 3
+    aload 4
+    putfield com/anatawa12/jasm/tree/AccessFlag/name Ljava/lang/String;
+    return
 L_0024:
 .end method
 
 .method public <init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-   .limit stack 1
-   .limit local 2
+    .limit stack 1
+    .limit local 2
 L_0000:
-   .line 30
-   .var 0 is this Lcom/anatawa12/jasm/tree/AccessFlag; from L_0000 to L_0005
-   .var 1 is $constructor_marker Lkotlin/jvm/internal/DefaultConstructorMarker; from L_0000 to L_0005
-   aload 0
-   invokespecial com/anatawa12/jasm/tree/AccessFlag/<init> ()V
-   return
+    .line 30
+    .var 0 is this Lcom/anatawa12/jasm/tree/AccessFlag; from L_0000 to L_0005
+    .var 1 is $constructor_marker Lkotlin/jvm/internal/DefaultConstructorMarker; from L_0000 to L_0005
+    aload 0
+    invokespecial com/anatawa12/jasm/tree/AccessFlag/<init> ()V
+    return
 L_0005:
 .end method
 
 .field private name Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 

@@ -5,68 +5,68 @@
 .inner public com/anatawa12/jasm/tree/Token$Companion inner Companion outer com/anatawa12/jasm/tree/Token
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0001\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u0019\u0010\u0003\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00050\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007¨\u0006\b"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/tree/Token\$Companion;"
-      s = ""
-      s = "()V"
-      s = "TEST"
-      s = "Lcom/anatawa12/jasm/tree/Token;"
-      s = ""
-      s = "getTEST"
-      s = "()Lcom/anatawa12/jasm/tree/Token;"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0001\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u0019\u0010\u0003\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00050\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007¨\u0006\b"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/tree/Token\$Companion;"
+        s = ""
+        s = "()V"
+        s = "TEST"
+        s = "Lcom/anatawa12/jasm/tree/Token;"
+        s = ""
+        s = "getTEST"
+        s = "()Lcom/anatawa12/jasm/tree/Token;"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public getTEST ()Lcom/anatawa12/jasm/tree/Token;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 7
-   .var 0 is this Lcom/anatawa12/jasm/tree/Token$Companion; from L_0000 to L_0004
-   invokestatic com/anatawa12/jasm/tree/Token/access$getTEST$cp ()Lcom/anatawa12/jasm/tree/Token;
-   areturn
+    .line 7
+    .var 0 is this Lcom/anatawa12/jasm/tree/Token$Companion; from L_0000 to L_0004
+    invokestatic com/anatawa12/jasm/tree/Token/access$getTEST$cp ()Lcom/anatawa12/jasm/tree/Token;
+    areturn
 L_0004:
 .end method
 
 .method private <init> ()V
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 6
-   .var 0 is this Lcom/anatawa12/jasm/tree/Token$Companion; from L_0000 to L_0005
-   aload 0
-   invokespecial java/lang/Object/<init> ()V
-   return
+    .line 6
+    .var 0 is this Lcom/anatawa12/jasm/tree/Token$Companion; from L_0000 to L_0005
+    aload 0
+    invokespecial java/lang/Object/<init> ()V
+    return
 L_0005:
 .end method
 
 .method public <init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-   .limit stack 1
-   .limit local 2
+    .limit stack 1
+    .limit local 2
 L_0000:
-   .line 6
-   .var 0 is this Lcom/anatawa12/jasm/tree/Token$Companion; from L_0000 to L_0005
-   .var 1 is $constructor_marker Lkotlin/jvm/internal/DefaultConstructorMarker; from L_0000 to L_0005
-   aload 0
-   invokespecial com/anatawa12/jasm/tree/Token$Companion/<init> ()V
-   return
+    .line 6
+    .var 0 is this Lcom/anatawa12/jasm/tree/Token$Companion; from L_0000 to L_0005
+    .var 1 is $constructor_marker Lkotlin/jvm/internal/DefaultConstructorMarker; from L_0000 to L_0005
+    aload 0
+    invokespecial com/anatawa12/jasm/tree/Token$Companion/<init> ()V
+    return
 L_0005:
 .end method
 

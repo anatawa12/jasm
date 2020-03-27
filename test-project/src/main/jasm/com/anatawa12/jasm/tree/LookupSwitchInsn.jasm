@@ -4,317 +4,317 @@
 .super com/anatawa12/jasm/tree/Instruction
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\t\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B\'\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0018\u0010\u0004\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00030\u00060\u0005¢\u0006\u0002\u0010\bJ\t\u0010\r\u001a\u00020\u0003HÆ\u0003J\u001b\u0010\u000e\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00030\u00060\u0005HÆ\u0003J/\u0010\u000f\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\u001a\b\u0002\u0010\u0004\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00030\u00060\u0005HÆ\u0001J\u0013\u0010\u0010\u001a\u00020\u00112\b\u0010\u0012\u001a\u0004\u0018\u00010\u0013HÖ\u0003J\t\u0010\u0014\u001a\u00020\u0007HÖ\u0001J\t\u0010\u0015\u001a\u00020\u0016HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR#\u0010\u0004\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00030\u00060\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\u000c¨\u0006\u0017"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/tree/LookupSwitchInsn;"
-      s = "Lcom/anatawa12/jasm/tree/Instruction;"
-      s = "dflt"
-      s = "Lcom/anatawa12/jasm/tree/LabelName;"
-      s = "pairs"
-      s = ""
-      s = "Lkotlin/Pair;"
-      s = ""
-      s = "(Lcom/anatawa12/jasm/tree/LabelName;Ljava/util/List;)V"
-      s = "getDflt"
-      s = "()Lcom/anatawa12/jasm/tree/LabelName;"
-      s = "getPairs"
-      s = "()Ljava/util/List;"
-      s = "component1"
-      s = "component2"
-      s = "copy"
-      s = "equals"
-      s = ""
-      s = "other"
-      s = ""
-      s = "hashCode"
-      s = "toString"
-      s = ""
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\t\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B\'\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0018\u0010\u0004\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00030\u00060\u0005¢\u0006\u0002\u0010\bJ\t\u0010\r\u001a\u00020\u0003HÆ\u0003J\u001b\u0010\u000e\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00030\u00060\u0005HÆ\u0003J/\u0010\u000f\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\u001a\b\u0002\u0010\u0004\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00030\u00060\u0005HÆ\u0001J\u0013\u0010\u0010\u001a\u00020\u00112\b\u0010\u0012\u001a\u0004\u0018\u00010\u0013HÖ\u0003J\t\u0010\u0014\u001a\u00020\u0007HÖ\u0001J\t\u0010\u0015\u001a\u00020\u0016HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR#\u0010\u0004\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00030\u00060\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\u000c¨\u0006\u0017"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/tree/LookupSwitchInsn;"
+        s = "Lcom/anatawa12/jasm/tree/Instruction;"
+        s = "dflt"
+        s = "Lcom/anatawa12/jasm/tree/LabelName;"
+        s = "pairs"
+        s = ""
+        s = "Lkotlin/Pair;"
+        s = ""
+        s = "(Lcom/anatawa12/jasm/tree/LabelName;Ljava/util/List;)V"
+        s = "getDflt"
+        s = "()Lcom/anatawa12/jasm/tree/LabelName;"
+        s = "getPairs"
+        s = "()Ljava/util/List;"
+        s = "component1"
+        s = "component2"
+        s = "copy"
+        s = "equals"
+        s = ""
+        s = "other"
+        s = ""
+        s = "hashCode"
+        s = "toString"
+        s = ""
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public getDflt ()Lcom/anatawa12/jasm/tree/LabelName;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 47
-   .var 0 is this Lcom/anatawa12/jasm/tree/LookupSwitchInsn; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/tree/LookupSwitchInsn/dflt Lcom/anatawa12/jasm/tree/LabelName;
-   areturn
+    .line 47
+    .var 0 is this Lcom/anatawa12/jasm/tree/LookupSwitchInsn; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/tree/LookupSwitchInsn/dflt Lcom/anatawa12/jasm/tree/LabelName;
+    areturn
 L_0005:
 .end method
 
 .method public getPairs ()Ljava/util/List;
-   .signature "()Ljava/util/List<Lkotlin/Pair<Ljava/lang/Integer;Lcom/anatawa12/jasm/tree/LabelName;>;>;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .signature "()Ljava/util/List<Lkotlin/Pair<Ljava/lang/Integer;Lcom/anatawa12/jasm/tree/LabelName;>;>;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 47
-   .var 0 is this Lcom/anatawa12/jasm/tree/LookupSwitchInsn; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/tree/LookupSwitchInsn/pairs Ljava/util/List;
-   areturn
+    .line 47
+    .var 0 is this Lcom/anatawa12/jasm/tree/LookupSwitchInsn; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/tree/LookupSwitchInsn/pairs Ljava/util/List;
+    areturn
 L_0005:
 .end method
 
 .method public <init> (Lcom/anatawa12/jasm/tree/LabelName;Ljava/util/List;)V
-   .signature "(Lcom/anatawa12/jasm/tree/LabelName;Ljava/util/List<Lkotlin/Pair<Ljava/lang/Integer;Lcom/anatawa12/jasm/tree/LabelName;>;>;)V"
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 3
+    .signature "(Lcom/anatawa12/jasm/tree/LabelName;Ljava/util/List<Lkotlin/Pair<Ljava/lang/Integer;Lcom/anatawa12/jasm/tree/LabelName;>;>;)V"
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 3
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/tree/LookupSwitchInsn; from L_0000 to L_0013
-   .var 1 is dflt Lcom/anatawa12/jasm/tree/LabelName; from L_0000 to L_0013
-   .var 2 is pairs Ljava/util/List; from L_0000 to L_0013
-   aload 1
-   ldc "dflt"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 2
-   ldc "pairs"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/tree/LookupSwitchInsn; from L_0000 to L_0013
+    .var 1 is dflt Lcom/anatawa12/jasm/tree/LabelName; from L_0000 to L_0013
+    .var 2 is pairs Ljava/util/List; from L_0000 to L_0013
+    aload 1
+    ldc "dflt"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 2
+    ldc "pairs"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0007:
-   .line 47
-   aload 0
-   aconst_null
-   invokespecial com/anatawa12/jasm/tree/Instruction/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-   aload 0
-   aload 1
-   putfield com/anatawa12/jasm/tree/LookupSwitchInsn/dflt Lcom/anatawa12/jasm/tree/LabelName;
-   aload 0
-   aload 2
-   putfield com/anatawa12/jasm/tree/LookupSwitchInsn/pairs Ljava/util/List;
-   return
+    .line 47
+    aload 0
+    aconst_null
+    invokespecial com/anatawa12/jasm/tree/Instruction/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    aload 0
+    aload 1
+    putfield com/anatawa12/jasm/tree/LookupSwitchInsn/dflt Lcom/anatawa12/jasm/tree/LabelName;
+    aload 0
+    aload 2
+    putfield com/anatawa12/jasm/tree/LookupSwitchInsn/pairs Ljava/util/List;
+    return
 L_0013:
 .end method
 
 .method public component1 ()Lcom/anatawa12/jasm/tree/LabelName;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/tree/LookupSwitchInsn; from L_0000 to L_0004
-   aload 0
-   getfield com/anatawa12/jasm/tree/LookupSwitchInsn/dflt Lcom/anatawa12/jasm/tree/LabelName;
-   areturn
+    .var 0 is this Lcom/anatawa12/jasm/tree/LookupSwitchInsn; from L_0000 to L_0004
+    aload 0
+    getfield com/anatawa12/jasm/tree/LookupSwitchInsn/dflt Lcom/anatawa12/jasm/tree/LabelName;
+    areturn
 L_0004:
 .end method
 
 .method public component2 ()Ljava/util/List;
-   .signature "()Ljava/util/List<Lkotlin/Pair<Ljava/lang/Integer;Lcom/anatawa12/jasm/tree/LabelName;>;>;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .signature "()Ljava/util/List<Lkotlin/Pair<Ljava/lang/Integer;Lcom/anatawa12/jasm/tree/LabelName;>;>;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/tree/LookupSwitchInsn; from L_0000 to L_0004
-   aload 0
-   getfield com/anatawa12/jasm/tree/LookupSwitchInsn/pairs Ljava/util/List;
-   areturn
+    .var 0 is this Lcom/anatawa12/jasm/tree/LookupSwitchInsn; from L_0000 to L_0004
+    aload 0
+    getfield com/anatawa12/jasm/tree/LookupSwitchInsn/pairs Ljava/util/List;
+    areturn
 L_0004:
 .end method
 
 .method public copy (Lcom/anatawa12/jasm/tree/LabelName;Ljava/util/List;)Lcom/anatawa12/jasm/tree/LookupSwitchInsn;
-   .signature "(Lcom/anatawa12/jasm/tree/LabelName;Ljava/util/List<Lkotlin/Pair<Ljava/lang/Integer;Lcom/anatawa12/jasm/tree/LabelName;>;>;)Lcom/anatawa12/jasm/tree/LookupSwitchInsn;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 4
-   .limit local 3
+    .signature "(Lcom/anatawa12/jasm/tree/LabelName;Ljava/util/List<Lkotlin/Pair<Ljava/lang/Integer;Lcom/anatawa12/jasm/tree/LabelName;>;>;)Lcom/anatawa12/jasm/tree/LookupSwitchInsn;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 4
+    .limit local 3
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/tree/LookupSwitchInsn; from L_0000 to L_000d
-   .var 1 is dflt Lcom/anatawa12/jasm/tree/LabelName; from L_0000 to L_000d
-   .var 2 is pairs Ljava/util/List; from L_0000 to L_000d
-   aload 1
-   ldc "dflt"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 2
-   ldc "pairs"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   new com/anatawa12/jasm/tree/LookupSwitchInsn
-   dup
-   aload 1
-   aload 2
-   invokespecial com/anatawa12/jasm/tree/LookupSwitchInsn/<init> (Lcom/anatawa12/jasm/tree/LabelName;Ljava/util/List;)V
-   areturn
+    .var 0 is this Lcom/anatawa12/jasm/tree/LookupSwitchInsn; from L_0000 to L_000d
+    .var 1 is dflt Lcom/anatawa12/jasm/tree/LabelName; from L_0000 to L_000d
+    .var 2 is pairs Ljava/util/List; from L_0000 to L_000d
+    aload 1
+    ldc "dflt"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 2
+    ldc "pairs"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    new com/anatawa12/jasm/tree/LookupSwitchInsn
+    dup
+    aload 1
+    aload 2
+    invokespecial com/anatawa12/jasm/tree/LookupSwitchInsn/<init> (Lcom/anatawa12/jasm/tree/LabelName;Ljava/util/List;)V
+    areturn
 L_000d:
 .end method
 
 .method public copy$default (Lcom/anatawa12/jasm/tree/LookupSwitchInsn;Lcom/anatawa12/jasm/tree/LabelName;Ljava/util/List;ILjava/lang/Object;)Lcom/anatawa12/jasm/tree/LookupSwitchInsn;
-   .limit stack 3
-   .limit local 5
-   iload 3
-   iconst_1
-   iand
-   ifeq L_0007
-   aload 0
-   getfield com/anatawa12/jasm/tree/LookupSwitchInsn/dflt Lcom/anatawa12/jasm/tree/LabelName;
-   astore 1
+    .limit stack 3
+    .limit local 5
+    iload 3
+    iconst_1
+    iand
+    ifeq L_0007
+    aload 0
+    getfield com/anatawa12/jasm/tree/LookupSwitchInsn/dflt Lcom/anatawa12/jasm/tree/LabelName;
+    astore 1
 L_0007:
-   .stack
-      locals Object com/anatawa12/jasm/tree/LookupSwitchInsn
-      locals Object com/anatawa12/jasm/tree/LabelName
-      locals Object java/util/List
-      locals Integer
-      locals Object java/lang/Object
-   .end stack
-   iload 3
-   iconst_2
-   iand
-   ifeq L_0010
-   aload 0
-   getfield com/anatawa12/jasm/tree/LookupSwitchInsn/pairs Ljava/util/List;
-   astore 2
+    .stack
+        locals Object com/anatawa12/jasm/tree/LookupSwitchInsn
+        locals Object com/anatawa12/jasm/tree/LabelName
+        locals Object java/util/List
+        locals Integer
+        locals Object java/lang/Object
+    .end stack
+    iload 3
+    iconst_2
+    iand
+    ifeq L_0010
+    aload 0
+    getfield com/anatawa12/jasm/tree/LookupSwitchInsn/pairs Ljava/util/List;
+    astore 2
 L_0010:
-   .stack use locals
-   .end stack
-   aload 0
-   aload 1
-   aload 2
-   invokevirtual com/anatawa12/jasm/tree/LookupSwitchInsn/copy (Lcom/anatawa12/jasm/tree/LabelName;Ljava/util/List;)Lcom/anatawa12/jasm/tree/LookupSwitchInsn;
-   areturn
+    .stack use locals
+    .end stack
+    aload 0
+    aload 1
+    aload 2
+    invokevirtual com/anatawa12/jasm/tree/LookupSwitchInsn/copy (Lcom/anatawa12/jasm/tree/LabelName;Ljava/util/List;)Lcom/anatawa12/jasm/tree/LookupSwitchInsn;
+    areturn
 .end method
 
 .method public toString ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 1
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   ldc "LookupSwitchInsn(dflt="
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 0
-   getfield com/anatawa12/jasm/tree/LookupSwitchInsn/dflt Lcom/anatawa12/jasm/tree/LabelName;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
-   ldc ", pairs="
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 0
-   getfield com/anatawa12/jasm/tree/LookupSwitchInsn/pairs Ljava/util/List;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
-   ldc ")"
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   areturn
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 1
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    ldc "LookupSwitchInsn(dflt="
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 0
+    getfield com/anatawa12/jasm/tree/LookupSwitchInsn/dflt Lcom/anatawa12/jasm/tree/LabelName;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    ldc ", pairs="
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 0
+    getfield com/anatawa12/jasm/tree/LookupSwitchInsn/pairs Ljava/util/List;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    ldc ")"
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    areturn
 .end method
 
 .method public hashCode ()I
-   .limit stack 3
-   .limit local 1
-   aload 0
-   getfield com/anatawa12/jasm/tree/LookupSwitchInsn/dflt Lcom/anatawa12/jasm/tree/LabelName;
-   dup
-   ifnull L_0006
-   invokevirtual java/lang/Object/hashCode ()I
-   goto L_000a
+    .limit stack 3
+    .limit local 1
+    aload 0
+    getfield com/anatawa12/jasm/tree/LookupSwitchInsn/dflt Lcom/anatawa12/jasm/tree/LabelName;
+    dup
+    ifnull L_0006
+    invokevirtual java/lang/Object/hashCode ()I
+    goto L_000a
 L_0006:
-   .stack
-      locals Object com/anatawa12/jasm/tree/LookupSwitchInsn
-      stacks Object com/anatawa12/jasm/tree/LabelName
-   .end stack
-   pop
-   iconst_0
+    .stack
+        locals Object com/anatawa12/jasm/tree/LookupSwitchInsn
+        stacks Object com/anatawa12/jasm/tree/LabelName
+    .end stack
+    pop
+    iconst_0
 L_000a:
-   .stack use locals
-      stacks Integer
-   .end stack
-   bipush 31
-   imul
-   aload 0
-   getfield com/anatawa12/jasm/tree/LookupSwitchInsn/pairs Ljava/util/List;
-   dup
-   ifnull L_0014
-   invokevirtual java/lang/Object/hashCode ()I
-   goto L_0018
+    .stack use locals
+        stacks Integer
+    .end stack
+    bipush 31
+    imul
+    aload 0
+    getfield com/anatawa12/jasm/tree/LookupSwitchInsn/pairs Ljava/util/List;
+    dup
+    ifnull L_0014
+    invokevirtual java/lang/Object/hashCode ()I
+    goto L_0018
 L_0014:
-   .stack use locals
-      stacks Integer
-      stacks Object java/util/List
-   .end stack
-   pop
-   iconst_0
+    .stack use locals
+        stacks Integer
+        stacks Object java/util/List
+    .end stack
+    pop
+    iconst_0
 L_0018:
-   .stack use locals
-      stacks Integer
-      stacks Integer
-   .end stack
-   iadd
-   ireturn
+    .stack use locals
+        stacks Integer
+        stacks Integer
+    .end stack
+    iadd
+    ireturn
 .end method
 
 .method public equals (Ljava/lang/Object;)Z
-   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
-   .end annotation
-   .limit stack 2
-   .limit local 3
-   aload 0
-   aload 1
-   if_acmpeq L_0015
-   aload 1
-   instanceof com/anatawa12/jasm/tree/LookupSwitchInsn
-   ifeq L_0019
-   aload 1
-   checkcast com/anatawa12/jasm/tree/LookupSwitchInsn
-   astore 2
-   aload 0
-   getfield com/anatawa12/jasm/tree/LookupSwitchInsn/dflt Lcom/anatawa12/jasm/tree/LabelName;
-   aload 2
-   getfield com/anatawa12/jasm/tree/LookupSwitchInsn/dflt Lcom/anatawa12/jasm/tree/LabelName;
-   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
-   ifeq L_0019
-   aload 0
-   getfield com/anatawa12/jasm/tree/LookupSwitchInsn/pairs Ljava/util/List;
-   aload 2
-   getfield com/anatawa12/jasm/tree/LookupSwitchInsn/pairs Ljava/util/List;
-   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
-   ifeq L_0019
+    .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+    .end annotation
+    .limit stack 2
+    .limit local 3
+    aload 0
+    aload 1
+    if_acmpeq L_0015
+    aload 1
+    instanceof com/anatawa12/jasm/tree/LookupSwitchInsn
+    ifeq L_0019
+    aload 1
+    checkcast com/anatawa12/jasm/tree/LookupSwitchInsn
+    astore 2
+    aload 0
+    getfield com/anatawa12/jasm/tree/LookupSwitchInsn/dflt Lcom/anatawa12/jasm/tree/LabelName;
+    aload 2
+    getfield com/anatawa12/jasm/tree/LookupSwitchInsn/dflt Lcom/anatawa12/jasm/tree/LabelName;
+    invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+    ifeq L_0019
+    aload 0
+    getfield com/anatawa12/jasm/tree/LookupSwitchInsn/pairs Ljava/util/List;
+    aload 2
+    getfield com/anatawa12/jasm/tree/LookupSwitchInsn/pairs Ljava/util/List;
+    invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+    ifeq L_0019
 L_0015:
-   .stack
-      locals Object com/anatawa12/jasm/tree/LookupSwitchInsn
-      locals Object java/lang/Object
-   .end stack
-   iconst_1
-   ireturn
+    .stack
+        locals Object com/anatawa12/jasm/tree/LookupSwitchInsn
+        locals Object java/lang/Object
+    .end stack
+    iconst_1
+    ireturn
 L_0019:
-   .stack use locals
-   .end stack
-   iconst_0
-   ireturn
+    .stack use locals
+    .end stack
+    iconst_0
+    ireturn
 .end method
 
 .field private dflt Lcom/anatawa12/jasm/tree/LabelName;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 
 .field private pairs Ljava/util/List;
-   .signature "Ljava/util/List<Lkotlin/Pair<Ljava/lang/Integer;Lcom/anatawa12/jasm/tree/LabelName;>;>;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .signature "Ljava/util/List<Lkotlin/Pair<Ljava/lang/Integer;Lcom/anatawa12/jasm/tree/LabelName;>;>;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 

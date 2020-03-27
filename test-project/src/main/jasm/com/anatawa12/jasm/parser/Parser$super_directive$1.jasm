@@ -8,95 +8,95 @@
 .inner static com/anatawa12/jasm/parser/Parser$super_directive$1
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 3
-   d1 [ = .annotation array
-      s = "\u0000\u000c\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"
-   .end annotation
-   d2 [ = .annotation array
-      s = "<anonymous>"
-      s = "Lcom/anatawa12/jasm/tree/SuperDirective;"
-      s = "Lcom/anatawa12/jasm/parser/Grammar\$GrammarScope;"
-      s = "invoke"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 3
+    d1 [ = .annotation array
+        s = "\u0000\u000c\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"
+    .end annotation
+    d2 [ = .annotation array
+        s = "<anonymous>"
+        s = "Lcom/anatawa12/jasm/tree/SuperDirective;"
+        s = "Lcom/anatawa12/jasm/parser/Grammar\$GrammarScope;"
+        s = "invoke"
+    .end annotation
 .end annotation
 
 .method public invoke (Ljava/lang/Object;)Ljava/lang/Object;
-   .limit stack 2
-   .limit local 2
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .line 6
-   aload 0
-   aload 1
-   checkcast com/anatawa12/jasm/parser/Grammar$GrammarScope
-   invokevirtual com/anatawa12/jasm/parser/Parser$super_directive$1/invoke (Lcom/anatawa12/jasm/parser/Grammar$GrammarScope;)Lcom/anatawa12/jasm/tree/SuperDirective;
-   areturn
+    .line 6
+    aload 0
+    aload 1
+    checkcast com/anatawa12/jasm/parser/Grammar$GrammarScope
+    invokevirtual com/anatawa12/jasm/parser/Parser$super_directive$1/invoke (Lcom/anatawa12/jasm/parser/Grammar$GrammarScope;)Lcom/anatawa12/jasm/tree/SuperDirective;
+    areturn
 .end method
 
 .method public invoke (Lcom/anatawa12/jasm/parser/Grammar$GrammarScope;)Lcom/anatawa12/jasm/tree/SuperDirective;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 3
-   .limit local 3
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 3
+    .limit local 3
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/Parser$super_directive$1; from L_0000 to L_0020
-   .var 1 is $this$grammar Lcom/anatawa12/jasm/parser/Grammar$GrammarScope; from L_0000 to L_0020
-   aload 1
-   ldc "\$receiver"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/Parser$super_directive$1; from L_0000 to L_0020
+    .var 1 is $this$grammar Lcom/anatawa12/jasm/parser/Grammar$GrammarScope; from L_0000 to L_0020
+    aload 1
+    ldc "\$receiver"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 59
-   aload 1
-   aload 0
-   getfield com/anatawa12/jasm/parser/Parser$super_directive$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
-   getstatic com/anatawa12/jasm/parser/Parser/Companion Lcom/anatawa12/jasm/parser/Parser$Companion;
-   invokevirtual com/anatawa12/jasm/parser/Parser$Companion/getDotSuper ()Lcom/anatawa12/jasm/parser/TokenType$DotedKeyWord;
-   checkcast com/anatawa12/jasm/parser/TokenType
-   invokeinterface com/anatawa12/jasm/parser/Grammar$GrammarScope/read (Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Object;
-   pop
+    .line 70
+    aload 1
+    aload 0
+    getfield com/anatawa12/jasm/parser/Parser$super_directive$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
+    getstatic com/anatawa12/jasm/parser/Parser/Companion Lcom/anatawa12/jasm/parser/Parser$Companion;
+    invokevirtual com/anatawa12/jasm/parser/Parser$Companion/getDotSuper ()Lcom/anatawa12/jasm/parser/TokenType$DotedKeyWord;
+    checkcast com/anatawa12/jasm/parser/TokenType
+    invokeinterface com/anatawa12/jasm/parser/Grammar$GrammarScope/read (Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Object;
+    pop
 L_000e:
-   .line 60
-   aload 1
-   aload 0
-   getfield com/anatawa12/jasm/parser/Parser$super_directive$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
-   getstatic com/anatawa12/jasm/parser/TokenType$InternalName/INSTANCE Lcom/anatawa12/jasm/parser/TokenType$InternalName;
-   checkcast com/anatawa12/jasm/parser/TokenType
-   invokeinterface com/anatawa12/jasm/parser/Grammar$GrammarScope/read (Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Object;
-   checkcast java/lang/String
-   astore 2
+    .line 71
+    aload 1
+    aload 0
+    getfield com/anatawa12/jasm/parser/Parser$super_directive$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
+    getstatic com/anatawa12/jasm/parser/TokenType$InternalName/INSTANCE Lcom/anatawa12/jasm/parser/TokenType$InternalName;
+    checkcast com/anatawa12/jasm/parser/TokenType
+    invokeinterface com/anatawa12/jasm/parser/Grammar$GrammarScope/read (Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Object;
+    checkcast java/lang/String
+    astore 2
 L_0018:
-   .line 61
-   .var 2 is name Ljava/lang/String; from L_0018 to L_001e
-   new com/anatawa12/jasm/tree/SuperDirective
-   dup
-   aload 2
-   invokespecial com/anatawa12/jasm/tree/SuperDirective/<init> (Ljava/lang/String;)V
+    .line 72
+    .var 2 is name Ljava/lang/String; from L_0018 to L_001e
+    new com/anatawa12/jasm/tree/SuperDirective
+    dup
+    aload 2
+    invokespecial com/anatawa12/jasm/tree/SuperDirective/<init> (Ljava/lang/String;)V
 L_001e:
-   areturn
+    areturn
 L_0020:
 .end method
 
 .method <init> (Lcom/anatawa12/jasm/parser/ILexer;)V
-   .limit stack 2
-   .limit local 2
-   aload 0
-   aload 1
-   putfield com/anatawa12/jasm/parser/Parser$super_directive$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
-   aload 0
-   iconst_1
-   invokespecial kotlin/jvm/internal/Lambda/<init> (I)V
-   return
+    .limit stack 2
+    .limit local 2
+    aload 0
+    aload 1
+    putfield com/anatawa12/jasm/parser/Parser$super_directive$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
+    aload 0
+    iconst_1
+    invokespecial kotlin/jvm/internal/Lambda/<init> (I)V
+    return
 .end method
 
 .field final $lex Lcom/anatawa12/jasm/parser/ILexer;

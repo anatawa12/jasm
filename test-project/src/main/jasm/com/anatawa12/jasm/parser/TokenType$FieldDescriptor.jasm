@@ -6,106 +6,106 @@
 .inner public com/anatawa12/jasm/parser/TokenType$FieldDescriptor inner FieldDescriptor outer com/anatawa12/jasm/parser/TokenType
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0003J\u0012\u0010\u0004\u001a\u0004\u0018\u00010\u00022\u0006\u0010\u0005\u001a\u00020\u0006H\u0016J\b\u0010\u0007\u001a\u00020\u0002H\u0016¨\u0006\b"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$FieldDescriptor;"
-      s = "Lcom/anatawa12/jasm/parser/TokenType;"
-      s = ""
-      s = "()V"
-      s = "accept"
-      s = "visitor"
-      s = "Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;"
-      s = "toString"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0003J\u0012\u0010\u0004\u001a\u0004\u0018\u00010\u00022\u0006\u0010\u0005\u001a\u00020\u0006H\u0016J\b\u0010\u0007\u001a\u00020\u0002H\u0016¨\u0006\b"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$FieldDescriptor;"
+        s = "Lcom/anatawa12/jasm/parser/TokenType;"
+        s = ""
+        s = "()V"
+        s = "accept"
+        s = "visitor"
+        s = "Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;"
+        s = "toString"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public accept (Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;)Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 2
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/TokenType$FieldDescriptor; from L_0000 to L_000a
-   .var 1 is visitor Lcom/anatawa12/jasm/parser/ITokenVisitorNullable; from L_0000 to L_000a
-   aload 1
-   ldc "visitor"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/TokenType$FieldDescriptor; from L_0000 to L_000a
+    .var 1 is visitor Lcom/anatawa12/jasm/parser/ITokenVisitorNullable; from L_0000 to L_000a
+    aload 1
+    ldc "visitor"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 57
-   aload 1
-   aload 0
-   invokeinterface com/anatawa12/jasm/parser/ITokenVisitorNullable/visitFieldDescriptor (Lcom/anatawa12/jasm/parser/TokenType$FieldDescriptor;)Ljava/lang/String;
-   areturn
+    .line 57
+    aload 1
+    aload 0
+    invokeinterface com/anatawa12/jasm/parser/ITokenVisitorNullable/visitFieldDescriptor (Lcom/anatawa12/jasm/parser/TokenType$FieldDescriptor;)Ljava/lang/String;
+    areturn
 L_000a:
 .end method
 
 .method public accept (Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;)Ljava/lang/Object;
-   .limit stack 2
-   .limit local 2
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .line 56
-   aload 0
-   aload 1
-   invokevirtual com/anatawa12/jasm/parser/TokenType$FieldDescriptor/accept (Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;)Ljava/lang/String;
-   areturn
+    .line 56
+    aload 0
+    aload 1
+    invokevirtual com/anatawa12/jasm/parser/TokenType$FieldDescriptor/accept (Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;)Ljava/lang/String;
+    areturn
 .end method
 
 .method public toString ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 58
-   .var 0 is this Lcom/anatawa12/jasm/parser/TokenType$FieldDescriptor; from L_0000 to L_0004
-   ldc "descriptor of field"
-   areturn
+    .line 58
+    .var 0 is this Lcom/anatawa12/jasm/parser/TokenType$FieldDescriptor; from L_0000 to L_0004
+    ldc "descriptor of field"
+    areturn
 L_0004:
 .end method
 
 .method private <init> ()V
-   .limit stack 2
-   .limit local 1
+    .limit stack 2
+    .limit local 1
 L_0000:
-   .line 56
-   .var 0 is this Lcom/anatawa12/jasm/parser/TokenType$FieldDescriptor; from L_0000 to L_0008
-   aload 0
-   aconst_null
+    .line 56
+    .var 0 is this Lcom/anatawa12/jasm/parser/TokenType$FieldDescriptor; from L_0000 to L_0008
+    aload 0
+    aconst_null
 L_0004:
-   .line 56
-   invokespecial com/anatawa12/jasm/parser/TokenType/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-   return
+    .line 56
+    invokespecial com/anatawa12/jasm/parser/TokenType/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    return
 L_0008:
 .end method
 
 .method static <clinit> ()V
-   .limit stack 2
-   .limit local 1
+    .limit stack 2
+    .limit local 1
 L_0000:
-   .line 56
-   new com/anatawa12/jasm/parser/TokenType$FieldDescriptor
-   dup
-   invokespecial com/anatawa12/jasm/parser/TokenType$FieldDescriptor/<init> ()V
-   astore 0
-   aload 0
-   putstatic com/anatawa12/jasm/parser/TokenType$FieldDescriptor/INSTANCE Lcom/anatawa12/jasm/parser/TokenType$FieldDescriptor;
-   return
+    .line 56
+    new com/anatawa12/jasm/parser/TokenType$FieldDescriptor
+    dup
+    invokespecial com/anatawa12/jasm/parser/TokenType$FieldDescriptor/<init> ()V
+    astore 0
+    aload 0
+    putstatic com/anatawa12/jasm/parser/TokenType$FieldDescriptor/INSTANCE Lcom/anatawa12/jasm/parser/TokenType$FieldDescriptor;
+    return
 .end method
 
 .field public INSTANCE Lcom/anatawa12/jasm/parser/TokenType$FieldDescriptor;

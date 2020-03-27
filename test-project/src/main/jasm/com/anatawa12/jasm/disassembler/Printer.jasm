@@ -5,1720 +5,1720 @@
 .debug "SMAP\nPrinter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Printer.kt\ncom/anatawa12/jasm/disassembler/Printer\n+ 2 _Strings.kt\nkotlin/text/StringsKt___StringsKt\n*L\n1#1,112:1\n13#1,8:113\n13#1,8:121\n13#1,7:129\n20#1:138\n13#1,7:139\n20#1:148\n960#2,2:136\n960#2,2:146\n*E\n*S KotlinDebug\n*F\n+ 1 Printer.kt\ncom/anatawa12/jasm/disassembler/Printer\n*L\n31#1,8:113\n42#1,8:121\n98#1,7:129\n98#1:138\n104#1,7:139\n104#1:148\n98#1,2:136\n104#1,2:146\n*E\n"
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000c\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0006\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u000e\u0010\u000c\u001a\u00020\u00002\u0006\u0010\r\u001a\u00020\u000eJ\u0006\u0010\u000f\u001a\u00020\nJ\u0006\u0010\u0007\u001a\u00020\u0000J\u000e\u0010\u0010\u001a\u00020\u00002\u0006\u0010\r\u001a\u00020\nJ\u0017\u0010\u0011\u001a\u00020\u00002\u000c\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00140\u0013H\u0082\bJ\u000e\u0010\u0015\u001a\u00020\u00002\u0006\u0010\u0016\u001a\u00020\nJ\u000e\u0010\u0016\u001a\u00020\u00002\u0006\u0010\u0016\u001a\u00020\nJ\u0006\u0010\u0017\u001a\u00020\u0014J\u0006\u0010\u0018\u001a\u00020\u0000J\u000e\u0010\u0019\u001a\u00020\u00002\u0006\u0010\u0019\u001a\u00020\nR\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082D¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0004X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u001a"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/disassembler/Printer;"
-      s = ""
-      s = "()V"
-      s = "afterNewLine"
-      s = ""
-      s = "file"
-      s = "Ljava/lang/StringBuilder;"
-      s = "indent"
-      s = ""
-      s = "indentStr"
-      s = ""
-      s = "printSpace"
-      s = "c"
-      s = "s"
-      s = ""
-      s = "getString"
-      s = "key"
-      s = "m"
-      s = "function"
-      s = "Lkotlin/Function0;"
-      s = ""
-      s = "mDesc"
-      s = "name"
-      s = "nl"
-      s = "outdent"
-      s = "str"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000c\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0006\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u000e\u0010\u000c\u001a\u00020\u00002\u0006\u0010\r\u001a\u00020\u000eJ\u0006\u0010\u000f\u001a\u00020\nJ\u0006\u0010\u0007\u001a\u00020\u0000J\u000e\u0010\u0010\u001a\u00020\u00002\u0006\u0010\r\u001a\u00020\nJ\u0017\u0010\u0011\u001a\u00020\u00002\u000c\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00140\u0013H\u0082\bJ\u000e\u0010\u0015\u001a\u00020\u00002\u0006\u0010\u0016\u001a\u00020\nJ\u000e\u0010\u0016\u001a\u00020\u00002\u0006\u0010\u0016\u001a\u00020\nJ\u0006\u0010\u0017\u001a\u00020\u0014J\u0006\u0010\u0018\u001a\u00020\u0000J\u000e\u0010\u0019\u001a\u00020\u00002\u0006\u0010\u0019\u001a\u00020\nR\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082D¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0004X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u001a"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/disassembler/Printer;"
+        s = ""
+        s = "()V"
+        s = "afterNewLine"
+        s = ""
+        s = "file"
+        s = "Ljava/lang/StringBuilder;"
+        s = "indent"
+        s = ""
+        s = "indentStr"
+        s = ""
+        s = "printSpace"
+        s = "c"
+        s = "s"
+        s = ""
+        s = "getString"
+        s = "key"
+        s = "m"
+        s = "function"
+        s = "Lkotlin/Function0;"
+        s = ""
+        s = "mDesc"
+        s = "name"
+        s = "nl"
+        s = "outdent"
+        s = "str"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method private m (Lkotlin/jvm/functions/Function0;)Lcom/anatawa12/jasm/disassembler/Printer;
-   .signature "(Lkotlin/jvm/functions/Function0<Lkotlin/Unit;>;)Lcom/anatawa12/jasm/disassembler/Printer;"
-   .limit stack 2
-   .limit local 14
+    .signature "(Lkotlin/jvm/functions/Function0<Lkotlin/Unit;>;)Lcom/anatawa12/jasm/disassembler/Printer;"
+    .limit stack 2
+    .limit local 14
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_005e
-   .var 1 is function Lkotlin/jvm/functions/Function0; from L_0000 to L_005e
-   ldc 0
-   istore 2
+    .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_005e
+    .var 1 is function Lkotlin/jvm/functions/Function0; from L_0000 to L_005e
+    ldc 0
+    istore 2
 L_0003:
-   .line 13
-   .var 2 is $i$f$m I from L_0003 to L_005e
-   aload 0
-   astore 3
-   iconst_0
-   istore 4
-   iconst_0
-   istore 5
-   aload 3
-   checkcast com/anatawa12/jasm/disassembler/Printer
-   astore 6
+    .line 13
+    .var 2 is $i$f$m I from L_0003 to L_005e
+    aload 0
+    astore 3
+    iconst_0
+    istore 4
+    iconst_0
+    istore 5
+    aload 3
+    checkcast com/anatawa12/jasm/disassembler/Printer
+    astore 6
 L_000e:
-   .var 6 is $this$apply Lcom/anatawa12/jasm/disassembler/Printer; from L_000e to L_0054
-   iconst_0
-   istore 7
+    .var 6 is $this$apply Lcom/anatawa12/jasm/disassembler/Printer; from L_000e to L_0054
+    iconst_0
+    istore 7
 L_0011:
-   .line 14
-   .var 7 is "\$i\$a\$-apply-Printer\$m\$1" I from L_0011 to L_0054
-   aload 6
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
-   ifeq L_0039
+    .line 14
+    .var 7 is "\$i\$a\$-apply-Printer\$m\$1" I from L_0011 to L_0054
+    aload 6
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
+    ifeq L_0039
 L_0016:
-   .line 15
-   aload 6
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndent$p (Lcom/anatawa12/jasm/disassembler/Printer;)I
-   istore 8
-   iconst_0
-   istore 9
-   iconst_0
-   istore 10
-   iconst_0
-   istore 10
-   iload 8
-   istore 11
+    .line 15
+    aload 6
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndent$p (Lcom/anatawa12/jasm/disassembler/Printer;)I
+    istore 8
+    iconst_0
+    istore 9
+    iconst_0
+    istore 10
+    iconst_0
+    istore 10
+    iload 8
+    istore 11
 L_0023:
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object kotlin/jvm/functions/Function0
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Integer
-      locals Integer
-      locals Integer
-   .end stack
-   iload 10
-   iload 11
-   if_icmpge L_0039
-   iload 10
-   istore 12
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object kotlin/jvm/functions/Function0
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Integer
+        locals Integer
+        locals Integer
+    .end stack
+    iload 10
+    iload 11
+    if_icmpge L_0039
+    iload 10
+    istore 12
 L_002a:
-   .var 12 is it I from L_002a to L_0035
-   iconst_0
-   istore 13
+    .var 12 is it I from L_002a to L_0035
+    iconst_0
+    istore 13
 L_002d:
-   .line 15
-   .var 13 is "\$i\$a\$-repeat-Printer\$m\$1\$1" I from L_002d to L_0035
-   aload 6
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
-   aload 6
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndentStr$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/String;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   pop
+    .line 15
+    .var 13 is "\$i\$a\$-repeat-Printer\$m\$1\$1" I from L_002d to L_0035
+    aload 6
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
+    aload 6
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndentStr$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/String;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    pop
 L_0035:
-   .line 15
-   iinc 10 1
-   goto L_0023
+    .line 15
+    iinc 10 1
+    goto L_0023
 L_0039:
-   .line 16
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object kotlin/jvm/functions/Function0
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-   .end stack
-   aload 6
-   iconst_0
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$setAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
+    .line 16
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object kotlin/jvm/functions/Function0
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+    .end stack
+    aload 6
+    iconst_0
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$setAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
 L_003f:
-   .line 17
-   aload 6
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
-   ifeq L_0049
-   aload 6
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
-   bipush 32
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 17
+    aload 6
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
+    ifeq L_0049
+    aload 6
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
+    bipush 32
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_0049:
-   .line 18
-   .stack use locals
-   .end stack
-   aload 6
-   iconst_0
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$setPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
+    .line 18
+    .stack use locals
+    .end stack
+    aload 6
+    iconst_0
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$setPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
 L_004f:
-   .line 19
-   aload 1
-   invokeinterface kotlin/jvm/functions/Function0/invoke ()Ljava/lang/Object;
-   pop
+    .line 19
+    aload 1
+    invokeinterface kotlin/jvm/functions/Function0/invoke ()Ljava/lang/Object;
+    pop
 L_0054:
-   .line 20
-   nop
+    .line 20
+    nop
 L_0057:
-   .line 13
-   aload 3
-   checkcast com/anatawa12/jasm/disassembler/Printer
+    .line 13
+    aload 3
+    checkcast com/anatawa12/jasm/disassembler/Printer
 L_005b:
-   .line 20
-   areturn
+    .line 20
+    areturn
 L_005e:
 .end method
 
 .method public indent ()Lcom/anatawa12/jasm/disassembler/Printer;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 3
-   .limit local 7
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 3
+    .limit local 7
 L_0000:
-   .line 22
-   .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_001f
-   aload 0
-   astore 1
-   iconst_0
-   istore 2
-   iconst_0
-   istore 3
-   aload 1
-   checkcast com/anatawa12/jasm/disassembler/Printer
-   astore 4
+    .line 22
+    .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_001f
+    aload 0
+    astore 1
+    iconst_0
+    istore 2
+    iconst_0
+    istore 3
+    aload 1
+    checkcast com/anatawa12/jasm/disassembler/Printer
+    astore 4
 L_000b:
-   .var 4 is $this$apply Lcom/anatawa12/jasm/disassembler/Printer; from L_000b to L_0018
-   iconst_0
-   istore 5
+    .var 4 is $this$apply Lcom/anatawa12/jasm/disassembler/Printer; from L_000b to L_0018
+    iconst_0
+    istore 5
 L_000e:
-   .line 22
-   .var 5 is "\$i\$a\$-apply-Printer\$indent\$1" I from L_000e to L_0018
-   aload 4
-   dup
-   getfield com/anatawa12/jasm/disassembler/Printer/indent I
-   dup
-   istore 6
-   iconst_1
-   iadd
-   putfield com/anatawa12/jasm/disassembler/Printer/indent I
+    .line 22
+    .var 5 is "\$i\$a\$-apply-Printer\$indent\$1" I from L_000e to L_0018
+    aload 4
+    dup
+    getfield com/anatawa12/jasm/disassembler/Printer/indent I
+    dup
+    istore 6
+    iconst_1
+    iadd
+    putfield com/anatawa12/jasm/disassembler/Printer/indent I
 L_0018:
-   .line 22
-   aload 1
-   checkcast com/anatawa12/jasm/disassembler/Printer
+    .line 22
+    aload 1
+    checkcast com/anatawa12/jasm/disassembler/Printer
 L_001c:
-   .line 22
-   areturn
+    .line 22
+    areturn
 L_001f:
 .end method
 
 .method public outdent ()Lcom/anatawa12/jasm/disassembler/Printer;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 3
-   .limit local 7
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 3
+    .limit local 7
 L_0000:
-   .line 23
-   .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_001f
-   aload 0
-   astore 1
-   iconst_0
-   istore 2
-   iconst_0
-   istore 3
-   aload 1
-   checkcast com/anatawa12/jasm/disassembler/Printer
-   astore 4
+    .line 23
+    .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_001f
+    aload 0
+    astore 1
+    iconst_0
+    istore 2
+    iconst_0
+    istore 3
+    aload 1
+    checkcast com/anatawa12/jasm/disassembler/Printer
+    astore 4
 L_000b:
-   .var 4 is $this$apply Lcom/anatawa12/jasm/disassembler/Printer; from L_000b to L_0018
-   iconst_0
-   istore 5
+    .var 4 is $this$apply Lcom/anatawa12/jasm/disassembler/Printer; from L_000b to L_0018
+    iconst_0
+    istore 5
 L_000e:
-   .line 23
-   .var 5 is "\$i\$a\$-apply-Printer\$outdent\$1" I from L_000e to L_0018
-   aload 4
-   dup
-   getfield com/anatawa12/jasm/disassembler/Printer/indent I
-   dup
-   istore 6
-   iconst_m1
-   iadd
-   putfield com/anatawa12/jasm/disassembler/Printer/indent I
+    .line 23
+    .var 5 is "\$i\$a\$-apply-Printer\$outdent\$1" I from L_000e to L_0018
+    aload 4
+    dup
+    getfield com/anatawa12/jasm/disassembler/Printer/indent I
+    dup
+    istore 6
+    iconst_m1
+    iadd
+    putfield com/anatawa12/jasm/disassembler/Printer/indent I
 L_0018:
-   .line 23
-   aload 1
-   checkcast com/anatawa12/jasm/disassembler/Printer
+    .line 23
+    aload 1
+    checkcast com/anatawa12/jasm/disassembler/Printer
 L_001c:
-   .line 23
-   areturn
+    .line 23
+    areturn
 L_001f:
 .end method
 
 .method public nl ()V
-   .limit stack 2
-   .limit local 1
+    .limit stack 2
+    .limit local 1
 L_0000:
-   .line 26
-   .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0014
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
-   bipush 10
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 26
+    .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0014
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    bipush 10
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_0007:
-   .line 27
-   aload 0
-   iconst_0
-   putfield com/anatawa12/jasm/disassembler/Printer/printSpace Z
+    .line 27
+    aload 0
+    iconst_0
+    putfield com/anatawa12/jasm/disassembler/Printer/printSpace Z
 L_000c:
-   .line 28
-   aload 0
-   iconst_1
-   putfield com/anatawa12/jasm/disassembler/Printer/afterNewLine Z
+    .line 28
+    aload 0
+    iconst_1
+    putfield com/anatawa12/jasm/disassembler/Printer/afterNewLine Z
 L_0011:
-   .line 29
-   return
+    .line 29
+    return
 L_0014:
 .end method
 
 .method public key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 16
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 16
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0077
-   .var 1 is s Ljava/lang/String; from L_0000 to L_0077
-   aload 1
-   ldc "s"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0077
+    .var 1 is s Ljava/lang/String; from L_0000 to L_0077
+    aload 1
+    ldc "s"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 31
-   aload 0
-   astore 2
+    .line 31
+    aload 0
+    astore 2
 L_0008:
-   .var 2 is this_$iv Lcom/anatawa12/jasm/disassembler/Printer; from L_0008 to L_0074
-   iconst_0
-   istore 3
+    .var 2 is this_$iv Lcom/anatawa12/jasm/disassembler/Printer; from L_0008 to L_0074
+    iconst_0
+    istore 3
 L_000b:
-   .line 113
-   .var 3 is $i$f$m I from L_000b to L_0074
-   aload 2
-   astore 4
-   iconst_0
-   istore 5
-   iconst_0
-   istore 6
-   aload 4
-   checkcast com/anatawa12/jasm/disassembler/Printer
-   astore 7
+    .line 113
+    .var 3 is $i$f$m I from L_000b to L_0074
+    aload 2
+    astore 4
+    iconst_0
+    istore 5
+    iconst_0
+    istore 6
+    aload 4
+    checkcast com/anatawa12/jasm/disassembler/Printer
+    astore 7
 L_0016:
-   .var 7 is $this$apply$iv Lcom/anatawa12/jasm/disassembler/Printer; from L_0016 to L_006a
-   iconst_0
-   istore 8
+    .var 7 is $this$apply$iv Lcom/anatawa12/jasm/disassembler/Printer; from L_0016 to L_006a
+    iconst_0
+    istore 8
 L_0019:
-   .line 114
-   .var 8 is "\$i\$a\$-apply-Printer\$m\$1\$iv" I from L_0019 to L_006a
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
-   ifeq L_0041
+    .line 114
+    .var 8 is "\$i\$a\$-apply-Printer\$m\$1\$iv" I from L_0019 to L_006a
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
+    ifeq L_0041
 L_001e:
-   .line 115
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndent$p (Lcom/anatawa12/jasm/disassembler/Printer;)I
-   istore 9
-   iconst_0
-   istore 10
-   iconst_0
-   istore 11
-   iconst_0
-   istore 11
-   iload 9
-   istore 12
+    .line 115
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndent$p (Lcom/anatawa12/jasm/disassembler/Printer;)I
+    istore 9
+    iconst_0
+    istore 10
+    iconst_0
+    istore 11
+    iconst_0
+    istore 11
+    iload 9
+    istore 12
 L_002b:
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Integer
-      locals Integer
-      locals Integer
-   .end stack
-   iload 11
-   iload 12
-   if_icmpge L_0041
-   iload 11
-   istore 13
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Integer
+        locals Integer
+        locals Integer
+    .end stack
+    iload 11
+    iload 12
+    if_icmpge L_0041
+    iload 11
+    istore 13
 L_0032:
-   .var 13 is it$iv I from L_0032 to L_003d
-   iconst_0
-   istore 14
+    .var 13 is it$iv I from L_0032 to L_003d
+    iconst_0
+    istore 14
 L_0035:
-   .line 115
-   .var 14 is "\$i\$a\$-repeat-Printer\$m\$1\$1\$iv" I from L_0035 to L_003d
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndentStr$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/String;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   pop
+    .line 115
+    .var 14 is "\$i\$a\$-repeat-Printer\$m\$1\$1\$iv" I from L_0035 to L_003d
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndentStr$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/String;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    pop
 L_003d:
-   .line 115
-   iinc 11 1
-   goto L_002b
+    .line 115
+    iinc 11 1
+    goto L_002b
 L_0041:
-   .line 116
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-   .end stack
-   aload 7
-   iconst_0
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$setAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
+    .line 116
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+    .end stack
+    aload 7
+    iconst_0
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$setAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
 L_0047:
-   .line 117
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
-   ifeq L_0051
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
-   bipush 32
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 117
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
+    ifeq L_0051
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
+    bipush 32
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_0051:
-   .line 118
-   .stack use locals
-   .end stack
-   aload 7
-   iconst_0
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$setPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
+    .line 118
+    .stack use locals
+    .end stack
+    aload 7
+    iconst_0
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$setPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
 L_0057:
-   .line 119
-   iconst_0
-   istore 15
+    .line 119
+    iconst_0
+    istore 15
 L_005b:
-   .line 32
-   .var 15 is "\$i\$a\$-m-Printer\$key\$1" I from L_005b to L_0067
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
-   aload 1
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   pop
+    .line 32
+    .var 15 is "\$i\$a\$-m-Printer\$key\$1" I from L_005b to L_0067
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    aload 1
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    pop
 L_0062:
-   .line 33
-   aload 0
-   iconst_1
-   putfield com/anatawa12/jasm/disassembler/Printer/printSpace Z
+    .line 33
+    aload 0
+    iconst_1
+    putfield com/anatawa12/jasm/disassembler/Printer/printSpace Z
 L_0067:
-   .line 34
-   nop
+    .line 34
+    nop
 L_006a:
-   .line 120
-   nop
+    .line 120
+    nop
 L_006d:
-   .line 113
-   aload 4
-   checkcast com/anatawa12/jasm/disassembler/Printer
+    .line 113
+    aload 4
+    checkcast com/anatawa12/jasm/disassembler/Printer
 L_0071:
-   .line 120
-   nop
+    .line 120
+    nop
 L_0074:
-   .line 34
-   areturn
+    .line 34
+    areturn
 L_0077:
 .end method
 
 .method public c (C)Lcom/anatawa12/jasm/disassembler/Printer;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 7
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 7
 L_0000:
-   .line 36
-   .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0029
-   .var 1 is s C from L_0000 to L_0029
-   aload 0
-   astore 2
-   iconst_0
-   istore 3
-   iconst_0
-   istore 4
-   aload 2
-   checkcast com/anatawa12/jasm/disassembler/Printer
-   astore 5
+    .line 36
+    .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0029
+    .var 1 is s C from L_0000 to L_0029
+    aload 0
+    astore 2
+    iconst_0
+    istore 3
+    iconst_0
+    istore 4
+    aload 2
+    checkcast com/anatawa12/jasm/disassembler/Printer
+    astore 5
 L_000b:
-   .var 5 is $this$apply Lcom/anatawa12/jasm/disassembler/Printer; from L_000b to L_001f
-   iconst_0
-   istore 6
+    .var 5 is $this$apply Lcom/anatawa12/jasm/disassembler/Printer; from L_000b to L_001f
+    iconst_0
+    istore 6
 L_000e:
-   .line 37
-   .var 6 is "\$i\$a\$-apply-Printer\$c\$1" I from L_000e to L_001f
-   aload 5
-   getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
-   iload 1
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 37
+    .var 6 is "\$i\$a\$-apply-Printer\$c\$1" I from L_000e to L_001f
+    aload 5
+    getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    iload 1
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_0015:
-   .line 38
-   aload 5
-   iconst_0
-   putfield com/anatawa12/jasm/disassembler/Printer/printSpace Z
+    .line 38
+    aload 5
+    iconst_0
+    putfield com/anatawa12/jasm/disassembler/Printer/printSpace Z
 L_001a:
-   .line 39
-   aload 5
-   iconst_0
-   putfield com/anatawa12/jasm/disassembler/Printer/afterNewLine Z
+    .line 39
+    aload 5
+    iconst_0
+    putfield com/anatawa12/jasm/disassembler/Printer/afterNewLine Z
 L_001f:
-   .line 40
-   nop
+    .line 40
+    nop
 L_0022:
-   .line 36
-   aload 2
-   checkcast com/anatawa12/jasm/disassembler/Printer
+    .line 36
+    aload 2
+    checkcast com/anatawa12/jasm/disassembler/Printer
 L_0026:
-   .line 40
-   areturn
+    .line 40
+    areturn
 L_0029:
 .end method
 
 .method public str (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 5
-   .limit local 26
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 5
+    .limit local 26
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_011e
-   .var 1 is str Ljava/lang/String; from L_0000 to L_011e
-   aload 1
-   ldc "str"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_011e
+    .var 1 is str Ljava/lang/String; from L_0000 to L_011e
+    aload 1
+    ldc "str"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 42
-   aload 0
-   astore 2
+    .line 42
+    aload 0
+    astore 2
 L_0008:
-   .var 2 is this_$iv Lcom/anatawa12/jasm/disassembler/Printer; from L_0008 to L_011b
-   iconst_0
-   istore 3
+    .var 2 is this_$iv Lcom/anatawa12/jasm/disassembler/Printer; from L_0008 to L_011b
+    iconst_0
+    istore 3
 L_000b:
-   .line 121
-   .var 3 is $i$f$m I from L_000b to L_011b
-   aload 2
-   astore 4
-   iconst_0
-   istore 5
-   iconst_0
-   istore 6
-   aload 4
-   checkcast com/anatawa12/jasm/disassembler/Printer
-   astore 7
+    .line 121
+    .var 3 is $i$f$m I from L_000b to L_011b
+    aload 2
+    astore 4
+    iconst_0
+    istore 5
+    iconst_0
+    istore 6
+    aload 4
+    checkcast com/anatawa12/jasm/disassembler/Printer
+    astore 7
 L_0016:
-   .var 7 is $this$apply$iv Lcom/anatawa12/jasm/disassembler/Printer; from L_0016 to L_0111
-   iconst_0
-   istore 8
+    .var 7 is $this$apply$iv Lcom/anatawa12/jasm/disassembler/Printer; from L_0016 to L_0111
+    iconst_0
+    istore 8
 L_0019:
-   .line 122
-   .var 8 is "\$i\$a\$-apply-Printer\$m\$1\$iv" I from L_0019 to L_0111
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
-   ifeq L_0041
+    .line 122
+    .var 8 is "\$i\$a\$-apply-Printer\$m\$1\$iv" I from L_0019 to L_0111
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
+    ifeq L_0041
 L_001e:
-   .line 123
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndent$p (Lcom/anatawa12/jasm/disassembler/Printer;)I
-   istore 9
-   iconst_0
-   istore 10
-   iconst_0
-   istore 11
-   iconst_0
-   istore 11
-   iload 9
-   istore 12
+    .line 123
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndent$p (Lcom/anatawa12/jasm/disassembler/Printer;)I
+    istore 9
+    iconst_0
+    istore 10
+    iconst_0
+    istore 11
+    iconst_0
+    istore 11
+    iload 9
+    istore 12
 L_002b:
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Integer
-      locals Integer
-      locals Integer
-   .end stack
-   iload 11
-   iload 12
-   if_icmpge L_0041
-   iload 11
-   istore 13
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Integer
+        locals Integer
+        locals Integer
+    .end stack
+    iload 11
+    iload 12
+    if_icmpge L_0041
+    iload 11
+    istore 13
 L_0032:
-   .var 13 is it$iv I from L_0032 to L_003d
-   iconst_0
-   istore 14
+    .var 13 is it$iv I from L_0032 to L_003d
+    iconst_0
+    istore 14
 L_0035:
-   .line 123
-   .var 14 is "\$i\$a\$-repeat-Printer\$m\$1\$1\$iv" I from L_0035 to L_003d
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndentStr$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/String;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   pop
+    .line 123
+    .var 14 is "\$i\$a\$-repeat-Printer\$m\$1\$1\$iv" I from L_0035 to L_003d
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndentStr$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/String;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    pop
 L_003d:
-   .line 123
-   iinc 11 1
-   goto L_002b
+    .line 123
+    iinc 11 1
+    goto L_002b
 L_0041:
-   .line 124
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-   .end stack
-   aload 7
-   iconst_0
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$setAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
+    .line 124
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+    .end stack
+    aload 7
+    iconst_0
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$setAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
 L_0047:
-   .line 125
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
-   ifeq L_0051
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
-   bipush 32
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 125
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
+    ifeq L_0051
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
+    bipush 32
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_0051:
-   .line 126
-   .stack use locals
-   .end stack
-   aload 7
-   iconst_0
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$setPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
+    .line 126
+    .stack use locals
+    .end stack
+    aload 7
+    iconst_0
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$setPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
 L_0057:
-   .line 127
-   iconst_0
-   istore 15
+    .line 127
+    iconst_0
+    istore 15
 L_005b:
-   .line 43
-   .var 15 is "\$i\$a\$-m-Printer\$str\$1" I from L_005b to L_010e
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
-   bipush 34
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 43
+    .var 15 is "\$i\$a\$-m-Printer\$str\$1" I from L_005b to L_010e
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    bipush 34
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_0062:
-   .line 44
-   aload 1
-   astore 16
-   aload 16
-   invokevirtual java/lang/String/length ()I
-   istore 17
-   iconst_0
-   istore 18
+    .line 44
+    aload 1
+    astore 16
+    aload 16
+    invokevirtual java/lang/String/length ()I
+    istore 17
+    iconst_0
+    istore 18
 L_006b:
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Integer
-      locals Object java/lang/String
-      locals Integer
-      locals Integer
-   .end stack
-   iload 18
-   iload 17
-   if_icmpge L_0101
-   aload 16
-   iload 18
-   invokevirtual java/lang/String/charAt (I)C
-   istore 19
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Integer
+        locals Object java/lang/String
+        locals Integer
+        locals Integer
+    .end stack
+    iload 18
+    iload 17
+    if_icmpge L_0101
+    aload 16
+    iload 18
+    invokevirtual java/lang/String/charAt (I)C
+    istore 19
 L_0074:
-   .line 45
-   .var 19 is c C from L_0074 to L_00ff
-   iload 19
-   lookupswitch
-      8: L_0081
-      9: L_0078
-      10: L_008a
-      13: L_0093
-      34: L_00a5
-      36: L_00b7
-      39: L_009c
-      92: L_00ae
-      default: L_00c0
+    .line 45
+    .var 19 is c C from L_0074 to L_00ff
+    iload 19
+    lookupswitch
+        8: L_0081
+        9: L_0078
+        10: L_008a
+        13: L_0093
+        34: L_00a5
+        36: L_00b7
+        39: L_009c
+        92: L_00ae
+        default: L_00c0
 L_0078:
-   .line 46
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Integer
-      locals Object java/lang/String
-      locals Integer
-      locals Integer
-      locals Integer
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
-   ldc "\\t"
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   pop
-   goto L_00fa
+    .line 46
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Integer
+        locals Object java/lang/String
+        locals Integer
+        locals Integer
+        locals Integer
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    ldc "\\t"
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    pop
+    goto L_00fa
 L_0081:
-   .line 47
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
-   ldc "\\b"
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   pop
-   goto L_00fa
+    .line 47
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    ldc "\\b"
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    pop
+    goto L_00fa
 L_008a:
-   .line 48
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
-   ldc "\\n"
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   pop
-   goto L_00fa
+    .line 48
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    ldc "\\n"
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    pop
+    goto L_00fa
 L_0093:
-   .line 49
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
-   ldc "\\r"
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   pop
-   goto L_00fa
+    .line 49
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    ldc "\\r"
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    pop
+    goto L_00fa
 L_009c:
-   .line 50
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
-   ldc "\\\'"
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   pop
-   goto L_00fa
+    .line 50
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    ldc "\\\'"
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    pop
+    goto L_00fa
 L_00a5:
-   .line 51
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
-   ldc "\\\""
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   pop
-   goto L_00fa
+    .line 51
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    ldc "\\\""
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    pop
+    goto L_00fa
 L_00ae:
-   .line 52
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
-   ldc "\\\\"
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   pop
-   goto L_00fa
+    .line 52
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    ldc "\\\\"
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    pop
+    goto L_00fa
 L_00b7:
-   .line 53
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
-   ldc "\\\$"
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   pop
-   goto L_00fa
+    .line 53
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    ldc "\\\$"
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    pop
+    goto L_00fa
 L_00c0:
-   .line 54
-   .stack use locals
-   .end stack
-   iload 19
-   invokestatic kotlin/text/CharsKt/getCategory (C)Lkotlin/text/CharCategory;
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   swap
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   iaload
-   tableswitch 1
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00ca
-      L_00d4
-      L_00d4
-      L_00d4
-      L_00d4
-      L_00d4
-      L_00d4
-      L_00d4
-      L_00d4
-      L_00d4
-      L_00d4
-      default: L_00fa
+    .line 54
+    .stack use locals
+    .end stack
+    iload 19
+    invokestatic kotlin/text/CharsKt/getCategory (C)Lkotlin/text/CharCategory;
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    swap
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    iaload
+    tableswitch 1
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00ca
+        L_00d4
+        L_00d4
+        L_00d4
+        L_00d4
+        L_00d4
+        L_00d4
+        L_00d4
+        L_00d4
+        L_00d4
+        L_00d4
+        default: L_00fa
 L_00ca:
-   .line 75
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
-   iload 19
-   invokestatic java/lang/String/valueOf (C)Ljava/lang/String;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   pop
-   goto L_00fa
+    .line 75
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    iload 19
+    invokestatic java/lang/String/valueOf (C)Ljava/lang/String;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    pop
+    goto L_00fa
 L_00d4:
-   .line 88
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   ldc "\\u"
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   iload 19
-   istore 20
-   bipush 16
-   istore 21
-   astore 22
-   astore 23
-   iconst_0
-   istore 24
-   iload 20
-   iload 21
-   invokestatic kotlin/text/CharsKt/checkRadix (I)I
-   invokestatic java/lang/Integer/toString (II)Ljava/lang/String;
-   dup
-   ldc "java.lang.Integer.toStri…(this, checkRadix(radix))"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   astore 25
-   aload 23
-   aload 22
-   aload 25
+    .line 88
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    ldc "\\u"
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iload 19
+    istore 20
+    bipush 16
+    istore 21
+    astore 22
+    astore 23
+    iconst_0
+    istore 24
+    iload 20
+    iload 21
+    invokestatic kotlin/text/CharsKt/checkRadix (I)I
+    invokestatic java/lang/Integer/toString (II)Ljava/lang/String;
+    dup
+    ldc "java.lang.Integer.toStri…(this, checkRadix(radix))"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    astore 25
+    aload 23
+    aload 22
+    aload 25
 L_00f1:
-   .line 88
-   iconst_4
-   bipush 48
-   invokestatic kotlin/text/StringsKt/padStart (Ljava/lang/String;IC)Ljava/lang/String;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   pop
+    .line 88
+    iconst_4
+    bipush 48
+    invokestatic kotlin/text/StringsKt/padStart (Ljava/lang/String;IC)Ljava/lang/String;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    pop
 L_00fa:
-   .line 44
-   .stack use locals
-   .end stack
-   iinc 18 1
+    .line 44
+    .stack use locals
+    .end stack
+    iinc 18 1
 L_00ff:
-   goto L_006b
+    goto L_006b
 L_0101:
-   .line 93
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Integer
-      locals Object java/lang/String
-      locals Integer
-      locals Integer
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
-   bipush 34
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 93
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Integer
+        locals Object java/lang/String
+        locals Integer
+        locals Integer
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    bipush 34
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_0109:
-   .line 94
-   aload 0
-   iconst_1
-   putfield com/anatawa12/jasm/disassembler/Printer/printSpace Z
+    .line 94
+    aload 0
+    iconst_1
+    putfield com/anatawa12/jasm/disassembler/Printer/printSpace Z
 L_010e:
-   .line 95
-   nop
+    .line 95
+    nop
 L_0111:
-   .line 128
-   nop
+    .line 128
+    nop
 L_0114:
-   .line 121
-   aload 4
-   checkcast com/anatawa12/jasm/disassembler/Printer
+    .line 121
+    aload 4
+    checkcast com/anatawa12/jasm/disassembler/Printer
 L_0118:
-   .line 128
-   nop
+    .line 128
+    nop
 L_011b:
-   .line 95
-   areturn
+    .line 95
+    areturn
 L_011e:
 .end method
 
 .method public name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 23
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 23
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_00bc
-   .var 1 is name Ljava/lang/String; from L_0000 to L_00bc
-   aload 1
-   ldc "name"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_00bc
+    .var 1 is name Ljava/lang/String; from L_0000 to L_00bc
+    aload 1
+    ldc "name"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 98
-   aload 0
-   astore 2
+    .line 98
+    aload 0
+    astore 2
 L_0008:
-   .var 2 is this_$iv Lcom/anatawa12/jasm/disassembler/Printer; from L_0008 to L_00b9
-   iconst_0
-   istore 3
+    .var 2 is this_$iv Lcom/anatawa12/jasm/disassembler/Printer; from L_0008 to L_00b9
+    iconst_0
+    istore 3
 L_000b:
-   .line 129
-   .var 3 is $i$f$m I from L_000b to L_00b9
-   aload 2
-   astore 4
-   iconst_0
-   istore 5
-   iconst_0
-   istore 6
-   aload 4
-   checkcast com/anatawa12/jasm/disassembler/Printer
-   astore 7
+    .line 129
+    .var 3 is $i$f$m I from L_000b to L_00b9
+    aload 2
+    astore 4
+    iconst_0
+    istore 5
+    iconst_0
+    istore 6
+    aload 4
+    checkcast com/anatawa12/jasm/disassembler/Printer
+    astore 7
 L_0016:
-   .var 7 is $this$apply$iv Lcom/anatawa12/jasm/disassembler/Printer; from L_0016 to L_00af
-   iconst_0
-   istore 8
+    .var 7 is $this$apply$iv Lcom/anatawa12/jasm/disassembler/Printer; from L_0016 to L_00af
+    iconst_0
+    istore 8
 L_0019:
-   .line 130
-   .var 8 is "\$i\$a\$-apply-Printer\$m\$1\$iv" I from L_0019 to L_00af
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
-   ifeq L_0041
+    .line 130
+    .var 8 is "\$i\$a\$-apply-Printer\$m\$1\$iv" I from L_0019 to L_00af
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
+    ifeq L_0041
 L_001e:
-   .line 131
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndent$p (Lcom/anatawa12/jasm/disassembler/Printer;)I
-   istore 9
-   iconst_0
-   istore 10
-   iconst_0
-   istore 11
-   iconst_0
-   istore 11
-   iload 9
-   istore 12
+    .line 131
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndent$p (Lcom/anatawa12/jasm/disassembler/Printer;)I
+    istore 9
+    iconst_0
+    istore 10
+    iconst_0
+    istore 11
+    iconst_0
+    istore 11
+    iload 9
+    istore 12
 L_002b:
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Integer
-      locals Integer
-      locals Integer
-   .end stack
-   iload 11
-   iload 12
-   if_icmpge L_0041
-   iload 11
-   istore 13
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Integer
+        locals Integer
+        locals Integer
+    .end stack
+    iload 11
+    iload 12
+    if_icmpge L_0041
+    iload 11
+    istore 13
 L_0032:
-   .var 13 is it$iv I from L_0032 to L_003d
-   iconst_0
-   istore 14
+    .var 13 is it$iv I from L_0032 to L_003d
+    iconst_0
+    istore 14
 L_0035:
-   .line 131
-   .var 14 is "\$i\$a\$-repeat-Printer\$m\$1\$1\$iv" I from L_0035 to L_003d
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndentStr$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/String;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   pop
+    .line 131
+    .var 14 is "\$i\$a\$-repeat-Printer\$m\$1\$1\$iv" I from L_0035 to L_003d
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndentStr$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/String;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    pop
 L_003d:
-   .line 131
-   iinc 11 1
-   goto L_002b
+    .line 131
+    iinc 11 1
+    goto L_002b
 L_0041:
-   .line 132
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-   .end stack
-   aload 7
-   iconst_0
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$setAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
+    .line 132
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+    .end stack
+    aload 7
+    iconst_0
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$setAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
 L_0047:
-   .line 133
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
-   ifeq L_0051
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
-   bipush 32
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 133
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
+    ifeq L_0051
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
+    bipush 32
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_0051:
-   .line 134
-   .stack use locals
-   .end stack
-   aload 7
-   iconst_0
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$setPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
+    .line 134
+    .stack use locals
+    .end stack
+    aload 7
+    iconst_0
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$setPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
 L_0057:
-   .line 135
-   iconst_0
-   istore 15
+    .line 135
+    iconst_0
+    istore 15
 L_005b:
-   .line 99
-   .var 15 is "\$i\$a\$-m-Printer\$name\$1" I from L_005b to L_00ab
-   aload 1
-   checkcast java/lang/CharSequence
-   astore 16
+    .line 99
+    .var 15 is "\$i\$a\$-m-Printer\$name\$1" I from L_005b to L_00ab
+    aload 1
+    checkcast java/lang/CharSequence
+    astore 16
 L_0060:
-   .var 16 is $this$all$iv Ljava/lang/CharSequence; from L_0060 to L_009a
-   iconst_0
-   istore 17
+    .var 16 is $this$all$iv Ljava/lang/CharSequence; from L_0060 to L_009a
+    iconst_0
+    istore 17
 L_0063:
-   .line 136
-   .var 17 is $i$f$all I from L_0063 to L_009a
-   aload 16
-   astore 18
-   iconst_0
-   istore 19
+    .line 136
+    .var 17 is $i$f$all I from L_0063 to L_009a
+    aload 16
+    astore 18
+    iconst_0
+    istore 19
 L_0069:
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Integer
-      locals Object java/lang/CharSequence
-      locals Integer
-      locals Object java/lang/CharSequence
-      locals Integer
-   .end stack
-   iload 19
-   aload 18
-   invokeinterface java/lang/CharSequence/length ()I
-   if_icmpge L_0096
-   aload 18
-   iload 19
-   invokeinterface java/lang/CharSequence/charAt (I)C
-   istore 20
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Integer
+        locals Object java/lang/CharSequence
+        locals Integer
+        locals Object java/lang/CharSequence
+        locals Integer
+    .end stack
+    iload 19
+    aload 18
+    invokeinterface java/lang/CharSequence/length ()I
+    if_icmpge L_0096
+    aload 18
+    iload 19
+    invokeinterface java/lang/CharSequence/charAt (I)C
+    istore 20
 L_0073:
-   .var 20 is element$iv C from L_0073 to L_0094
-   iload 20
-   istore 21
+    .var 20 is element$iv C from L_0073 to L_0094
+    iload 20
+    istore 21
 L_0076:
-   .var 21 is it C from L_0076 to L_008c
-   iconst_0
-   istore 22
+    .var 21 is it C from L_0076 to L_008c
+    iconst_0
+    istore 22
 L_0079:
-   .line 99
-   .var 22 is "\$i\$a\$-all-Printer\$name\$1\$1" I from L_0079 to L_008c
-   iload 21
-   invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
-   invokestatic com/anatawa12/jasm/parser/UtilsKt/isWardChar (Ljava/lang/Character;)Z
-   ifne L_0085
-   iload 21
-   bipush 47
-   if_icmpeq L_0085
-   iload 21
-   bipush 59
-   if_icmpne L_0089
+    .line 99
+    .var 22 is "\$i\$a\$-all-Printer\$name\$1\$1" I from L_0079 to L_008c
+    iload 21
+    invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
+    invokestatic com/anatawa12/jasm/parser/UtilsKt/isWardChar (Ljava/lang/Character;)Z
+    ifne L_0085
+    iload 21
+    bipush 47
+    if_icmpeq L_0085
+    iload 21
+    bipush 59
+    if_icmpne L_0089
 L_0085:
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Integer
-      locals Object java/lang/CharSequence
-      locals Integer
-      locals Object java/lang/CharSequence
-      locals Integer
-      locals Integer
-      locals Integer
-      locals Integer
-   .end stack
-   iconst_1
-   goto L_008c
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Integer
+        locals Object java/lang/CharSequence
+        locals Integer
+        locals Object java/lang/CharSequence
+        locals Integer
+        locals Integer
+        locals Integer
+        locals Integer
+    .end stack
+    iconst_1
+    goto L_008c
 L_0089:
-   .stack use locals
-   .end stack
-   iconst_0
+    .stack use locals
+    .end stack
+    iconst_0
 L_008c:
-   .stack use locals
-      stacks Integer
-   .end stack
-   ifne L_0091
-   iconst_0
-   goto L_009a
+    .stack use locals
+        stacks Integer
+    .end stack
+    ifne L_0091
+    iconst_0
+    goto L_009a
 L_0091:
-   .stack use locals
-   .end stack
-   iinc 19 1
+    .stack use locals
+    .end stack
+    iinc 19 1
 L_0094:
-   goto L_0069
+    goto L_0069
 L_0096:
-   .line 137
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Integer
-      locals Object java/lang/CharSequence
-      locals Integer
-      locals Object java/lang/CharSequence
-      locals Integer
-   .end stack
-   iconst_1
+    .line 137
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Integer
+        locals Object java/lang/CharSequence
+        locals Integer
+        locals Object java/lang/CharSequence
+        locals Integer
+    .end stack
+    iconst_1
 L_009a:
-   .stack use locals
-      stacks Integer
-   .end stack
-   ifeq L_00a4
+    .stack use locals
+        stacks Integer
+    .end stack
+    ifeq L_00a4
 L_009d:
-   .line 100
-   aload 0
-   aload 1
-   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
-   pop
-   goto L_00ab
+    .line 100
+    aload 0
+    aload 1
+    invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+    pop
+    goto L_00ab
 L_00a4:
-   .line 101
-   .stack use locals
-   .end stack
-   aload 0
-   aload 1
-   invokevirtual com/anatawa12/jasm/disassembler/Printer/str (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
-   pop
+    .line 101
+    .stack use locals
+    .end stack
+    aload 0
+    aload 1
+    invokevirtual com/anatawa12/jasm/disassembler/Printer/str (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+    pop
 L_00ab:
-   .line 102
-   .stack use locals
-   .end stack
-   nop
+    .line 102
+    .stack use locals
+    .end stack
+    nop
 L_00af:
-   .line 138
-   nop
+    .line 138
+    nop
 L_00b2:
-   .line 129
-   aload 4
-   checkcast com/anatawa12/jasm/disassembler/Printer
+    .line 129
+    aload 4
+    checkcast com/anatawa12/jasm/disassembler/Printer
 L_00b6:
-   .line 138
-   nop
+    .line 138
+    nop
 L_00b9:
-   .line 102
-   areturn
+    .line 102
+    areturn
 L_00bc:
 .end method
 
 .method public mDesc (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 23
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 23
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_00c2
-   .var 1 is name Ljava/lang/String; from L_0000 to L_00c2
-   aload 1
-   ldc "name"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_00c2
+    .var 1 is name Ljava/lang/String; from L_0000 to L_00c2
+    aload 1
+    ldc "name"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 104
-   aload 0
-   astore 2
+    .line 104
+    aload 0
+    astore 2
 L_0008:
-   .var 2 is this_$iv Lcom/anatawa12/jasm/disassembler/Printer; from L_0008 to L_00bf
-   iconst_0
-   istore 3
+    .var 2 is this_$iv Lcom/anatawa12/jasm/disassembler/Printer; from L_0008 to L_00bf
+    iconst_0
+    istore 3
 L_000b:
-   .line 139
-   .var 3 is $i$f$m I from L_000b to L_00bf
-   aload 2
-   astore 4
-   iconst_0
-   istore 5
-   iconst_0
-   istore 6
-   aload 4
-   checkcast com/anatawa12/jasm/disassembler/Printer
-   astore 7
+    .line 139
+    .var 3 is $i$f$m I from L_000b to L_00bf
+    aload 2
+    astore 4
+    iconst_0
+    istore 5
+    iconst_0
+    istore 6
+    aload 4
+    checkcast com/anatawa12/jasm/disassembler/Printer
+    astore 7
 L_0016:
-   .var 7 is $this$apply$iv Lcom/anatawa12/jasm/disassembler/Printer; from L_0016 to L_00b5
-   iconst_0
-   istore 8
+    .var 7 is $this$apply$iv Lcom/anatawa12/jasm/disassembler/Printer; from L_0016 to L_00b5
+    iconst_0
+    istore 8
 L_0019:
-   .line 140
-   .var 8 is "\$i\$a\$-apply-Printer\$m\$1\$iv" I from L_0019 to L_00b5
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
-   ifeq L_0041
+    .line 140
+    .var 8 is "\$i\$a\$-apply-Printer\$m\$1\$iv" I from L_0019 to L_00b5
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
+    ifeq L_0041
 L_001e:
-   .line 141
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndent$p (Lcom/anatawa12/jasm/disassembler/Printer;)I
-   istore 9
-   iconst_0
-   istore 10
-   iconst_0
-   istore 11
-   iconst_0
-   istore 11
-   iload 9
-   istore 12
+    .line 141
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndent$p (Lcom/anatawa12/jasm/disassembler/Printer;)I
+    istore 9
+    iconst_0
+    istore 10
+    iconst_0
+    istore 11
+    iconst_0
+    istore 11
+    iload 9
+    istore 12
 L_002b:
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Integer
-      locals Integer
-      locals Integer
-   .end stack
-   iload 11
-   iload 12
-   if_icmpge L_0041
-   iload 11
-   istore 13
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Integer
+        locals Integer
+        locals Integer
+    .end stack
+    iload 11
+    iload 12
+    if_icmpge L_0041
+    iload 11
+    istore 13
 L_0032:
-   .var 13 is it$iv I from L_0032 to L_003d
-   iconst_0
-   istore 14
+    .var 13 is it$iv I from L_0032 to L_003d
+    iconst_0
+    istore 14
 L_0035:
-   .line 141
-   .var 14 is "\$i\$a\$-repeat-Printer\$m\$1\$1\$iv" I from L_0035 to L_003d
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndentStr$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/String;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   pop
+    .line 141
+    .var 14 is "\$i\$a\$-repeat-Printer\$m\$1\$1\$iv" I from L_0035 to L_003d
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getIndentStr$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/String;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    pop
 L_003d:
-   .line 141
-   iinc 11 1
-   goto L_002b
+    .line 141
+    iinc 11 1
+    goto L_002b
 L_0041:
-   .line 142
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-   .end stack
-   aload 7
-   iconst_0
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$setAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
+    .line 142
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+    .end stack
+    aload 7
+    iconst_0
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$setAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
 L_0047:
-   .line 143
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
-   ifeq L_0051
-   aload 7
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
-   bipush 32
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 143
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
+    ifeq L_0051
+    aload 7
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
+    bipush 32
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_0051:
-   .line 144
-   .stack use locals
-   .end stack
-   aload 7
-   iconst_0
-   invokestatic com/anatawa12/jasm/disassembler/Printer/access$setPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
+    .line 144
+    .stack use locals
+    .end stack
+    aload 7
+    iconst_0
+    invokestatic com/anatawa12/jasm/disassembler/Printer/access$setPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
 L_0057:
-   .line 145
-   iconst_0
-   istore 15
+    .line 145
+    iconst_0
+    istore 15
 L_005b:
-   .line 105
-   .var 15 is "\$i\$a\$-m-Printer\$mDesc\$1" I from L_005b to L_00b1
-   aload 1
-   checkcast java/lang/CharSequence
-   astore 16
+    .line 105
+    .var 15 is "\$i\$a\$-m-Printer\$mDesc\$1" I from L_005b to L_00b1
+    aload 1
+    checkcast java/lang/CharSequence
+    astore 16
 L_0060:
-   .var 16 is $this$all$iv Ljava/lang/CharSequence; from L_0060 to L_00a0
-   iconst_0
-   istore 17
+    .var 16 is $this$all$iv Ljava/lang/CharSequence; from L_0060 to L_00a0
+    iconst_0
+    istore 17
 L_0063:
-   .line 146
-   .var 17 is $i$f$all I from L_0063 to L_00a0
-   aload 16
-   astore 18
-   iconst_0
-   istore 19
+    .line 146
+    .var 17 is $i$f$all I from L_0063 to L_00a0
+    aload 16
+    astore 18
+    iconst_0
+    istore 19
 L_0069:
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Integer
-      locals Object java/lang/CharSequence
-      locals Integer
-      locals Object java/lang/CharSequence
-      locals Integer
-   .end stack
-   iload 19
-   aload 18
-   invokeinterface java/lang/CharSequence/length ()I
-   if_icmpge L_009c
-   aload 18
-   iload 19
-   invokeinterface java/lang/CharSequence/charAt (I)C
-   istore 20
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Integer
+        locals Object java/lang/CharSequence
+        locals Integer
+        locals Object java/lang/CharSequence
+        locals Integer
+    .end stack
+    iload 19
+    aload 18
+    invokeinterface java/lang/CharSequence/length ()I
+    if_icmpge L_009c
+    aload 18
+    iload 19
+    invokeinterface java/lang/CharSequence/charAt (I)C
+    istore 20
 L_0073:
-   .var 20 is element$iv C from L_0073 to L_009a
-   iload 20
-   istore 21
+    .var 20 is element$iv C from L_0073 to L_009a
+    iload 20
+    istore 21
 L_0076:
-   .var 21 is it C from L_0076 to L_0092
-   iconst_0
-   istore 22
+    .var 21 is it C from L_0076 to L_0092
+    iconst_0
+    istore 22
 L_0079:
-   .line 105
-   .var 22 is "\$i\$a\$-all-Printer\$mDesc\$1\$1" I from L_0079 to L_0092
-   iload 21
-   invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
-   invokestatic com/anatawa12/jasm/parser/UtilsKt/isWardChar (Ljava/lang/Character;)Z
-   ifne L_008b
-   iload 21
-   bipush 47
-   if_icmpeq L_008b
-   iload 21
-   bipush 59
-   if_icmpeq L_008b
-   iload 21
-   bipush 40
-   if_icmpeq L_008b
-   iload 21
-   bipush 41
-   if_icmpne L_008f
+    .line 105
+    .var 22 is "\$i\$a\$-all-Printer\$mDesc\$1\$1" I from L_0079 to L_0092
+    iload 21
+    invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
+    invokestatic com/anatawa12/jasm/parser/UtilsKt/isWardChar (Ljava/lang/Character;)Z
+    ifne L_008b
+    iload 21
+    bipush 47
+    if_icmpeq L_008b
+    iload 21
+    bipush 59
+    if_icmpeq L_008b
+    iload 21
+    bipush 40
+    if_icmpeq L_008b
+    iload 21
+    bipush 41
+    if_icmpne L_008f
 L_008b:
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Integer
-      locals Object java/lang/CharSequence
-      locals Integer
-      locals Object java/lang/CharSequence
-      locals Integer
-      locals Integer
-      locals Integer
-      locals Integer
-   .end stack
-   iconst_1
-   goto L_0092
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Integer
+        locals Object java/lang/CharSequence
+        locals Integer
+        locals Object java/lang/CharSequence
+        locals Integer
+        locals Integer
+        locals Integer
+        locals Integer
+    .end stack
+    iconst_1
+    goto L_0092
 L_008f:
-   .stack use locals
-   .end stack
-   iconst_0
+    .stack use locals
+    .end stack
+    iconst_0
 L_0092:
-   .stack use locals
-      stacks Integer
-   .end stack
-   ifne L_0097
-   iconst_0
-   goto L_00a0
+    .stack use locals
+        stacks Integer
+    .end stack
+    ifne L_0097
+    iconst_0
+    goto L_00a0
 L_0097:
-   .stack use locals
-   .end stack
-   iinc 19 1
+    .stack use locals
+    .end stack
+    iinc 19 1
 L_009a:
-   goto L_0069
+    goto L_0069
 L_009c:
-   .line 147
-   .stack
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/disassembler/Printer
-      locals Integer
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Top
-      locals Integer
-      locals Object java/lang/CharSequence
-      locals Integer
-      locals Object java/lang/CharSequence
-      locals Integer
-   .end stack
-   iconst_1
+    .line 147
+    .stack
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/disassembler/Printer
+        locals Integer
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Top
+        locals Integer
+        locals Object java/lang/CharSequence
+        locals Integer
+        locals Object java/lang/CharSequence
+        locals Integer
+    .end stack
+    iconst_1
 L_00a0:
-   .stack use locals
-      stacks Integer
-   .end stack
-   ifeq L_00aa
+    .stack use locals
+        stacks Integer
+    .end stack
+    ifeq L_00aa
 L_00a3:
-   .line 106
-   aload 0
-   aload 1
-   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
-   pop
-   goto L_00b1
+    .line 106
+    aload 0
+    aload 1
+    invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+    pop
+    goto L_00b1
 L_00aa:
-   .line 107
-   .stack use locals
-   .end stack
-   aload 0
-   aload 1
-   invokevirtual com/anatawa12/jasm/disassembler/Printer/str (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
-   pop
+    .line 107
+    .stack use locals
+    .end stack
+    aload 0
+    aload 1
+    invokevirtual com/anatawa12/jasm/disassembler/Printer/str (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+    pop
 L_00b1:
-   .line 108
-   .stack use locals
-   .end stack
-   nop
+    .line 108
+    .stack use locals
+    .end stack
+    nop
 L_00b5:
-   .line 148
-   nop
+    .line 148
+    nop
 L_00b8:
-   .line 139
-   aload 4
-   checkcast com/anatawa12/jasm/disassembler/Printer
+    .line 139
+    aload 4
+    checkcast com/anatawa12/jasm/disassembler/Printer
 L_00bc:
-   .line 148
-   nop
+    .line 148
+    nop
 L_00bf:
-   .line 108
-   areturn
+    .line 108
+    areturn
 L_00c2:
 .end method
 
 .method public getString ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 3
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 3
+    .limit local 1
 L_0000:
-   .line 110
-   .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0009
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   dup
-   ldc "file.toString()"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   areturn
+    .line 110
+    .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0009
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    dup
+    ldc "file.toString()"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    areturn
 L_0009:
 .end method
 
 .method public <init> ()V
-   .limit stack 3
-   .limit local 1
+    .limit stack 3
+    .limit local 1
 L_0000:
-   .line 6
-   .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0011
-   aload 0
-   invokespecial java/lang/Object/<init> ()V
+    .line 6
+    .var 0 is this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0011
+    aload 0
+    invokespecial java/lang/Object/<init> ()V
 L_0004:
-   .line 7
-   aload 0
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   putfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    .line 7
+    aload 0
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    putfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
 L_000b:
-   .line 10
-   aload 0
-   ldc "   "
-   putfield com/anatawa12/jasm/disassembler/Printer/indentStr Ljava/lang/String;
-   return
+    .line 10
+    aload 0
+    ldc "    "
+    putfield com/anatawa12/jasm/disassembler/Printer/indentStr Ljava/lang/String;
+    return
 L_0011:
 .end method
 
 .method public access$getAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 6
-   .var 0 is $this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/afterNewLine Z
-   ireturn
+    .line 6
+    .var 0 is $this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/afterNewLine Z
+    ireturn
 L_0005:
 .end method
 
 .method public access$setAfterNewLine$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
-   .limit stack 2
-   .limit local 2
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .line 6
-   .var 0 is $this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0006
-   .var 1 is "<set-?>" Z from L_0000 to L_0006
-   aload 0
-   iload 1
-   putfield com/anatawa12/jasm/disassembler/Printer/afterNewLine Z
-   return
+    .line 6
+    .var 0 is $this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0006
+    .var 1 is "<set-?>" Z from L_0000 to L_0006
+    aload 0
+    iload 1
+    putfield com/anatawa12/jasm/disassembler/Printer/afterNewLine Z
+    return
 L_0006:
 .end method
 
 .method public access$getIndent$p (Lcom/anatawa12/jasm/disassembler/Printer;)I
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 6
-   .var 0 is $this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/indent I
-   ireturn
+    .line 6
+    .var 0 is $this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/indent I
+    ireturn
 L_0005:
 .end method
 
 .method public access$setIndent$p (Lcom/anatawa12/jasm/disassembler/Printer;I)V
-   .limit stack 2
-   .limit local 2
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .line 6
-   .var 0 is $this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0006
-   .var 1 is "<set-?>" I from L_0000 to L_0006
-   aload 0
-   iload 1
-   putfield com/anatawa12/jasm/disassembler/Printer/indent I
-   return
+    .line 6
+    .var 0 is $this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0006
+    .var 1 is "<set-?>" I from L_0000 to L_0006
+    aload 0
+    iload 1
+    putfield com/anatawa12/jasm/disassembler/Printer/indent I
+    return
 L_0006:
 .end method
 
 .method public access$getFile$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/StringBuilder;
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 6
-   .var 0 is $this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
-   areturn
+    .line 6
+    .var 0 is $this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/file Ljava/lang/StringBuilder;
+    areturn
 L_0005:
 .end method
 
 .method public access$getIndentStr$p (Lcom/anatawa12/jasm/disassembler/Printer;)Ljava/lang/String;
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 6
-   .var 0 is $this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/indentStr Ljava/lang/String;
-   areturn
+    .line 6
+    .var 0 is $this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/indentStr Ljava/lang/String;
+    areturn
 L_0005:
 .end method
 
 .method public access$getPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;)Z
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 6
-   .var 0 is $this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Printer/printSpace Z
-   ireturn
+    .line 6
+    .var 0 is $this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Printer/printSpace Z
+    ireturn
 L_0005:
 .end method
 
 .method public access$setPrintSpace$p (Lcom/anatawa12/jasm/disassembler/Printer;Z)V
-   .limit stack 2
-   .limit local 2
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .line 6
-   .var 0 is $this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0006
-   .var 1 is "<set-?>" Z from L_0000 to L_0006
-   aload 0
-   iload 1
-   putfield com/anatawa12/jasm/disassembler/Printer/printSpace Z
-   return
+    .line 6
+    .var 0 is $this Lcom/anatawa12/jasm/disassembler/Printer; from L_0000 to L_0006
+    .var 1 is "<set-?>" Z from L_0000 to L_0006
+    aload 0
+    iload 1
+    putfield com/anatawa12/jasm/disassembler/Printer/printSpace Z
+    return
 L_0006:
 .end method
 
@@ -1731,7 +1731,7 @@ L_0006:
 .field private afterNewLine Z
 .end field
 
-.field private indentStr Ljava/lang/String; = "   "
+.field private indentStr Ljava/lang/String; = "    "
 .end field
 
 .field private indent I

@@ -5,185 +5,185 @@
 .implements com/anatawa12/jasm/parser/ITokenVisitorNullable
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000\u0084\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H&J\u0010\u0010\u0006\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0007H&J\u0015\u0010\b\u001a\u00020\t2\u0006\u0010\u0004\u001a\u00020\nH&¢\u0006\u0002\u0010\u000bJ\u0010\u0010\u000c\u001a\u00020\r2\u0006\u0010\u0004\u001a\u00020\u000eH&J\u0015\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0004\u001a\u00020\u0011H&¢\u0006\u0002\u0010\u0012J\u0010\u0010\u0013\u001a\u00020\r2\u0006\u0010\u0004\u001a\u00020\u0014H&J\u0015\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0004\u001a\u00020\u0017H&¢\u0006\u0002\u0010\u0018J\u0010\u0010\u0019\u001a\u00020\r2\u0006\u0010\u0004\u001a\u00020\u001aH&J\u0010\u0010\u001b\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u001cH&J\u0015\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u0004\u001a\u00020\u001fH&¢\u0006\u0002\u0010 J\u0010\u0010!\u001a\u00020\r2\u0006\u0010\u0004\u001a\u00020\"H&J\u0010\u0010#\u001a\u00020\r2\u0006\u0010\u0004\u001a\u00020\$H&J\u001c\u0010%\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\r0&2\u0006\u0010\u0004\u001a\u00020\'H&J\u0010\u0010(\u001a\u00020\r2\u0006\u0010\u0004\u001a\u00020)H&¨\u0006*"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/parser/ITokenVisitor;"
-      s = "Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;"
-      s = "visitChar"
-      s = ""
-      s = "tokenType"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Char;"
-      s = "visitDotedKeyWord"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$DotedKeyWord;"
-      s = "visitDouble"
-      s = ""
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Double;"
-      s = "(Lcom/anatawa12/jasm/parser/TokenType\$Double;)Ljava/lang/Double;"
-      s = "visitFieldDescriptor"
-      s = ""
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$FieldDescriptor;"
-      s = "visitFloat"
-      s = ""
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Float;"
-      s = "(Lcom/anatawa12/jasm/parser/TokenType\$Float;)Ljava/lang/Float;"
-      s = "visitIdentifier"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Identifier;"
-      s = "visitInteger"
-      s = ""
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Integer;"
-      s = "(Lcom/anatawa12/jasm/parser/TokenType\$Integer;)Ljava/lang/Integer;"
-      s = "visitInternalName"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$InternalName;"
-      s = "visitKeyWord"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$KeyWord;"
-      s = "visitLong"
-      s = ""
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Long;"
-      s = "(Lcom/anatawa12/jasm/parser/TokenType\$Long;)Ljava/lang/Long;"
-      s = "visitMethodDescriptor"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$MethodDescriptor;"
-      s = "visitName"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Name;"
-      s = "visitOwnerAndName"
-      s = "Lkotlin/Pair;"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$OwnerAndName;"
-      s = "visitString"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$String;"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000\u0084\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H&J\u0010\u0010\u0006\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0007H&J\u0015\u0010\b\u001a\u00020\t2\u0006\u0010\u0004\u001a\u00020\nH&¢\u0006\u0002\u0010\u000bJ\u0010\u0010\u000c\u001a\u00020\r2\u0006\u0010\u0004\u001a\u00020\u000eH&J\u0015\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0004\u001a\u00020\u0011H&¢\u0006\u0002\u0010\u0012J\u0010\u0010\u0013\u001a\u00020\r2\u0006\u0010\u0004\u001a\u00020\u0014H&J\u0015\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0004\u001a\u00020\u0017H&¢\u0006\u0002\u0010\u0018J\u0010\u0010\u0019\u001a\u00020\r2\u0006\u0010\u0004\u001a\u00020\u001aH&J\u0010\u0010\u001b\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u001cH&J\u0015\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u0004\u001a\u00020\u001fH&¢\u0006\u0002\u0010 J\u0010\u0010!\u001a\u00020\r2\u0006\u0010\u0004\u001a\u00020\"H&J\u0010\u0010#\u001a\u00020\r2\u0006\u0010\u0004\u001a\u00020\$H&J\u001c\u0010%\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\r0&2\u0006\u0010\u0004\u001a\u00020\'H&J\u0010\u0010(\u001a\u00020\r2\u0006\u0010\u0004\u001a\u00020)H&¨\u0006*"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/parser/ITokenVisitor;"
+        s = "Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;"
+        s = "visitChar"
+        s = ""
+        s = "tokenType"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Char;"
+        s = "visitDotedKeyWord"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$DotedKeyWord;"
+        s = "visitDouble"
+        s = ""
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Double;"
+        s = "(Lcom/anatawa12/jasm/parser/TokenType\$Double;)Ljava/lang/Double;"
+        s = "visitFieldDescriptor"
+        s = ""
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$FieldDescriptor;"
+        s = "visitFloat"
+        s = ""
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Float;"
+        s = "(Lcom/anatawa12/jasm/parser/TokenType\$Float;)Ljava/lang/Float;"
+        s = "visitIdentifier"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Identifier;"
+        s = "visitInteger"
+        s = ""
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Integer;"
+        s = "(Lcom/anatawa12/jasm/parser/TokenType\$Integer;)Ljava/lang/Integer;"
+        s = "visitInternalName"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$InternalName;"
+        s = "visitKeyWord"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$KeyWord;"
+        s = "visitLong"
+        s = ""
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Long;"
+        s = "(Lcom/anatawa12/jasm/parser/TokenType\$Long;)Ljava/lang/Long;"
+        s = "visitMethodDescriptor"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$MethodDescriptor;"
+        s = "visitName"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Name;"
+        s = "visitOwnerAndName"
+        s = "Lkotlin/Pair;"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$OwnerAndName;"
+        s = "visitString"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$String;"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public visitKeyWord (Lcom/anatawa12/jasm/parser/TokenType$KeyWord;)V
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 0
-   .limit local 0
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 0
+    .limit local 0
 .end method
 
 .method public visitDotedKeyWord (Lcom/anatawa12/jasm/parser/TokenType$DotedKeyWord;)V
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 0
-   .limit local 0
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 0
+    .limit local 0
 .end method
 
 .method public visitInteger (Lcom/anatawa12/jasm/parser/TokenType$Integer;)Ljava/lang/Integer;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 0
-   .limit local 0
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 0
+    .limit local 0
 .end method
 
 .method public visitDouble (Lcom/anatawa12/jasm/parser/TokenType$Double;)Ljava/lang/Double;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 0
-   .limit local 0
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 0
+    .limit local 0
 .end method
 
 .method public visitLong (Lcom/anatawa12/jasm/parser/TokenType$Long;)Ljava/lang/Long;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 0
-   .limit local 0
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 0
+    .limit local 0
 .end method
 
 .method public visitFloat (Lcom/anatawa12/jasm/parser/TokenType$Float;)Ljava/lang/Float;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 0
-   .limit local 0
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 0
+    .limit local 0
 .end method
 
 .method public visitString (Lcom/anatawa12/jasm/parser/TokenType$String;)Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 0
-   .limit local 0
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 0
+    .limit local 0
 .end method
 
 .method public visitChar (Lcom/anatawa12/jasm/parser/TokenType$Char;)V
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 0
-   .limit local 0
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 0
+    .limit local 0
 .end method
 
 .method public visitInternalName (Lcom/anatawa12/jasm/parser/TokenType$InternalName;)Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 0
-   .limit local 0
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 0
+    .limit local 0
 .end method
 
 .method public visitOwnerAndName (Lcom/anatawa12/jasm/parser/TokenType$OwnerAndName;)Lkotlin/Pair;
-   .signature "(Lcom/anatawa12/jasm/parser/TokenType\$OwnerAndName;)Lkotlin/Pair<Ljava/lang/String;Ljava/lang/String;>;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 0
-   .limit local 0
+    .signature "(Lcom/anatawa12/jasm/parser/TokenType\$OwnerAndName;)Lkotlin/Pair<Ljava/lang/String;Ljava/lang/String;>;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 0
+    .limit local 0
 .end method
 
 .method public visitName (Lcom/anatawa12/jasm/parser/TokenType$Name;)Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 0
-   .limit local 0
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 0
+    .limit local 0
 .end method
 
 .method public visitFieldDescriptor (Lcom/anatawa12/jasm/parser/TokenType$FieldDescriptor;)Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 0
-   .limit local 0
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 0
+    .limit local 0
 .end method
 
 .method public visitMethodDescriptor (Lcom/anatawa12/jasm/parser/TokenType$MethodDescriptor;)Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 0
-   .limit local 0
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 0
+    .limit local 0
 .end method
 
 .method public visitIdentifier (Lcom/anatawa12/jasm/parser/TokenType$Identifier;)Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 0
-   .limit local 0
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 0
+    .limit local 0
 .end method
 

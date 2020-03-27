@@ -2,473 +2,473 @@
 .source "VerifyError.kt"
 .class public com/anatawa12/jasm/assembler/VerifyingWarn
 .super java/lang/Object
-.debug "SMAP\nVerifyError.kt\nKotlin\n*S Kotlin\n*F\n+ 1 VerifyError.kt\ncom/anatawa12/jasm/assembler/VerifyingWarn\n*L\n1#1,89:1\n*E\n"
+.debug "SMAP\nVerifyError.kt\nKotlin\n*S Kotlin\n*F\n+ 1 VerifyError.kt\ncom/anatawa12/jasm/assembler/VerifyingWarn\n*L\n1#1,91:1\n*E\n"
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\b\u000e\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B%\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u000e\u0010\u0006\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u0007¢\u0006\u0002\u0010\bJ\t\u0010\u0010\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0011\u001a\u00020\u0005HÆ\u0003J\u0016\u0010\u0012\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010\u000cJ4\u0010\u0013\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\u0010\b\u0002\u0010\u0006\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u0007HÆ\u0001¢\u0006\u0002\u0010\u0014J\u0013\u0010\u0015\u001a\u00020\u00162\b\u0010\u0017\u001a\u0004\u0018\u00010\u0001H\u0096\u0002J\b\u0010\u0018\u001a\u00020\u0019H\u0016J\t\u0010\u001a\u001a\u00020\u001bHÖ\u0001R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u001b\u0010\u0006\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u0007¢\u0006\n\n\u0002\u0010\r\u001a\u0004\b\u000b\u0010\u000cR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000f¨\u0006\u001c"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/assembler/VerifyingWarn;"
-      s = ""
-      s = "warn"
-      s = "Lcom/anatawa12/jasm/assembler/VerifyingWarnType;"
-      s = "at"
-      s = "Lcom/anatawa12/jasm/tree/Node;"
-      s = "params"
-      s = ""
-      s = "(Lcom/anatawa12/jasm/assembler/VerifyingWarnType;Lcom/anatawa12/jasm/tree/Node;[Ljava/lang/Object;)V"
-      s = "getAt"
-      s = "()Lcom/anatawa12/jasm/tree/Node;"
-      s = "getParams"
-      s = "()[Ljava/lang/Object;"
-      s = "[Ljava/lang/Object;"
-      s = "getWarn"
-      s = "()Lcom/anatawa12/jasm/assembler/VerifyingWarnType;"
-      s = "component1"
-      s = "component2"
-      s = "component3"
-      s = "copy"
-      s = "(Lcom/anatawa12/jasm/assembler/VerifyingWarnType;Lcom/anatawa12/jasm/tree/Node;[Ljava/lang/Object;)Lcom/anatawa12/jasm/assembler/VerifyingWarn;"
-      s = "equals"
-      s = ""
-      s = "other"
-      s = "hashCode"
-      s = ""
-      s = "toString"
-      s = ""
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\b\u000e\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B%\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u000e\u0010\u0006\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u0007¢\u0006\u0002\u0010\bJ\t\u0010\u0010\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0011\u001a\u00020\u0005HÆ\u0003J\u0016\u0010\u0012\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u0007HÆ\u0003¢\u0006\u0002\u0010\u000cJ4\u0010\u0013\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\u0010\b\u0002\u0010\u0006\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u0007HÆ\u0001¢\u0006\u0002\u0010\u0014J\u0013\u0010\u0015\u001a\u00020\u00162\b\u0010\u0017\u001a\u0004\u0018\u00010\u0001H\u0096\u0002J\b\u0010\u0018\u001a\u00020\u0019H\u0016J\t\u0010\u001a\u001a\u00020\u001bHÖ\u0001R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u001b\u0010\u0006\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u0007¢\u0006\n\n\u0002\u0010\r\u001a\u0004\b\u000b\u0010\u000cR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000f¨\u0006\u001c"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/assembler/VerifyingWarn;"
+        s = ""
+        s = "warn"
+        s = "Lcom/anatawa12/jasm/assembler/VerifyingWarnType;"
+        s = "at"
+        s = "Lcom/anatawa12/jasm/tree/Node;"
+        s = "params"
+        s = ""
+        s = "(Lcom/anatawa12/jasm/assembler/VerifyingWarnType;Lcom/anatawa12/jasm/tree/Node;[Ljava/lang/Object;)V"
+        s = "getAt"
+        s = "()Lcom/anatawa12/jasm/tree/Node;"
+        s = "getParams"
+        s = "()[Ljava/lang/Object;"
+        s = "[Ljava/lang/Object;"
+        s = "getWarn"
+        s = "()Lcom/anatawa12/jasm/assembler/VerifyingWarnType;"
+        s = "component1"
+        s = "component2"
+        s = "component3"
+        s = "copy"
+        s = "(Lcom/anatawa12/jasm/assembler/VerifyingWarnType;Lcom/anatawa12/jasm/tree/Node;[Ljava/lang/Object;)Lcom/anatawa12/jasm/assembler/VerifyingWarn;"
+        s = "equals"
+        s = ""
+        s = "other"
+        s = "hashCode"
+        s = ""
+        s = "toString"
+        s = ""
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public equals (Ljava/lang/Object;)Z
-   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
-   .end annotation
-   .limit stack 4
-   .limit local 5
+    .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+    .end annotation
+    .limit stack 4
+    .limit local 5
 L_0000:
-   .line 64
-   .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_005e
-   .var 1 is other Ljava/lang/Object; from L_0000 to L_005e
-   aload 0
-   checkcast com/anatawa12/jasm/assembler/VerifyingWarn
-   aload 1
-   if_acmpne L_0008
-   iconst_1
-   ireturn
+    .line 66
+    .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_005e
+    .var 1 is other Ljava/lang/Object; from L_0000 to L_005e
+    aload 0
+    checkcast com/anatawa12/jasm/assembler/VerifyingWarn
+    aload 1
+    if_acmpne L_0008
+    iconst_1
+    ireturn
 L_0008:
-   .line 65
-   .stack
-      locals Object com/anatawa12/jasm/assembler/VerifyingWarn
-      locals Object java/lang/Object
-   .end stack
-   aload 0
-   invokevirtual java/lang/Object/getClass ()Ljava/lang/Class;
-   aload 1
-   dup
-   ifnull L_0012
-   invokevirtual java/lang/Object/getClass ()Ljava/lang/Class;
-   goto L_0016
+    .line 67
+    .stack
+        locals Object com/anatawa12/jasm/assembler/VerifyingWarn
+        locals Object java/lang/Object
+    .end stack
+    aload 0
+    invokevirtual java/lang/Object/getClass ()Ljava/lang/Class;
+    aload 1
+    dup
+    ifnull L_0012
+    invokevirtual java/lang/Object/getClass ()Ljava/lang/Class;
+    goto L_0016
 L_0012:
-   .stack use locals
-      stacks Object java/lang/Class
-      stacks Object java/lang/Object
-   .end stack
-   pop
-   aconst_null
+    .stack use locals
+        stacks Object java/lang/Class
+        stacks Object java/lang/Object
+    .end stack
+    pop
+    aconst_null
 L_0016:
-   .stack use locals
-      stacks Object java/lang/Class
-      stacks Object java/lang/Class
-   .end stack
-   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
-   iconst_1
-   ixor
-   ifeq L_001e
-   iconst_0
-   ireturn
+    .stack use locals
+        stacks Object java/lang/Class
+        stacks Object java/lang/Class
+    .end stack
+    invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+    iconst_1
+    ixor
+    ifeq L_001e
+    iconst_0
+    ireturn
 L_001e:
-   .line 67
-   .stack use locals
-   .end stack
-   aload 1
-   dup
-   ifnonnull L_0029
-   new kotlin/TypeCastException
-   dup
-   ldc "null cannot be cast to non-null type com.anatawa12.jasm.assembler.VerifyingWarn"
-   invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
-   athrow
+    .line 69
+    .stack use locals
+    .end stack
+    aload 1
+    dup
+    ifnonnull L_0029
+    new kotlin/TypeCastException
+    dup
+    ldc "null cannot be cast to non-null type com.anatawa12.jasm.assembler.VerifyingWarn"
+    invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
+    athrow
 L_0029:
-   .stack use locals
-      stacks Object java/lang/Object
-   .end stack
-   checkcast com/anatawa12/jasm/assembler/VerifyingWarn
-   pop
+    .stack use locals
+        stacks Object java/lang/Object
+    .end stack
+    checkcast com/anatawa12/jasm/assembler/VerifyingWarn
+    pop
 L_002d:
-   .line 69
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
-   aload 1
-   checkcast com/anatawa12/jasm/assembler/VerifyingWarn
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
-   if_acmpeq L_0037
-   iconst_0
-   ireturn
+    .line 71
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
+    aload 1
+    checkcast com/anatawa12/jasm/assembler/VerifyingWarn
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
+    if_acmpeq L_0037
+    iconst_0
+    ireturn
 L_0037:
-   .line 70
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/at Lcom/anatawa12/jasm/tree/Node;
-   aload 1
-   checkcast com/anatawa12/jasm/assembler/VerifyingWarn
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/at Lcom/anatawa12/jasm/tree/Node;
-   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
-   iconst_1
-   ixor
-   ifeq L_0045
-   iconst_0
-   ireturn
+    .line 72
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/at Lcom/anatawa12/jasm/tree/Node;
+    aload 1
+    checkcast com/anatawa12/jasm/assembler/VerifyingWarn
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/at Lcom/anatawa12/jasm/tree/Node;
+    invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+    iconst_1
+    ixor
+    ifeq L_0045
+    iconst_0
+    ireturn
 L_0045:
-   .line 71
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/params "[Ljava/lang/Object;"
-   astore 2
-   aload 1
-   checkcast com/anatawa12/jasm/assembler/VerifyingWarn
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/params "[Ljava/lang/Object;"
-   astore 3
-   iconst_0
-   istore 4
-   aload 2
-   aload 3
-   invokestatic java/util/Arrays/equals "([Ljava/lang/Object;[Ljava/lang/Object;)Z"
-   ifne L_0059
+    .line 73
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/params "[Ljava/lang/Object;"
+    astore 2
+    aload 1
+    checkcast com/anatawa12/jasm/assembler/VerifyingWarn
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/params "[Ljava/lang/Object;"
+    astore 3
+    iconst_0
+    istore 4
+    aload 2
+    aload 3
+    invokestatic java/util/Arrays/equals "([Ljava/lang/Object;[Ljava/lang/Object;)Z"
+    ifne L_0059
 L_0055:
-   .line 71
-   iconst_0
-   ireturn
+    .line 73
+    iconst_0
+    ireturn
 L_0059:
-   .line 73
-   .stack
-      locals Object com/anatawa12/jasm/assembler/VerifyingWarn
-      locals Object java/lang/Object
-      locals Object "[Ljava/lang/Object;"
-      locals Object "[Ljava/lang/Object;"
-      locals Integer
-   .end stack
-   iconst_1
-   ireturn
+    .line 75
+    .stack
+        locals Object com/anatawa12/jasm/assembler/VerifyingWarn
+        locals Object java/lang/Object
+        locals Object "[Ljava/lang/Object;"
+        locals Object "[Ljava/lang/Object;"
+        locals Integer
+    .end stack
+    iconst_1
+    ireturn
 L_005e:
 .end method
 
 .method public hashCode ()I
-   .limit stack 2
-   .limit local 6
+    .limit stack 2
+    .limit local 6
 L_0000:
-   .line 77
-   .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0028
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
-   invokevirtual com/anatawa12/jasm/assembler/VerifyingWarnType/hashCode ()I
-   istore 1
+    .line 79
+    .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0028
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
+    invokevirtual com/anatawa12/jasm/assembler/VerifyingWarnType/hashCode ()I
+    istore 1
 L_0006:
-   .line 78
-   .var 1 is result I from L_0006 to L_0028
-   bipush 31
-   iload 1
-   imul
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/at Lcom/anatawa12/jasm/tree/Node;
-   invokevirtual com/anatawa12/jasm/tree/Node/hashCode ()I
-   iadd
-   istore 1
+    .line 80
+    .var 1 is result I from L_0006 to L_0028
+    bipush 31
+    iload 1
+    imul
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/at Lcom/anatawa12/jasm/tree/Node;
+    invokevirtual com/anatawa12/jasm/tree/Node/hashCode ()I
+    iadd
+    istore 1
 L_0010:
-   .line 79
-   bipush 31
-   iload 1
-   imul
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/params "[Ljava/lang/Object;"
-   astore 2
-   istore 4
-   iconst_0
-   istore 3
-   aload 2
-   invokestatic java/util/Arrays/hashCode "([Ljava/lang/Object;)I"
-   istore 5
-   iload 4
-   iload 5
+    .line 81
+    bipush 31
+    iload 1
+    imul
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/params "[Ljava/lang/Object;"
+    astore 2
+    istore 4
+    iconst_0
+    istore 3
+    aload 2
+    invokestatic java/util/Arrays/hashCode "([Ljava/lang/Object;)I"
+    istore 5
+    iload 4
+    iload 5
 L_0020:
-   .line 79
-   iadd
-   istore 1
+    .line 81
+    iadd
+    istore 1
 L_0024:
-   .line 80
-   iload 1
-   ireturn
+    .line 82
+    iload 1
+    ireturn
 L_0028:
 .end method
 
 .method public getWarn ()Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 62
-   .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
-   areturn
+    .line 64
+    .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
+    areturn
 L_0005:
 .end method
 
 .method public getAt ()Lcom/anatawa12/jasm/tree/Node;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 62
-   .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/at Lcom/anatawa12/jasm/tree/Node;
-   areturn
+    .line 64
+    .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/at Lcom/anatawa12/jasm/tree/Node;
+    areturn
 L_0005:
 .end method
 
 .method public getParams "()[Ljava/lang/Object;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 62
-   .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/params "[Ljava/lang/Object;"
-   areturn
+    .line 64
+    .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/params "[Ljava/lang/Object;"
+    areturn
 L_0005:
 .end method
 
 .method public <init> "(Lcom/anatawa12/jasm/assembler/VerifyingWarnType;Lcom/anatawa12/jasm/tree/Node;[Ljava/lang/Object;)V"
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 4
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 4
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0018
-   .var 1 is warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType; from L_0000 to L_0018
-   .var 2 is at Lcom/anatawa12/jasm/tree/Node; from L_0000 to L_0018
-   .var 3 is params "[Ljava/lang/Object;" from L_0000 to L_0018
-   aload 1
-   ldc "warn"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 2
-   ldc "at"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 3
-   ldc "params"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0018
+    .var 1 is warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType; from L_0000 to L_0018
+    .var 2 is at Lcom/anatawa12/jasm/tree/Node; from L_0000 to L_0018
+    .var 3 is params "[Ljava/lang/Object;" from L_0000 to L_0018
+    aload 1
+    ldc "warn"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 2
+    ldc "at"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 3
+    ldc "params"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_000a:
-   .line 62
-   aload 0
-   invokespecial java/lang/Object/<init> ()V
-   aload 0
-   aload 1
-   putfield com/anatawa12/jasm/assembler/VerifyingWarn/warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
-   aload 0
-   aload 2
-   putfield com/anatawa12/jasm/assembler/VerifyingWarn/at Lcom/anatawa12/jasm/tree/Node;
-   aload 0
-   aload 3
-   putfield com/anatawa12/jasm/assembler/VerifyingWarn/params "[Ljava/lang/Object;"
-   return
+    .line 64
+    aload 0
+    invokespecial java/lang/Object/<init> ()V
+    aload 0
+    aload 1
+    putfield com/anatawa12/jasm/assembler/VerifyingWarn/warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
+    aload 0
+    aload 2
+    putfield com/anatawa12/jasm/assembler/VerifyingWarn/at Lcom/anatawa12/jasm/tree/Node;
+    aload 0
+    aload 3
+    putfield com/anatawa12/jasm/assembler/VerifyingWarn/params "[Ljava/lang/Object;"
+    return
 L_0018:
 .end method
 
 .method public component1 ()Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0004
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
-   areturn
+    .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0004
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
+    areturn
 L_0004:
 .end method
 
 .method public component2 ()Lcom/anatawa12/jasm/tree/Node;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0004
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/at Lcom/anatawa12/jasm/tree/Node;
-   areturn
+    .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0004
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/at Lcom/anatawa12/jasm/tree/Node;
+    areturn
 L_0004:
 .end method
 
 .method public component3 "()[Ljava/lang/Object;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0004
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/params "[Ljava/lang/Object;"
-   areturn
+    .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0004
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/params "[Ljava/lang/Object;"
+    areturn
 L_0004:
 .end method
 
 .method public copy "(Lcom/anatawa12/jasm/assembler/VerifyingWarnType;Lcom/anatawa12/jasm/tree/Node;[Ljava/lang/Object;)Lcom/anatawa12/jasm/assembler/VerifyingWarn;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 5
-   .limit local 4
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 5
+    .limit local 4
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0011
-   .var 1 is warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType; from L_0000 to L_0011
-   .var 2 is at Lcom/anatawa12/jasm/tree/Node; from L_0000 to L_0011
-   .var 3 is params "[Ljava/lang/Object;" from L_0000 to L_0011
-   aload 1
-   ldc "warn"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 2
-   ldc "at"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 3
-   ldc "params"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   new com/anatawa12/jasm/assembler/VerifyingWarn
-   dup
-   aload 1
-   aload 2
-   aload 3
-   invokespecial com/anatawa12/jasm/assembler/VerifyingWarn/<init> "(Lcom/anatawa12/jasm/assembler/VerifyingWarnType;Lcom/anatawa12/jasm/tree/Node;[Ljava/lang/Object;)V"
-   areturn
+    .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_0000 to L_0011
+    .var 1 is warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType; from L_0000 to L_0011
+    .var 2 is at Lcom/anatawa12/jasm/tree/Node; from L_0000 to L_0011
+    .var 3 is params "[Ljava/lang/Object;" from L_0000 to L_0011
+    aload 1
+    ldc "warn"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 2
+    ldc "at"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 3
+    ldc "params"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    new com/anatawa12/jasm/assembler/VerifyingWarn
+    dup
+    aload 1
+    aload 2
+    aload 3
+    invokespecial com/anatawa12/jasm/assembler/VerifyingWarn/<init> "(Lcom/anatawa12/jasm/assembler/VerifyingWarnType;Lcom/anatawa12/jasm/tree/Node;[Ljava/lang/Object;)V"
+    areturn
 L_0011:
 .end method
 
 .method public copy$default "(Lcom/anatawa12/jasm/assembler/VerifyingWarn;Lcom/anatawa12/jasm/assembler/VerifyingWarnType;Lcom/anatawa12/jasm/tree/Node;[Ljava/lang/Object;ILjava/lang/Object;)Lcom/anatawa12/jasm/assembler/VerifyingWarn;"
-   .limit stack 4
-   .limit local 6
-   iload 4
-   iconst_1
-   iand
-   ifeq L_0007
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
-   astore 1
+    .limit stack 4
+    .limit local 6
+    iload 4
+    iconst_1
+    iand
+    ifeq L_0007
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
+    astore 1
 L_0007:
-   .stack
-      locals Object com/anatawa12/jasm/assembler/VerifyingWarn
-      locals Object com/anatawa12/jasm/assembler/VerifyingWarnType
-      locals Object com/anatawa12/jasm/tree/Node
-      locals Object "[Ljava/lang/Object;"
-      locals Integer
-      locals Object java/lang/Object
-   .end stack
-   iload 4
-   iconst_2
-   iand
-   ifeq L_0010
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/at Lcom/anatawa12/jasm/tree/Node;
-   astore 2
+    .stack
+        locals Object com/anatawa12/jasm/assembler/VerifyingWarn
+        locals Object com/anatawa12/jasm/assembler/VerifyingWarnType
+        locals Object com/anatawa12/jasm/tree/Node
+        locals Object "[Ljava/lang/Object;"
+        locals Integer
+        locals Object java/lang/Object
+    .end stack
+    iload 4
+    iconst_2
+    iand
+    ifeq L_0010
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/at Lcom/anatawa12/jasm/tree/Node;
+    astore 2
 L_0010:
-   .stack use locals
-   .end stack
-   iload 4
-   iconst_4
-   iand
-   ifeq L_0019
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/params "[Ljava/lang/Object;"
-   astore 3
+    .stack use locals
+    .end stack
+    iload 4
+    iconst_4
+    iand
+    ifeq L_0019
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/params "[Ljava/lang/Object;"
+    astore 3
 L_0019:
-   .stack use locals
-   .end stack
-   aload 0
-   aload 1
-   aload 2
-   aload 3
-   invokevirtual com/anatawa12/jasm/assembler/VerifyingWarn/copy "(Lcom/anatawa12/jasm/assembler/VerifyingWarnType;Lcom/anatawa12/jasm/tree/Node;[Ljava/lang/Object;)Lcom/anatawa12/jasm/assembler/VerifyingWarn;"
-   areturn
+    .stack use locals
+    .end stack
+    aload 0
+    aload 1
+    aload 2
+    aload 3
+    invokevirtual com/anatawa12/jasm/assembler/VerifyingWarn/copy "(Lcom/anatawa12/jasm/assembler/VerifyingWarnType;Lcom/anatawa12/jasm/tree/Node;[Ljava/lang/Object;)Lcom/anatawa12/jasm/assembler/VerifyingWarn;"
+    areturn
 .end method
 
 .method public toString ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 1
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   ldc "VerifyingWarn(warn="
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
-   ldc ", at="
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/at Lcom/anatawa12/jasm/tree/Node;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
-   ldc ", params="
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarn/params "[Ljava/lang/Object;"
-   invokestatic java/util/Arrays/toString "([Ljava/lang/Object;)Ljava/lang/String;"
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   ldc ")"
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   areturn
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 1
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    ldc "VerifyingWarn(warn="
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    ldc ", at="
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/at Lcom/anatawa12/jasm/tree/Node;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    ldc ", params="
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarn/params "[Ljava/lang/Object;"
+    invokestatic java/util/Arrays/toString "([Ljava/lang/Object;)Ljava/lang/String;"
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    ldc ")"
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    areturn
 .end method
 
 .field private warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 
 .field private at Lcom/anatawa12/jasm/tree/Node;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 
 .field private params "[Ljava/lang/Object;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 

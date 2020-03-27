@@ -6,263 +6,263 @@
 .inner public com/anatawa12/jasm/parser/ILexer$DefaultImpls inner DefaultImpls outer com/anatawa12/jasm/parser/ILexer
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 3
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 3
 .end annotation
 
 .method public isNext (Lcom/anatawa12/jasm/parser/ILexer;Ljava/util/Set;)Z
-   .signature "(Lcom/anatawa12/jasm/parser/ILexer;Ljava/util/Set<+Lcom/anatawa12/jasm/parser/TokenType<*>;>;)Z"
-   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 8
+    .signature "(Lcom/anatawa12/jasm/parser/ILexer;Ljava/util/Set<+Lcom/anatawa12/jasm/parser/TokenType<*>;>;)Z"
+    .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 8
 L_0000:
-   .var 0 is $this Lcom/anatawa12/jasm/parser/ILexer; from L_0000 to L_003d
-   .var 1 is expect Ljava/util/Set; from L_0000 to L_003d
-   aload 1
-   ldc "expect"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is $this Lcom/anatawa12/jasm/parser/ILexer; from L_0000 to L_003d
+    .var 1 is expect Ljava/util/Set; from L_0000 to L_003d
+    aload 1
+    ldc "expect"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 6
-   aload 1
-   checkcast java/lang/Iterable
-   astore 2
+    .line 6
+    aload 1
+    checkcast java/lang/Iterable
+    astore 2
 L_0009:
-   .var 2 is $this$any$iv Ljava/lang/Iterable; from L_0009 to L_0039
-   iconst_0
-   istore 3
+    .var 2 is $this$any$iv Ljava/lang/Iterable; from L_0009 to L_0039
+    iconst_0
+    istore 3
 L_000c:
-   .line 15
-   .var 3 is $i$f$any I from L_000c to L_0039
-   aload 2
-   instanceof java/util/Collection
-   ifeq L_0017
-   aload 2
-   checkcast java/util/Collection
-   invokeinterface java/util/Collection/isEmpty ()Z
-   ifeq L_0017
-   iconst_0
-   goto L_0039
+    .line 15
+    .var 3 is $i$f$any I from L_000c to L_0039
+    aload 2
+    instanceof java/util/Collection
+    ifeq L_0017
+    aload 2
+    checkcast java/util/Collection
+    invokeinterface java/util/Collection/isEmpty ()Z
+    ifeq L_0017
+    iconst_0
+    goto L_0039
 L_0017:
-   .line 16
-   .stack
-      locals Object com/anatawa12/jasm/parser/ILexer
-      locals Object java/util/Set
-      locals Object java/lang/Iterable
-      locals Integer
-   .end stack
-   aload 2
-   invokeinterface java/lang/Iterable/iterator ()Ljava/util/Iterator;
-   astore 4
+    .line 16
+    .stack
+        locals Object com/anatawa12/jasm/parser/ILexer
+        locals Object java/util/Set
+        locals Object java/lang/Iterable
+        locals Integer
+    .end stack
+    aload 2
+    invokeinterface java/lang/Iterable/iterator ()Ljava/util/Iterator;
+    astore 4
 L_001d:
-   .stack
-      locals Object com/anatawa12/jasm/parser/ILexer
-      locals Object java/util/Set
-      locals Object java/lang/Iterable
-      locals Integer
-      locals Object java/util/Iterator
-   .end stack
-   aload 4
-   invokeinterface java/util/Iterator/hasNext ()Z
-   ifeq L_0035
-   aload 4
-   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
-   astore 5
+    .stack
+        locals Object com/anatawa12/jasm/parser/ILexer
+        locals Object java/util/Set
+        locals Object java/lang/Iterable
+        locals Integer
+        locals Object java/util/Iterator
+    .end stack
+    aload 4
+    invokeinterface java/util/Iterator/hasNext ()Z
+    ifeq L_0035
+    aload 4
+    invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+    astore 5
 L_0025:
-   .var 5 is element$iv Ljava/lang/Object; from L_0025 to L_0035
-   aload 5
-   checkcast com/anatawa12/jasm/parser/TokenType
-   astore 6
+    .var 5 is element$iv Ljava/lang/Object; from L_0025 to L_0035
+    aload 5
+    checkcast com/anatawa12/jasm/parser/TokenType
+    astore 6
 L_0029:
-   .var 6 is it Lcom/anatawa12/jasm/parser/TokenType; from L_0029 to L_0031
-   iconst_0
-   istore 7
+    .var 6 is it Lcom/anatawa12/jasm/parser/TokenType; from L_0029 to L_0031
+    iconst_0
+    istore 7
 L_002c:
-   .line 6
-   .var 7 is "\$i\$a\$-any-ILexer\$isNext\$1" I from L_002c to L_0031
-   aload 0
-   aload 6
-   invokeinterface com/anatawa12/jasm/parser/ILexer/isNext (Lcom/anatawa12/jasm/parser/TokenType;)Z
+    .line 6
+    .var 7 is "\$i\$a\$-any-ILexer\$isNext\$1" I from L_002c to L_0031
+    aload 0
+    aload 6
+    invokeinterface com/anatawa12/jasm/parser/ILexer/isNext (Lcom/anatawa12/jasm/parser/TokenType;)Z
 L_0031:
-   ifeq L_001d
-   iconst_1
-   goto L_0039
+    ifeq L_001d
+    iconst_1
+    goto L_0039
 L_0035:
-   .line 17
-   .stack use locals
-   .end stack
-   iconst_0
+    .line 17
+    .stack use locals
+    .end stack
+    iconst_0
 L_0039:
-   .line 6
-   .stack
-      locals Object com/anatawa12/jasm/parser/ILexer
-      locals Object java/util/Set
-      locals Object java/lang/Iterable
-      locals Integer
-      stacks Integer
-   .end stack
-   ireturn
+    .line 6
+    .stack
+        locals Object com/anatawa12/jasm/parser/ILexer
+        locals Object java/util/Set
+        locals Object java/lang/Iterable
+        locals Integer
+        stacks Integer
+    .end stack
+    ireturn
 L_003d:
 .end method
 
 .method public unexpectTokenError "(Lcom/anatawa12/jasm/parser/ILexer;[Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Void;"
-   .signature "(Lcom/anatawa12/jasm/parser/ILexer;[Lcom/anatawa12/jasm/parser/TokenType<*>;)Ljava/lang/Void;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 6
-   .limit local 2
+    .signature "(Lcom/anatawa12/jasm/parser/ILexer;[Lcom/anatawa12/jasm/parser/TokenType<*>;)Ljava/lang/Void;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 6
+    .limit local 2
 L_0000:
-   .var 0 is $this Lcom/anatawa12/jasm/parser/ILexer; from L_0000 to L_0015
-   .var 1 is expects "[Lcom/anatawa12/jasm/parser/TokenType;" from L_0000 to L_0015
-   aload 1
-   ldc "expects"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is $this Lcom/anatawa12/jasm/parser/ILexer; from L_0000 to L_0015
+    .var 1 is expects "[Lcom/anatawa12/jasm/parser/TokenType;" from L_0000 to L_0015
+    aload 1
+    ldc "expects"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 10
-   aload 0
-   iconst_1
-   anewarray java/util/Set
-   dup
-   iconst_0
-   aload 1
-   dup
-   arraylength
-   invokestatic java/util/Arrays/copyOf "([Ljava/lang/Object;I)[Ljava/lang/Object;"
-   checkcast "[Lcom/anatawa12/jasm/parser/TokenType;"
-   invokestatic kotlin/collections/SetsKt/setOf "([Ljava/lang/Object;)Ljava/util/Set;"
-   aastore
-   invokeinterface com/anatawa12/jasm/parser/ILexer/unexpectTokenError "([Ljava/util/Set;)Ljava/lang/Void;"
-   aconst_null
-   athrow
+    .line 10
+    aload 0
+    iconst_1
+    anewarray java/util/Set
+    dup
+    iconst_0
+    aload 1
+    dup
+    arraylength
+    invokestatic java/util/Arrays/copyOf "([Ljava/lang/Object;I)[Ljava/lang/Object;"
+    checkcast "[Lcom/anatawa12/jasm/parser/TokenType;"
+    invokestatic kotlin/collections/SetsKt/setOf "([Ljava/lang/Object;)Ljava/util/Set;"
+    aastore
+    invokeinterface com/anatawa12/jasm/parser/ILexer/unexpectTokenError "([Ljava/util/Set;)Ljava/lang/Void;"
+    aconst_null
+    athrow
 L_0015:
 .end method
 
 .method public unexpectTokenError "(Lcom/anatawa12/jasm/parser/ILexer;[Ljava/util/Set;)Ljava/lang/Void;"
-   .signature "(Lcom/anatawa12/jasm/parser/ILexer;[Ljava/util/Set<+Lcom/anatawa12/jasm/parser/TokenType<*>;>;)Ljava/lang/Void;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 13
+    .signature "(Lcom/anatawa12/jasm/parser/ILexer;[Ljava/util/Set<+Lcom/anatawa12/jasm/parser/TokenType<*>;>;)Ljava/lang/Void;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 13
 L_0000:
-   .var 0 is $this Lcom/anatawa12/jasm/parser/ILexer; from L_0000 to L_0053
-   .var 1 is expects "[Ljava/util/Set;" from L_0000 to L_0053
-   aload 1
-   ldc "expects"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is $this Lcom/anatawa12/jasm/parser/ILexer; from L_0000 to L_0053
+    .var 1 is expects "[Ljava/util/Set;" from L_0000 to L_0053
+    aload 1
+    ldc "expects"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 11
-   aload 0
-   aload 1
-   astore 2
-   astore 11
-   iconst_0
-   istore 3
-   new java/util/LinkedHashSet
-   dup
-   invokespecial java/util/LinkedHashSet/<init> ()V
-   checkcast java/util/Set
-   astore 12
-   aload 11
-   aload 12
-   checkcast java/util/Collection
-   astore 3
+    .line 11
+    aload 0
+    aload 1
+    astore 2
+    astore 11
+    iconst_0
+    istore 3
+    new java/util/LinkedHashSet
+    dup
+    invokespecial java/util/LinkedHashSet/<init> ()V
+    checkcast java/util/Set
+    astore 12
+    aload 11
+    aload 12
+    checkcast java/util/Collection
+    astore 3
 L_0015:
-   .line 11
-   astore 11
+    .line 11
+    astore 11
 L_0018:
-   .var 2 is $this$flatMapTo$iv "[Ljava/lang/Object;" from L_0018 to L_0049
-   .var 3 is destination$iv Ljava/util/Collection; from L_0018 to L_0049
-   iconst_0
-   istore 4
+    .var 2 is $this$flatMapTo$iv "[Ljava/lang/Object;" from L_0018 to L_0049
+    .var 3 is destination$iv Ljava/util/Collection; from L_0018 to L_0049
+    iconst_0
+    istore 4
 L_001b:
-   .line 18
-   .var 4 is $i$f$flatMapTo I from L_001b to L_0049
-   aload 2
-   astore 5
-   aload 5
-   arraylength
-   istore 6
-   iconst_0
-   istore 7
+    .line 18
+    .var 4 is $i$f$flatMapTo I from L_001b to L_0049
+    aload 2
+    astore 5
+    aload 5
+    arraylength
+    istore 6
+    iconst_0
+    istore 7
 L_0024:
-   .stack
-      locals Object com/anatawa12/jasm/parser/ILexer
-      locals Object "[Ljava/util/Set;"
-      locals Object "[Ljava/util/Set;"
-      locals Object java/util/Collection
-      locals Integer
-      locals Object "[Ljava/util/Set;"
-      locals Integer
-      locals Integer
-      locals Top
-      locals Top
-      locals Top
-      locals Object com/anatawa12/jasm/parser/ILexer
-      locals Object java/util/Set
-   .end stack
-   iload 7
-   iload 6
-   if_icmpge L_0045
-   aload 5
-   iload 7
-   aaload
-   astore 8
+    .stack
+        locals Object com/anatawa12/jasm/parser/ILexer
+        locals Object "[Ljava/util/Set;"
+        locals Object "[Ljava/util/Set;"
+        locals Object java/util/Collection
+        locals Integer
+        locals Object "[Ljava/util/Set;"
+        locals Integer
+        locals Integer
+        locals Top
+        locals Top
+        locals Top
+        locals Object com/anatawa12/jasm/parser/ILexer
+        locals Object java/util/Set
+    .end stack
+    iload 7
+    iload 6
+    if_icmpge L_0045
+    aload 5
+    iload 7
+    aaload
+    astore 8
 L_002d:
-   .line 19
-   .var 8 is element$iv Ljava/lang/Object; from L_002d to L_0043
-   aload 8
-   astore 9
+    .line 19
+    .var 8 is element$iv Ljava/lang/Object; from L_002d to L_0043
+    aload 8
+    astore 9
 L_0031:
-   .var 9 is it Ljava/util/Set; from L_0031 to L_0037
-   iconst_0
-   istore 10
+    .var 9 is it Ljava/util/Set; from L_0031 to L_0037
+    iconst_0
+    istore 10
 L_0034:
-   .line 11
-   .var 10 is "\$i\$a\$-flatMapTo-ILexer\$unexpectTokenError\$1" I from L_0034 to L_0037
-   aload 9
+    .line 11
+    .var 10 is "\$i\$a\$-flatMapTo-ILexer\$unexpectTokenError\$1" I from L_0034 to L_0037
+    aload 9
 L_0037:
-   checkcast java/lang/Iterable
-   astore 9
+    checkcast java/lang/Iterable
+    astore 9
 L_003a:
-   .line 20
-   .var 9 is list$iv Ljava/lang/Iterable; from L_003a to L_0040
-   aload 3
-   aload 9
-   invokestatic kotlin/collections/CollectionsKt/addAll (Ljava/util/Collection;Ljava/lang/Iterable;)Z
-   pop
+    .line 20
+    .var 9 is list$iv Ljava/lang/Iterable; from L_003a to L_0040
+    aload 3
+    aload 9
+    invokestatic kotlin/collections/CollectionsKt/addAll (Ljava/util/Collection;Ljava/lang/Iterable;)Z
+    pop
 L_0040:
-   .line 18
-   iinc 7 1
+    .line 18
+    iinc 7 1
 L_0043:
-   goto L_0024
+    goto L_0024
 L_0045:
-   .line 22
-   .stack use locals
-   .end stack
-   aload 3
+    .line 22
+    .stack use locals
+    .end stack
+    aload 3
 L_0049:
-   astore 12
-   aload 11
-   aload 12
-   checkcast java/util/Set
+    astore 12
+    aload 11
+    aload 12
+    checkcast java/util/Set
 L_004e:
-   .line 11
-   invokeinterface com/anatawa12/jasm/parser/ILexer/unexpectTokenErrorInternal (Ljava/util/Set;)Ljava/lang/Void;
-   aconst_null
-   athrow
+    .line 11
+    invokeinterface com/anatawa12/jasm/parser/ILexer/unexpectTokenErrorInternal (Ljava/util/Set;)Ljava/lang/Void;
+    aconst_null
+    athrow
 L_0053:
 .end method
 

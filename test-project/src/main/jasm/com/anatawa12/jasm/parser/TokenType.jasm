@@ -19,161 +19,161 @@
 .inner public com/anatawa12/jasm/parser/TokenType$Identifier inner Identifier outer com/anatawa12/jasm/parser/TokenType
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000^\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u0000*\b\b\u0000\u0010\u0001*\u00020\u00022\u00020\u0002:\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\u001b\u001cB\u0007\b\u0002¢\u0006\u0002\u0010\u0003J\u0013\u0010\u0004\u001a\u00028\u00002\u0006\u0010\u0005\u001a\u00020\u0006¢\u0006\u0002\u0010\u0007J\u0017\u0010\u0004\u001a\u0004\u0018\u00018\u00002\u0006\u0010\u0005\u001a\u00020\bH&¢\u0006\u0002\u0010\tJ\u0013\u0010\n\u001a\u00028\u00002\u0006\u0010\u000b\u001a\u00028\u0000¢\u0006\u0002\u0010\u000cJ\b\u0010\r\u001a\u00020\u000eH&\u0082\u0001\u000e\u001d\u001e\u001f !\"#\$%&\'()*¨\u0006+"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/parser/TokenType;"
-      s = "T"
-      s = ""
-      s = "()V"
-      s = "accept"
-      s = "visitor"
-      s = "Lcom/anatawa12/jasm/parser/ITokenVisitor;"
-      s = "(Lcom/anatawa12/jasm/parser/ITokenVisitor;)Ljava/lang/Object;"
-      s = "Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;"
-      s = "(Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;)Ljava/lang/Object;"
-      s = "get"
-      s = "token"
-      s = "(Ljava/lang/Object;)Ljava/lang/Object;"
-      s = "toString"
-      s = ""
-      s = "Char"
-      s = "DotedKeyWord"
-      s = "Double"
-      s = "FieldDescriptor"
-      s = "Float"
-      s = "Identifier"
-      s = "Integer"
-      s = "InternalName"
-      s = "KeyWord"
-      s = "Long"
-      s = "MethodDescriptor"
-      s = "Name"
-      s = "OwnerAndName"
-      s = "String"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$KeyWord;"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$DotedKeyWord;"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Integer;"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Double;"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Long;"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Float;"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$String;"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Char;"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$InternalName;"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$OwnerAndName;"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Name;"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$FieldDescriptor;"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$MethodDescriptor;"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Identifier;"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000^\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u0000*\b\b\u0000\u0010\u0001*\u00020\u00022\u00020\u0002:\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\u001b\u001cB\u0007\b\u0002¢\u0006\u0002\u0010\u0003J\u0013\u0010\u0004\u001a\u00028\u00002\u0006\u0010\u0005\u001a\u00020\u0006¢\u0006\u0002\u0010\u0007J\u0017\u0010\u0004\u001a\u0004\u0018\u00018\u00002\u0006\u0010\u0005\u001a\u00020\bH&¢\u0006\u0002\u0010\tJ\u0013\u0010\n\u001a\u00028\u00002\u0006\u0010\u000b\u001a\u00028\u0000¢\u0006\u0002\u0010\u000cJ\b\u0010\r\u001a\u00020\u000eH&\u0082\u0001\u000e\u001d\u001e\u001f !\"#\$%&\'()*¨\u0006+"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/parser/TokenType;"
+        s = "T"
+        s = ""
+        s = "()V"
+        s = "accept"
+        s = "visitor"
+        s = "Lcom/anatawa12/jasm/parser/ITokenVisitor;"
+        s = "(Lcom/anatawa12/jasm/parser/ITokenVisitor;)Ljava/lang/Object;"
+        s = "Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;"
+        s = "(Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;)Ljava/lang/Object;"
+        s = "get"
+        s = "token"
+        s = "(Ljava/lang/Object;)Ljava/lang/Object;"
+        s = "toString"
+        s = ""
+        s = "Char"
+        s = "DotedKeyWord"
+        s = "Double"
+        s = "FieldDescriptor"
+        s = "Float"
+        s = "Identifier"
+        s = "Integer"
+        s = "InternalName"
+        s = "KeyWord"
+        s = "Long"
+        s = "MethodDescriptor"
+        s = "Name"
+        s = "OwnerAndName"
+        s = "String"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$KeyWord;"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$DotedKeyWord;"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Integer;"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Double;"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Long;"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Float;"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$String;"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Char;"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$InternalName;"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$OwnerAndName;"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Name;"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$FieldDescriptor;"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$MethodDescriptor;"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Identifier;"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public get (Ljava/lang/Object;)Ljava/lang/Object;
-   .signature "(TT;)TT;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 2
+    .signature "(TT;)TT;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/TokenType; from L_0000 to L_0008
-   .var 1 is token Ljava/lang/Object; from L_0000 to L_0008
-   aload 1
-   ldc "token"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/TokenType; from L_0000 to L_0008
+    .var 1 is token Ljava/lang/Object; from L_0000 to L_0008
+    aload 1
+    ldc "token"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 5
-   aload 1
-   areturn
+    .line 5
+    aload 1
+    areturn
 L_0008:
 .end method
 
 .method public toString ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 0
-   .limit local 0
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 0
+    .limit local 0
 .end method
 
 .method public accept (Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;)Ljava/lang/Object;
-   .signature "(Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;)TT;"
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 0
-   .limit local 0
+    .signature "(Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;)TT;"
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 0
+    .limit local 0
 .end method
 
 .method public accept (Lcom/anatawa12/jasm/parser/ITokenVisitor;)Ljava/lang/Object;
-   .signature "(Lcom/anatawa12/jasm/parser/ITokenVisitor;)TT;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 2
+    .signature "(Lcom/anatawa12/jasm/parser/ITokenVisitor;)TT;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/TokenType; from L_0000 to L_0010
-   .var 1 is visitor Lcom/anatawa12/jasm/parser/ITokenVisitor; from L_0000 to L_0010
-   aload 1
-   ldc "visitor"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/TokenType; from L_0000 to L_0010
+    .var 1 is visitor Lcom/anatawa12/jasm/parser/ITokenVisitor; from L_0000 to L_0010
+    aload 1
+    ldc "visitor"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 10
-   aload 0
-   aload 1
-   checkcast com/anatawa12/jasm/parser/ITokenVisitorNullable
-   invokevirtual com/anatawa12/jasm/parser/TokenType/accept (Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;)Ljava/lang/Object;
-   dup
-   ifnonnull L_000d
-   invokestatic kotlin/jvm/internal/Intrinsics/throwNpe ()V
+    .line 10
+    aload 0
+    aload 1
+    checkcast com/anatawa12/jasm/parser/ITokenVisitorNullable
+    invokevirtual com/anatawa12/jasm/parser/TokenType/accept (Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;)Ljava/lang/Object;
+    dup
+    ifnonnull L_000d
+    invokestatic kotlin/jvm/internal/Intrinsics/throwNpe ()V
 L_000d:
-   .stack
-      locals Object com/anatawa12/jasm/parser/TokenType
-      locals Object com/anatawa12/jasm/parser/ITokenVisitor
-      stacks Object java/lang/Object
-   .end stack
-   areturn
+    .stack
+        locals Object com/anatawa12/jasm/parser/TokenType
+        locals Object com/anatawa12/jasm/parser/ITokenVisitor
+        stacks Object java/lang/Object
+    .end stack
+    areturn
 L_0010:
 .end method
 
 .method private <init> ()V
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 3
-   .var 0 is this Lcom/anatawa12/jasm/parser/TokenType; from L_0000 to L_0005
-   aload 0
-   invokespecial java/lang/Object/<init> ()V
-   return
+    .line 3
+    .var 0 is this Lcom/anatawa12/jasm/parser/TokenType; from L_0000 to L_0005
+    aload 0
+    invokespecial java/lang/Object/<init> ()V
+    return
 L_0005:
 .end method
 
 .method public <init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-   .limit stack 1
-   .limit local 2
+    .limit stack 1
+    .limit local 2
 L_0000:
-   .line 3
-   .var 0 is this Lcom/anatawa12/jasm/parser/TokenType; from L_0000 to L_0005
-   .var 1 is $constructor_marker Lkotlin/jvm/internal/DefaultConstructorMarker; from L_0000 to L_0005
-   aload 0
-   invokespecial com/anatawa12/jasm/parser/TokenType/<init> ()V
-   return
+    .line 3
+    .var 0 is this Lcom/anatawa12/jasm/parser/TokenType; from L_0000 to L_0005
+    .var 1 is $constructor_marker Lkotlin/jvm/internal/DefaultConstructorMarker; from L_0000 to L_0005
+    aload 0
+    invokespecial com/anatawa12/jasm/parser/TokenType/<init> ()V
+    return
 L_0005:
 .end method
 

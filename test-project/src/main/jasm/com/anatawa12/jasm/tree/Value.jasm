@@ -5,76 +5,76 @@
 .signature "<T:Ljava/lang/Object;>Lcom/anatawa12/jasm/tree/AnnotationValue;"
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000\u0012\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000*\b\b\u0000\u0010\u0001*\u00020\u00022\u00020\u0003B\r\u0012\u0006\u0010\u0004\u001a\u00028\u0000¢\u0006\u0002\u0010\u0005R\u0013\u0010\u0004\u001a\u00028\u0000¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\u0006\u0010\u0007¨\u0006\t"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/tree/Value;"
-      s = "T"
-      s = ""
-      s = "Lcom/anatawa12/jasm/tree/AnnotationValue;"
-      s = "value"
-      s = "(Ljava/lang/Object;)V"
-      s = "getValue"
-      s = "()Ljava/lang/Object;"
-      s = "Ljava/lang/Object;"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000\u0012\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000*\b\b\u0000\u0010\u0001*\u00020\u00022\u00020\u0003B\r\u0012\u0006\u0010\u0004\u001a\u00028\u0000¢\u0006\u0002\u0010\u0005R\u0013\u0010\u0004\u001a\u00028\u0000¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\u0006\u0010\u0007¨\u0006\t"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/tree/Value;"
+        s = "T"
+        s = ""
+        s = "Lcom/anatawa12/jasm/tree/AnnotationValue;"
+        s = "value"
+        s = "(Ljava/lang/Object;)V"
+        s = "getValue"
+        s = "()Ljava/lang/Object;"
+        s = "Ljava/lang/Object;"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public getValue ()Ljava/lang/Object;
-   .signature "()TT;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .signature "()TT;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 8
-   .var 0 is this Lcom/anatawa12/jasm/tree/Value; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/tree/Value/value Ljava/lang/Object;
-   areturn
+    .line 8
+    .var 0 is this Lcom/anatawa12/jasm/tree/Value; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/tree/Value/value Ljava/lang/Object;
+    areturn
 L_0005:
 .end method
 
 .method public <init> (Ljava/lang/Object;)V
-   .signature "(TT;)V"
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 2
+    .signature "(TT;)V"
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/tree/Value; from L_0000 to L_000d
-   .var 1 is value Ljava/lang/Object; from L_0000 to L_000d
-   aload 1
-   ldc "value"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/tree/Value; from L_0000 to L_000d
+    .var 1 is value Ljava/lang/Object; from L_0000 to L_000d
+    aload 1
+    ldc "value"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 8
-   aload 0
-   aconst_null
-   invokespecial com/anatawa12/jasm/tree/AnnotationValue/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-   aload 0
-   aload 1
-   putfield com/anatawa12/jasm/tree/Value/value Ljava/lang/Object;
-   return
+    .line 8
+    aload 0
+    aconst_null
+    invokespecial com/anatawa12/jasm/tree/AnnotationValue/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    aload 0
+    aload 1
+    putfield com/anatawa12/jasm/tree/Value/value Ljava/lang/Object;
+    return
 L_000d:
 .end method
 
 .field private value Ljava/lang/Object;
-   .signature "TT;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .signature "TT;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 

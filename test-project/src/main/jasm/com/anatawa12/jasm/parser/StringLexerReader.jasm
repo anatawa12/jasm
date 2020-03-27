@@ -3,316 +3,375 @@
 .class public com/anatawa12/jasm/parser/StringLexerReader
 .super java/lang/Object
 .implements com/anatawa12/jasm/parser/Lexer$Reader
-.debug "SMAP\nStringLexerReader.kt\nKotlin\n*S Kotlin\n*F\n+ 1 StringLexerReader.kt\ncom/anatawa12/jasm/parser/StringLexerReader\n*L\n1#1,32:1\n*E\n"
+.debug "SMAP\nStringLexerReader.kt\nKotlin\n*S Kotlin\n*F\n+ 1 StringLexerReader.kt\ncom/anatawa12/jasm/parser/StringLexerReader\n*L\n1#1,34:1\n*E\n"
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u0001\n\u0002\b\u0002\n\u0002\u0010\u000c\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0003H\u0016J\u0017\u0010\u0010\u001a\u0004\u0018\u00010\u00112\u0006\u0010\u0012\u001a\u00020\nH\u0016¢\u0006\u0002\u0010\u0013J\u0010\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0012\u001a\u00020\nH\u0016R\u0014\u0010\u0005\u001a\u00020\u00068VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\bR\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0016"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/parser/StringLexerReader;"
-      s = "Lcom/anatawa12/jasm/parser/Lexer\$Reader;"
-      s = "string"
-      s = ""
-      s = "(Ljava/lang/String;)V"
-      s = "charPosition"
-      s = "Lcom/anatawa12/jasm/tree/CharPosition;"
-      s = "getCharPosition"
-      s = "()Lcom/anatawa12/jasm/tree/CharPosition;"
-      s = "column"
-      s = ""
-      s = "index"
-      s = "line"
-      s = "error"
-      s = ""
-      s = "message"
-      s = "getOrNull"
-      s = ""
-      s = "pos"
-      s = "(I)Ljava/lang/Character;"
-      s = "setCurrentTo"
-      s = ""
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u0001\n\u0002\b\u0002\n\u0002\u0010\u000c\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0003H\u0016J\u0017\u0010\u0010\u001a\u0004\u0018\u00010\u00112\u0006\u0010\u0012\u001a\u00020\nH\u0016¢\u0006\u0002\u0010\u0013J\u0010\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0012\u001a\u00020\nH\u0016J\u0018\u0010\u0016\u001a\u00020\u00032\u0006\u0010\u0017\u001a\u00020\n2\u0006\u0010\u0018\u001a\u00020\nH\u0016R\u0014\u0010\u0005\u001a\u00020\u00068VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\bR\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0019"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/parser/StringLexerReader;"
+        s = "Lcom/anatawa12/jasm/parser/Lexer\$Reader;"
+        s = "string"
+        s = ""
+        s = "(Ljava/lang/String;)V"
+        s = "charPosition"
+        s = "Lcom/anatawa12/jasm/tree/CharPosition;"
+        s = "getCharPosition"
+        s = "()Lcom/anatawa12/jasm/tree/CharPosition;"
+        s = "column"
+        s = ""
+        s = "index"
+        s = "line"
+        s = "error"
+        s = ""
+        s = "message"
+        s = "getOrNull"
+        s = ""
+        s = "pos"
+        s = "(I)Ljava/lang/Character;"
+        s = "setCurrentTo"
+        s = ""
+        s = "subString"
+        s = "start"
+        s = "end"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public getCharPosition ()Lcom/anatawa12/jasm/tree/CharPosition;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 5
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 5
+    .limit local 1
 L_0000:
-   .line 12
-   .var 0 is this Lcom/anatawa12/jasm/parser/StringLexerReader; from L_0000 to L_000c
-   new com/anatawa12/jasm/tree/CharPosition
-   dup
-   aload 0
-   getfield com/anatawa12/jasm/parser/StringLexerReader/index I
-   aload 0
-   getfield com/anatawa12/jasm/parser/StringLexerReader/line I
-   aload 0
-   getfield com/anatawa12/jasm/parser/StringLexerReader/column I
-   invokespecial com/anatawa12/jasm/tree/CharPosition/<init> (III)V
-   areturn
+    .line 12
+    .var 0 is this Lcom/anatawa12/jasm/parser/StringLexerReader; from L_0000 to L_000c
+    new com/anatawa12/jasm/tree/CharPosition
+    dup
+    aload 0
+    getfield com/anatawa12/jasm/parser/StringLexerReader/index I
+    aload 0
+    getfield com/anatawa12/jasm/parser/StringLexerReader/line I
+    aload 0
+    getfield com/anatawa12/jasm/parser/StringLexerReader/column I
+    invokespecial com/anatawa12/jasm/tree/CharPosition/<init> (III)V
+    areturn
 L_000c:
 .end method
 
 .method public setCurrentTo (I)V
-   .limit stack 4
-   .limit local 10
+    .limit stack 4
+    .limit local 10
 L_0000:
-   .line 15
-   .var 0 is this Lcom/anatawa12/jasm/parser/StringLexerReader; from L_0000 to L_0080
-   .var 1 is pos I from L_0000 to L_0080
-   aload 0
-   getfield com/anatawa12/jasm/parser/StringLexerReader/index I
-   iload 1
-   iadd
-   istore 3
-   aload 0
-   getfield com/anatawa12/jasm/parser/StringLexerReader/string Ljava/lang/String;
-   invokevirtual java/lang/String/length ()I
-   istore 4
-   iconst_0
-   istore 5
-   iload 3
-   iload 4
-   invokestatic java/lang/Math/min (II)I
+    .line 15
+    .var 0 is this Lcom/anatawa12/jasm/parser/StringLexerReader; from L_0000 to L_0080
+    .var 1 is pos I from L_0000 to L_0080
+    aload 0
+    getfield com/anatawa12/jasm/parser/StringLexerReader/index I
+    iload 1
+    iadd
+    istore 3
+    aload 0
+    getfield com/anatawa12/jasm/parser/StringLexerReader/string Ljava/lang/String;
+    invokevirtual java/lang/String/length ()I
+    istore 4
+    iconst_0
+    istore 5
+    iload 3
+    iload 4
+    invokestatic java/lang/Math/min (II)I
 L_0010:
-   .line 15
-   istore 2
+    .line 15
+    istore 2
 L_0013:
-   .line 16
-   .var 2 is subStringEnd I from L_0013 to L_0080
-   aload 0
-   getfield com/anatawa12/jasm/parser/StringLexerReader/string Ljava/lang/String;
-   astore 4
-   aload 0
-   getfield com/anatawa12/jasm/parser/StringLexerReader/index I
-   istore 5
-   iconst_0
-   istore 6
-   iload 5
-   iload 2
-   invokestatic java/lang/Math/min (II)I
-   istore 5
+    .line 16
+    .var 2 is subStringEnd I from L_0013 to L_0080
+    aload 0
+    getfield com/anatawa12/jasm/parser/StringLexerReader/string Ljava/lang/String;
+    astore 4
+    aload 0
+    getfield com/anatawa12/jasm/parser/StringLexerReader/index I
+    istore 5
+    iconst_0
+    istore 6
+    iload 5
+    iload 2
+    invokestatic java/lang/Math/min (II)I
+    istore 5
 L_0021:
-   .line 16
-   iconst_0
-   istore 6
-   aload 4
-   dup
-   ifnonnull L_002d
-   new kotlin/TypeCastException
-   dup
-   ldc "null cannot be cast to non-null type java.lang.String"
-   invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
-   athrow
+    .line 16
+    iconst_0
+    istore 6
+    aload 4
+    dup
+    ifnonnull L_002d
+    new kotlin/TypeCastException
+    dup
+    ldc "null cannot be cast to non-null type java.lang.String"
+    invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
+    athrow
 L_002d:
-   .stack
-      locals Object com/anatawa12/jasm/parser/StringLexerReader
-      locals Integer
-      locals Integer
-      locals Integer
-      locals Object java/lang/String
-      locals Integer
-      locals Integer
-      stacks Object java/lang/String
-   .end stack
-   iload 5
-   iload 2
-   invokevirtual java/lang/String/substring (II)Ljava/lang/String;
-   dup
-   ldc "(this as java.lang.Strin…ing(startIndex, endIndex)"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   checkcast java/lang/CharSequence
+    .stack
+        locals Object com/anatawa12/jasm/parser/StringLexerReader
+        locals Integer
+        locals Integer
+        locals Integer
+        locals Object java/lang/String
+        locals Integer
+        locals Integer
+        stacks Object java/lang/String
+    .end stack
+    iload 5
+    iload 2
+    invokevirtual java/lang/String/substring (II)Ljava/lang/String;
+    dup
+    ldc "(this as java.lang.Strin…ing(startIndex, endIndex)"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    checkcast java/lang/CharSequence
 L_0036:
-   .line 16
-   invokestatic kotlin/text/StringsKt/lines (Ljava/lang/CharSequence;)Ljava/util/List;
-   astore 3
+    .line 16
+    invokestatic kotlin/text/StringsKt/lines (Ljava/lang/CharSequence;)Ljava/util/List;
+    astore 3
 L_003a:
-   .line 17
-   .var 3 is lines Ljava/util/List; from L_003a to L_0080
-   aload 0
-   dup
-   getfield com/anatawa12/jasm/parser/StringLexerReader/line I
-   aload 3
-   checkcast java/util/Collection
-   astore 4
-   istore 8
-   astore 7
-   iconst_0
-   istore 5
-   aload 4
-   invokeinterface java/util/Collection/size ()I
-   istore 9
-   aload 7
-   iload 8
-   iload 9
+    .line 17
+    .var 3 is lines Ljava/util/List; from L_003a to L_0080
+    aload 0
+    dup
+    getfield com/anatawa12/jasm/parser/StringLexerReader/line I
+    aload 3
+    checkcast java/util/Collection
+    astore 4
+    istore 8
+    astore 7
+    iconst_0
+    istore 5
+    aload 4
+    invokeinterface java/util/Collection/size ()I
+    istore 9
+    aload 7
+    iload 8
+    iload 9
 L_004c:
-   .line 17
-   iconst_1
-   isub
-   iadd
-   putfield com/anatawa12/jasm/parser/StringLexerReader/line I
+    .line 17
+    iconst_1
+    isub
+    iadd
+    putfield com/anatawa12/jasm/parser/StringLexerReader/line I
 L_0052:
-   .line 18
-   aload 3
-   checkcast java/util/Collection
-   astore 4
-   iconst_0
-   istore 5
-   aload 4
-   invokeinterface java/util/Collection/size ()I
-   iconst_1
-   if_icmpne L_0069
+    .line 18
+    aload 3
+    checkcast java/util/Collection
+    astore 4
+    iconst_0
+    istore 5
+    aload 4
+    invokeinterface java/util/Collection/size ()I
+    iconst_1
+    if_icmpne L_0069
 L_005d:
-   .line 19
-   aload 0
-   dup
-   getfield com/anatawa12/jasm/parser/StringLexerReader/column I
-   aload 3
-   invokestatic kotlin/collections/CollectionsKt/last (Ljava/util/List;)Ljava/lang/Object;
-   checkcast java/lang/String
-   invokevirtual java/lang/String/length ()I
-   iadd
-   putfield com/anatawa12/jasm/parser/StringLexerReader/column I
-   goto L_0074
+    .line 19
+    aload 0
+    dup
+    getfield com/anatawa12/jasm/parser/StringLexerReader/column I
+    aload 3
+    invokestatic kotlin/collections/CollectionsKt/last (Ljava/util/List;)Ljava/lang/Object;
+    checkcast java/lang/String
+    invokevirtual java/lang/String/length ()I
+    iadd
+    putfield com/anatawa12/jasm/parser/StringLexerReader/column I
+    goto L_0074
 L_0069:
-   .line 21
-   .stack
-      locals Object com/anatawa12/jasm/parser/StringLexerReader
-      locals Integer
-      locals Integer
-      locals Object java/util/List
-      locals Object java/util/Collection
-      locals Integer
-      locals Integer
-      locals Object com/anatawa12/jasm/parser/StringLexerReader
-      locals Integer
-      locals Integer
-   .end stack
-   aload 0
-   aload 3
-   invokestatic kotlin/collections/CollectionsKt/last (Ljava/util/List;)Ljava/lang/Object;
-   checkcast java/lang/String
-   invokevirtual java/lang/String/length ()I
-   iconst_1
-   iadd
-   putfield com/anatawa12/jasm/parser/StringLexerReader/column I
+    .line 21
+    .stack
+        locals Object com/anatawa12/jasm/parser/StringLexerReader
+        locals Integer
+        locals Integer
+        locals Object java/util/List
+        locals Object java/util/Collection
+        locals Integer
+        locals Integer
+        locals Object com/anatawa12/jasm/parser/StringLexerReader
+        locals Integer
+        locals Integer
+    .end stack
+    aload 0
+    aload 3
+    invokestatic kotlin/collections/CollectionsKt/last (Ljava/util/List;)Ljava/lang/Object;
+    checkcast java/lang/String
+    invokevirtual java/lang/String/length ()I
+    iconst_1
+    iadd
+    putfield com/anatawa12/jasm/parser/StringLexerReader/column I
 L_0074:
-   .line 22
-   .stack use locals
-   .end stack
-   aload 0
-   dup
-   getfield com/anatawa12/jasm/parser/StringLexerReader/index I
-   iload 1
-   iadd
-   putfield com/anatawa12/jasm/parser/StringLexerReader/index I
+    .line 22
+    .stack use locals
+    .end stack
+    aload 0
+    dup
+    getfield com/anatawa12/jasm/parser/StringLexerReader/index I
+    iload 1
+    iadd
+    putfield com/anatawa12/jasm/parser/StringLexerReader/index I
 L_007d:
-   .line 23
-   return
+    .line 23
+    return
 L_0080:
 .end method
 
 .method public getOrNull (I)Ljava/lang/Character;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .limit stack 3
-   .limit local 2
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .limit stack 3
+    .limit local 2
 L_0000:
-   .line 25
-   .var 0 is this Lcom/anatawa12/jasm/parser/StringLexerReader; from L_0000 to L_000b
-   .var 1 is pos I from L_0000 to L_000b
-   aload 0
-   getfield com/anatawa12/jasm/parser/StringLexerReader/string Ljava/lang/String;
-   checkcast java/lang/CharSequence
-   aload 0
-   getfield com/anatawa12/jasm/parser/StringLexerReader/index I
-   iload 1
-   iadd
-   invokestatic kotlin/text/StringsKt/getOrNull (Ljava/lang/CharSequence;I)Ljava/lang/Character;
-   areturn
+    .line 25
+    .var 0 is this Lcom/anatawa12/jasm/parser/StringLexerReader; from L_0000 to L_000b
+    .var 1 is pos I from L_0000 to L_000b
+    aload 0
+    getfield com/anatawa12/jasm/parser/StringLexerReader/string Ljava/lang/String;
+    checkcast java/lang/CharSequence
+    aload 0
+    getfield com/anatawa12/jasm/parser/StringLexerReader/index I
+    iload 1
+    iadd
+    invokestatic kotlin/text/StringsKt/getOrNull (Ljava/lang/CharSequence;I)Ljava/lang/Character;
+    areturn
 L_000b:
 .end method
 
 .method public error (Ljava/lang/String;)Ljava/lang/Void;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 5
-   .limit local 2
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 5
+    .limit local 2
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/StringLexerReader; from L_0000 to L_0018
-   .var 1 is message Ljava/lang/String; from L_0000 to L_0018
-   aload 1
-   ldc "message"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/StringLexerReader; from L_0000 to L_0018
+    .var 1 is message Ljava/lang/String; from L_0000 to L_0018
+    aload 1
+    ldc "message"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 26
-   new com/anatawa12/jasm/parser/LexingError
-   dup
+    .line 26
+    new com/anatawa12/jasm/parser/LexingError
+    dup
 L_0008:
-   .line 27
-   aload 1
+    .line 27
+    aload 1
 L_000b:
-   .line 28
-   aload 0
-   getfield com/anatawa12/jasm/parser/StringLexerReader/line I
+    .line 28
+    aload 0
+    getfield com/anatawa12/jasm/parser/StringLexerReader/line I
 L_000f:
-   .line 29
-   aload 0
-   getfield com/anatawa12/jasm/parser/StringLexerReader/column I
+    .line 29
+    aload 0
+    getfield com/anatawa12/jasm/parser/StringLexerReader/column I
 L_0013:
-   .line 26
-   invokespecial com/anatawa12/jasm/parser/LexingError/<init> (Ljava/lang/String;II)V
-   checkcast java/lang/Throwable
-   athrow
+    .line 26
+    invokespecial com/anatawa12/jasm/parser/LexingError/<init> (Ljava/lang/String;II)V
+    checkcast java/lang/Throwable
+    athrow
 L_0018:
 .end method
 
-.method public <init> (Ljava/lang/String;)V
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 2
+.method public subString (II)Ljava/lang/String;
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 4
+    .limit local 7
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/StringLexerReader; from L_0000 to L_0016
-   .var 1 is string Ljava/lang/String; from L_0000 to L_0016
-   aload 1
-   ldc "string"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .line 32
+    .var 0 is this Lcom/anatawa12/jasm/parser/StringLexerReader; from L_0000 to L_0024
+    .var 1 is start I from L_0000 to L_0024
+    .var 2 is end I from L_0000 to L_0024
+    aload 0
+    getfield com/anatawa12/jasm/parser/StringLexerReader/string Ljava/lang/String;
+    astore 3
+    aload 0
+    getfield com/anatawa12/jasm/parser/StringLexerReader/index I
+    iload 1
+    iadd
+    istore 4
+    aload 0
+    getfield com/anatawa12/jasm/parser/StringLexerReader/index I
+    iload 2
+    iadd
+    istore 5
+    iconst_0
+    istore 6
+    aload 3
+    dup
+    ifnonnull L_0019
+    new kotlin/TypeCastException
+    dup
+    ldc "null cannot be cast to non-null type java.lang.String"
+    invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
+    athrow
+L_0019:
+    .stack
+        locals Object com/anatawa12/jasm/parser/StringLexerReader
+        locals Integer
+        locals Integer
+        locals Object java/lang/String
+        locals Integer
+        locals Integer
+        locals Integer
+        stacks Object java/lang/String
+    .end stack
+    iload 4
+    iload 5
+    invokevirtual java/lang/String/substring (II)Ljava/lang/String;
+    dup
+    ldc "(this as java.lang.Strin…ing(startIndex, endIndex)"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0021:
+    .line 32
+    areturn
+L_0024:
+.end method
+
+.method public <init> (Ljava/lang/String;)V
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 2
+L_0000:
+    .var 0 is this Lcom/anatawa12/jasm/parser/StringLexerReader; from L_0000 to L_0016
+    .var 1 is string Ljava/lang/String; from L_0000 to L_0016
+    aload 1
+    ldc "string"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 5
-   aload 0
-   invokespecial java/lang/Object/<init> ()V
-   aload 0
-   aload 1
-   putfield com/anatawa12/jasm/parser/StringLexerReader/string Ljava/lang/String;
+    .line 5
+    aload 0
+    invokespecial java/lang/Object/<init> ()V
+    aload 0
+    aload 1
+    putfield com/anatawa12/jasm/parser/StringLexerReader/string Ljava/lang/String;
 L_000b:
-   .line 8
-   aload 0
-   iconst_1
-   putfield com/anatawa12/jasm/parser/StringLexerReader/line I
+    .line 8
+    aload 0
+    iconst_1
+    putfield com/anatawa12/jasm/parser/StringLexerReader/line I
 L_0010:
-   .line 9
-   aload 0
-   iconst_1
-   putfield com/anatawa12/jasm/parser/StringLexerReader/column I
-   return
+    .line 9
+    aload 0
+    iconst_1
+    putfield com/anatawa12/jasm/parser/StringLexerReader/column I
+    return
 L_0016:
 .end method
 

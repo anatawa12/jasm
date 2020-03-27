@@ -4,183 +4,183 @@
 .super com/anatawa12/jasm/tree/BranchNode
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\n\u0018\u00002\u00020\u0001B-\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\t¢\u0006\u0002\u0010\nR\u0011\u0010\u0007\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\u000cR\u0011\u0010\b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u000cR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000cR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012¨\u0006\u0013"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/tree/Handle;"
-      s = "Lcom/anatawa12/jasm/tree/BranchNode;"
-      s = "type"
-      s = "Lcom/anatawa12/jasm/tree/HandleType;"
-      s = "owner"
-      s = ""
-      s = "name"
-      s = "desc"
-      s = "itf"
-      s = ""
-      s = "(Lcom/anatawa12/jasm/tree/HandleType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V"
-      s = "getDesc"
-      s = "()Ljava/lang/String;"
-      s = "getItf"
-      s = "()Z"
-      s = "getName"
-      s = "getOwner"
-      s = "getType"
-      s = "()Lcom/anatawa12/jasm/tree/HandleType;"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\n\u0018\u00002\u00020\u0001B-\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\t¢\u0006\u0002\u0010\nR\u0011\u0010\u0007\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\u000cR\u0011\u0010\b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u000cR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000cR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012¨\u0006\u0013"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/tree/Handle;"
+        s = "Lcom/anatawa12/jasm/tree/BranchNode;"
+        s = "type"
+        s = "Lcom/anatawa12/jasm/tree/HandleType;"
+        s = "owner"
+        s = ""
+        s = "name"
+        s = "desc"
+        s = "itf"
+        s = ""
+        s = "(Lcom/anatawa12/jasm/tree/HandleType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V"
+        s = "getDesc"
+        s = "()Ljava/lang/String;"
+        s = "getItf"
+        s = "()Z"
+        s = "getName"
+        s = "getOwner"
+        s = "getType"
+        s = "()Lcom/anatawa12/jasm/tree/HandleType;"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public getType ()Lcom/anatawa12/jasm/tree/HandleType;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 4
-   .var 0 is this Lcom/anatawa12/jasm/tree/Handle; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/tree/Handle/type Lcom/anatawa12/jasm/tree/HandleType;
-   areturn
+    .line 4
+    .var 0 is this Lcom/anatawa12/jasm/tree/Handle; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/tree/Handle/type Lcom/anatawa12/jasm/tree/HandleType;
+    areturn
 L_0005:
 .end method
 
 .method public getOwner ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 4
-   .var 0 is this Lcom/anatawa12/jasm/tree/Handle; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/tree/Handle/owner Ljava/lang/String;
-   areturn
+    .line 4
+    .var 0 is this Lcom/anatawa12/jasm/tree/Handle; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/tree/Handle/owner Ljava/lang/String;
+    areturn
 L_0005:
 .end method
 
 .method public getName ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 4
-   .var 0 is this Lcom/anatawa12/jasm/tree/Handle; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/tree/Handle/name Ljava/lang/String;
-   areturn
+    .line 4
+    .var 0 is this Lcom/anatawa12/jasm/tree/Handle; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/tree/Handle/name Ljava/lang/String;
+    areturn
 L_0005:
 .end method
 
 .method public getDesc ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 4
-   .var 0 is this Lcom/anatawa12/jasm/tree/Handle; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/tree/Handle/desc Ljava/lang/String;
-   areturn
+    .line 4
+    .var 0 is this Lcom/anatawa12/jasm/tree/Handle; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/tree/Handle/desc Ljava/lang/String;
+    areturn
 L_0005:
 .end method
 
 .method public getItf ()Z
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 4
-   .var 0 is this Lcom/anatawa12/jasm/tree/Handle; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/tree/Handle/itf Z
-   ireturn
+    .line 4
+    .var 0 is this Lcom/anatawa12/jasm/tree/Handle; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/tree/Handle/itf Z
+    ireturn
 L_0005:
 .end method
 
 .method public <init> (Lcom/anatawa12/jasm/tree/HandleType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 3 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 6
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 3 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 6
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/tree/Handle; from L_0000 to L_0021
-   .var 1 is type Lcom/anatawa12/jasm/tree/HandleType; from L_0000 to L_0021
-   .var 2 is owner Ljava/lang/String; from L_0000 to L_0021
-   .var 3 is name Ljava/lang/String; from L_0000 to L_0021
-   .var 4 is desc Ljava/lang/String; from L_0000 to L_0021
-   .var 5 is itf Z from L_0000 to L_0021
-   aload 1
-   ldc "type"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 2
-   ldc "owner"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 3
-   ldc "name"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 4
-   ldc "desc"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/tree/Handle; from L_0000 to L_0021
+    .var 1 is type Lcom/anatawa12/jasm/tree/HandleType; from L_0000 to L_0021
+    .var 2 is owner Ljava/lang/String; from L_0000 to L_0021
+    .var 3 is name Ljava/lang/String; from L_0000 to L_0021
+    .var 4 is desc Ljava/lang/String; from L_0000 to L_0021
+    .var 5 is itf Z from L_0000 to L_0021
+    aload 1
+    ldc "type"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 2
+    ldc "owner"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 3
+    ldc "name"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 4
+    ldc "desc"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_000d:
-   .line 4
-   aload 0
-   invokespecial com/anatawa12/jasm/tree/BranchNode/<init> ()V
-   aload 0
-   aload 1
-   putfield com/anatawa12/jasm/tree/Handle/type Lcom/anatawa12/jasm/tree/HandleType;
-   aload 0
-   aload 2
-   putfield com/anatawa12/jasm/tree/Handle/owner Ljava/lang/String;
-   aload 0
-   aload 3
-   putfield com/anatawa12/jasm/tree/Handle/name Ljava/lang/String;
-   aload 0
-   aload 4
-   putfield com/anatawa12/jasm/tree/Handle/desc Ljava/lang/String;
-   aload 0
-   iload 5
-   putfield com/anatawa12/jasm/tree/Handle/itf Z
-   return
+    .line 4
+    aload 0
+    invokespecial com/anatawa12/jasm/tree/BranchNode/<init> ()V
+    aload 0
+    aload 1
+    putfield com/anatawa12/jasm/tree/Handle/type Lcom/anatawa12/jasm/tree/HandleType;
+    aload 0
+    aload 2
+    putfield com/anatawa12/jasm/tree/Handle/owner Ljava/lang/String;
+    aload 0
+    aload 3
+    putfield com/anatawa12/jasm/tree/Handle/name Ljava/lang/String;
+    aload 0
+    aload 4
+    putfield com/anatawa12/jasm/tree/Handle/desc Ljava/lang/String;
+    aload 0
+    iload 5
+    putfield com/anatawa12/jasm/tree/Handle/itf Z
+    return
 L_0021:
 .end method
 
 .field private type Lcom/anatawa12/jasm/tree/HandleType;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 
 .field private owner Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 
 .field private name Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 
 .field private desc Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 
 .field private itf Z

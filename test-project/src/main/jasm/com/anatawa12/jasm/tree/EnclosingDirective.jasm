@@ -4,65 +4,65 @@
 .super com/anatawa12/jasm/tree/BranchNode
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u0012\u0010\u0003\u001a\u00020\u0004X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006\u0082\u0001\u0002\u0007\b¨\u0006\t"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/tree/EnclosingDirective;"
-      s = "Lcom/anatawa12/jasm/tree/BranchNode;"
-      s = "()V"
-      s = "owner"
-      s = ""
-      s = "getOwner"
-      s = "()Ljava/lang/String;"
-      s = "Lcom/anatawa12/jasm/tree/EnclosingClassDirective;"
-      s = "Lcom/anatawa12/jasm/tree/EnclosingMethodDirective;"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u0012\u0010\u0003\u001a\u00020\u0004X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006\u0082\u0001\u0002\u0007\b¨\u0006\t"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/tree/EnclosingDirective;"
+        s = "Lcom/anatawa12/jasm/tree/BranchNode;"
+        s = "()V"
+        s = "owner"
+        s = ""
+        s = "getOwner"
+        s = "()Ljava/lang/String;"
+        s = "Lcom/anatawa12/jasm/tree/EnclosingClassDirective;"
+        s = "Lcom/anatawa12/jasm/tree/EnclosingMethodDirective;"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public getOwner ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 0
-   .limit local 0
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 0
+    .limit local 0
 .end method
 
 .method private <init> ()V
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 21
-   .var 0 is this Lcom/anatawa12/jasm/tree/EnclosingDirective; from L_0000 to L_0007
-   aload 0
+    .line 21
+    .var 0 is this Lcom/anatawa12/jasm/tree/EnclosingDirective; from L_0000 to L_0007
+    aload 0
 L_0003:
-   .line 21
-   invokespecial com/anatawa12/jasm/tree/BranchNode/<init> ()V
-   return
+    .line 21
+    invokespecial com/anatawa12/jasm/tree/BranchNode/<init> ()V
+    return
 L_0007:
 .end method
 
 .method public <init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-   .limit stack 1
-   .limit local 2
+    .limit stack 1
+    .limit local 2
 L_0000:
-   .line 21
-   .var 0 is this Lcom/anatawa12/jasm/tree/EnclosingDirective; from L_0000 to L_0005
-   .var 1 is $constructor_marker Lkotlin/jvm/internal/DefaultConstructorMarker; from L_0000 to L_0005
-   aload 0
-   invokespecial com/anatawa12/jasm/tree/EnclosingDirective/<init> ()V
-   return
+    .line 21
+    .var 0 is this Lcom/anatawa12/jasm/tree/EnclosingDirective; from L_0000 to L_0005
+    .var 1 is $constructor_marker Lkotlin/jvm/internal/DefaultConstructorMarker; from L_0000 to L_0005
+    aload 0
+    invokespecial com/anatawa12/jasm/tree/EnclosingDirective/<init> ()V
+    return
 L_0005:
 .end method
 

@@ -9,100 +9,100 @@
 .inner static com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 3
-   d1 [ = .annotation array
-      s = "\u0000\u000e\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"
-   .end annotation
-   d2 [ = .annotation array
-      s = "disassembleLabel"
-      s = ""
-      s = "label"
-      s = "Lorg/objectweb/asm/tree/LabelNode;"
-      s = "invoke"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 3
+    d1 [ = .annotation array
+        s = "\u0000\u000e\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"
+    .end annotation
+    d2 [ = .annotation array
+        s = "disassembleLabel"
+        s = ""
+        s = "label"
+        s = "Lorg/objectweb/asm/tree/LabelNode;"
+        s = "invoke"
+    .end annotation
 .end annotation
 
 .method public invoke (Ljava/lang/Object;)Ljava/lang/Object;
-   .limit stack 2
-   .limit local 2
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .line 10
-   aload 0
-   aload 1
-   checkcast org/objectweb/asm/tree/LabelNode
-   invokevirtual com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/invoke (Lorg/objectweb/asm/tree/LabelNode;)Ljava/lang/String;
-   areturn
+    .line 10
+    aload 0
+    aload 1
+    checkcast org/objectweb/asm/tree/LabelNode
+    invokevirtual com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/invoke (Lorg/objectweb/asm/tree/LabelNode;)Ljava/lang/String;
+    areturn
 .end method
 
 .method public invoke (Lorg/objectweb/asm/tree/LabelNode;)Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
-   .end annotation
-   .limit stack 4
-   .limit local 7
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+    .end annotation
+    .limit stack 4
+    .limit local 7
 L_0000:
-   .line 149
-   .var 0 is this Lcom/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2; from L_0000 to L_0025
-   .var 1 is label Lorg/objectweb/asm/tree/LabelNode; from L_0000 to L_0025
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   ldc "L_"
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 0
-   getfield com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/$method Lorg/objectweb/asm/tree/MethodNode;
-   getfield org/objectweb/asm/tree/MethodNode/instructions Lorg/objectweb/asm/tree/InsnList;
-   aload 1
-   checkcast org/objectweb/asm/tree/AbstractInsnNode
-   invokevirtual org/objectweb/asm/tree/InsnList/indexOf (Lorg/objectweb/asm/tree/AbstractInsnNode;)I
-   istore 2
-   bipush 16
-   istore 3
-   astore 5
-   iconst_0
-   istore 4
-   iload 2
-   iload 3
-   invokestatic kotlin/text/CharsKt/checkRadix (I)I
-   invokestatic java/lang/Integer/toString (II)Ljava/lang/String;
-   dup
-   ldc "java.lang.Integer.toStri…(this, checkRadix(radix))"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   astore 6
-   aload 5
-   aload 6
+    .line 149
+    .var 0 is this Lcom/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2; from L_0000 to L_0025
+    .var 1 is label Lorg/objectweb/asm/tree/LabelNode; from L_0000 to L_0025
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    ldc "L_"
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 0
+    getfield com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/$method Lorg/objectweb/asm/tree/MethodNode;
+    getfield org/objectweb/asm/tree/MethodNode/instructions Lorg/objectweb/asm/tree/InsnList;
+    aload 1
+    checkcast org/objectweb/asm/tree/AbstractInsnNode
+    invokevirtual org/objectweb/asm/tree/InsnList/indexOf (Lorg/objectweb/asm/tree/AbstractInsnNode;)I
+    istore 2
+    bipush 16
+    istore 3
+    astore 5
+    iconst_0
+    istore 4
+    iload 2
+    iload 3
+    invokestatic kotlin/text/CharsKt/checkRadix (I)I
+    invokestatic java/lang/Integer/toString (II)Ljava/lang/String;
+    dup
+    ldc "java.lang.Integer.toStri…(this, checkRadix(radix))"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    astore 6
+    aload 5
+    aload 6
 L_001d:
-   .line 149
-   iconst_4
-   bipush 48
-   invokestatic kotlin/text/StringsKt/padStart (Ljava/lang/String;IC)Ljava/lang/String;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   areturn
+    .line 149
+    iconst_4
+    bipush 48
+    invokestatic kotlin/text/StringsKt/padStart (Ljava/lang/String;IC)Ljava/lang/String;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    areturn
 L_0025:
 .end method
 
 .method <init> (Lorg/objectweb/asm/tree/MethodNode;)V
-   .limit stack 2
-   .limit local 2
-   aload 0
-   aload 1
-   putfield com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/$method Lorg/objectweb/asm/tree/MethodNode;
-   aload 0
-   iconst_1
-   invokespecial kotlin/jvm/internal/Lambda/<init> (I)V
-   return
+    .limit stack 2
+    .limit local 2
+    aload 0
+    aload 1
+    putfield com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/$method Lorg/objectweb/asm/tree/MethodNode;
+    aload 0
+    iconst_1
+    invokespecial kotlin/jvm/internal/Lambda/<init> (I)V
+    return
 .end method
 
 .field final $method Lorg/objectweb/asm/tree/MethodNode;

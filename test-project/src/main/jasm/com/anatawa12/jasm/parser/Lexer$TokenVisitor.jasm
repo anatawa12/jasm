@@ -3,3172 +3,3172 @@
 .class final com/anatawa12/jasm/parser/Lexer$TokenVisitor
 .super java/lang/Object
 .implements com/anatawa12/jasm/parser/ITokenVisitorNullable
-.debug "SMAP\nLexer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Lexer.kt\ncom/anatawa12/jasm/parser/Lexer\$TokenVisitor\n*L\n1#1,408:1\n*E\n"
+.debug "SMAP\nLexer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Lexer.kt\ncom/anatawa12/jasm/parser/Lexer\$TokenVisitor\n*L\n1#1,410:1\n*E\n"
 .inner private com/anatawa12/jasm/parser/Lexer$TokenVisitor inner TokenVisitor outer com/anatawa12/jasm/parser/Lexer
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000ª\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0010\u000c\n\u0000\n\u0002\u0010\t\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0082\u0004\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u0014\u0010\u0003\u001a\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u0004J\u0014\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\t0\u0004H\u0002J\u0012\u0010\n\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u000b\u001a\u00020\u000cJ\b\u0010\r\u001a\u0004\u0018\u00010\u0005J\u0014\u0010\u000e\u001a\u00020\u000f2\n\u0010\u0010\u001a\u00060\u0011j\u0002`\u0012H\u0002J\b\u0010\u0013\u001a\u00020\tH\u0002J\b\u0010\u0014\u001a\u0004\u0018\u00010\u0005J\u0014\u0010\u0015\u001a\u00020\u000c2\n\u0010\u0010\u001a\u00060\u0011j\u0002`\u0012H\u0002J\u0014\u0010\u0016\u001a\u00020\u000c2\n\u0010\u0010\u001a\u00060\u0011j\u0002`\u0012H\u0002J\u0014\u0010\u0017\u001a\u00020\u000c2\n\u0010\u0010\u001a\u00060\u0011j\u0002`\u0012H\u0002J\u0017\u0010\u0018\u001a\u0004\u0018\u00010\u000f2\u0006\u0010\u0019\u001a\u00020\u001aH\u0016¢\u0006\u0002\u0010\u001bJ\u0017\u0010\u001c\u001a\u0004\u0018\u00010\u000f2\u0006\u0010\u0019\u001a\u00020\u001dH\u0016¢\u0006\u0002\u0010\u001eJ\u0017\u0010\u001f\u001a\u0004\u0018\u00010 2\u0006\u0010\u0019\u001a\u00020!H\u0016¢\u0006\u0002\u0010\"J\u0012\u0010#\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0019\u001a\u00020\$H\u0016J\u0017\u0010%\u001a\u0004\u0018\u00010&2\u0006\u0010\u0019\u001a\u00020\'H\u0016¢\u0006\u0002\u0010(J\u0012\u0010)\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0019\u001a\u00020*H\u0016J\u0017\u0010+\u001a\u0004\u0018\u00010\t2\u0006\u0010\u0019\u001a\u00020,H\u0016¢\u0006\u0002\u0010-J\u0012\u0010.\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0019\u001a\u00020/H\u0016J\u0017\u00100\u001a\u0004\u0018\u00010\u000f2\u0006\u0010\u0019\u001a\u000201H\u0016¢\u0006\u0002\u00102J\u0017\u00103\u001a\u0004\u0018\u00010\b2\u0006\u0010\u0019\u001a\u000204H\u0016¢\u0006\u0002\u00105J\u0012\u00106\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0019\u001a\u000207H\u0016J\u0012\u00108\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0019\u001a\u000209H\u0016J\u001e\u0010:\u001a\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0005\u0018\u00010\u00042\u0006\u0010\u0019\u001a\u00020;H\u0016J\u0012\u0010<\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0019\u001a\u00020=H\u0016¨\u0006>"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/parser/Lexer\$TokenVisitor;"
-      s = "Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;"
-      s = "(Lcom/anatawa12/jasm/parser/Lexer;)V"
-      s = "readAChar"
-      s = "Lkotlin/Pair;"
-      s = ""
-      s = ""
-      s = "readInt"
-      s = ""
-      s = ""
-      s = "readInternalNameBody"
-      s = "allowLastSlash"
-      s = ""
-      s = "readNameBody"
-      s = "readPackageOrSuffix"
-      s = ""
-      s = "builder"
-      s = "Ljava/lang/StringBuilder;"
-      s = "Lkotlin/text/StringBuilder;"
-      s = "readSign"
-      s = "readStringBody"
-      s = "readTypeArguments"
-      s = "readTypeDescriptor"
-      s = "readTypeSignature"
-      s = "visitChar"
-      s = "tokenType"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Char;"
-      s = "(Lcom/anatawa12/jasm/parser/TokenType\$Char;)Lkotlin/Unit;"
-      s = "visitDotedKeyWord"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$DotedKeyWord;"
-      s = "(Lcom/anatawa12/jasm/parser/TokenType\$DotedKeyWord;)Lkotlin/Unit;"
-      s = "visitDouble"
-      s = ""
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Double;"
-      s = "(Lcom/anatawa12/jasm/parser/TokenType\$Double;)Ljava/lang/Double;"
-      s = "visitFieldDescriptor"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$FieldDescriptor;"
-      s = "visitFloat"
-      s = ""
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Float;"
-      s = "(Lcom/anatawa12/jasm/parser/TokenType\$Float;)Ljava/lang/Float;"
-      s = "visitIdentifier"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Identifier;"
-      s = "visitInteger"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Integer;"
-      s = "(Lcom/anatawa12/jasm/parser/TokenType\$Integer;)Ljava/lang/Integer;"
-      s = "visitInternalName"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$InternalName;"
-      s = "visitKeyWord"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$KeyWord;"
-      s = "(Lcom/anatawa12/jasm/parser/TokenType\$KeyWord;)Lkotlin/Unit;"
-      s = "visitLong"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Long;"
-      s = "(Lcom/anatawa12/jasm/parser/TokenType\$Long;)Ljava/lang/Long;"
-      s = "visitMethodDescriptor"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$MethodDescriptor;"
-      s = "visitName"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$Name;"
-      s = "visitOwnerAndName"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$OwnerAndName;"
-      s = "visitString"
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$String;"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000ª\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0010\u000c\n\u0000\n\u0002\u0010\t\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0082\u0004\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u0014\u0010\u0003\u001a\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u0004J\u0014\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\t0\u0004H\u0002J\u0012\u0010\n\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u000b\u001a\u00020\u000cJ\b\u0010\r\u001a\u0004\u0018\u00010\u0005J\u0014\u0010\u000e\u001a\u00020\u000f2\n\u0010\u0010\u001a\u00060\u0011j\u0002`\u0012H\u0002J\b\u0010\u0013\u001a\u00020\tH\u0002J\b\u0010\u0014\u001a\u0004\u0018\u00010\u0005J\u0014\u0010\u0015\u001a\u00020\u000c2\n\u0010\u0010\u001a\u00060\u0011j\u0002`\u0012H\u0002J\u0014\u0010\u0016\u001a\u00020\u000c2\n\u0010\u0010\u001a\u00060\u0011j\u0002`\u0012H\u0002J\u0014\u0010\u0017\u001a\u00020\u000c2\n\u0010\u0010\u001a\u00060\u0011j\u0002`\u0012H\u0002J\u0017\u0010\u0018\u001a\u0004\u0018\u00010\u000f2\u0006\u0010\u0019\u001a\u00020\u001aH\u0016¢\u0006\u0002\u0010\u001bJ\u0017\u0010\u001c\u001a\u0004\u0018\u00010\u000f2\u0006\u0010\u0019\u001a\u00020\u001dH\u0016¢\u0006\u0002\u0010\u001eJ\u0017\u0010\u001f\u001a\u0004\u0018\u00010 2\u0006\u0010\u0019\u001a\u00020!H\u0016¢\u0006\u0002\u0010\"J\u0012\u0010#\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0019\u001a\u00020\$H\u0016J\u0017\u0010%\u001a\u0004\u0018\u00010&2\u0006\u0010\u0019\u001a\u00020\'H\u0016¢\u0006\u0002\u0010(J\u0012\u0010)\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0019\u001a\u00020*H\u0016J\u0017\u0010+\u001a\u0004\u0018\u00010\t2\u0006\u0010\u0019\u001a\u00020,H\u0016¢\u0006\u0002\u0010-J\u0012\u0010.\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0019\u001a\u00020/H\u0016J\u0017\u00100\u001a\u0004\u0018\u00010\u000f2\u0006\u0010\u0019\u001a\u000201H\u0016¢\u0006\u0002\u00102J\u0017\u00103\u001a\u0004\u0018\u00010\b2\u0006\u0010\u0019\u001a\u000204H\u0016¢\u0006\u0002\u00105J\u0012\u00106\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0019\u001a\u000207H\u0016J\u0012\u00108\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0019\u001a\u000209H\u0016J\u001e\u0010:\u001a\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0005\u0018\u00010\u00042\u0006\u0010\u0019\u001a\u00020;H\u0016J\u0012\u0010<\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0019\u001a\u00020=H\u0016¨\u0006>"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/parser/Lexer\$TokenVisitor;"
+        s = "Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;"
+        s = "(Lcom/anatawa12/jasm/parser/Lexer;)V"
+        s = "readAChar"
+        s = "Lkotlin/Pair;"
+        s = ""
+        s = ""
+        s = "readInt"
+        s = ""
+        s = ""
+        s = "readInternalNameBody"
+        s = "allowLastSlash"
+        s = ""
+        s = "readNameBody"
+        s = "readPackageOrSuffix"
+        s = ""
+        s = "builder"
+        s = "Ljava/lang/StringBuilder;"
+        s = "Lkotlin/text/StringBuilder;"
+        s = "readSign"
+        s = "readStringBody"
+        s = "readTypeArguments"
+        s = "readTypeDescriptor"
+        s = "readTypeSignature"
+        s = "visitChar"
+        s = "tokenType"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Char;"
+        s = "(Lcom/anatawa12/jasm/parser/TokenType\$Char;)Lkotlin/Unit;"
+        s = "visitDotedKeyWord"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$DotedKeyWord;"
+        s = "(Lcom/anatawa12/jasm/parser/TokenType\$DotedKeyWord;)Lkotlin/Unit;"
+        s = "visitDouble"
+        s = ""
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Double;"
+        s = "(Lcom/anatawa12/jasm/parser/TokenType\$Double;)Ljava/lang/Double;"
+        s = "visitFieldDescriptor"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$FieldDescriptor;"
+        s = "visitFloat"
+        s = ""
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Float;"
+        s = "(Lcom/anatawa12/jasm/parser/TokenType\$Float;)Ljava/lang/Float;"
+        s = "visitIdentifier"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Identifier;"
+        s = "visitInteger"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Integer;"
+        s = "(Lcom/anatawa12/jasm/parser/TokenType\$Integer;)Ljava/lang/Integer;"
+        s = "visitInternalName"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$InternalName;"
+        s = "visitKeyWord"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$KeyWord;"
+        s = "(Lcom/anatawa12/jasm/parser/TokenType\$KeyWord;)Lkotlin/Unit;"
+        s = "visitLong"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Long;"
+        s = "(Lcom/anatawa12/jasm/parser/TokenType\$Long;)Ljava/lang/Long;"
+        s = "visitMethodDescriptor"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$MethodDescriptor;"
+        s = "visitName"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$Name;"
+        s = "visitOwnerAndName"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$OwnerAndName;"
+        s = "visitString"
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$String;"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public visitKeyWord (Lcom/anatawa12/jasm/parser/TokenType$KeyWord;)Lkotlin/Unit;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 6
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 6
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0035
-   .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$KeyWord; from L_0000 to L_0035
-   aload 1
-   ldc "tokenType"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0035
+    .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$KeyWord; from L_0000 to L_0035
+    aload 1
+    ldc "tokenType"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 45
-   aload 1
-   invokevirtual com/anatawa12/jasm/parser/TokenType$KeyWord/getValue ()Ljava/lang/String;
-   astore 4
-   aload 4
-   invokevirtual java/lang/String/length ()I
-   istore 5
-   iconst_0
-   istore 3
+    .line 46
+    aload 1
+    invokevirtual com/anatawa12/jasm/parser/TokenType$KeyWord/getValue ()Ljava/lang/String;
+    astore 4
+    aload 4
+    invokevirtual java/lang/String/length ()I
+    istore 5
+    iconst_0
+    istore 3
 L_000e:
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$KeyWord
-      locals Top
-      locals Integer
-      locals Object java/lang/String
-      locals Integer
-   .end stack
-   iload 3
-   iload 5
-   if_icmpge L_0026
-   aload 4
-   iload 3
-   invokevirtual java/lang/String/charAt (I)C
-   istore 2
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$KeyWord
+        locals Top
+        locals Integer
+        locals Object java/lang/String
+        locals Integer
+    .end stack
+    iload 3
+    iload 5
+    if_icmpge L_0026
+    aload 4
+    iload 3
+    invokevirtual java/lang/String/charAt (I)C
+    istore 2
 L_0017:
-   .line 46
-   .var 2 is c C from L_0017 to L_0024
-   iload 2
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   if_icmpeq L_0020
-   aconst_null
-   areturn
+    .line 47
+    .var 2 is c C from L_0017 to L_0024
+    iload 2
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    if_icmpeq L_0020
+    aconst_null
+    areturn
 L_0020:
-   .line 45
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$KeyWord
-      locals Integer
-      locals Integer
-      locals Object java/lang/String
-      locals Integer
-   .end stack
-   iinc 3 1
+    .line 46
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$KeyWord
+        locals Integer
+        locals Integer
+        locals Object java/lang/String
+        locals Integer
+    .end stack
+    iinc 3 1
 L_0024:
-   goto L_000e
+    goto L_000e
 L_0026:
-   .line 48
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$KeyWord
-      locals Top
-      locals Integer
-      locals Object java/lang/String
-      locals Integer
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
-   ifne L_0030
-   aconst_null
-   areturn
+    .line 49
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$KeyWord
+        locals Top
+        locals Integer
+        locals Object java/lang/String
+        locals Integer
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
+    ifne L_0030
+    aconst_null
+    areturn
 L_0030:
-   .line 49
-   .stack use locals
-   .end stack
-   getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
-   areturn
+    .line 50
+    .stack use locals
+    .end stack
+    getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
+    areturn
 L_0035:
 .end method
 
 .method public visitDotedKeyWord (Lcom/anatawa12/jasm/parser/TokenType$DotedKeyWord;)Lkotlin/Unit;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 6
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 6
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_003f
-   .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$DotedKeyWord; from L_0000 to L_003f
-   aload 1
-   ldc "tokenType"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_003f
+    .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$DotedKeyWord; from L_0000 to L_003f
+    aload 1
+    ldc "tokenType"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 53
-   bipush 46
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   if_icmpeq L_000d
-   aconst_null
-   areturn
+    .line 54
+    bipush 46
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    if_icmpeq L_000d
+    aconst_null
+    areturn
 L_000d:
-   .line 54
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$DotedKeyWord
-   .end stack
-   aload 1
-   invokevirtual com/anatawa12/jasm/parser/TokenType$DotedKeyWord/getValue ()Ljava/lang/String;
-   astore 4
-   aload 4
-   invokevirtual java/lang/String/length ()I
-   istore 5
-   iconst_0
-   istore 3
+    .line 55
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$DotedKeyWord
+    .end stack
+    aload 1
+    invokevirtual com/anatawa12/jasm/parser/TokenType$DotedKeyWord/getValue ()Ljava/lang/String;
+    astore 4
+    aload 4
+    invokevirtual java/lang/String/length ()I
+    istore 5
+    iconst_0
+    istore 3
 L_0018:
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$DotedKeyWord
-      locals Top
-      locals Integer
-      locals Object java/lang/String
-      locals Integer
-   .end stack
-   iload 3
-   iload 5
-   if_icmpge L_0030
-   aload 4
-   iload 3
-   invokevirtual java/lang/String/charAt (I)C
-   istore 2
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$DotedKeyWord
+        locals Top
+        locals Integer
+        locals Object java/lang/String
+        locals Integer
+    .end stack
+    iload 3
+    iload 5
+    if_icmpge L_0030
+    aload 4
+    iload 3
+    invokevirtual java/lang/String/charAt (I)C
+    istore 2
 L_0021:
-   .line 55
-   .var 2 is c C from L_0021 to L_002e
-   iload 2
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   if_icmpeq L_002a
-   aconst_null
-   areturn
+    .line 56
+    .var 2 is c C from L_0021 to L_002e
+    iload 2
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    if_icmpeq L_002a
+    aconst_null
+    areturn
 L_002a:
-   .line 54
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$DotedKeyWord
-      locals Integer
-      locals Integer
-      locals Object java/lang/String
-      locals Integer
-   .end stack
-   iinc 3 1
+    .line 55
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$DotedKeyWord
+        locals Integer
+        locals Integer
+        locals Object java/lang/String
+        locals Integer
+    .end stack
+    iinc 3 1
 L_002e:
-   goto L_0018
+    goto L_0018
 L_0030:
-   .line 57
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$DotedKeyWord
-      locals Top
-      locals Integer
-      locals Object java/lang/String
-      locals Integer
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
-   ifne L_003a
-   aconst_null
-   areturn
+    .line 58
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$DotedKeyWord
+        locals Top
+        locals Integer
+        locals Object java/lang/String
+        locals Integer
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
+    ifne L_003a
+    aconst_null
+    areturn
 L_003a:
-   .line 58
-   .stack use locals
-   .end stack
-   getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
-   areturn
+    .line 59
+    .stack use locals
+    .end stack
+    getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
+    areturn
 L_003f:
 .end method
 
 .method private readSign ()I
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 65
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0020
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   tableswitch 43
-      L_000f
-      L_0018
-      L_0006
-      default: L_0018
+    .line 66
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0020
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    tableswitch 43
+        L_000f
+        L_0018
+        L_0006
+        default: L_0018
 L_0006:
-   .line 66
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   pop
-   iconst_m1
-   goto L_001c
+    .line 67
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    pop
+    iconst_m1
+    goto L_001c
 L_000f:
-   .line 67
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   pop
-   iconst_1
-   goto L_001c
+    .line 68
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    pop
+    iconst_1
+    goto L_001c
 L_0018:
-   .line 68
-   .stack use locals
-   .end stack
-   iconst_1
+    .line 69
+    .stack use locals
+    .end stack
+    iconst_1
 L_001c:
-   .line 65
-   .stack use locals
-      stacks Integer
-   .end stack
-   ireturn
+    .line 66
+    .stack use locals
+        stacks Integer
+    .end stack
+    ireturn
 L_0020:
 .end method
 
 .method private readInt ()Lkotlin/Pair;
-   .signature "()Lkotlin/Pair<Ljava/lang/Long;Ljava/lang/Integer;>;"
-   .limit stack 4
-   .limit local 7
+    .signature "()Lkotlin/Pair<Ljava/lang/Long;Ljava/lang/Integer;>;"
+    .limit stack 4
+    .limit local 7
 L_0000:
-   .line 76
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0049
-   lconst_0
-   lstore 1
+    .line 77
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0049
+    lconst_0
+    lstore 1
 L_0004:
-   .line 77
-   .var 1 is result J from L_0004 to L_0049
-   iconst_0
-   istore 3
+    .line 78
+    .var 1 is result J from L_0004 to L_0049
+    iconst_0
+    istore 3
 L_0008:
-   .line 78
-   .var 3 is digets I from L_0008 to L_0049
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Long
-      locals Integer
-   .end stack
-   bipush 48
-   istore 4
-   new kotlin/ranges/CharRange
-   dup
-   iload 4
-   bipush 57
-   invokespecial kotlin/ranges/CharRange/<init> (CC)V
-   astore 4
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   astore 5
-   iconst_0
-   istore 6
-   aload 5
-   ifnull L_0022
-   aload 4
-   aload 5
-   invokevirtual java/lang/Character/charValue ()C
-   invokevirtual kotlin/ranges/CharRange/contains (C)Z
-   ifeq L_0022
-   iconst_1
-   goto L_0025
+    .line 79
+    .var 3 is digets I from L_0008 to L_0049
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Long
+        locals Integer
+    .end stack
+    bipush 48
+    istore 4
+    new kotlin/ranges/CharRange
+    dup
+    iload 4
+    bipush 57
+    invokespecial kotlin/ranges/CharRange/<init> (CC)V
+    astore 4
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    astore 5
+    iconst_0
+    istore 6
+    aload 5
+    ifnull L_0022
+    aload 4
+    aload 5
+    invokevirtual java/lang/Character/charValue ()C
+    invokevirtual kotlin/ranges/CharRange/contains (C)Z
+    ifeq L_0022
+    iconst_1
+    goto L_0025
 L_0022:
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Long
-      locals Integer
-      locals Object kotlin/ranges/CharRange
-      locals Object java/lang/Character
-      locals Integer
-   .end stack
-   iconst_0
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Long
+        locals Integer
+        locals Object kotlin/ranges/CharRange
+        locals Object java/lang/Character
+        locals Integer
+    .end stack
+    iconst_0
 L_0025:
-   .stack use locals
-      stacks Integer
-   .end stack
-   ifeq L_0040
+    .stack use locals
+        stacks Integer
+    .end stack
+    ifeq L_0040
 L_0028:
-   .line 79
-   lload 1
-   bipush 10
-   i2l
-   lmul
-   lstore 1
+    .line 80
+    lload 1
+    bipush 10
+    i2l
+    lmul
+    lstore 1
 L_002f:
-   .line 80
-   lload 1
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   bipush 48
-   isub
-   i2l
-   ladd
-   lstore 1
+    .line 81
+    lload 1
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    bipush 48
+    isub
+    i2l
+    ladd
+    lstore 1
 L_003a:
-   .line 81
-   iinc 3 1
+    .line 82
+    iinc 3 1
 L_003d:
-   .line 78
-   goto L_0008
+    .line 79
+    goto L_0008
 L_0040:
-   .line 83
-   .stack use locals
-   .end stack
-   lload 1
-   invokestatic java/lang/Long/valueOf (J)Ljava/lang/Long;
-   iload 3
-   invokestatic java/lang/Integer/valueOf (I)Ljava/lang/Integer;
-   invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-   areturn
+    .line 84
+    .stack use locals
+    .end stack
+    lload 1
+    invokestatic java/lang/Long/valueOf (J)Ljava/lang/Long;
+    iload 3
+    invokestatic java/lang/Integer/valueOf (I)Ljava/lang/Integer;
+    invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    areturn
 L_0049:
 .end method
 
 .method public visitInteger (Lcom/anatawa12/jasm/parser/TokenType$Integer;)Ljava/lang/Integer;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 3
-   .limit local 6
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 3
+    .limit local 6
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_003a
-   .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$Integer; from L_0000 to L_003a
-   aload 1
-   ldc "tokenType"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_003a
+    .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$Integer; from L_0000 to L_003a
+    aload 1
+    ldc "tokenType"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 87
-   aload 0
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readSign ()I
-   istore 2
+    .line 88
+    aload 0
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readSign ()I
+    istore 2
 L_0009:
-   .line 88
-   .var 2 is sign I from L_0009 to L_003a
-   bipush 57
-   bipush 48
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   istore 3
-   iload 3
-   if_icmpgt L_0016
-   iload 3
-   if_icmpge L_001d
-   goto L_0019
+    .line 89
+    .var 2 is sign I from L_0009 to L_003a
+    bipush 57
+    bipush 48
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    istore 3
+    iload 3
+    if_icmpgt L_0016
+    iload 3
+    if_icmpge L_001d
+    goto L_0019
 L_0016:
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$Integer
-      locals Integer
-      locals Integer
-      stacks Integer
-   .end stack
-   pop
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$Integer
+        locals Integer
+        locals Integer
+        stacks Integer
+    .end stack
+    pop
 L_0019:
-   .stack use locals
-   .end stack
-   aconst_null
-   areturn
+    .stack use locals
+    .end stack
+    aconst_null
+    areturn
 L_001d:
-   .line 89
-   .stack use locals
-   .end stack
-   aload 0
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInt ()Lkotlin/Pair;
-   astore 5
-   aload 5
-   invokevirtual kotlin/Pair/component1 ()Ljava/lang/Object;
-   checkcast java/lang/Number
-   invokevirtual java/lang/Number/longValue ()J
-   lstore 3
+    .line 90
+    .stack use locals
+    .end stack
+    aload 0
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInt ()Lkotlin/Pair;
+    astore 5
+    aload 5
+    invokevirtual kotlin/Pair/component1 ()Ljava/lang/Object;
+    checkcast java/lang/Number
+    invokevirtual java/lang/Number/longValue ()J
+    lstore 3
 L_0028:
-   .line 90
-   .var 3 is result J from L_0028 to L_003a
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
-   ifne L_0031
-   aconst_null
-   areturn
+    .line 91
+    .var 3 is result J from L_0028 to L_003a
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
+    ifne L_0031
+    aconst_null
+    areturn
 L_0031:
-   .line 91
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$Integer
-      locals Integer
-      locals Long
-      locals Object kotlin/Pair
-   .end stack
-   iload 2
-   lload 3
-   l2i
-   imul
-   invokestatic java/lang/Integer/valueOf (I)Ljava/lang/Integer;
-   areturn
+    .line 92
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$Integer
+        locals Integer
+        locals Long
+        locals Object kotlin/Pair
+    .end stack
+    iload 2
+    lload 3
+    l2i
+    imul
+    invokestatic java/lang/Integer/valueOf (I)Ljava/lang/Integer;
+    areturn
 L_003a:
 .end method
 
 .method public visitDouble (Lcom/anatawa12/jasm/parser/TokenType$Double;)Ljava/lang/Double;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 6
-   .limit local 17
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 6
+    .limit local 17
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_00b8
-   .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$Double; from L_0000 to L_00b8
-   aload 1
-   ldc "tokenType"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_00b8
+    .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$Double; from L_0000 to L_00b8
+    aload 1
+    ldc "tokenType"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 95
-   aload 0
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readSign ()I
-   istore 2
+    .line 96
+    aload 0
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readSign ()I
+    istore 2
 L_0009:
-   .line 96
-   .var 2 is sign I from L_0009 to L_00b8
-   bipush 57
-   bipush 48
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   istore 3
-   iload 3
-   if_icmpgt L_0016
-   iload 3
-   if_icmpge L_001d
-   goto L_0019
+    .line 97
+    .var 2 is sign I from L_0009 to L_00b8
+    bipush 57
+    bipush 48
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    istore 3
+    iload 3
+    if_icmpgt L_0016
+    iload 3
+    if_icmpge L_001d
+    goto L_0019
 L_0016:
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$Double
-      locals Integer
-      locals Integer
-      stacks Integer
-   .end stack
-   pop
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$Double
+        locals Integer
+        locals Integer
+        stacks Integer
+    .end stack
+    pop
 L_0019:
-   .stack use locals
-   .end stack
-   aconst_null
-   areturn
+    .stack use locals
+    .end stack
+    aconst_null
+    areturn
 L_001d:
-   .line 97
-   .stack use locals
-   .end stack
-   aload 0
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInt ()Lkotlin/Pair;
-   invokevirtual kotlin/Pair/getFirst ()Ljava/lang/Object;
-   checkcast java/lang/Number
-   invokevirtual java/lang/Number/longValue ()J
-   l2d
-   dstore 3
+    .line 98
+    .stack use locals
+    .end stack
+    aload 0
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInt ()Lkotlin/Pair;
+    invokevirtual kotlin/Pair/getFirst ()Ljava/lang/Object;
+    checkcast java/lang/Number
+    invokevirtual java/lang/Number/longValue ()J
+    l2d
+    dstore 3
 L_0027:
-   .line 98
-   .var 3 is result D from L_0027 to L_00b8
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   dup
-   ifnonnull L_0030
-   pop
-   goto L_0062
+    .line 99
+    .var 3 is result D from L_0027 to L_00b8
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    dup
+    ifnonnull L_0030
+    pop
+    goto L_0062
 L_0030:
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$Double
-      locals Integer
-      locals Double
-      stacks Object java/lang/Character
-   .end stack
-   invokevirtual java/lang/Character/charValue ()C
-   bipush 46
-   if_icmpne L_0062
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$Double
+        locals Integer
+        locals Double
+        stacks Object java/lang/Character
+    .end stack
+    invokevirtual java/lang/Character/charValue ()C
+    bipush 46
+    if_icmpne L_0062
 L_0035:
-   .line 99
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   pop
+    .line 100
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    pop
 L_003b:
-   .line 100
-   aload 0
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInt ()Lkotlin/Pair;
-   astore 8
-   aload 8
-   invokevirtual kotlin/Pair/component1 ()Ljava/lang/Object;
-   checkcast java/lang/Number
-   invokevirtual java/lang/Number/longValue ()J
-   lstore 5
-   aload 8
-   invokevirtual kotlin/Pair/component2 ()Ljava/lang/Object;
-   checkcast java/lang/Number
-   invokevirtual java/lang/Number/intValue ()I
-   istore 7
+    .line 101
+    aload 0
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInt ()Lkotlin/Pair;
+    astore 8
+    aload 8
+    invokevirtual kotlin/Pair/component1 ()Ljava/lang/Object;
+    checkcast java/lang/Number
+    invokevirtual java/lang/Number/longValue ()J
+    lstore 5
+    aload 8
+    invokevirtual kotlin/Pair/component2 ()Ljava/lang/Object;
+    checkcast java/lang/Number
+    invokevirtual java/lang/Number/intValue ()I
+    istore 7
 L_004a:
-   .line 101
-   .var 7 is digits I from L_004a to L_0062
-   .var 5 is coefficient J from L_004a to L_0062
-   dload 3
-   lload 5
-   l2d
-   ldc 0.1
-   dstore 8
-   dstore 13
-   dstore 11
-   iconst_0
-   istore 10
-   dload 8
-   iload 7
-   i2d
-   invokestatic java/lang/Math/pow (DD)D
-   dstore 15
-   dload 11
-   dload 13
-   dload 15
+    .line 102
+    .var 7 is digits I from L_004a to L_0062
+    .var 5 is coefficient J from L_004a to L_0062
+    dload 3
+    lload 5
+    l2d
+    ldc 0.1
+    dstore 8
+    dstore 13
+    dstore 11
+    iconst_0
+    istore 10
+    dload 8
+    iload 7
+    i2d
+    invokestatic java/lang/Math/pow (DD)D
+    dstore 15
+    dload 11
+    dload 13
+    dload 15
 L_005d:
-   .line 101
-   dmul
-   dadd
-   dstore 3
+    .line 102
+    dmul
+    dadd
+    dstore 3
 L_0062:
-   .line 103
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   dup
-   ifnonnull L_006c
-   pop
-   goto L_0071
+    .line 104
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    dup
+    ifnonnull L_006c
+    pop
+    goto L_0071
 L_006c:
-   .stack use locals
-      stacks Object java/lang/Character
-   .end stack
-   invokevirtual java/lang/Character/charValue ()C
-   bipush 101
-   if_icmpeq L_007f
+    .stack use locals
+        stacks Object java/lang/Character
+    .end stack
+    invokevirtual java/lang/Character/charValue ()C
+    bipush 101
+    if_icmpeq L_007f
 L_0071:
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   dup
-   ifnonnull L_007a
-   pop
-   goto L_00a5
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    dup
+    ifnonnull L_007a
+    pop
+    goto L_00a5
 L_007a:
-   .stack use locals
-      stacks Object java/lang/Character
-   .end stack
-   invokevirtual java/lang/Character/charValue ()C
-   bipush 69
-   if_icmpne L_00a5
+    .stack use locals
+        stacks Object java/lang/Character
+    .end stack
+    invokevirtual java/lang/Character/charValue ()C
+    bipush 69
+    if_icmpne L_00a5
 L_007f:
-   .line 104
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   pop
+    .line 105
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    pop
 L_0086:
-   .line 105
-   aload 0
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readSign ()I
-   aload 0
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInt ()Lkotlin/Pair;
-   invokevirtual kotlin/Pair/getFirst ()Ljava/lang/Object;
-   checkcast java/lang/Number
-   invokevirtual java/lang/Number/longValue ()J
-   l2i
-   imul
-   istore 5
+    .line 106
+    aload 0
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readSign ()I
+    aload 0
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInt ()Lkotlin/Pair;
+    invokevirtual kotlin/Pair/getFirst ()Ljava/lang/Object;
+    checkcast java/lang/Number
+    invokevirtual java/lang/Number/longValue ()J
+    l2i
+    imul
+    istore 5
 L_0092:
-   .line 106
-   .var 5 is sign I from L_0092 to L_00a5
-   dload 3
-   ldc 10.0
-   dstore 6
-   dstore 11
-   iconst_0
-   istore 8
-   dload 6
-   iload 5
-   i2d
-   invokestatic java/lang/Math/pow (DD)D
-   dstore 13
-   dload 11
-   dload 13
+    .line 107
+    .var 5 is sign I from L_0092 to L_00a5
+    dload 3
+    ldc 10.0
+    dstore 6
+    dstore 11
+    iconst_0
+    istore 8
+    dload 6
+    iload 5
+    i2d
+    invokestatic java/lang/Math/pow (DD)D
+    dstore 13
+    dload 11
+    dload 13
 L_00a1:
-   .line 106
-   dmul
-   dstore 3
+    .line 107
+    dmul
+    dstore 3
 L_00a5:
-   .line 108
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
-   ifne L_00af
-   aconst_null
-   areturn
+    .line 109
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
+    ifne L_00af
+    aconst_null
+    areturn
 L_00af:
-   .line 109
-   .stack use locals
-   .end stack
-   iload 2
-   i2d
-   dload 3
-   dmul
-   invokestatic java/lang/Double/valueOf (D)Ljava/lang/Double;
-   areturn
+    .line 110
+    .stack use locals
+    .end stack
+    iload 2
+    i2d
+    dload 3
+    dmul
+    invokestatic java/lang/Double/valueOf (D)Ljava/lang/Double;
+    areturn
 L_00b8:
 .end method
 
 .method public visitLong (Lcom/anatawa12/jasm/parser/TokenType$Long;)Ljava/lang/Long;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 4
-   .limit local 6
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 4
+    .limit local 6
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0044
-   .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$Long; from L_0000 to L_0044
-   aload 1
-   ldc "tokenType"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0044
+    .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$Long; from L_0000 to L_0044
+    aload 1
+    ldc "tokenType"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 113
-   aload 0
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readSign ()I
-   istore 2
+    .line 114
+    aload 0
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readSign ()I
+    istore 2
 L_0009:
-   .line 114
-   .var 2 is sign I from L_0009 to L_0044
-   bipush 57
-   bipush 48
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   istore 3
-   iload 3
-   if_icmpgt L_0016
-   iload 3
-   if_icmpge L_001d
-   goto L_0019
+    .line 115
+    .var 2 is sign I from L_0009 to L_0044
+    bipush 57
+    bipush 48
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    istore 3
+    iload 3
+    if_icmpgt L_0016
+    iload 3
+    if_icmpge L_001d
+    goto L_0019
 L_0016:
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$Long
-      locals Integer
-      locals Integer
-      stacks Integer
-   .end stack
-   pop
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$Long
+        locals Integer
+        locals Integer
+        stacks Integer
+    .end stack
+    pop
 L_0019:
-   .stack use locals
-   .end stack
-   aconst_null
-   areturn
+    .stack use locals
+    .end stack
+    aconst_null
+    areturn
 L_001d:
-   .line 115
-   .stack use locals
-   .end stack
-   aload 0
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInt ()Lkotlin/Pair;
-   astore 5
-   aload 5
-   invokevirtual kotlin/Pair/component1 ()Ljava/lang/Object;
-   checkcast java/lang/Number
-   invokevirtual java/lang/Number/longValue ()J
-   lstore 3
+    .line 116
+    .stack use locals
+    .end stack
+    aload 0
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInt ()Lkotlin/Pair;
+    astore 5
+    aload 5
+    invokevirtual kotlin/Pair/component1 ()Ljava/lang/Object;
+    checkcast java/lang/Number
+    invokevirtual java/lang/Number/longValue ()J
+    lstore 3
 L_0028:
-   .line 116
-   .var 3 is result J from L_0028 to L_0044
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   bipush 76
-   if_icmpeq L_0031
-   aconst_null
-   areturn
+    .line 117
+    .var 3 is result J from L_0028 to L_0044
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    bipush 76
+    if_icmpeq L_0031
+    aconst_null
+    areturn
 L_0031:
-   .line 117
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$Long
-      locals Integer
-      locals Long
-      locals Object kotlin/Pair
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
-   ifne L_003b
-   aconst_null
-   areturn
+    .line 118
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$Long
+        locals Integer
+        locals Long
+        locals Object kotlin/Pair
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
+    ifne L_003b
+    aconst_null
+    areturn
 L_003b:
-   .line 118
-   .stack use locals
-   .end stack
-   iload 2
-   i2l
-   lload 3
-   lmul
-   invokestatic java/lang/Long/valueOf (J)Ljava/lang/Long;
-   areturn
+    .line 119
+    .stack use locals
+    .end stack
+    iload 2
+    i2l
+    lload 3
+    lmul
+    invokestatic java/lang/Long/valueOf (J)Ljava/lang/Long;
+    areturn
 L_0044:
 .end method
 
 .method public visitFloat (Lcom/anatawa12/jasm/parser/TokenType$Float;)Ljava/lang/Float;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 6
-   .limit local 17
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 6
+    .limit local 17
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_00ca
-   .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$Float; from L_0000 to L_00ca
-   aload 1
-   ldc "tokenType"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_00ca
+    .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$Float; from L_0000 to L_00ca
+    aload 1
+    ldc "tokenType"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 122
-   aload 0
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readSign ()I
-   istore 2
+    .line 123
+    aload 0
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readSign ()I
+    istore 2
 L_0009:
-   .line 123
-   .var 2 is sign I from L_0009 to L_00ca
-   bipush 57
-   bipush 48
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   istore 3
-   iload 3
-   if_icmpgt L_0016
-   iload 3
-   if_icmpge L_001d
-   goto L_0019
+    .line 124
+    .var 2 is sign I from L_0009 to L_00ca
+    bipush 57
+    bipush 48
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    istore 3
+    iload 3
+    if_icmpgt L_0016
+    iload 3
+    if_icmpge L_001d
+    goto L_0019
 L_0016:
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$Float
-      locals Integer
-      locals Integer
-      stacks Integer
-   .end stack
-   pop
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$Float
+        locals Integer
+        locals Integer
+        stacks Integer
+    .end stack
+    pop
 L_0019:
-   .stack use locals
-   .end stack
-   aconst_null
-   areturn
+    .stack use locals
+    .end stack
+    aconst_null
+    areturn
 L_001d:
-   .line 124
-   .stack use locals
-   .end stack
-   aload 0
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInt ()Lkotlin/Pair;
-   invokevirtual kotlin/Pair/getFirst ()Ljava/lang/Object;
-   checkcast java/lang/Number
-   invokevirtual java/lang/Number/longValue ()J
-   l2d
-   dstore 3
+    .line 125
+    .stack use locals
+    .end stack
+    aload 0
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInt ()Lkotlin/Pair;
+    invokevirtual kotlin/Pair/getFirst ()Ljava/lang/Object;
+    checkcast java/lang/Number
+    invokevirtual java/lang/Number/longValue ()J
+    l2d
+    dstore 3
 L_0027:
-   .line 125
-   .var 3 is result D from L_0027 to L_00ca
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   dup
-   ifnonnull L_0030
-   pop
-   goto L_0062
+    .line 126
+    .var 3 is result D from L_0027 to L_00ca
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    dup
+    ifnonnull L_0030
+    pop
+    goto L_0062
 L_0030:
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$Float
-      locals Integer
-      locals Double
-      stacks Object java/lang/Character
-   .end stack
-   invokevirtual java/lang/Character/charValue ()C
-   bipush 46
-   if_icmpne L_0062
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$Float
+        locals Integer
+        locals Double
+        stacks Object java/lang/Character
+    .end stack
+    invokevirtual java/lang/Character/charValue ()C
+    bipush 46
+    if_icmpne L_0062
 L_0035:
-   .line 126
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   pop
+    .line 127
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    pop
 L_003b:
-   .line 127
-   aload 0
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInt ()Lkotlin/Pair;
-   astore 8
-   aload 8
-   invokevirtual kotlin/Pair/component1 ()Ljava/lang/Object;
-   checkcast java/lang/Number
-   invokevirtual java/lang/Number/longValue ()J
-   lstore 5
-   aload 8
-   invokevirtual kotlin/Pair/component2 ()Ljava/lang/Object;
-   checkcast java/lang/Number
-   invokevirtual java/lang/Number/intValue ()I
-   istore 7
+    .line 128
+    aload 0
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInt ()Lkotlin/Pair;
+    astore 8
+    aload 8
+    invokevirtual kotlin/Pair/component1 ()Ljava/lang/Object;
+    checkcast java/lang/Number
+    invokevirtual java/lang/Number/longValue ()J
+    lstore 5
+    aload 8
+    invokevirtual kotlin/Pair/component2 ()Ljava/lang/Object;
+    checkcast java/lang/Number
+    invokevirtual java/lang/Number/intValue ()I
+    istore 7
 L_004a:
-   .line 128
-   .var 7 is digits I from L_004a to L_0062
-   .var 5 is coefficient J from L_004a to L_0062
-   dload 3
-   lload 5
-   l2d
-   ldc 0.1
-   dstore 8
-   dstore 13
-   dstore 11
-   iconst_0
-   istore 10
-   dload 8
-   iload 7
-   i2d
-   invokestatic java/lang/Math/pow (DD)D
-   dstore 15
-   dload 11
-   dload 13
-   dload 15
+    .line 129
+    .var 7 is digits I from L_004a to L_0062
+    .var 5 is coefficient J from L_004a to L_0062
+    dload 3
+    lload 5
+    l2d
+    ldc 0.1
+    dstore 8
+    dstore 13
+    dstore 11
+    iconst_0
+    istore 10
+    dload 8
+    iload 7
+    i2d
+    invokestatic java/lang/Math/pow (DD)D
+    dstore 15
+    dload 11
+    dload 13
+    dload 15
 L_005d:
-   .line 128
-   dmul
-   dadd
-   dstore 3
+    .line 129
+    dmul
+    dadd
+    dstore 3
 L_0062:
-   .line 130
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   dup
-   ifnonnull L_006c
-   pop
-   goto L_0071
+    .line 131
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    dup
+    ifnonnull L_006c
+    pop
+    goto L_0071
 L_006c:
-   .stack use locals
-      stacks Object java/lang/Character
-   .end stack
-   invokevirtual java/lang/Character/charValue ()C
-   bipush 101
-   if_icmpeq L_007f
+    .stack use locals
+        stacks Object java/lang/Character
+    .end stack
+    invokevirtual java/lang/Character/charValue ()C
+    bipush 101
+    if_icmpeq L_007f
 L_0071:
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   dup
-   ifnonnull L_007a
-   pop
-   goto L_00a5
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    dup
+    ifnonnull L_007a
+    pop
+    goto L_00a5
 L_007a:
-   .stack use locals
-      stacks Object java/lang/Character
-   .end stack
-   invokevirtual java/lang/Character/charValue ()C
-   bipush 69
-   if_icmpne L_00a5
+    .stack use locals
+        stacks Object java/lang/Character
+    .end stack
+    invokevirtual java/lang/Character/charValue ()C
+    bipush 69
+    if_icmpne L_00a5
 L_007f:
-   .line 131
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   pop
+    .line 132
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    pop
 L_0086:
-   .line 132
-   aload 0
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readSign ()I
-   aload 0
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInt ()Lkotlin/Pair;
-   invokevirtual kotlin/Pair/getFirst ()Ljava/lang/Object;
-   checkcast java/lang/Number
-   invokevirtual java/lang/Number/longValue ()J
-   l2i
-   imul
-   istore 5
+    .line 133
+    aload 0
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readSign ()I
+    aload 0
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInt ()Lkotlin/Pair;
+    invokevirtual kotlin/Pair/getFirst ()Ljava/lang/Object;
+    checkcast java/lang/Number
+    invokevirtual java/lang/Number/longValue ()J
+    l2i
+    imul
+    istore 5
 L_0092:
-   .line 133
-   .var 5 is sign I from L_0092 to L_00a5
-   dload 3
-   ldc 10.0
-   dstore 6
-   dstore 11
-   iconst_0
-   istore 8
-   dload 6
-   iload 5
-   i2d
-   invokestatic java/lang/Math/pow (DD)D
-   dstore 13
-   dload 11
-   dload 13
+    .line 134
+    .var 5 is sign I from L_0092 to L_00a5
+    dload 3
+    ldc 10.0
+    dstore 6
+    dstore 11
+    iconst_0
+    istore 8
+    dload 6
+    iload 5
+    i2d
+    invokestatic java/lang/Math/pow (DD)D
+    dstore 13
+    dload 11
+    dload 13
 L_00a1:
-   .line 133
-   dmul
-   dstore 3
+    .line 134
+    dmul
+    dstore 3
 L_00a5:
-   .line 135
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   bipush 102
-   if_icmpne L_00b2
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   bipush 70
-   if_icmpeq L_00b6
+    .line 136
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    bipush 102
+    if_icmpne L_00b2
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    bipush 70
+    if_icmpeq L_00b6
 L_00b2:
-   .stack use locals
-   .end stack
-   aconst_null
-   areturn
+    .stack use locals
+    .end stack
+    aconst_null
+    areturn
 L_00b6:
-   .line 136
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
-   ifne L_00c0
-   aconst_null
-   areturn
+    .line 137
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
+    ifne L_00c0
+    aconst_null
+    areturn
 L_00c0:
-   .line 137
-   .stack use locals
-   .end stack
-   iload 2
-   i2f
-   dload 3
-   d2f
-   fmul
-   invokestatic java/lang/Float/valueOf (F)Ljava/lang/Float;
-   areturn
+    .line 138
+    .stack use locals
+    .end stack
+    iload 2
+    i2f
+    dload 3
+    d2f
+    fmul
+    invokestatic java/lang/Float/valueOf (F)Ljava/lang/Float;
+    areturn
 L_00ca:
 .end method
 
 .method public readAChar ()Lkotlin/Pair;
-   .signature "()Lkotlin/Pair<Ljava/lang/String;Ljava/lang/Character;>;"
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .limit stack 4
-   .limit local 7
+    .signature "()Lkotlin/Pair<Ljava/lang/String;Ljava/lang/Character;>;"
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .limit stack 4
+    .limit local 7
 L_0000:
-   .line 141
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_00b7
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   istore 1
+    .line 142
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_00b7
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    istore 1
 L_0006:
-   .line 142
-   .var 1 is char C from L_0006 to L_00b7
-   iload 1
-   bipush 92
-   if_icmpne L_00ad
+    .line 143
+    .var 1 is char C from L_0006 to L_00b7
+    iload 1
+    bipush 92
+    if_icmpne L_00ad
 L_000b:
-   .line 143
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   istore 2
+    .line 144
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    istore 2
 L_0011:
-   .line 144
-   .var 2 is escaped C from L_0011 to L_00ad
-   iload 2
-   lookupswitch
-      34: L_003d
-      36: L_004d
-      39: L_0035
-      92: L_0045
-      98: L_001d
-      110: L_0025
-      114: L_002d
-      116: L_0015
-      117: L_0055
-      default: L_009e
+    .line 145
+    .var 2 is escaped C from L_0011 to L_00ad
+    iload 2
+    lookupswitch
+        34: L_003d
+        36: L_004d
+        39: L_0035
+        92: L_0045
+        98: L_001d
+        110: L_0025
+        114: L_002d
+        116: L_0015
+        117: L_0055
+        default: L_009e
 L_0015:
-   .line 145
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Integer
-      locals Integer
-   .end stack
-   ldc "\\t"
-   bipush 9
-   invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
-   invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-   areturn
+    .line 146
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Integer
+        locals Integer
+    .end stack
+    ldc "\\t"
+    bipush 9
+    invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
+    invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    areturn
 L_001d:
-   .line 146
-   .stack use locals
-   .end stack
-   ldc "\\b"
-   bipush 8
-   invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
-   invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-   areturn
+    .line 147
+    .stack use locals
+    .end stack
+    ldc "\\b"
+    bipush 8
+    invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
+    invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    areturn
 L_0025:
-   .line 147
-   .stack use locals
-   .end stack
-   ldc "\\n"
-   bipush 10
-   invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
-   invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-   areturn
+    .line 148
+    .stack use locals
+    .end stack
+    ldc "\\n"
+    bipush 10
+    invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
+    invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    areturn
 L_002d:
-   .line 148
-   .stack use locals
-   .end stack
-   ldc "\\r"
-   bipush 13
-   invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
-   invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-   areturn
+    .line 149
+    .stack use locals
+    .end stack
+    ldc "\\r"
+    bipush 13
+    invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
+    invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    areturn
 L_0035:
-   .line 149
-   .stack use locals
-   .end stack
-   ldc "\\\'"
-   bipush 39
-   invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
-   invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-   areturn
+    .line 150
+    .stack use locals
+    .end stack
+    ldc "\\\'"
+    bipush 39
+    invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
+    invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    areturn
 L_003d:
-   .line 150
-   .stack use locals
-   .end stack
-   ldc "\\\""
-   bipush 34
-   invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
-   invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-   areturn
+    .line 151
+    .stack use locals
+    .end stack
+    ldc "\\\""
+    bipush 34
+    invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
+    invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    areturn
 L_0045:
-   .line 151
-   .stack use locals
-   .end stack
-   ldc "\\\\"
-   bipush 92
-   invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
-   invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-   areturn
+    .line 152
+    .stack use locals
+    .end stack
+    ldc "\\\\"
+    bipush 92
+    invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
+    invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    areturn
 L_004d:
-   .line 152
-   .stack use locals
-   .end stack
-   ldc "\\\$"
-   bipush 36
-   invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
-   invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-   areturn
+    .line 153
+    .stack use locals
+    .end stack
+    ldc "\\\$"
+    bipush 36
+    invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
+    invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    areturn
 L_0055:
-   .line 154
-   .stack use locals
-   .end stack
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   astore 3
+    .line 155
+    .stack use locals
+    .end stack
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    astore 3
 L_006d:
-   .line 155
-   .var 3 is chars Ljava/lang/String; from L_006d to L_009e
-   aload 3
-   bipush 16
-   invokestatic kotlin/text/StringsKt/toIntOrNull (Ljava/lang/String;I)Ljava/lang/Integer;
-   dup
-   ifnull L_0076
-   invokevirtual java/lang/Integer/intValue ()I
-   goto L_008b
+    .line 156
+    .var 3 is chars Ljava/lang/String; from L_006d to L_009e
+    aload 3
+    bipush 16
+    invokestatic kotlin/text/StringsKt/toIntOrNull (Ljava/lang/String;I)Ljava/lang/Integer;
+    dup
+    ifnull L_0076
+    invokevirtual java/lang/Integer/intValue ()I
+    goto L_008b
 L_0076:
-   .line 155
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Integer
-      locals Integer
-      locals Object java/lang/String
-      stacks Object java/lang/Integer
-   .end stack
-   pop
-   ldc "error"
-   astore 5
-   iconst_0
-   istore 6
-   new kotlin/NotImplementedError
-   dup
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   ldc "An operation is not implemented: "
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 5
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   invokespecial kotlin/NotImplementedError/<init> (Ljava/lang/String;)V
-   checkcast java/lang/Throwable
-   athrow
+    .line 156
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Integer
+        locals Integer
+        locals Object java/lang/String
+        stacks Object java/lang/Integer
+    .end stack
+    pop
+    ldc "error"
+    astore 5
+    iconst_0
+    istore 6
+    new kotlin/NotImplementedError
+    dup
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    ldc "An operation is not implemented: "
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 5
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    invokespecial kotlin/NotImplementedError/<init> (Ljava/lang/String;)V
+    checkcast java/lang/Throwable
+    athrow
 L_008b:
-   .line 155
-   .stack use locals
-      stacks Integer
-   .end stack
-   istore 4
+    .line 156
+    .stack use locals
+        stacks Integer
+    .end stack
+    istore 4
 L_008f:
-   .line 156
-   .var 4 is c I from L_008f to L_009e
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   bipush 92
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   aload 3
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   iload 4
-   i2c
-   invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
-   invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-   areturn
+    .line 157
+    .var 4 is c I from L_008f to L_009e
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    bipush 92
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    aload 3
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    iload 4
+    i2c
+    invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
+    invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    areturn
 L_009e:
-   .line 160
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Integer
-      locals Integer
-   .end stack
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   iload 1
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   iload 2
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   iload 2
-   invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
-   invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-   areturn
+    .line 161
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Integer
+        locals Integer
+    .end stack
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    iload 1
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    iload 2
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    iload 2
+    invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
+    invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    areturn
 L_00ad:
-   .line 164
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Integer
-   .end stack
-   iload 1
-   invokestatic java/lang/String/valueOf (C)Ljava/lang/String;
-   iload 1
-   invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
-   invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-   areturn
+    .line 165
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Integer
+    .end stack
+    iload 1
+    invokestatic java/lang/String/valueOf (C)Ljava/lang/String;
+    iload 1
+    invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
+    invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    areturn
 L_00b7:
 .end method
 
 .method public readStringBody ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .limit stack 2
-   .limit local 5
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .limit stack 2
+    .limit local 5
 L_0000:
-   .line 168
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0044
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   bipush 34
-   if_icmpeq L_0009
-   aconst_null
-   areturn
+    .line 169
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0044
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    bipush 34
+    if_icmpeq L_0009
+    aconst_null
+    areturn
 L_0009:
-   .line 169
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-   .end stack
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   astore 1
+    .line 170
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+    .end stack
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    astore 1
 L_0010:
-   .line 170
-   .var 1 is str Ljava/lang/StringBuilder; from L_0010 to L_0044
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object java/lang/StringBuilder
-   .end stack
-   nop
+    .line 171
+    .var 1 is str Ljava/lang/StringBuilder; from L_0010 to L_0044
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object java/lang/StringBuilder
+    .end stack
+    nop
 L_0014:
-   .line 171
-   aload 0
-   invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readAChar ()Lkotlin/Pair;
-   dup
-   ifnull L_001b
-   goto L_0021
+    .line 172
+    aload 0
+    invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readAChar ()Lkotlin/Pair;
+    dup
+    ifnull L_001b
+    goto L_0021
 L_001b:
-   .line 171
-   .stack use locals
-      stacks Object kotlin/Pair
-   .end stack
-   pop
-   aconst_null
-   areturn
+    .line 172
+    .stack use locals
+        stacks Object kotlin/Pair
+    .end stack
+    pop
+    aconst_null
+    areturn
 L_0021:
-   .stack use locals
-      stacks Object kotlin/Pair
-   .end stack
-   astore 4
-   aload 4
-   invokevirtual kotlin/Pair/component1 ()Ljava/lang/Object;
-   checkcast java/lang/String
-   astore 2
-   aload 4
-   invokevirtual kotlin/Pair/component2 ()Ljava/lang/Object;
-   checkcast java/lang/Character
-   invokevirtual java/lang/Character/charValue ()C
-   istore 3
+    .stack use locals
+        stacks Object kotlin/Pair
+    .end stack
+    astore 4
+    aload 4
+    invokevirtual kotlin/Pair/component1 ()Ljava/lang/Object;
+    checkcast java/lang/String
+    astore 2
+    aload 4
+    invokevirtual kotlin/Pair/component2 ()Ljava/lang/Object;
+    checkcast java/lang/Character
+    invokevirtual java/lang/Character/charValue ()C
+    istore 3
 L_002d:
-   .line 172
-   .var 3 is char C from L_002d to L_003b
-   .var 2 is read Ljava/lang/String; from L_002d to L_003b
-   aload 2
-   ldc "\""
-   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
-   ifeq L_0034
-   goto L_003e
+    .line 173
+    .var 3 is char C from L_002d to L_003b
+    .var 2 is read Ljava/lang/String; from L_002d to L_003b
+    aload 2
+    ldc "\""
+    invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+    ifeq L_0034
+    goto L_003e
 L_0034:
-   .line 173
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object java/lang/StringBuilder
-      locals Object java/lang/String
-      locals Integer
-      locals Object kotlin/Pair
-   .end stack
-   aload 1
-   iload 3
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 174
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object java/lang/StringBuilder
+        locals Object java/lang/String
+        locals Integer
+        locals Object kotlin/Pair
+    .end stack
+    aload 1
+    iload 3
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_003b:
-   .line 170
-   goto L_0010
+    .line 171
+    goto L_0010
 L_003e:
-   .line 175
-   .stack use locals
-   .end stack
-   aload 1
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   areturn
+    .line 176
+    .stack use locals
+    .end stack
+    aload 1
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    areturn
 L_0044:
 .end method
 
 .method public visitString (Lcom/anatawa12/jasm/parser/TokenType$String;)Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 3
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 3
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0023
-   .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$String; from L_0000 to L_0023
-   aload 1
-   ldc "tokenType"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0023
+    .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$String; from L_0000 to L_0023
+    aload 1
+    ldc "tokenType"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 179
-   aload 0
-   invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readStringBody ()Ljava/lang/String;
-   dup
-   ifnull L_000b
-   goto L_0011
+    .line 180
+    aload 0
+    invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readStringBody ()Ljava/lang/String;
+    dup
+    ifnull L_000b
+    goto L_0011
 L_000b:
-   .line 179
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$String
-      stacks Object java/lang/String
-   .end stack
-   pop
-   aconst_null
-   areturn
+    .line 180
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$String
+        stacks Object java/lang/String
+    .end stack
+    pop
+    aconst_null
+    areturn
 L_0011:
-   .stack use locals
-      stacks Object java/lang/String
-   .end stack
-   astore 2
+    .stack use locals
+        stacks Object java/lang/String
+    .end stack
+    astore 2
 L_0014:
-   .line 180
-   .var 2 is result Ljava/lang/String; from L_0014 to L_0023
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
-   invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
-   ifne L_001e
-   aconst_null
-   areturn
+    .line 181
+    .var 2 is result Ljava/lang/String; from L_0014 to L_0023
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
+    invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
+    ifne L_001e
+    aconst_null
+    areturn
 L_001e:
-   .line 181
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$String
-      locals Object java/lang/String
-   .end stack
-   aload 2
-   areturn
+    .line 182
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$String
+        locals Object java/lang/String
+    .end stack
+    aload 2
+    areturn
 L_0023:
 .end method
 
 .method public visitChar (Lcom/anatawa12/jasm/parser/TokenType$Char;)Lkotlin/Unit;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 2
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0013
-   .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$Char; from L_0000 to L_0013
-   aload 1
-   ldc "tokenType"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0013
+    .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$Char; from L_0000 to L_0013
+    aload 1
+    ldc "tokenType"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 185
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   aload 1
-   invokevirtual com/anatawa12/jasm/parser/TokenType$Char/getValue ()C
-   if_icmpeq L_000e
-   aconst_null
-   areturn
+    .line 186
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    aload 1
+    invokevirtual com/anatawa12/jasm/parser/TokenType$Char/getValue ()C
+    if_icmpeq L_000e
+    aconst_null
+    areturn
 L_000e:
-   .line 186
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$Char
-   .end stack
-   getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
-   areturn
+    .line 187
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$Char
+    .end stack
+    getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
+    areturn
 L_0013:
 .end method
 
 .method public readInternalNameBody (Z)Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .limit stack 3
-   .limit local 10
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .limit stack 3
+    .limit local 10
 L_0000:
-   .line 189
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_007c
-   .var 1 is allowLastSlash Z from L_0000 to L_007c
-   iconst_0
-   istore 2
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   astore 3
-   iconst_0
-   istore 4
-   iconst_0
-   istore 5
-   aload 3
-   astore 6
+    .line 190
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_007c
+    .var 1 is allowLastSlash Z from L_0000 to L_007c
+    iconst_0
+    istore 2
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    astore 3
+    iconst_0
+    istore 4
+    iconst_0
+    istore 5
+    aload 3
+    astore 6
 L_000e:
-   .var 6 is $this$buildString Ljava/lang/StringBuilder; from L_000e to L_0070
-   iconst_0
-   istore 7
+    .var 6 is $this$buildString Ljava/lang/StringBuilder; from L_000e to L_0070
+    iconst_0
+    istore 7
 L_0011:
-   .line 190
-   .var 7 is "\$i\$a\$-buildString-Lexer\$TokenVisitor\$readInternalNameBody\$1" I from L_0011 to L_0070
-   iconst_1
-   istore 8
+    .line 191
+    .var 7 is "\$i\$a\$-buildString-Lexer\$TokenVisitor\$readInternalNameBody\$1" I from L_0011 to L_0070
+    iconst_1
+    istore 8
 L_0015:
-   .line 191
-   .var 8 is afterSlash Z from L_0015 to L_006c
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Integer
-      locals Integer
-      locals Object java/lang/StringBuilder
-      locals Integer
-      locals Integer
-      locals Object java/lang/StringBuilder
-      locals Integer
-      locals Integer
-   .end stack
-   nop
+    .line 192
+    .var 8 is afterSlash Z from L_0015 to L_006c
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Integer
+        locals Integer
+        locals Object java/lang/StringBuilder
+        locals Integer
+        locals Integer
+        locals Object java/lang/StringBuilder
+        locals Integer
+        locals Integer
+    .end stack
+    nop
 L_0019:
-   .line 192
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   astore 9
+    .line 193
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    astore 9
 L_001f:
-   .line 193
-   .var 9 is cur Ljava/lang/Character; from L_001f to L_005f
-   aload 9
-   invokestatic com/anatawa12/jasm/parser/UtilsKt/isWardChar (Ljava/lang/Character;)Z
-   ifeq L_0035
+    .line 194
+    .var 9 is cur Ljava/lang/Character; from L_001f to L_005f
+    aload 9
+    invokestatic com/anatawa12/jasm/parser/UtilsKt/isWardChar (Ljava/lang/Character;)Z
+    ifeq L_0035
 L_0024:
-   .line 194
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   pop
+    .line 195
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    pop
 L_002a:
-   .line 195
-   aload 6
-   aload 9
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
-   pop
+    .line 196
+    aload 6
+    aload 9
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    pop
 L_0030:
-   .line 196
-   iconst_0
-   istore 8
-   goto L_005f
+    .line 197
+    iconst_0
+    istore 8
+    goto L_005f
 L_0035:
-   .line 197
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Integer
-      locals Integer
-      locals Object java/lang/StringBuilder
-      locals Integer
-      locals Integer
-      locals Object java/lang/StringBuilder
-      locals Integer
-      locals Integer
-      locals Object java/lang/Character
-   .end stack
-   aload 9
-   dup
-   ifnonnull L_003d
-   pop
-   goto L_005b
+    .line 198
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Integer
+        locals Integer
+        locals Object java/lang/StringBuilder
+        locals Integer
+        locals Integer
+        locals Object java/lang/StringBuilder
+        locals Integer
+        locals Integer
+        locals Object java/lang/Character
+    .end stack
+    aload 9
+    dup
+    ifnonnull L_003d
+    pop
+    goto L_005b
 L_003d:
-   .stack use locals
-      stacks Object java/lang/Character
-   .end stack
-   invokevirtual java/lang/Character/charValue ()C
-   bipush 47
-   if_icmpne L_005b
+    .stack use locals
+        stacks Object java/lang/Character
+    .end stack
+    invokevirtual java/lang/Character/charValue ()C
+    bipush 47
+    if_icmpne L_005b
 L_0042:
-   .line 198
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   pop
+    .line 199
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    pop
 L_0048:
-   .line 199
-   iload 8
-   ifeq L_004e
-   aconst_null
-   areturn
+    .line 200
+    iload 8
+    ifeq L_004e
+    aconst_null
+    areturn
 L_004e:
-   .line 200
-   .stack use locals
-   .end stack
-   aload 6
-   aload 9
-   invokevirtual java/lang/Character/charValue ()C
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 201
+    .stack use locals
+    .end stack
+    aload 6
+    aload 9
+    invokevirtual java/lang/Character/charValue ()C
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_0056:
-   .line 201
-   iconst_1
-   istore 8
-   goto L_005f
+    .line 202
+    iconst_1
+    istore 8
+    goto L_005f
 L_005b:
-   .line 203
-   .stack use locals
-   .end stack
-   goto L_0063
+    .line 204
+    .stack use locals
+    .end stack
+    goto L_0063
 L_005f:
-   .line 191
-   .stack use locals
-   .end stack
-   goto L_0015
+    .line 192
+    .stack use locals
+    .end stack
+    goto L_0015
 L_0063:
-   .line 206
-   .stack use locals
-   .end stack
-   iload 8
-   ifeq L_006c
-   iload 1
-   ifne L_006c
-   aconst_null
-   areturn
+    .line 207
+    .stack use locals
+    .end stack
+    iload 8
+    ifeq L_006c
+    iload 1
+    ifne L_006c
+    aconst_null
+    areturn
 L_006c:
-   .line 207
-   .stack use locals
-   .end stack
-   nop
+    .line 208
+    .stack use locals
+    .end stack
+    nop
 L_0070:
-   nop
+    nop
 L_0072:
-   .line 189
-   aload 3
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   dup
-   ldc "StringBuilder().apply(builderAction).toString()"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .line 190
+    aload 3
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    dup
+    ldc "StringBuilder().apply(builderAction).toString()"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0079:
-   .line 207
-   areturn
+    .line 208
+    areturn
 L_007c:
 .end method
 
 .method public readInternalNameBody$default (Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor;ZILjava/lang/Object;)Ljava/lang/String;
-   .limit stack 2
-   .limit local 4
-   iload 2
-   iconst_1
-   iand
-   ifeq L_0008
+    .limit stack 2
+    .limit local 4
+    iload 2
+    iconst_1
+    iand
+    ifeq L_0008
 L_0004:
-   .line 189
-   iconst_0
-   istore 1
+    .line 190
+    iconst_0
+    istore 1
 L_0008:
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Integer
-      locals Integer
-      locals Object java/lang/Object
-   .end stack
-   aload 0
-   iload 1
-   invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInternalNameBody (Z)Ljava/lang/String;
-   areturn
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Integer
+        locals Integer
+        locals Object java/lang/Object
+    .end stack
+    aload 0
+    iload 1
+    invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInternalNameBody (Z)Ljava/lang/String;
+    areturn
 .end method
 
 .method public readNameBody ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .limit stack 3
-   .limit local 9
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .limit stack 3
+    .limit local 9
 L_0000:
-   .line 209
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_005b
-   iconst_0
-   istore 1
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   astore 2
-   iconst_0
-   istore 3
-   iconst_0
-   istore 4
-   aload 2
-   astore 5
+    .line 210
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_005b
+    iconst_0
+    istore 1
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    astore 2
+    iconst_0
+    istore 3
+    iconst_0
+    istore 4
+    aload 2
+    astore 5
 L_000e:
-   .var 5 is $this$buildString Ljava/lang/StringBuilder; from L_000e to L_004d
-   iconst_0
-   istore 6
+    .var 5 is $this$buildString Ljava/lang/StringBuilder; from L_000e to L_004d
+    iconst_0
+    istore 6
 L_0011:
-   .line 210
-   .var 6 is "\$i\$a\$-buildString-Lexer\$TokenVisitor\$readNameBody\$1" I from L_0011 to L_004d
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Integer
-      locals Object java/lang/StringBuilder
-      locals Integer
-      locals Integer
-      locals Object java/lang/StringBuilder
-      locals Integer
-   .end stack
-   nop
+    .line 211
+    .var 6 is "\$i\$a\$-buildString-Lexer\$TokenVisitor\$readNameBody\$1" I from L_0011 to L_004d
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Integer
+        locals Object java/lang/StringBuilder
+        locals Integer
+        locals Integer
+        locals Object java/lang/StringBuilder
+        locals Integer
+    .end stack
+    nop
 L_0015:
-   .line 211
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   istore 7
+    .line 212
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    istore 7
 L_001b:
-   .line 212
-   .var 7 is cur C from L_001b to L_0032
-   iload 7
-   invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
-   invokestatic com/anatawa12/jasm/parser/UtilsKt/isWardChar (Ljava/lang/Character;)Z
-   ifeq L_002e
+    .line 213
+    .var 7 is cur C from L_001b to L_0032
+    iload 7
+    invokestatic java/lang/Character/valueOf (C)Ljava/lang/Character;
+    invokestatic com/anatawa12/jasm/parser/UtilsKt/isWardChar (Ljava/lang/Character;)Z
+    ifeq L_002e
 L_0021:
-   .line 213
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   pop
+    .line 214
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    pop
 L_0027:
-   .line 214
-   aload 5
-   iload 7
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_0032
+    .line 215
+    aload 5
+    iload 7
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_0032
 L_002e:
-   .line 216
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Integer
-      locals Object java/lang/StringBuilder
-      locals Integer
-      locals Integer
-      locals Object java/lang/StringBuilder
-      locals Integer
-      locals Integer
-   .end stack
-   goto L_0036
+    .line 217
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Integer
+        locals Object java/lang/StringBuilder
+        locals Integer
+        locals Integer
+        locals Object java/lang/StringBuilder
+        locals Integer
+        locals Integer
+    .end stack
+    goto L_0036
 L_0032:
-   .line 210
-   .stack use locals
-   .end stack
-   goto L_0011
+    .line 211
+    .stack use locals
+    .end stack
+    goto L_0011
 L_0036:
-   .line 219
-   .stack use locals
-   .end stack
-   aload 5
-   checkcast java/lang/CharSequence
-   astore 7
-   iconst_0
-   istore 8
-   aload 7
-   invokeinterface java/lang/CharSequence/length ()I
-   ifne L_0043
-   iconst_1
-   goto L_0046
+    .line 220
+    .stack use locals
+    .end stack
+    aload 5
+    checkcast java/lang/CharSequence
+    astore 7
+    iconst_0
+    istore 8
+    aload 7
+    invokeinterface java/lang/CharSequence/length ()I
+    ifne L_0043
+    iconst_1
+    goto L_0046
 L_0043:
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Integer
-      locals Object java/lang/StringBuilder
-      locals Integer
-      locals Integer
-      locals Object java/lang/StringBuilder
-      locals Integer
-      locals Object java/lang/CharSequence
-      locals Integer
-   .end stack
-   iconst_0
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Integer
+        locals Object java/lang/StringBuilder
+        locals Integer
+        locals Integer
+        locals Object java/lang/StringBuilder
+        locals Integer
+        locals Object java/lang/CharSequence
+        locals Integer
+    .end stack
+    iconst_0
 L_0046:
-   .stack use locals
-      stacks Integer
-   .end stack
-   ifeq L_004d
+    .stack use locals
+        stacks Integer
+    .end stack
+    ifeq L_004d
 L_0049:
-   .line 219
-   aconst_null
-   areturn
+    .line 220
+    aconst_null
+    areturn
 L_004d:
-   .line 220
-   .stack use locals
-   .end stack
-   nop
+    .line 221
+    .stack use locals
+    .end stack
+    nop
 L_0051:
-   .line 209
-   aload 2
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   dup
-   ldc "StringBuilder().apply(builderAction).toString()"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .line 210
+    aload 2
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    dup
+    ldc "StringBuilder().apply(builderAction).toString()"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0058:
-   .line 220
-   areturn
+    .line 221
+    areturn
 L_005b:
 .end method
 
 .method public visitInternalName (Lcom/anatawa12/jasm/parser/TokenType$InternalName;)Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 4
-   .limit local 3
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 4
+    .limit local 3
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_003b
-   .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$InternalName; from L_0000 to L_003b
-   aload 1
-   ldc "tokenType"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_003b
+    .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$InternalName; from L_0000 to L_003b
+    aload 1
+    ldc "tokenType"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 223
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   bipush 34
-   if_icmpne L_0018
+    .line 224
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    bipush 34
+    if_icmpne L_0018
 L_000b:
-   .line 224
-   aload 0
-   invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readStringBody ()Ljava/lang/String;
-   dup
-   ifnull L_0012
-   goto L_0029
+    .line 225
+    aload 0
+    invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readStringBody ()Ljava/lang/String;
+    dup
+    ifnull L_0012
+    goto L_0029
 L_0012:
-   .line 224
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$InternalName
-      stacks Object java/lang/String
-   .end stack
-   pop
-   aconst_null
-   areturn
+    .line 225
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$InternalName
+        stacks Object java/lang/String
+    .end stack
+    pop
+    aconst_null
+    areturn
 L_0018:
-   .line 226
-   .stack use locals
-   .end stack
-   aload 0
-   iconst_0
-   iconst_1
-   aconst_null
-   invokestatic com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInternalNameBody$default (Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor;ZILjava/lang/Object;)Ljava/lang/String;
-   dup
-   ifnull L_0023
-   goto L_0029
+    .line 227
+    .stack use locals
+    .end stack
+    aload 0
+    iconst_0
+    iconst_1
+    aconst_null
+    invokestatic com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInternalNameBody$default (Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor;ZILjava/lang/Object;)Ljava/lang/String;
+    dup
+    ifnull L_0023
+    goto L_0029
 L_0023:
-   .line 226
-   .stack use locals
-      stacks Object java/lang/String
-   .end stack
-   pop
-   aconst_null
-   areturn
+    .line 227
+    .stack use locals
+        stacks Object java/lang/String
+    .end stack
+    pop
+    aconst_null
+    areturn
 L_0029:
-   .line 223
-   .stack use locals
-      stacks Object java/lang/String
-   .end stack
-   astore 2
+    .line 224
+    .stack use locals
+        stacks Object java/lang/String
+    .end stack
+    astore 2
 L_002d:
-   .line 228
-   .var 2 is internalName Ljava/lang/String; from L_002d to L_003b
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
-   ifne L_0036
-   aconst_null
-   areturn
+    .line 229
+    .var 2 is internalName Ljava/lang/String; from L_002d to L_003b
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
+    ifne L_0036
+    aconst_null
+    areturn
 L_0036:
-   .line 229
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$InternalName
-      locals Object java/lang/String
-   .end stack
-   aload 2
-   areturn
+    .line 230
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$InternalName
+        locals Object java/lang/String
+    .end stack
+    aload 2
+    areturn
 L_003b:
 .end method
 
 .method public visitOwnerAndName (Lcom/anatawa12/jasm/parser/TokenType$OwnerAndName;)Lkotlin/Pair;
-   .signature "(Lcom/anatawa12/jasm/parser/TokenType\$OwnerAndName;)Lkotlin/Pair<Ljava/lang/String;Ljava/lang/String;>;"
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 6
-   .limit local 9
+    .signature "(Lcom/anatawa12/jasm/parser/TokenType\$OwnerAndName;)Lkotlin/Pair<Ljava/lang/String;Ljava/lang/String;>;"
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 6
+    .limit local 9
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_00d9
-   .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$OwnerAndName; from L_0000 to L_00d9
-   aload 1
-   ldc "tokenType"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_00d9
+    .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$OwnerAndName; from L_0000 to L_00d9
+    aload 1
+    ldc "tokenType"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 233
-   aconst_null
-   astore 2
+    .line 234
+    aconst_null
+    astore 2
 L_0008:
-   .line 234
-   .var 2 is owner Ljava/lang/String; from L_0008 to L_00d9
-   aconst_null
-   astore 3
+    .line 235
+    .var 2 is owner Ljava/lang/String; from L_0008 to L_00d9
+    aconst_null
+    astore 3
 L_000c:
-   .line 235
-   .var 3 is name Ljava/lang/String; from L_000c to L_00d9
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   bipush 34
-   if_icmpne L_004a
+    .line 236
+    .var 3 is name Ljava/lang/String; from L_000c to L_00d9
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    bipush 34
+    if_icmpne L_004a
 L_0013:
-   .line 238
-   aload 0
-   invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readStringBody ()Ljava/lang/String;
-   dup
-   ifnull L_001a
-   goto L_0020
+    .line 239
+    aload 0
+    invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readStringBody ()Ljava/lang/String;
+    dup
+    ifnull L_001a
+    goto L_0020
 L_001a:
-   .line 238
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$OwnerAndName
-      locals Null
-      locals Null
-      stacks Object java/lang/String
-   .end stack
-   pop
-   aconst_null
-   areturn
+    .line 239
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$OwnerAndName
+        locals Null
+        locals Null
+        stacks Object java/lang/String
+    .end stack
+    pop
+    aconst_null
+    areturn
 L_0020:
-   .stack use locals
-      stacks Object java/lang/String
-   .end stack
-   astore 2
+    .stack use locals
+        stacks Object java/lang/String
+    .end stack
+    astore 2
 L_0023:
-   .line 239
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   bipush 47
-   if_icmpeq L_002c
-   aconst_null
-   areturn
+    .line 240
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    bipush 47
+    if_icmpeq L_002c
+    aconst_null
+    areturn
 L_002c:
-   .line 240
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$OwnerAndName
-      locals Object java/lang/String
-      locals Null
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   bipush 34
-   if_icmpne L_0037
-   aload 0
-   invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readStringBody ()Ljava/lang/String;
-   goto L_003b
+    .line 241
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$OwnerAndName
+        locals Object java/lang/String
+        locals Null
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    bipush 34
+    if_icmpne L_0037
+    aload 0
+    invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readStringBody ()Ljava/lang/String;
+    goto L_003b
 L_0037:
-   .stack use locals
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readNameBody ()Ljava/lang/String;
+    .stack use locals
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readNameBody ()Ljava/lang/String;
 L_003b:
-   .stack use locals
-      stacks Object java/lang/String
-   .end stack
-   dup
-   ifnull L_0040
-   goto L_0046
+    .stack use locals
+        stacks Object java/lang/String
+    .end stack
+    dup
+    ifnull L_0040
+    goto L_0046
 L_0040:
-   .line 240
-   .stack use locals
-      stacks Object java/lang/String
-   .end stack
-   pop
-   aconst_null
-   areturn
+    .line 241
+    .stack use locals
+        stacks Object java/lang/String
+    .end stack
+    pop
+    aconst_null
+    areturn
 L_0046:
-   .stack use locals
-      stacks Object java/lang/String
-   .end stack
-   astore 3
-   goto L_00c6
+    .stack use locals
+        stacks Object java/lang/String
+    .end stack
+    astore 3
+    goto L_00c6
 L_004a:
-   .line 244
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$OwnerAndName
-      locals Null
-      locals Null
-   .end stack
-   aload 0
-   iconst_1
-   invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInternalNameBody (Z)Ljava/lang/String;
-   dup
-   ifnull L_0053
-   goto L_0059
+    .line 245
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$OwnerAndName
+        locals Null
+        locals Null
+    .end stack
+    aload 0
+    iconst_1
+    invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readInternalNameBody (Z)Ljava/lang/String;
+    dup
+    ifnull L_0053
+    goto L_0059
 L_0053:
-   .line 244
-   .stack use locals
-      stacks Object java/lang/String
-   .end stack
-   pop
-   aconst_null
-   areturn
+    .line 245
+    .stack use locals
+        stacks Object java/lang/String
+    .end stack
+    pop
+    aconst_null
+    areturn
 L_0059:
-   .stack use locals
-      stacks Object java/lang/String
-   .end stack
-   astore 4
+    .stack use locals
+        stacks Object java/lang/String
+    .end stack
+    astore 4
 L_005c:
-   .line 245
-   .var 4 is internalNameAndName Ljava/lang/String; from L_005c to L_00c6
-   aload 4
-   checkcast java/lang/CharSequence
-   invokestatic kotlin/text/StringsKt/last (Ljava/lang/CharSequence;)C
-   bipush 47
-   if_icmpne L_007a
+    .line 246
+    .var 4 is internalNameAndName Ljava/lang/String; from L_005c to L_00c6
+    aload 4
+    checkcast java/lang/CharSequence
+    invokestatic kotlin/text/StringsKt/last (Ljava/lang/CharSequence;)C
+    bipush 47
+    if_icmpne L_007a
 L_0063:
-   .line 247
-   aload 4
-   iconst_1
-   invokestatic kotlin/text/StringsKt/dropLast (Ljava/lang/String;I)Ljava/lang/String;
-   astore 2
+    .line 248
+    aload 4
+    iconst_1
+    invokestatic kotlin/text/StringsKt/dropLast (Ljava/lang/String;I)Ljava/lang/String;
+    astore 2
 L_0069:
-   .line 248
-   aload 0
-   invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readStringBody ()Ljava/lang/String;
-   dup
-   ifnull L_0070
-   goto L_0076
+    .line 249
+    aload 0
+    invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readStringBody ()Ljava/lang/String;
+    dup
+    ifnull L_0070
+    goto L_0076
 L_0070:
-   .line 248
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$OwnerAndName
-      locals Object java/lang/String
-      locals Null
-      locals Object java/lang/String
-      stacks Object java/lang/String
-   .end stack
-   pop
-   aconst_null
-   areturn
+    .line 249
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$OwnerAndName
+        locals Object java/lang/String
+        locals Null
+        locals Object java/lang/String
+        stacks Object java/lang/String
+    .end stack
+    pop
+    aconst_null
+    areturn
 L_0076:
-   .stack use locals
-      stacks Object java/lang/String
-   .end stack
-   astore 3
-   goto L_00c6
+    .stack use locals
+        stacks Object java/lang/String
+    .end stack
+    astore 3
+    goto L_00c6
 L_007a:
-   .line 251
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$OwnerAndName
-      locals Null
-      locals Null
-      locals Object java/lang/String
-   .end stack
-   aload 4
-   checkcast java/lang/CharSequence
-   bipush 47
-   iconst_0
-   iconst_2
-   aconst_null
-   invokestatic kotlin/text/StringsKt/contains$default (Ljava/lang/CharSequence;CZILjava/lang/Object;)Z
-   ifne L_0087
-   aconst_null
-   areturn
+    .line 252
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$OwnerAndName
+        locals Null
+        locals Null
+        locals Object java/lang/String
+    .end stack
+    aload 4
+    checkcast java/lang/CharSequence
+    bipush 47
+    iconst_0
+    iconst_2
+    aconst_null
+    invokestatic kotlin/text/StringsKt/contains$default (Ljava/lang/CharSequence;CZILjava/lang/Object;)Z
+    ifne L_0087
+    aconst_null
+    areturn
 L_0087:
-   .line 252
-   .stack use locals
-   .end stack
-   aload 4
-   checkcast java/lang/CharSequence
-   bipush 47
-   iconst_0
-   iconst_0
-   bipush 6
-   aconst_null
-   invokestatic kotlin/text/StringsKt/lastIndexOf$default (Ljava/lang/CharSequence;CIZILjava/lang/Object;)I
-   istore 5
+    .line 253
+    .stack use locals
+    .end stack
+    aload 4
+    checkcast java/lang/CharSequence
+    bipush 47
+    iconst_0
+    iconst_0
+    bipush 6
+    aconst_null
+    invokestatic kotlin/text/StringsKt/lastIndexOf$default (Ljava/lang/CharSequence;CIZILjava/lang/Object;)I
+    istore 5
 L_0093:
-   .line 253
-   .var 5 is last I from L_0093 to L_00c6
-   aload 4
-   astore 6
-   iconst_0
-   istore 7
-   iconst_0
-   istore 8
-   aload 6
-   dup
-   ifnonnull L_00a3
-   new kotlin/TypeCastException
-   dup
-   ldc "null cannot be cast to non-null type java.lang.String"
-   invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
-   athrow
+    .line 254
+    .var 5 is last I from L_0093 to L_00c6
+    aload 4
+    astore 6
+    iconst_0
+    istore 7
+    iconst_0
+    istore 8
+    aload 6
+    dup
+    ifnonnull L_00a3
+    new kotlin/TypeCastException
+    dup
+    ldc "null cannot be cast to non-null type java.lang.String"
+    invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
+    athrow
 L_00a3:
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$OwnerAndName
-      locals Null
-      locals Null
-      locals Object java/lang/String
-      locals Integer
-      locals Object java/lang/String
-      locals Integer
-      locals Integer
-      stacks Object java/lang/String
-   .end stack
-   iload 7
-   iload 5
-   invokevirtual java/lang/String/substring (II)Ljava/lang/String;
-   dup
-   ldc "(this as java.lang.Strin…ing(startIndex, endIndex)"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   astore 2
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$OwnerAndName
+        locals Null
+        locals Null
+        locals Object java/lang/String
+        locals Integer
+        locals Object java/lang/String
+        locals Integer
+        locals Integer
+        stacks Object java/lang/String
+    .end stack
+    iload 7
+    iload 5
+    invokevirtual java/lang/String/substring (II)Ljava/lang/String;
+    dup
+    ldc "(this as java.lang.Strin…ing(startIndex, endIndex)"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    astore 2
 L_00ac:
-   .line 254
-   aload 4
-   astore 6
-   iload 5
-   iconst_1
-   iadd
-   istore 7
-   iconst_0
-   istore 8
-   aload 6
-   dup
-   ifnonnull L_00be
-   new kotlin/TypeCastException
-   dup
-   ldc "null cannot be cast to non-null type java.lang.String"
-   invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
-   athrow
+    .line 255
+    aload 4
+    astore 6
+    iload 5
+    iconst_1
+    iadd
+    istore 7
+    iconst_0
+    istore 8
+    aload 6
+    dup
+    ifnonnull L_00be
+    new kotlin/TypeCastException
+    dup
+    ldc "null cannot be cast to non-null type java.lang.String"
+    invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
+    athrow
 L_00be:
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$OwnerAndName
-      locals Object java/lang/String
-      locals Null
-      locals Object java/lang/String
-      locals Integer
-      locals Object java/lang/String
-      locals Integer
-      locals Integer
-      stacks Object java/lang/String
-   .end stack
-   iload 7
-   invokevirtual java/lang/String/substring (I)Ljava/lang/String;
-   dup
-   ldc "(this as java.lang.String).substring(startIndex)"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   astore 3
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$OwnerAndName
+        locals Object java/lang/String
+        locals Null
+        locals Object java/lang/String
+        locals Integer
+        locals Object java/lang/String
+        locals Integer
+        locals Integer
+        stacks Object java/lang/String
+    .end stack
+    iload 7
+    invokevirtual java/lang/String/substring (I)Ljava/lang/String;
+    dup
+    ldc "(this as java.lang.String).substring(startIndex)"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    astore 3
 L_00c6:
-   .line 257
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$OwnerAndName
-      locals Object java/lang/String
-      locals Object java/lang/String
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
-   ifne L_00d2
-   aconst_null
-   areturn
+    .line 258
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$OwnerAndName
+        locals Object java/lang/String
+        locals Object java/lang/String
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
+    ifne L_00d2
+    aconst_null
+    areturn
 L_00d2:
-   .line 258
-   .stack use locals
-   .end stack
-   aload 2
-   aload 3
-   invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-   areturn
+    .line 259
+    .stack use locals
+    .end stack
+    aload 2
+    aload 3
+    invokestatic kotlin/TuplesKt/to (Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    areturn
 L_00d9:
 .end method
 
 .method public visitName (Lcom/anatawa12/jasm/parser/TokenType$Name;)Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 3
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 3
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0023
-   .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$Name; from L_0000 to L_0023
-   aload 1
-   ldc "tokenType"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0023
+    .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$Name; from L_0000 to L_0023
+    aload 1
+    ldc "tokenType"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 262
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   bipush 34
-   if_icmpne L_000e
-   aload 0
-   invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readStringBody ()Ljava/lang/String;
-   goto L_0012
+    .line 263
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    bipush 34
+    if_icmpne L_000e
+    aload 0
+    invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readStringBody ()Ljava/lang/String;
+    goto L_0012
 L_000e:
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$Name
-   .end stack
-   aload 0
-   invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readNameBody ()Ljava/lang/String;
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$Name
+    .end stack
+    aload 0
+    invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readNameBody ()Ljava/lang/String;
 L_0012:
-   .stack use locals
-      stacks Object java/lang/String
-   .end stack
-   astore 2
+    .stack use locals
+        stacks Object java/lang/String
+    .end stack
+    astore 2
 L_0015:
-   .line 263
-   .var 2 is name Ljava/lang/String; from L_0015 to L_0023
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
-   ifne L_001e
-   aconst_null
-   areturn
+    .line 264
+    .var 2 is name Ljava/lang/String; from L_0015 to L_0023
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
+    ifne L_001e
+    aconst_null
+    areturn
 L_001e:
-   .line 264
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$Name
-      locals Object java/lang/String
-   .end stack
-   aload 2
-   areturn
+    .line 265
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$Name
+        locals Object java/lang/String
+    .end stack
+    aload 2
+    areturn
 L_0023:
 .end method
 
 .method private readTypeDescriptor (Ljava/lang/StringBuilder;)Z
-   .limit stack 2
-   .limit local 3
+    .limit stack 2
+    .limit local 3
 L_0000:
-   .line 268
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_007f
-   .var 1 is builder Ljava/lang/StringBuilder; from L_0000 to L_007f
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   lookupswitch
-      66: L_0006
-      67: L_000e
-      68: L_0016
-      70: L_001e
-      73: L_0026
-      74: L_002e
-      76: L_0046
-      83: L_0036
-      90: L_003e
-      91: L_0067
-      default: L_0074
+    .line 269
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_007f
+    .var 1 is builder Ljava/lang/StringBuilder; from L_0000 to L_007f
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    lookupswitch
+        66: L_0006
+        67: L_000e
+        68: L_0016
+        70: L_001e
+        73: L_0026
+        74: L_002e
+        76: L_0046
+        83: L_0036
+        90: L_003e
+        91: L_0067
+        default: L_0074
 L_0006:
-   .line 269
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object java/lang/StringBuilder
-   .end stack
-   aload 1
-   bipush 66
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_0079
+    .line 270
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object java/lang/StringBuilder
+    .end stack
+    aload 1
+    bipush 66
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_0079
 L_000e:
-   .line 270
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 67
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_0079
+    .line 271
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 67
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_0079
 L_0016:
-   .line 271
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 68
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_0079
+    .line 272
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 68
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_0079
 L_001e:
-   .line 272
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 70
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_0079
+    .line 273
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 70
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_0079
 L_0026:
-   .line 273
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 73
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_0079
+    .line 274
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 73
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_0079
 L_002e:
-   .line 274
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 74
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_0079
+    .line 275
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 74
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_0079
 L_0036:
-   .line 275
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 83
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_0079
+    .line 276
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 83
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_0079
 L_003e:
-   .line 276
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 90
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_0079
+    .line 277
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 90
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_0079
 L_0046:
-   .line 278
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 76
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 279
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 76
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_004d:
-   .line 279
-   .stack use locals
-   .end stack
-   nop
+    .line 280
+    .stack use locals
+    .end stack
+    nop
 L_0051:
-   .line 280
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   istore 2
+    .line 281
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    istore 2
 L_0057:
-   .line 281
-   .var 2 is c C from L_0057 to L_0063
-   aload 1
-   iload 2
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 282
+    .var 2 is c C from L_0057 to L_0063
+    aload 1
+    iload 2
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_005d:
-   .line 282
-   iload 2
-   bipush 59
-   if_icmpne L_0063
-   goto L_0079
+    .line 283
+    iload 2
+    bipush 59
+    if_icmpne L_0063
+    goto L_0079
 L_0063:
-   .line 279
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object java/lang/StringBuilder
-      locals Integer
-   .end stack
-   goto L_004d
+    .line 280
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object java/lang/StringBuilder
+        locals Integer
+    .end stack
+    goto L_004d
 L_0067:
-   .line 286
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object java/lang/StringBuilder
-   .end stack
-   aload 1
-   bipush 91
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 287
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object java/lang/StringBuilder
+    .end stack
+    aload 1
+    bipush 91
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_006e:
-   .line 287
-   aload 0
-   aload 1
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readTypeDescriptor (Ljava/lang/StringBuilder;)Z
-   ireturn
+    .line 288
+    aload 0
+    aload 1
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readTypeDescriptor (Ljava/lang/StringBuilder;)Z
+    ireturn
 L_0074:
-   .line 289
-   .stack use locals
-   .end stack
-   iconst_0
-   ireturn
+    .line 290
+    .stack use locals
+    .end stack
+    iconst_0
+    ireturn
 L_0079:
-   .line 291
-   .stack use locals
-   .end stack
-   iconst_1
-   ireturn
+    .line 292
+    .stack use locals
+    .end stack
+    iconst_1
+    ireturn
 L_007f:
 .end method
 
 .method private readPackageOrSuffix (Ljava/lang/StringBuilder;)V
-   .limit stack 2
-   .limit local 3
+    .limit stack 2
+    .limit local 3
 L_0000:
-   .line 295
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0023
-   .var 1 is builder Ljava/lang/StringBuilder; from L_0000 to L_0023
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object java/lang/StringBuilder
-   .end stack
-   nop
+    .line 296
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0023
+    .var 1 is builder Ljava/lang/StringBuilder; from L_0000 to L_0023
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object java/lang/StringBuilder
+    .end stack
+    nop
 L_0004:
-   .line 296
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   istore 2
+    .line 297
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    istore 2
 L_000a:
-   .line 297
-   .var 2 is c C from L_000a to L_001c
-   iload 2
-   bipush 59
-   if_icmpeq L_001f
-   iload 2
-   bipush 60
-   if_icmpne L_0013
-   goto L_001f
+    .line 298
+    .var 2 is c C from L_000a to L_001c
+    iload 2
+    bipush 59
+    if_icmpeq L_001f
+    iload 2
+    bipush 60
+    if_icmpne L_0013
+    goto L_001f
 L_0013:
-   .line 298
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object java/lang/StringBuilder
-      locals Integer
-   .end stack
-   aload 1
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 299
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object java/lang/StringBuilder
+        locals Integer
+    .end stack
+    aload 1
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_001c:
-   .line 295
-   goto L_0000
+    .line 296
+    goto L_0000
 L_001f:
-   .line 300
-   .stack use locals
-   .end stack
-   return
+    .line 301
+    .stack use locals
+    .end stack
+    return
 L_0023:
 .end method
 
 .method private readTypeArguments (Ljava/lang/StringBuilder;)Z
-   .limit stack 2
-   .limit local 2
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .line 303
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0031
-   .var 1 is builder Ljava/lang/StringBuilder; from L_0000 to L_0031
-   aload 1
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 304
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0031
+    .var 1 is builder Ljava/lang/StringBuilder; from L_0000 to L_0031
+    aload 1
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_0008:
-   .line 304
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object java/lang/StringBuilder
-   .end stack
-   nop
+    .line 305
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object java/lang/StringBuilder
+    .end stack
+    nop
 L_000c:
-   .line 305
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   tableswitch 62
-      L_0012
-      default: L_0016
+    .line 306
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    tableswitch 62
+        L_0012
+        default: L_0016
 L_0012:
-   .line 306
-   .stack use locals
-   .end stack
-   goto L_0024
+    .line 307
+    .stack use locals
+    .end stack
+    goto L_0024
 L_0016:
-   .line 307
-   .stack use locals
-   .end stack
-   aload 0
-   aload 1
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readTypeSignature (Ljava/lang/StringBuilder;)Z
-   ifne L_001f
-   iconst_0
-   ireturn
+    .line 308
+    .stack use locals
+    .end stack
+    aload 0
+    aload 1
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readTypeSignature (Ljava/lang/StringBuilder;)Z
+    ifne L_001f
+    iconst_0
+    ireturn
 L_001f:
-   .line 304
-   .stack use locals
-   .end stack
-   goto L_0008
+    .line 305
+    .stack use locals
+    .end stack
+    goto L_0008
 L_0024:
-   .line 310
-   .stack use locals
-   .end stack
-   aload 1
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 311
+    .stack use locals
+    .end stack
+    aload 1
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_002d:
-   .line 311
-   iconst_1
-   ireturn
+    .line 312
+    iconst_1
+    ireturn
 L_0031:
 .end method
 
 .method private readTypeSignature (Ljava/lang/StringBuilder;)Z
-   .limit stack 3
-   .limit local 4
+    .limit stack 3
+    .limit local 4
 L_0000:
-   .line 315
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_00c5
-   .var 1 is builder Ljava/lang/StringBuilder; from L_0000 to L_00c5
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   lookupswitch
-      66: L_0006
-      67: L_000e
-      68: L_0016
-      70: L_001e
-      73: L_0026
-      74: L_002e
-      76: L_0046
-      83: L_0036
-      84: L_0084
-      90: L_003e
-      91: L_00ad
-      default: L_00ba
+    .line 316
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_00c5
+    .var 1 is builder Ljava/lang/StringBuilder; from L_0000 to L_00c5
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    lookupswitch
+        66: L_0006
+        67: L_000e
+        68: L_0016
+        70: L_001e
+        73: L_0026
+        74: L_002e
+        76: L_0046
+        83: L_0036
+        84: L_0084
+        90: L_003e
+        91: L_00ad
+        default: L_00ba
 L_0006:
-   .line 316
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object java/lang/StringBuilder
-   .end stack
-   aload 1
-   bipush 66
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_00bf
+    .line 317
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object java/lang/StringBuilder
+    .end stack
+    aload 1
+    bipush 66
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_00bf
 L_000e:
-   .line 317
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 67
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_00bf
+    .line 318
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 67
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_00bf
 L_0016:
-   .line 318
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 68
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_00bf
+    .line 319
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 68
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_00bf
 L_001e:
-   .line 319
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 70
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_00bf
+    .line 320
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 70
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_00bf
 L_0026:
-   .line 320
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 73
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_00bf
+    .line 321
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 73
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_00bf
 L_002e:
-   .line 321
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 74
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_00bf
+    .line 322
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 74
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_00bf
 L_0036:
-   .line 322
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 83
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_00bf
+    .line 323
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 83
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_00bf
 L_003e:
-   .line 323
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 90
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_00bf
+    .line 324
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 90
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_00bf
 L_0046:
-   .line 325
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 76
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 326
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 76
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_004d:
-   .line 326
-   .stack use locals
-   .end stack
-   nop
+    .line 327
+    .stack use locals
+    .end stack
+    nop
 L_0051:
-   .line 327
-   aload 0
-   aload 1
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readPackageOrSuffix (Ljava/lang/StringBuilder;)V
+    .line 328
+    aload 0
+    aload 1
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readPackageOrSuffix (Ljava/lang/StringBuilder;)V
 L_0056:
-   .line 328
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   tableswitch 59
-      L_005c
-      L_0068
-      default: L_0071
+    .line 329
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    tableswitch 59
+        L_005c
+        L_0068
+        default: L_0071
 L_005c:
-   .line 330
-   .stack use locals
-   .end stack
-   aload 1
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 331
+    .stack use locals
+    .end stack
+    aload 1
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_0065:
-   .line 331
-   goto L_00bf
+    .line 332
+    goto L_00bf
 L_0068:
-   .line 334
-   .stack use locals
-   .end stack
-   aload 0
-   aload 1
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readTypeArguments (Ljava/lang/StringBuilder;)Z
-   ifne L_007f
-   iconst_0
-   ireturn
+    .line 335
+    .stack use locals
+    .end stack
+    aload 0
+    aload 1
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readTypeArguments (Ljava/lang/StringBuilder;)Z
+    ifne L_007f
+    iconst_0
+    ireturn
 L_0071:
-   .line 336
-   .stack use locals
-   .end stack
-   ldc "logic failure"
-   astore 2
-   iconst_0
-   istore 3
-   new java/lang/IllegalStateException
-   dup
-   aload 2
-   invokevirtual java/lang/Object/toString ()Ljava/lang/String;
-   invokespecial java/lang/IllegalStateException/<init> (Ljava/lang/String;)V
-   checkcast java/lang/Throwable
-   athrow
+    .line 337
+    .stack use locals
+    .end stack
+    ldc "logic failure"
+    astore 2
+    iconst_0
+    istore 3
+    new java/lang/IllegalStateException
+    dup
+    aload 2
+    invokevirtual java/lang/Object/toString ()Ljava/lang/String;
+    invokespecial java/lang/IllegalStateException/<init> (Ljava/lang/String;)V
+    checkcast java/lang/Throwable
+    athrow
 L_007f:
-   .line 326
-   .stack use locals
-   .end stack
-   goto L_004d
+    .line 327
+    .stack use locals
+    .end stack
+    goto L_004d
 L_0084:
-   .line 341
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 84
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 342
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 84
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_008b:
-   .line 342
-   .stack use locals
-   .end stack
-   nop
+    .line 343
+    .stack use locals
+    .end stack
+    nop
 L_008f:
-   .line 343
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   istore 2
+    .line 344
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    istore 2
 L_0095:
-   .line 344
-   .var 2 is c C from L_0095 to L_00a2
-   iload 2
-   bipush 59
-   if_icmpne L_009b
-   goto L_00a5
+    .line 345
+    .var 2 is c C from L_0095 to L_00a2
+    iload 2
+    bipush 59
+    if_icmpne L_009b
+    goto L_00a5
 L_009b:
-   .line 345
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object java/lang/StringBuilder
-      locals Integer
-   .end stack
-   aload 1
-   iload 2
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 346
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object java/lang/StringBuilder
+        locals Integer
+    .end stack
+    aload 1
+    iload 2
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_00a2:
-   .line 342
-   goto L_008b
+    .line 343
+    goto L_008b
 L_00a5:
-   .line 347
-   .stack use locals
-   .end stack
-   aload 1
-   bipush 59
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_00bf
+    .line 348
+    .stack use locals
+    .end stack
+    aload 1
+    bipush 59
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_00bf
 L_00ad:
-   .line 350
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object java/lang/StringBuilder
-   .end stack
-   aload 1
-   bipush 91
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 351
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object java/lang/StringBuilder
+    .end stack
+    aload 1
+    bipush 91
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_00b4:
-   .line 351
-   aload 0
-   aload 1
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readTypeSignature (Ljava/lang/StringBuilder;)Z
-   ireturn
+    .line 352
+    aload 0
+    aload 1
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readTypeSignature (Ljava/lang/StringBuilder;)Z
+    ireturn
 L_00ba:
-   .line 353
-   .stack use locals
-   .end stack
-   iconst_0
-   ireturn
+    .line 354
+    .stack use locals
+    .end stack
+    iconst_0
+    ireturn
 L_00bf:
-   .line 355
-   .stack use locals
-   .end stack
-   iconst_1
-   ireturn
+    .line 356
+    .stack use locals
+    .end stack
+    iconst_1
+    ireturn
 L_00c5:
 .end method
 
 .method public visitFieldDescriptor (Lcom/anatawa12/jasm/parser/TokenType$FieldDescriptor;)Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 3
-   .limit local 9
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 3
+    .limit local 9
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0045
-   .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$FieldDescriptor; from L_0000 to L_0045
-   aload 1
-   ldc "tokenType"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0045
+    .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$FieldDescriptor; from L_0000 to L_0045
+    aload 1
+    ldc "tokenType"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 359
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   bipush 34
-   if_icmpne L_000e
-   aload 0
-   invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readStringBody ()Ljava/lang/String;
-   goto L_0033
+    .line 360
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    bipush 34
+    if_icmpne L_000e
+    aload 0
+    invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readStringBody ()Ljava/lang/String;
+    goto L_0033
 L_000e:
-   .line 360
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$FieldDescriptor
-   .end stack
-   iconst_0
-   istore 3
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   astore 4
-   iconst_0
-   istore 5
-   iconst_0
-   istore 6
-   aload 4
-   astore 7
+    .line 361
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$FieldDescriptor
+    .end stack
+    iconst_0
+    istore 3
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    astore 4
+    iconst_0
+    istore 5
+    iconst_0
+    istore 6
+    aload 4
+    astore 7
 L_001d:
-   .var 7 is $this$buildString Ljava/lang/StringBuilder; from L_001d to L_0028
-   iconst_0
-   istore 8
+    .var 7 is $this$buildString Ljava/lang/StringBuilder; from L_001d to L_0028
+    iconst_0
+    istore 8
 L_0020:
-   .line 361
-   .var 8 is "\$i\$a\$-buildString-Lexer\$TokenVisitor\$visitFieldDescriptor\$desc\$1" I from L_0020 to L_0028
-   aload 0
-   aload 7
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readTypeDescriptor (Ljava/lang/StringBuilder;)Z
-   ifne L_0028
-   aconst_null
-   areturn
+    .line 362
+    .var 8 is "\$i\$a\$-buildString-Lexer\$TokenVisitor\$visitFieldDescriptor\$desc\$1" I from L_0020 to L_0028
+    aload 0
+    aload 7
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readTypeDescriptor (Ljava/lang/StringBuilder;)Z
+    ifne L_0028
+    aconst_null
+    areturn
 L_0028:
-   .line 362
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$FieldDescriptor
-      locals Top
-      locals Integer
-      locals Object java/lang/StringBuilder
-      locals Integer
-      locals Integer
-      locals Object java/lang/StringBuilder
-      locals Integer
-   .end stack
-   nop
+    .line 363
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$FieldDescriptor
+        locals Top
+        locals Integer
+        locals Object java/lang/StringBuilder
+        locals Integer
+        locals Integer
+        locals Object java/lang/StringBuilder
+        locals Integer
+    .end stack
+    nop
 L_002c:
-   .line 360
-   aload 4
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   dup
-   ldc "StringBuilder().apply(builderAction).toString()"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .line 361
+    aload 4
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    dup
+    ldc "StringBuilder().apply(builderAction).toString()"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0033:
-   .line 359
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$FieldDescriptor
-      stacks Object java/lang/String
-   .end stack
-   astore 2
+    .line 360
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$FieldDescriptor
+        stacks Object java/lang/String
+    .end stack
+    astore 2
 L_0037:
-   .line 363
-   .var 2 is desc Ljava/lang/String; from L_0037 to L_0045
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
-   ifne L_0040
-   aconst_null
-   areturn
+    .line 364
+    .var 2 is desc Ljava/lang/String; from L_0037 to L_0045
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
+    ifne L_0040
+    aconst_null
+    areturn
 L_0040:
-   .line 364
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$FieldDescriptor
-      locals Object java/lang/String
-   .end stack
-   aload 2
-   areturn
+    .line 365
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$FieldDescriptor
+        locals Object java/lang/String
+    .end stack
+    aload 2
+    areturn
 L_0045:
 .end method
 
 .method public visitMethodDescriptor (Lcom/anatawa12/jasm/parser/TokenType$MethodDescriptor;)Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 3
-   .limit local 9
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 3
+    .limit local 9
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0098
-   .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$MethodDescriptor; from L_0000 to L_0098
-   aload 1
-   ldc "tokenType"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0098
+    .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$MethodDescriptor; from L_0000 to L_0098
+    aload 1
+    ldc "tokenType"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 368
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   bipush 34
-   if_icmpne L_0016
-   aload 0
-   invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readStringBody ()Ljava/lang/String;
-   dup
-   ifnull L_0010
-   goto L_0086
+    .line 369
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    bipush 34
+    if_icmpne L_0016
+    aload 0
+    invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readStringBody ()Ljava/lang/String;
+    dup
+    ifnull L_0010
+    goto L_0086
 L_0010:
-   .line 368
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$MethodDescriptor
-      stacks Object java/lang/String
-   .end stack
-   pop
-   aconst_null
-   areturn
+    .line 369
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$MethodDescriptor
+        stacks Object java/lang/String
+    .end stack
+    pop
+    aconst_null
+    areturn
 L_0016:
-   .line 369
-   .stack use locals
-   .end stack
-   iconst_0
-   istore 3
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   astore 4
-   iconst_0
-   istore 5
-   iconst_0
-   istore 6
-   aload 4
-   astore 7
+    .line 370
+    .stack use locals
+    .end stack
+    iconst_0
+    istore 3
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    astore 4
+    iconst_0
+    istore 5
+    iconst_0
+    istore 6
+    aload 4
+    astore 7
 L_0025:
-   .var 7 is $this$buildString Ljava/lang/StringBuilder; from L_0025 to L_007a
-   iconst_0
-   istore 8
+    .var 7 is $this$buildString Ljava/lang/StringBuilder; from L_0025 to L_007a
+    iconst_0
+    istore 8
 L_0028:
-   .line 370
-   .var 8 is "\$i\$a\$-buildString-Lexer\$TokenVisitor\$visitMethodDescriptor\$desc\$1" I from L_0028 to L_007a
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   bipush 40
-   if_icmpeq L_0031
-   aconst_null
-   areturn
+    .line 371
+    .var 8 is "\$i\$a\$-buildString-Lexer\$TokenVisitor\$visitMethodDescriptor\$desc\$1" I from L_0028 to L_007a
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    bipush 40
+    if_icmpeq L_0031
+    aconst_null
+    areturn
 L_0031:
-   .line 371
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$MethodDescriptor
-      locals Top
-      locals Integer
-      locals Object java/lang/StringBuilder
-      locals Integer
-      locals Integer
-      locals Object java/lang/StringBuilder
-      locals Integer
-   .end stack
-   aload 7
-   bipush 40
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 372
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$MethodDescriptor
+        locals Top
+        locals Integer
+        locals Object java/lang/StringBuilder
+        locals Integer
+        locals Integer
+        locals Object java/lang/StringBuilder
+        locals Integer
+    .end stack
+    aload 7
+    bipush 40
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_0038:
-   .line 372
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   bipush 41
-   if_icmpeq L_004c
+    .line 373
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    bipush 41
+    if_icmpeq L_004c
 L_0040:
-   .line 373
-   aload 0
-   aload 7
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readTypeDescriptor (Ljava/lang/StringBuilder;)Z
-   ifne L_0048
-   aconst_null
-   areturn
+    .line 374
+    aload 0
+    aload 7
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readTypeDescriptor (Ljava/lang/StringBuilder;)Z
+    ifne L_0048
+    aconst_null
+    areturn
 L_0048:
-   .line 372
-   .stack use locals
-   .end stack
-   goto L_0038
+    .line 373
+    .stack use locals
+    .end stack
+    goto L_0038
 L_004c:
-   .line 374
-   .stack use locals
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   bipush 41
-   if_icmpeq L_0056
-   aconst_null
-   areturn
+    .line 375
+    .stack use locals
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    bipush 41
+    if_icmpeq L_0056
+    aconst_null
+    areturn
 L_0056:
-   .line 375
-   .stack use locals
-   .end stack
-   aload 7
-   bipush 41
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
+    .line 376
+    .stack use locals
+    .end stack
+    aload 7
+    bipush 41
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
 L_005d:
-   .line 376
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
-   bipush 86
-   if_icmpne L_0071
+    .line 377
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$get (Lcom/anatawa12/jasm/parser/Lexer;)C
+    bipush 86
+    if_icmpne L_0071
 L_0064:
-   .line 377
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
-   pop
+    .line 378
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getAndNext (Lcom/anatawa12/jasm/parser/Lexer;)C
+    pop
 L_006a:
-   .line 378
-   aload 7
-   bipush 86
-   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
-   pop
-   goto L_007a
+    .line 379
+    aload 7
+    bipush 86
+    invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+    pop
+    goto L_007a
 L_0071:
-   .line 380
-   .stack use locals
-   .end stack
-   aload 0
-   aload 7
-   invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readTypeDescriptor (Ljava/lang/StringBuilder;)Z
-   ifne L_007a
-   aconst_null
-   areturn
+    .line 381
+    .stack use locals
+    .end stack
+    aload 0
+    aload 7
+    invokespecial com/anatawa12/jasm/parser/Lexer$TokenVisitor/readTypeDescriptor (Ljava/lang/StringBuilder;)Z
+    ifne L_007a
+    aconst_null
+    areturn
 L_007a:
-   .line 382
-   .stack use locals
-   .end stack
-   nop
+    .line 383
+    .stack use locals
+    .end stack
+    nop
 L_007f:
-   .line 369
-   aload 4
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   dup
-   ldc "StringBuilder().apply(builderAction).toString()"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .line 370
+    aload 4
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    dup
+    ldc "StringBuilder().apply(builderAction).toString()"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0086:
-   .line 368
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$MethodDescriptor
-      stacks Object java/lang/String
-   .end stack
-   astore 2
+    .line 369
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$MethodDescriptor
+        stacks Object java/lang/String
+    .end stack
+    astore 2
 L_008a:
-   .line 383
-   .var 2 is desc Ljava/lang/String; from L_008a to L_0098
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
-   ifne L_0093
-   aconst_null
-   areturn
+    .line 384
+    .var 2 is desc Ljava/lang/String; from L_008a to L_0098
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
+    ifne L_0093
+    aconst_null
+    areturn
 L_0093:
-   .line 384
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$MethodDescriptor
-      locals Object java/lang/String
-   .end stack
-   aload 2
-   areturn
+    .line 385
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$MethodDescriptor
+        locals Object java/lang/String
+    .end stack
+    aload 2
+    areturn
 L_0098:
 .end method
 
 .method public visitIdentifier (Lcom/anatawa12/jasm/parser/TokenType$Identifier;)Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 3
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 3
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0022
-   .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$Identifier; from L_0000 to L_0022
-   aload 1
-   ldc "tokenType"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0022
+    .var 1 is tokenType Lcom/anatawa12/jasm/parser/TokenType$Identifier; from L_0000 to L_0022
+    aload 1
+    ldc "tokenType"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 388
-   aload 0
-   invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readNameBody ()Ljava/lang/String;
-   dup
-   ifnull L_000b
-   goto L_0011
+    .line 389
+    aload 0
+    invokevirtual com/anatawa12/jasm/parser/Lexer$TokenVisitor/readNameBody ()Ljava/lang/String;
+    dup
+    ifnull L_000b
+    goto L_0011
 L_000b:
-   .line 388
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$Identifier
-      stacks Object java/lang/String
-   .end stack
-   pop
-   aconst_null
-   areturn
+    .line 389
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$Identifier
+        stacks Object java/lang/String
+    .end stack
+    pop
+    aconst_null
+    areturn
 L_0011:
-   .stack use locals
-      stacks Object java/lang/String
-   .end stack
-   astore 2
+    .stack use locals
+        stacks Object java/lang/String
+    .end stack
+    astore 2
 L_0014:
-   .line 389
-   .var 2 is id Ljava/lang/String; from L_0014 to L_0022
-   aload 0
-   getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
-   invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
-   ifne L_001d
-   aconst_null
-   areturn
+    .line 390
+    .var 2 is id Ljava/lang/String; from L_0014 to L_0022
+    aload 0
+    getfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    invokestatic com/anatawa12/jasm/parser/Lexer/access$getOrNull (Lcom/anatawa12/jasm/parser/Lexer;)Ljava/lang/Character;
+    invokestatic com/anatawa12/jasm/parser/UtilsKt/isTokenSplitChar (Ljava/lang/Character;)Z
+    ifne L_001d
+    aconst_null
+    areturn
 L_001d:
-   .line 390
-   .stack
-      locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
-      locals Object com/anatawa12/jasm/parser/TokenType$Identifier
-      locals Object java/lang/String
-   .end stack
-   aload 2
-   areturn
+    .line 391
+    .stack
+        locals Object com/anatawa12/jasm/parser/Lexer$TokenVisitor
+        locals Object com/anatawa12/jasm/parser/TokenType$Identifier
+        locals Object java/lang/String
+    .end stack
+    aload 2
+    areturn
 L_0022:
 .end method
 
 .method public <init> (Lcom/anatawa12/jasm/parser/Lexer;)V
-   .signature "()V"
-   .limit stack 2
-   .limit local 2
+    .signature "()V"
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .line 43
-   .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0008
-   .var 1 is $outer Lcom/anatawa12/jasm/parser/Lexer; from L_0000 to L_0008
-   aload 0
-   aload 1
-   putfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
-   aload 0
-   invokespecial java/lang/Object/<init> ()V
-   return
+    .line 44
+    .var 0 is this Lcom/anatawa12/jasm/parser/Lexer$TokenVisitor; from L_0000 to L_0008
+    .var 1 is $outer Lcom/anatawa12/jasm/parser/Lexer; from L_0000 to L_0008
+    aload 0
+    aload 1
+    putfield com/anatawa12/jasm/parser/Lexer$TokenVisitor/this$0 Lcom/anatawa12/jasm/parser/Lexer;
+    aload 0
+    invokespecial java/lang/Object/<init> ()V
+    return
 L_0008:
 .end method
 

@@ -5,151 +5,151 @@
 .implements kotlin/jvm/functions/Function0
 .signature "Lkotlin/jvm/internal/Lambda;Lkotlin/jvm/functions/Function0<Ljava/util/Set<Lcom/anatawa12/jasm/parser/TokenType\$KeyWord;>;>;"
 .enclosing method com/anatawa12/jasm/parser/Parser <init> "(Lcom/anatawa12/jasm/parser/ILexer;)V"
-.debug "SMAP\nParser.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Parser.kt\ncom/anatawa12/jasm/parser/Parser\$instruction\$1\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,1062:1\n9671#2,3:1063\n*E\n*S KotlinDebug\n*F\n+ 1 Parser.kt\ncom/anatawa12/jasm/parser/Parser\$instruction\$1\n*L\n335#1,3:1063\n*E\n"
+.debug "SMAP\nParser.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Parser.kt\ncom/anatawa12/jasm/parser/Parser\$instruction\$1\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,1072:1\n9671#2,3:1073\n*E\n*S KotlinDebug\n*F\n+ 1 Parser.kt\ncom/anatawa12/jasm/parser/Parser\$instruction\$1\n*L\n345#1,3:1073\n*E\n"
 .inner static com/anatawa12/jasm/parser/Parser$instruction$1
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 3
-   d1 [ = .annotation array
-      s = "\u0000\u000c\n\u0000\n\u0002\u0010#\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001H\n¢\u0006\u0002\b\u0003"
-   .end annotation
-   d2 [ = .annotation array
-      s = "<anonymous>"
-      s = ""
-      s = "Lcom/anatawa12/jasm/parser/TokenType\$KeyWord;"
-      s = "invoke"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 3
+    d1 [ = .annotation array
+        s = "\u0000\u000c\n\u0000\n\u0002\u0010#\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001H\n¢\u0006\u0002\b\u0003"
+    .end annotation
+    d2 [ = .annotation array
+        s = "<anonymous>"
+        s = ""
+        s = "Lcom/anatawa12/jasm/parser/TokenType\$KeyWord;"
+        s = "invoke"
+    .end annotation
 .end annotation
 
 .method public invoke ()Ljava/lang/Object;
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 6
-   aload 0
-   invokevirtual com/anatawa12/jasm/parser/Parser$instruction$1/invoke ()Ljava/util/Set;
-   areturn
+    .line 6
+    aload 0
+    invokevirtual com/anatawa12/jasm/parser/Parser$instruction$1/invoke ()Ljava/util/Set;
+    areturn
 .end method
 
 .method public invoke ()Ljava/util/Set;
-   .signature "()Ljava/util/Set<Lcom/anatawa12/jasm/parser/TokenType\$KeyWord;>;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 12
+    .signature "()Ljava/util/Set<Lcom/anatawa12/jasm/parser/TokenType\$KeyWord;>;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 12
 L_0000:
-   .line 335
-   .var 0 is this Lcom/anatawa12/jasm/parser/Parser$instruction$1; from L_0000 to L_0043
-   invokestatic com/anatawa12/jasm/parser/GrammarInstrucion/values "()[Lcom/anatawa12/jasm/parser/GrammarInstrucion;"
-   astore 1
-   iconst_0
-   istore 2
-   new java/util/LinkedHashSet
-   dup
-   invokespecial java/util/LinkedHashSet/<init> ()V
-   checkcast java/util/Set
-   checkcast java/util/Collection
-   astore 2
+    .line 345
+    .var 0 is this Lcom/anatawa12/jasm/parser/Parser$instruction$1; from L_0000 to L_0043
+    invokestatic com/anatawa12/jasm/parser/GrammarInstrucion/values "()[Lcom/anatawa12/jasm/parser/GrammarInstrucion;"
+    astore 1
+    iconst_0
+    istore 2
+    new java/util/LinkedHashSet
+    dup
+    invokespecial java/util/LinkedHashSet/<init> ()V
+    checkcast java/util/Set
+    checkcast java/util/Collection
+    astore 2
 L_000c:
-   .line 335
-   .var 1 is $this$mapTo$iv "[Ljava/lang/Object;" from L_000c to L_003e
-   .var 2 is destination$iv Ljava/util/Collection; from L_000c to L_003e
-   iconst_0
-   istore 3
+    .line 345
+    .var 1 is $this$mapTo$iv "[Ljava/lang/Object;" from L_000c to L_003e
+    .var 2 is destination$iv Ljava/util/Collection; from L_000c to L_003e
+    iconst_0
+    istore 3
 L_0010:
-   .line 1063
-   .var 3 is $i$f$mapTo I from L_0010 to L_003e
-   aload 1
-   astore 4
-   aload 4
-   arraylength
-   istore 5
-   iconst_0
-   istore 6
+    .line 1073
+    .var 3 is $i$f$mapTo I from L_0010 to L_003e
+    aload 1
+    astore 4
+    aload 4
+    arraylength
+    istore 5
+    iconst_0
+    istore 6
 L_0019:
-   .stack
-      locals Object com/anatawa12/jasm/parser/Parser$instruction$1
-      locals Object "[Lcom/anatawa12/jasm/parser/GrammarInstrucion;"
-      locals Object java/util/Collection
-      locals Integer
-      locals Object "[Lcom/anatawa12/jasm/parser/GrammarInstrucion;"
-      locals Integer
-      locals Integer
-   .end stack
-   iload 6
-   iload 5
-   if_icmpge L_003a
-   aload 4
-   iload 6
-   aaload
-   astore 7
+    .stack
+        locals Object com/anatawa12/jasm/parser/Parser$instruction$1
+        locals Object "[Lcom/anatawa12/jasm/parser/GrammarInstrucion;"
+        locals Object java/util/Collection
+        locals Integer
+        locals Object "[Lcom/anatawa12/jasm/parser/GrammarInstrucion;"
+        locals Integer
+        locals Integer
+    .end stack
+    iload 6
+    iload 5
+    if_icmpge L_003a
+    aload 4
+    iload 6
+    aaload
+    astore 7
 L_0022:
-   .line 1064
-   .var 7 is item$iv Ljava/lang/Object; from L_0022 to L_0038
-   aload 2
-   aload 7
-   astore 8
-   astore 10
+    .line 1074
+    .var 7 is item$iv Ljava/lang/Object; from L_0022 to L_0038
+    aload 2
+    aload 7
+    astore 8
+    astore 10
 L_0028:
-   .var 8 is it Lcom/anatawa12/jasm/parser/GrammarInstrucion; from L_0028 to L_002f
-   iconst_0
-   istore 9
+    .var 8 is it Lcom/anatawa12/jasm/parser/GrammarInstrucion; from L_0028 to L_002f
+    iconst_0
+    istore 9
 L_002b:
-   .line 335
-   .var 9 is "\$i\$a\$-mapTo-Parser\$instruction\$1\$1" I from L_002b to L_002f
-   aload 8
-   invokevirtual com/anatawa12/jasm/parser/GrammarInstrucion/getKeyword ()Lcom/anatawa12/jasm/parser/TokenType$KeyWord;
+    .line 345
+    .var 9 is "\$i\$a\$-mapTo-Parser\$instruction\$1\$1" I from L_002b to L_002f
+    aload 8
+    invokevirtual com/anatawa12/jasm/parser/GrammarInstrucion/getKeyword ()Lcom/anatawa12/jasm/parser/TokenType$KeyWord;
 L_002f:
-   astore 11
-   aload 10
-   aload 11
-   invokeinterface java/util/Collection/add (Ljava/lang/Object;)Z
-   pop
+    astore 11
+    aload 10
+    aload 11
+    invokeinterface java/util/Collection/add (Ljava/lang/Object;)Z
+    pop
 L_0035:
-   .line 1063
-   iinc 6 1
+    .line 1073
+    iinc 6 1
 L_0038:
-   goto L_0019
+    goto L_0019
 L_003a:
-   .line 1065
-   .stack use locals
-   .end stack
-   aload 2
+    .line 1075
+    .stack use locals
+    .end stack
+    aload 2
 L_003e:
-   checkcast java/util/Set
+    checkcast java/util/Set
 L_0040:
-   .line 335
-   areturn
+    .line 345
+    areturn
 L_0043:
 .end method
 
 .method <init> ()V
-   .limit stack 2
-   .limit local 1
-   aload 0
-   iconst_0
-   invokespecial kotlin/jvm/internal/Lambda/<init> (I)V
-   return
+    .limit stack 2
+    .limit local 1
+    aload 0
+    iconst_0
+    invokespecial kotlin/jvm/internal/Lambda/<init> (I)V
+    return
 .end method
 
 .method static <clinit> ()V
-   .limit stack 2
-   .limit local 0
-   new com/anatawa12/jasm/parser/Parser$instruction$1
-   dup
-   invokespecial com/anatawa12/jasm/parser/Parser$instruction$1/<init> ()V
-   putstatic com/anatawa12/jasm/parser/Parser$instruction$1/INSTANCE Lcom/anatawa12/jasm/parser/Parser$instruction$1;
-   return
+    .limit stack 2
+    .limit local 0
+    new com/anatawa12/jasm/parser/Parser$instruction$1
+    dup
+    invokespecial com/anatawa12/jasm/parser/Parser$instruction$1/<init> ()V
+    putstatic com/anatawa12/jasm/parser/Parser$instruction$1/INSTANCE Lcom/anatawa12/jasm/parser/Parser$instruction$1;
+    return
 .end method
 
 .field public INSTANCE Lcom/anatawa12/jasm/parser/Parser$instruction$1;

@@ -5,94 +5,94 @@
 .inner public com/anatawa12/jasm/assembler/AssemblerOptions$Companion inner Companion outer com/anatawa12/jasm/assembler/AssemblerOptions
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0005\u0018\u0000 \u00072\u00020\u0001:\u0001\u0007B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006¨\u0006\b"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/assembler/AssemblerOptions;"
-      s = ""
-      s = "autoLine"
-      s = ""
-      s = "(Z)V"
-      s = "getAutoLine"
-      s = "()Z"
-      s = "Companion"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0005\u0018\u0000 \u00072\u00020\u0001:\u0001\u0007B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006¨\u0006\b"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/assembler/AssemblerOptions;"
+        s = ""
+        s = "autoLine"
+        s = ""
+        s = "(Z)V"
+        s = "getAutoLine"
+        s = "()Z"
+        s = "Companion"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public getAutoLine ()Z
-   .limit stack 1
-   .limit local 1
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 7
-   .var 0 is this Lcom/anatawa12/jasm/assembler/AssemblerOptions; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/assembler/AssemblerOptions/autoLine Z
-   ireturn
+    .line 7
+    .var 0 is this Lcom/anatawa12/jasm/assembler/AssemblerOptions; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/assembler/AssemblerOptions/autoLine Z
+    ireturn
 L_0005:
 .end method
 
 .method public <init> (Z)V
-   .limit stack 2
-   .limit local 2
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .line 6
-   .var 0 is this Lcom/anatawa12/jasm/assembler/AssemblerOptions; from L_0000 to L_0008
-   .var 1 is autoLine Z from L_0000 to L_0008
-   aload 0
-   invokespecial java/lang/Object/<init> ()V
-   aload 0
-   iload 1
-   putfield com/anatawa12/jasm/assembler/AssemblerOptions/autoLine Z
-   return
+    .line 6
+    .var 0 is this Lcom/anatawa12/jasm/assembler/AssemblerOptions; from L_0000 to L_0008
+    .var 1 is autoLine Z from L_0000 to L_0008
+    aload 0
+    invokespecial java/lang/Object/<init> ()V
+    aload 0
+    iload 1
+    putfield com/anatawa12/jasm/assembler/AssemblerOptions/autoLine Z
+    return
 L_0008:
 .end method
 
 .method static <clinit> ()V
-   .limit stack 3
-   .limit local 0
-   new com/anatawa12/jasm/assembler/AssemblerOptions$Companion
-   dup
-   aconst_null
-   invokespecial com/anatawa12/jasm/assembler/AssemblerOptions$Companion/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-   putstatic com/anatawa12/jasm/assembler/AssemblerOptions/Companion Lcom/anatawa12/jasm/assembler/AssemblerOptions$Companion;
+    .limit stack 3
+    .limit local 0
+    new com/anatawa12/jasm/assembler/AssemblerOptions$Companion
+    dup
+    aconst_null
+    invokespecial com/anatawa12/jasm/assembler/AssemblerOptions$Companion/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    putstatic com/anatawa12/jasm/assembler/AssemblerOptions/Companion Lcom/anatawa12/jasm/assembler/AssemblerOptions$Companion;
 L_0005:
-   .line 21
-   new com/anatawa12/jasm/assembler/AssemblerOptions
-   dup
-   iconst_0
-   invokespecial com/anatawa12/jasm/assembler/AssemblerOptions/<init> (Z)V
-   putstatic com/anatawa12/jasm/assembler/AssemblerOptions/default Lcom/anatawa12/jasm/assembler/AssemblerOptions;
-   return
+    .line 21
+    new com/anatawa12/jasm/assembler/AssemblerOptions
+    dup
+    iconst_0
+    invokespecial com/anatawa12/jasm/assembler/AssemblerOptions/<init> (Z)V
+    putstatic com/anatawa12/jasm/assembler/AssemblerOptions/default Lcom/anatawa12/jasm/assembler/AssemblerOptions;
+    return
 .end method
 
 .method public access$getDefault$cp ()Lcom/anatawa12/jasm/assembler/AssemblerOptions;
-   .limit stack 1
-   .limit local 0
+    .limit stack 1
+    .limit local 0
 L_0000:
-   .line 6
-   getstatic com/anatawa12/jasm/assembler/AssemblerOptions/default Lcom/anatawa12/jasm/assembler/AssemblerOptions;
-   areturn
+    .line 6
+    getstatic com/anatawa12/jasm/assembler/AssemblerOptions/default Lcom/anatawa12/jasm/assembler/AssemblerOptions;
+    areturn
 .end method
 
 .field private autoLine Z
 .end field
 
 .field private default Lcom/anatawa12/jasm/assembler/AssemblerOptions;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 
 .field public Companion Lcom/anatawa12/jasm/assembler/AssemblerOptions$Companion;

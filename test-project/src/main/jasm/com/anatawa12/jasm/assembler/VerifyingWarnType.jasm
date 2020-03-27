@@ -5,136 +5,136 @@
 .signature "Ljava/lang/Enum<Lcom/anatawa12/jasm/assembler/VerifyingWarnType;>;"
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0007\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\t¨\u0006\n"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/assembler/VerifyingWarnType;"
-      s = ""
-      s = "message"
-      s = ""
-      s = "(Ljava/lang/String;ILjava/lang/String;)V"
-      s = "getMessage"
-      s = "()Ljava/lang/String;"
-      s = "NoSuperClass"
-      s = "SeemsNestedButNoEnclosing"
-      s = "LineNumberWillIgnoredOnAutoLineMode"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0007\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\t¨\u0006\n"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/assembler/VerifyingWarnType;"
+        s = ""
+        s = "message"
+        s = ""
+        s = "(Ljava/lang/String;ILjava/lang/String;)V"
+        s = "getMessage"
+        s = "()Ljava/lang/String;"
+        s = "NoSuperClass"
+        s = "SeemsNestedButNoEnclosing"
+        s = "LineNumberWillIgnoredOnAutoLineMode"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method static <clinit> ()V
-   .limit stack 9
-   .limit local 0
-   iconst_3
-   anewarray com/anatawa12/jasm/assembler/VerifyingWarnType
-   dup
-   dup
-   iconst_0
-   new com/anatawa12/jasm/assembler/VerifyingWarnType
-   dup
-   ldc "NoSuperClass"
-   iconst_0
+    .limit stack 9
+    .limit local 0
+    iconst_3
+    anewarray com/anatawa12/jasm/assembler/VerifyingWarnType
+    dup
+    dup
+    iconst_0
+    new com/anatawa12/jasm/assembler/VerifyingWarnType
+    dup
+    ldc "NoSuperClass"
+    iconst_0
 L_0009:
-   .line 85
-   ldc "no .super directive is specified"
-   invokespecial com/anatawa12/jasm/assembler/VerifyingWarnType/<init> (Ljava/lang/String;ILjava/lang/String;)V
-   dup
-   putstatic com/anatawa12/jasm/assembler/VerifyingWarnType/NoSuperClass Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
-   aastore
-   dup
-   iconst_1
-   new com/anatawa12/jasm/assembler/VerifyingWarnType
-   dup
-   ldc "SeemsNestedButNoEnclosing"
-   iconst_1
+    .line 87
+    ldc "no .super directive is specified"
+    invokespecial com/anatawa12/jasm/assembler/VerifyingWarnType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+    dup
+    putstatic com/anatawa12/jasm/assembler/VerifyingWarnType/NoSuperClass Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
+    aastore
+    dup
+    iconst_1
+    new com/anatawa12/jasm/assembler/VerifyingWarnType
+    dup
+    ldc "SeemsNestedButNoEnclosing"
+    iconst_1
 L_0016:
-   .line 86
-   ldc "class seems nested class but there is not .enclosing directive"
-   invokespecial com/anatawa12/jasm/assembler/VerifyingWarnType/<init> (Ljava/lang/String;ILjava/lang/String;)V
-   dup
-   putstatic com/anatawa12/jasm/assembler/VerifyingWarnType/SeemsNestedButNoEnclosing Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
-   aastore
-   dup
-   iconst_2
-   new com/anatawa12/jasm/assembler/VerifyingWarnType
-   dup
-   ldc "LineNumberWillIgnoredOnAutoLineMode"
-   iconst_2
+    .line 88
+    ldc "class seems nested class but there is not .enclosing directive"
+    invokespecial com/anatawa12/jasm/assembler/VerifyingWarnType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+    dup
+    putstatic com/anatawa12/jasm/assembler/VerifyingWarnType/SeemsNestedButNoEnclosing Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
+    aastore
+    dup
+    iconst_2
+    new com/anatawa12/jasm/assembler/VerifyingWarnType
+    dup
+    ldc "LineNumberWillIgnoredOnAutoLineMode"
+    iconst_2
 L_0023:
-   .line 87
-   ldc ".line will be ignored because .autoline mode is enabled"
-   invokespecial com/anatawa12/jasm/assembler/VerifyingWarnType/<init> (Ljava/lang/String;ILjava/lang/String;)V
-   dup
-   putstatic com/anatawa12/jasm/assembler/VerifyingWarnType/LineNumberWillIgnoredOnAutoLineMode Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
-   aastore
-   putstatic com/anatawa12/jasm/assembler/VerifyingWarnType/$VALUES "[Lcom/anatawa12/jasm/assembler/VerifyingWarnType;"
-   return
+    .line 89
+    ldc ".line will be ignored because .autoline mode is enabled"
+    invokespecial com/anatawa12/jasm/assembler/VerifyingWarnType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+    dup
+    putstatic com/anatawa12/jasm/assembler/VerifyingWarnType/LineNumberWillIgnoredOnAutoLineMode Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
+    aastore
+    putstatic com/anatawa12/jasm/assembler/VerifyingWarnType/$VALUES "[Lcom/anatawa12/jasm/assembler/VerifyingWarnType;"
+    return
 .end method
 
 .method public getMessage ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 84
-   .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarnType; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/assembler/VerifyingWarnType/message Ljava/lang/String;
-   areturn
+    .line 86
+    .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarnType; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/assembler/VerifyingWarnType/message Ljava/lang/String;
+    areturn
 L_0005:
 .end method
 
 .method private <init> (Ljava/lang/String;ILjava/lang/String;)V
-   .signature "(Ljava/lang/String;)V"
-   .limit stack 3
-   .limit local 4
+    .signature "(Ljava/lang/String;)V"
+    .limit stack 3
+    .limit local 4
 L_0000:
-   .line 84
-   .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarnType; from L_0000 to L_000a
-   .var 1 is $enum_name_or_ordinal$0 Ljava/lang/String; from L_0000 to L_000a
-   .var 2 is $enum_name_or_ordinal$1 I from L_0000 to L_000a
-   .var 3 is message Ljava/lang/String; from L_0000 to L_000a
-   aload 0
-   aload 1
-   iload 2
-   invokespecial java/lang/Enum/<init> (Ljava/lang/String;I)V
-   aload 0
-   aload 3
-   putfield com/anatawa12/jasm/assembler/VerifyingWarnType/message Ljava/lang/String;
-   return
+    .line 86
+    .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingWarnType; from L_0000 to L_000a
+    .var 1 is $enum_name_or_ordinal$0 Ljava/lang/String; from L_0000 to L_000a
+    .var 2 is $enum_name_or_ordinal$1 I from L_0000 to L_000a
+    .var 3 is message Ljava/lang/String; from L_0000 to L_000a
+    aload 0
+    aload 1
+    iload 2
+    invokespecial java/lang/Enum/<init> (Ljava/lang/String;I)V
+    aload 0
+    aload 3
+    putfield com/anatawa12/jasm/assembler/VerifyingWarnType/message Ljava/lang/String;
+    return
 L_000a:
 .end method
 
 .method public values "()[Lcom/anatawa12/jasm/assembler/VerifyingWarnType;"
-   .limit stack 1
-   .limit local 0
-   getstatic com/anatawa12/jasm/assembler/VerifyingWarnType/$VALUES "[Lcom/anatawa12/jasm/assembler/VerifyingWarnType;"
-   invokevirtual "[Lcom/anatawa12/jasm/assembler/VerifyingWarnType;"/clone ()Ljava/lang/Object;
-   checkcast "[Lcom/anatawa12/jasm/assembler/VerifyingWarnType;"
-   areturn
+    .limit stack 1
+    .limit local 0
+    getstatic com/anatawa12/jasm/assembler/VerifyingWarnType/$VALUES "[Lcom/anatawa12/jasm/assembler/VerifyingWarnType;"
+    invokevirtual "[Lcom/anatawa12/jasm/assembler/VerifyingWarnType;"/clone ()Ljava/lang/Object;
+    checkcast "[Lcom/anatawa12/jasm/assembler/VerifyingWarnType;"
+    areturn
 .end method
 
 .method public valueOf (Ljava/lang/String;)Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
-   .limit stack 2
-   .limit local 1
-   ldc class Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
-   aload 0
-   invokestatic java/lang/Enum/valueOf (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-   checkcast com/anatawa12/jasm/assembler/VerifyingWarnType
-   areturn
+    .limit stack 2
+    .limit local 1
+    ldc class Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
+    aload 0
+    invokestatic java/lang/Enum/valueOf (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    checkcast com/anatawa12/jasm/assembler/VerifyingWarnType
+    areturn
 .end method
 
 .field public NoSuperClass Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
@@ -150,7 +150,7 @@ L_000a:
 .end field
 
 .field private message Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 

@@ -6,149 +6,149 @@
 .inner private com/anatawa12/jasm/assembler/Assembler$LabelTable inner LabelTable outer com/anatawa12/jasm/assembler/Assembler
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0002\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u0011\u0010\u0007\u001a\u00020\u00062\u0006\u0010\b\u001a\u00020\tH\u0086\u0002R\u001a\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\n"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/assembler/Assembler\$LabelTable;"
-      s = ""
-      s = "()V"
-      s = "table"
-      s = ""
-      s = ""
-      s = "Lorg/objectweb/asm/Label;"
-      s = "get"
-      s = "name"
-      s = "Lcom/anatawa12/jasm/tree/LabelName;"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0002\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u0011\u0010\u0007\u001a\u00020\u00062\u0006\u0010\b\u001a\u00020\tH\u0086\u0002R\u001a\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\n"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/assembler/Assembler\$LabelTable;"
+        s = ""
+        s = "()V"
+        s = "table"
+        s = ""
+        s = ""
+        s = "Lorg/objectweb/asm/Label;"
+        s = "get"
+        s = "name"
+        s = "Lcom/anatawa12/jasm/tree/LabelName;"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public get (Lcom/anatawa12/jasm/tree/LabelName;)Lorg/objectweb/asm/Label;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 3
-   .limit local 7
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 3
+    .limit local 7
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/assembler/Assembler$LabelTable; from L_0000 to L_003c
-   .var 1 is name Lcom/anatawa12/jasm/tree/LabelName; from L_0000 to L_003c
-   aload 1
-   ldc "name"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/assembler/Assembler$LabelTable; from L_0000 to L_003c
+    .var 1 is name Lcom/anatawa12/jasm/tree/LabelName; from L_0000 to L_003c
+    aload 1
+    ldc "name"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 365
-   aload 0
-   getfield com/anatawa12/jasm/assembler/Assembler$LabelTable/table Ljava/util/Map;
-   astore 2
-   aload 1
-   invokevirtual com/anatawa12/jasm/tree/LabelName/getName ()Ljava/lang/String;
-   astore 3
+    .line 365
+    aload 0
+    getfield com/anatawa12/jasm/assembler/Assembler$LabelTable/table Ljava/util/Map;
+    astore 2
+    aload 1
+    invokevirtual com/anatawa12/jasm/tree/LabelName/getName ()Ljava/lang/String;
+    astore 3
 L_000c:
-   .var 2 is $this$getOrPut$iv Ljava/util/Map; from L_000c to L_0035
-   .var 3 is key$iv Ljava/lang/Object; from L_000c to L_0035
-   iconst_0
-   istore 4
+    .var 2 is $this$getOrPut$iv Ljava/util/Map; from L_000c to L_0035
+    .var 3 is key$iv Ljava/lang/Object; from L_000c to L_0035
+    iconst_0
+    istore 4
 L_000f:
-   .line 369
-   .var 4 is $i$f$getOrPut I from L_000f to L_0035
-   aload 2
-   aload 3
-   invokeinterface java/util/Map/get (Ljava/lang/Object;)Ljava/lang/Object;
-   astore 5
+    .line 369
+    .var 4 is $i$f$getOrPut I from L_000f to L_0035
+    aload 2
+    aload 3
+    invokeinterface java/util/Map/get (Ljava/lang/Object;)Ljava/lang/Object;
+    astore 5
 L_0015:
-   .line 370
-   .var 5 is value$iv Ljava/lang/Object; from L_0015 to L_0035
-   aload 5
-   ifnonnull L_0031
+    .line 370
+    .var 5 is value$iv Ljava/lang/Object; from L_0015 to L_0035
+    aload 5
+    ifnonnull L_0031
 L_0019:
-   .line 371
-   iconst_0
-   istore 6
+    .line 371
+    iconst_0
+    istore 6
 L_001d:
-   .var 6 is "\$i\$a\$-unknown-Assembler\$LabelTable\$get\$1" I from L_001d to L_0023
-   new org/objectweb/asm/Label
-   dup
+    .var 6 is "\$i\$a\$-unknown-Assembler\$LabelTable\$get\$1" I from L_001d to L_0023
+    new org/objectweb/asm/Label
+    dup
 L_0020:
-   .line 365
-   invokespecial org/objectweb/asm/Label/<init> ()V
+    .line 365
+    invokespecial org/objectweb/asm/Label/<init> ()V
 L_0023:
-   astore 6
+    astore 6
 L_0025:
-   .line 372
-   .var 6 is answer$iv Ljava/lang/Object; from L_0025 to L_002f
-   aload 2
-   aload 3
-   aload 6
-   invokeinterface java/util/Map/put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-   pop
+    .line 372
+    .var 6 is answer$iv Ljava/lang/Object; from L_0025 to L_002f
+    aload 2
+    aload 3
+    aload 6
+    invokeinterface java/util/Map/put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    pop
 L_002c:
-   .line 373
-   aload 6
+    .line 373
+    aload 6
 L_002f:
-   goto L_0035
+    goto L_0035
 L_0031:
-   .line 375
-   .stack
-      locals Object com/anatawa12/jasm/assembler/Assembler$LabelTable
-      locals Object com/anatawa12/jasm/tree/LabelName
-      locals Object java/util/Map
-      locals Object java/lang/String
-      locals Integer
-      locals Object java/lang/Object
-   .end stack
-   aload 5
+    .line 375
+    .stack
+        locals Object com/anatawa12/jasm/assembler/Assembler$LabelTable
+        locals Object com/anatawa12/jasm/tree/LabelName
+        locals Object java/util/Map
+        locals Object java/lang/String
+        locals Integer
+        locals Object java/lang/Object
+    .end stack
+    aload 5
 L_0035:
-   .line 370
-   .stack use locals
-      stacks Object java/lang/Object
-   .end stack
-   checkcast org/objectweb/asm/Label
+    .line 370
+    .stack use locals
+        stacks Object java/lang/Object
+    .end stack
+    checkcast org/objectweb/asm/Label
 L_0039:
-   .line 365
-   areturn
+    .line 365
+    areturn
 L_003c:
 .end method
 
 .method public <init> ()V
-   .limit stack 2
-   .limit local 4
+    .limit stack 2
+    .limit local 4
 L_0000:
-   .line 363
-   .var 0 is this Lcom/anatawa12/jasm/assembler/Assembler$LabelTable; from L_0000 to L_0013
-   aload 0
-   invokespecial java/lang/Object/<init> ()V
+    .line 363
+    .var 0 is this Lcom/anatawa12/jasm/assembler/Assembler$LabelTable; from L_0000 to L_0013
+    aload 0
+    invokespecial java/lang/Object/<init> ()V
 L_0004:
-   .line 364
-   aload 0
-   astore 2
-   iconst_0
-   istore 1
-   new java/util/LinkedHashMap
-   dup
-   invokespecial java/util/LinkedHashMap/<init> ()V
-   checkcast java/util/Map
-   astore 3
-   aload 2
-   aload 3
-   putfield com/anatawa12/jasm/assembler/Assembler$LabelTable/table Ljava/util/Map;
-   return
+    .line 364
+    aload 0
+    astore 2
+    iconst_0
+    istore 1
+    new java/util/LinkedHashMap
+    dup
+    invokespecial java/util/LinkedHashMap/<init> ()V
+    checkcast java/util/Map
+    astore 3
+    aload 2
+    aload 3
+    putfield com/anatawa12/jasm/assembler/Assembler$LabelTable/table Ljava/util/Map;
+    return
 L_0013:
 .end method
 
 .field private table Ljava/util/Map;
-   .signature "Ljava/util/Map<Ljava/lang/String;Lorg/objectweb/asm/Label;>;"
+    .signature "Ljava/util/Map<Ljava/lang/String;Lorg/objectweb/asm/Label;>;"
 .end field
 

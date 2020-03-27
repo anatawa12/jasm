@@ -7,338 +7,338 @@
 .inner public com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl inner GrammarScopeImpl outer com/anatawa12/jasm/parser/AbstractParser
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0086\u0004\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\"\u0010\u0006\u001a\u0002H\u0007\"\b\b\u0000\u0010\u0007*\u00020\b*\b\u0012\u0004\u0012\u0002H\u00070\tH\u0096\u0002¢\u0006\u0002\u0010\nJ\"\u0010\u000b\u001a\b\u0012\u0004\u0012\u0002H\u00070\u000c\"\b\b\u0000\u0010\u0007*\u00020\b*\b\u0012\u0004\u0012\u0002H\u00070\tH\u0016J#\u0010\r\u001a\u0004\u0018\u0001H\u0007\"\b\b\u0000\u0010\u0007*\u00020\b*\b\u0012\u0004\u0012\u0002H\u00070\tH\u0016¢\u0006\u0002\u0010\nJ)\u0010\u000e\u001a\u0002H\u0007\"\b\b\u0000\u0010\u0007*\u00020\u000f*\u00020\u00102\u000c\u0010\u0011\u001a\b\u0012\u0004\u0012\u0002H\u00070\u0012H\u0016¢\u0006\u0002\u0010\u0013R\u0018\u0010\u0003\u001a\u000c\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0014"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/parser/AbstractParser\$GrammarScopeImpl;"
-      s = "Lcom/anatawa12/jasm/parser/Grammar\$GrammarScope;"
-      s = "(Lcom/anatawa12/jasm/parser/AbstractParser;)V"
-      s = "tokens"
-      s = ""
-      s = "Lcom/anatawa12/jasm/tree/Token;"
-      s = "invoke"
-      s = "T"
-      s = "Lcom/anatawa12/jasm/tree/Node;"
-      s = "Lcom/anatawa12/jasm/parser/Grammar;"
-      s = "(Lcom/anatawa12/jasm/parser/Grammar;)Lcom/anatawa12/jasm/tree/Node;"
-      s = "many"
-      s = ""
-      s = "optional"
-      s = "read"
-      s = ""
-      s = "Lcom/anatawa12/jasm/parser/ILexer;"
-      s = "expect"
-      s = "Lcom/anatawa12/jasm/parser/TokenType;"
-      s = "(Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Object;"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0086\u0004\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\"\u0010\u0006\u001a\u0002H\u0007\"\b\b\u0000\u0010\u0007*\u00020\b*\b\u0012\u0004\u0012\u0002H\u00070\tH\u0096\u0002¢\u0006\u0002\u0010\nJ\"\u0010\u000b\u001a\b\u0012\u0004\u0012\u0002H\u00070\u000c\"\b\b\u0000\u0010\u0007*\u00020\b*\b\u0012\u0004\u0012\u0002H\u00070\tH\u0016J#\u0010\r\u001a\u0004\u0018\u0001H\u0007\"\b\b\u0000\u0010\u0007*\u00020\b*\b\u0012\u0004\u0012\u0002H\u00070\tH\u0016¢\u0006\u0002\u0010\nJ)\u0010\u000e\u001a\u0002H\u0007\"\b\b\u0000\u0010\u0007*\u00020\u000f*\u00020\u00102\u000c\u0010\u0011\u001a\b\u0012\u0004\u0012\u0002H\u00070\u0012H\u0016¢\u0006\u0002\u0010\u0013R\u0018\u0010\u0003\u001a\u000c\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0014"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/parser/AbstractParser\$GrammarScopeImpl;"
+        s = "Lcom/anatawa12/jasm/parser/Grammar\$GrammarScope;"
+        s = "(Lcom/anatawa12/jasm/parser/AbstractParser;)V"
+        s = "tokens"
+        s = ""
+        s = "Lcom/anatawa12/jasm/tree/Token;"
+        s = "invoke"
+        s = "T"
+        s = "Lcom/anatawa12/jasm/tree/Node;"
+        s = "Lcom/anatawa12/jasm/parser/Grammar;"
+        s = "(Lcom/anatawa12/jasm/parser/Grammar;)Lcom/anatawa12/jasm/tree/Node;"
+        s = "many"
+        s = ""
+        s = "optional"
+        s = "read"
+        s = ""
+        s = "Lcom/anatawa12/jasm/parser/ILexer;"
+        s = "expect"
+        s = "Lcom/anatawa12/jasm/parser/TokenType;"
+        s = "(Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Object;"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public read (Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Object;
-   .signature "<T:Ljava/lang/Object;>(Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType<TT;>;)TT;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 4
+    .signature "<T:Ljava/lang/Object;>(Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType<TT;>;)TT;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 4
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl; from L_0000 to L_0019
-   .var 1 is $this$read Lcom/anatawa12/jasm/parser/ILexer; from L_0000 to L_0019
-   .var 2 is expect Lcom/anatawa12/jasm/parser/TokenType; from L_0000 to L_0019
-   aload 1
-   ldc "\$this\$read"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 2
-   ldc "expect"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl; from L_0000 to L_0019
+    .var 1 is $this$read Lcom/anatawa12/jasm/parser/ILexer; from L_0000 to L_0019
+    .var 2 is expect Lcom/anatawa12/jasm/parser/TokenType; from L_0000 to L_0019
+    aload 1
+    ldc "\$this\$read"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 2
+    ldc "expect"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0007:
-   .line 29
-   aload 1
-   aload 2
-   invokeinterface com/anatawa12/jasm/parser/ILexer/readToken (Lcom/anatawa12/jasm/parser/TokenType;)Lcom/anatawa12/jasm/tree/Token;
-   astore 3
+    .line 29
+    aload 1
+    aload 2
+    invokeinterface com/anatawa12/jasm/parser/ILexer/readToken (Lcom/anatawa12/jasm/parser/TokenType;)Lcom/anatawa12/jasm/tree/Token;
+    astore 3
 L_000d:
-   .line 30
-   .var 3 is token Lcom/anatawa12/jasm/tree/Token; from L_000d to L_0019
-   aload 0
-   getfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/tokens Ljava/util/List;
-   aload 3
-   invokeinterface java/util/List/add (Ljava/lang/Object;)Z
-   pop
+    .line 30
+    .var 3 is token Lcom/anatawa12/jasm/tree/Token; from L_000d to L_0019
+    aload 0
+    getfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/tokens Ljava/util/List;
+    aload 3
+    invokeinterface java/util/List/add (Ljava/lang/Object;)Z
+    pop
 L_0014:
-   .line 31
-   aload 3
-   invokevirtual com/anatawa12/jasm/tree/Token/getValue ()Ljava/lang/Object;
-   areturn
+    .line 31
+    aload 3
+    invokevirtual com/anatawa12/jasm/tree/Token/getValue ()Ljava/lang/Object;
+    areturn
 L_0019:
 .end method
 
 .method public invoke (Lcom/anatawa12/jasm/parser/Grammar;)Lcom/anatawa12/jasm/tree/Node;
-   .signature "<T:Lcom/anatawa12/jasm/tree/Node;>(Lcom/anatawa12/jasm/parser/Grammar<TT;>;)TT;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 4
-   .limit local 9
+    .signature "<T:Lcom/anatawa12/jasm/tree/Node;>(Lcom/anatawa12/jasm/parser/Grammar<TT;>;)TT;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 4
+    .limit local 9
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl; from L_0000 to L_0052
-   .var 1 is $this$invoke Lcom/anatawa12/jasm/parser/Grammar; from L_0000 to L_0052
-   aload 1
-   ldc "\$this\$invoke"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl; from L_0000 to L_0052
+    .var 1 is $this$invoke Lcom/anatawa12/jasm/parser/Grammar; from L_0000 to L_0052
+    aload 1
+    ldc "\$this\$invoke"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 35
-   new com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl
-   dup
-   aload 0
-   getfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/this$0 Lcom/anatawa12/jasm/parser/AbstractParser;
-   invokespecial com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/<init> (Lcom/anatawa12/jasm/parser/AbstractParser;)V
-   astore 2
+    .line 35
+    new com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl
+    dup
+    aload 0
+    getfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/this$0 Lcom/anatawa12/jasm/parser/AbstractParser;
+    invokespecial com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/<init> (Lcom/anatawa12/jasm/parser/AbstractParser;)V
+    astore 2
 L_000c:
-   .line 36
-   .var 2 is newScope Lcom/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl; from L_000c to L_0052
-   aload 1
-   invokevirtual com/anatawa12/jasm/parser/Grammar/getRun ()Lkotlin/jvm/functions/Function1;
-   aload 2
-   invokeinterface kotlin/jvm/functions/Function1/invoke (Ljava/lang/Object;)Ljava/lang/Object;
-   checkcast com/anatawa12/jasm/tree/Node
-   astore 3
+    .line 36
+    .var 2 is newScope Lcom/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl; from L_000c to L_0052
+    aload 1
+    invokevirtual com/anatawa12/jasm/parser/Grammar/getRun ()Lkotlin/jvm/functions/Function1;
+    aload 2
+    invokeinterface kotlin/jvm/functions/Function1/invoke (Ljava/lang/Object;)Ljava/lang/Object;
+    checkcast com/anatawa12/jasm/tree/Node
+    astore 3
 L_0014:
-   .line 37
-   .var 3 is result Lcom/anatawa12/jasm/tree/Node; from L_0014 to L_0052
-   aload 0
-   getfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/tokens Ljava/util/List;
-   checkcast java/util/Collection
-   astore 4
-   aload 2
-   getfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/tokens Ljava/util/List;
-   checkcast java/lang/Iterable
-   astore 5
-   iconst_0
-   istore 6
-   aload 4
-   aload 5
-   invokestatic kotlin/collections/CollectionsKt/addAll (Ljava/util/Collection;Ljava/lang/Iterable;)Z
-   pop
+    .line 37
+    .var 3 is result Lcom/anatawa12/jasm/tree/Node; from L_0014 to L_0052
+    aload 0
+    getfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/tokens Ljava/util/List;
+    checkcast java/util/Collection
+    astore 4
+    aload 2
+    getfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/tokens Ljava/util/List;
+    checkcast java/lang/Iterable
+    astore 5
+    iconst_0
+    istore 6
+    aload 4
+    aload 5
+    invokestatic kotlin/collections/CollectionsKt/addAll (Ljava/util/Collection;Ljava/lang/Iterable;)Z
+    pop
 L_0024:
-   .line 38
-   aload 3
-   instanceof com/anatawa12/jasm/tree/BranchNode
-   ifeq L_004d
+    .line 38
+    aload 3
+    instanceof com/anatawa12/jasm/tree/BranchNode
+    ifeq L_004d
 L_0029:
-   .line 39
-   aload 3
-   checkcast com/anatawa12/jasm/tree/BranchNode
-   aload 2
-   getfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/tokens Ljava/util/List;
-   checkcast java/util/Collection
-   astore 4
-   astore 7
+    .line 39
+    aload 3
+    checkcast com/anatawa12/jasm/tree/BranchNode
+    aload 2
+    getfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/tokens Ljava/util/List;
+    checkcast java/util/Collection
+    astore 4
+    astore 7
 L_0032:
-   .var 4 is $this$toTypedArray$iv Ljava/util/Collection; from L_0032 to L_0046
-   iconst_0
-   istore 5
+    .var 4 is $this$toTypedArray$iv Ljava/util/Collection; from L_0032 to L_0046
+    iconst_0
+    istore 5
 L_0035:
-   .line 56
-   .var 5 is $i$f$toTypedArray I from L_0035 to L_0046
-   aload 4
-   astore 6
+    .line 56
+    .var 5 is $i$f$toTypedArray I from L_0035 to L_0046
+    aload 4
+    astore 6
 L_0039:
-   .line 57
-   .var 6 is thisCollection$iv Ljava/util/Collection; from L_0039 to L_0046
-   aload 6
-   iconst_0
-   anewarray com/anatawa12/jasm/tree/Token
-   invokeinterface java/util/Collection/toArray "([Ljava/lang/Object;)[Ljava/lang/Object;"
-   dup
-   ifnonnull L_0046
-   new kotlin/TypeCastException
-   dup
-   ldc "null cannot be cast to non-null type kotlin.Array<T>"
-   invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
-   athrow
+    .line 57
+    .var 6 is thisCollection$iv Ljava/util/Collection; from L_0039 to L_0046
+    aload 6
+    iconst_0
+    anewarray com/anatawa12/jasm/tree/Token
+    invokeinterface java/util/Collection/toArray "([Ljava/lang/Object;)[Ljava/lang/Object;"
+    dup
+    ifnonnull L_0046
+    new kotlin/TypeCastException
+    dup
+    ldc "null cannot be cast to non-null type kotlin.Array<T>"
+    invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
+    athrow
 L_0046:
-   .stack
-      locals Object com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl
-      locals Object com/anatawa12/jasm/parser/Grammar
-      locals Object com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl
-      locals Object com/anatawa12/jasm/tree/Node
-      locals Object java/util/Collection
-      locals Integer
-      locals Object java/util/Collection
-      locals Object com/anatawa12/jasm/tree/BranchNode
-      stacks Object "[Ljava/lang/Object;"
-   .end stack
-   astore 8
-   aload 7
-   aload 8
-   checkcast "[Lcom/anatawa12/jasm/tree/Token;"
-   invokevirtual com/anatawa12/jasm/tree/BranchNode/setTokens$jasm "([Lcom/anatawa12/jasm/tree/Token;)V"
+    .stack
+        locals Object com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl
+        locals Object com/anatawa12/jasm/parser/Grammar
+        locals Object com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl
+        locals Object com/anatawa12/jasm/tree/Node
+        locals Object java/util/Collection
+        locals Integer
+        locals Object java/util/Collection
+        locals Object com/anatawa12/jasm/tree/BranchNode
+        stacks Object "[Ljava/lang/Object;"
+    .end stack
+    astore 8
+    aload 7
+    aload 8
+    checkcast "[Lcom/anatawa12/jasm/tree/Token;"
+    invokevirtual com/anatawa12/jasm/tree/BranchNode/setTokens$jasm "([Lcom/anatawa12/jasm/tree/Token;)V"
 L_004d:
-   .line 40
-   .stack
-      locals Object com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl
-      locals Object com/anatawa12/jasm/parser/Grammar
-      locals Object com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl
-      locals Object com/anatawa12/jasm/tree/Node
-      locals Object java/util/Collection
-   .end stack
-   aload 3
-   areturn
+    .line 40
+    .stack
+        locals Object com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl
+        locals Object com/anatawa12/jasm/parser/Grammar
+        locals Object com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl
+        locals Object com/anatawa12/jasm/tree/Node
+        locals Object java/util/Collection
+    .end stack
+    aload 3
+    areturn
 L_0052:
 .end method
 
 .method public optional (Lcom/anatawa12/jasm/parser/Grammar;)Lcom/anatawa12/jasm/tree/Node;
-   .signature "<T:Lcom/anatawa12/jasm/tree/Node;>(Lcom/anatawa12/jasm/parser/Grammar<TT;>;)TT;"
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 2
+    .signature "<T:Lcom/anatawa12/jasm/tree/Node;>(Lcom/anatawa12/jasm/parser/Grammar<TT;>;)TT;"
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl; from L_0000 to L_0017
-   .var 1 is $this$optional Lcom/anatawa12/jasm/parser/Grammar; from L_0000 to L_0017
-   aload 1
-   ldc "\$this\$optional"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl; from L_0000 to L_0017
+    .var 1 is $this$optional Lcom/anatawa12/jasm/parser/Grammar; from L_0000 to L_0017
+    aload 1
+    ldc "\$this\$optional"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 44
-   aload 0
-   getfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/this$0 Lcom/anatawa12/jasm/parser/AbstractParser;
-   invokevirtual com/anatawa12/jasm/parser/AbstractParser/getLex ()Lcom/anatawa12/jasm/parser/ILexer;
-   aload 1
-   invokevirtual com/anatawa12/jasm/parser/Grammar/getStart ()Ljava/util/Set;
-   invokeinterface com/anatawa12/jasm/parser/ILexer/isNext (Ljava/util/Set;)Z
-   ifeq L_0011
-   aload 0
-   aload 1
-   invokevirtual com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/invoke (Lcom/anatawa12/jasm/parser/Grammar;)Lcom/anatawa12/jasm/tree/Node;
-   goto L_0014
+    .line 44
+    aload 0
+    getfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/this$0 Lcom/anatawa12/jasm/parser/AbstractParser;
+    invokevirtual com/anatawa12/jasm/parser/AbstractParser/getLex ()Lcom/anatawa12/jasm/parser/ILexer;
+    aload 1
+    invokevirtual com/anatawa12/jasm/parser/Grammar/getStart ()Ljava/util/Set;
+    invokeinterface com/anatawa12/jasm/parser/ILexer/isNext (Ljava/util/Set;)Z
+    ifeq L_0011
+    aload 0
+    aload 1
+    invokevirtual com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/invoke (Lcom/anatawa12/jasm/parser/Grammar;)Lcom/anatawa12/jasm/tree/Node;
+    goto L_0014
 L_0011:
-   .stack
-      locals Object com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl
-      locals Object com/anatawa12/jasm/parser/Grammar
-   .end stack
-   aconst_null
+    .stack
+        locals Object com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl
+        locals Object com/anatawa12/jasm/parser/Grammar
+    .end stack
+    aconst_null
 L_0014:
-   .stack use locals
-      stacks Object com/anatawa12/jasm/tree/Node
-   .end stack
-   areturn
+    .stack use locals
+        stacks Object com/anatawa12/jasm/tree/Node
+    .end stack
+    areturn
 L_0017:
 .end method
 
 .method public many (Lcom/anatawa12/jasm/parser/Grammar;)Ljava/util/List;
-   .signature "<T:Lcom/anatawa12/jasm/tree/Node;>(Lcom/anatawa12/jasm/parser/Grammar<TT;>;)Ljava/util/List<TT;>;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 3
-   .limit local 4
+    .signature "<T:Lcom/anatawa12/jasm/tree/Node;>(Lcom/anatawa12/jasm/parser/Grammar<TT;>;)Ljava/util/List<TT;>;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 3
+    .limit local 4
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl; from L_0000 to L_0029
-   .var 1 is $this$many Lcom/anatawa12/jasm/parser/Grammar; from L_0000 to L_0029
-   aload 1
-   ldc "\$this\$many"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl; from L_0000 to L_0029
+    .var 1 is $this$many Lcom/anatawa12/jasm/parser/Grammar; from L_0000 to L_0029
+    aload 1
+    ldc "\$this\$many"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 46
-   iconst_0
-   istore 3
-   new java/util/ArrayList
-   dup
-   invokespecial java/util/ArrayList/<init> ()V
-   checkcast java/util/List
+    .line 46
+    iconst_0
+    istore 3
+    new java/util/ArrayList
+    dup
+    invokespecial java/util/ArrayList/<init> ()V
+    checkcast java/util/List
 L_000c:
-   .line 46
-   astore 2
+    .line 46
+    astore 2
 L_000f:
-   .line 47
-   .var 2 is list Ljava/util/List; from L_000f to L_0029
-   .stack
-      locals Object com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl
-      locals Object com/anatawa12/jasm/parser/Grammar
-      locals Object java/util/List
-      locals Integer
-   .end stack
-   aload 0
-   getfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/this$0 Lcom/anatawa12/jasm/parser/AbstractParser;
-   invokevirtual com/anatawa12/jasm/parser/AbstractParser/getLex ()Lcom/anatawa12/jasm/parser/ILexer;
-   aload 1
-   invokevirtual com/anatawa12/jasm/parser/Grammar/getStart ()Ljava/util/Set;
-   invokeinterface com/anatawa12/jasm/parser/ILexer/isNext (Ljava/util/Set;)Z
-   ifeq L_0024
+    .line 47
+    .var 2 is list Ljava/util/List; from L_000f to L_0029
+    .stack
+        locals Object com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl
+        locals Object com/anatawa12/jasm/parser/Grammar
+        locals Object java/util/List
+        locals Integer
+    .end stack
+    aload 0
+    getfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/this$0 Lcom/anatawa12/jasm/parser/AbstractParser;
+    invokevirtual com/anatawa12/jasm/parser/AbstractParser/getLex ()Lcom/anatawa12/jasm/parser/ILexer;
+    aload 1
+    invokevirtual com/anatawa12/jasm/parser/Grammar/getStart ()Ljava/util/Set;
+    invokeinterface com/anatawa12/jasm/parser/ILexer/isNext (Ljava/util/Set;)Z
+    ifeq L_0024
 L_0019:
-   .line 48
-   aload 2
-   aload 0
-   aload 1
-   invokevirtual com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/invoke (Lcom/anatawa12/jasm/parser/Grammar;)Lcom/anatawa12/jasm/tree/Node;
-   invokeinterface java/util/List/add (Ljava/lang/Object;)Z
-   pop
+    .line 48
+    aload 2
+    aload 0
+    aload 1
+    invokevirtual com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/invoke (Lcom/anatawa12/jasm/parser/Grammar;)Lcom/anatawa12/jasm/tree/Node;
+    invokeinterface java/util/List/add (Ljava/lang/Object;)Z
+    pop
 L_0021:
-   .line 47
-   goto L_000f
+    .line 47
+    goto L_000f
 L_0024:
-   .line 49
-   .stack use locals
-   .end stack
-   aload 2
-   areturn
+    .line 49
+    .stack use locals
+    .end stack
+    aload 2
+    areturn
 L_0029:
 .end method
 
 .method public <init> (Lcom/anatawa12/jasm/parser/AbstractParser;)V
-   .signature "()V"
-   .limit stack 2
-   .limit local 5
+    .signature "()V"
+    .limit stack 2
+    .limit local 5
 L_0000:
-   .line 26
-   .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl; from L_0000 to L_0016
-   .var 1 is $outer Lcom/anatawa12/jasm/parser/AbstractParser; from L_0000 to L_0016
-   aload 0
-   aload 1
-   putfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/this$0 Lcom/anatawa12/jasm/parser/AbstractParser;
-   aload 0
-   invokespecial java/lang/Object/<init> ()V
+    .line 26
+    .var 0 is this Lcom/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl; from L_0000 to L_0016
+    .var 1 is $outer Lcom/anatawa12/jasm/parser/AbstractParser; from L_0000 to L_0016
+    aload 0
+    aload 1
+    putfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/this$0 Lcom/anatawa12/jasm/parser/AbstractParser;
+    aload 0
+    invokespecial java/lang/Object/<init> ()V
 L_0007:
-   .line 27
-   aload 0
-   astore 3
-   iconst_0
-   istore 2
-   new java/util/ArrayList
-   dup
-   invokespecial java/util/ArrayList/<init> ()V
-   checkcast java/util/List
-   astore 4
-   aload 3
-   aload 4
-   putfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/tokens Ljava/util/List;
-   return
+    .line 27
+    aload 0
+    astore 3
+    iconst_0
+    istore 2
+    new java/util/ArrayList
+    dup
+    invokespecial java/util/ArrayList/<init> ()V
+    checkcast java/util/List
+    astore 4
+    aload 3
+    aload 4
+    putfield com/anatawa12/jasm/parser/AbstractParser$GrammarScopeImpl/tokens Ljava/util/List;
+    return
 L_0016:
 .end method
 
 .field private tokens Ljava/util/List;
-   .signature "Ljava/util/List<Lcom/anatawa12/jasm/tree/Token<*>;>;"
+    .signature "Ljava/util/List<Lcom/anatawa12/jasm/tree/Token<*>;>;"
 .end field
 
 .field final this$0 Lcom/anatawa12/jasm/parser/AbstractParser;

@@ -5,512 +5,512 @@
 .debug "SMAP\nMain.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Main.kt\ncom/anatawa12/jasm/MainKt\n*L\n1#1,62:1\n*E\n"
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 2
-   d1 [ = .annotation array
-      s = "\u0000.\n\u0000\n\u0002\u0010\u0012\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0000\u001a\u001e\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007\u001a\u0019\u0010\b\u001a\u00020\t2\u000c\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00030\u000b¢\u0006\u0002\u0010\u000c\u001a\u0018\u0010\r\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u000e\u001a\u00020\u0003\u001a\u001e\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007¨\u0006\u0011"
-   .end annotation
-   d2 [ = .annotation array
-      s = "assembleJasmFile"
-      s = ""
-      s = "fileName"
-      s = ""
-      s = "jasmFile"
-      s = "Lcom/anatawa12/jasm/tree/JasmFile;"
-      s = "options"
-      s = "Lcom/anatawa12/jasm/assembler/AssemblerOptions;"
-      s = "main"
-      s = ""
-      s = "args"
-      s = ""
-      s = "([Ljava/lang/String;)V"
-      s = "parseJasmFile"
-      s = "content"
-      s = "verifyFile"
-      s = ""
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 2
+    d1 [ = .annotation array
+        s = "\u0000.\n\u0000\n\u0002\u0010\u0012\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0000\u001a\u001e\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007\u001a\u0019\u0010\b\u001a\u00020\t2\u000c\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00030\u000b¢\u0006\u0002\u0010\u000c\u001a\u0018\u0010\r\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u000e\u001a\u00020\u0003\u001a\u001e\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007¨\u0006\u0011"
+    .end annotation
+    d2 [ = .annotation array
+        s = "assembleJasmFile"
+        s = ""
+        s = "fileName"
+        s = ""
+        s = "jasmFile"
+        s = "Lcom/anatawa12/jasm/tree/JasmFile;"
+        s = "options"
+        s = "Lcom/anatawa12/jasm/assembler/AssemblerOptions;"
+        s = "main"
+        s = ""
+        s = "args"
+        s = ""
+        s = "([Ljava/lang/String;)V"
+        s = "parseJasmFile"
+        s = "content"
+        s = "verifyFile"
+        s = ""
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public main "([Ljava/lang/String;)V"
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 5
-   .limit local 6
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 5
+    .limit local 6
 L_0000:
-   .var 0 is args "[Ljava/lang/String;" from L_0000 to L_005c
-   aload 0
-   ldc "args"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is args "[Ljava/lang/String;" from L_0000 to L_005c
+    aload 0
+    ldc "args"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 16
-   aload 0
-   iconst_0
-   aaload
-   astore 1
+    .line 16
+    aload 0
+    iconst_0
+    aaload
+    astore 1
 L_000a:
-   .line 17
-   .var 1 is fileName Ljava/lang/String; from L_000a to L_005c
-   aload 1
-   new java/io/File
-   dup
-   aload 1
-   invokespecial java/io/File/<init> (Ljava/lang/String;)V
-   aconst_null
-   iconst_1
-   aconst_null
-   invokestatic kotlin/io/FilesKt/readText$default (Ljava/io/File;Ljava/nio/charset/Charset;ILjava/lang/Object;)Ljava/lang/String;
-   invokestatic com/anatawa12/jasm/MainKt/parseJasmFile (Ljava/lang/String;Ljava/lang/String;)Lcom/anatawa12/jasm/tree/JasmFile;
-   dup
-   ifnull L_0019
-   goto L_0029
+    .line 17
+    .var 1 is fileName Ljava/lang/String; from L_000a to L_005c
+    aload 1
+    new java/io/File
+    dup
+    aload 1
+    invokespecial java/io/File/<init> (Ljava/lang/String;)V
+    aconst_null
+    iconst_1
+    aconst_null
+    invokestatic kotlin/io/FilesKt/readText$default (Ljava/io/File;Ljava/nio/charset/Charset;ILjava/lang/Object;)Ljava/lang/String;
+    invokestatic com/anatawa12/jasm/MainKt/parseJasmFile (Ljava/lang/String;Ljava/lang/String;)Lcom/anatawa12/jasm/tree/JasmFile;
+    dup
+    ifnull L_0019
+    goto L_0029
 L_0019:
-   .line 17
-   .stack
-      locals Object "[Ljava/lang/String;"
-      locals Object java/lang/String
-      stacks Object com/anatawa12/jasm/tree/JasmFile
-   .end stack
-   pop
-   iconst_1
-   istore 3
-   iconst_0
-   istore 4
-   iload 3
-   invokestatic java/lang/System/exit (I)V
-   new java/lang/RuntimeException
-   dup
-   ldc "System.exit returned normally, while it was supposed to halt JVM."
-   invokespecial java/lang/RuntimeException/<init> (Ljava/lang/String;)V
-   checkcast java/lang/Throwable
-   athrow
+    .line 17
+    .stack
+        locals Object "[Ljava/lang/String;"
+        locals Object java/lang/String
+        stacks Object com/anatawa12/jasm/tree/JasmFile
+    .end stack
+    pop
+    iconst_1
+    istore 3
+    iconst_0
+    istore 4
+    iload 3
+    invokestatic java/lang/System/exit (I)V
+    new java/lang/RuntimeException
+    dup
+    ldc "System.exit returned normally, while it was supposed to halt JVM."
+    invokespecial java/lang/RuntimeException/<init> (Ljava/lang/String;)V
+    checkcast java/lang/Throwable
+    athrow
 L_0029:
-   .line 17
-   .stack use locals
-      stacks Object com/anatawa12/jasm/tree/JasmFile
-   .end stack
-   astore 2
+    .line 17
+    .stack use locals
+        stacks Object com/anatawa12/jasm/tree/JasmFile
+    .end stack
+    astore 2
 L_002d:
-   .line 18
-   .var 2 is jasmFile Lcom/anatawa12/jasm/tree/JasmFile; from L_002d to L_005c
-   getstatic com/anatawa12/jasm/assembler/AssemblerOptions/Companion Lcom/anatawa12/jasm/assembler/AssemblerOptions$Companion;
-   aload 2
-   invokevirtual com/anatawa12/jasm/tree/JasmFile/getHeader ()Lcom/anatawa12/jasm/tree/JasmHeader;
-   invokevirtual com/anatawa12/jasm/assembler/AssemblerOptions$Companion/parse (Lcom/anatawa12/jasm/tree/JasmHeader;)Lcom/anatawa12/jasm/assembler/AssemblerOptions;
-   astore 3
+    .line 18
+    .var 2 is jasmFile Lcom/anatawa12/jasm/tree/JasmFile; from L_002d to L_005c
+    getstatic com/anatawa12/jasm/assembler/AssemblerOptions/Companion Lcom/anatawa12/jasm/assembler/AssemblerOptions$Companion;
+    aload 2
+    invokevirtual com/anatawa12/jasm/tree/JasmFile/getHeader ()Lcom/anatawa12/jasm/tree/JasmHeader;
+    invokevirtual com/anatawa12/jasm/assembler/AssemblerOptions$Companion/parse (Lcom/anatawa12/jasm/tree/JasmHeader;)Lcom/anatawa12/jasm/assembler/AssemblerOptions;
+    astore 3
 L_0034:
-   .line 20
-   .var 3 is options Lcom/anatawa12/jasm/assembler/AssemblerOptions; from L_0034 to L_005c
-   aload 1
-   aload 2
-   aload 3
-   invokestatic com/anatawa12/jasm/MainKt/verifyFile (Ljava/lang/String;Lcom/anatawa12/jasm/tree/JasmFile;Lcom/anatawa12/jasm/assembler/AssemblerOptions;)Z
-   ifne L_0047
-   iconst_1
-   istore 4
-   iconst_0
-   istore 5
-   iload 4
-   invokestatic java/lang/System/exit (I)V
-   new java/lang/RuntimeException
-   dup
-   ldc "System.exit returned normally, while it was supposed to halt JVM."
-   invokespecial java/lang/RuntimeException/<init> (Ljava/lang/String;)V
-   checkcast java/lang/Throwable
-   athrow
+    .line 20
+    .var 3 is options Lcom/anatawa12/jasm/assembler/AssemblerOptions; from L_0034 to L_005c
+    aload 1
+    aload 2
+    aload 3
+    invokestatic com/anatawa12/jasm/MainKt/verifyFile (Ljava/lang/String;Lcom/anatawa12/jasm/tree/JasmFile;Lcom/anatawa12/jasm/assembler/AssemblerOptions;)Z
+    ifne L_0047
+    iconst_1
+    istore 4
+    iconst_0
+    istore 5
+    iload 4
+    invokestatic java/lang/System/exit (I)V
+    new java/lang/RuntimeException
+    dup
+    ldc "System.exit returned normally, while it was supposed to halt JVM."
+    invokespecial java/lang/RuntimeException/<init> (Ljava/lang/String;)V
+    checkcast java/lang/Throwable
+    athrow
 L_0047:
-   .line 22
-   .stack
-      locals Object "[Ljava/lang/String;"
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/tree/JasmFile
-      locals Object com/anatawa12/jasm/assembler/AssemblerOptions
-   .end stack
-   aload 1
-   aload 2
-   aload 3
-   invokestatic com/anatawa12/jasm/MainKt/assembleJasmFile "(Ljava/lang/String;Lcom/anatawa12/jasm/tree/JasmFile;Lcom/anatawa12/jasm/assembler/AssemblerOptions;)[B"
-   astore 4
+    .line 22
+    .stack
+        locals Object "[Ljava/lang/String;"
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/tree/JasmFile
+        locals Object com/anatawa12/jasm/assembler/AssemblerOptions
+    .end stack
+    aload 1
+    aload 2
+    aload 3
+    invokestatic com/anatawa12/jasm/MainKt/assembleJasmFile "(Ljava/lang/String;Lcom/anatawa12/jasm/tree/JasmFile;Lcom/anatawa12/jasm/assembler/AssemblerOptions;)[B"
+    astore 4
 L_004f:
-   .line 24
-   .var 4 is classFile "[B" from L_004f to L_005c
-   new java/io/File
-   dup
-   aload 0
-   iconst_1
-   aaload
-   invokespecial java/io/File/<init> (Ljava/lang/String;)V
-   aload 4
-   invokestatic kotlin/io/FilesKt/writeBytes "(Ljava/io/File;[B)V"
+    .line 24
+    .var 4 is classFile "[B" from L_004f to L_005c
+    new java/io/File
+    dup
+    aload 0
+    iconst_1
+    aaload
+    invokespecial java/io/File/<init> (Ljava/lang/String;)V
+    aload 4
+    invokestatic kotlin/io/FilesKt/writeBytes "(Ljava/io/File;[B)V"
 L_0059:
-   .line 25
-   return
+    .line 25
+    return
 L_005c:
 .end method
 
 .method public parseJasmFile (Ljava/lang/String;Ljava/lang/String;)Lcom/anatawa12/jasm/tree/JasmFile;
-   .annotation invisible org/jetbrains/annotations/Nullable
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 3
-   .limit local 7
+    .annotation invisible org/jetbrains/annotations/Nullable
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 3
+    .limit local 7
 L_0000:
-   .var 0 is fileName Ljava/lang/String; from L_0000 to L_0049
-   .var 1 is content Ljava/lang/String; from L_0000 to L_0049
-   aload 0
-   ldc "fileName"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 1
-   ldc "content"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is fileName Ljava/lang/String; from L_0000 to L_0049
+    .var 1 is content Ljava/lang/String; from L_0000 to L_0049
+    aload 0
+    ldc "fileName"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 1
+    ldc "content"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0007:
-   .line 28
-   new com/anatawa12/jasm/parser/StringLexerReader
-   dup
-   aload 1
-   invokespecial com/anatawa12/jasm/parser/StringLexerReader/<init> (Ljava/lang/String;)V
-   astore 2
+    .line 28
+    new com/anatawa12/jasm/parser/StringLexerReader
+    dup
+    aload 1
+    invokespecial com/anatawa12/jasm/parser/StringLexerReader/<init> (Ljava/lang/String;)V
+    astore 2
 L_000e:
-   .line 29
-   .var 2 is reader Lcom/anatawa12/jasm/parser/StringLexerReader; from L_000e to L_0049
-   new com/anatawa12/jasm/parser/Lexer
-   dup
-   aload 2
-   checkcast com/anatawa12/jasm/parser/Lexer$Reader
-   invokespecial com/anatawa12/jasm/parser/Lexer/<init> (Lcom/anatawa12/jasm/parser/Lexer$Reader;)V
-   astore 3
+    .line 29
+    .var 2 is reader Lcom/anatawa12/jasm/parser/StringLexerReader; from L_000e to L_0049
+    new com/anatawa12/jasm/parser/Lexer
+    dup
+    aload 2
+    checkcast com/anatawa12/jasm/parser/Lexer$Reader
+    invokespecial com/anatawa12/jasm/parser/Lexer/<init> (Lcom/anatawa12/jasm/parser/Lexer$Reader;)V
+    astore 3
 L_0016:
-   .line 30
-   .var 3 is lexer Lcom/anatawa12/jasm/parser/Lexer; from L_0016 to L_0049
-   new com/anatawa12/jasm/parser/Parser
-   dup
-   aload 3
-   checkcast com/anatawa12/jasm/parser/ILexer
-   invokespecial com/anatawa12/jasm/parser/Parser/<init> (Lcom/anatawa12/jasm/parser/ILexer;)V
-   astore 4
+    .line 30
+    .var 3 is lexer Lcom/anatawa12/jasm/parser/Lexer; from L_0016 to L_0049
+    new com/anatawa12/jasm/parser/Parser
+    dup
+    aload 3
+    checkcast com/anatawa12/jasm/parser/ILexer
+    invokespecial com/anatawa12/jasm/parser/Parser/<init> (Lcom/anatawa12/jasm/parser/ILexer;)V
+    astore 4
 L_001e:
-   .line 31
-   .catch com/anatawa12/jasm/parser/LexingError from L_001e to L_0029 using L_002b
-   .var 4 is parser Lcom/anatawa12/jasm/parser/Parser; from L_001e to L_0049
-   nop
+    .line 31
+    .catch com/anatawa12/jasm/parser/LexingError from L_001e to L_0029 using L_002b
+    .var 4 is parser Lcom/anatawa12/jasm/parser/Parser; from L_001e to L_0049
+    nop
 L_0021:
-   .line 32
-   aload 4
-   aload 4
-   invokevirtual com/anatawa12/jasm/parser/Parser/getJasm_file ()Lcom/anatawa12/jasm/parser/Grammar;
-   invokevirtual com/anatawa12/jasm/parser/Parser/run (Lcom/anatawa12/jasm/parser/Grammar;)Lcom/anatawa12/jasm/tree/Node;
-   checkcast com/anatawa12/jasm/tree/JasmFile
-   astore 5
+    .line 32
+    aload 4
+    aload 4
+    invokevirtual com/anatawa12/jasm/parser/Parser/getJasm_file ()Lcom/anatawa12/jasm/parser/Grammar;
+    invokevirtual com/anatawa12/jasm/parser/Parser/run (Lcom/anatawa12/jasm/parser/Grammar;)Lcom/anatawa12/jasm/tree/Node;
+    checkcast com/anatawa12/jasm/tree/JasmFile
+    astore 5
 L_0029:
-   goto L_0044
+    goto L_0044
 L_002b:
-   .line 33
-   .stack
-      locals Object java/lang/String
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/parser/StringLexerReader
-      locals Object com/anatawa12/jasm/parser/Lexer
-      locals Object com/anatawa12/jasm/parser/Parser
-      stacks Object com/anatawa12/jasm/parser/LexingError
-   .end stack
-   astore 6
+    .line 33
+    .stack
+        locals Object java/lang/String
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/parser/StringLexerReader
+        locals Object com/anatawa12/jasm/parser/Lexer
+        locals Object com/anatawa12/jasm/parser/Parser
+        stacks Object com/anatawa12/jasm/parser/LexingError
+    .end stack
+    astore 6
 L_002f:
-   .line 34
-   .var 6 is e Lcom/anatawa12/jasm/parser/LexingError; from L_002f to L_0044
-   getstatic java/lang/System/err Ljava/io/PrintStream;
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   ldc "e: "
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 0
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   ldc ": "
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 6
-   invokevirtual com/anatawa12/jasm/parser/LexingError/getMessage ()Ljava/lang/String;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   invokevirtual java/io/PrintStream/println (Ljava/lang/String;)V
+    .line 34
+    .var 6 is e Lcom/anatawa12/jasm/parser/LexingError; from L_002f to L_0044
+    getstatic java/lang/System/err Ljava/io/PrintStream;
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    ldc "e: "
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 0
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    ldc ": "
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 6
+    invokevirtual com/anatawa12/jasm/parser/LexingError/getMessage ()Ljava/lang/String;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    invokevirtual java/io/PrintStream/println (Ljava/lang/String;)V
 L_0040:
-   .line 35
-   aconst_null
-   astore 5
+    .line 35
+    aconst_null
+    astore 5
 L_0044:
-   .line 31
-   .stack
-      locals Object java/lang/String
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/parser/StringLexerReader
-      locals Object com/anatawa12/jasm/parser/Lexer
-      locals Object com/anatawa12/jasm/parser/Parser
-      locals Object com/anatawa12/jasm/tree/JasmFile
-   .end stack
-   aload 5
-   areturn
+    .line 31
+    .stack
+        locals Object java/lang/String
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/parser/StringLexerReader
+        locals Object com/anatawa12/jasm/parser/Lexer
+        locals Object com/anatawa12/jasm/parser/Parser
+        locals Object com/anatawa12/jasm/tree/JasmFile
+    .end stack
+    aload 5
+    areturn
 L_0049:
 .end method
 
 .method public verifyFile (Ljava/lang/String;Lcom/anatawa12/jasm/tree/JasmFile;Lcom/anatawa12/jasm/assembler/AssemblerOptions;)Z
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 3
-   .limit local 7
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 3
+    .limit local 7
 L_0000:
-   .var 0 is fileName Ljava/lang/String; from L_0000 to L_00a2
-   .var 1 is jasmFile Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_00a2
-   .var 2 is options Lcom/anatawa12/jasm/assembler/AssemblerOptions; from L_0000 to L_00a2
-   aload 0
-   ldc "fileName"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 1
-   ldc "jasmFile"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 2
-   ldc "options"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is fileName Ljava/lang/String; from L_0000 to L_00a2
+    .var 1 is jasmFile Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_00a2
+    .var 2 is options Lcom/anatawa12/jasm/assembler/AssemblerOptions; from L_0000 to L_00a2
+    aload 0
+    ldc "fileName"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 1
+    ldc "jasmFile"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 2
+    ldc "options"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_000a:
-   .line 40
-   new com/anatawa12/jasm/assembler/Verifier
-   dup
-   aload 2
-   invokespecial com/anatawa12/jasm/assembler/Verifier/<init> (Lcom/anatawa12/jasm/assembler/AssemblerOptions;)V
-   astore 3
+    .line 40
+    new com/anatawa12/jasm/assembler/Verifier
+    dup
+    aload 2
+    invokespecial com/anatawa12/jasm/assembler/Verifier/<init> (Lcom/anatawa12/jasm/assembler/AssemblerOptions;)V
+    astore 3
 L_0011:
-   .line 41
-   .var 3 is verifier Lcom/anatawa12/jasm/assembler/Verifier; from L_0011 to L_00a2
-   aload 3
-   aload 1
-   invokevirtual com/anatawa12/jasm/assembler/Verifier/verify (Lcom/anatawa12/jasm/tree/JasmFile;)V
+    .line 41
+    .var 3 is verifier Lcom/anatawa12/jasm/assembler/Verifier; from L_0011 to L_00a2
+    aload 3
+    aload 1
+    invokevirtual com/anatawa12/jasm/assembler/Verifier/verify (Lcom/anatawa12/jasm/tree/JasmFile;)V
 L_0016:
-   .line 42
-   aload 3
-   invokevirtual com/anatawa12/jasm/assembler/Verifier/getErrors ()Ljava/util/List;
-   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
-   astore 5
+    .line 42
+    aload 3
+    invokevirtual com/anatawa12/jasm/assembler/Verifier/getErrors ()Ljava/util/List;
+    invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+    astore 5
 L_001c:
-   .stack
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/tree/JasmFile
-      locals Object com/anatawa12/jasm/assembler/AssemblerOptions
-      locals Object com/anatawa12/jasm/assembler/Verifier
-      locals Top
-      locals Object java/util/Iterator
-   .end stack
-   aload 5
-   invokeinterface java/util/Iterator/hasNext ()Z
-   ifeq L_004d
-   aload 5
-   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
-   checkcast com/anatawa12/jasm/assembler/VerifyingError
-   astore 4
+    .stack
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/tree/JasmFile
+        locals Object com/anatawa12/jasm/assembler/AssemblerOptions
+        locals Object com/anatawa12/jasm/assembler/Verifier
+        locals Top
+        locals Object java/util/Iterator
+    .end stack
+    aload 5
+    invokeinterface java/util/Iterator/hasNext ()Z
+    ifeq L_004d
+    aload 5
+    invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+    checkcast com/anatawa12/jasm/assembler/VerifyingError
+    astore 4
 L_0025:
-   .line 43
-   .var 4 is error Lcom/anatawa12/jasm/assembler/VerifyingError; from L_0025 to L_004a
-   aload 4
-   invokevirtual com/anatawa12/jasm/assembler/VerifyingError/getAt ()Lcom/anatawa12/jasm/tree/Node;
-   invokevirtual com/anatawa12/jasm/tree/Node/getTokens "()[Lcom/anatawa12/jasm/tree/Token;"
-   invokestatic kotlin/collections/ArraysKt/first "([Ljava/lang/Object;)Ljava/lang/Object;"
-   checkcast com/anatawa12/jasm/tree/Token
-   invokevirtual com/anatawa12/jasm/tree/Token/getBegin ()Lcom/anatawa12/jasm/tree/CharPosition;
-   astore 6
+    .line 43
+    .var 4 is error Lcom/anatawa12/jasm/assembler/VerifyingError; from L_0025 to L_004a
+    aload 4
+    invokevirtual com/anatawa12/jasm/assembler/VerifyingError/getAt ()Lcom/anatawa12/jasm/tree/Node;
+    invokevirtual com/anatawa12/jasm/tree/Node/getTokens "()[Lcom/anatawa12/jasm/tree/Token;"
+    invokestatic kotlin/collections/ArraysKt/first "([Ljava/lang/Object;)Ljava/lang/Object;"
+    checkcast com/anatawa12/jasm/tree/Token
+    invokevirtual com/anatawa12/jasm/tree/Token/getBegin ()Lcom/anatawa12/jasm/tree/CharPosition;
+    astore 6
 L_002e:
-   .line 44
-   .var 6 is at Lcom/anatawa12/jasm/tree/CharPosition; from L_002e to L_004a
-   getstatic java/lang/System/err Ljava/io/PrintStream;
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   ldc "e: "
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 0
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   ldc ": ("
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 6
-   invokevirtual com/anatawa12/jasm/tree/CharPosition/getLine ()I
-   invokevirtual java/lang/StringBuilder/append (I)Ljava/lang/StringBuilder;
-   ldc ", "
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 6
-   invokevirtual com/anatawa12/jasm/tree/CharPosition/getColumn ()I
-   invokevirtual java/lang/StringBuilder/append (I)Ljava/lang/StringBuilder;
-   ldc "): "
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 4
-   invokevirtual com/anatawa12/jasm/assembler/VerifyingError/getError ()Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
-   invokevirtual com/anatawa12/jasm/assembler/VerifyingErrorType/getMessage ()Ljava/lang/String;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   invokevirtual java/io/PrintStream/println (Ljava/lang/String;)V
+    .line 44
+    .var 6 is at Lcom/anatawa12/jasm/tree/CharPosition; from L_002e to L_004a
+    getstatic java/lang/System/err Ljava/io/PrintStream;
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    ldc "e: "
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 0
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    ldc ": ("
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 6
+    invokevirtual com/anatawa12/jasm/tree/CharPosition/getLine ()I
+    invokevirtual java/lang/StringBuilder/append (I)Ljava/lang/StringBuilder;
+    ldc ", "
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 6
+    invokevirtual com/anatawa12/jasm/tree/CharPosition/getColumn ()I
+    invokevirtual java/lang/StringBuilder/append (I)Ljava/lang/StringBuilder;
+    ldc "): "
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 4
+    invokevirtual com/anatawa12/jasm/assembler/VerifyingError/getError ()Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+    invokevirtual com/anatawa12/jasm/assembler/VerifyingErrorType/getMessage ()Ljava/lang/String;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    invokevirtual java/io/PrintStream/println (Ljava/lang/String;)V
 L_004a:
-   .line 42
-   goto L_001c
+    .line 42
+    goto L_001c
 L_004d:
-   .line 46
-   .stack use locals
-   .end stack
-   aload 3
-   invokevirtual com/anatawa12/jasm/assembler/Verifier/getWarns ()Ljava/util/List;
-   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
-   astore 5
+    .line 46
+    .stack use locals
+    .end stack
+    aload 3
+    invokevirtual com/anatawa12/jasm/assembler/Verifier/getWarns ()Ljava/util/List;
+    invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+    astore 5
 L_0054:
-   .stack use locals
-   .end stack
-   aload 5
-   invokeinterface java/util/Iterator/hasNext ()Z
-   ifeq L_0085
-   aload 5
-   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
-   checkcast com/anatawa12/jasm/assembler/VerifyingWarn
-   astore 4
+    .stack use locals
+    .end stack
+    aload 5
+    invokeinterface java/util/Iterator/hasNext ()Z
+    ifeq L_0085
+    aload 5
+    invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+    checkcast com/anatawa12/jasm/assembler/VerifyingWarn
+    astore 4
 L_005d:
-   .line 47
-   .var 4 is warn Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_005d to L_0082
-   aload 4
-   invokevirtual com/anatawa12/jasm/assembler/VerifyingWarn/getAt ()Lcom/anatawa12/jasm/tree/Node;
-   invokevirtual com/anatawa12/jasm/tree/Node/getTokens "()[Lcom/anatawa12/jasm/tree/Token;"
-   invokestatic kotlin/collections/ArraysKt/first "([Ljava/lang/Object;)Ljava/lang/Object;"
-   checkcast com/anatawa12/jasm/tree/Token
-   invokevirtual com/anatawa12/jasm/tree/Token/getBegin ()Lcom/anatawa12/jasm/tree/CharPosition;
-   astore 6
+    .line 47
+    .var 4 is warn Lcom/anatawa12/jasm/assembler/VerifyingWarn; from L_005d to L_0082
+    aload 4
+    invokevirtual com/anatawa12/jasm/assembler/VerifyingWarn/getAt ()Lcom/anatawa12/jasm/tree/Node;
+    invokevirtual com/anatawa12/jasm/tree/Node/getTokens "()[Lcom/anatawa12/jasm/tree/Token;"
+    invokestatic kotlin/collections/ArraysKt/first "([Ljava/lang/Object;)Ljava/lang/Object;"
+    checkcast com/anatawa12/jasm/tree/Token
+    invokevirtual com/anatawa12/jasm/tree/Token/getBegin ()Lcom/anatawa12/jasm/tree/CharPosition;
+    astore 6
 L_0066:
-   .line 48
-   .var 6 is at Lcom/anatawa12/jasm/tree/CharPosition; from L_0066 to L_0082
-   getstatic java/lang/System/err Ljava/io/PrintStream;
-   new java/lang/StringBuilder
-   dup
-   invokespecial java/lang/StringBuilder/<init> ()V
-   ldc "w: "
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 0
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   ldc ": ("
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 6
-   invokevirtual com/anatawa12/jasm/tree/CharPosition/getLine ()I
-   invokevirtual java/lang/StringBuilder/append (I)Ljava/lang/StringBuilder;
-   ldc ", "
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 6
-   invokevirtual com/anatawa12/jasm/tree/CharPosition/getColumn ()I
-   invokevirtual java/lang/StringBuilder/append (I)Ljava/lang/StringBuilder;
-   ldc "): "
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   aload 4
-   invokevirtual com/anatawa12/jasm/assembler/VerifyingWarn/getWarn ()Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
-   invokevirtual com/anatawa12/jasm/assembler/VerifyingWarnType/getMessage ()Ljava/lang/String;
-   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
-   invokevirtual java/io/PrintStream/println (Ljava/lang/String;)V
+    .line 48
+    .var 6 is at Lcom/anatawa12/jasm/tree/CharPosition; from L_0066 to L_0082
+    getstatic java/lang/System/err Ljava/io/PrintStream;
+    new java/lang/StringBuilder
+    dup
+    invokespecial java/lang/StringBuilder/<init> ()V
+    ldc "w: "
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 0
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    ldc ": ("
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 6
+    invokevirtual com/anatawa12/jasm/tree/CharPosition/getLine ()I
+    invokevirtual java/lang/StringBuilder/append (I)Ljava/lang/StringBuilder;
+    ldc ", "
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 6
+    invokevirtual com/anatawa12/jasm/tree/CharPosition/getColumn ()I
+    invokevirtual java/lang/StringBuilder/append (I)Ljava/lang/StringBuilder;
+    ldc "): "
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aload 4
+    invokevirtual com/anatawa12/jasm/assembler/VerifyingWarn/getWarn ()Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
+    invokevirtual com/anatawa12/jasm/assembler/VerifyingWarnType/getMessage ()Ljava/lang/String;
+    invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+    invokevirtual java/io/PrintStream/println (Ljava/lang/String;)V
 L_0082:
-   .line 46
-   goto L_0054
+    .line 46
+    goto L_0054
 L_0085:
-   .line 50
-   .stack use locals
-   .end stack
-   aload 3
-   invokevirtual com/anatawa12/jasm/assembler/Verifier/getErrors ()Ljava/util/List;
-   checkcast java/util/Collection
-   astore 4
-   iconst_0
-   istore 5
-   aload 4
-   invokeinterface java/util/Collection/isEmpty ()Z
-   ifne L_0093
-   iconst_1
-   goto L_0096
+    .line 50
+    .stack use locals
+    .end stack
+    aload 3
+    invokevirtual com/anatawa12/jasm/assembler/Verifier/getErrors ()Ljava/util/List;
+    checkcast java/util/Collection
+    astore 4
+    iconst_0
+    istore 5
+    aload 4
+    invokeinterface java/util/Collection/isEmpty ()Z
+    ifne L_0093
+    iconst_1
+    goto L_0096
 L_0093:
-   .stack
-      locals Object java/lang/String
-      locals Object com/anatawa12/jasm/tree/JasmFile
-      locals Object com/anatawa12/jasm/assembler/AssemblerOptions
-      locals Object com/anatawa12/jasm/assembler/Verifier
-      locals Object java/util/Collection
-      locals Integer
-   .end stack
-   iconst_0
+    .stack
+        locals Object java/lang/String
+        locals Object com/anatawa12/jasm/tree/JasmFile
+        locals Object com/anatawa12/jasm/assembler/AssemblerOptions
+        locals Object com/anatawa12/jasm/assembler/Verifier
+        locals Object java/util/Collection
+        locals Integer
+    .end stack
+    iconst_0
 L_0096:
-   .stack use locals
-      stacks Integer
-   .end stack
-   ifeq L_009d
+    .stack use locals
+        stacks Integer
+    .end stack
+    ifeq L_009d
 L_0099:
-   .line 51
-   iconst_0
-   ireturn
+    .line 51
+    iconst_0
+    ireturn
 L_009d:
-   .line 52
-   .stack use locals
-   .end stack
-   iconst_1
-   ireturn
+    .line 52
+    .stack use locals
+    .end stack
+    iconst_1
+    ireturn
 L_00a2:
 .end method
 
 .method public assembleJasmFile "(Ljava/lang/String;Lcom/anatawa12/jasm/tree/JasmFile;Lcom/anatawa12/jasm/assembler/AssemblerOptions;)[B"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 3
-   .limit local 4
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 3
+    .limit local 4
 L_0000:
-   .var 0 is fileName Ljava/lang/String; from L_0000 to L_001f
-   .var 1 is jasmFile Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_001f
-   .var 2 is options Lcom/anatawa12/jasm/assembler/AssemblerOptions; from L_0000 to L_001f
-   aload 0
-   ldc "fileName"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 1
-   ldc "jasmFile"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 2
-   ldc "options"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is fileName Ljava/lang/String; from L_0000 to L_001f
+    .var 1 is jasmFile Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_001f
+    .var 2 is options Lcom/anatawa12/jasm/assembler/AssemblerOptions; from L_0000 to L_001f
+    aload 0
+    ldc "fileName"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 1
+    ldc "jasmFile"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 2
+    ldc "options"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_000a:
-   .line 56
-   new com/anatawa12/jasm/assembler/Assembler
-   dup
-   aload 2
-   invokespecial com/anatawa12/jasm/assembler/Assembler/<init> (Lcom/anatawa12/jasm/assembler/AssemblerOptions;)V
-   astore 3
+    .line 56
+    new com/anatawa12/jasm/assembler/Assembler
+    dup
+    aload 2
+    invokespecial com/anatawa12/jasm/assembler/Assembler/<init> (Lcom/anatawa12/jasm/assembler/AssemblerOptions;)V
+    astore 3
 L_0011:
-   .line 58
-   .var 3 is assembler Lcom/anatawa12/jasm/assembler/Assembler; from L_0011 to L_001f
-   aload 3
-   aload 1
-   invokevirtual com/anatawa12/jasm/assembler/Assembler/assemble (Lcom/anatawa12/jasm/tree/JasmFile;)V
+    .line 58
+    .var 3 is assembler Lcom/anatawa12/jasm/assembler/Assembler; from L_0011 to L_001f
+    aload 3
+    aload 1
+    invokevirtual com/anatawa12/jasm/assembler/Assembler/assemble (Lcom/anatawa12/jasm/tree/JasmFile;)V
 L_0016:
-   .line 60
-   aload 3
-   invokevirtual com/anatawa12/jasm/assembler/Assembler/getClassWriter ()Lorg/objectweb/asm/ClassWriter;
-   invokevirtual org/objectweb/asm/ClassWriter/toByteArray "()[B"
-   dup
-   ldc "assembler.classWriter.toByteArray()"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   areturn
+    .line 60
+    aload 3
+    invokevirtual com/anatawa12/jasm/assembler/Assembler/getClassWriter ()Lorg/objectweb/asm/ClassWriter;
+    invokevirtual org/objectweb/asm/ClassWriter/toByteArray "()[B"
+    dup
+    ldc "assembler.classWriter.toByteArray()"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    areturn
 L_001f:
 .end method
 

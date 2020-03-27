@@ -3,177 +3,177 @@
 .super java/lang/Object
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 3
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 3
 .end annotation
 
 .method static <clinit> ()V
-   .limit stack 3
-   .limit local 0
-   invokestatic kotlin/text/CharCategory/values "()[Lkotlin/text/CharCategory;"
-   arraylength
-   newarray int
-   putstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/UPPERCASE_LETTER Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   iconst_1
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/LOWERCASE_LETTER Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   iconst_2
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/TITLECASE_LETTER Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   iconst_3
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/MODIFIER_LETTER Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   iconst_4
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/OTHER_LETTER Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   iconst_5
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/DECIMAL_DIGIT_NUMBER Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 6
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/LETTER_NUMBER Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 7
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/OTHER_NUMBER Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 8
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/SPACE_SEPARATOR Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 9
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/DASH_PUNCTUATION Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 10
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/START_PUNCTUATION Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 11
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/END_PUNCTUATION Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 12
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/CONNECTOR_PUNCTUATION Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 13
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/OTHER_PUNCTUATION Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 14
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/MATH_SYMBOL Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 15
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/CURRENCY_SYMBOL Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 16
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/MODIFIER_SYMBOL Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 17
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/OTHER_SYMBOL Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 18
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/INITIAL_QUOTE_PUNCTUATION Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 19
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/FINAL_QUOTE_PUNCTUATION Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 20
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/NON_SPACING_MARK Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 21
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/ENCLOSING_MARK Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 22
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/COMBINING_SPACING_MARK Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 23
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/LINE_SEPARATOR Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 24
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/PARAGRAPH_SEPARATOR Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 25
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/CONTROL Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 26
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/FORMAT Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 27
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/PRIVATE_USE Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 28
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/SURROGATE Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 29
-   iastore
-   getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
-   getstatic kotlin/text/CharCategory/UNASSIGNED Lkotlin/text/CharCategory;
-   invokevirtual kotlin/text/CharCategory/ordinal ()I
-   bipush 30
-   iastore
-   return
+    .limit stack 3
+    .limit local 0
+    invokestatic kotlin/text/CharCategory/values "()[Lkotlin/text/CharCategory;"
+    arraylength
+    newarray int
+    putstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/UPPERCASE_LETTER Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    iconst_1
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/LOWERCASE_LETTER Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    iconst_2
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/TITLECASE_LETTER Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    iconst_3
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/MODIFIER_LETTER Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    iconst_4
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/OTHER_LETTER Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    iconst_5
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/DECIMAL_DIGIT_NUMBER Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 6
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/LETTER_NUMBER Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 7
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/OTHER_NUMBER Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 8
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/SPACE_SEPARATOR Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 9
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/DASH_PUNCTUATION Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 10
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/START_PUNCTUATION Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 11
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/END_PUNCTUATION Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 12
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/CONNECTOR_PUNCTUATION Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 13
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/OTHER_PUNCTUATION Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 14
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/MATH_SYMBOL Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 15
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/CURRENCY_SYMBOL Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 16
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/MODIFIER_SYMBOL Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 17
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/OTHER_SYMBOL Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 18
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/INITIAL_QUOTE_PUNCTUATION Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 19
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/FINAL_QUOTE_PUNCTUATION Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 20
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/NON_SPACING_MARK Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 21
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/ENCLOSING_MARK Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 22
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/COMBINING_SPACING_MARK Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 23
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/LINE_SEPARATOR Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 24
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/PARAGRAPH_SEPARATOR Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 25
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/CONTROL Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 26
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/FORMAT Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 27
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/PRIVATE_USE Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 28
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/SURROGATE Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 29
+    iastore
+    getstatic com/anatawa12/jasm/disassembler/Printer$WhenMappings/$EnumSwitchMapping$0 "[I"
+    getstatic kotlin/text/CharCategory/UNASSIGNED Lkotlin/text/CharCategory;
+    invokevirtual kotlin/text/CharCategory/ordinal ()I
+    bipush 30
+    iastore
+    return
 .end method
 
 .field public $EnumSwitchMapping$0 "[I"

@@ -4,70 +4,70 @@
 .super com/anatawa12/jasm/tree/BranchNode
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006¨\u0006\u0007"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/tree/MethodType;"
-      s = "Lcom/anatawa12/jasm/tree/BranchNode;"
-      s = "desc"
-      s = ""
-      s = "(Ljava/lang/String;)V"
-      s = "getDesc"
-      s = "()Ljava/lang/String;"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006¨\u0006\u0007"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/tree/MethodType;"
+        s = "Lcom/anatawa12/jasm/tree/BranchNode;"
+        s = "desc"
+        s = ""
+        s = "(Ljava/lang/String;)V"
+        s = "getDesc"
+        s = "()Ljava/lang/String;"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public getDesc ()Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 5
-   .var 0 is this Lcom/anatawa12/jasm/tree/MethodType; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/tree/MethodType/desc Ljava/lang/String;
-   areturn
+    .line 5
+    .var 0 is this Lcom/anatawa12/jasm/tree/MethodType; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/tree/MethodType/desc Ljava/lang/String;
+    areturn
 L_0005:
 .end method
 
 .method public <init> (Ljava/lang/String;)V
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 2
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 2
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/tree/MethodType; from L_0000 to L_000c
-   .var 1 is desc Ljava/lang/String; from L_0000 to L_000c
-   aload 1
-   ldc "desc"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/tree/MethodType; from L_0000 to L_000c
+    .var 1 is desc Ljava/lang/String; from L_0000 to L_000c
+    aload 1
+    ldc "desc"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0004:
-   .line 5
-   aload 0
-   invokespecial com/anatawa12/jasm/tree/BranchNode/<init> ()V
-   aload 0
-   aload 1
-   putfield com/anatawa12/jasm/tree/MethodType/desc Ljava/lang/String;
-   return
+    .line 5
+    aload 0
+    invokespecial com/anatawa12/jasm/tree/BranchNode/<init> ()V
+    aload 0
+    aload 1
+    putfield com/anatawa12/jasm/tree/MethodType/desc Ljava/lang/String;
+    return
 L_000c:
 .end method
 
 .field private desc Ljava/lang/String;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 

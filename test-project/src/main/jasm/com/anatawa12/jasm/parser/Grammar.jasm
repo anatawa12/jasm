@@ -7,128 +7,128 @@
 .inner public com/anatawa12/jasm/parser/Grammar$GrammarScope inner GrammarScope outer com/anatawa12/jasm/parser/Grammar
 
 .annotation visible kotlin/Metadata
-   mv [ = .annotation array
-      I = 1
-      I = 1
-      I = 16
-   .end annotation
-   bv [ = .annotation array
-      I = 1
-      I = 0
-      I = 3
-   .end annotation
-   k I = 1
-   d1 [ = .annotation array
-      s = "\u0000.\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\"\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\n\u0018\u0000*\b\b\u0000\u0010\u0001*\u00020\u00022\u00020\u0003:\u0001\u0014B6\u0012\u0016\u0010\u0004\u001a\u0012\u0012\u000e\u0012\u000c\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00070\u00060\u0005\u0012\u0017\u0010\b\u001a\u0013\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00028\u00000\t¢\u0006\u0002\b\u000b¢\u0006\u0002\u0010\u000cR\"\u0010\b\u001a\u0013\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00028\u00000\t¢\u0006\u0002\b\u000b¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR%\u0010\u000f\u001a\u000c\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00070\u00068FX\u0086\u0084\u0002¢\u0006\u000c\n\u0004\b\u0012\u0010\u0013\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"
-   .end annotation
-   d2 [ = .annotation array
-      s = "Lcom/anatawa12/jasm/parser/Grammar;"
-      s = "T"
-      s = "Lcom/anatawa12/jasm/tree/Node;"
-      s = ""
-      s = "startGetter"
-      s = "Lkotlin/Function0;"
-      s = ""
-      s = "Lcom/anatawa12/jasm/parser/TokenType;"
-      s = "run"
-      s = "Lkotlin/Function1;"
-      s = "Lcom/anatawa12/jasm/parser/Grammar\$GrammarScope;"
-      s = "Lkotlin/ExtensionFunctionType;"
-      s = "(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V"
-      s = "getRun"
-      s = "()Lkotlin/jvm/functions/Function1;"
-      s = "start"
-      s = "getStart"
-      s = "()Ljava/util/Set;"
-      s = "start\$delegate"
-      s = "Lkotlin/Lazy;"
-      s = "GrammarScope"
-      s = "jasm"
-   .end annotation
+    mv [ = .annotation array
+        I = 1
+        I = 1
+        I = 16
+    .end annotation
+    bv [ = .annotation array
+        I = 1
+        I = 0
+        I = 3
+    .end annotation
+    k I = 1
+    d1 [ = .annotation array
+        s = "\u0000.\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\"\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\n\u0018\u0000*\b\b\u0000\u0010\u0001*\u00020\u00022\u00020\u0003:\u0001\u0014B6\u0012\u0016\u0010\u0004\u001a\u0012\u0012\u000e\u0012\u000c\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00070\u00060\u0005\u0012\u0017\u0010\b\u001a\u0013\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00028\u00000\t¢\u0006\u0002\b\u000b¢\u0006\u0002\u0010\u000cR\"\u0010\b\u001a\u0013\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00028\u00000\t¢\u0006\u0002\b\u000b¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR%\u0010\u000f\u001a\u000c\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00070\u00068FX\u0086\u0084\u0002¢\u0006\u000c\n\u0004\b\u0012\u0010\u0013\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0015"
+    .end annotation
+    d2 [ = .annotation array
+        s = "Lcom/anatawa12/jasm/parser/Grammar;"
+        s = "T"
+        s = "Lcom/anatawa12/jasm/tree/Node;"
+        s = ""
+        s = "startGetter"
+        s = "Lkotlin/Function0;"
+        s = ""
+        s = "Lcom/anatawa12/jasm/parser/TokenType;"
+        s = "run"
+        s = "Lkotlin/Function1;"
+        s = "Lcom/anatawa12/jasm/parser/Grammar\$GrammarScope;"
+        s = "Lkotlin/ExtensionFunctionType;"
+        s = "(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V"
+        s = "getRun"
+        s = "()Lkotlin/jvm/functions/Function1;"
+        s = "start"
+        s = "getStart"
+        s = "()Ljava/util/Set;"
+        s = "start\$delegate"
+        s = "Lkotlin/Lazy;"
+        s = "GrammarScope"
+        s = "jasm"
+    .end annotation
 .end annotation
 
 .method public getStart ()Ljava/util/Set;
-   .signature "()Ljava/util/Set<Lcom/anatawa12/jasm/parser/TokenType<*>;>;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 5
+    .signature "()Ljava/util/Set<Lcom/anatawa12/jasm/parser/TokenType<*>;>;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 5
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/Grammar; from L_0000 to L_000e
-   aload 0
-   getfield com/anatawa12/jasm/parser/Grammar/start$delegate Lkotlin/Lazy;
-   astore 1
-   aload 0
-   astore 2
-   aconst_null
-   astore 3
-   iconst_0
-   istore 4
-   aload 1
-   invokeinterface kotlin/Lazy/getValue ()Ljava/lang/Object;
-   checkcast java/util/Set
-   areturn
+    .var 0 is this Lcom/anatawa12/jasm/parser/Grammar; from L_0000 to L_000e
+    aload 0
+    getfield com/anatawa12/jasm/parser/Grammar/start$delegate Lkotlin/Lazy;
+    astore 1
+    aload 0
+    astore 2
+    aconst_null
+    astore 3
+    iconst_0
+    istore 4
+    aload 1
+    invokeinterface kotlin/Lazy/getValue ()Ljava/lang/Object;
+    checkcast java/util/Set
+    areturn
 L_000e:
 .end method
 
 .method public getRun ()Lkotlin/jvm/functions/Function1;
-   .signature "()Lkotlin/jvm/functions/Function1<Lcom/anatawa12/jasm/parser/Grammar\$GrammarScope;TT;>;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 1
-   .limit local 1
+    .signature "()Lkotlin/jvm/functions/Function1<Lcom/anatawa12/jasm/parser/Grammar\$GrammarScope;TT;>;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 1
+    .limit local 1
 L_0000:
-   .line 12
-   .var 0 is this Lcom/anatawa12/jasm/parser/Grammar; from L_0000 to L_0005
-   aload 0
-   getfield com/anatawa12/jasm/parser/Grammar/run Lkotlin/jvm/functions/Function1;
-   areturn
+    .line 12
+    .var 0 is this Lcom/anatawa12/jasm/parser/Grammar; from L_0000 to L_0005
+    aload 0
+    getfield com/anatawa12/jasm/parser/Grammar/run Lkotlin/jvm/functions/Function1;
+    areturn
 L_0005:
 .end method
 
 .method public <init> (Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
-   .signature "(Lkotlin/jvm/functions/Function0<+Ljava/util/Set<+Lcom/anatawa12/jasm/parser/TokenType<*>;>;>;Lkotlin/jvm/functions/Function1<-Lcom/anatawa12/jasm/parser/Grammar\$GrammarScope;+TT;>;)V"
-   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
-   .end annotation
-   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
-   .end annotation
-   .limit stack 2
-   .limit local 3
+    .signature "(Lkotlin/jvm/functions/Function0<+Ljava/util/Set<+Lcom/anatawa12/jasm/parser/TokenType<*>;>;>;Lkotlin/jvm/functions/Function1<-Lcom/anatawa12/jasm/parser/Grammar\$GrammarScope;+TT;>;)V"
+    .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+    .end annotation
+    .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+    .end annotation
+    .limit stack 2
+    .limit local 3
 L_0000:
-   .var 0 is this Lcom/anatawa12/jasm/parser/Grammar; from L_0000 to L_0015
-   .var 1 is startGetter Lkotlin/jvm/functions/Function0; from L_0000 to L_0015
-   .var 2 is run Lkotlin/jvm/functions/Function1; from L_0000 to L_0015
-   aload 1
-   ldc "startGetter"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
-   aload 2
-   ldc "run"
-   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    .var 0 is this Lcom/anatawa12/jasm/parser/Grammar; from L_0000 to L_0015
+    .var 1 is startGetter Lkotlin/jvm/functions/Function0; from L_0000 to L_0015
+    .var 2 is run Lkotlin/jvm/functions/Function1; from L_0000 to L_0015
+    aload 1
+    ldc "startGetter"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+    aload 2
+    ldc "run"
+    invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
 L_0007:
-   .line 12
-   aload 0
-   invokespecial java/lang/Object/<init> ()V
-   aload 0
-   aload 2
-   putfield com/anatawa12/jasm/parser/Grammar/run Lkotlin/jvm/functions/Function1;
+    .line 12
+    aload 0
+    invokespecial java/lang/Object/<init> ()V
+    aload 0
+    aload 2
+    putfield com/anatawa12/jasm/parser/Grammar/run Lkotlin/jvm/functions/Function1;
 L_000e:
-   .line 13
-   aload 0
-   aload 1
-   invokestatic kotlin/LazyKt/lazy (Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
-   putfield com/anatawa12/jasm/parser/Grammar/start$delegate Lkotlin/Lazy;
-   return
+    .line 13
+    aload 0
+    aload 1
+    invokestatic kotlin/LazyKt/lazy (Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    putfield com/anatawa12/jasm/parser/Grammar/start$delegate Lkotlin/Lazy;
+    return
 L_0015:
 .end method
 
 .field private start$delegate Lkotlin/Lazy;
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 
 .field private run Lkotlin/jvm/functions/Function1;
-   .signature "Lkotlin/jvm/functions/Function1<Lcom/anatawa12/jasm/parser/Grammar\$GrammarScope;TT;>;"
-   .annotation invisible org/jetbrains/annotations/NotNull
-   .end annotation
+    .signature "Lkotlin/jvm/functions/Function1<Lcom/anatawa12/jasm/parser/Grammar\$GrammarScope;TT;>;"
+    .annotation invisible org/jetbrains/annotations/NotNull
+    .end annotation
 .end field
 
