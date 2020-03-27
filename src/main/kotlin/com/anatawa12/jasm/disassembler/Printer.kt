@@ -7,7 +7,7 @@ class Printer() {
     private val file = StringBuilder()
     private var printSpace = false
     private var afterNewLine = false
-    private val indentStr = "   "
+    private val indentStr = "    "
     private var indent = 0
 
     private inline fun m(function: () -> Unit) = apply {
