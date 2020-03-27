@@ -3,18 +3,22 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath files(file("${rootProject.projectDir}/jasm-gradle-plugin/build/libs/jasm-gradle-plugin-1.0-SNAPSHOT.jar"))
-        classpath files(file("${rootProject.projectDir}/build/libs/jasm-1.0-SNAPSHOT.jar"))
-        classpath("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.70")
-        classpath("org.ow2.asm:asm-debug-all:5.2")
+        if (file("${rootProject.projectDir}/jasm-gradle-plugin/build/libs/jasm-gradle-plugin-1.0-SNAPSHOT.jar").exists()) {
+            classpath files(file("${rootProject.projectDir}/jasm-gradle-plugin/build/libs/jasm-gradle-plugin-1.0-SNAPSHOT.jar"))
+            classpath files(file("${rootProject.projectDir}/build/libs/jasm-1.0-SNAPSHOT.jar"))
+            classpath("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.70")
+            classpath("org.ow2.asm:asm-debug-all:5.2")
+        }
     }
 }
 
-apply plugin: "com.anatawa12.jasm"
+if (file("${rootProject.projectDir}/jasm-gradle-plugin/build/libs/jasm-gradle-plugin-1.0-SNAPSHOT.jar").exists()) {
+    apply plugin: "com.anatawa12.jasm"
 
-task disassembleJasmMain(type: com.anatawa12.jasm.plugins.gradle.DisassembleToJasm) {
-    files = zipTree("${rootProject.projectDir}/build/libs/jasm-1.0-SNAPSHOT.jar").matching {
-        include "**/*.class"
+    task disassembleJasmMain(type: com.anatawa12.jasm.plugins.gradle.DisassembleToJasm) {
+        files = zipTree("${rootProject.projectDir}/build/libs/jasm-1.0-SNAPSHOT.jar").matching {
+            include "**/*.class"
+        }
+        outputTo = file("$projectDir/src/main/jasm")
     }
-    outputTo = file("$projectDir/src/main/jasm")
 }
