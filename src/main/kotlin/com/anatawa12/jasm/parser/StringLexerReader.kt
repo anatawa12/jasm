@@ -28,4 +28,6 @@ class StringLexerReader(private val string: String) : Lexer.Reader {
         line,
         column
     )
+
+    override fun subString(start: Int, end: Int): String = string.substring(index + start, index + end)
 }

@@ -18,10 +18,11 @@ class Lexer(private val reading: Reader) : ILexer {
     override fun <T : Any> readToken(expect: TokenType<T>): Token<T> {
         val value = doRead(expect) ?: reading.error("unexpected token. expecting $expect")
         val start = reading.charPosition
+        val text = reading.subString(0, index)
         reading.setCurrentTo(index)
         index = 0
         val end = reading.charPosition
-        return Token(value, start, end)
+        return Token(text, value, start, end)
     }
 
     private lateinit var lexing: TokenType<*>
@@ -403,5 +404,6 @@ class Lexer(private val reading: Reader) : ILexer {
         fun setCurrentTo(pos: Int)
         fun getOrNull(pos: Int): Char?
         fun error(message: String): Nothing
+        fun subString(start: Int, end: Int): String
     }
 }

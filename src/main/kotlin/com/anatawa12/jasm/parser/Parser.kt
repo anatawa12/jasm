@@ -11,7 +11,7 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
 
             newFlags.tokens = newFlags.flags.flatMap { it.tokens.toList() }.toTypedArray()
 
-            newFlags to access.flags.last().tokens.last().value.toString()
+            newFlags to access.flags.last().tokens.last().text
         }
         else -> lex.unexpectTokenError(token)
     }

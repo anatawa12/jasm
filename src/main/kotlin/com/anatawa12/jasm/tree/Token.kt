@@ -1,10 +1,10 @@
 package com.anatawa12.jasm.tree
 
-class Token<T>(val value: T, val begin: CharPosition, val end: CharPosition) : Node() {
+class Token<T>(val text: String, val value: T, val begin: CharPosition, val end: CharPosition) : Node() {
     override val tokens: Array<out Token<*>> = arrayOf(this)
 
     companion object {
-        val TEST = Token(null, CharPosition(0, 0, 0), CharPosition(0, 0, 0))
+        val TEST = Token("", null, CharPosition(0, 0, 0), CharPosition(0, 0, 0))
     }
 }
 
