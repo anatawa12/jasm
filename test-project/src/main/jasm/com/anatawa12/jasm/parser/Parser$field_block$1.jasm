@@ -1,0 +1,255 @@
+.bytecode 52.0
+.source "Parser.kt"
+.class final com/anatawa12/jasm/parser/Parser$field_block$1
+.super kotlin/jvm/internal/Lambda
+.implements kotlin/jvm/functions/Function1
+.signature "Lkotlin/jvm/internal/Lambda;Lkotlin/jvm/functions/Function1<Lcom/anatawa12/jasm/parser/Grammar\$GrammarScope;Lcom/anatawa12/jasm/tree/FieldBlock;>;"
+.enclosing method com/anatawa12/jasm/parser/Parser <init> "(Lcom/anatawa12/jasm/parser/ILexer;)V"
+.inner static com/anatawa12/jasm/parser/Parser$field_block$1
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 3
+   d1 [ = .annotation array
+      s = "\u0000\u000c\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"
+   .end annotation
+   d2 [ = .annotation array
+      s = "<anonymous>"
+      s = "Lcom/anatawa12/jasm/tree/FieldBlock;"
+      s = "Lcom/anatawa12/jasm/parser/Grammar\$GrammarScope;"
+      s = "invoke"
+   .end annotation
+.end annotation
+
+.method public invoke (Ljava/lang/Object;)Ljava/lang/Object;
+   .limit stack 2
+   .limit local 2
+L_0000:
+   .line 6
+   aload 0
+   aload 1
+   checkcast com/anatawa12/jasm/parser/Grammar$GrammarScope
+   invokevirtual com/anatawa12/jasm/parser/Parser$field_block$1/invoke (Lcom/anatawa12/jasm/parser/Grammar$GrammarScope;)Lcom/anatawa12/jasm/tree/FieldBlock;
+   areturn
+.end method
+
+.method public invoke (Lcom/anatawa12/jasm/parser/Grammar$GrammarScope;)Lcom/anatawa12/jasm/tree/FieldBlock;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 7
+   .limit local 7
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/parser/Parser$field_block$1; from L_0000 to L_009e
+   .var 1 is $this$grammar Lcom/anatawa12/jasm/parser/Grammar$GrammarScope; from L_0000 to L_009e
+   aload 1
+   ldc "\$receiver"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0004:
+   .line 579
+   aload 1
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$field_block$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
+   getstatic com/anatawa12/jasm/parser/Parser/Companion Lcom/anatawa12/jasm/parser/Parser$Companion;
+   invokevirtual com/anatawa12/jasm/parser/Parser$Companion/getDotField ()Lcom/anatawa12/jasm/parser/TokenType$DotedKeyWord;
+   checkcast com/anatawa12/jasm/parser/TokenType
+   invokeinterface com/anatawa12/jasm/parser/Grammar$GrammarScope/read (Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Object;
+   pop
+L_000e:
+   .line 580
+   aload 1
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$field_block$1/this$0 Lcom/anatawa12/jasm/parser/Parser;
+   invokevirtual com/anatawa12/jasm/parser/Parser/getAccess_flags ()Lcom/anatawa12/jasm/parser/Grammar;
+   invokeinterface com/anatawa12/jasm/parser/Grammar$GrammarScope/invoke (Lcom/anatawa12/jasm/parser/Grammar;)Lcom/anatawa12/jasm/tree/Node;
+   checkcast com/anatawa12/jasm/tree/AccessFlags
+   astore 2
+L_0017:
+   .line 581
+   .var 2 is access Lcom/anatawa12/jasm/tree/AccessFlags; from L_0017 to L_009c
+   aload 1
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$field_block$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
+   getstatic com/anatawa12/jasm/parser/TokenType$Name/INSTANCE Lcom/anatawa12/jasm/parser/TokenType$Name;
+   checkcast com/anatawa12/jasm/parser/TokenType
+   invokeinterface com/anatawa12/jasm/parser/Grammar$GrammarScope/read (Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Object;
+   checkcast java/lang/String
+   astore 3
+L_0021:
+   .line 582
+   .var 3 is name Ljava/lang/String; from L_0021 to L_009c
+   aload 1
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$field_block$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
+   getstatic com/anatawa12/jasm/parser/TokenType$FieldDescriptor/INSTANCE Lcom/anatawa12/jasm/parser/TokenType$FieldDescriptor;
+   checkcast com/anatawa12/jasm/parser/TokenType
+   invokeinterface com/anatawa12/jasm/parser/Grammar$GrammarScope/read (Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Object;
+   checkcast java/lang/String
+   astore 4
+L_002b:
+   .line 583
+   .var 4 is descriptor Ljava/lang/String; from L_002b to L_009c
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$field_block$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
+   getstatic com/anatawa12/jasm/parser/Parser/Companion Lcom/anatawa12/jasm/parser/Parser$Companion;
+   invokevirtual com/anatawa12/jasm/parser/Parser$Companion/getEqual ()Lcom/anatawa12/jasm/parser/TokenType$Char;
+   checkcast com/anatawa12/jasm/parser/TokenType
+   invokeinterface com/anatawa12/jasm/parser/ILexer/isNext (Lcom/anatawa12/jasm/parser/TokenType;)Z
+   ifeq L_0047
+L_0034:
+   .line 584
+   aload 1
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$field_block$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
+   getstatic com/anatawa12/jasm/parser/Parser/Companion Lcom/anatawa12/jasm/parser/Parser$Companion;
+   invokevirtual com/anatawa12/jasm/parser/Parser$Companion/getEqual ()Lcom/anatawa12/jasm/parser/TokenType$Char;
+   checkcast com/anatawa12/jasm/parser/TokenType
+   invokeinterface com/anatawa12/jasm/parser/Grammar$GrammarScope/read (Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Object;
+   pop
+L_003e:
+   .line 585
+   aload 1
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$field_block$1/this$0 Lcom/anatawa12/jasm/parser/Parser;
+   invokevirtual com/anatawa12/jasm/parser/Parser/getField_constant_value ()Lcom/anatawa12/jasm/parser/Grammar;
+   invokeinterface com/anatawa12/jasm/parser/Grammar$GrammarScope/invoke (Lcom/anatawa12/jasm/parser/Grammar;)Lcom/anatawa12/jasm/tree/Node;
+   checkcast com/anatawa12/jasm/tree/Value
+   goto L_004b
+L_0047:
+   .line 587
+   .stack
+      locals Object com/anatawa12/jasm/parser/Parser$field_block$1
+      locals Object com/anatawa12/jasm/parser/Grammar$GrammarScope
+      locals Object com/anatawa12/jasm/tree/AccessFlags
+      locals Object java/lang/String
+      locals Object java/lang/String
+   .end stack
+   aconst_null
+L_004b:
+   .line 583
+   .stack use locals
+      stacks Object com/anatawa12/jasm/tree/Value
+   .end stack
+   astore 5
+L_004f:
+   .line 589
+   .var 5 is default Lcom/anatawa12/jasm/tree/Value; from L_004f to L_009c
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$field_block$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$field_block$1/this$0 Lcom/anatawa12/jasm/parser/Parser;
+   invokevirtual com/anatawa12/jasm/parser/Parser/getField_attribute ()Lcom/anatawa12/jasm/parser/Grammar;
+   invokevirtual com/anatawa12/jasm/parser/Grammar/getStart ()Ljava/util/Set;
+   invokeinterface com/anatawa12/jasm/parser/ILexer/isNext (Ljava/util/Set;)Z
+   ifne L_0075
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$field_block$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
+   getstatic com/anatawa12/jasm/parser/Parser/Companion Lcom/anatawa12/jasm/parser/Parser$Companion;
+   invokevirtual com/anatawa12/jasm/parser/Parser$Companion/getDotEnd ()Lcom/anatawa12/jasm/parser/TokenType$DotedKeyWord;
+   checkcast com/anatawa12/jasm/parser/TokenType
+   invokeinterface com/anatawa12/jasm/parser/ILexer/isNext (Lcom/anatawa12/jasm/parser/TokenType;)Z
+   ifeq L_0075
+   new com/anatawa12/jasm/tree/FieldBlock
+   dup
+L_0062:
+   .line 590
+   aload 2
+L_0065:
+   .line 591
+   aload 3
+L_0068:
+   .line 592
+   aload 4
+L_006b:
+   .line 593
+   aload 5
+L_006e:
+   .line 594
+   invokestatic kotlin/collections/CollectionsKt/emptyList ()Ljava/util/List;
+L_0071:
+   .line 589
+   invokespecial com/anatawa12/jasm/tree/FieldBlock/<init> (Lcom/anatawa12/jasm/tree/AccessFlags;Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Value;Ljava/util/List;)V
+   areturn
+L_0075:
+   .line 596
+   .stack
+      locals Object com/anatawa12/jasm/parser/Parser$field_block$1
+      locals Object com/anatawa12/jasm/parser/Grammar$GrammarScope
+      locals Object com/anatawa12/jasm/tree/AccessFlags
+      locals Object java/lang/String
+      locals Object java/lang/String
+      locals Object com/anatawa12/jasm/tree/Value
+   .end stack
+   aload 1
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$field_block$1/this$0 Lcom/anatawa12/jasm/parser/Parser;
+   invokevirtual com/anatawa12/jasm/parser/Parser/getField_attribute ()Lcom/anatawa12/jasm/parser/Grammar;
+   invokeinterface com/anatawa12/jasm/parser/Grammar$GrammarScope/many (Lcom/anatawa12/jasm/parser/Grammar;)Ljava/util/List;
+   astore 6
+L_007e:
+   .line 597
+   .var 6 is attributes Ljava/util/List; from L_007e to L_009c
+   aload 1
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$field_block$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
+   getstatic com/anatawa12/jasm/parser/Parser/Companion Lcom/anatawa12/jasm/parser/Parser$Companion;
+   invokevirtual com/anatawa12/jasm/parser/Parser$Companion/getDotEnd ()Lcom/anatawa12/jasm/parser/TokenType$DotedKeyWord;
+   checkcast com/anatawa12/jasm/parser/TokenType
+   invokeinterface com/anatawa12/jasm/parser/Grammar$GrammarScope/read (Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Object;
+   pop
+L_0088:
+   .line 598
+   aload 1
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$field_block$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
+   getstatic com/anatawa12/jasm/parser/Parser/Companion Lcom/anatawa12/jasm/parser/Parser$Companion;
+   invokevirtual com/anatawa12/jasm/parser/Parser$Companion/getKeyField ()Lcom/anatawa12/jasm/parser/TokenType$KeyWord;
+   checkcast com/anatawa12/jasm/parser/TokenType
+   invokeinterface com/anatawa12/jasm/parser/Grammar$GrammarScope/read (Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Object;
+   pop
+L_0092:
+   .line 599
+   new com/anatawa12/jasm/tree/FieldBlock
+   dup
+   aload 2
+   aload 3
+   aload 4
+   aload 5
+   aload 6
+   invokespecial com/anatawa12/jasm/tree/FieldBlock/<init> (Lcom/anatawa12/jasm/tree/AccessFlags;Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Value;Ljava/util/List;)V
+L_009c:
+   areturn
+L_009e:
+.end method
+
+.method <init> (Lcom/anatawa12/jasm/parser/Parser;Lcom/anatawa12/jasm/parser/ILexer;)V
+   .limit stack 2
+   .limit local 3
+   aload 0
+   aload 1
+   putfield com/anatawa12/jasm/parser/Parser$field_block$1/this$0 Lcom/anatawa12/jasm/parser/Parser;
+   aload 0
+   aload 2
+   putfield com/anatawa12/jasm/parser/Parser$field_block$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
+   aload 0
+   iconst_1
+   invokespecial kotlin/jvm/internal/Lambda/<init> (I)V
+   return
+.end method
+
+.field final this$0 Lcom/anatawa12/jasm/parser/Parser;
+.end field
+
+.field final $lex Lcom/anatawa12/jasm/parser/ILexer;
+.end field
+

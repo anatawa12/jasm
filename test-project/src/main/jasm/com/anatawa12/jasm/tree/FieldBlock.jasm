@@ -1,0 +1,605 @@
+.bytecode 52.0
+.source "ClassElement.kt"
+.class public com/anatawa12/jasm/tree/FieldBlock
+.super com/anatawa12/jasm/tree/ClassElement
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0011\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B9\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u000c\u0010\u0007\u001a\b\u0012\u0002\b\u0003\u0018\u00010\b\u0012\u000c\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u000b0\n¢\u0006\u0002\u0010\u000cJ\t\u0010\u0016\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0017\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0018\u001a\u00020\u0005HÆ\u0003J\u000f\u0010\u0019\u001a\b\u0012\u0002\b\u0003\u0018\u00010\bHÆ\u0003J\u000f\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\u000b0\nHÆ\u0003JG\u0010\u001b\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\u000e\b\u0002\u0010\u0007\u001a\b\u0012\u0002\b\u0003\u0018\u00010\b2\u000e\b\u0002\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u000b0\nHÆ\u0001J\u0013\u0010\u001c\u001a\u00020\u001d2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001fHÖ\u0003J\t\u0010 \u001a\u00020!HÖ\u0001J\t\u0010\"\u001a\u00020\u0005HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0017\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u000b0\n¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0017\u0010\u0007\u001a\b\u0012\u0002\b\u0003\u0018\u00010\b¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0014¨\u0006#"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/tree/FieldBlock;"
+      s = "Lcom/anatawa12/jasm/tree/ClassElement;"
+      s = "accessFlags"
+      s = "Lcom/anatawa12/jasm/tree/AccessFlags;"
+      s = "name"
+      s = ""
+      s = "descriptor"
+      s = "default"
+      s = "Lcom/anatawa12/jasm/tree/Value;"
+      s = "attributes"
+      s = ""
+      s = "Lcom/anatawa12/jasm/tree/FieldAttributes;"
+      s = "(Lcom/anatawa12/jasm/tree/AccessFlags;Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Value;Ljava/util/List;)V"
+      s = "getAccessFlags"
+      s = "()Lcom/anatawa12/jasm/tree/AccessFlags;"
+      s = "getAttributes"
+      s = "()Ljava/util/List;"
+      s = "getDefault"
+      s = "()Lcom/anatawa12/jasm/tree/Value;"
+      s = "getDescriptor"
+      s = "()Ljava/lang/String;"
+      s = "getName"
+      s = "component1"
+      s = "component2"
+      s = "component3"
+      s = "component4"
+      s = "component5"
+      s = "copy"
+      s = "equals"
+      s = ""
+      s = "other"
+      s = ""
+      s = "hashCode"
+      s = ""
+      s = "toString"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method public getAccessFlags ()Lcom/anatawa12/jasm/tree/AccessFlags;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 6
+   .var 0 is this Lcom/anatawa12/jasm/tree/FieldBlock; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   areturn
+L_0005:
+.end method
+
+.method public getName ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 6
+   .var 0 is this Lcom/anatawa12/jasm/tree/FieldBlock; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/name Ljava/lang/String;
+   areturn
+L_0005:
+.end method
+
+.method public getDescriptor ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 6
+   .var 0 is this Lcom/anatawa12/jasm/tree/FieldBlock; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/descriptor Ljava/lang/String;
+   areturn
+L_0005:
+.end method
+
+.method public getDefault ()Lcom/anatawa12/jasm/tree/Value;
+   .signature "()Lcom/anatawa12/jasm/tree/Value<*>;"
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 6
+   .var 0 is this Lcom/anatawa12/jasm/tree/FieldBlock; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/default Lcom/anatawa12/jasm/tree/Value;
+   areturn
+L_0005:
+.end method
+
+.method public getAttributes ()Ljava/util/List;
+   .signature "()Ljava/util/List<Lcom/anatawa12/jasm/tree/FieldAttributes;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 6
+   .var 0 is this Lcom/anatawa12/jasm/tree/FieldBlock; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/attributes Ljava/util/List;
+   areturn
+L_0005:
+.end method
+
+.method public <init> (Lcom/anatawa12/jasm/tree/AccessFlags;Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Value;Ljava/util/List;)V
+   .signature "(Lcom/anatawa12/jasm/tree/AccessFlags;Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Value<*>;Ljava/util/List<+Lcom/anatawa12/jasm/tree/FieldAttributes;>;)V"
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 3 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 4 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 6
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/FieldBlock; from L_0000 to L_0022
+   .var 1 is accessFlags Lcom/anatawa12/jasm/tree/AccessFlags; from L_0000 to L_0022
+   .var 2 is name Ljava/lang/String; from L_0000 to L_0022
+   .var 3 is descriptor Ljava/lang/String; from L_0000 to L_0022
+   .var 4 is default Lcom/anatawa12/jasm/tree/Value; from L_0000 to L_0022
+   .var 5 is attributes Ljava/util/List; from L_0000 to L_0022
+   aload 1
+   ldc "accessFlags"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 2
+   ldc "name"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 3
+   ldc "descriptor"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 5
+   ldc "attributes"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_000d:
+   .line 6
+   aload 0
+   aconst_null
+   invokespecial com/anatawa12/jasm/tree/ClassElement/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+   aload 0
+   aload 1
+   putfield com/anatawa12/jasm/tree/FieldBlock/accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   aload 0
+   aload 2
+   putfield com/anatawa12/jasm/tree/FieldBlock/name Ljava/lang/String;
+   aload 0
+   aload 3
+   putfield com/anatawa12/jasm/tree/FieldBlock/descriptor Ljava/lang/String;
+   aload 0
+   aload 4
+   putfield com/anatawa12/jasm/tree/FieldBlock/default Lcom/anatawa12/jasm/tree/Value;
+   aload 0
+   aload 5
+   putfield com/anatawa12/jasm/tree/FieldBlock/attributes Ljava/util/List;
+   return
+L_0022:
+.end method
+
+.method public component1 ()Lcom/anatawa12/jasm/tree/AccessFlags;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/FieldBlock; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   areturn
+L_0004:
+.end method
+
+.method public component2 ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/FieldBlock; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/name Ljava/lang/String;
+   areturn
+L_0004:
+.end method
+
+.method public component3 ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/FieldBlock; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/descriptor Ljava/lang/String;
+   areturn
+L_0004:
+.end method
+
+.method public component4 ()Lcom/anatawa12/jasm/tree/Value;
+   .signature "()Lcom/anatawa12/jasm/tree/Value<*>;"
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/FieldBlock; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/default Lcom/anatawa12/jasm/tree/Value;
+   areturn
+L_0004:
+.end method
+
+.method public component5 ()Ljava/util/List;
+   .signature "()Ljava/util/List<Lcom/anatawa12/jasm/tree/FieldAttributes;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/FieldBlock; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/attributes Ljava/util/List;
+   areturn
+L_0004:
+.end method
+
+.method public copy (Lcom/anatawa12/jasm/tree/AccessFlags;Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Value;Ljava/util/List;)Lcom/anatawa12/jasm/tree/FieldBlock;
+   .signature "(Lcom/anatawa12/jasm/tree/AccessFlags;Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Value<*>;Ljava/util/List<+Lcom/anatawa12/jasm/tree/FieldAttributes;>;)Lcom/anatawa12/jasm/tree/FieldBlock;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 3 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 4 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 7
+   .limit local 6
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/FieldBlock; from L_0000 to L_0016
+   .var 1 is accessFlags Lcom/anatawa12/jasm/tree/AccessFlags; from L_0000 to L_0016
+   .var 2 is name Ljava/lang/String; from L_0000 to L_0016
+   .var 3 is descriptor Ljava/lang/String; from L_0000 to L_0016
+   .var 4 is default Lcom/anatawa12/jasm/tree/Value; from L_0000 to L_0016
+   .var 5 is attributes Ljava/util/List; from L_0000 to L_0016
+   aload 1
+   ldc "accessFlags"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 2
+   ldc "name"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 3
+   ldc "descriptor"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 5
+   ldc "attributes"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   new com/anatawa12/jasm/tree/FieldBlock
+   dup
+   aload 1
+   aload 2
+   aload 3
+   aload 4
+   aload 5
+   invokespecial com/anatawa12/jasm/tree/FieldBlock/<init> (Lcom/anatawa12/jasm/tree/AccessFlags;Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Value;Ljava/util/List;)V
+   areturn
+L_0016:
+.end method
+
+.method public copy$default (Lcom/anatawa12/jasm/tree/FieldBlock;Lcom/anatawa12/jasm/tree/AccessFlags;Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Value;Ljava/util/List;ILjava/lang/Object;)Lcom/anatawa12/jasm/tree/FieldBlock;
+   .limit stack 6
+   .limit local 8
+   iload 6
+   iconst_1
+   iand
+   ifeq L_0007
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   astore 1
+L_0007:
+   .stack
+      locals Object com/anatawa12/jasm/tree/FieldBlock
+      locals Object com/anatawa12/jasm/tree/AccessFlags
+      locals Object java/lang/String
+      locals Object java/lang/String
+      locals Object com/anatawa12/jasm/tree/Value
+      locals Object java/util/List
+      locals Integer
+      locals Object java/lang/Object
+   .end stack
+   iload 6
+   iconst_2
+   iand
+   ifeq L_0010
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/name Ljava/lang/String;
+   astore 2
+L_0010:
+   .stack use locals
+   .end stack
+   iload 6
+   iconst_4
+   iand
+   ifeq L_0019
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/descriptor Ljava/lang/String;
+   astore 3
+L_0019:
+   .stack use locals
+   .end stack
+   iload 6
+   bipush 8
+   iand
+   ifeq L_0022
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/default Lcom/anatawa12/jasm/tree/Value;
+   astore 4
+L_0022:
+   .stack use locals
+   .end stack
+   iload 6
+   bipush 16
+   iand
+   ifeq L_002b
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/attributes Ljava/util/List;
+   astore 5
+L_002b:
+   .stack use locals
+   .end stack
+   aload 0
+   aload 1
+   aload 2
+   aload 3
+   aload 4
+   aload 5
+   invokevirtual com/anatawa12/jasm/tree/FieldBlock/copy (Lcom/anatawa12/jasm/tree/AccessFlags;Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Value;Ljava/util/List;)Lcom/anatawa12/jasm/tree/FieldBlock;
+   areturn
+.end method
+
+.method public toString ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 1
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   ldc "FieldBlock(accessFlags="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ", name="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/name Ljava/lang/String;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   ldc ", descriptor="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/descriptor Ljava/lang/String;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   ldc ", default="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/default Lcom/anatawa12/jasm/tree/Value;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ", attributes="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/attributes Ljava/util/List;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ")"
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   areturn
+.end method
+
+.method public hashCode ()I
+   .limit stack 3
+   .limit local 1
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   dup
+   ifnull L_0006
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_000a
+L_0006:
+   .stack
+      locals Object com/anatawa12/jasm/tree/FieldBlock
+      stacks Object com/anatawa12/jasm/tree/AccessFlags
+   .end stack
+   pop
+   iconst_0
+L_000a:
+   .stack use locals
+      stacks Integer
+   .end stack
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/name Ljava/lang/String;
+   dup
+   ifnull L_0014
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0018
+L_0014:
+   .stack use locals
+      stacks Integer
+      stacks Object java/lang/String
+   .end stack
+   pop
+   iconst_0
+L_0018:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/descriptor Ljava/lang/String;
+   dup
+   ifnull L_0023
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0027
+L_0023:
+   .stack use locals
+      stacks Integer
+      stacks Object java/lang/String
+   .end stack
+   pop
+   iconst_0
+L_0027:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/default Lcom/anatawa12/jasm/tree/Value;
+   dup
+   ifnull L_0032
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0036
+L_0032:
+   .stack use locals
+      stacks Integer
+      stacks Object com/anatawa12/jasm/tree/Value
+   .end stack
+   pop
+   iconst_0
+L_0036:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/attributes Ljava/util/List;
+   dup
+   ifnull L_0041
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0045
+L_0041:
+   .stack use locals
+      stacks Integer
+      stacks Object java/util/List
+   .end stack
+   pop
+   iconst_0
+L_0045:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   ireturn
+.end method
+
+.method public equals (Ljava/lang/Object;)Z
+   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 2
+   .limit local 3
+   aload 0
+   aload 1
+   if_acmpeq L_0027
+   aload 1
+   instanceof com/anatawa12/jasm/tree/FieldBlock
+   ifeq L_002b
+   aload 1
+   checkcast com/anatawa12/jasm/tree/FieldBlock
+   astore 2
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   aload 2
+   getfield com/anatawa12/jasm/tree/FieldBlock/accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_002b
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/name Ljava/lang/String;
+   aload 2
+   getfield com/anatawa12/jasm/tree/FieldBlock/name Ljava/lang/String;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_002b
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/descriptor Ljava/lang/String;
+   aload 2
+   getfield com/anatawa12/jasm/tree/FieldBlock/descriptor Ljava/lang/String;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_002b
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/default Lcom/anatawa12/jasm/tree/Value;
+   aload 2
+   getfield com/anatawa12/jasm/tree/FieldBlock/default Lcom/anatawa12/jasm/tree/Value;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_002b
+   aload 0
+   getfield com/anatawa12/jasm/tree/FieldBlock/attributes Ljava/util/List;
+   aload 2
+   getfield com/anatawa12/jasm/tree/FieldBlock/attributes Ljava/util/List;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_002b
+L_0027:
+   .stack
+      locals Object com/anatawa12/jasm/tree/FieldBlock
+      locals Object java/lang/Object
+   .end stack
+   iconst_1
+   ireturn
+L_002b:
+   .stack use locals
+   .end stack
+   iconst_0
+   ireturn
+.end method
+
+.field private accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+
+.field private name Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+
+.field private descriptor Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+
+.field private default Lcom/anatawa12/jasm/tree/Value;
+   .signature "Lcom/anatawa12/jasm/tree/Value<*>;"
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+.end field
+
+.field private attributes Ljava/util/List;
+   .signature "Ljava/util/List<Lcom/anatawa12/jasm/tree/FieldAttributes;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+

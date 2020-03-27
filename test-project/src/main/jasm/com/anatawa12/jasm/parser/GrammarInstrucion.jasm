@@ -1,0 +1,3022 @@
+.bytecode 52.0
+.source "InstructionGrammar.kt"
+.class public com/anatawa12/jasm/parser/GrammarInstrucion
+.super java/lang/Enum
+.signature "Ljava/lang/Enum<Lcom/anatawa12/jasm/parser/GrammarInstrucion;>;"
+.debug "SMAP\nInstructionGrammar.kt\nKotlin\n*S Kotlin\n*F\n+ 1 InstructionGrammar.kt\ncom/anatawa12/jasm/parser/GrammarInstrucion\n*L\n1#1,184:1\n*E\n"
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000!\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0003\b¤\u0001\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0017\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006R\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\u000cR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000ej\u0002\b\u000fj\u0002\b\u0010j\u0002\b\u0011j\u0002\b\u0012j\u0002\b\u0013j\u0002\b\u0014j\u0002\b\u0015j\u0002\b\u0016j\u0002\b\u0017j\u0002\b\u0018j\u0002\b\u0019j\u0002\b\u001aj\u0002\b\u001bj\u0002\b\u001cj\u0002\b\u001dj\u0002\b\u001ej\u0002\b\u001fj\u0002\b j\u0002\b!j\u0002\b\"j\u0002\b#j\u0002\b\$j\u0002\b%j\u0002\b&j\u0002\b\'j\u0002\b(j\u0002\b)j\u0002\b*j\u0002\b+j\u0002\b,j\u0002\b-j\u0002\b.j\u0002\b/j\u0002\b0j\u0002\b1j\u0002\b2j\u0002\b3j\u0002\b4j\u0002\b5j\u0002\b6j\u0002\b7j\u0002\b8j\u0002\b9j\u0002\b:j\u0002\b;j\u0002\b<j\u0002\b=j\u0002\b>j\u0002\b?j\u0002\b@j\u0002\bAj\u0002\bBj\u0002\bCj\u0002\bDj\u0002\bEj\u0002\bFj\u0002\bGj\u0002\bHj\u0002\bIj\u0002\bJj\u0002\bKj\u0002\bLj\u0002\bMj\u0002\bNj\u0002\bOj\u0002\bPj\u0002\bQj\u0002\bRj\u0002\bSj\u0002\bTj\u0002\bUj\u0002\bVj\u0002\bWj\u0002\bXj\u0002\bYj\u0002\bZj\u0002\b[j\u0002\b\\j\u0002\b]j\u0002\b^j\u0002\b_j\u0002\b`j\u0002\baj\u0002\bbj\u0002\bcj\u0002\bdj\u0002\bej\u0002\bfj\u0002\bgj\u0002\bhj\u0002\bij\u0002\bjj\u0002\bkj\u0002\blj\u0002\bmj\u0002\bnj\u0002\boj\u0002\bpj\u0002\bqj\u0002\brj\u0002\bsj\u0002\btj\u0002\buj\u0002\bvj\u0002\bwj\u0002\bxj\u0002\byj\u0002\bzj\u0002\b{j\u0002\b|j\u0002\b}j\u0002\b~j\u0002\b\u007fj\u0003\b\u0080\u0001j\u0003\b\u0081\u0001j\u0003\b\u0082\u0001j\u0003\b\u0083\u0001j\u0003\b\u0084\u0001j\u0003\b\u0085\u0001j\u0003\b\u0086\u0001j\u0003\b\u0087\u0001j\u0003\b\u0088\u0001j\u0003\b\u0089\u0001j\u0003\b\u008a\u0001j\u0003\b\u008b\u0001j\u0003\b\u008c\u0001j\u0003\b\u008d\u0001j\u0003\b\u008e\u0001j\u0003\b\u008f\u0001j\u0003\b\u0090\u0001j\u0003\b\u0091\u0001j\u0003\b\u0092\u0001j\u0003\b\u0093\u0001j\u0003\b\u0094\u0001j\u0003\b\u0095\u0001j\u0003\b\u0096\u0001j\u0003\b\u0097\u0001j\u0003\b\u0098\u0001j\u0003\b\u0099\u0001j\u0003\b\u009a\u0001j\u0003\b\u009b\u0001j\u0003\b\u009c\u0001j\u0003\b\u009d\u0001j\u0003\b\u009e\u0001j\u0003\b\u009f\u0001j\u0003\b \u0001j\u0003\b¡\u0001j\u0003\b¢\u0001j\u0003\b£\u0001j\u0003\b¤\u0001j\u0003\b¥\u0001j\u0003\b¦\u0001j\u0003\b§\u0001j\u0003\b¨\u0001j\u0003\b©\u0001j\u0003\bª\u0001j\u0003\b«\u0001¨\u0006¬\u0001"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/parser/GrammarInstrucion;"
+      s = ""
+      s = "type"
+      s = "Lcom/anatawa12/jasm/parser/InstrucionType;"
+      s = "opcode"
+      s = ""
+      s = "(Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V"
+      s = "keyword"
+      s = "Lcom/anatawa12/jasm/parser/TokenType\$KeyWord;"
+      s = "getKeyword"
+      s = "()Lcom/anatawa12/jasm/parser/TokenType\$KeyWord;"
+      s = "getOpcode"
+      s = "()I"
+      s = "getType"
+      s = "()Lcom/anatawa12/jasm/parser/InstrucionType;"
+      s = "NOP"
+      s = "ACONST_NULL"
+      s = "ICONST_M1"
+      s = "ICONST_0"
+      s = "ICONST_1"
+      s = "ICONST_2"
+      s = "ICONST_3"
+      s = "ICONST_4"
+      s = "ICONST_5"
+      s = "LCONST_0"
+      s = "LCONST_1"
+      s = "FCONST_0"
+      s = "FCONST_1"
+      s = "FCONST_2"
+      s = "DCONST_0"
+      s = "DCONST_1"
+      s = "BIPUSH"
+      s = "SIPUSH"
+      s = "LDC"
+      s = "ILOAD"
+      s = "LLOAD"
+      s = "FLOAD"
+      s = "DLOAD"
+      s = "ALOAD"
+      s = "IALOAD"
+      s = "LALOAD"
+      s = "FALOAD"
+      s = "DALOAD"
+      s = "AALOAD"
+      s = "BALOAD"
+      s = "CALOAD"
+      s = "SALOAD"
+      s = "ISTORE"
+      s = "LSTORE"
+      s = "FSTORE"
+      s = "DSTORE"
+      s = "ASTORE"
+      s = "IASTORE"
+      s = "LASTORE"
+      s = "FASTORE"
+      s = "DASTORE"
+      s = "AASTORE"
+      s = "BASTORE"
+      s = "CASTORE"
+      s = "SASTORE"
+      s = "POP"
+      s = "POP2"
+      s = "DUP"
+      s = "DUP_X1"
+      s = "DUP_X2"
+      s = "DUP2"
+      s = "DUP2_X1"
+      s = "DUP2_X2"
+      s = "SWAP"
+      s = "IADD"
+      s = "LADD"
+      s = "FADD"
+      s = "DADD"
+      s = "ISUB"
+      s = "LSUB"
+      s = "FSUB"
+      s = "DSUB"
+      s = "IMUL"
+      s = "LMUL"
+      s = "FMUL"
+      s = "DMUL"
+      s = "IDIV"
+      s = "LDIV"
+      s = "FDIV"
+      s = "DDIV"
+      s = "IREM"
+      s = "LREM"
+      s = "FREM"
+      s = "DREM"
+      s = "INEG"
+      s = "LNEG"
+      s = "FNEG"
+      s = "DNEG"
+      s = "ISHL"
+      s = "LSHL"
+      s = "ISHR"
+      s = "LSHR"
+      s = "IUSHR"
+      s = "LUSHR"
+      s = "IAND"
+      s = "LAND"
+      s = "IOR"
+      s = "LOR"
+      s = "IXOR"
+      s = "LXOR"
+      s = "IINC"
+      s = "I2L"
+      s = "I2F"
+      s = "I2D"
+      s = "L2I"
+      s = "L2F"
+      s = "L2D"
+      s = "F2I"
+      s = "F2L"
+      s = "F2D"
+      s = "D2I"
+      s = "D2L"
+      s = "D2F"
+      s = "I2B"
+      s = "I2C"
+      s = "I2S"
+      s = "LCMP"
+      s = "FCMPL"
+      s = "FCMPG"
+      s = "DCMPL"
+      s = "DCMPG"
+      s = "IFEQ"
+      s = "IFNE"
+      s = "IFLT"
+      s = "IFGE"
+      s = "IFGT"
+      s = "IFLE"
+      s = "IF_ICMPEQ"
+      s = "IF_ICMPNE"
+      s = "IF_ICMPLT"
+      s = "IF_ICMPGE"
+      s = "IF_ICMPGT"
+      s = "IF_ICMPLE"
+      s = "IF_ACMPEQ"
+      s = "IF_ACMPNE"
+      s = "GOTO"
+      s = "JSR"
+      s = "RET"
+      s = "TABLESWITCH"
+      s = "LOOKUPSWITCH"
+      s = "IRETURN"
+      s = "LRETURN"
+      s = "FRETURN"
+      s = "DRETURN"
+      s = "ARETURN"
+      s = "RETURN"
+      s = "GETSTATIC"
+      s = "PUTSTATIC"
+      s = "GETFIELD"
+      s = "PUTFIELD"
+      s = "INVOKEVIRTUAL"
+      s = "INVOKESPECIAL"
+      s = "INVOKESTATIC"
+      s = "INVOKEINTERFACE"
+      s = "INVOKEDYNAMIC"
+      s = "NEW"
+      s = "NEWARRAY"
+      s = "ANEWARRAY"
+      s = "ARRAYLENGTH"
+      s = "ATHROW"
+      s = "CHECKCAST"
+      s = "INSTANCEOF"
+      s = "MONITORENTER"
+      s = "MONITOREXIT"
+      s = "MULTIANEWARRAY"
+      s = "IFNULL"
+      s = "IFNONNULL"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method static <clinit> ()V
+   .limit stack 10
+   .limit local 0
+   sipush 157
+   anewarray com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   dup
+   iconst_0
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "NOP"
+   iconst_0
+L_0009:
+   .line 6
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   iconst_0
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/NOP Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   iconst_1
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ACONST_NULL"
+   iconst_1
+L_0017:
+   .line 7
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   iconst_1
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ACONST_NULL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   iconst_2
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ICONST_M1"
+   iconst_2
+L_0025:
+   .line 8
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   iconst_2
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ICONST_M1 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   iconst_3
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ICONST_0"
+   iconst_3
+L_0033:
+   .line 9
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   iconst_3
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ICONST_0 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   iconst_4
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ICONST_1"
+   iconst_4
+L_0041:
+   .line 10
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   iconst_4
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ICONST_1 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   iconst_5
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ICONST_2"
+   iconst_5
+L_004f:
+   .line 11
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   iconst_5
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ICONST_2 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 6
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ICONST_3"
+   bipush 6
+L_005d:
+   .line 12
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 6
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ICONST_3 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 7
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ICONST_4"
+   bipush 7
+L_006b:
+   .line 13
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 7
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ICONST_4 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 8
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ICONST_5"
+   bipush 8
+L_0079:
+   .line 14
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 8
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ICONST_5 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 9
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LCONST_0"
+   bipush 9
+L_0087:
+   .line 15
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 9
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LCONST_0 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 10
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LCONST_1"
+   bipush 10
+L_0095:
+   .line 16
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 10
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LCONST_1 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 11
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "FCONST_0"
+   bipush 11
+L_00a3:
+   .line 17
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 11
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/FCONST_0 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 12
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "FCONST_1"
+   bipush 12
+L_00b1:
+   .line 18
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 12
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/FCONST_1 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 13
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "FCONST_2"
+   bipush 13
+L_00bf:
+   .line 19
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 13
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/FCONST_2 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 14
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DCONST_0"
+   bipush 14
+L_00cd:
+   .line 20
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 14
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DCONST_0 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 15
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DCONST_1"
+   bipush 15
+L_00db:
+   .line 21
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 15
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DCONST_1 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 16
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "BIPUSH"
+   bipush 16
+L_00e9:
+   .line 22
+   getstatic com/anatawa12/jasm/parser/InstrucionType/IntInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 16
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/BIPUSH Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 17
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "SIPUSH"
+   bipush 17
+L_00f7:
+   .line 23
+   getstatic com/anatawa12/jasm/parser/InstrucionType/IntInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 17
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/SIPUSH Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 18
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LDC"
+   bipush 18
+L_0105:
+   .line 24
+   getstatic com/anatawa12/jasm/parser/InstrucionType/LdcInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 18
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LDC Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 19
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ILOAD"
+   bipush 19
+L_0113:
+   .line 25
+   getstatic com/anatawa12/jasm/parser/InstrucionType/VarInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 21
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ILOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 20
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LLOAD"
+   bipush 20
+L_0121:
+   .line 26
+   getstatic com/anatawa12/jasm/parser/InstrucionType/VarInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 22
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LLOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 21
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "FLOAD"
+   bipush 21
+L_012f:
+   .line 27
+   getstatic com/anatawa12/jasm/parser/InstrucionType/VarInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 23
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/FLOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 22
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DLOAD"
+   bipush 22
+L_013d:
+   .line 28
+   getstatic com/anatawa12/jasm/parser/InstrucionType/VarInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 24
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DLOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 23
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ALOAD"
+   bipush 23
+L_014b:
+   .line 29
+   getstatic com/anatawa12/jasm/parser/InstrucionType/VarInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 25
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 24
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IALOAD"
+   bipush 24
+L_0159:
+   .line 30
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 46
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 25
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LALOAD"
+   bipush 25
+L_0167:
+   .line 31
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 47
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 26
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "FALOAD"
+   bipush 26
+L_0175:
+   .line 32
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 48
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/FALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 27
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DALOAD"
+   bipush 27
+L_0183:
+   .line 33
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 49
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 28
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "AALOAD"
+   bipush 28
+L_0191:
+   .line 34
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 50
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/AALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 29
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "BALOAD"
+   bipush 29
+L_019f:
+   .line 35
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 51
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/BALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 30
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "CALOAD"
+   bipush 30
+L_01ad:
+   .line 36
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 52
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/CALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 31
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "SALOAD"
+   bipush 31
+L_01bb:
+   .line 37
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 53
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/SALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 32
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ISTORE"
+   bipush 32
+L_01c9:
+   .line 38
+   getstatic com/anatawa12/jasm/parser/InstrucionType/VarInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 54
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ISTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 33
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LSTORE"
+   bipush 33
+L_01d7:
+   .line 39
+   getstatic com/anatawa12/jasm/parser/InstrucionType/VarInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 55
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LSTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 34
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "FSTORE"
+   bipush 34
+L_01e5:
+   .line 40
+   getstatic com/anatawa12/jasm/parser/InstrucionType/VarInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 56
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/FSTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 35
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DSTORE"
+   bipush 35
+L_01f3:
+   .line 41
+   getstatic com/anatawa12/jasm/parser/InstrucionType/VarInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 57
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DSTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 36
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ASTORE"
+   bipush 36
+L_0201:
+   .line 42
+   getstatic com/anatawa12/jasm/parser/InstrucionType/VarInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 58
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 37
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IASTORE"
+   bipush 37
+L_020f:
+   .line 43
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 79
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 38
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LASTORE"
+   bipush 38
+L_021d:
+   .line 44
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 80
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 39
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "FASTORE"
+   bipush 39
+L_022b:
+   .line 45
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 81
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/FASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 40
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DASTORE"
+   bipush 40
+L_0239:
+   .line 46
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 82
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 41
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "AASTORE"
+   bipush 41
+L_0247:
+   .line 47
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 83
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/AASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 42
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "BASTORE"
+   bipush 42
+L_0255:
+   .line 48
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 84
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/BASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 43
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "CASTORE"
+   bipush 43
+L_0263:
+   .line 49
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 85
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/CASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 44
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "SASTORE"
+   bipush 44
+L_0271:
+   .line 50
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 86
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/SASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 45
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "POP"
+   bipush 45
+L_027f:
+   .line 51
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 87
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/POP Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 46
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "POP2"
+   bipush 46
+L_028d:
+   .line 52
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 88
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/POP2 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 47
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DUP"
+   bipush 47
+L_029b:
+   .line 53
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 89
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DUP Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 48
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DUP_X1"
+   bipush 48
+L_02a9:
+   .line 54
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 90
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DUP_X1 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 49
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DUP_X2"
+   bipush 49
+L_02b7:
+   .line 55
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 91
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DUP_X2 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 50
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DUP2"
+   bipush 50
+L_02c5:
+   .line 56
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 92
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DUP2 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 51
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DUP2_X1"
+   bipush 51
+L_02d3:
+   .line 57
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 93
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DUP2_X1 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 52
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DUP2_X2"
+   bipush 52
+L_02e1:
+   .line 58
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 94
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DUP2_X2 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 53
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "SWAP"
+   bipush 53
+L_02ef:
+   .line 59
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 95
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/SWAP Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 54
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IADD"
+   bipush 54
+L_02fd:
+   .line 60
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 96
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IADD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 55
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LADD"
+   bipush 55
+L_030b:
+   .line 61
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 97
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LADD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 56
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "FADD"
+   bipush 56
+L_0319:
+   .line 62
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 98
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/FADD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 57
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DADD"
+   bipush 57
+L_0327:
+   .line 63
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 99
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DADD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 58
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ISUB"
+   bipush 58
+L_0335:
+   .line 64
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 100
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ISUB Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 59
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LSUB"
+   bipush 59
+L_0343:
+   .line 65
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 101
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LSUB Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 60
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "FSUB"
+   bipush 60
+L_0351:
+   .line 66
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 102
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/FSUB Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 61
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DSUB"
+   bipush 61
+L_035f:
+   .line 67
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 103
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DSUB Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 62
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IMUL"
+   bipush 62
+L_036d:
+   .line 68
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 104
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IMUL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 63
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LMUL"
+   bipush 63
+L_037b:
+   .line 69
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 105
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LMUL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 64
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "FMUL"
+   bipush 64
+L_0389:
+   .line 70
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 106
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/FMUL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 65
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DMUL"
+   bipush 65
+L_0397:
+   .line 71
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 107
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DMUL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 66
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IDIV"
+   bipush 66
+L_03a5:
+   .line 72
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 108
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IDIV Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 67
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LDIV"
+   bipush 67
+L_03b3:
+   .line 73
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 109
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LDIV Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 68
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "FDIV"
+   bipush 68
+L_03c1:
+   .line 74
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 110
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/FDIV Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 69
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DDIV"
+   bipush 69
+L_03cf:
+   .line 75
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 111
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DDIV Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 70
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IREM"
+   bipush 70
+L_03dd:
+   .line 76
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 112
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IREM Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 71
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LREM"
+   bipush 71
+L_03eb:
+   .line 77
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 113
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LREM Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 72
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "FREM"
+   bipush 72
+L_03f9:
+   .line 78
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 114
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/FREM Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 73
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DREM"
+   bipush 73
+L_0407:
+   .line 79
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 115
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DREM Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 74
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "INEG"
+   bipush 74
+L_0415:
+   .line 80
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 116
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/INEG Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 75
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LNEG"
+   bipush 75
+L_0423:
+   .line 81
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 117
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LNEG Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 76
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "FNEG"
+   bipush 76
+L_0431:
+   .line 82
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 118
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/FNEG Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 77
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DNEG"
+   bipush 77
+L_043f:
+   .line 83
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 119
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DNEG Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 78
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ISHL"
+   bipush 78
+L_044d:
+   .line 84
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 120
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ISHL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 79
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LSHL"
+   bipush 79
+L_045b:
+   .line 85
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 121
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LSHL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 80
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ISHR"
+   bipush 80
+L_0469:
+   .line 86
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 122
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ISHR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 81
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LSHR"
+   bipush 81
+L_0477:
+   .line 87
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 123
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LSHR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 82
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IUSHR"
+   bipush 82
+L_0485:
+   .line 88
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 124
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IUSHR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 83
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LUSHR"
+   bipush 83
+L_0493:
+   .line 89
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 125
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LUSHR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 84
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IAND"
+   bipush 84
+L_04a1:
+   .line 90
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 126
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IAND Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 85
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LAND"
+   bipush 85
+L_04af:
+   .line 91
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   bipush 127
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LAND Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 86
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IOR"
+   bipush 86
+L_04bd:
+   .line 92
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 128
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IOR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 87
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LOR"
+   bipush 87
+L_04cb:
+   .line 93
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 129
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LOR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 88
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IXOR"
+   bipush 88
+L_04d9:
+   .line 94
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 130
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IXOR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 89
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LXOR"
+   bipush 89
+L_04e7:
+   .line 95
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 131
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LXOR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 90
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IINC"
+   bipush 90
+L_04f5:
+   .line 96
+   getstatic com/anatawa12/jasm/parser/InstrucionType/IincInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 132
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IINC Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 91
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "I2L"
+   bipush 91
+L_0503:
+   .line 97
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 133
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/I2L Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 92
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "I2F"
+   bipush 92
+L_0511:
+   .line 98
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 134
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/I2F Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 93
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "I2D"
+   bipush 93
+L_051f:
+   .line 99
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 135
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/I2D Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 94
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "L2I"
+   bipush 94
+L_052d:
+   .line 100
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 136
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/L2I Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 95
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "L2F"
+   bipush 95
+L_053b:
+   .line 101
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 137
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/L2F Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 96
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "L2D"
+   bipush 96
+L_0549:
+   .line 102
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 138
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/L2D Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 97
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "F2I"
+   bipush 97
+L_0557:
+   .line 103
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 139
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/F2I Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 98
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "F2L"
+   bipush 98
+L_0565:
+   .line 104
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 140
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/F2L Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 99
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "F2D"
+   bipush 99
+L_0573:
+   .line 105
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 141
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/F2D Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 100
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "D2I"
+   bipush 100
+L_0581:
+   .line 106
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 142
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/D2I Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 101
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "D2L"
+   bipush 101
+L_058f:
+   .line 107
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 143
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/D2L Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 102
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "D2F"
+   bipush 102
+L_059d:
+   .line 108
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 144
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/D2F Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 103
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "I2B"
+   bipush 103
+L_05ab:
+   .line 109
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 145
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/I2B Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 104
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "I2C"
+   bipush 104
+L_05b9:
+   .line 110
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 146
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/I2C Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 105
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "I2S"
+   bipush 105
+L_05c7:
+   .line 111
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 147
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/I2S Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 106
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LCMP"
+   bipush 106
+L_05d5:
+   .line 112
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 148
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LCMP Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 107
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "FCMPL"
+   bipush 107
+L_05e3:
+   .line 113
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 149
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/FCMPL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 108
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "FCMPG"
+   bipush 108
+L_05f1:
+   .line 114
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 150
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/FCMPG Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 109
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DCMPL"
+   bipush 109
+L_05ff:
+   .line 115
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 151
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DCMPL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 110
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DCMPG"
+   bipush 110
+L_060d:
+   .line 116
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 152
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DCMPG Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 111
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IFEQ"
+   bipush 111
+L_061b:
+   .line 117
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 153
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IFEQ Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 112
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IFNE"
+   bipush 112
+L_0629:
+   .line 118
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 154
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IFNE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 113
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IFLT"
+   bipush 113
+L_0637:
+   .line 119
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 155
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IFLT Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 114
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IFGE"
+   bipush 114
+L_0645:
+   .line 120
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 156
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IFGE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 115
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IFGT"
+   bipush 115
+L_0653:
+   .line 121
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 157
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IFGT Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 116
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IFLE"
+   bipush 116
+L_0661:
+   .line 122
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 158
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IFLE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 117
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IF_ICMPEQ"
+   bipush 117
+L_066f:
+   .line 123
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 159
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IF_ICMPEQ Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 118
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IF_ICMPNE"
+   bipush 118
+L_067d:
+   .line 124
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 160
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IF_ICMPNE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 119
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IF_ICMPLT"
+   bipush 119
+L_068b:
+   .line 125
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 161
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IF_ICMPLT Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 120
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IF_ICMPGE"
+   bipush 120
+L_0699:
+   .line 126
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 162
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IF_ICMPGE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 121
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IF_ICMPGT"
+   bipush 121
+L_06a7:
+   .line 127
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 163
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IF_ICMPGT Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 122
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IF_ICMPLE"
+   bipush 122
+L_06b5:
+   .line 128
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 164
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IF_ICMPLE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 123
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IF_ACMPEQ"
+   bipush 123
+L_06c3:
+   .line 129
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 165
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IF_ACMPEQ Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 124
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IF_ACMPNE"
+   bipush 124
+L_06d1:
+   .line 130
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 166
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IF_ACMPNE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 125
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "GOTO"
+   bipush 125
+L_06df:
+   .line 131
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 167
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/GOTO Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 126
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "JSR"
+   bipush 126
+L_06ed:
+   .line 132
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 168
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/JSR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   bipush 127
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "RET"
+   bipush 127
+L_06fb:
+   .line 133
+   getstatic com/anatawa12/jasm/parser/InstrucionType/VarInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 169
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/RET Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 128
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "TABLESWITCH"
+   sipush 128
+L_0709:
+   .line 134
+   getstatic com/anatawa12/jasm/parser/InstrucionType/TableSwitchInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 170
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/TABLESWITCH Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 129
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LOOKUPSWITCH"
+   sipush 129
+L_0717:
+   .line 135
+   getstatic com/anatawa12/jasm/parser/InstrucionType/LookupSwitchInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 171
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LOOKUPSWITCH Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 130
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IRETURN"
+   sipush 130
+L_0725:
+   .line 136
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 172
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IRETURN Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 131
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "LRETURN"
+   sipush 131
+L_0733:
+   .line 137
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 173
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/LRETURN Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 132
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "FRETURN"
+   sipush 132
+L_0741:
+   .line 138
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 174
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/FRETURN Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 133
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "DRETURN"
+   sipush 133
+L_074f:
+   .line 139
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 175
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/DRETURN Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 134
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ARETURN"
+   sipush 134
+L_075d:
+   .line 140
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 176
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ARETURN Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 135
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "RETURN"
+   sipush 135
+L_076b:
+   .line 141
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 177
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/RETURN Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 136
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "GETSTATIC"
+   sipush 136
+L_0779:
+   .line 142
+   getstatic com/anatawa12/jasm/parser/InstrucionType/FieldInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 178
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/GETSTATIC Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 137
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "PUTSTATIC"
+   sipush 137
+L_0787:
+   .line 143
+   getstatic com/anatawa12/jasm/parser/InstrucionType/FieldInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 179
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/PUTSTATIC Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 138
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "GETFIELD"
+   sipush 138
+L_0795:
+   .line 144
+   getstatic com/anatawa12/jasm/parser/InstrucionType/FieldInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 180
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/GETFIELD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 139
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "PUTFIELD"
+   sipush 139
+L_07a3:
+   .line 145
+   getstatic com/anatawa12/jasm/parser/InstrucionType/FieldInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 181
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/PUTFIELD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 140
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "INVOKEVIRTUAL"
+   sipush 140
+L_07b1:
+   .line 146
+   getstatic com/anatawa12/jasm/parser/InstrucionType/MethodInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 182
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/INVOKEVIRTUAL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 141
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "INVOKESPECIAL"
+   sipush 141
+L_07bf:
+   .line 147
+   getstatic com/anatawa12/jasm/parser/InstrucionType/MethodInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 183
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/INVOKESPECIAL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 142
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "INVOKESTATIC"
+   sipush 142
+L_07cd:
+   .line 148
+   getstatic com/anatawa12/jasm/parser/InstrucionType/MethodInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 184
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/INVOKESTATIC Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 143
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "INVOKEINTERFACE"
+   sipush 143
+L_07db:
+   .line 149
+   getstatic com/anatawa12/jasm/parser/InstrucionType/MethodInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 185
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/INVOKEINTERFACE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 144
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "INVOKEDYNAMIC"
+   sipush 144
+L_07e9:
+   .line 150
+   getstatic com/anatawa12/jasm/parser/InstrucionType/InvokeDynamicInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 186
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/INVOKEDYNAMIC Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 145
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "NEW"
+   sipush 145
+L_07f7:
+   .line 151
+   getstatic com/anatawa12/jasm/parser/InstrucionType/TypeInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 187
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/NEW Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 146
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "NEWARRAY"
+   sipush 146
+L_0805:
+   .line 152
+   getstatic com/anatawa12/jasm/parser/InstrucionType/NewarrayInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 188
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/NEWARRAY Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 147
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ANEWARRAY"
+   sipush 147
+L_0813:
+   .line 153
+   getstatic com/anatawa12/jasm/parser/InstrucionType/TypeInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 189
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ANEWARRAY Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 148
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ARRAYLENGTH"
+   sipush 148
+L_0821:
+   .line 154
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 190
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ARRAYLENGTH Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 149
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "ATHROW"
+   sipush 149
+L_082f:
+   .line 155
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 191
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/ATHROW Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 150
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "CHECKCAST"
+   sipush 150
+L_083d:
+   .line 156
+   getstatic com/anatawa12/jasm/parser/InstrucionType/TypeInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 192
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/CHECKCAST Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 151
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "INSTANCEOF"
+   sipush 151
+L_084b:
+   .line 157
+   getstatic com/anatawa12/jasm/parser/InstrucionType/TypeInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 193
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/INSTANCEOF Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 152
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "MONITORENTER"
+   sipush 152
+L_0859:
+   .line 158
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 194
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/MONITORENTER Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 153
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "MONITOREXIT"
+   sipush 153
+L_0867:
+   .line 159
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 195
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/MONITOREXIT Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 154
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "MULTIANEWARRAY"
+   sipush 154
+L_0875:
+   .line 160
+   getstatic com/anatawa12/jasm/parser/InstrucionType/MultiANewArrayInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 197
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/MULTIANEWARRAY Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 155
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IFNULL"
+   sipush 155
+L_0883:
+   .line 161
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 198
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IFNULL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   dup
+   sipush 156
+   new com/anatawa12/jasm/parser/GrammarInstrucion
+   dup
+   ldc "IFNONNULL"
+   sipush 156
+L_0891:
+   .line 162
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   sipush 199
+   invokespecial com/anatawa12/jasm/parser/GrammarInstrucion/<init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/IFNONNULL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aastore
+   putstatic com/anatawa12/jasm/parser/GrammarInstrucion/$VALUES "[Lcom/anatawa12/jasm/parser/GrammarInstrucion;"
+   return
+.end method
+
+.method public getKeyword ()Lcom/anatawa12/jasm/parser/TokenType$KeyWord;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 165
+   .var 0 is this Lcom/anatawa12/jasm/parser/GrammarInstrucion; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/parser/GrammarInstrucion/keyword Lcom/anatawa12/jasm/parser/TokenType$KeyWord;
+   areturn
+L_0005:
+.end method
+
+.method public getType ()Lcom/anatawa12/jasm/parser/InstrucionType;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 5
+   .var 0 is this Lcom/anatawa12/jasm/parser/GrammarInstrucion; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/parser/GrammarInstrucion/type Lcom/anatawa12/jasm/parser/InstrucionType;
+   areturn
+L_0005:
+.end method
+
+.method public getOpcode ()I
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 5
+   .var 0 is this Lcom/anatawa12/jasm/parser/GrammarInstrucion; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/parser/GrammarInstrucion/opcode I
+   ireturn
+L_0005:
+.end method
+
+.method private <init> (Ljava/lang/String;ILcom/anatawa12/jasm/parser/InstrucionType;I)V
+   .signature "(Lcom/anatawa12/jasm/parser/InstrucionType;I)V"
+   .limit stack 4
+   .limit local 12
+L_0000:
+   .line 5
+   .var 0 is this Lcom/anatawa12/jasm/parser/GrammarInstrucion; from L_0000 to L_002f
+   .var 1 is $enum_name_or_ordinal$0 Ljava/lang/String; from L_0000 to L_002f
+   .var 2 is $enum_name_or_ordinal$1 I from L_0000 to L_002f
+   .var 3 is type Lcom/anatawa12/jasm/parser/InstrucionType; from L_0000 to L_002f
+   .var 4 is opcode I from L_0000 to L_002f
+   aload 0
+   aload 1
+   iload 2
+   invokespecial java/lang/Enum/<init> (Ljava/lang/String;I)V
+   aload 0
+   aload 3
+   putfield com/anatawa12/jasm/parser/GrammarInstrucion/type Lcom/anatawa12/jasm/parser/InstrucionType;
+   aload 0
+   iload 4
+   putfield com/anatawa12/jasm/parser/GrammarInstrucion/opcode I
+L_000c:
+   .line 165
+   aload 0
+   aload 0
+   invokevirtual com/anatawa12/jasm/parser/GrammarInstrucion/name ()Ljava/lang/String;
+   astore 5
+   astore 7
+   iconst_0
+   istore 6
+   aload 5
+   dup
+   ifnonnull L_001d
+   new kotlin/TypeCastException
+   dup
+   ldc "null cannot be cast to non-null type java.lang.String"
+   invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
+   athrow
+L_001d:
+   .stack
+      locals Object com/anatawa12/jasm/parser/GrammarInstrucion
+      locals Object java/lang/String
+      locals Integer
+      locals Object com/anatawa12/jasm/parser/InstrucionType
+      locals Integer
+      locals Object java/lang/String
+      locals Integer
+      locals Object com/anatawa12/jasm/parser/GrammarInstrucion
+      stacks Object java/lang/String
+   .end stack
+   invokevirtual java/lang/String/toLowerCase ()Ljava/lang/String;
+   dup
+   ldc "(this as java.lang.String).toLowerCase()"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   astore 10
+   aload 7
+   aload 10
+L_0026:
+   .line 165
+   astore 11
+   new com/anatawa12/jasm/parser/TokenType$KeyWord
+   dup
+   aload 11
+   invokespecial com/anatawa12/jasm/parser/TokenType$KeyWord/<init> (Ljava/lang/String;)V
+   putfield com/anatawa12/jasm/parser/GrammarInstrucion/keyword Lcom/anatawa12/jasm/parser/TokenType$KeyWord;
+   return
+L_002f:
+.end method
+
+.method public values "()[Lcom/anatawa12/jasm/parser/GrammarInstrucion;"
+   .limit stack 1
+   .limit local 0
+   getstatic com/anatawa12/jasm/parser/GrammarInstrucion/$VALUES "[Lcom/anatawa12/jasm/parser/GrammarInstrucion;"
+   invokevirtual "[Lcom/anatawa12/jasm/parser/GrammarInstrucion;"/clone ()Ljava/lang/Object;
+   checkcast "[Lcom/anatawa12/jasm/parser/GrammarInstrucion;"
+   areturn
+.end method
+
+.method public valueOf (Ljava/lang/String;)Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   .limit stack 2
+   .limit local 1
+   ldc class Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+   aload 0
+   invokestatic java/lang/Enum/valueOf (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+   checkcast com/anatawa12/jasm/parser/GrammarInstrucion
+   areturn
+.end method
+
+.field public NOP Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ACONST_NULL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ICONST_M1 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ICONST_0 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ICONST_1 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ICONST_2 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ICONST_3 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ICONST_4 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ICONST_5 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LCONST_0 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LCONST_1 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public FCONST_0 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public FCONST_1 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public FCONST_2 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DCONST_0 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DCONST_1 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public BIPUSH Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public SIPUSH Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LDC Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ILOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LLOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public FLOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DLOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public FALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public AALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public BALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public CALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public SALOAD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ISTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LSTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public FSTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DSTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public FASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public AASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public BASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public CASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public SASTORE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public POP Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public POP2 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DUP Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DUP_X1 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DUP_X2 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DUP2 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DUP2_X1 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DUP2_X2 Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public SWAP Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IADD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LADD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public FADD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DADD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ISUB Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LSUB Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public FSUB Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DSUB Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IMUL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LMUL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public FMUL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DMUL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IDIV Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LDIV Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public FDIV Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DDIV Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IREM Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LREM Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public FREM Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DREM Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public INEG Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LNEG Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public FNEG Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DNEG Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ISHL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LSHL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ISHR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LSHR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IUSHR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LUSHR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IAND Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LAND Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IOR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LOR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IXOR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LXOR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IINC Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public I2L Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public I2F Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public I2D Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public L2I Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public L2F Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public L2D Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public F2I Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public F2L Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public F2D Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public D2I Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public D2L Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public D2F Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public I2B Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public I2C Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public I2S Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LCMP Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public FCMPL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public FCMPG Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DCMPL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DCMPG Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IFEQ Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IFNE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IFLT Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IFGE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IFGT Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IFLE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IF_ICMPEQ Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IF_ICMPNE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IF_ICMPLT Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IF_ICMPGE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IF_ICMPGT Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IF_ICMPLE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IF_ACMPEQ Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IF_ACMPNE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public GOTO Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public JSR Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public RET Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public TABLESWITCH Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LOOKUPSWITCH Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IRETURN Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public LRETURN Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public FRETURN Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public DRETURN Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ARETURN Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public RETURN Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public GETSTATIC Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public PUTSTATIC Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public GETFIELD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public PUTFIELD Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public INVOKEVIRTUAL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public INVOKESPECIAL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public INVOKESTATIC Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public INVOKEINTERFACE Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public INVOKEDYNAMIC Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public NEW Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public NEWARRAY Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ANEWARRAY Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ARRAYLENGTH Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public ATHROW Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public CHECKCAST Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public INSTANCEOF Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public MONITORENTER Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public MONITOREXIT Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public MULTIANEWARRAY Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IFNULL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field public IFNONNULL Lcom/anatawa12/jasm/parser/GrammarInstrucion;
+.end field
+
+.field private $VALUES "[Lcom/anatawa12/jasm/parser/GrammarInstrucion;"
+.end field
+
+.field private keyword Lcom/anatawa12/jasm/parser/TokenType$KeyWord;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+
+.field private type Lcom/anatawa12/jasm/parser/InstrucionType;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+
+.field private opcode I
+.end field
+

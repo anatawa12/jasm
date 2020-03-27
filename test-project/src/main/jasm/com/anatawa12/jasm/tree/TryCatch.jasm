@@ -1,0 +1,497 @@
+.bytecode 52.0
+.source "MethodStatement.kt"
+.class public com/anatawa12/jasm/tree/TryCatch
+.super com/anatawa12/jasm/tree/MethodStatement
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B\'\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005¢\u0006\u0002\u0010\bJ\u000b\u0010\u000f\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\t\u0010\u0010\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0011\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0012\u001a\u00020\u0005HÆ\u0003J3\u0010\u0013\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u0005HÆ\u0001J\u0013\u0010\u0014\u001a\u00020\u00152\b\u0010\u0016\u001a\u0004\u0018\u00010\u0017HÖ\u0003J\t\u0010\u0018\u001a\u00020\u0019HÖ\u0001J\t\u0010\u001a\u001a\u00020\u0003HÖ\u0001R\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\u000cR\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000cR\u0011\u0010\u0007\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000c¨\u0006\u001b"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/tree/TryCatch;"
+      s = "Lcom/anatawa12/jasm/tree/MethodStatement;"
+      s = "exception"
+      s = ""
+      s = "from"
+      s = "Lcom/anatawa12/jasm/tree/LabelName;"
+      s = "to"
+      s = "using"
+      s = "(Ljava/lang/String;Lcom/anatawa12/jasm/tree/LabelName;Lcom/anatawa12/jasm/tree/LabelName;Lcom/anatawa12/jasm/tree/LabelName;)V"
+      s = "getException"
+      s = "()Ljava/lang/String;"
+      s = "getFrom"
+      s = "()Lcom/anatawa12/jasm/tree/LabelName;"
+      s = "getTo"
+      s = "getUsing"
+      s = "component1"
+      s = "component2"
+      s = "component3"
+      s = "component4"
+      s = "copy"
+      s = "equals"
+      s = ""
+      s = "other"
+      s = ""
+      s = "hashCode"
+      s = ""
+      s = "toString"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method public getException ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 15
+   .var 0 is this Lcom/anatawa12/jasm/tree/TryCatch; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/exception Ljava/lang/String;
+   areturn
+L_0005:
+.end method
+
+.method public getFrom ()Lcom/anatawa12/jasm/tree/LabelName;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 15
+   .var 0 is this Lcom/anatawa12/jasm/tree/TryCatch; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/from Lcom/anatawa12/jasm/tree/LabelName;
+   areturn
+L_0005:
+.end method
+
+.method public getTo ()Lcom/anatawa12/jasm/tree/LabelName;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 15
+   .var 0 is this Lcom/anatawa12/jasm/tree/TryCatch; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/to Lcom/anatawa12/jasm/tree/LabelName;
+   areturn
+L_0005:
+.end method
+
+.method public getUsing ()Lcom/anatawa12/jasm/tree/LabelName;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 15
+   .var 0 is this Lcom/anatawa12/jasm/tree/TryCatch; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/using Lcom/anatawa12/jasm/tree/LabelName;
+   areturn
+L_0005:
+.end method
+
+.method public <init> (Ljava/lang/String;Lcom/anatawa12/jasm/tree/LabelName;Lcom/anatawa12/jasm/tree/LabelName;Lcom/anatawa12/jasm/tree/LabelName;)V
+   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 3 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 5
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/TryCatch; from L_0000 to L_001c
+   .var 1 is exception Ljava/lang/String; from L_0000 to L_001c
+   .var 2 is from Lcom/anatawa12/jasm/tree/LabelName; from L_0000 to L_001c
+   .var 3 is to Lcom/anatawa12/jasm/tree/LabelName; from L_0000 to L_001c
+   .var 4 is using Lcom/anatawa12/jasm/tree/LabelName; from L_0000 to L_001c
+   aload 2
+   ldc "from"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 3
+   ldc "to"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 4
+   ldc "using"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_000a:
+   .line 15
+   aload 0
+   aconst_null
+   invokespecial com/anatawa12/jasm/tree/MethodStatement/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+   aload 0
+   aload 1
+   putfield com/anatawa12/jasm/tree/TryCatch/exception Ljava/lang/String;
+   aload 0
+   aload 2
+   putfield com/anatawa12/jasm/tree/TryCatch/from Lcom/anatawa12/jasm/tree/LabelName;
+   aload 0
+   aload 3
+   putfield com/anatawa12/jasm/tree/TryCatch/to Lcom/anatawa12/jasm/tree/LabelName;
+   aload 0
+   aload 4
+   putfield com/anatawa12/jasm/tree/TryCatch/using Lcom/anatawa12/jasm/tree/LabelName;
+   return
+L_001c:
+.end method
+
+.method public component1 ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/TryCatch; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/exception Ljava/lang/String;
+   areturn
+L_0004:
+.end method
+
+.method public component2 ()Lcom/anatawa12/jasm/tree/LabelName;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/TryCatch; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/from Lcom/anatawa12/jasm/tree/LabelName;
+   areturn
+L_0004:
+.end method
+
+.method public component3 ()Lcom/anatawa12/jasm/tree/LabelName;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/TryCatch; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/to Lcom/anatawa12/jasm/tree/LabelName;
+   areturn
+L_0004:
+.end method
+
+.method public component4 ()Lcom/anatawa12/jasm/tree/LabelName;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/TryCatch; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/using Lcom/anatawa12/jasm/tree/LabelName;
+   areturn
+L_0004:
+.end method
+
+.method public copy (Ljava/lang/String;Lcom/anatawa12/jasm/tree/LabelName;Lcom/anatawa12/jasm/tree/LabelName;Lcom/anatawa12/jasm/tree/LabelName;)Lcom/anatawa12/jasm/tree/TryCatch;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 3 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 6
+   .limit local 5
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/TryCatch; from L_0000 to L_0012
+   .var 1 is exception Ljava/lang/String; from L_0000 to L_0012
+   .var 2 is from Lcom/anatawa12/jasm/tree/LabelName; from L_0000 to L_0012
+   .var 3 is to Lcom/anatawa12/jasm/tree/LabelName; from L_0000 to L_0012
+   .var 4 is using Lcom/anatawa12/jasm/tree/LabelName; from L_0000 to L_0012
+   aload 2
+   ldc "from"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 3
+   ldc "to"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 4
+   ldc "using"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   new com/anatawa12/jasm/tree/TryCatch
+   dup
+   aload 1
+   aload 2
+   aload 3
+   aload 4
+   invokespecial com/anatawa12/jasm/tree/TryCatch/<init> (Ljava/lang/String;Lcom/anatawa12/jasm/tree/LabelName;Lcom/anatawa12/jasm/tree/LabelName;Lcom/anatawa12/jasm/tree/LabelName;)V
+   areturn
+L_0012:
+.end method
+
+.method public copy$default (Lcom/anatawa12/jasm/tree/TryCatch;Ljava/lang/String;Lcom/anatawa12/jasm/tree/LabelName;Lcom/anatawa12/jasm/tree/LabelName;Lcom/anatawa12/jasm/tree/LabelName;ILjava/lang/Object;)Lcom/anatawa12/jasm/tree/TryCatch;
+   .limit stack 5
+   .limit local 7
+   iload 5
+   iconst_1
+   iand
+   ifeq L_0007
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/exception Ljava/lang/String;
+   astore 1
+L_0007:
+   .stack
+      locals Object com/anatawa12/jasm/tree/TryCatch
+      locals Object java/lang/String
+      locals Object com/anatawa12/jasm/tree/LabelName
+      locals Object com/anatawa12/jasm/tree/LabelName
+      locals Object com/anatawa12/jasm/tree/LabelName
+      locals Integer
+      locals Object java/lang/Object
+   .end stack
+   iload 5
+   iconst_2
+   iand
+   ifeq L_0010
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/from Lcom/anatawa12/jasm/tree/LabelName;
+   astore 2
+L_0010:
+   .stack use locals
+   .end stack
+   iload 5
+   iconst_4
+   iand
+   ifeq L_0019
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/to Lcom/anatawa12/jasm/tree/LabelName;
+   astore 3
+L_0019:
+   .stack use locals
+   .end stack
+   iload 5
+   bipush 8
+   iand
+   ifeq L_0022
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/using Lcom/anatawa12/jasm/tree/LabelName;
+   astore 4
+L_0022:
+   .stack use locals
+   .end stack
+   aload 0
+   aload 1
+   aload 2
+   aload 3
+   aload 4
+   invokevirtual com/anatawa12/jasm/tree/TryCatch/copy (Ljava/lang/String;Lcom/anatawa12/jasm/tree/LabelName;Lcom/anatawa12/jasm/tree/LabelName;Lcom/anatawa12/jasm/tree/LabelName;)Lcom/anatawa12/jasm/tree/TryCatch;
+   areturn
+.end method
+
+.method public toString ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 1
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   ldc "TryCatch(exception="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/exception Ljava/lang/String;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   ldc ", from="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/from Lcom/anatawa12/jasm/tree/LabelName;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ", to="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/to Lcom/anatawa12/jasm/tree/LabelName;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ", using="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/using Lcom/anatawa12/jasm/tree/LabelName;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ")"
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   areturn
+.end method
+
+.method public hashCode ()I
+   .limit stack 3
+   .limit local 1
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/exception Ljava/lang/String;
+   dup
+   ifnull L_0006
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_000a
+L_0006:
+   .stack
+      locals Object com/anatawa12/jasm/tree/TryCatch
+      stacks Object java/lang/String
+   .end stack
+   pop
+   iconst_0
+L_000a:
+   .stack use locals
+      stacks Integer
+   .end stack
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/from Lcom/anatawa12/jasm/tree/LabelName;
+   dup
+   ifnull L_0014
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0018
+L_0014:
+   .stack use locals
+      stacks Integer
+      stacks Object com/anatawa12/jasm/tree/LabelName
+   .end stack
+   pop
+   iconst_0
+L_0018:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/to Lcom/anatawa12/jasm/tree/LabelName;
+   dup
+   ifnull L_0023
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0027
+L_0023:
+   .stack use locals
+      stacks Integer
+      stacks Object com/anatawa12/jasm/tree/LabelName
+   .end stack
+   pop
+   iconst_0
+L_0027:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/using Lcom/anatawa12/jasm/tree/LabelName;
+   dup
+   ifnull L_0032
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0036
+L_0032:
+   .stack use locals
+      stacks Integer
+      stacks Object com/anatawa12/jasm/tree/LabelName
+   .end stack
+   pop
+   iconst_0
+L_0036:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   ireturn
+.end method
+
+.method public equals (Ljava/lang/Object;)Z
+   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 2
+   .limit local 3
+   aload 0
+   aload 1
+   if_acmpeq L_0021
+   aload 1
+   instanceof com/anatawa12/jasm/tree/TryCatch
+   ifeq L_0025
+   aload 1
+   checkcast com/anatawa12/jasm/tree/TryCatch
+   astore 2
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/exception Ljava/lang/String;
+   aload 2
+   getfield com/anatawa12/jasm/tree/TryCatch/exception Ljava/lang/String;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0025
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/from Lcom/anatawa12/jasm/tree/LabelName;
+   aload 2
+   getfield com/anatawa12/jasm/tree/TryCatch/from Lcom/anatawa12/jasm/tree/LabelName;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0025
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/to Lcom/anatawa12/jasm/tree/LabelName;
+   aload 2
+   getfield com/anatawa12/jasm/tree/TryCatch/to Lcom/anatawa12/jasm/tree/LabelName;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0025
+   aload 0
+   getfield com/anatawa12/jasm/tree/TryCatch/using Lcom/anatawa12/jasm/tree/LabelName;
+   aload 2
+   getfield com/anatawa12/jasm/tree/TryCatch/using Lcom/anatawa12/jasm/tree/LabelName;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0025
+L_0021:
+   .stack
+      locals Object com/anatawa12/jasm/tree/TryCatch
+      locals Object java/lang/Object
+   .end stack
+   iconst_1
+   ireturn
+L_0025:
+   .stack use locals
+   .end stack
+   iconst_0
+   ireturn
+.end method
+
+.field private exception Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+.end field
+
+.field private from Lcom/anatawa12/jasm/tree/LabelName;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+
+.field private to Lcom/anatawa12/jasm/tree/LabelName;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+
+.field private using Lcom/anatawa12/jasm/tree/LabelName;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+

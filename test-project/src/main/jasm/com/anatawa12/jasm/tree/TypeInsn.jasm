@@ -1,0 +1,282 @@
+.bytecode 52.0
+.source "MethodStatement.kt"
+.class public com/anatawa12/jasm/tree/TypeInsn
+.super com/anatawa12/jasm/tree/Instruction
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\t\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\b\u0086\b\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\t\u0010\u000b\u001a\u00020\u0003HÆ\u0003J\t\u0010\u000c\u001a\u00020\u0005HÆ\u0003J\u001d\u0010\r\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0005HÆ\u0001J\u0013\u0010\u000e\u001a\u00020\u000f2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011HÖ\u0003J\t\u0010\u0012\u001a\u00020\u0003HÖ\u0001J\t\u0010\u0013\u001a\u00020\u0005HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\n¨\u0006\u0014"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/tree/TypeInsn;"
+      s = "Lcom/anatawa12/jasm/tree/Instruction;"
+      s = "opcode"
+      s = ""
+      s = "type"
+      s = ""
+      s = "(ILjava/lang/String;)V"
+      s = "getOpcode"
+      s = "()I"
+      s = "getType"
+      s = "()Ljava/lang/String;"
+      s = "component1"
+      s = "component2"
+      s = "copy"
+      s = "equals"
+      s = ""
+      s = "other"
+      s = ""
+      s = "hashCode"
+      s = "toString"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method public getOpcode ()I
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 51
+   .var 0 is this Lcom/anatawa12/jasm/tree/TypeInsn; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/TypeInsn/opcode I
+   ireturn
+L_0005:
+.end method
+
+.method public getType ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 51
+   .var 0 is this Lcom/anatawa12/jasm/tree/TypeInsn; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/TypeInsn/type Ljava/lang/String;
+   areturn
+L_0005:
+.end method
+
+.method public <init> (ILjava/lang/String;)V
+   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 3
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/TypeInsn; from L_0000 to L_0010
+   .var 1 is opcode I from L_0000 to L_0010
+   .var 2 is type Ljava/lang/String; from L_0000 to L_0010
+   aload 2
+   ldc "type"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0004:
+   .line 51
+   aload 0
+   aconst_null
+   invokespecial com/anatawa12/jasm/tree/Instruction/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+   aload 0
+   iload 1
+   putfield com/anatawa12/jasm/tree/TypeInsn/opcode I
+   aload 0
+   aload 2
+   putfield com/anatawa12/jasm/tree/TypeInsn/type Ljava/lang/String;
+   return
+L_0010:
+.end method
+
+.method public component1 ()I
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/TypeInsn; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/TypeInsn/opcode I
+   ireturn
+L_0004:
+.end method
+
+.method public component2 ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/TypeInsn; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/TypeInsn/type Ljava/lang/String;
+   areturn
+L_0004:
+.end method
+
+.method public copy (ILjava/lang/String;)Lcom/anatawa12/jasm/tree/TypeInsn;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 4
+   .limit local 3
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/TypeInsn; from L_0000 to L_000a
+   .var 1 is opcode I from L_0000 to L_000a
+   .var 2 is type Ljava/lang/String; from L_0000 to L_000a
+   aload 2
+   ldc "type"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   new com/anatawa12/jasm/tree/TypeInsn
+   dup
+   iload 1
+   aload 2
+   invokespecial com/anatawa12/jasm/tree/TypeInsn/<init> (ILjava/lang/String;)V
+   areturn
+L_000a:
+.end method
+
+.method public copy$default (Lcom/anatawa12/jasm/tree/TypeInsn;ILjava/lang/String;ILjava/lang/Object;)Lcom/anatawa12/jasm/tree/TypeInsn;
+   .limit stack 3
+   .limit local 5
+   iload 3
+   iconst_1
+   iand
+   ifeq L_0007
+   aload 0
+   getfield com/anatawa12/jasm/tree/TypeInsn/opcode I
+   istore 1
+L_0007:
+   .stack
+      locals Object com/anatawa12/jasm/tree/TypeInsn
+      locals Integer
+      locals Object java/lang/String
+      locals Integer
+      locals Object java/lang/Object
+   .end stack
+   iload 3
+   iconst_2
+   iand
+   ifeq L_0010
+   aload 0
+   getfield com/anatawa12/jasm/tree/TypeInsn/type Ljava/lang/String;
+   astore 2
+L_0010:
+   .stack use locals
+   .end stack
+   aload 0
+   iload 1
+   aload 2
+   invokevirtual com/anatawa12/jasm/tree/TypeInsn/copy (ILjava/lang/String;)Lcom/anatawa12/jasm/tree/TypeInsn;
+   areturn
+.end method
+
+.method public toString ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 1
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   ldc "TypeInsn(opcode="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/TypeInsn/opcode I
+   invokevirtual java/lang/StringBuilder/append (I)Ljava/lang/StringBuilder;
+   ldc ", type="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/TypeInsn/type Ljava/lang/String;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   ldc ")"
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   areturn
+.end method
+
+.method public hashCode ()I
+   .limit stack 3
+   .limit local 1
+   aload 0
+   getfield com/anatawa12/jasm/tree/TypeInsn/opcode I
+   invokestatic java/lang/Integer/hashCode (I)I
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/TypeInsn/type Ljava/lang/String;
+   dup
+   ifnull L_000b
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_000f
+L_000b:
+   .stack
+      locals Object com/anatawa12/jasm/tree/TypeInsn
+      stacks Integer
+      stacks Object java/lang/String
+   .end stack
+   pop
+   iconst_0
+L_000f:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   ireturn
+.end method
+
+.method public equals (Ljava/lang/Object;)Z
+   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 2
+   .limit local 3
+   aload 0
+   aload 1
+   if_acmpeq L_0014
+   aload 1
+   instanceof com/anatawa12/jasm/tree/TypeInsn
+   ifeq L_0018
+   aload 1
+   checkcast com/anatawa12/jasm/tree/TypeInsn
+   astore 2
+   aload 0
+   getfield com/anatawa12/jasm/tree/TypeInsn/opcode I
+   aload 2
+   getfield com/anatawa12/jasm/tree/TypeInsn/opcode I
+   if_icmpne L_0018
+   aload 0
+   getfield com/anatawa12/jasm/tree/TypeInsn/type Ljava/lang/String;
+   aload 2
+   getfield com/anatawa12/jasm/tree/TypeInsn/type Ljava/lang/String;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0018
+L_0014:
+   .stack
+      locals Object com/anatawa12/jasm/tree/TypeInsn
+      locals Object java/lang/Object
+   .end stack
+   iconst_1
+   ireturn
+L_0018:
+   .stack use locals
+   .end stack
+   iconst_0
+   ireturn
+.end method
+
+.field private opcode I
+.end field
+
+.field private type Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+

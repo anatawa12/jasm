@@ -1,0 +1,511 @@
+.bytecode 52.0
+.source "MethodStatement.kt"
+.class public com/anatawa12/jasm/tree/InvokeDynamicInsn
+.super com/anatawa12/jasm/tree/Instruction
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B+\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u000c\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\t0\b¢\u0006\u0002\u0010\nJ\t\u0010\u0012\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0013\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0014\u001a\u00020\u0006HÆ\u0003J\u000f\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\t0\bHÆ\u0003J7\u0010\u0016\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00062\u000e\b\u0002\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\t0\bHÆ\u0001J\u0013\u0010\u0017\u001a\u00020\u00182\b\u0010\u0019\u001a\u0004\u0018\u00010\u001aHÖ\u0003J\t\u0010\u001b\u001a\u00020\u001cHÖ\u0001J\t\u0010\u001d\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\u000cR\u0017\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\t0\b¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0010¨\u0006\u001e"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/tree/InvokeDynamicInsn;"
+      s = "Lcom/anatawa12/jasm/tree/Instruction;"
+      s = "name"
+      s = ""
+      s = "desc"
+      s = "bsm"
+      s = "Lcom/anatawa12/jasm/tree/Handle;"
+      s = "bsmArgs"
+      s = ""
+      s = "Lcom/anatawa12/jasm/tree/BranchNode;"
+      s = "(Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Handle;Ljava/util/List;)V"
+      s = "getBsm"
+      s = "()Lcom/anatawa12/jasm/tree/Handle;"
+      s = "getBsmArgs"
+      s = "()Ljava/util/List;"
+      s = "getDesc"
+      s = "()Ljava/lang/String;"
+      s = "getName"
+      s = "component1"
+      s = "component2"
+      s = "component3"
+      s = "component4"
+      s = "copy"
+      s = "equals"
+      s = ""
+      s = "other"
+      s = ""
+      s = "hashCode"
+      s = ""
+      s = "toString"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method public getName ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 44
+   .var 0 is this Lcom/anatawa12/jasm/tree/InvokeDynamicInsn; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/name Ljava/lang/String;
+   areturn
+L_0005:
+.end method
+
+.method public getDesc ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 44
+   .var 0 is this Lcom/anatawa12/jasm/tree/InvokeDynamicInsn; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/desc Ljava/lang/String;
+   areturn
+L_0005:
+.end method
+
+.method public getBsm ()Lcom/anatawa12/jasm/tree/Handle;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 44
+   .var 0 is this Lcom/anatawa12/jasm/tree/InvokeDynamicInsn; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/bsm Lcom/anatawa12/jasm/tree/Handle;
+   areturn
+L_0005:
+.end method
+
+.method public getBsmArgs ()Ljava/util/List;
+   .signature "()Ljava/util/List<Lcom/anatawa12/jasm/tree/BranchNode;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 44
+   .var 0 is this Lcom/anatawa12/jasm/tree/InvokeDynamicInsn; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/bsmArgs Ljava/util/List;
+   areturn
+L_0005:
+.end method
+
+.method public <init> (Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Handle;Ljava/util/List;)V
+   .signature "(Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Handle;Ljava/util/List<+Lcom/anatawa12/jasm/tree/BranchNode;>;)V"
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 3 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 5
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/InvokeDynamicInsn; from L_0000 to L_001f
+   .var 1 is name Ljava/lang/String; from L_0000 to L_001f
+   .var 2 is desc Ljava/lang/String; from L_0000 to L_001f
+   .var 3 is bsm Lcom/anatawa12/jasm/tree/Handle; from L_0000 to L_001f
+   .var 4 is bsmArgs Ljava/util/List; from L_0000 to L_001f
+   aload 1
+   ldc "name"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 2
+   ldc "desc"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 3
+   ldc "bsm"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 4
+   ldc "bsmArgs"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_000d:
+   .line 44
+   aload 0
+   aconst_null
+   invokespecial com/anatawa12/jasm/tree/Instruction/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+   aload 0
+   aload 1
+   putfield com/anatawa12/jasm/tree/InvokeDynamicInsn/name Ljava/lang/String;
+   aload 0
+   aload 2
+   putfield com/anatawa12/jasm/tree/InvokeDynamicInsn/desc Ljava/lang/String;
+   aload 0
+   aload 3
+   putfield com/anatawa12/jasm/tree/InvokeDynamicInsn/bsm Lcom/anatawa12/jasm/tree/Handle;
+   aload 0
+   aload 4
+   putfield com/anatawa12/jasm/tree/InvokeDynamicInsn/bsmArgs Ljava/util/List;
+   return
+L_001f:
+.end method
+
+.method public component1 ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/InvokeDynamicInsn; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/name Ljava/lang/String;
+   areturn
+L_0004:
+.end method
+
+.method public component2 ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/InvokeDynamicInsn; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/desc Ljava/lang/String;
+   areturn
+L_0004:
+.end method
+
+.method public component3 ()Lcom/anatawa12/jasm/tree/Handle;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/InvokeDynamicInsn; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/bsm Lcom/anatawa12/jasm/tree/Handle;
+   areturn
+L_0004:
+.end method
+
+.method public component4 ()Ljava/util/List;
+   .signature "()Ljava/util/List<Lcom/anatawa12/jasm/tree/BranchNode;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/InvokeDynamicInsn; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/bsmArgs Ljava/util/List;
+   areturn
+L_0004:
+.end method
+
+.method public copy (Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Handle;Ljava/util/List;)Lcom/anatawa12/jasm/tree/InvokeDynamicInsn;
+   .signature "(Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Handle;Ljava/util/List<+Lcom/anatawa12/jasm/tree/BranchNode;>;)Lcom/anatawa12/jasm/tree/InvokeDynamicInsn;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 3 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 6
+   .limit local 5
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/InvokeDynamicInsn; from L_0000 to L_0015
+   .var 1 is name Ljava/lang/String; from L_0000 to L_0015
+   .var 2 is desc Ljava/lang/String; from L_0000 to L_0015
+   .var 3 is bsm Lcom/anatawa12/jasm/tree/Handle; from L_0000 to L_0015
+   .var 4 is bsmArgs Ljava/util/List; from L_0000 to L_0015
+   aload 1
+   ldc "name"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 2
+   ldc "desc"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 3
+   ldc "bsm"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 4
+   ldc "bsmArgs"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   new com/anatawa12/jasm/tree/InvokeDynamicInsn
+   dup
+   aload 1
+   aload 2
+   aload 3
+   aload 4
+   invokespecial com/anatawa12/jasm/tree/InvokeDynamicInsn/<init> (Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Handle;Ljava/util/List;)V
+   areturn
+L_0015:
+.end method
+
+.method public copy$default (Lcom/anatawa12/jasm/tree/InvokeDynamicInsn;Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Handle;Ljava/util/List;ILjava/lang/Object;)Lcom/anatawa12/jasm/tree/InvokeDynamicInsn;
+   .limit stack 5
+   .limit local 7
+   iload 5
+   iconst_1
+   iand
+   ifeq L_0007
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/name Ljava/lang/String;
+   astore 1
+L_0007:
+   .stack
+      locals Object com/anatawa12/jasm/tree/InvokeDynamicInsn
+      locals Object java/lang/String
+      locals Object java/lang/String
+      locals Object com/anatawa12/jasm/tree/Handle
+      locals Object java/util/List
+      locals Integer
+      locals Object java/lang/Object
+   .end stack
+   iload 5
+   iconst_2
+   iand
+   ifeq L_0010
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/desc Ljava/lang/String;
+   astore 2
+L_0010:
+   .stack use locals
+   .end stack
+   iload 5
+   iconst_4
+   iand
+   ifeq L_0019
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/bsm Lcom/anatawa12/jasm/tree/Handle;
+   astore 3
+L_0019:
+   .stack use locals
+   .end stack
+   iload 5
+   bipush 8
+   iand
+   ifeq L_0022
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/bsmArgs Ljava/util/List;
+   astore 4
+L_0022:
+   .stack use locals
+   .end stack
+   aload 0
+   aload 1
+   aload 2
+   aload 3
+   aload 4
+   invokevirtual com/anatawa12/jasm/tree/InvokeDynamicInsn/copy (Ljava/lang/String;Ljava/lang/String;Lcom/anatawa12/jasm/tree/Handle;Ljava/util/List;)Lcom/anatawa12/jasm/tree/InvokeDynamicInsn;
+   areturn
+.end method
+
+.method public toString ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 1
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   ldc "InvokeDynamicInsn(name="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/name Ljava/lang/String;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   ldc ", desc="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/desc Ljava/lang/String;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   ldc ", bsm="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/bsm Lcom/anatawa12/jasm/tree/Handle;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ", bsmArgs="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/bsmArgs Ljava/util/List;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ")"
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   areturn
+.end method
+
+.method public hashCode ()I
+   .limit stack 3
+   .limit local 1
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/name Ljava/lang/String;
+   dup
+   ifnull L_0006
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_000a
+L_0006:
+   .stack
+      locals Object com/anatawa12/jasm/tree/InvokeDynamicInsn
+      stacks Object java/lang/String
+   .end stack
+   pop
+   iconst_0
+L_000a:
+   .stack use locals
+      stacks Integer
+   .end stack
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/desc Ljava/lang/String;
+   dup
+   ifnull L_0014
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0018
+L_0014:
+   .stack use locals
+      stacks Integer
+      stacks Object java/lang/String
+   .end stack
+   pop
+   iconst_0
+L_0018:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/bsm Lcom/anatawa12/jasm/tree/Handle;
+   dup
+   ifnull L_0023
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0027
+L_0023:
+   .stack use locals
+      stacks Integer
+      stacks Object com/anatawa12/jasm/tree/Handle
+   .end stack
+   pop
+   iconst_0
+L_0027:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/bsmArgs Ljava/util/List;
+   dup
+   ifnull L_0032
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0036
+L_0032:
+   .stack use locals
+      stacks Integer
+      stacks Object java/util/List
+   .end stack
+   pop
+   iconst_0
+L_0036:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   ireturn
+.end method
+
+.method public equals (Ljava/lang/Object;)Z
+   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 2
+   .limit local 3
+   aload 0
+   aload 1
+   if_acmpeq L_0021
+   aload 1
+   instanceof com/anatawa12/jasm/tree/InvokeDynamicInsn
+   ifeq L_0025
+   aload 1
+   checkcast com/anatawa12/jasm/tree/InvokeDynamicInsn
+   astore 2
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/name Ljava/lang/String;
+   aload 2
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/name Ljava/lang/String;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0025
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/desc Ljava/lang/String;
+   aload 2
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/desc Ljava/lang/String;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0025
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/bsm Lcom/anatawa12/jasm/tree/Handle;
+   aload 2
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/bsm Lcom/anatawa12/jasm/tree/Handle;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0025
+   aload 0
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/bsmArgs Ljava/util/List;
+   aload 2
+   getfield com/anatawa12/jasm/tree/InvokeDynamicInsn/bsmArgs Ljava/util/List;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0025
+L_0021:
+   .stack
+      locals Object com/anatawa12/jasm/tree/InvokeDynamicInsn
+      locals Object java/lang/Object
+   .end stack
+   iconst_1
+   ireturn
+L_0025:
+   .stack use locals
+   .end stack
+   iconst_0
+   ireturn
+.end method
+
+.field private name Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+
+.field private desc Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+
+.field private bsm Lcom/anatawa12/jasm/tree/Handle;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+
+.field private bsmArgs Ljava/util/List;
+   .signature "Ljava/util/List<Lcom/anatawa12/jasm/tree/BranchNode;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+

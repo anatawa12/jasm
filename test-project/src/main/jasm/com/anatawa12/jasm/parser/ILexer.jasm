@@ -1,0 +1,99 @@
+.bytecode 52.0
+.source "ILexer.kt"
+.class public com/anatawa12/jasm/parser/ILexer
+.super java/lang/Object
+.inner public com/anatawa12/jasm/parser/ILexer$DefaultImpls inner DefaultImpls outer com/anatawa12/jasm/parser/ILexer
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\"\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0001\n\u0000\n\u0002\u0010\u0011\n\u0002\b\u0004\bf\u0018\u00002\u00020\u0001J\u0014\u0010\u0002\u001a\u00020\u00032\n\u0010\u0004\u001a\u0006\u0012\u0002\b\u00030\u0005H&J\u001a\u0010\u0002\u001a\u00020\u00032\u0010\u0010\u0004\u001a\u000c\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00050\u0006H\u0016J&\u0010\u0007\u001a\b\u0012\u0004\u0012\u0002H\t0\b\"\b\b\u0000\u0010\t*\u00020\u00012\u000c\u0010\u0004\u001a\b\u0012\u0004\u0012\u0002H\t0\u0005H&J)\u0010\n\u001a\u00020\u000b2\u001a\u0010\u000c\u001a\u000e\u0012\n\b\u0001\u0012\u0006\u0012\u0002\b\u00030\u00050\r\"\u0006\u0012\u0002\b\u00030\u0005H\u0016¢\u0006\u0002\u0010\u000eJ5\u0010\n\u001a\u00020\u000b2&\u0010\u000c\u001a\u0014\u0012\u0010\b\u0001\u0012\u000c\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00050\u00060\r\"\u000c\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00050\u0006H\u0016¢\u0006\u0002\u0010\u000fJ\u001a\u0010\u0010\u001a\u00020\u000b2\u0010\u0010\u000c\u001a\u000c\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00050\u0006H&¨\u0006\u0011"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/parser/ILexer;"
+      s = ""
+      s = "isNext"
+      s = ""
+      s = "expect"
+      s = "Lcom/anatawa12/jasm/parser/TokenType;"
+      s = ""
+      s = "readToken"
+      s = "Lcom/anatawa12/jasm/tree/Token;"
+      s = "T"
+      s = "unexpectTokenError"
+      s = ""
+      s = "expects"
+      s = ""
+      s = "([Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Void;"
+      s = "([Ljava/util/Set;)Ljava/lang/Void;"
+      s = "unexpectTokenErrorInternal"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method public isNext (Ljava/util/Set;)Z
+   .signature "(Ljava/util/Set<+Lcom/anatawa12/jasm/parser/TokenType<*>;>;)Z"
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 0
+   .limit local 0
+.end method
+
+.method public isNext (Lcom/anatawa12/jasm/parser/TokenType;)Z
+   .signature "(Lcom/anatawa12/jasm/parser/TokenType<*>;)Z"
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 0
+   .limit local 0
+.end method
+
+.method public readToken (Lcom/anatawa12/jasm/parser/TokenType;)Lcom/anatawa12/jasm/tree/Token;
+   .signature "<T:Ljava/lang/Object;>(Lcom/anatawa12/jasm/parser/TokenType<TT;>;)Lcom/anatawa12/jasm/tree/Token<TT;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 0
+   .limit local 0
+.end method
+
+.method public unexpectTokenError "([Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Void;"
+   .signature "([Lcom/anatawa12/jasm/parser/TokenType<*>;)Ljava/lang/Void;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 0
+   .limit local 0
+.end method
+
+.method public unexpectTokenError "([Ljava/util/Set;)Ljava/lang/Void;"
+   .signature "([Ljava/util/Set<+Lcom/anatawa12/jasm/parser/TokenType<*>;>;)Ljava/lang/Void;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 0
+   .limit local 0
+.end method
+
+.method public unexpectTokenErrorInternal (Ljava/util/Set;)Ljava/lang/Void;
+   .signature "(Ljava/util/Set<+Lcom/anatawa12/jasm/parser/TokenType<*>;>;)Ljava/lang/Void;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 0
+   .limit local 0
+.end method
+

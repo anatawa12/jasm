@@ -1,0 +1,132 @@
+.bytecode 52.0
+.source "DeprecatedAttribute.kt"
+.class public com/anatawa12/jasm/DeprecatedAttribute
+.super org/objectweb/asm/Attribute
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000B\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0019\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0012\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002JK\u0010\u0003\u001a\u00020\u00012\b\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00072\b\u0010\t\u001a\u0004\u0018\u00010\n2\u0006\u0010\u000b\u001a\u00020\u00072\u0010\u0010\u000c\u001a\u000c\u0012\u0006\b\u0001\u0012\u00020\u000e\u0018\u00010\rH\u0014¢\u0006\u0002\u0010\u000fJ4\u0010\u0010\u001a\u00020\u00112\b\u0010\u0012\u001a\u0004\u0018\u00010\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u00152\u0006\u0010\b\u001a\u00020\u00072\u0006\u0010\u0016\u001a\u00020\u00072\u0006\u0010\u0017\u001a\u00020\u0007H\u0014¨\u0006\u0018"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/DeprecatedAttribute;"
+      s = "Lorg/objectweb/asm/Attribute;"
+      s = "()V"
+      s = "read"
+      s = "cr"
+      s = "Lorg/objectweb/asm/ClassReader;"
+      s = "off"
+      s = ""
+      s = "len"
+      s = "buf"
+      s = ""
+      s = "codeOff"
+      s = "labels"
+      s = ""
+      s = "Lorg/objectweb/asm/Label;"
+      s = "(Lorg/objectweb/asm/ClassReader;II[CI[Lorg/objectweb/asm/Label;)Lorg/objectweb/asm/Attribute;"
+      s = "write"
+      s = "Lorg/objectweb/asm/ByteVector;"
+      s = "cw"
+      s = "Lorg/objectweb/asm/ClassWriter;"
+      s = "code"
+      s = ""
+      s = "maxStack"
+      s = "maxLocals"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method protected read "(Lorg/objectweb/asm/ClassReader;II[CI[Lorg/objectweb/asm/Label;)Lorg/objectweb/asm/Attribute;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 3 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 5 org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 1
+   .limit local 7
+L_0000:
+   .line 13
+   .var 0 is this Lcom/anatawa12/jasm/DeprecatedAttribute; from L_0000 to L_0005
+   .var 1 is cr Lorg/objectweb/asm/ClassReader; from L_0000 to L_0005
+   .var 2 is off I from L_0000 to L_0005
+   .var 3 is len I from L_0000 to L_0005
+   .var 4 is buf "[C" from L_0000 to L_0005
+   .var 5 is codeOff I from L_0000 to L_0005
+   .var 6 is labels "[Lorg/objectweb/asm/Label;" from L_0000 to L_0005
+   aload 0
+   checkcast org/objectweb/asm/Attribute
+   areturn
+L_0005:
+.end method
+
+.method protected write "(Lorg/objectweb/asm/ClassWriter;[BIII)Lorg/objectweb/asm/ByteVector;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 3
+   .limit local 6
+L_0000:
+   .line 15
+   .var 0 is this Lcom/anatawa12/jasm/DeprecatedAttribute; from L_0000 to L_0007
+   .var 1 is cw Lorg/objectweb/asm/ClassWriter; from L_0000 to L_0007
+   .var 2 is code "[B" from L_0000 to L_0007
+   .var 3 is len I from L_0000 to L_0007
+   .var 4 is maxStack I from L_0000 to L_0007
+   .var 5 is maxLocals I from L_0000 to L_0007
+   new org/objectweb/asm/ByteVector
+   dup
+   iconst_0
+   invokespecial org/objectweb/asm/ByteVector/<init> (I)V
+   areturn
+L_0007:
+.end method
+
+.method private <init> ()V
+   .limit stack 2
+   .limit local 1
+L_0000:
+   .line 5
+   .var 0 is this Lcom/anatawa12/jasm/DeprecatedAttribute; from L_0000 to L_0008
+   aload 0
+L_0003:
+   .line 5
+   ldc "Deprecated"
+   invokespecial org/objectweb/asm/Attribute/<init> (Ljava/lang/String;)V
+   return
+L_0008:
+.end method
+
+.method static <clinit> ()V
+   .limit stack 2
+   .limit local 1
+L_0000:
+   .line 5
+   new com/anatawa12/jasm/DeprecatedAttribute
+   dup
+   invokespecial com/anatawa12/jasm/DeprecatedAttribute/<init> ()V
+   astore 0
+   aload 0
+   putstatic com/anatawa12/jasm/DeprecatedAttribute/INSTANCE Lcom/anatawa12/jasm/DeprecatedAttribute;
+   return
+.end method
+
+.field public INSTANCE Lcom/anatawa12/jasm/DeprecatedAttribute;
+.end field
+

@@ -1,0 +1,104 @@
+.bytecode 52.0
+.source "Parser.kt"
+.class final com/anatawa12/jasm/parser/Parser$signature_directive$1
+.super kotlin/jvm/internal/Lambda
+.implements kotlin/jvm/functions/Function1
+.signature "Lkotlin/jvm/internal/Lambda;Lkotlin/jvm/functions/Function1<Lcom/anatawa12/jasm/parser/Grammar\$GrammarScope;Lcom/anatawa12/jasm/tree/SignatureDirective;>;"
+.enclosing method com/anatawa12/jasm/parser/Parser <init> "(Lcom/anatawa12/jasm/parser/ILexer;)V"
+.inner static com/anatawa12/jasm/parser/Parser$signature_directive$1
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 3
+   d1 [ = .annotation array
+      s = "\u0000\u000c\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"
+   .end annotation
+   d2 [ = .annotation array
+      s = "<anonymous>"
+      s = "Lcom/anatawa12/jasm/tree/SignatureDirective;"
+      s = "Lcom/anatawa12/jasm/parser/Grammar\$GrammarScope;"
+      s = "invoke"
+   .end annotation
+.end annotation
+
+.method public invoke (Ljava/lang/Object;)Ljava/lang/Object;
+   .limit stack 2
+   .limit local 2
+L_0000:
+   .line 6
+   aload 0
+   aload 1
+   checkcast com/anatawa12/jasm/parser/Grammar$GrammarScope
+   invokevirtual com/anatawa12/jasm/parser/Parser$signature_directive$1/invoke (Lcom/anatawa12/jasm/parser/Grammar$GrammarScope;)Lcom/anatawa12/jasm/tree/SignatureDirective;
+   areturn
+.end method
+
+.method public invoke (Lcom/anatawa12/jasm/parser/Grammar$GrammarScope;)Lcom/anatawa12/jasm/tree/SignatureDirective;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 3
+   .limit local 3
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/parser/Parser$signature_directive$1; from L_0000 to L_0020
+   .var 1 is $this$grammar Lcom/anatawa12/jasm/parser/Grammar$GrammarScope; from L_0000 to L_0020
+   aload 1
+   ldc "\$receiver"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0004:
+   .line 71
+   aload 1
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$signature_directive$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
+   getstatic com/anatawa12/jasm/parser/Parser/Companion Lcom/anatawa12/jasm/parser/Parser$Companion;
+   invokevirtual com/anatawa12/jasm/parser/Parser$Companion/getDotSignature ()Lcom/anatawa12/jasm/parser/TokenType$DotedKeyWord;
+   checkcast com/anatawa12/jasm/parser/TokenType
+   invokeinterface com/anatawa12/jasm/parser/Grammar$GrammarScope/read (Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Object;
+   pop
+L_000e:
+   .line 72
+   aload 1
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$signature_directive$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
+   getstatic com/anatawa12/jasm/parser/TokenType$String/INSTANCE Lcom/anatawa12/jasm/parser/TokenType$String;
+   checkcast com/anatawa12/jasm/parser/TokenType
+   invokeinterface com/anatawa12/jasm/parser/Grammar$GrammarScope/read (Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Object;
+   checkcast java/lang/String
+   astore 2
+L_0018:
+   .line 73
+   .var 2 is signature Ljava/lang/String; from L_0018 to L_001e
+   new com/anatawa12/jasm/tree/SignatureDirective
+   dup
+   aload 2
+   invokespecial com/anatawa12/jasm/tree/SignatureDirective/<init> (Ljava/lang/String;)V
+L_001e:
+   areturn
+L_0020:
+.end method
+
+.method <init> (Lcom/anatawa12/jasm/parser/ILexer;)V
+   .limit stack 2
+   .limit local 2
+   aload 0
+   aload 1
+   putfield com/anatawa12/jasm/parser/Parser$signature_directive$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
+   aload 0
+   iconst_1
+   invokespecial kotlin/jvm/internal/Lambda/<init> (I)V
+   return
+.end method
+
+.field final $lex Lcom/anatawa12/jasm/parser/ILexer;
+.end field
+

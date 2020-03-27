@@ -1,0 +1,966 @@
+.bytecode 52.0
+.source "ClassHeader.kt"
+.class public com/anatawa12/jasm/tree/ClassHeader
+.super com/anatawa12/jasm/tree/BranchNode
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u001d\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001Be\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\u0010\b\u001a\u0004\u0018\u00010\t\u0012\u000c\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000c0\u000b\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0012\u0012\u000c\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00140\u000b¢\u0006\u0002\u0010\u0015J\u000b\u0010\'\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010(\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010)\u001a\u00020\u0007HÆ\u0003J\u000b\u0010*\u001a\u0004\u0018\u00010\tHÆ\u0003J\u000f\u0010+\u001a\b\u0012\u0004\u0012\u00020\u000c0\u000bHÆ\u0003J\u000b\u0010,\u001a\u0004\u0018\u00010\u000eHÆ\u0003J\u000b\u0010-\u001a\u0004\u0018\u00010\u0010HÆ\u0003J\u000b\u0010.\u001a\u0004\u0018\u00010\u0012HÆ\u0003J\u000f\u0010/\u001a\b\u0012\u0004\u0012\u00020\u00140\u000bHÆ\u0003J{\u00100\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t2\u000e\b\u0002\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000c0\u000b2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00102\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u00122\u000e\b\u0002\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00140\u000bHÆ\u0001J\u0013\u00101\u001a\u0002022\b\u00103\u001a\u0004\u0018\u000104HÖ\u0003J\t\u00105\u001a\u000206HÖ\u0001J\t\u00107\u001a\u000208HÖ\u0001R\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0017R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u0013\u0010\u0011\u001a\u0004\u0018\u00010\u0012¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001bR\u0013\u0010\u000f\u001a\u0004\u0018\u00010\u0010¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u0017\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000c0\u000b¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001fR\u0017\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00140\u000b¢\u0006\b\n\u0000\u001a\u0004\b \u0010\u001fR\u0013\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\"R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b#\u0010\$R\u0013\u0010\b\u001a\u0004\u0018\u00010\t¢\u0006\b\n\u0000\u001a\u0004\b%\u0010&¨\u00069"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/tree/ClassHeader;"
+      s = "Lcom/anatawa12/jasm/tree/BranchNode;"
+      s = "bytecode"
+      s = "Lcom/anatawa12/jasm/tree/BytecodeDirective;"
+      s = "source"
+      s = "Lcom/anatawa12/jasm/tree/SourceDirective;"
+      s = "className"
+      s = "Lcom/anatawa12/jasm/tree/ClassDirective;"
+      s = "superName"
+      s = "Lcom/anatawa12/jasm/tree/SuperDirective;"
+      s = "implements"
+      s = ""
+      s = "Lcom/anatawa12/jasm/tree/ImplementsDirective;"
+      s = "signature"
+      s = "Lcom/anatawa12/jasm/tree/SignatureDirective;"
+      s = "enclosing"
+      s = "Lcom/anatawa12/jasm/tree/EnclosingDirective;"
+      s = "debug"
+      s = "Lcom/anatawa12/jasm/tree/DebugDirective;"
+      s = "innerClasses"
+      s = "Lcom/anatawa12/jasm/tree/InnerClassDirective;"
+      s = "(Lcom/anatawa12/jasm/tree/BytecodeDirective;Lcom/anatawa12/jasm/tree/SourceDirective;Lcom/anatawa12/jasm/tree/ClassDirective;Lcom/anatawa12/jasm/tree/SuperDirective;Ljava/util/List;Lcom/anatawa12/jasm/tree/SignatureDirective;Lcom/anatawa12/jasm/tree/EnclosingDirective;Lcom/anatawa12/jasm/tree/DebugDirective;Ljava/util/List;)V"
+      s = "getBytecode"
+      s = "()Lcom/anatawa12/jasm/tree/BytecodeDirective;"
+      s = "getClassName"
+      s = "()Lcom/anatawa12/jasm/tree/ClassDirective;"
+      s = "getDebug"
+      s = "()Lcom/anatawa12/jasm/tree/DebugDirective;"
+      s = "getEnclosing"
+      s = "()Lcom/anatawa12/jasm/tree/EnclosingDirective;"
+      s = "getImplements"
+      s = "()Ljava/util/List;"
+      s = "getInnerClasses"
+      s = "getSignature"
+      s = "()Lcom/anatawa12/jasm/tree/SignatureDirective;"
+      s = "getSource"
+      s = "()Lcom/anatawa12/jasm/tree/SourceDirective;"
+      s = "getSuperName"
+      s = "()Lcom/anatawa12/jasm/tree/SuperDirective;"
+      s = "component1"
+      s = "component2"
+      s = "component3"
+      s = "component4"
+      s = "component5"
+      s = "component6"
+      s = "component7"
+      s = "component8"
+      s = "component9"
+      s = "copy"
+      s = "equals"
+      s = ""
+      s = "other"
+      s = ""
+      s = "hashCode"
+      s = ""
+      s = "toString"
+      s = ""
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method public getBytecode ()Lcom/anatawa12/jasm/tree/BytecodeDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 4
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/bytecode Lcom/anatawa12/jasm/tree/BytecodeDirective;
+   areturn
+L_0005:
+.end method
+
+.method public getSource ()Lcom/anatawa12/jasm/tree/SourceDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 5
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/source Lcom/anatawa12/jasm/tree/SourceDirective;
+   areturn
+L_0005:
+.end method
+
+.method public getClassName ()Lcom/anatawa12/jasm/tree/ClassDirective;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 6
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/className Lcom/anatawa12/jasm/tree/ClassDirective;
+   areturn
+L_0005:
+.end method
+
+.method public getSuperName ()Lcom/anatawa12/jasm/tree/SuperDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 7
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/superName Lcom/anatawa12/jasm/tree/SuperDirective;
+   areturn
+L_0005:
+.end method
+
+.method public getImplements ()Ljava/util/List;
+   .signature "()Ljava/util/List<Lcom/anatawa12/jasm/tree/ImplementsDirective;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 8
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/implements Ljava/util/List;
+   areturn
+L_0005:
+.end method
+
+.method public getSignature ()Lcom/anatawa12/jasm/tree/SignatureDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 9
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/signature Lcom/anatawa12/jasm/tree/SignatureDirective;
+   areturn
+L_0005:
+.end method
+
+.method public getEnclosing ()Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 10
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/enclosing Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   areturn
+L_0005:
+.end method
+
+.method public getDebug ()Lcom/anatawa12/jasm/tree/DebugDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 11
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/debug Lcom/anatawa12/jasm/tree/DebugDirective;
+   areturn
+L_0005:
+.end method
+
+.method public getInnerClasses ()Ljava/util/List;
+   .signature "()Ljava/util/List<Lcom/anatawa12/jasm/tree/InnerClassDirective;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 12
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/innerClasses Ljava/util/List;
+   areturn
+L_0005:
+.end method
+
+.method public <init> (Lcom/anatawa12/jasm/tree/BytecodeDirective;Lcom/anatawa12/jasm/tree/SourceDirective;Lcom/anatawa12/jasm/tree/ClassDirective;Lcom/anatawa12/jasm/tree/SuperDirective;Ljava/util/List;Lcom/anatawa12/jasm/tree/SignatureDirective;Lcom/anatawa12/jasm/tree/EnclosingDirective;Lcom/anatawa12/jasm/tree/DebugDirective;Ljava/util/List;)V
+   .signature "(Lcom/anatawa12/jasm/tree/BytecodeDirective;Lcom/anatawa12/jasm/tree/SourceDirective;Lcom/anatawa12/jasm/tree/ClassDirective;Lcom/anatawa12/jasm/tree/SuperDirective;Ljava/util/List<Lcom/anatawa12/jasm/tree/ImplementsDirective;>;Lcom/anatawa12/jasm/tree/SignatureDirective;Lcom/anatawa12/jasm/tree/EnclosingDirective;Lcom/anatawa12/jasm/tree/DebugDirective;Ljava/util/List<Lcom/anatawa12/jasm/tree/InnerClassDirective;>;)V"
+   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 3 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 4 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 5 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 6 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 7 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 8 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 10
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_002c
+   .var 1 is bytecode Lcom/anatawa12/jasm/tree/BytecodeDirective; from L_0000 to L_002c
+   .var 2 is source Lcom/anatawa12/jasm/tree/SourceDirective; from L_0000 to L_002c
+   .var 3 is className Lcom/anatawa12/jasm/tree/ClassDirective; from L_0000 to L_002c
+   .var 4 is superName Lcom/anatawa12/jasm/tree/SuperDirective; from L_0000 to L_002c
+   .var 5 is implements Ljava/util/List; from L_0000 to L_002c
+   .var 6 is signature Lcom/anatawa12/jasm/tree/SignatureDirective; from L_0000 to L_002c
+   .var 7 is enclosing Lcom/anatawa12/jasm/tree/EnclosingDirective; from L_0000 to L_002c
+   .var 8 is debug Lcom/anatawa12/jasm/tree/DebugDirective; from L_0000 to L_002c
+   .var 9 is innerClasses Ljava/util/List; from L_0000 to L_002c
+   aload 3
+   ldc "className"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 5
+   ldc "implements"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 9
+   ldc "innerClasses"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_000a:
+   .line 3
+   aload 0
+L_000d:
+   .line 13
+   invokespecial com/anatawa12/jasm/tree/BranchNode/<init> ()V
+   aload 0
+   aload 1
+   putfield com/anatawa12/jasm/tree/ClassHeader/bytecode Lcom/anatawa12/jasm/tree/BytecodeDirective;
+   aload 0
+   aload 2
+   putfield com/anatawa12/jasm/tree/ClassHeader/source Lcom/anatawa12/jasm/tree/SourceDirective;
+   aload 0
+   aload 3
+   putfield com/anatawa12/jasm/tree/ClassHeader/className Lcom/anatawa12/jasm/tree/ClassDirective;
+   aload 0
+   aload 4
+   putfield com/anatawa12/jasm/tree/ClassHeader/superName Lcom/anatawa12/jasm/tree/SuperDirective;
+   aload 0
+   aload 5
+   putfield com/anatawa12/jasm/tree/ClassHeader/implements Ljava/util/List;
+   aload 0
+   aload 6
+   putfield com/anatawa12/jasm/tree/ClassHeader/signature Lcom/anatawa12/jasm/tree/SignatureDirective;
+   aload 0
+   aload 7
+   putfield com/anatawa12/jasm/tree/ClassHeader/enclosing Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   aload 0
+   aload 8
+   putfield com/anatawa12/jasm/tree/ClassHeader/debug Lcom/anatawa12/jasm/tree/DebugDirective;
+   aload 0
+   aload 9
+   putfield com/anatawa12/jasm/tree/ClassHeader/innerClasses Ljava/util/List;
+   return
+L_002c:
+.end method
+
+.method public component1 ()Lcom/anatawa12/jasm/tree/BytecodeDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/bytecode Lcom/anatawa12/jasm/tree/BytecodeDirective;
+   areturn
+L_0004:
+.end method
+
+.method public component2 ()Lcom/anatawa12/jasm/tree/SourceDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/source Lcom/anatawa12/jasm/tree/SourceDirective;
+   areturn
+L_0004:
+.end method
+
+.method public component3 ()Lcom/anatawa12/jasm/tree/ClassDirective;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/className Lcom/anatawa12/jasm/tree/ClassDirective;
+   areturn
+L_0004:
+.end method
+
+.method public component4 ()Lcom/anatawa12/jasm/tree/SuperDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/superName Lcom/anatawa12/jasm/tree/SuperDirective;
+   areturn
+L_0004:
+.end method
+
+.method public component5 ()Ljava/util/List;
+   .signature "()Ljava/util/List<Lcom/anatawa12/jasm/tree/ImplementsDirective;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/implements Ljava/util/List;
+   areturn
+L_0004:
+.end method
+
+.method public component6 ()Lcom/anatawa12/jasm/tree/SignatureDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/signature Lcom/anatawa12/jasm/tree/SignatureDirective;
+   areturn
+L_0004:
+.end method
+
+.method public component7 ()Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/enclosing Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   areturn
+L_0004:
+.end method
+
+.method public component8 ()Lcom/anatawa12/jasm/tree/DebugDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/debug Lcom/anatawa12/jasm/tree/DebugDirective;
+   areturn
+L_0004:
+.end method
+
+.method public component9 ()Ljava/util/List;
+   .signature "()Ljava/util/List<Lcom/anatawa12/jasm/tree/InnerClassDirective;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/innerClasses Ljava/util/List;
+   areturn
+L_0004:
+.end method
+
+.method public copy (Lcom/anatawa12/jasm/tree/BytecodeDirective;Lcom/anatawa12/jasm/tree/SourceDirective;Lcom/anatawa12/jasm/tree/ClassDirective;Lcom/anatawa12/jasm/tree/SuperDirective;Ljava/util/List;Lcom/anatawa12/jasm/tree/SignatureDirective;Lcom/anatawa12/jasm/tree/EnclosingDirective;Lcom/anatawa12/jasm/tree/DebugDirective;Ljava/util/List;)Lcom/anatawa12/jasm/tree/ClassHeader;
+   .signature "(Lcom/anatawa12/jasm/tree/BytecodeDirective;Lcom/anatawa12/jasm/tree/SourceDirective;Lcom/anatawa12/jasm/tree/ClassDirective;Lcom/anatawa12/jasm/tree/SuperDirective;Ljava/util/List<Lcom/anatawa12/jasm/tree/ImplementsDirective;>;Lcom/anatawa12/jasm/tree/SignatureDirective;Lcom/anatawa12/jasm/tree/EnclosingDirective;Lcom/anatawa12/jasm/tree/DebugDirective;Ljava/util/List<Lcom/anatawa12/jasm/tree/InnerClassDirective;>;)Lcom/anatawa12/jasm/tree/ClassHeader;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 2 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 3 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 4 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 5 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 6 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 7 org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 8 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 11
+   .limit local 10
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0017
+   .var 1 is bytecode Lcom/anatawa12/jasm/tree/BytecodeDirective; from L_0000 to L_0017
+   .var 2 is source Lcom/anatawa12/jasm/tree/SourceDirective; from L_0000 to L_0017
+   .var 3 is className Lcom/anatawa12/jasm/tree/ClassDirective; from L_0000 to L_0017
+   .var 4 is superName Lcom/anatawa12/jasm/tree/SuperDirective; from L_0000 to L_0017
+   .var 5 is implements Ljava/util/List; from L_0000 to L_0017
+   .var 6 is signature Lcom/anatawa12/jasm/tree/SignatureDirective; from L_0000 to L_0017
+   .var 7 is enclosing Lcom/anatawa12/jasm/tree/EnclosingDirective; from L_0000 to L_0017
+   .var 8 is debug Lcom/anatawa12/jasm/tree/DebugDirective; from L_0000 to L_0017
+   .var 9 is innerClasses Ljava/util/List; from L_0000 to L_0017
+   aload 3
+   ldc "className"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 5
+   ldc "implements"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 9
+   ldc "innerClasses"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   new com/anatawa12/jasm/tree/ClassHeader
+   dup
+   aload 1
+   aload 2
+   aload 3
+   aload 4
+   aload 5
+   aload 6
+   aload 7
+   aload 8
+   aload 9
+   invokespecial com/anatawa12/jasm/tree/ClassHeader/<init> (Lcom/anatawa12/jasm/tree/BytecodeDirective;Lcom/anatawa12/jasm/tree/SourceDirective;Lcom/anatawa12/jasm/tree/ClassDirective;Lcom/anatawa12/jasm/tree/SuperDirective;Ljava/util/List;Lcom/anatawa12/jasm/tree/SignatureDirective;Lcom/anatawa12/jasm/tree/EnclosingDirective;Lcom/anatawa12/jasm/tree/DebugDirective;Ljava/util/List;)V
+   areturn
+L_0017:
+.end method
+
+.method public copy$default (Lcom/anatawa12/jasm/tree/ClassHeader;Lcom/anatawa12/jasm/tree/BytecodeDirective;Lcom/anatawa12/jasm/tree/SourceDirective;Lcom/anatawa12/jasm/tree/ClassDirective;Lcom/anatawa12/jasm/tree/SuperDirective;Ljava/util/List;Lcom/anatawa12/jasm/tree/SignatureDirective;Lcom/anatawa12/jasm/tree/EnclosingDirective;Lcom/anatawa12/jasm/tree/DebugDirective;Ljava/util/List;ILjava/lang/Object;)Lcom/anatawa12/jasm/tree/ClassHeader;
+   .limit stack 10
+   .limit local 12
+   iload 10
+   iconst_1
+   iand
+   ifeq L_0007
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/bytecode Lcom/anatawa12/jasm/tree/BytecodeDirective;
+   astore 1
+L_0007:
+   .stack
+      locals Object com/anatawa12/jasm/tree/ClassHeader
+      locals Object com/anatawa12/jasm/tree/BytecodeDirective
+      locals Object com/anatawa12/jasm/tree/SourceDirective
+      locals Object com/anatawa12/jasm/tree/ClassDirective
+      locals Object com/anatawa12/jasm/tree/SuperDirective
+      locals Object java/util/List
+      locals Object com/anatawa12/jasm/tree/SignatureDirective
+      locals Object com/anatawa12/jasm/tree/EnclosingDirective
+      locals Object com/anatawa12/jasm/tree/DebugDirective
+      locals Object java/util/List
+      locals Integer
+      locals Object java/lang/Object
+   .end stack
+   iload 10
+   iconst_2
+   iand
+   ifeq L_0010
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/source Lcom/anatawa12/jasm/tree/SourceDirective;
+   astore 2
+L_0010:
+   .stack use locals
+   .end stack
+   iload 10
+   iconst_4
+   iand
+   ifeq L_0019
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/className Lcom/anatawa12/jasm/tree/ClassDirective;
+   astore 3
+L_0019:
+   .stack use locals
+   .end stack
+   iload 10
+   bipush 8
+   iand
+   ifeq L_0022
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/superName Lcom/anatawa12/jasm/tree/SuperDirective;
+   astore 4
+L_0022:
+   .stack use locals
+   .end stack
+   iload 10
+   bipush 16
+   iand
+   ifeq L_002b
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/implements Ljava/util/List;
+   astore 5
+L_002b:
+   .stack use locals
+   .end stack
+   iload 10
+   bipush 32
+   iand
+   ifeq L_0034
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/signature Lcom/anatawa12/jasm/tree/SignatureDirective;
+   astore 6
+L_0034:
+   .stack use locals
+   .end stack
+   iload 10
+   bipush 64
+   iand
+   ifeq L_003d
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/enclosing Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   astore 7
+L_003d:
+   .stack use locals
+   .end stack
+   iload 10
+   sipush 128
+   iand
+   ifeq L_0046
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/debug Lcom/anatawa12/jasm/tree/DebugDirective;
+   astore 8
+L_0046:
+   .stack use locals
+   .end stack
+   iload 10
+   sipush 256
+   iand
+   ifeq L_004f
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/innerClasses Ljava/util/List;
+   astore 9
+L_004f:
+   .stack use locals
+   .end stack
+   aload 0
+   aload 1
+   aload 2
+   aload 3
+   aload 4
+   aload 5
+   aload 6
+   aload 7
+   aload 8
+   aload 9
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/copy (Lcom/anatawa12/jasm/tree/BytecodeDirective;Lcom/anatawa12/jasm/tree/SourceDirective;Lcom/anatawa12/jasm/tree/ClassDirective;Lcom/anatawa12/jasm/tree/SuperDirective;Ljava/util/List;Lcom/anatawa12/jasm/tree/SignatureDirective;Lcom/anatawa12/jasm/tree/EnclosingDirective;Lcom/anatawa12/jasm/tree/DebugDirective;Ljava/util/List;)Lcom/anatawa12/jasm/tree/ClassHeader;
+   areturn
+.end method
+
+.method public toString ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 1
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   ldc "ClassHeader(bytecode="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/bytecode Lcom/anatawa12/jasm/tree/BytecodeDirective;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ", source="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/source Lcom/anatawa12/jasm/tree/SourceDirective;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ", className="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/className Lcom/anatawa12/jasm/tree/ClassDirective;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ", superName="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/superName Lcom/anatawa12/jasm/tree/SuperDirective;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ", implements="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/implements Ljava/util/List;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ", signature="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/signature Lcom/anatawa12/jasm/tree/SignatureDirective;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ", enclosing="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/enclosing Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ", debug="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/debug Lcom/anatawa12/jasm/tree/DebugDirective;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ", innerClasses="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/innerClasses Ljava/util/List;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ")"
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   areturn
+.end method
+
+.method public hashCode ()I
+   .limit stack 3
+   .limit local 1
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/bytecode Lcom/anatawa12/jasm/tree/BytecodeDirective;
+   dup
+   ifnull L_0006
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_000a
+L_0006:
+   .stack
+      locals Object com/anatawa12/jasm/tree/ClassHeader
+      stacks Object com/anatawa12/jasm/tree/BytecodeDirective
+   .end stack
+   pop
+   iconst_0
+L_000a:
+   .stack use locals
+      stacks Integer
+   .end stack
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/source Lcom/anatawa12/jasm/tree/SourceDirective;
+   dup
+   ifnull L_0014
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0018
+L_0014:
+   .stack use locals
+      stacks Integer
+      stacks Object com/anatawa12/jasm/tree/SourceDirective
+   .end stack
+   pop
+   iconst_0
+L_0018:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/className Lcom/anatawa12/jasm/tree/ClassDirective;
+   dup
+   ifnull L_0023
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0027
+L_0023:
+   .stack use locals
+      stacks Integer
+      stacks Object com/anatawa12/jasm/tree/ClassDirective
+   .end stack
+   pop
+   iconst_0
+L_0027:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/superName Lcom/anatawa12/jasm/tree/SuperDirective;
+   dup
+   ifnull L_0032
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0036
+L_0032:
+   .stack use locals
+      stacks Integer
+      stacks Object com/anatawa12/jasm/tree/SuperDirective
+   .end stack
+   pop
+   iconst_0
+L_0036:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/implements Ljava/util/List;
+   dup
+   ifnull L_0041
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0045
+L_0041:
+   .stack use locals
+      stacks Integer
+      stacks Object java/util/List
+   .end stack
+   pop
+   iconst_0
+L_0045:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/signature Lcom/anatawa12/jasm/tree/SignatureDirective;
+   dup
+   ifnull L_0050
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0054
+L_0050:
+   .stack use locals
+      stacks Integer
+      stacks Object com/anatawa12/jasm/tree/SignatureDirective
+   .end stack
+   pop
+   iconst_0
+L_0054:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/enclosing Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   dup
+   ifnull L_005f
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0063
+L_005f:
+   .stack use locals
+      stacks Integer
+      stacks Object com/anatawa12/jasm/tree/EnclosingDirective
+   .end stack
+   pop
+   iconst_0
+L_0063:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/debug Lcom/anatawa12/jasm/tree/DebugDirective;
+   dup
+   ifnull L_006e
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0072
+L_006e:
+   .stack use locals
+      stacks Integer
+      stacks Object com/anatawa12/jasm/tree/DebugDirective
+   .end stack
+   pop
+   iconst_0
+L_0072:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/innerClasses Ljava/util/List;
+   dup
+   ifnull L_007d
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0081
+L_007d:
+   .stack use locals
+      stacks Integer
+      stacks Object java/util/List
+   .end stack
+   pop
+   iconst_0
+L_0081:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   ireturn
+.end method
+
+.method public equals (Ljava/lang/Object;)Z
+   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 2
+   .limit local 3
+   aload 0
+   aload 1
+   if_acmpeq L_003f
+   aload 1
+   instanceof com/anatawa12/jasm/tree/ClassHeader
+   ifeq L_0043
+   aload 1
+   checkcast com/anatawa12/jasm/tree/ClassHeader
+   astore 2
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/bytecode Lcom/anatawa12/jasm/tree/BytecodeDirective;
+   aload 2
+   getfield com/anatawa12/jasm/tree/ClassHeader/bytecode Lcom/anatawa12/jasm/tree/BytecodeDirective;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0043
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/source Lcom/anatawa12/jasm/tree/SourceDirective;
+   aload 2
+   getfield com/anatawa12/jasm/tree/ClassHeader/source Lcom/anatawa12/jasm/tree/SourceDirective;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0043
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/className Lcom/anatawa12/jasm/tree/ClassDirective;
+   aload 2
+   getfield com/anatawa12/jasm/tree/ClassHeader/className Lcom/anatawa12/jasm/tree/ClassDirective;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0043
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/superName Lcom/anatawa12/jasm/tree/SuperDirective;
+   aload 2
+   getfield com/anatawa12/jasm/tree/ClassHeader/superName Lcom/anatawa12/jasm/tree/SuperDirective;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0043
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/implements Ljava/util/List;
+   aload 2
+   getfield com/anatawa12/jasm/tree/ClassHeader/implements Ljava/util/List;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0043
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/signature Lcom/anatawa12/jasm/tree/SignatureDirective;
+   aload 2
+   getfield com/anatawa12/jasm/tree/ClassHeader/signature Lcom/anatawa12/jasm/tree/SignatureDirective;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0043
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/enclosing Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   aload 2
+   getfield com/anatawa12/jasm/tree/ClassHeader/enclosing Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0043
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/debug Lcom/anatawa12/jasm/tree/DebugDirective;
+   aload 2
+   getfield com/anatawa12/jasm/tree/ClassHeader/debug Lcom/anatawa12/jasm/tree/DebugDirective;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0043
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassHeader/innerClasses Ljava/util/List;
+   aload 2
+   getfield com/anatawa12/jasm/tree/ClassHeader/innerClasses Ljava/util/List;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0043
+L_003f:
+   .stack
+      locals Object com/anatawa12/jasm/tree/ClassHeader
+      locals Object java/lang/Object
+   .end stack
+   iconst_1
+   ireturn
+L_0043:
+   .stack use locals
+   .end stack
+   iconst_0
+   ireturn
+.end method
+
+.field private bytecode Lcom/anatawa12/jasm/tree/BytecodeDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+.end field
+
+.field private source Lcom/anatawa12/jasm/tree/SourceDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+.end field
+
+.field private className Lcom/anatawa12/jasm/tree/ClassDirective;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+
+.field private superName Lcom/anatawa12/jasm/tree/SuperDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+.end field
+
+.field private implements Ljava/util/List;
+   .signature "Ljava/util/List<Lcom/anatawa12/jasm/tree/ImplementsDirective;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+
+.field private signature Lcom/anatawa12/jasm/tree/SignatureDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+.end field
+
+.field private enclosing Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+.end field
+
+.field private debug Lcom/anatawa12/jasm/tree/DebugDirective;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+.end field
+
+.field private innerClasses Ljava/util/List;
+   .signature "Ljava/util/List<Lcom/anatawa12/jasm/tree/InnerClassDirective;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+

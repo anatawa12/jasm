@@ -1,0 +1,121 @@
+.bytecode 52.0
+.source "Disassembler.kt"
+.class final com/anatawa12/jasm/disassembler/Disassembler$AccessTo
+.super java/lang/Enum
+.signature "Ljava/lang/Enum<Lcom/anatawa12/jasm/disassembler/Disassembler\$AccessTo;>;"
+.inner private com/anatawa12/jasm/disassembler/Disassembler$AccessTo inner AccessTo outer com/anatawa12/jasm/disassembler/Disassembler
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0005\b\u0082\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005¨\u0006\u0006"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/disassembler/Disassembler\$AccessTo;"
+      s = ""
+      s = "(Ljava/lang/String;I)V"
+      s = "Class"
+      s = "Field"
+      s = "Method"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method static <clinit> ()V
+   .limit stack 8
+   .limit local 0
+   iconst_3
+   anewarray com/anatawa12/jasm/disassembler/Disassembler$AccessTo
+   dup
+   dup
+   iconst_0
+   new com/anatawa12/jasm/disassembler/Disassembler$AccessTo
+   dup
+   ldc "Class"
+   iconst_0
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler$AccessTo/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/disassembler/Disassembler$AccessTo/Class Lcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;
+   aastore
+   dup
+   iconst_1
+   new com/anatawa12/jasm/disassembler/Disassembler$AccessTo
+   dup
+   ldc "Field"
+   iconst_1
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler$AccessTo/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/disassembler/Disassembler$AccessTo/Field Lcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;
+   aastore
+   dup
+   iconst_2
+   new com/anatawa12/jasm/disassembler/Disassembler$AccessTo
+   dup
+   ldc "Method"
+   iconst_2
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler$AccessTo/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/disassembler/Disassembler$AccessTo/Method Lcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;
+   aastore
+   putstatic com/anatawa12/jasm/disassembler/Disassembler$AccessTo/$VALUES "[Lcom/anatawa12/jasm/disassembler/Disassembler\$AccessTo;"
+   return
+.end method
+
+.method private <init> (Ljava/lang/String;I)V
+   .signature "()V"
+   .limit stack 3
+   .limit local 3
+L_0000:
+   .line 452
+   .var 0 is this Lcom/anatawa12/jasm/disassembler/Disassembler$AccessTo; from L_0000 to L_0007
+   .var 1 is $enum_name_or_ordinal$0 Ljava/lang/String; from L_0000 to L_0007
+   .var 2 is $enum_name_or_ordinal$1 I from L_0000 to L_0007
+   aload 0
+   aload 1
+   iload 2
+   invokespecial java/lang/Enum/<init> (Ljava/lang/String;I)V
+   return
+L_0007:
+.end method
+
+.method public values "()[Lcom/anatawa12/jasm/disassembler/Disassembler\$AccessTo;"
+   .limit stack 1
+   .limit local 0
+   getstatic com/anatawa12/jasm/disassembler/Disassembler$AccessTo/$VALUES "[Lcom/anatawa12/jasm/disassembler/Disassembler\$AccessTo;"
+   invokevirtual "[Lcom/anatawa12/jasm/disassembler/Disassembler\$AccessTo;"/clone ()Ljava/lang/Object;
+   checkcast "[Lcom/anatawa12/jasm/disassembler/Disassembler\$AccessTo;"
+   areturn
+.end method
+
+.method public valueOf (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;
+   .limit stack 2
+   .limit local 1
+   ldc class Lcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;
+   aload 0
+   invokestatic java/lang/Enum/valueOf (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+   checkcast com/anatawa12/jasm/disassembler/Disassembler$AccessTo
+   areturn
+.end method
+
+.field public Class Lcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;
+.end field
+
+.field public Field Lcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;
+.end field
+
+.field public Method Lcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;
+.end field
+
+.field private $VALUES "[Lcom/anatawa12/jasm/disassembler/Disassembler\$AccessTo;"
+.end field
+

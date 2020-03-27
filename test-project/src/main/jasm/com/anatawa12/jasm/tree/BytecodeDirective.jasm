@@ -1,0 +1,246 @@
+.bytecode 52.0
+.source "ClassHeader.kt"
+.class public com/anatawa12/jasm/tree/BytecodeDirective
+.super com/anatawa12/jasm/tree/BranchNode
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\t\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0002\u0010\u0005J\t\u0010\t\u001a\u00020\u0003HÆ\u0003J\t\u0010\n\u001a\u00020\u0003HÆ\u0003J\u001d\u0010\u000b\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\u000c\u001a\u00020\r2\b\u0010\u000e\u001a\u0004\u0018\u00010\u000fHÖ\u0003J\t\u0010\u0010\u001a\u00020\u0003HÖ\u0001J\t\u0010\u0011\u001a\u00020\u0012HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007R\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\u0007¨\u0006\u0013"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/tree/BytecodeDirective;"
+      s = "Lcom/anatawa12/jasm/tree/BranchNode;"
+      s = "major"
+      s = ""
+      s = "minor"
+      s = "(II)V"
+      s = "getMajor"
+      s = "()I"
+      s = "getMinor"
+      s = "component1"
+      s = "component2"
+      s = "copy"
+      s = "equals"
+      s = ""
+      s = "other"
+      s = ""
+      s = "hashCode"
+      s = "toString"
+      s = ""
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method public getMajor ()I
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 15
+   .var 0 is this Lcom/anatawa12/jasm/tree/BytecodeDirective; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/BytecodeDirective/major I
+   ireturn
+L_0005:
+.end method
+
+.method public getMinor ()I
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 15
+   .var 0 is this Lcom/anatawa12/jasm/tree/BytecodeDirective; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/BytecodeDirective/minor I
+   ireturn
+L_0005:
+.end method
+
+.method public <init> (II)V
+   .limit stack 2
+   .limit local 3
+L_0000:
+   .line 15
+   .var 0 is this Lcom/anatawa12/jasm/tree/BytecodeDirective; from L_0000 to L_000b
+   .var 1 is major I from L_0000 to L_000b
+   .var 2 is minor I from L_0000 to L_000b
+   aload 0
+   invokespecial com/anatawa12/jasm/tree/BranchNode/<init> ()V
+   aload 0
+   iload 1
+   putfield com/anatawa12/jasm/tree/BytecodeDirective/major I
+   aload 0
+   iload 2
+   putfield com/anatawa12/jasm/tree/BytecodeDirective/minor I
+   return
+L_000b:
+.end method
+
+.method public component1 ()I
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/BytecodeDirective; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/BytecodeDirective/major I
+   ireturn
+L_0004:
+.end method
+
+.method public component2 ()I
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/BytecodeDirective; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/BytecodeDirective/minor I
+   ireturn
+L_0004:
+.end method
+
+.method public copy (II)Lcom/anatawa12/jasm/tree/BytecodeDirective;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 4
+   .limit local 3
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/BytecodeDirective; from L_0000 to L_0007
+   .var 1 is major I from L_0000 to L_0007
+   .var 2 is minor I from L_0000 to L_0007
+   new com/anatawa12/jasm/tree/BytecodeDirective
+   dup
+   iload 1
+   iload 2
+   invokespecial com/anatawa12/jasm/tree/BytecodeDirective/<init> (II)V
+   areturn
+L_0007:
+.end method
+
+.method public copy$default (Lcom/anatawa12/jasm/tree/BytecodeDirective;IIILjava/lang/Object;)Lcom/anatawa12/jasm/tree/BytecodeDirective;
+   .limit stack 3
+   .limit local 5
+   iload 3
+   iconst_1
+   iand
+   ifeq L_0007
+   aload 0
+   getfield com/anatawa12/jasm/tree/BytecodeDirective/major I
+   istore 1
+L_0007:
+   .stack
+      locals Object com/anatawa12/jasm/tree/BytecodeDirective
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Object java/lang/Object
+   .end stack
+   iload 3
+   iconst_2
+   iand
+   ifeq L_0010
+   aload 0
+   getfield com/anatawa12/jasm/tree/BytecodeDirective/minor I
+   istore 2
+L_0010:
+   .stack use locals
+   .end stack
+   aload 0
+   iload 1
+   iload 2
+   invokevirtual com/anatawa12/jasm/tree/BytecodeDirective/copy (II)Lcom/anatawa12/jasm/tree/BytecodeDirective;
+   areturn
+.end method
+
+.method public toString ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 1
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   ldc "BytecodeDirective(major="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/BytecodeDirective/major I
+   invokevirtual java/lang/StringBuilder/append (I)Ljava/lang/StringBuilder;
+   ldc ", minor="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/BytecodeDirective/minor I
+   invokevirtual java/lang/StringBuilder/append (I)Ljava/lang/StringBuilder;
+   ldc ")"
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   areturn
+.end method
+
+.method public hashCode ()I
+   .limit stack 2
+   .limit local 1
+   aload 0
+   getfield com/anatawa12/jasm/tree/BytecodeDirective/major I
+   invokestatic java/lang/Integer/hashCode (I)I
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/BytecodeDirective/minor I
+   invokestatic java/lang/Integer/hashCode (I)I
+   iadd
+   ireturn
+.end method
+
+.method public equals (Ljava/lang/Object;)Z
+   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 2
+   .limit local 3
+   aload 0
+   aload 1
+   if_acmpeq L_0013
+   aload 1
+   instanceof com/anatawa12/jasm/tree/BytecodeDirective
+   ifeq L_0017
+   aload 1
+   checkcast com/anatawa12/jasm/tree/BytecodeDirective
+   astore 2
+   aload 0
+   getfield com/anatawa12/jasm/tree/BytecodeDirective/major I
+   aload 2
+   getfield com/anatawa12/jasm/tree/BytecodeDirective/major I
+   if_icmpne L_0017
+   aload 0
+   getfield com/anatawa12/jasm/tree/BytecodeDirective/minor I
+   aload 2
+   getfield com/anatawa12/jasm/tree/BytecodeDirective/minor I
+   if_icmpne L_0017
+L_0013:
+   .stack
+      locals Object com/anatawa12/jasm/tree/BytecodeDirective
+      locals Object java/lang/Object
+   .end stack
+   iconst_1
+   ireturn
+L_0017:
+   .stack use locals
+   .end stack
+   iconst_0
+   ireturn
+.end method
+
+.field private major I
+.end field
+
+.field private minor I
+.end field
+

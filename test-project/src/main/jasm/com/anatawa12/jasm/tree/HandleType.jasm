@@ -1,0 +1,204 @@
+.bytecode 52.0
+.source "DataStruct.kt"
+.class public com/anatawa12/jasm/tree/HandleType
+.super java/lang/Enum
+.signature "Ljava/lang/Enum<Lcom/anatawa12/jasm/tree/HandleType;>;"
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u000b\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\nj\u0002\b\u000b¨\u0006\u000c"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/tree/HandleType;"
+      s = ""
+      s = "(Ljava/lang/String;I)V"
+      s = "GetField"
+      s = "GetStatic"
+      s = "PutField"
+      s = "PutStatic"
+      s = "InvokeVirtual"
+      s = "InvokeStatic"
+      s = "InvokeSpecial"
+      s = "NewInvokeSpecial"
+      s = "InvokeInterface"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method static <clinit> ()V
+   .limit stack 8
+   .limit local 0
+   bipush 9
+   anewarray com/anatawa12/jasm/tree/HandleType
+   dup
+   dup
+   iconst_0
+   new com/anatawa12/jasm/tree/HandleType
+   dup
+   ldc "GetField"
+   iconst_0
+   invokespecial com/anatawa12/jasm/tree/HandleType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/tree/HandleType/GetField Lcom/anatawa12/jasm/tree/HandleType;
+   aastore
+   dup
+   iconst_1
+   new com/anatawa12/jasm/tree/HandleType
+   dup
+   ldc "GetStatic"
+   iconst_1
+   invokespecial com/anatawa12/jasm/tree/HandleType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/tree/HandleType/GetStatic Lcom/anatawa12/jasm/tree/HandleType;
+   aastore
+   dup
+   iconst_2
+   new com/anatawa12/jasm/tree/HandleType
+   dup
+   ldc "PutField"
+   iconst_2
+   invokespecial com/anatawa12/jasm/tree/HandleType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/tree/HandleType/PutField Lcom/anatawa12/jasm/tree/HandleType;
+   aastore
+   dup
+   iconst_3
+   new com/anatawa12/jasm/tree/HandleType
+   dup
+   ldc "PutStatic"
+   iconst_3
+   invokespecial com/anatawa12/jasm/tree/HandleType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/tree/HandleType/PutStatic Lcom/anatawa12/jasm/tree/HandleType;
+   aastore
+   dup
+   iconst_4
+   new com/anatawa12/jasm/tree/HandleType
+   dup
+   ldc "InvokeVirtual"
+   iconst_4
+   invokespecial com/anatawa12/jasm/tree/HandleType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/tree/HandleType/InvokeVirtual Lcom/anatawa12/jasm/tree/HandleType;
+   aastore
+   dup
+   iconst_5
+   new com/anatawa12/jasm/tree/HandleType
+   dup
+   ldc "InvokeStatic"
+   iconst_5
+   invokespecial com/anatawa12/jasm/tree/HandleType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/tree/HandleType/InvokeStatic Lcom/anatawa12/jasm/tree/HandleType;
+   aastore
+   dup
+   bipush 6
+   new com/anatawa12/jasm/tree/HandleType
+   dup
+   ldc "InvokeSpecial"
+   bipush 6
+   invokespecial com/anatawa12/jasm/tree/HandleType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/tree/HandleType/InvokeSpecial Lcom/anatawa12/jasm/tree/HandleType;
+   aastore
+   dup
+   bipush 7
+   new com/anatawa12/jasm/tree/HandleType
+   dup
+   ldc "NewInvokeSpecial"
+   bipush 7
+   invokespecial com/anatawa12/jasm/tree/HandleType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/tree/HandleType/NewInvokeSpecial Lcom/anatawa12/jasm/tree/HandleType;
+   aastore
+   dup
+   bipush 8
+   new com/anatawa12/jasm/tree/HandleType
+   dup
+   ldc "InvokeInterface"
+   bipush 8
+   invokespecial com/anatawa12/jasm/tree/HandleType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/tree/HandleType/InvokeInterface Lcom/anatawa12/jasm/tree/HandleType;
+   aastore
+   putstatic com/anatawa12/jasm/tree/HandleType/$VALUES "[Lcom/anatawa12/jasm/tree/HandleType;"
+   return
+.end method
+
+.method private <init> (Ljava/lang/String;I)V
+   .signature "()V"
+   .limit stack 3
+   .limit local 3
+L_0000:
+   .line 7
+   .var 0 is this Lcom/anatawa12/jasm/tree/HandleType; from L_0000 to L_0007
+   .var 1 is $enum_name_or_ordinal$0 Ljava/lang/String; from L_0000 to L_0007
+   .var 2 is $enum_name_or_ordinal$1 I from L_0000 to L_0007
+   aload 0
+   aload 1
+   iload 2
+   invokespecial java/lang/Enum/<init> (Ljava/lang/String;I)V
+   return
+L_0007:
+.end method
+
+.method public values "()[Lcom/anatawa12/jasm/tree/HandleType;"
+   .limit stack 1
+   .limit local 0
+   getstatic com/anatawa12/jasm/tree/HandleType/$VALUES "[Lcom/anatawa12/jasm/tree/HandleType;"
+   invokevirtual "[Lcom/anatawa12/jasm/tree/HandleType;"/clone ()Ljava/lang/Object;
+   checkcast "[Lcom/anatawa12/jasm/tree/HandleType;"
+   areturn
+.end method
+
+.method public valueOf (Ljava/lang/String;)Lcom/anatawa12/jasm/tree/HandleType;
+   .limit stack 2
+   .limit local 1
+   ldc class Lcom/anatawa12/jasm/tree/HandleType;
+   aload 0
+   invokestatic java/lang/Enum/valueOf (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+   checkcast com/anatawa12/jasm/tree/HandleType
+   areturn
+.end method
+
+.field public GetField Lcom/anatawa12/jasm/tree/HandleType;
+.end field
+
+.field public GetStatic Lcom/anatawa12/jasm/tree/HandleType;
+.end field
+
+.field public PutField Lcom/anatawa12/jasm/tree/HandleType;
+.end field
+
+.field public PutStatic Lcom/anatawa12/jasm/tree/HandleType;
+.end field
+
+.field public InvokeVirtual Lcom/anatawa12/jasm/tree/HandleType;
+.end field
+
+.field public InvokeStatic Lcom/anatawa12/jasm/tree/HandleType;
+.end field
+
+.field public InvokeSpecial Lcom/anatawa12/jasm/tree/HandleType;
+.end field
+
+.field public NewInvokeSpecial Lcom/anatawa12/jasm/tree/HandleType;
+.end field
+
+.field public InvokeInterface Lcom/anatawa12/jasm/tree/HandleType;
+.end field
+
+.field private $VALUES "[Lcom/anatawa12/jasm/tree/HandleType;"
+.end field
+

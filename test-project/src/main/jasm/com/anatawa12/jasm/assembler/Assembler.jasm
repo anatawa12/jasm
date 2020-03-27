@@ -2,8 +2,102 @@
 .source "Assembler.kt"
 .class public com/anatawa12/jasm/assembler/Assembler
 .super java/lang/Object
-.debug "SMAP\nAssembler.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Assembler.kt\ncom/anatawa12/jasm/assembler/Assembler\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,359:1\n324#1:368\n1360#2:360\n1429#2,3:361\n250#2,2:369\n250#2,2:371\n37#3,2:364\n37#3,2:366\n*E\n*S KotlinDebug\n*F\n+ 1 Assembler.kt\ncom/anatawa12/jasm/assembler/Assembler\n*L\n323#1:368\n16#1:360\n16#1,3:361\n323#1,2:369\n324#1,2:371\n16#1,2:364\n105#1,2:366\n*E\n"
+.debug "SMAP\nAssembler.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Assembler.kt\ncom/anatawa12/jasm/assembler/Assembler\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,368:1\n333#1:377\n1360#2:369\n1429#2,3:370\n250#2,2:378\n250#2,2:380\n37#3,2:373\n37#3,2:375\n*E\n*S KotlinDebug\n*F\n+ 1 Assembler.kt\ncom/anatawa12/jasm/assembler/Assembler\n*L\n332#1:377\n16#1:369\n16#1,3:370\n332#1,2:378\n333#1,2:380\n16#1,2:373\n105#1,2:375\n*E\n"
 .inner private com/anatawa12/jasm/assembler/Assembler$LabelTable inner LabelTable outer com/anatawa12/jasm/assembler/Assembler
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000¾\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\u0018\u00002\u00020\u0001:\u0001IB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u000e\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\r\u001a\u00020\u000eJ\u0010\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0002J\u0018\u0010\u0013\u001a\u00020\u000c2\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0017H\u0002J\u0018\u0010\u0018\u001a\u00020\u000c2\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u0016\u001a\u00020\u0017H\u0002J\"\u0010\u001b\u001a\u00020\u000c2\b\u0010\u001c\u001a\u0004\u0018\u00010\u001d2\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010\u0016\u001a\u00020\u0017H\u0002J.\u0010 \u001a\u00020\u000c2\u0006\u0010!\u001a\u00020\"2\u000c\u0010#\u001a\b\u0012\u0004\u0012\u00020%0\$2\u0006\u0010&\u001a\u00020\u00102\u0006\u0010\'\u001a\u00020\u0010H\u0002J\u0010\u0010(\u001a\u00020\u000c2\u0006\u0010)\u001a\u00020*H\u0002J+\u0010+\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010,2\u000c\u0010-\u001a\b\u0012\u0004\u0012\u00020.0\$2\u0006\u0010/\u001a\u000200H\u0002¢\u0006\u0002\u00101J\u0012\u00102\u001a\u0004\u0018\u0001032\u0006\u00104\u001a\u000205H\u0002J\u0010\u00106\u001a\u00020\u000c2\u0006\u00107\u001a\u000208H\u0002J\u0012\u00109\u001a\u0004\u0018\u00010\u00012\u0006\u0010:\u001a\u00020;H\u0002J\u0010\u0010<\u001a\u00020\u000c2\u0006\u0010=\u001a\u00020>H\u0002J\u0012\u0010?\u001a\u00020\u00102\b\u0010@\u001a\u0004\u0018\u00010AH\u0002J \u0010B\u001a\u0004\u0018\u0001HC\"\u0006\b\u0000\u0010C\u0018\u0001*\u0006\u0012\u0002\b\u00030\$H\u0082\b¢\u0006\u0002\u0010DJ4\u0010B\u001a\u0004\u0018\u0001HC\"\u0006\b\u0000\u0010C\u0018\u0001*\u0006\u0012\u0002\b\u00030\$2\u0012\u0010E\u001a\u000e\u0012\u0004\u0012\u0002HC\u0012\u0004\u0012\u00020G0FH\u0082\b¢\u0006\u0002\u0010HR\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\n¨\u0006J"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/assembler/Assembler;"
+      s = ""
+      s = "options"
+      s = "Lcom/anatawa12/jasm/assembler/AssemblerOptions;"
+      s = "(Lcom/anatawa12/jasm/assembler/AssemblerOptions;)V"
+      s = "classWriter"
+      s = "Lorg/objectweb/asm/ClassWriter;"
+      s = "getClassWriter"
+      s = "()Lorg/objectweb/asm/ClassWriter;"
+      s = "getOptions"
+      s = "()Lcom/anatawa12/jasm/assembler/AssemblerOptions;"
+      s = "assemble"
+      s = ""
+      s = "file"
+      s = "Lcom/anatawa12/jasm/tree/JasmFile;"
+      s = "assembleAccess"
+      s = ""
+      s = "accessFlags"
+      s = "Lcom/anatawa12/jasm/tree/AccessFlags;"
+      s = "assembleAnnotation"
+      s = "annotation"
+      s = "Lcom/anatawa12/jasm/tree/Annotation;"
+      s = "annotationWriter"
+      s = "Lorg/objectweb/asm/AnnotationVisitor;"
+      s = "assembleAnnotationArray"
+      s = "array"
+      s = "Lcom/anatawa12/jasm/tree/AnnotationArray;"
+      s = "assembleAnnotationValue"
+      s = "key"
+      s = ""
+      s = "value"
+      s = "Lcom/anatawa12/jasm/tree/AnnotationValue;"
+      s = "assembleCode"
+      s = "methodWriter"
+      s = "Lorg/objectweb/asm/MethodVisitor;"
+      s = "statements"
+      s = ""
+      s = "Lcom/anatawa12/jasm/tree/MethodStatement;"
+      s = "maxStack"
+      s = "maxLocal"
+      s = "assembleField"
+      s = "field"
+      s = "Lcom/anatawa12/jasm/tree/FieldBlock;"
+      s = "assembleFrame"
+      s = ""
+      s = "locals"
+      s = "Lcom/anatawa12/jasm/tree/StackFrameType;"
+      s = "table"
+      s = "Lcom/anatawa12/jasm/assembler/Assembler\$LabelTable;"
+      s = "(Ljava/util/List;Lcom/anatawa12/jasm/assembler/Assembler\$LabelTable;)[Ljava/lang/Object;"
+      s = "assembleHandle"
+      s = "Lorg/objectweb/asm/Handle;"
+      s = "bsm"
+      s = "Lcom/anatawa12/jasm/tree/Handle;"
+      s = "assembleHeader"
+      s = "classHeader"
+      s = "Lcom/anatawa12/jasm/tree/ClassHeader;"
+      s = "assembleLdcConstant"
+      s = "cst"
+      s = "Lcom/anatawa12/jasm/tree/BranchNode;"
+      s = "assembleMethod"
+      s = "method"
+      s = "Lcom/anatawa12/jasm/tree/MethodBlock;"
+      s = "assembleVersion"
+      s = "bytecode"
+      s = "Lcom/anatawa12/jasm/tree/BytecodeDirective;"
+      s = "firstOrNull"
+      s = "E"
+      s = "(Ljava/util/List;)Ljava/lang/Object;"
+      s = "filter"
+      s = "Lkotlin/Function1;"
+      s = ""
+      s = "(Ljava/util/List;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;"
+      s = "LabelTable"
+      s = "jasm"
+   .end annotation
+.end annotation
 
 .method public getClassWriter ()Lorg/objectweb/asm/ClassWriter;
    .annotation invisible org/jetbrains/annotations/NotNull
@@ -122,7 +216,7 @@ L_003f:
    iconst_0
    istore 3
 L_0042:
-   .line 360
+   .line 369
    .var 3 is $i$f$map I from L_0042 to L_007b
    aload 2
    astore 4
@@ -140,7 +234,7 @@ L_004e:
    iconst_0
    istore 6
 L_0051:
-   .line 361
+   .line 370
    .var 6 is $i$f$mapTo I from L_0051 to L_0079
    aload 4
    invokeinterface java/lang/Iterable/iterator ()Ljava/util/Iterator;
@@ -172,7 +266,7 @@ L_0056:
    invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
    astore 8
 L_005e:
-   .line 362
+   .line 371
    .var 8 is item$iv$iv Ljava/lang/Object; from L_005e to L_0072
    aload 5
    aload 8
@@ -195,10 +289,10 @@ L_006c:
    invokeinterface java/util/Collection/add (Ljava/lang/Object;)Z
    pop
 L_0072:
-   .line 361
+   .line 370
    goto L_0056
 L_0075:
-   .line 363
+   .line 372
    .stack use locals
    .end stack
    aload 5
@@ -228,12 +322,12 @@ L_008e:
    iconst_0
    istore 3
 L_0091:
-   .line 364
+   .line 373
    .var 3 is $i$f$toTypedArray I from L_0091 to L_00a2
    aload 2
    astore 4
 L_0095:
-   .line 365
+   .line 374
    .var 4 is thisCollection$iv Ljava/util/Collection; from L_0095 to L_00a2
    aload 4
    iconst_0
@@ -1124,12 +1218,12 @@ L_00dc:
    iconst_0
    istore 11
 L_00df:
-   .line 366
+   .line 375
    .var 11 is $i$f$toTypedArray I from L_00df to L_00f0
    aload 10
    astore 12
 L_00e3:
-   .line 367
+   .line 376
    .var 12 is thisCollection$iv Ljava/util/Collection; from L_00e3 to L_00f0
    aload 12
    iconst_0
@@ -1496,11 +1590,11 @@ L_01d4:
    .limit local 22
 L_0000:
    .line 138
-   .var 0 is this Lcom/anatawa12/jasm/assembler/Assembler; from L_0000 to L_0317
-   .var 1 is methodWriter Lorg/objectweb/asm/MethodVisitor; from L_0000 to L_0317
-   .var 2 is statements Ljava/util/List; from L_0000 to L_0317
-   .var 3 is maxStack I from L_0000 to L_0317
-   .var 4 is maxLocal I from L_0000 to L_0317
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Assembler; from L_0000 to L_03bd
+   .var 1 is methodWriter Lorg/objectweb/asm/MethodVisitor; from L_0000 to L_03bd
+   .var 2 is statements Ljava/util/List; from L_0000 to L_03bd
+   .var 3 is maxStack I from L_0000 to L_03bd
+   .var 4 is maxLocal I from L_0000 to L_03bd
    aload 1
    invokevirtual org/objectweb/asm/MethodVisitor/visitCode ()V
 L_0004:
@@ -1510,14 +1604,14 @@ L_0004:
    astore 5
 L_0009:
    .line 140
-   .var 5 is lastLocals Ljava/util/List; from L_0009 to L_0317
+   .var 5 is lastLocals Ljava/util/List; from L_0009 to L_03bd
    new com/anatawa12/jasm/assembler/Assembler$LabelTable
    dup
    invokespecial com/anatawa12/jasm/assembler/Assembler$LabelTable/<init> ()V
    astore 6
 L_000f:
    .line 141
-   .var 6 is table Lcom/anatawa12/jasm/assembler/Assembler$LabelTable; from L_000f to L_0317
+   .var 6 is table Lcom/anatawa12/jasm/assembler/Assembler$LabelTable; from L_000f to L_03bd
    aload 2
    invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
    astore 8
@@ -1535,14 +1629,14 @@ L_0014:
    .end stack
    aload 8
    invokeinterface java/util/Iterator/hasNext ()Z
-   ifeq L_030d
+   ifeq L_02d4
    aload 8
    invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
    checkcast com/anatawa12/jasm/tree/MethodStatement
    astore 7
 L_001d:
    .line 142
-   .var 7 is statement Lcom/anatawa12/jasm/tree/MethodStatement; from L_001d to L_0308
+   .var 7 is statement Lcom/anatawa12/jasm/tree/MethodStatement; from L_001d to L_02cf
    aload 0
    getfield com/anatawa12/jasm/assembler/Assembler/options Lcom/anatawa12/jasm/assembler/AssemblerOptions;
    invokevirtual com/anatawa12/jasm/assembler/AssemblerOptions/getAutoLine ()Z
@@ -1599,7 +1693,7 @@ L_0046:
    getfield com/anatawa12/jasm/assembler/Assembler/options Lcom/anatawa12/jasm/assembler/AssemblerOptions;
    invokevirtual com/anatawa12/jasm/assembler/AssemblerOptions/getAutoLine ()Z
    ifeq L_004d
-   goto L_0308
+   goto L_02cf
 L_004d:
    .line 150
    .stack
@@ -1633,88 +1727,16 @@ L_0059:
    aload 10
    invokevirtual org/objectweb/asm/MethodVisitor/visitLineNumber (ILorg/objectweb/asm/Label;)V
 L_0061:
-   goto L_0308
+   goto L_02cf
 L_0063:
    .line 154
    .stack use locals
    .end stack
    aload 9
-   instanceof com/anatawa12/jasm/tree/LocalVar
-   ifeq L_0088
+   instanceof com/anatawa12/jasm/tree/LabelDefinition
+   ifeq L_0073
 L_0069:
    .line 155
-   aload 1
-   aload 7
-   checkcast com/anatawa12/jasm/tree/LocalVar
-   invokevirtual com/anatawa12/jasm/tree/LocalVar/getName ()Ljava/lang/String;
-   aload 7
-   checkcast com/anatawa12/jasm/tree/LocalVar
-   invokevirtual com/anatawa12/jasm/tree/LocalVar/getDescriptor ()Ljava/lang/String;
-   aload 7
-   checkcast com/anatawa12/jasm/tree/LocalVar
-   invokevirtual com/anatawa12/jasm/tree/LocalVar/getSignature ()Ljava/lang/String;
-L_0075:
-   .line 156
-   aload 6
-   aload 7
-   checkcast com/anatawa12/jasm/tree/LocalVar
-   invokevirtual com/anatawa12/jasm/tree/LocalVar/getFrom ()Lcom/anatawa12/jasm/tree/LabelName;
-   invokevirtual com/anatawa12/jasm/assembler/Assembler$LabelTable/get (Lcom/anatawa12/jasm/tree/LabelName;)Lorg/objectweb/asm/Label;
-   aload 6
-   aload 7
-   checkcast com/anatawa12/jasm/tree/LocalVar
-   invokevirtual com/anatawa12/jasm/tree/LocalVar/getTo ()Lcom/anatawa12/jasm/tree/LabelName;
-   invokevirtual com/anatawa12/jasm/assembler/Assembler$LabelTable/get (Lcom/anatawa12/jasm/tree/LabelName;)Lorg/objectweb/asm/Label;
-   aload 7
-   checkcast com/anatawa12/jasm/tree/LocalVar
-   invokevirtual com/anatawa12/jasm/tree/LocalVar/getVariable ()I
-L_0084:
-   .line 155
-   invokevirtual org/objectweb/asm/MethodVisitor/visitLocalVariable (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/objectweb/asm/Label;Lorg/objectweb/asm/Label;I)V
-   goto L_0308
-L_0088:
-   .line 158
-   .stack use locals
-   .end stack
-   aload 9
-   instanceof com/anatawa12/jasm/tree/TryCatch
-   ifeq L_00a9
-L_008e:
-   .line 159
-   aload 1
-   aload 6
-   aload 7
-   checkcast com/anatawa12/jasm/tree/TryCatch
-   invokevirtual com/anatawa12/jasm/tree/TryCatch/getFrom ()Lcom/anatawa12/jasm/tree/LabelName;
-   invokevirtual com/anatawa12/jasm/assembler/Assembler$LabelTable/get (Lcom/anatawa12/jasm/tree/LabelName;)Lorg/objectweb/asm/Label;
-   aload 6
-   aload 7
-   checkcast com/anatawa12/jasm/tree/TryCatch
-   invokevirtual com/anatawa12/jasm/tree/TryCatch/getTo ()Lcom/anatawa12/jasm/tree/LabelName;
-   invokevirtual com/anatawa12/jasm/assembler/Assembler$LabelTable/get (Lcom/anatawa12/jasm/tree/LabelName;)Lorg/objectweb/asm/Label;
-L_009b:
-   .line 160
-   aload 6
-   aload 7
-   checkcast com/anatawa12/jasm/tree/TryCatch
-   invokevirtual com/anatawa12/jasm/tree/TryCatch/getUsing ()Lcom/anatawa12/jasm/tree/LabelName;
-   invokevirtual com/anatawa12/jasm/assembler/Assembler$LabelTable/get (Lcom/anatawa12/jasm/tree/LabelName;)Lorg/objectweb/asm/Label;
-   aload 7
-   checkcast com/anatawa12/jasm/tree/TryCatch
-   invokevirtual com/anatawa12/jasm/tree/TryCatch/getException ()Ljava/lang/String;
-L_00a5:
-   .line 159
-   invokevirtual org/objectweb/asm/MethodVisitor/visitTryCatchBlock (Lorg/objectweb/asm/Label;Lorg/objectweb/asm/Label;Lorg/objectweb/asm/Label;Ljava/lang/String;)V
-   goto L_0308
-L_00a9:
-   .line 162
-   .stack use locals
-   .end stack
-   aload 9
-   instanceof com/anatawa12/jasm/tree/LabelDefinition
-   ifeq L_00b9
-L_00af:
-   .line 163
    aload 1
    aload 6
    aload 7
@@ -1722,51 +1744,51 @@ L_00af:
    invokevirtual com/anatawa12/jasm/tree/LabelDefinition/getName ()Lcom/anatawa12/jasm/tree/LabelName;
    invokevirtual com/anatawa12/jasm/assembler/Assembler$LabelTable/get (Lcom/anatawa12/jasm/tree/LabelName;)Lorg/objectweb/asm/Label;
    invokevirtual org/objectweb/asm/MethodVisitor/visitLabel (Lorg/objectweb/asm/Label;)V
-   goto L_0308
-L_00b9:
-   .line 165
+   goto L_02cf
+L_0073:
+   .line 157
    .stack use locals
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/StackFrame
-   ifeq L_00ef
-L_00bf:
-   .line 166
+   ifeq L_00a9
+L_0079:
+   .line 158
    aload 7
    checkcast com/anatawa12/jasm/tree/StackFrame
    invokevirtual com/anatawa12/jasm/tree/StackFrame/getLocals ()Ljava/util/List;
    dup
-   ifnull L_00c7
-   goto L_00cf
-L_00c7:
-   .line 166
+   ifnull L_0081
+   goto L_0089
+L_0081:
+   .line 158
    .stack use locals
       stacks Object java/util/List
    .end stack
    pop
    aload 5
    dup
-   ifnonnull L_00cf
+   ifnonnull L_0089
    invokestatic kotlin/jvm/internal/Intrinsics/throwNpe ()V
-L_00cf:
+L_0089:
    .stack use locals
       stacks Object java/util/List
    .end stack
    astore 10
-L_00d2:
-   .line 167
-   .var 10 is locals Ljava/util/List; from L_00d2 to L_00ed
+L_008c:
+   .line 159
+   .var 10 is locals Ljava/util/List; from L_008c to L_00a7
    aload 7
    checkcast com/anatawa12/jasm/tree/StackFrame
    invokevirtual com/anatawa12/jasm/tree/StackFrame/getStacks ()Ljava/util/List;
    astore 11
-L_00d8:
-   .line 168
-   .var 11 is stacks Ljava/util/List; from L_00d8 to L_00ed
+L_0092:
+   .line 160
+   .var 11 is stacks Ljava/util/List; from L_0092 to L_00a7
    aload 10
    astore 5
-L_00dc:
-   .line 169
+L_0096:
+   .line 161
    aload 1
    iconst_m1
    aload 10
@@ -1782,32 +1804,32 @@ L_00dc:
    aload 6
    invokespecial com/anatawa12/jasm/assembler/Assembler/assembleFrame "(Ljava/util/List;Lcom/anatawa12/jasm/assembler/Assembler\$LabelTable;)[Ljava/lang/Object;"
    invokevirtual org/objectweb/asm/MethodVisitor/visitFrame "(II[Ljava/lang/Object;I[Ljava/lang/Object;)V"
-L_00ed:
-   goto L_0308
-L_00ef:
-   .line 172
+L_00a7:
+   goto L_02cf
+L_00a9:
+   .line 164
    .stack use locals
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/Insn
-   ifeq L_00fd
-L_00f5:
-   .line 173
+   ifeq L_00b7
+L_00af:
+   .line 165
    aload 1
    aload 7
    checkcast com/anatawa12/jasm/tree/Insn
    invokevirtual com/anatawa12/jasm/tree/Insn/getOpcode ()I
    invokevirtual org/objectweb/asm/MethodVisitor/visitInsn (I)V
-   goto L_0308
-L_00fd:
-   .line 175
+   goto L_02cf
+L_00b7:
+   .line 167
    .stack use locals
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/IntInsn
-   ifeq L_010e
-L_0103:
-   .line 176
+   ifeq L_00c8
+L_00bd:
+   .line 168
    aload 1
    aload 7
    checkcast com/anatawa12/jasm/tree/IntInsn
@@ -1816,16 +1838,16 @@ L_0103:
    checkcast com/anatawa12/jasm/tree/IntInsn
    invokevirtual com/anatawa12/jasm/tree/IntInsn/getOperand ()I
    invokevirtual org/objectweb/asm/MethodVisitor/visitIntInsn (II)V
-   goto L_0308
-L_010e:
-   .line 178
+   goto L_02cf
+L_00c8:
+   .line 170
    .stack use locals
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/VarInsn
-   ifeq L_011f
-L_0114:
-   .line 179
+   ifeq L_00d9
+L_00ce:
+   .line 171
    aload 1
    aload 7
    checkcast com/anatawa12/jasm/tree/VarInsn
@@ -1834,16 +1856,16 @@ L_0114:
    checkcast com/anatawa12/jasm/tree/VarInsn
    invokevirtual com/anatawa12/jasm/tree/VarInsn/getVariable ()I
    invokevirtual org/objectweb/asm/MethodVisitor/visitVarInsn (II)V
-   goto L_0308
-L_011f:
-   .line 181
+   goto L_02cf
+L_00d9:
+   .line 173
    .stack use locals
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/TypeInsn
-   ifeq L_0130
-L_0125:
-   .line 182
+   ifeq L_00ea
+L_00df:
+   .line 174
    aload 1
    aload 7
    checkcast com/anatawa12/jasm/tree/TypeInsn
@@ -1852,16 +1874,16 @@ L_0125:
    checkcast com/anatawa12/jasm/tree/TypeInsn
    invokevirtual com/anatawa12/jasm/tree/TypeInsn/getType ()Ljava/lang/String;
    invokevirtual org/objectweb/asm/MethodVisitor/visitTypeInsn (ILjava/lang/String;)V
-   goto L_0308
-L_0130:
-   .line 184
+   goto L_02cf
+L_00ea:
+   .line 176
    .stack use locals
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/FieldInsn
-   ifeq L_0147
-L_0136:
-   .line 185
+   ifeq L_0101
+L_00f0:
+   .line 177
    aload 1
    aload 7
    checkcast com/anatawa12/jasm/tree/FieldInsn
@@ -1876,16 +1898,16 @@ L_0136:
    checkcast com/anatawa12/jasm/tree/FieldInsn
    invokevirtual com/anatawa12/jasm/tree/FieldInsn/getDesc ()Ljava/lang/String;
    invokevirtual org/objectweb/asm/MethodVisitor/visitFieldInsn (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-   goto L_0308
-L_0147:
-   .line 187
+   goto L_02cf
+L_0101:
+   .line 179
    .stack use locals
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/MethodInsn
-   ifeq L_0170
-L_014d:
-   .line 188
+   ifeq L_012a
+L_0107:
+   .line 180
    aload 1
    aload 7
    checkcast com/anatawa12/jasm/tree/MethodInsn
@@ -1902,13 +1924,13 @@ L_014d:
    aload 7
    checkcast com/anatawa12/jasm/tree/MethodInsn
    invokevirtual com/anatawa12/jasm/tree/MethodInsn/getItf ()Z
-   ifne L_0165
+   ifne L_011f
    aload 7
    checkcast com/anatawa12/jasm/tree/MethodInsn
    invokevirtual com/anatawa12/jasm/tree/MethodInsn/getOpcode ()I
    sipush 185
-   if_icmpne L_0169
-L_0165:
+   if_icmpne L_0123
+L_011f:
    .stack use locals
       stacks Object org/objectweb/asm/MethodVisitor
       stacks Integer
@@ -1917,8 +1939,8 @@ L_0165:
       stacks Object java/lang/String
    .end stack
    iconst_1
-   goto L_016c
-L_0169:
+   goto L_0126
+L_0123:
    .stack use locals
       stacks Object org/objectweb/asm/MethodVisitor
       stacks Integer
@@ -1927,7 +1949,7 @@ L_0169:
       stacks Object java/lang/String
    .end stack
    iconst_0
-L_016c:
+L_0126:
    .stack use locals
       stacks Object org/objectweb/asm/MethodVisitor
       stacks Integer
@@ -1937,34 +1959,34 @@ L_016c:
       stacks Integer
    .end stack
    invokevirtual org/objectweb/asm/MethodVisitor/visitMethodInsn (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
-   goto L_0308
-L_0170:
-   .line 190
+   goto L_02cf
+L_012a:
+   .line 182
    .stack use locals
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/InvokeDynamicInsn
-   ifeq L_01c5
-L_0176:
-   .line 191
+   ifeq L_017f
+L_0130:
+   .line 183
    aload 1
-L_0179:
-   .line 192
+L_0133:
+   .line 184
    aload 7
    checkcast com/anatawa12/jasm/tree/InvokeDynamicInsn
    invokevirtual com/anatawa12/jasm/tree/InvokeDynamicInsn/getName ()Ljava/lang/String;
    aload 7
    checkcast com/anatawa12/jasm/tree/InvokeDynamicInsn
    invokevirtual com/anatawa12/jasm/tree/InvokeDynamicInsn/getDesc ()Ljava/lang/String;
-L_0181:
-   .line 193
+L_013b:
+   .line 185
    aload 0
    aload 7
    checkcast com/anatawa12/jasm/tree/InvokeDynamicInsn
    invokevirtual com/anatawa12/jasm/tree/InvokeDynamicInsn/getBsm ()Lcom/anatawa12/jasm/tree/Handle;
    invokespecial com/anatawa12/jasm/assembler/Assembler/assembleHandle (Lcom/anatawa12/jasm/tree/Handle;)Lorg/objectweb/asm/Handle;
-L_0188:
-   .line 194
+L_0142:
+   .line 186
    aload 7
    checkcast com/anatawa12/jasm/tree/InvokeDynamicInsn
    invokevirtual com/anatawa12/jasm/tree/InvokeDynamicInsn/getBsmArgs ()Ljava/util/List;
@@ -1979,7 +2001,7 @@ L_0188:
    astore 11
    iconst_0
    istore 12
-L_0198:
+L_0152:
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object org/objectweb/asm/MethodVisitor
@@ -2003,20 +2025,20 @@ L_0198:
    .end stack
    iload 12
    iload 10
-   if_icmpge L_01b8
+   if_icmpge L_0172
    aload 11
    iload 12
    iload 12
    istore 13
    istore 20
    astore 19
-L_01a3:
-   .var 13 is it I from L_01a3 to L_01b0
+L_015d:
+   .var 13 is it I from L_015d to L_016a
    iconst_0
    istore 14
-L_01a6:
-   .line 194
-   .var 14 is "\$i\$a\$-<init>-Assembler\$assembleCode\$1" I from L_01a6 to L_01b0
+L_0160:
+   .line 186
+   .var 14 is "\$i\$a\$-<init>-Assembler\$assembleCode\$1" I from L_0160 to L_016a
    aload 0
    aload 7
    checkcast com/anatawa12/jasm/tree/InvokeDynamicInsn
@@ -2025,15 +2047,15 @@ L_01a6:
    invokeinterface java/util/List/get (I)Ljava/lang/Object;
    checkcast com/anatawa12/jasm/tree/BranchNode
    invokespecial com/anatawa12/jasm/assembler/Assembler/assembleLdcConstant (Lcom/anatawa12/jasm/tree/BranchNode;)Ljava/lang/Object;
-L_01b0:
+L_016a:
    astore 21
    aload 19
    iload 20
    aload 21
    aastore
    iinc 12 1
-   goto L_0198
-L_01b8:
+   goto L_0152
+L_0172:
    .stack use locals
    .end stack
    aload 11
@@ -2043,12 +2065,12 @@ L_01b8:
    aload 17
    aload 18
    aload 19
-L_01c1:
-   .line 191
+L_017b:
+   .line 183
    invokevirtual org/objectweb/asm/MethodVisitor/visitInvokeDynamicInsn "(Ljava/lang/String;Ljava/lang/String;Lorg/objectweb/asm/Handle;[Ljava/lang/Object;)V"
-   goto L_0308
-L_01c5:
-   .line 197
+   goto L_02cf
+L_017f:
+   .line 189
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object org/objectweb/asm/MethodVisitor
@@ -2063,9 +2085,9 @@ L_01c5:
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/JumpInsn
-   ifeq L_01d8
-L_01cb:
-   .line 198
+   ifeq L_0192
+L_0185:
+   .line 190
    aload 1
    aload 7
    checkcast com/anatawa12/jasm/tree/JumpInsn
@@ -2076,16 +2098,16 @@ L_01cb:
    invokevirtual com/anatawa12/jasm/tree/JumpInsn/getLabel ()Lcom/anatawa12/jasm/tree/LabelName;
    invokevirtual com/anatawa12/jasm/assembler/Assembler$LabelTable/get (Lcom/anatawa12/jasm/tree/LabelName;)Lorg/objectweb/asm/Label;
    invokevirtual org/objectweb/asm/MethodVisitor/visitJumpInsn (ILorg/objectweb/asm/Label;)V
-   goto L_0308
-L_01d8:
-   .line 200
+   goto L_02cf
+L_0192:
+   .line 192
    .stack use locals
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/LdcInsn
-   ifeq L_01e8
-L_01de:
-   .line 201
+   ifeq L_01a2
+L_0198:
+   .line 193
    aload 1
    aload 0
    aload 7
@@ -2093,16 +2115,16 @@ L_01de:
    invokevirtual com/anatawa12/jasm/tree/LdcInsn/getCst ()Lcom/anatawa12/jasm/tree/BranchNode;
    invokespecial com/anatawa12/jasm/assembler/Assembler/assembleLdcConstant (Lcom/anatawa12/jasm/tree/BranchNode;)Ljava/lang/Object;
    invokevirtual org/objectweb/asm/MethodVisitor/visitLdcInsn (Ljava/lang/Object;)V
-   goto L_0308
-L_01e8:
-   .line 203
+   goto L_02cf
+L_01a2:
+   .line 195
    .stack use locals
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/IincInsn
-   ifeq L_01f9
-L_01ee:
-   .line 204
+   ifeq L_01b3
+L_01a8:
+   .line 196
    aload 1
    aload 7
    checkcast com/anatawa12/jasm/tree/IincInsn
@@ -2111,16 +2133,16 @@ L_01ee:
    checkcast com/anatawa12/jasm/tree/IincInsn
    invokevirtual com/anatawa12/jasm/tree/IincInsn/getIncrement ()I
    invokevirtual org/objectweb/asm/MethodVisitor/visitIincInsn (II)V
-   goto L_0308
-L_01f9:
-   .line 206
+   goto L_02cf
+L_01b3:
+   .line 198
    .stack use locals
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/TableSwitchInsn
-   ifeq L_0251
-L_01ff:
-   .line 207
+   ifeq L_020b
+L_01b9:
+   .line 199
    aload 1
    aload 7
    checkcast com/anatawa12/jasm/tree/TableSwitchInsn
@@ -2135,8 +2157,8 @@ L_01ff:
    iadd
    iconst_1
    isub
-L_020f:
-   .line 208
+L_01c9:
+   .line 200
    aload 6
    aload 7
    checkcast com/anatawa12/jasm/tree/TableSwitchInsn
@@ -2156,7 +2178,7 @@ L_020f:
    astore 11
    iconst_0
    istore 12
-L_0224:
+L_01de:
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object org/objectweb/asm/MethodVisitor
@@ -2180,20 +2202,20 @@ L_0224:
    .end stack
    iload 12
    iload 10
-   if_icmpge L_0244
+   if_icmpge L_01fe
    aload 11
    iload 12
    iload 12
    istore 13
    istore 20
    astore 19
-L_022f:
-   .var 13 is it I from L_022f to L_023c
+L_01e9:
+   .var 13 is it I from L_01e9 to L_01f6
    iconst_0
    istore 14
-L_0232:
-   .line 208
-   .var 14 is "\$i\$a\$-<init>-Assembler\$assembleCode\$2" I from L_0232 to L_023c
+L_01ec:
+   .line 200
+   .var 14 is "\$i\$a\$-<init>-Assembler\$assembleCode\$2" I from L_01ec to L_01f6
    aload 6
    aload 7
    checkcast com/anatawa12/jasm/tree/TableSwitchInsn
@@ -2202,15 +2224,15 @@ L_0232:
    invokeinterface java/util/List/get (I)Ljava/lang/Object;
    checkcast com/anatawa12/jasm/tree/LabelName
    invokevirtual com/anatawa12/jasm/assembler/Assembler$LabelTable/get (Lcom/anatawa12/jasm/tree/LabelName;)Lorg/objectweb/asm/Label;
-L_023c:
+L_01f6:
    astore 21
    aload 19
    iload 20
    aload 21
    aastore
    iinc 12 1
-   goto L_0224
-L_0244:
+   goto L_01de
+L_01fe:
    .stack use locals
    .end stack
    aload 11
@@ -2220,12 +2242,12 @@ L_0244:
    iload 17
    aload 18
    aload 19
-L_024d:
-   .line 207
+L_0207:
+   .line 199
    invokevirtual org/objectweb/asm/MethodVisitor/visitTableSwitchInsn "(IILorg/objectweb/asm/Label;[Lorg/objectweb/asm/Label;)V"
-   goto L_0308
-L_0251:
-   .line 210
+   goto L_02cf
+L_020b:
+   .line 202
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object org/objectweb/asm/MethodVisitor
@@ -2240,17 +2262,17 @@ L_0251:
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/LookupSwitchInsn
-   ifeq L_02d2
-L_0257:
-   .line 211
+   ifeq L_028c
+L_0211:
+   .line 203
    aload 1
    aload 6
    aload 7
    checkcast com/anatawa12/jasm/tree/LookupSwitchInsn
    invokevirtual com/anatawa12/jasm/tree/LookupSwitchInsn/getDflt ()Lcom/anatawa12/jasm/tree/LabelName;
    invokevirtual com/anatawa12/jasm/assembler/Assembler$LabelTable/get (Lcom/anatawa12/jasm/tree/LabelName;)Lorg/objectweb/asm/Label;
-L_025f:
-   .line 212
+L_0219:
+   .line 204
    aload 7
    checkcast com/anatawa12/jasm/tree/LookupSwitchInsn
    invokevirtual com/anatawa12/jasm/tree/LookupSwitchInsn/getPairs ()Ljava/util/List;
@@ -2263,7 +2285,7 @@ L_025f:
    astore 11
    iconst_0
    istore 12
-L_026d:
+L_0227:
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object org/objectweb/asm/MethodVisitor
@@ -2285,20 +2307,20 @@ L_026d:
    .end stack
    iload 12
    iload 10
-   if_icmpge L_028e
+   if_icmpge L_0248
    aload 11
    iload 12
    iload 12
    istore 13
    istore 18
    astore 17
-L_0278:
-   .var 13 is it I from L_0278 to L_0286
+L_0232:
+   .var 13 is it I from L_0232 to L_0240
    iconst_0
    istore 14
-L_027b:
-   .line 212
-   .var 14 is "\$i\$a\$-<init>-Assembler\$assembleCode\$3" I from L_027b to L_0286
+L_0235:
+   .line 204
+   .var 14 is "\$i\$a\$-<init>-Assembler\$assembleCode\$3" I from L_0235 to L_0240
    aload 7
    checkcast com/anatawa12/jasm/tree/LookupSwitchInsn
    invokevirtual com/anatawa12/jasm/tree/LookupSwitchInsn/getPairs ()Ljava/util/List;
@@ -2308,15 +2330,15 @@ L_027b:
    invokevirtual kotlin/Pair/getFirst ()Ljava/lang/Object;
    checkcast java/lang/Number
    invokevirtual java/lang/Number/intValue ()I
-L_0286:
+L_0240:
    istore 19
    aload 17
    iload 18
    iload 19
    iastore
    iinc 12 1
-   goto L_026d
-L_028e:
+   goto L_0227
+L_0248:
    .stack use locals
    .end stack
    aload 11
@@ -2324,8 +2346,8 @@ L_028e:
    aload 15
    aload 16
    aload 17
-L_0295:
-   .line 213
+L_024f:
+   .line 205
    aload 7
    checkcast com/anatawa12/jasm/tree/LookupSwitchInsn
    invokevirtual com/anatawa12/jasm/tree/LookupSwitchInsn/getPairs ()Ljava/util/List;
@@ -2339,7 +2361,7 @@ L_0295:
    astore 11
    iconst_0
    istore 12
-L_02a4:
+L_025e:
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object org/objectweb/asm/MethodVisitor
@@ -2362,20 +2384,20 @@ L_02a4:
    .end stack
    iload 12
    iload 10
-   if_icmpge L_02c6
+   if_icmpge L_0280
    aload 11
    iload 12
    iload 12
    istore 13
    istore 19
    astore 18
-L_02af:
-   .var 13 is it I from L_02af to L_02be
+L_0269:
+   .var 13 is it I from L_0269 to L_0278
    iconst_0
    istore 14
-L_02b2:
-   .line 213
-   .var 14 is "\$i\$a\$-<init>-Assembler\$assembleCode\$4" I from L_02b2 to L_02be
+L_026c:
+   .line 205
+   .var 14 is "\$i\$a\$-<init>-Assembler\$assembleCode\$4" I from L_026c to L_0278
    aload 6
    aload 7
    checkcast com/anatawa12/jasm/tree/LookupSwitchInsn
@@ -2386,15 +2408,15 @@ L_02b2:
    invokevirtual kotlin/Pair/getSecond ()Ljava/lang/Object;
    checkcast com/anatawa12/jasm/tree/LabelName
    invokevirtual com/anatawa12/jasm/assembler/Assembler$LabelTable/get (Lcom/anatawa12/jasm/tree/LabelName;)Lorg/objectweb/asm/Label;
-L_02be:
+L_0278:
    astore 20
    aload 18
    iload 19
    aload 20
    aastore
    iinc 12 1
-   goto L_02a4
-L_02c6:
+   goto L_025e
+L_0280:
    .stack use locals
    .end stack
    aload 11
@@ -2403,12 +2425,12 @@ L_02c6:
    aload 16
    aload 17
    aload 18
-L_02ce:
-   .line 211
+L_0288:
+   .line 203
    invokevirtual org/objectweb/asm/MethodVisitor/visitLookupSwitchInsn "(Lorg/objectweb/asm/Label;[I[Lorg/objectweb/asm/Label;)V"
-   goto L_0308
-L_02d2:
-   .line 216
+   goto L_02cf
+L_028c:
+   .line 208
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object org/objectweb/asm/MethodVisitor
@@ -2423,9 +2445,9 @@ L_02d2:
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/MultiANewArrayInsn
-   ifeq L_02e3
-L_02d8:
-   .line 217
+   ifeq L_029d
+L_0292:
+   .line 209
    aload 1
    aload 7
    checkcast com/anatawa12/jasm/tree/MultiANewArrayInsn
@@ -2434,57 +2456,339 @@ L_02d8:
    checkcast com/anatawa12/jasm/tree/MultiANewArrayInsn
    invokevirtual com/anatawa12/jasm/tree/MultiANewArrayInsn/getDims ()I
    invokevirtual org/objectweb/asm/MethodVisitor/visitMultiANewArrayInsn (Ljava/lang/String;I)V
-   goto L_0308
-L_02e3:
-   .line 220
+   goto L_02cf
+L_029d:
+   .line 212
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/LocalVar
+   ifeq L_02a4
+   goto L_02cf
+L_02a4:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/TryCatch
+   ifeq L_02aa
+   goto L_02cf
+L_02aa:
    .stack use locals
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/StackLimit
-   ifeq L_02ea
-   goto L_0308
-L_02ea:
+   ifeq L_02b0
+   goto L_02cf
+L_02b0:
    .stack use locals
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/LocalLimit
-   ifeq L_02f0
-   goto L_0308
-L_02f0:
+   ifeq L_02b6
+   goto L_02cf
+L_02b6:
    .stack use locals
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/Throws
-   ifeq L_02f6
-   goto L_0308
-L_02f6:
+   ifeq L_02bc
+   goto L_02cf
+L_02bc:
+   .line 213
    .stack use locals
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/MethodSignature
-   ifeq L_02fc
-   goto L_0308
-L_02fc:
+   ifeq L_02c3
+   goto L_02cf
+L_02c3:
    .stack use locals
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/MethodDeprecated
-   ifeq L_0302
-   goto L_0308
-L_0302:
+   ifeq L_02c9
+   goto L_02cf
+L_02c9:
    .stack use locals
    .end stack
    aload 9
    instanceof com/anatawa12/jasm/tree/MethodAnnotation
-   ifeq L_0308
-   goto L_0308
-L_0308:
+   ifeq L_02cf
+   goto L_02cf
+L_02cf:
    .line 141
    .stack use locals
    .end stack
    goto L_0014
-L_030d:
+L_02d4:
+   .line 216
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Assembler
+      locals Object org/objectweb/asm/MethodVisitor
+      locals Object java/util/List
+      locals Integer
+      locals Integer
+      locals Object java/util/List
+      locals Object com/anatawa12/jasm/assembler/Assembler$LabelTable
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   aload 2
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 8
+L_02da:
+   .stack use locals
+   .end stack
+   aload 8
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_03b3
+   aload 8
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast com/anatawa12/jasm/tree/MethodStatement
+   astore 7
+L_02e3:
+   .line 217
+   .var 7 is statement Lcom/anatawa12/jasm/tree/MethodStatement; from L_02e3 to L_03ae
+   aload 7
+   astore 9
+L_02e7:
+   .line 218
+   aload 9
+   instanceof com/anatawa12/jasm/tree/LocalVar
+   ifeq L_030b
+L_02ec:
+   .line 219
+   aload 1
+   aload 7
+   checkcast com/anatawa12/jasm/tree/LocalVar
+   invokevirtual com/anatawa12/jasm/tree/LocalVar/getName ()Ljava/lang/String;
+   aload 7
+   checkcast com/anatawa12/jasm/tree/LocalVar
+   invokevirtual com/anatawa12/jasm/tree/LocalVar/getDescriptor ()Ljava/lang/String;
+   aload 7
+   checkcast com/anatawa12/jasm/tree/LocalVar
+   invokevirtual com/anatawa12/jasm/tree/LocalVar/getSignature ()Ljava/lang/String;
+L_02f8:
+   .line 220
+   aload 6
+   aload 7
+   checkcast com/anatawa12/jasm/tree/LocalVar
+   invokevirtual com/anatawa12/jasm/tree/LocalVar/getFrom ()Lcom/anatawa12/jasm/tree/LabelName;
+   invokevirtual com/anatawa12/jasm/assembler/Assembler$LabelTable/get (Lcom/anatawa12/jasm/tree/LabelName;)Lorg/objectweb/asm/Label;
+   aload 6
+   aload 7
+   checkcast com/anatawa12/jasm/tree/LocalVar
+   invokevirtual com/anatawa12/jasm/tree/LocalVar/getTo ()Lcom/anatawa12/jasm/tree/LabelName;
+   invokevirtual com/anatawa12/jasm/assembler/Assembler$LabelTable/get (Lcom/anatawa12/jasm/tree/LabelName;)Lorg/objectweb/asm/Label;
+   aload 7
+   checkcast com/anatawa12/jasm/tree/LocalVar
+   invokevirtual com/anatawa12/jasm/tree/LocalVar/getVariable ()I
+L_0307:
+   .line 219
+   invokevirtual org/objectweb/asm/MethodVisitor/visitLocalVariable (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/objectweb/asm/Label;Lorg/objectweb/asm/Label;I)V
+   goto L_03ae
+L_030b:
+   .line 222
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Assembler
+      locals Object org/objectweb/asm/MethodVisitor
+      locals Object java/util/List
+      locals Integer
+      locals Integer
+      locals Object java/util/List
+      locals Object com/anatawa12/jasm/assembler/Assembler$LabelTable
+      locals Object com/anatawa12/jasm/tree/MethodStatement
+      locals Object java/util/Iterator
+      locals Object com/anatawa12/jasm/tree/MethodStatement
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/TryCatch
+   ifeq L_032c
+L_0311:
    .line 223
+   aload 1
+   aload 6
+   aload 7
+   checkcast com/anatawa12/jasm/tree/TryCatch
+   invokevirtual com/anatawa12/jasm/tree/TryCatch/getFrom ()Lcom/anatawa12/jasm/tree/LabelName;
+   invokevirtual com/anatawa12/jasm/assembler/Assembler$LabelTable/get (Lcom/anatawa12/jasm/tree/LabelName;)Lorg/objectweb/asm/Label;
+   aload 6
+   aload 7
+   checkcast com/anatawa12/jasm/tree/TryCatch
+   invokevirtual com/anatawa12/jasm/tree/TryCatch/getTo ()Lcom/anatawa12/jasm/tree/LabelName;
+   invokevirtual com/anatawa12/jasm/assembler/Assembler$LabelTable/get (Lcom/anatawa12/jasm/tree/LabelName;)Lorg/objectweb/asm/Label;
+L_031e:
+   .line 224
+   aload 6
+   aload 7
+   checkcast com/anatawa12/jasm/tree/TryCatch
+   invokevirtual com/anatawa12/jasm/tree/TryCatch/getUsing ()Lcom/anatawa12/jasm/tree/LabelName;
+   invokevirtual com/anatawa12/jasm/assembler/Assembler$LabelTable/get (Lcom/anatawa12/jasm/tree/LabelName;)Lorg/objectweb/asm/Label;
+   aload 7
+   checkcast com/anatawa12/jasm/tree/TryCatch
+   invokevirtual com/anatawa12/jasm/tree/TryCatch/getException ()Ljava/lang/String;
+L_0328:
+   .line 223
+   invokevirtual org/objectweb/asm/MethodVisitor/visitTryCatchBlock (Lorg/objectweb/asm/Label;Lorg/objectweb/asm/Label;Lorg/objectweb/asm/Label;Ljava/lang/String;)V
+   goto L_03ae
+L_032c:
+   .line 226
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/LabelDefinition
+   ifeq L_0333
+   goto L_03ae
+L_0333:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/StackFrame
+   ifeq L_0339
+   goto L_03ae
+L_0339:
+   .line 227
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/Insn
+   ifeq L_0340
+   goto L_03ae
+L_0340:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/IntInsn
+   ifeq L_0346
+   goto L_03ae
+L_0346:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/VarInsn
+   ifeq L_034c
+   goto L_03ae
+L_034c:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/TypeInsn
+   ifeq L_0352
+   goto L_03ae
+L_0352:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/FieldInsn
+   ifeq L_0358
+   goto L_03ae
+L_0358:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/MethodInsn
+   ifeq L_035e
+   goto L_03ae
+L_035e:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/InvokeDynamicInsn
+   ifeq L_0364
+   goto L_03ae
+L_0364:
+   .line 228
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/JumpInsn
+   ifeq L_036b
+   goto L_03ae
+L_036b:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/LdcInsn
+   ifeq L_0371
+   goto L_03ae
+L_0371:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/IincInsn
+   ifeq L_0377
+   goto L_03ae
+L_0377:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/TableSwitchInsn
+   ifeq L_037d
+   goto L_03ae
+L_037d:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/LookupSwitchInsn
+   ifeq L_0383
+   goto L_03ae
+L_0383:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/MultiANewArrayInsn
+   ifeq L_0389
+   goto L_03ae
+L_0389:
+   .line 229
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/StackLimit
+   ifeq L_0390
+   goto L_03ae
+L_0390:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/LocalLimit
+   ifeq L_0396
+   goto L_03ae
+L_0396:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/Throws
+   ifeq L_039c
+   goto L_03ae
+L_039c:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/MethodSignature
+   ifeq L_03a2
+   goto L_03ae
+L_03a2:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/MethodDeprecated
+   ifeq L_03a8
+   goto L_03ae
+L_03a8:
+   .stack use locals
+   .end stack
+   aload 9
+   instanceof com/anatawa12/jasm/tree/MethodAnnotation
+   ifeq L_03ae
+   goto L_03ae
+L_03ae:
+   .line 216
+   .stack use locals
+   .end stack
+   goto L_02da
+L_03b3:
+   .line 232
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object org/objectweb/asm/MethodVisitor
@@ -2500,23 +2804,23 @@ L_030d:
    iload 3
    iload 4
    invokevirtual org/objectweb/asm/MethodVisitor/visitMaxs (II)V
-L_0314:
-   .line 224
+L_03ba:
+   .line 233
    return
-L_0317:
+L_03bd:
 .end method
 
 .method private assembleLdcConstant (Lcom/anatawa12/jasm/tree/BranchNode;)Ljava/lang/Object;
    .limit stack 3
    .limit local 5
 L_0000:
-   .line 226
+   .line 235
    .var 0 is this Lcom/anatawa12/jasm/assembler/Assembler; from L_0000 to L_0049
    .var 1 is cst Lcom/anatawa12/jasm/tree/BranchNode; from L_0000 to L_0049
    aload 1
    astore 2
 L_0004:
-   .line 227
+   .line 236
    aload 2
    instanceof com/anatawa12/jasm/tree/Value
    ifeq L_000d
@@ -2525,7 +2829,7 @@ L_0004:
    invokevirtual com/anatawa12/jasm/tree/Value/getValue ()Ljava/lang/Object;
    goto L_0044
 L_000d:
-   .line 228
+   .line 237
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object com/anatawa12/jasm/tree/BranchNode
@@ -2540,7 +2844,7 @@ L_000d:
    invokestatic org/objectweb/asm/Type/getType (Ljava/lang/String;)Lorg/objectweb/asm/Type;
    goto L_0044
 L_0018:
-   .line 229
+   .line 238
    .stack use locals
    .end stack
    aload 2
@@ -2552,7 +2856,7 @@ L_0018:
    invokestatic org/objectweb/asm/Type/getType (Ljava/lang/String;)Lorg/objectweb/asm/Type;
    goto L_0044
 L_0023:
-   .line 230
+   .line 239
    .stack use locals
    .end stack
    aload 2
@@ -2564,7 +2868,7 @@ L_0023:
    invokespecial com/anatawa12/jasm/assembler/Assembler/assembleHandle (Lcom/anatawa12/jasm/tree/Handle;)Lorg/objectweb/asm/Handle;
    goto L_0044
 L_002e:
-   .line 231
+   .line 240
    .stack use locals
    .end stack
    new java/lang/StringBuilder
@@ -2587,7 +2891,7 @@ L_002e:
    checkcast java/lang/Throwable
    athrow
 L_0044:
-   .line 232
+   .line 241
    .stack use locals
       stacks Object java/lang/Object
    .end stack
@@ -2599,7 +2903,7 @@ L_0049:
    .limit stack 7
    .limit local 3
 L_0000:
-   .line 235
+   .line 244
    .var 0 is this Lcom/anatawa12/jasm/assembler/Assembler; from L_0000 to L_004f
    .var 1 is bsm Lcom/anatawa12/jasm/tree/Handle; from L_0000 to L_004f
    aload 1
@@ -2620,7 +2924,7 @@ L_0000:
       L_0031
       default: L_0036
 L_0009:
-   .line 236
+   .line 245
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object com/anatawa12/jasm/tree/Handle
@@ -2628,49 +2932,49 @@ L_0009:
    iconst_1
    goto L_003c
 L_000e:
-   .line 237
+   .line 246
    .stack use locals
    .end stack
    iconst_2
    goto L_003c
 L_0013:
-   .line 238
+   .line 247
    .stack use locals
    .end stack
    iconst_3
    goto L_003c
 L_0018:
-   .line 239
+   .line 248
    .stack use locals
    .end stack
    iconst_4
    goto L_003c
 L_001d:
-   .line 240
+   .line 249
    .stack use locals
    .end stack
    iconst_5
    goto L_003c
 L_0022:
-   .line 241
+   .line 250
    .stack use locals
    .end stack
    bipush 6
    goto L_003c
 L_0027:
-   .line 242
+   .line 251
    .stack use locals
    .end stack
    bipush 7
    goto L_003c
 L_002c:
-   .line 243
+   .line 252
    .stack use locals
    .end stack
    bipush 8
    goto L_003c
 L_0031:
-   .line 244
+   .line 253
    .stack use locals
    .end stack
    bipush 9
@@ -2683,13 +2987,13 @@ L_0036:
    invokespecial kotlin/NoWhenBranchMatchedException/<init> ()V
    athrow
 L_003c:
-   .line 235
+   .line 244
    .stack use locals
       stacks Integer
    .end stack
    istore 2
 L_0040:
-   .line 246
+   .line 255
    .var 2 is type I from L_0040 to L_004f
    new org/objectweb/asm/Handle
    dup
@@ -2712,7 +3016,7 @@ L_004f:
    .limit stack 3
    .limit local 12
 L_0000:
-   .line 250
+   .line 259
    .var 0 is this Lcom/anatawa12/jasm/assembler/Assembler; from L_0000 to L_0082
    .var 1 is locals Ljava/util/List; from L_0000 to L_0082
    .var 2 is table Lcom/anatawa12/jasm/assembler/Assembler$LabelTable; from L_0000 to L_0082
@@ -2747,7 +3051,7 @@ L_0015:
    iconst_0
    istore 7
 L_0018:
-   .line 251
+   .line 260
    .var 7 is "\$i\$a\$-<init>-Assembler\$assembleFrame\$1" I from L_0018 to L_0076
    aload 1
    iload 6
@@ -2755,7 +3059,7 @@ L_0018:
    checkcast com/anatawa12/jasm/tree/StackFrameType
    astore 8
 L_001f:
-   .line 252
+   .line 261
    .var 8 is local Lcom/anatawa12/jasm/tree/StackFrameType; from L_001f to L_0072
    aload 8
    instanceof com/anatawa12/jasm/tree/StackFrameType$Top
@@ -2763,7 +3067,7 @@ L_001f:
    getstatic org/objectweb/asm/Opcodes/TOP Ljava/lang/Integer;
    goto L_0072
 L_0026:
-   .line 253
+   .line 262
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object java/util/List
@@ -2783,7 +3087,7 @@ L_0026:
    getstatic org/objectweb/asm/Opcodes/INTEGER Ljava/lang/Integer;
    goto L_0072
 L_002e:
-   .line 254
+   .line 263
    .stack use locals
    .end stack
    aload 8
@@ -2792,7 +3096,7 @@ L_002e:
    getstatic org/objectweb/asm/Opcodes/FLOAT Ljava/lang/Integer;
    goto L_0072
 L_0036:
-   .line 255
+   .line 264
    .stack use locals
    .end stack
    aload 8
@@ -2801,7 +3105,7 @@ L_0036:
    getstatic org/objectweb/asm/Opcodes/LONG Ljava/lang/Integer;
    goto L_0072
 L_003e:
-   .line 256
+   .line 265
    .stack use locals
    .end stack
    aload 8
@@ -2810,7 +3114,7 @@ L_003e:
    getstatic org/objectweb/asm/Opcodes/DOUBLE Ljava/lang/Integer;
    goto L_0072
 L_0046:
-   .line 257
+   .line 266
    .stack use locals
    .end stack
    aload 8
@@ -2819,7 +3123,7 @@ L_0046:
    getstatic org/objectweb/asm/Opcodes/NULL Ljava/lang/Integer;
    goto L_0072
 L_004e:
-   .line 258
+   .line 267
    .stack use locals
    .end stack
    aload 8
@@ -2828,7 +3132,7 @@ L_004e:
    getstatic org/objectweb/asm/Opcodes/UNINITIALIZED_THIS Ljava/lang/Integer;
    goto L_0072
 L_0056:
-   .line 259
+   .line 268
    .stack use locals
    .end stack
    aload 8
@@ -2839,7 +3143,7 @@ L_0056:
    invokevirtual com/anatawa12/jasm/tree/StackFrameType$Object/getInternalName ()Ljava/lang/String;
    goto L_0072
 L_0060:
-   .line 260
+   .line 269
    .stack use locals
    .end stack
    aload 8
@@ -2859,7 +3163,7 @@ L_006c:
    invokespecial kotlin/NoWhenBranchMatchedException/<init> ()V
    athrow
 L_0072:
-   .line 261
+   .line 270
    .stack use locals
       stacks Object java/lang/Object
    .end stack
@@ -2890,19 +3194,19 @@ L_0082:
    .limit stack 7
    .limit local 11
 L_0000:
-   .line 266
+   .line 275
    .var 0 is this Lcom/anatawa12/jasm/assembler/Assembler; from L_0000 to L_00f5
    .var 1 is field Lcom/anatawa12/jasm/tree/FieldBlock; from L_0000 to L_00f5
    aconst_null
    checkcast java/lang/String
    astore 2
 L_0005:
-   .line 267
+   .line 276
    .var 2 is signature Ljava/lang/String; from L_0005 to L_00f5
    iconst_0
    istore 3
 L_0009:
-   .line 268
+   .line 277
    .var 3 is isDeprecated Z from L_0009 to L_00f5
    iconst_0
    istore 5
@@ -2911,10 +3215,10 @@ L_0009:
    invokespecial java/util/ArrayList/<init> ()V
    checkcast java/util/List
 L_0011:
-   .line 268
+   .line 277
    astore 4
 L_0014:
-   .line 269
+   .line 278
    .var 4 is annotations Ljava/util/List; from L_0014 to L_00f5
    aload 1
    invokevirtual com/anatawa12/jasm/tree/FieldBlock/getAttributes ()Ljava/util/List;
@@ -2938,12 +3242,12 @@ L_001a:
    checkcast com/anatawa12/jasm/tree/FieldAttributes
    astore 5
 L_0023:
-   .line 270
+   .line 279
    .var 5 is attribute Lcom/anatawa12/jasm/tree/FieldAttributes; from L_0023 to L_004e
    aload 5
    astore 7
 L_0027:
-   .line 271
+   .line 280
    aload 7
    instanceof com/anatawa12/jasm/tree/FieldDeprecated
    ifeq L_002f
@@ -2951,7 +3255,7 @@ L_0027:
    istore 3
    goto L_004e
 L_002f:
-   .line 272
+   .line 281
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object com/anatawa12/jasm/tree/FieldBlock
@@ -2971,7 +3275,7 @@ L_002f:
    astore 2
    goto L_004e
 L_003a:
-   .line 273
+   .line 282
    .stack use locals
    .end stack
    aload 7
@@ -2992,12 +3296,12 @@ L_003a:
    pop
    goto L_004e
 L_004e:
-   .line 269
+   .line 278
    .stack use locals
    .end stack
    goto L_001a
 L_0053:
-   .line 277
+   .line 286
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object com/anatawa12/jasm/tree/FieldBlock
@@ -3014,7 +3318,7 @@ L_0053:
    invokevirtual com/anatawa12/jasm/tree/FieldBlock/getAccessFlags ()Lcom/anatawa12/jasm/tree/AccessFlags;
    invokespecial com/anatawa12/jasm/assembler/Assembler/assembleAccess (Lcom/anatawa12/jasm/tree/AccessFlags;)I
 L_005c:
-   .line 278
+   .line 287
    aload 1
    invokevirtual com/anatawa12/jasm/tree/FieldBlock/getName ()Ljava/lang/String;
    aload 1
@@ -3038,7 +3342,7 @@ L_0069:
    pop
    aconst_null
 L_006d:
-   .line 277
+   .line 286
    .stack use locals
       stacks Object org/objectweb/asm/ClassWriter
       stacks Integer
@@ -3050,7 +3354,7 @@ L_006d:
    invokevirtual org/objectweb/asm/ClassWriter/visitField (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Lorg/objectweb/asm/FieldVisitor;
    astore 5
 L_0072:
-   .line 280
+   .line 289
    .var 5 is fieldWriter Lorg/objectweb/asm/FieldVisitor; from L_0072 to L_00f5
    iload 3
    ifeq L_007a
@@ -3059,7 +3363,7 @@ L_0072:
    checkcast org/objectweb/asm/Attribute
    invokevirtual org/objectweb/asm/FieldVisitor/visitAttribute (Lorg/objectweb/asm/Attribute;)V
 L_007a:
-   .line 282
+   .line 291
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object com/anatawa12/jasm/tree/FieldBlock
@@ -3091,18 +3395,18 @@ L_0080:
    checkcast com/anatawa12/jasm/tree/Annotation
    astore 6
 L_0089:
-   .line 283
+   .line 292
    .var 6 is annotation Lcom/anatawa12/jasm/tree/Annotation; from L_0089 to L_00e8
    aload 6
    invokevirtual com/anatawa12/jasm/tree/Annotation/getType ()Lcom/anatawa12/jasm/tree/AnnotationType;
    astore 8
 L_008e:
-   .line 284
+   .line 293
    aload 8
    instanceof com/anatawa12/jasm/tree/AnnotationType$Visible
    ifeq L_00aa
 L_0093:
-   .line 285
+   .line 294
    aload 0
    aload 6
    aload 5
@@ -3125,7 +3429,7 @@ L_0093:
    invokespecial com/anatawa12/jasm/assembler/Assembler/assembleAnnotation (Lcom/anatawa12/jasm/tree/Annotation;Lorg/objectweb/asm/AnnotationVisitor;)V
    goto L_00e8
 L_00aa:
-   .line 287
+   .line 296
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object com/anatawa12/jasm/tree/FieldBlock
@@ -3141,7 +3445,7 @@ L_00aa:
    instanceof com/anatawa12/jasm/tree/AnnotationType$Invisible
    ifeq L_00c7
 L_00b0:
-   .line 288
+   .line 297
    aload 0
    aload 6
    aload 5
@@ -3164,7 +3468,7 @@ L_00b0:
    invokespecial com/anatawa12/jasm/assembler/Assembler/assembleAnnotation (Lcom/anatawa12/jasm/tree/Annotation;Lorg/objectweb/asm/AnnotationVisitor;)V
    goto L_00e8
 L_00c7:
-   .line 290
+   .line 299
    .stack use locals
    .end stack
    aload 8
@@ -3172,7 +3476,7 @@ L_00c7:
    ifeq L_00ce
    goto L_00db
 L_00ce:
-   .line 291
+   .line 300
    .stack use locals
    .end stack
    aload 8
@@ -3180,7 +3484,7 @@ L_00ce:
    ifeq L_00d5
    goto L_00db
 L_00d5:
-   .line 292
+   .line 301
    .stack use locals
    .end stack
    aload 8
@@ -3201,12 +3505,12 @@ L_00db:
    checkcast java/lang/Throwable
    athrow
 L_00e8:
-   .line 282
+   .line 291
    .stack use locals
    .end stack
    goto L_0080
 L_00ed:
-   .line 296
+   .line 305
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object com/anatawa12/jasm/tree/FieldBlock
@@ -3220,7 +3524,7 @@ L_00ed:
    aload 5
    invokevirtual org/objectweb/asm/FieldVisitor/visitEnd ()V
 L_00f2:
-   .line 297
+   .line 306
    return
 L_00f5:
 .end method
@@ -3229,7 +3533,7 @@ L_00f5:
    .limit stack 6
    .limit local 5
 L_0000:
-   .line 300
+   .line 309
    .var 0 is this Lcom/anatawa12/jasm/assembler/Assembler; from L_0000 to L_006a
    .var 1 is key Ljava/lang/String; from L_0000 to L_006a
    .var 2 is value Lcom/anatawa12/jasm/tree/AnnotationValue; from L_0000 to L_006a
@@ -3237,7 +3541,7 @@ L_0000:
    aload 2
    astore 4
 L_0004:
-   .line 301
+   .line 310
    aload 4
    instanceof com/anatawa12/jasm/tree/Value
    ifeq L_0010
@@ -3249,7 +3553,7 @@ L_0004:
    invokevirtual org/objectweb/asm/AnnotationVisitor/visit (Ljava/lang/String;Ljava/lang/Object;)V
    goto L_0065
 L_0010:
-   .line 302
+   .line 311
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object java/lang/String
@@ -3280,7 +3584,7 @@ L_0010:
    invokevirtual org/objectweb/asm/AnnotationVisitor/visitEnum (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
    goto L_0065
 L_0029:
-   .line 303
+   .line 312
    .stack use locals
    .end stack
    aload 4
@@ -3295,7 +3599,7 @@ L_0029:
    invokevirtual org/objectweb/asm/AnnotationVisitor/visit (Ljava/lang/String;Ljava/lang/Object;)V
    goto L_0065
 L_0037:
-   .line 304
+   .line 313
    .stack use locals
    .end stack
    aload 4
@@ -3325,7 +3629,7 @@ L_0037:
    invokespecial com/anatawa12/jasm/assembler/Assembler/assembleAnnotation (Lcom/anatawa12/jasm/tree/Annotation;Lorg/objectweb/asm/AnnotationVisitor;)V
    goto L_0065
 L_0054:
-   .line 305
+   .line 314
    .stack use locals
    .end stack
    aload 4
@@ -3343,7 +3647,7 @@ L_0054:
    invokespecial com/anatawa12/jasm/assembler/Assembler/assembleAnnotationArray (Lcom/anatawa12/jasm/tree/AnnotationArray;Lorg/objectweb/asm/AnnotationVisitor;)V
    goto L_0065
 L_0065:
-   .line 307
+   .line 316
    .stack use locals
    .end stack
    return
@@ -3354,7 +3658,7 @@ L_006a:
    .limit stack 4
    .limit local 7
 L_0000:
-   .line 310
+   .line 319
    .var 0 is this Lcom/anatawa12/jasm/assembler/Assembler; from L_0000 to L_0029
    .var 1 is annotation Lcom/anatawa12/jasm/tree/Annotation; from L_0000 to L_0029
    .var 2 is annotationWriter Lorg/objectweb/asm/AnnotationVisitor; from L_0000 to L_0029
@@ -3386,7 +3690,7 @@ L_0006:
    checkcast com/anatawa12/jasm/tree/AnnotationValue
    astore 6
 L_0017:
-   .line 311
+   .line 320
    .var 6 is value Lcom/anatawa12/jasm/tree/AnnotationValue; from L_0017 to L_001e
    .var 5 is name Ljava/lang/String; from L_0017 to L_001e
    aload 0
@@ -3395,16 +3699,16 @@ L_0017:
    aload 2
    invokespecial com/anatawa12/jasm/assembler/Assembler/assembleAnnotationValue (Ljava/lang/String;Lcom/anatawa12/jasm/tree/AnnotationValue;Lorg/objectweb/asm/AnnotationVisitor;)V
 L_001e:
-   .line 310
+   .line 319
    goto L_0006
 L_0021:
-   .line 313
+   .line 322
    .stack use locals
    .end stack
    aload 2
    invokevirtual org/objectweb/asm/AnnotationVisitor/visitEnd ()V
 L_0026:
-   .line 314
+   .line 323
    return
 L_0029:
 .end method
@@ -3413,7 +3717,7 @@ L_0029:
    .limit stack 4
    .limit local 5
 L_0000:
-   .line 317
+   .line 326
    .var 0 is this Lcom/anatawa12/jasm/assembler/Assembler; from L_0000 to L_0020
    .var 1 is array Lcom/anatawa12/jasm/tree/AnnotationArray; from L_0000 to L_0020
    .var 2 is annotationWriter Lorg/objectweb/asm/AnnotationVisitor; from L_0000 to L_0020
@@ -3436,7 +3740,7 @@ L_0005:
    checkcast com/anatawa12/jasm/tree/AnnotationValue
    astore 3
 L_000e:
-   .line 318
+   .line 327
    .var 3 is value Lcom/anatawa12/jasm/tree/AnnotationValue; from L_000e to L_0015
    aload 0
    aconst_null
@@ -3444,16 +3748,16 @@ L_000e:
    aload 2
    invokespecial com/anatawa12/jasm/assembler/Assembler/assembleAnnotationValue (Ljava/lang/String;Lcom/anatawa12/jasm/tree/AnnotationValue;Lorg/objectweb/asm/AnnotationVisitor;)V
 L_0015:
-   .line 317
+   .line 326
    goto L_0005
 L_0018:
-   .line 320
+   .line 329
    .stack use locals
    .end stack
    aload 2
    invokevirtual org/objectweb/asm/AnnotationVisitor/visitEnd ()V
 L_001d:
-   .line 321
+   .line 330
    return
 L_0020:
 .end method
@@ -3470,7 +3774,7 @@ L_0000:
    ldc 0
    istore 2
 L_0003:
-   .line 323
+   .line 332
    .var 2 is $i$f$firstOrNull I from L_0003 to L_005c
    aload 0
    aload 1
@@ -3482,7 +3786,7 @@ L_0009:
    iconst_0
    istore 5
 L_000c:
-   .line 368
+   .line 377
    .var 5 is $i$f$firstOrNull I from L_000c to L_0059
    aload 4
    dup
@@ -3509,7 +3813,7 @@ L_001a:
    iconst_0
    istore 7
 L_001d:
-   .line 369
+   .line 378
    .var 7 is $i$f$firstOrNull I from L_001d to L_0050
    aload 6
    invokeinterface java/lang/Iterable/iterator ()Ljava/util/Iterator;
@@ -3541,7 +3845,7 @@ L_002d:
    iconst_0
    istore 11
 L_0030:
-   .line 368
+   .line 377
    .var 11 is "\$i\$a\$-firstOrNull-Assembler\$firstOrNull\$2\$iv" I from L_0030 to L_0047
    aload 10
    iconst_3
@@ -3556,7 +3860,7 @@ L_003a:
    iconst_0
    istore 13
 L_003d:
-   .line 323
+   .line 332
    .var 13 is "\$i\$a\$-firstOrNull-Assembler\$firstOrNull\$1" I from L_003d to L_0040
    iconst_1
 L_0040:
@@ -3587,7 +3891,7 @@ L_0047:
    aload 9
    goto L_0050
 L_004c:
-   .line 370
+   .line 379
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object java/util/List
@@ -3609,10 +3913,10 @@ L_0050:
    invokestatic kotlin/jvm/internal/Intrinsics/reifiedOperationMarker (ILjava/lang/String;)V
    checkcast java/lang/Object
 L_0056:
-   .line 368
+   .line 377
    nop
 L_0059:
-   .line 323
+   .line 332
    areturn
 L_005c:
 .end method
@@ -3630,7 +3934,7 @@ L_0000:
    ldc 0
    istore 3
 L_0003:
-   .line 324
+   .line 333
    .var 3 is $i$f$firstOrNull I from L_0003 to L_004c
    aload 1
    dup
@@ -3655,7 +3959,7 @@ L_0011:
    iconst_0
    istore 5
 L_0014:
-   .line 371
+   .line 380
    .var 5 is $i$f$firstOrNull I from L_0014 to L_0043
    aload 4
    invokeinterface java/lang/Iterable/iterator ()Ljava/util/Iterator;
@@ -3685,7 +3989,7 @@ L_0024:
    iconst_0
    istore 9
 L_0027:
-   .line 324
+   .line 333
    .var 9 is "\$i\$a\$-firstOrNull-Assembler\$firstOrNull\$2" I from L_0027 to L_003a
    aload 8
    iconst_3
@@ -3723,7 +4027,7 @@ L_003a:
    aload 7
    goto L_0043
 L_003f:
-   .line 372
+   .line 381
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object java/util/List
@@ -3743,7 +4047,7 @@ L_0043:
    invokestatic kotlin/jvm/internal/Intrinsics/reifiedOperationMarker (ILjava/lang/String;)V
    checkcast java/lang/Object
 L_0049:
-   .line 324
+   .line 333
    areturn
 L_004c:
 .end method
@@ -3752,13 +4056,13 @@ L_004c:
    .limit stack 3
    .limit local 6
 L_0000:
-   .line 327
+   .line 336
    .var 0 is this Lcom/anatawa12/jasm/assembler/Assembler; from L_0000 to L_00c2
    .var 1 is accessFlags Lcom/anatawa12/jasm/tree/AccessFlags; from L_0000 to L_00c2
    iconst_0
    istore 2
 L_0004:
-   .line 328
+   .line 337
    .var 2 is access I from L_0004 to L_00c2
    aload 1
    invokevirtual com/anatawa12/jasm/tree/AccessFlags/getFlags ()Ljava/util/List;
@@ -3780,20 +4084,20 @@ L_000a:
    checkcast com/anatawa12/jasm/tree/AccessFlag
    astore 3
 L_0013:
-   .line 329
+   .line 338
    .var 3 is flag Lcom/anatawa12/jasm/tree/AccessFlag; from L_0013 to L_00ba
    iload 2
    aload 3
    astore 5
 L_0018:
-   .line 330
+   .line 339
    aload 5
    instanceof com/anatawa12/jasm/tree/AccessFlag$Public
    ifeq L_001f
    iconst_1
    goto L_00b5
 L_001f:
-   .line 331
+   .line 340
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object com/anatawa12/jasm/tree/AccessFlags
@@ -3809,7 +4113,7 @@ L_001f:
    iconst_2
    goto L_00b5
 L_0027:
-   .line 332
+   .line 341
    .stack use locals
       stacks Integer
    .end stack
@@ -3819,7 +4123,7 @@ L_0027:
    iconst_4
    goto L_00b5
 L_002f:
-   .line 333
+   .line 342
    .stack use locals
       stacks Integer
    .end stack
@@ -3829,7 +4133,7 @@ L_002f:
    bipush 8
    goto L_00b5
 L_0037:
-   .line 334
+   .line 343
    .stack use locals
       stacks Integer
    .end stack
@@ -3839,7 +4143,7 @@ L_0037:
    bipush 16
    goto L_00b5
 L_003f:
-   .line 335
+   .line 344
    .stack use locals
       stacks Integer
    .end stack
@@ -3849,7 +4153,7 @@ L_003f:
    bipush 32
    goto L_00b5
 L_0047:
-   .line 336
+   .line 345
    .stack use locals
       stacks Integer
    .end stack
@@ -3859,7 +4163,7 @@ L_0047:
    bipush 32
    goto L_00b5
 L_004f:
-   .line 337
+   .line 346
    .stack use locals
       stacks Integer
    .end stack
@@ -3869,7 +4173,7 @@ L_004f:
    bipush 64
    goto L_00b5
 L_0057:
-   .line 338
+   .line 347
    .stack use locals
       stacks Integer
    .end stack
@@ -3879,7 +4183,7 @@ L_0057:
    bipush 64
    goto L_00b5
 L_005f:
-   .line 339
+   .line 348
    .stack use locals
       stacks Integer
    .end stack
@@ -3889,7 +4193,7 @@ L_005f:
    sipush 128
    goto L_00b5
 L_0067:
-   .line 340
+   .line 349
    .stack use locals
       stacks Integer
    .end stack
@@ -3899,7 +4203,7 @@ L_0067:
    sipush 128
    goto L_00b5
 L_006f:
-   .line 341
+   .line 350
    .stack use locals
       stacks Integer
    .end stack
@@ -3909,7 +4213,7 @@ L_006f:
    sipush 256
    goto L_00b5
 L_0077:
-   .line 342
+   .line 351
    .stack use locals
       stacks Integer
    .end stack
@@ -3919,7 +4223,7 @@ L_0077:
    sipush 512
    goto L_00b5
 L_007f:
-   .line 343
+   .line 352
    .stack use locals
       stacks Integer
    .end stack
@@ -3929,7 +4233,7 @@ L_007f:
    sipush 1024
    goto L_00b5
 L_0087:
-   .line 344
+   .line 353
    .stack use locals
       stacks Integer
    .end stack
@@ -3939,7 +4243,7 @@ L_0087:
    sipush 2048
    goto L_00b5
 L_008f:
-   .line 345
+   .line 354
    .stack use locals
       stacks Integer
    .end stack
@@ -3949,7 +4253,7 @@ L_008f:
    sipush 4096
    goto L_00b5
 L_0097:
-   .line 346
+   .line 355
    .stack use locals
       stacks Integer
    .end stack
@@ -3959,7 +4263,7 @@ L_0097:
    sipush 8192
    goto L_00b5
 L_009f:
-   .line 347
+   .line 356
    .stack use locals
       stacks Integer
    .end stack
@@ -3969,7 +4273,7 @@ L_009f:
    sipush 16384
    goto L_00b5
 L_00a7:
-   .line 348
+   .line 357
    .stack use locals
       stacks Integer
    .end stack
@@ -3987,7 +4291,7 @@ L_00af:
    invokespecial kotlin/NoWhenBranchMatchedException/<init> ()V
    athrow
 L_00b5:
-   .line 329
+   .line 338
    .stack use locals
       stacks Integer
       stacks Integer
@@ -3995,10 +4299,10 @@ L_00b5:
    ior
    istore 2
 L_00ba:
-   .line 328
+   .line 337
    goto L_000a
 L_00bd:
-   .line 351
+   .line 360
    .stack
       locals Object com/anatawa12/jasm/assembler/Assembler
       locals Object com/anatawa12/jasm/tree/AccessFlags

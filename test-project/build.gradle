@@ -11,3 +11,10 @@ buildscript {
 }
 
 apply plugin: "com.anatawa12.jasm"
+
+task disassembleJasmMain(type: com.anatawa12.jasm.plugins.gradle.DisassembleToJasm) {
+    files = zipTree("${rootProject.projectDir}/build/libs/jasm-1.0-SNAPSHOT.jar").matching {
+        include "**/*.class"
+    }
+    outputTo = file("$projectDir/src/main/jasm")
+}

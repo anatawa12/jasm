@@ -1,0 +1,56 @@
+.bytecode 52.0
+.source "FieldAttributes.kt"
+.class public com/anatawa12/jasm/tree/FieldAttributes
+.super com/anatawa12/jasm/tree/BranchNode
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002\u0082\u0001\u0003\u0003\u0004\u0005¨\u0006\u0006"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/tree/FieldAttributes;"
+      s = "Lcom/anatawa12/jasm/tree/BranchNode;"
+      s = "()V"
+      s = "Lcom/anatawa12/jasm/tree/FieldDeprecated;"
+      s = "Lcom/anatawa12/jasm/tree/FieldSignature;"
+      s = "Lcom/anatawa12/jasm/tree/FieldAnnotation;"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method private <init> ()V
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 3
+   .var 0 is this Lcom/anatawa12/jasm/tree/FieldAttributes; from L_0000 to L_0005
+   aload 0
+   invokespecial com/anatawa12/jasm/tree/BranchNode/<init> ()V
+   return
+L_0005:
+.end method
+
+.method public <init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+   .limit stack 1
+   .limit local 2
+L_0000:
+   .line 3
+   .var 0 is this Lcom/anatawa12/jasm/tree/FieldAttributes; from L_0000 to L_0005
+   .var 1 is $constructor_marker Lkotlin/jvm/internal/DefaultConstructorMarker; from L_0000 to L_0005
+   aload 0
+   invokespecial com/anatawa12/jasm/tree/FieldAttributes/<init> ()V
+   return
+L_0005:
+.end method
+

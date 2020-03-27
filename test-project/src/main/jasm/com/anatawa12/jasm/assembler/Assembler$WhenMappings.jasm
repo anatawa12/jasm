@@ -1,0 +1,76 @@
+.bytecode 52.0
+.class public com/anatawa12/jasm/assembler/Assembler$WhenMappings
+.super java/lang/Object
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 3
+.end annotation
+
+.method static <clinit> ()V
+   .limit stack 3
+   .limit local 0
+   invokestatic com/anatawa12/jasm/tree/HandleType/values "()[Lcom/anatawa12/jasm/tree/HandleType;"
+   arraylength
+   newarray int
+   putstatic com/anatawa12/jasm/assembler/Assembler$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/assembler/Assembler$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/tree/HandleType/GetField Lcom/anatawa12/jasm/tree/HandleType;
+   invokevirtual com/anatawa12/jasm/tree/HandleType/ordinal ()I
+   iconst_1
+   iastore
+   getstatic com/anatawa12/jasm/assembler/Assembler$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/tree/HandleType/GetStatic Lcom/anatawa12/jasm/tree/HandleType;
+   invokevirtual com/anatawa12/jasm/tree/HandleType/ordinal ()I
+   iconst_2
+   iastore
+   getstatic com/anatawa12/jasm/assembler/Assembler$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/tree/HandleType/PutField Lcom/anatawa12/jasm/tree/HandleType;
+   invokevirtual com/anatawa12/jasm/tree/HandleType/ordinal ()I
+   iconst_3
+   iastore
+   getstatic com/anatawa12/jasm/assembler/Assembler$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/tree/HandleType/PutStatic Lcom/anatawa12/jasm/tree/HandleType;
+   invokevirtual com/anatawa12/jasm/tree/HandleType/ordinal ()I
+   iconst_4
+   iastore
+   getstatic com/anatawa12/jasm/assembler/Assembler$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/tree/HandleType/InvokeVirtual Lcom/anatawa12/jasm/tree/HandleType;
+   invokevirtual com/anatawa12/jasm/tree/HandleType/ordinal ()I
+   iconst_5
+   iastore
+   getstatic com/anatawa12/jasm/assembler/Assembler$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/tree/HandleType/InvokeStatic Lcom/anatawa12/jasm/tree/HandleType;
+   invokevirtual com/anatawa12/jasm/tree/HandleType/ordinal ()I
+   bipush 6
+   iastore
+   getstatic com/anatawa12/jasm/assembler/Assembler$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/tree/HandleType/InvokeSpecial Lcom/anatawa12/jasm/tree/HandleType;
+   invokevirtual com/anatawa12/jasm/tree/HandleType/ordinal ()I
+   bipush 7
+   iastore
+   getstatic com/anatawa12/jasm/assembler/Assembler$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/tree/HandleType/NewInvokeSpecial Lcom/anatawa12/jasm/tree/HandleType;
+   invokevirtual com/anatawa12/jasm/tree/HandleType/ordinal ()I
+   bipush 8
+   iastore
+   getstatic com/anatawa12/jasm/assembler/Assembler$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/tree/HandleType/InvokeInterface Lcom/anatawa12/jasm/tree/HandleType;
+   invokevirtual com/anatawa12/jasm/tree/HandleType/ordinal ()I
+   bipush 9
+   iastore
+   return
+.end method
+
+.field public $EnumSwitchMapping$0 "[I"
+.end field
+
