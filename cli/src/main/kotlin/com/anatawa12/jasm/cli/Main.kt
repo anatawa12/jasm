@@ -16,9 +16,9 @@ class Root : CliktCommand() {
 }
 
 class Assemble : CliktCommand(name = "assemble") {
-    val jasmFile by argument("jasm file")
+    val jasmFile by argument("<jasm file>")
         .file(mustExist = true, mustBeReadable = true, canBeDir = false)
-    val classFile by argument("output file")
+    val classFile by argument("<output file>")
         .file()
 
     override fun run() {
@@ -37,9 +37,9 @@ class Assemble : CliktCommand(name = "assemble") {
 }
 
 class Disassemble : CliktCommand(name = "disassemble") {
-    val classFile by argument("class file")
+    val classFile by argument("<class file>")
         .file(mustExist = true, mustBeReadable = true, canBeDir = false)
-    val jasmFile by argument("output file")
+    val jasmFile by argument("<output file>")
         .file()
 
     override fun run() {
