@@ -16,7 +16,7 @@ open class JasmPlugin : Plugin<Project> {
             (sourceSet as HasConvention).convention.add("jasm", extension)
             extension.jasm.srcDirs(project.projectDir.resolve("src/${sourceSet.name}/jasm"))
             extension.jasm.srcDirs(project.projectDir.resolve("src/${sourceSet.name}/java"))
-            extension.jasm.filter.include("*.jasm")
+            extension.jasm.filter.include("**/*.jasm")
             extension.jasm.outputDir = project.buildDir.resolve("classes/jasm/${sourceSet.name}")
 
             sourceSet.output.dir(project.provider { extension.jasm.outputDir })

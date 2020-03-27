@@ -5,12 +5,11 @@ import com.anatawa12.jasm.assembler.AssemblerOptions
 import com.anatawa12.jasm.parseJasmFile
 import com.anatawa12.jasm.verifyFile
 import org.gradle.api.DefaultTask
-import org.gradle.api.tasks.InputFiles
-import org.gradle.api.tasks.OutputDirectory
-import org.gradle.api.tasks.TaskAction
+import org.gradle.api.tasks.*
 import java.io.File
 
 open class CompileJasmTask : DefaultTask() {
+    @Internal
     lateinit var extension: JasmSourceSetExtension
 
     @get:OutputDirectory val dir get() = extension.jasm.outputDir
@@ -18,6 +17,8 @@ open class CompileJasmTask : DefaultTask() {
 
     @TaskAction
     fun compile() {
+        extension.jasm.outputDir.deleteRecursively()
+
         val files = extension.jasm
         var hadError = false
         for (file in files) {
