@@ -4,6 +4,18 @@ import com.anatawa12.jasm.tree.*
 import org.objectweb.asm.Opcodes
 
 class Parser(lex: ILexer) : AbstractParser(lex) {
+    fun Grammar.GrammarScope.readWithRecoverAccess(access: AccessFlags, token: TokenType<String>) = when {
+        lex.isNext(token) -> access to lex.read(token)
+        access.flags.isNotEmpty() -> {
+            val newFlags = AccessFlags(access.flags.dropLast(1))
+
+            newFlags.tokens = newFlags.flags.flatMap { it.tokens.toList() }.toTypedArray()
+
+            newFlags to access.flags.last().tokens.last().value.toString()
+        }
+        else -> lex.unexpectTokenError(token)
+    }
+
     val jasm_file = grammar({ class_header.start }) {
         JasmFile(jasm_header(), class_header(), class_element.many())
     }
@@ -50,8 +62,7 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
 
     val class_directive = grammar(dotClass) {
         lex.read(dotClass)
-        val flags = access_flags()
-        val name = lex.read(TokenType.InternalName)
+        val (flags, name) = readWithRecoverAccess(access_flags(), TokenType.InternalName)
         ClassDirective(flags, name)
     }
 
@@ -125,8 +136,7 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
 
     val method_block = grammar(dotMethod) {
         lex.read(dotMethod)
-        val access = access_flags()
-        val name = lex.read(TokenType.Name)
+        val (access, name) = readWithRecoverAccess(access_flags(), TokenType.Name)
         val desc = lex.read(TokenType.MethodDescriptor)
         val statements = method_statement.many()
         lex.read(dotEnd)
@@ -577,8 +587,7 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
 
     val field_block = grammar(dotField) {
         lex.read(dotField)
-        val access = access_flags()
-        val name = lex.read(TokenType.Name)
+        val (access, name) = readWithRecoverAccess(access_flags(), TokenType.Name)
         val descriptor = lex.read(TokenType.FieldDescriptor)
         val default = if (lex.isNext(equal)) {
             lex.read(equal)
