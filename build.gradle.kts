@@ -3,8 +3,13 @@ plugins {
     kotlin("jvm") version "1.3.70"
 }
 
-group = "org.example"
+group = "com.anatawa12.jasm"
 version = "1.0-SNAPSHOT"
+
+subprojects {
+    group = rootProject.group
+    version = rootProject.version
+}
 
 repositories {
     mavenCentral()
