@@ -147,8 +147,8 @@ class Verifier(val options: AssemblerOptions) {
     // region field
 
     private fun verify(field: FieldBlock) {
-        verifyMethodFlag(field.accessFlags)
-        verifyMethodName(field.name, field)
+        verifyFieldFlag(field.accessFlags)
+        verifyFieldName(field.name, field)
         verifyFieldDescriptor(field.descriptor, field)
 
         when (field.default?.value) {
@@ -222,6 +222,15 @@ class Verifier(val options: AssemblerOptions) {
         for (c in methodName) {
             if (c == '.' || c == ';' || c == '[' || c == '/' || c == '<' || c == '>')
                 return addError(InvalidMethodName, errorAt)
+        }
+    }
+
+    private fun verifyFieldName(methodName: String, errorAt: Node) {
+        if (methodName.isEmpty())
+            return addError(FieldNameEmpty, errorAt)
+        for (c in methodName) {
+            if (c == '.' || c == ';' || c == '[' || c == '/' || c == '<' || c == '>')
+                return addError(InvalidFieldName, errorAt)
         }
     }
 
@@ -360,6 +369,50 @@ class Verifier(val options: AssemblerOptions) {
                 is AccessFlag.Interface,
                 is AccessFlag.Annotation,
                 is AccessFlag.Enum,
+                is AccessFlag.Mandated -> {
+                    addError(UnsupportedAccessForMethod, flag)
+                }
+            }
+        }
+    }
+
+    private fun verifyFieldFlag(accessFlags: AccessFlags) {
+        verify(accessFlags.flags.size == accessFlags.flags.toSet().size, FlagDuplicated, accessFlags)
+        var hadAccessType = false
+        var erroredAccessType = false
+        loop@ for (flag in accessFlags.flags) {
+            when (flag) {
+                is AccessFlag.Public,
+                is AccessFlag.Private,
+                is AccessFlag.Protected -> {
+                    if (erroredAccessType) continue@loop
+                    if (hadAccessType) {
+                        addError(AccessDuplicated, accessFlags)
+                        erroredAccessType = true
+                    }
+                    hadAccessType = true
+                }
+
+                is AccessFlag.Static,
+                is AccessFlag.Final,
+                is AccessFlag.Volatile,
+                is AccessFlag.Transient,
+                is AccessFlag.Synthetic,
+                is AccessFlag.Enum
+                -> {
+                    // no operation
+                }
+
+
+                is AccessFlag.Super,
+                is AccessFlag.Synchronized,
+                is AccessFlag.Interface,
+                is AccessFlag.Annotation,
+                is AccessFlag.Bridge,
+                is AccessFlag.Varargs,
+                is AccessFlag.Native,
+                is AccessFlag.Abstract,
+                is AccessFlag.Strict,
                 is AccessFlag.Mandated -> {
                     addError(UnsupportedAccessForMethod, flag)
                 }

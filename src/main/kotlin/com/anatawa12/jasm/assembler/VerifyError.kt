@@ -27,10 +27,12 @@ data class VerifyingError(val error: VerifyingErrorType, val at: Node, val param
 enum class VerifyingErrorType(val message: String) {
     UnsupportedBytecode("unsupported bytecode version. must be in 45..52"),
     ClassNameEmpty("class name must not be empty"),
-    MethodNameEmpty("class name must not be empty"),
+    MethodNameEmpty("method name must not be empty"),
+    FieldNameEmpty("field name must not be empty"),
 
     InvalidClassName("class name is not valid"),
     InvalidMethodName("method name is not valid"),
+    InvalidFieldName("field name is not valid"),
 
     InvalidClassSignature("class signature is not valid."),
     InvalidMethodDescriptor("method descriptor is not valid."),
