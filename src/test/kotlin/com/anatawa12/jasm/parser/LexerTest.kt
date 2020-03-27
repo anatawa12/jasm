@@ -53,12 +53,23 @@ internal class LexerTest {
     }
 
     @Test
-    fun doReadString() {
+    fun doReadDouble() {
         val strings = listOf(
-            """ "Hello jasm from lambda!" test string here""" to "Hello jasm from lambda!"
+            """ 0.1 """ to 0.1
         )
-        for ((str, string) in strings) withTesting(str){
-            assertEquals(string, Lexer(StringLexerReader(str)).doRead(TokenType.String))
+        for ((value, string) in strings) withTesting(value){
+            assertEquals(string, Lexer(StringLexerReader(value)).doRead(TokenType.Double))
+        }
+    }
+
+    @Test
+    fun doReadInt() {
+        val strings = listOf(
+            """ 0.1 """ to 0,
+            """ 1 """ to 1
+        )
+        for ((value, string) in strings) withTesting(value){
+            assertEquals(string, Lexer(StringLexerReader(value)).doRead(TokenType.Integer))
         }
     }
 }

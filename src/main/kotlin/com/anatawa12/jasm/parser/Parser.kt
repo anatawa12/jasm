@@ -480,11 +480,11 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
         TokenType.MethodDescriptor
     ) {
         when {
-            lex.isNext(TokenType.Integer) -> {
-                Value(lex.read(TokenType.Integer))
-            }
             lex.isNext(TokenType.Double) -> {
                 Value(lex.read(TokenType.Double))
+            }
+            lex.isNext(TokenType.Integer) -> {
+                Value(lex.read(TokenType.Integer))
             }
             lex.isNext(TokenType.Long) -> {
                 Value(lex.read(TokenType.Long))
