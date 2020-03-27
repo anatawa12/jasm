@@ -8,4 +8,5 @@ a simple, new assembly language. currently supports java 8.
 
 ### LICENSE
 
-I will choose it. please wait for release 1.0.
+The MIT License. 
+see [LICENSE.txt](./LICENSE.txt)
