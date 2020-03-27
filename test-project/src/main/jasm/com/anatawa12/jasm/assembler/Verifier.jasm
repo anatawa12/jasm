@@ -1,0 +1,2979 @@
+.bytecode 52.0
+.source "Verifier.kt"
+.class public com/anatawa12/jasm/assembler/Verifier
+.super java/lang/Object
+.debug "SMAP\nVerifier.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Verifier.kt\ncom/anatawa12/jasm/assembler/Verifier\n*L\n1#1,417:1\n*E\n"
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000x\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0013\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0018\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H\u0002J\u0018\u0010\u0015\u001a\u00020\u00102\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0013\u001a\u00020\u0014H\u0002J\u0018\u0010\u0018\u001a\u00020\u00102\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001cH\u0002J\u0010\u0010\u0018\u001a\u00020\u00102\u0006\u0010\u001d\u001a\u00020\u001eH\u0002J\u0010\u0010\u0018\u001a\u00020\u00102\u0006\u0010\u001f\u001a\u00020 H\u0002J\u000e\u0010\u0018\u001a\u00020\u00102\u0006\u0010!\u001a\u00020\"J\u0010\u0010\u0018\u001a\u00020\u00102\u0006\u0010#\u001a\u00020\$H\u0002J \u0010\u0018\u001a\u00020\u00102\u0006\u0010%\u001a\u00020\u001c2\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H\u0002J\u0010\u0010&\u001a\u00020\u00102\u0006\u0010\'\u001a\u00020(H\u0002J\u001d\u0010)\u001a\u00020\u00102\u0006\u0010*\u001a\u00020+2\u0006\u0010,\u001a\u00020\u0014H\u0000¢\u0006\u0002\b-J\u001d\u0010.\u001a\u00020\u00102\u0006\u0010/\u001a\u00020+2\u0006\u0010,\u001a\u00020\u0014H\u0000¢\u0006\u0002\b0J\u001d\u00101\u001a\u00020\u00102\u0006\u0010*\u001a\u00020+2\u0006\u0010,\u001a\u00020\u0014H\u0000¢\u0006\u0002\b2J\u0010\u00103\u001a\u00020\u00102\u0006\u0010\'\u001a\u00020(H\u0002J\u001d\u00104\u001a\u00020\u00102\u0006\u00105\u001a\u00020+2\u0006\u0010,\u001a\u00020\u0014H\u0000¢\u0006\u0002\b6J\u001d\u00107\u001a\u00020\u00102\u0006\u0010/\u001a\u00020+2\u0006\u0010,\u001a\u00020\u0014H\u0000¢\u0006\u0002\b8J\u0010\u00109\u001a\u00020\u00102\u0006\u0010\'\u001a\u00020(H\u0002J\u0018\u0010:\u001a\u00020\u00102\u0006\u0010;\u001a\u00020+2\u0006\u0010,\u001a\u00020\u0014H\u0002J\u001d\u0010<\u001a\u00020\u00102\u0006\u0010*\u001a\u00020+2\u0006\u0010,\u001a\u00020\u0014H\u0000¢\u0006\u0002\b=R\u0017\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0017\u0010\u000c\u001a\b\u0012\u0004\u0012\u00020\r0\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\t¨\u0006>"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/assembler/Verifier;"
+      s = ""
+      s = "options"
+      s = "Lcom/anatawa12/jasm/assembler/AssemblerOptions;"
+      s = "(Lcom/anatawa12/jasm/assembler/AssemblerOptions;)V"
+      s = "errors"
+      s = ""
+      s = "Lcom/anatawa12/jasm/assembler/VerifyingError;"
+      s = "getErrors"
+      s = "()Ljava/util/List;"
+      s = "getOptions"
+      s = "()Lcom/anatawa12/jasm/assembler/AssemblerOptions;"
+      s = "warns"
+      s = "Lcom/anatawa12/jasm/assembler/VerifyingWarn;"
+      s = "getWarns"
+      s = "addError"
+      s = ""
+      s = "error"
+      s = "Lcom/anatawa12/jasm/assembler/VerifyingErrorType;"
+      s = "at"
+      s = "Lcom/anatawa12/jasm/tree/Node;"
+      s = "addWarn"
+      s = "warn"
+      s = "Lcom/anatawa12/jasm/assembler/VerifyingWarnType;"
+      s = "verify"
+      s = "annotation"
+      s = "Lcom/anatawa12/jasm/tree/Annotation;"
+      s = "isMethod"
+      s = ""
+      s = "header"
+      s = "Lcom/anatawa12/jasm/tree/ClassHeader;"
+      s = "field"
+      s = "Lcom/anatawa12/jasm/tree/FieldBlock;"
+      s = "file"
+      s = "Lcom/anatawa12/jasm/tree/JasmFile;"
+      s = "method"
+      s = "Lcom/anatawa12/jasm/tree/MethodBlock;"
+      s = "boolean"
+      s = "verifyClassAccessFlag"
+      s = "accessFlags"
+      s = "Lcom/anatawa12/jasm/tree/AccessFlags;"
+      s = "verifyClassSignature"
+      s = "signature"
+      s = ""
+      s = "errorAt"
+      s = "verifyClassSignature\$jasm"
+      s = "verifyFieldDescriptor"
+      s = "descriptor"
+      s = "verifyFieldDescriptor\$jasm"
+      s = "verifyFieldSignature"
+      s = "verifyFieldSignature\$jasm"
+      s = "verifyInnerClassAccessFlag"
+      s = "verifyInternalName"
+      s = "internalName"
+      s = "verifyInternalName\$jasm"
+      s = "verifyMethodDescriptor"
+      s = "verifyMethodDescriptor\$jasm"
+      s = "verifyMethodFlag"
+      s = "verifyMethodName"
+      s = "methodName"
+      s = "verifyMethodSignature"
+      s = "verifyMethodSignature\$jasm"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method public verify (Lcom/anatawa12/jasm/tree/JasmFile;)V
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 3
+   .limit local 6
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0063
+   .var 1 is file Lcom/anatawa12/jasm/tree/JasmFile; from L_0000 to L_0063
+   aload 1
+   ldc "file"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0004:
+   .line 10
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/JasmFile/getClassHeader ()Lcom/anatawa12/jasm/tree/ClassHeader;
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verify (Lcom/anatawa12/jasm/tree/ClassHeader;)V
+L_000a:
+   .line 11
+   iconst_0
+   istore 2
+L_000e:
+   .line 12
+   .var 2 is hadDeprecated Z from L_000e to L_0063
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/JasmFile/getElements ()Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 4
+L_0014:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/JasmFile
+      locals Integer
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   aload 4
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_005f
+   aload 4
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast com/anatawa12/jasm/tree/ClassElement
+   astore 3
+L_001d:
+   .line 13
+   .var 3 is element Lcom/anatawa12/jasm/tree/ClassElement; from L_001d to L_005a
+   aload 3
+   astore 5
+L_0021:
+   .line 14
+   aload 5
+   instanceof com/anatawa12/jasm/tree/MethodBlock
+   ifeq L_002b
+   aload 0
+   aload 3
+   checkcast com/anatawa12/jasm/tree/MethodBlock
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verify (Lcom/anatawa12/jasm/tree/MethodBlock;)V
+   goto L_005a
+L_002b:
+   .line 15
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/JasmFile
+      locals Integer
+      locals Object com/anatawa12/jasm/tree/ClassElement
+      locals Object java/util/Iterator
+      locals Object com/anatawa12/jasm/tree/ClassElement
+   .end stack
+   aload 5
+   instanceof com/anatawa12/jasm/tree/FieldBlock
+   ifeq L_0036
+   aload 0
+   aload 3
+   checkcast com/anatawa12/jasm/tree/FieldBlock
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verify (Lcom/anatawa12/jasm/tree/FieldBlock;)V
+   goto L_005a
+L_0036:
+   .line 16
+   .stack use locals
+   .end stack
+   aload 5
+   instanceof com/anatawa12/jasm/tree/ClassDeprecated
+   ifeq L_004b
+L_003c:
+   .line 17
+   iload 2
+   ifeq L_0045
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/TwoOrMoreDeprecated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 3
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_0045:
+   .line 18
+   .stack use locals
+   .end stack
+   iconst_1
+   istore 2
+   goto L_005a
+L_004b:
+   .line 20
+   .stack use locals
+   .end stack
+   aload 5
+   instanceof com/anatawa12/jasm/tree/ClassAnnotation
+   ifeq L_005a
+L_0051:
+   .line 21
+   aload 0
+   aload 3
+   checkcast com/anatawa12/jasm/tree/ClassAnnotation
+   invokevirtual com/anatawa12/jasm/tree/ClassAnnotation/getAnnotation ()Lcom/anatawa12/jasm/tree/Annotation;
+   iconst_0
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verify (Lcom/anatawa12/jasm/tree/Annotation;Z)V
+   goto L_005a
+L_005a:
+   .line 12
+   .stack use locals
+   .end stack
+   goto L_0014
+L_005f:
+   .line 25
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/JasmFile
+      locals Integer
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   return
+L_0063:
+.end method
+
+.method private verify (Lcom/anatawa12/jasm/tree/ClassHeader;)V
+   .limit stack 5
+   .limit local 7
+L_0000:
+   .line 30
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0137
+   .var 1 is header Lcom/anatawa12/jasm/tree/ClassHeader; from L_0000 to L_0137
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getBytecode ()Lcom/anatawa12/jasm/tree/BytecodeDirective;
+   ifnull L_0022
+L_0005:
+   .line 31
+   aload 0
+   bipush 52
+   bipush 45
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getBytecode ()Lcom/anatawa12/jasm/tree/BytecodeDirective;
+   invokevirtual com/anatawa12/jasm/tree/BytecodeDirective/getMajor ()I
+   istore 2
+   iload 2
+   if_icmple L_0012
+   pop
+   goto L_0018
+L_0012:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/ClassHeader
+      locals Integer
+      stacks Object com/anatawa12/jasm/assembler/Verifier
+      stacks Integer
+   .end stack
+   iload 2
+   if_icmplt L_0018
+   iconst_1
+   goto L_001b
+L_0018:
+   .stack use locals
+      stacks Object com/anatawa12/jasm/assembler/Verifier
+   .end stack
+   iconst_0
+L_001b:
+   .stack use locals
+      stacks Object com/anatawa12/jasm/assembler/Verifier
+      stacks Integer
+   .end stack
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/UnsupportedBytecode Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getBytecode ()Lcom/anatawa12/jasm/tree/BytecodeDirective;
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verify (ZLcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_0022:
+   .line 33
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/ClassHeader
+   .end stack
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getSource ()Lcom/anatawa12/jasm/tree/SourceDirective;
+   ifnull L_0028
+L_0028:
+   .line 37
+   .stack use locals
+   .end stack
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getClassName ()Lcom/anatawa12/jasm/tree/ClassDirective;
+   ifnull L_0041
+L_002f:
+   .line 38
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getClassName ()Lcom/anatawa12/jasm/tree/ClassDirective;
+   invokevirtual com/anatawa12/jasm/tree/ClassDirective/getAccessFlags ()Lcom/anatawa12/jasm/tree/AccessFlags;
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verifyClassAccessFlag (Lcom/anatawa12/jasm/tree/AccessFlags;)V
+L_0036:
+   .line 39
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getClassName ()Lcom/anatawa12/jasm/tree/ClassDirective;
+   invokevirtual com/anatawa12/jasm/tree/ClassDirective/getInternalName ()Ljava/lang/String;
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getClassName ()Lcom/anatawa12/jasm/tree/ClassDirective;
+   checkcast com/anatawa12/jasm/tree/Node
+   invokevirtual com/anatawa12/jasm/assembler/Verifier/verifyInternalName$jasm (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+   goto L_0041
+L_0041:
+   .line 37
+   .stack use locals
+   .end stack
+   nop
+L_0045:
+   .line 41
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getSuperName ()Lcom/anatawa12/jasm/tree/SuperDirective;
+   ifnull L_0055
+L_004a:
+   .line 42
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getSuperName ()Lcom/anatawa12/jasm/tree/SuperDirective;
+   invokevirtual com/anatawa12/jasm/tree/SuperDirective/getInternalName ()Ljava/lang/String;
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getSuperName ()Lcom/anatawa12/jasm/tree/SuperDirective;
+   checkcast com/anatawa12/jasm/tree/Node
+   invokevirtual com/anatawa12/jasm/assembler/Verifier/verifyInternalName$jasm (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+   goto L_005e
+L_0055:
+   .line 44
+   .stack use locals
+   .end stack
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingWarnType/NoSuperClass Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getClassName ()Lcom/anatawa12/jasm/tree/ClassDirective;
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addWarn (Lcom/anatawa12/jasm/assembler/VerifyingWarnType;Lcom/anatawa12/jasm/tree/Node;)V
+L_005e:
+   .line 46
+   .stack use locals
+   .end stack
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getImplements ()Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 3
+L_0066:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/ClassHeader
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   aload 3
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_007b
+   aload 3
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast com/anatawa12/jasm/tree/ImplementsDirective
+   astore 2
+L_006f:
+   .line 47
+   .var 2 is implement Lcom/anatawa12/jasm/tree/ImplementsDirective; from L_006f to L_0078
+   aload 0
+   aload 2
+   invokevirtual com/anatawa12/jasm/tree/ImplementsDirective/getInternalName ()Ljava/lang/String;
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getClassName ()Lcom/anatawa12/jasm/tree/ClassDirective;
+   checkcast com/anatawa12/jasm/tree/Node
+   invokevirtual com/anatawa12/jasm/assembler/Verifier/verifyInternalName$jasm (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+L_0078:
+   .line 46
+   goto L_0066
+L_007b:
+   .line 49
+   .stack use locals
+   .end stack
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getSignature ()Lcom/anatawa12/jasm/tree/SignatureDirective;
+   ifnull L_008b
+L_0081:
+   .line 50
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getSignature ()Lcom/anatawa12/jasm/tree/SignatureDirective;
+   invokevirtual com/anatawa12/jasm/tree/SignatureDirective/getSignature ()Ljava/lang/String;
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getSignature ()Lcom/anatawa12/jasm/tree/SignatureDirective;
+   checkcast com/anatawa12/jasm/tree/Node
+   invokevirtual com/anatawa12/jasm/assembler/Verifier/verifyClassSignature$jasm (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+L_008b:
+   .line 52
+   .stack use locals
+   .end stack
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getEnclosing ()Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   astore 2
+L_0091:
+   .line 53
+   aload 2
+   instanceof com/anatawa12/jasm/tree/EnclosingClassDirective
+   ifeq L_00b6
+L_0096:
+   .line 54
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getEnclosing ()Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   invokevirtual com/anatawa12/jasm/tree/EnclosingDirective/getOwner ()Ljava/lang/String;
+   checkcast java/lang/CharSequence
+   astore 3
+   astore 5
+   iconst_0
+   istore 4
+   aload 3
+   invokeinterface java/lang/CharSequence/length ()I
+   ifle L_00a6
+   iconst_1
+   goto L_00a9
+L_00a6:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/ClassHeader
+      locals Object com/anatawa12/jasm/tree/EnclosingDirective
+      locals Object java/lang/CharSequence
+      locals Integer
+      locals Object com/anatawa12/jasm/assembler/Verifier
+   .end stack
+   iconst_0
+L_00a9:
+   .stack use locals
+      stacks Integer
+   .end stack
+   istore 6
+   aload 5
+   iload 6
+L_00ae:
+   .line 54
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/ClassNameEmpty Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getEnclosing ()Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verify (ZLcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+   goto L_010b
+L_00b6:
+   .line 56
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/ClassHeader
+      locals Object com/anatawa12/jasm/tree/EnclosingDirective
+      locals Object java/util/Iterator
+   .end stack
+   aload 2
+   instanceof com/anatawa12/jasm/tree/EnclosingMethodDirective
+   ifeq L_00f2
+L_00bc:
+   .line 57
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getEnclosing ()Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   invokevirtual com/anatawa12/jasm/tree/EnclosingDirective/getOwner ()Ljava/lang/String;
+   checkcast java/lang/CharSequence
+   astore 3
+   astore 5
+   iconst_0
+   istore 4
+   aload 3
+   invokeinterface java/lang/CharSequence/length ()I
+   ifle L_00cc
+   iconst_1
+   goto L_00cf
+L_00cc:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/ClassHeader
+      locals Object com/anatawa12/jasm/tree/EnclosingDirective
+      locals Object java/lang/CharSequence
+      locals Integer
+      locals Object com/anatawa12/jasm/assembler/Verifier
+   .end stack
+   iconst_0
+L_00cf:
+   .stack use locals
+      stacks Integer
+   .end stack
+   istore 6
+   aload 5
+   iload 6
+L_00d4:
+   .line 57
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/ClassNameEmpty Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getEnclosing ()Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verify (ZLcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_00db:
+   .line 58
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getEnclosing ()Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   checkcast com/anatawa12/jasm/tree/EnclosingMethodDirective
+   invokevirtual com/anatawa12/jasm/tree/EnclosingMethodDirective/getName ()Ljava/lang/String;
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getEnclosing ()Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verifyMethodName (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+L_00e6:
+   .line 59
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getEnclosing ()Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   checkcast com/anatawa12/jasm/tree/EnclosingMethodDirective
+   invokevirtual com/anatawa12/jasm/tree/EnclosingMethodDirective/getDescriptor ()Ljava/lang/String;
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getEnclosing ()Lcom/anatawa12/jasm/tree/EnclosingDirective;
+   checkcast com/anatawa12/jasm/tree/Node
+   invokevirtual com/anatawa12/jasm/assembler/Verifier/verifyMethodDescriptor$jasm (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+   goto L_010b
+L_00f2:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/ClassHeader
+      locals Object com/anatawa12/jasm/tree/EnclosingDirective
+      locals Object java/util/Iterator
+   .end stack
+   aload 2
+   ifnonnull L_010b
+L_00f6:
+   .line 62
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getClassName ()Lcom/anatawa12/jasm/tree/ClassDirective;
+   invokevirtual com/anatawa12/jasm/tree/ClassDirective/getInternalName ()Ljava/lang/String;
+   checkcast java/lang/CharSequence
+   bipush 36
+   iconst_0
+   iconst_2
+   aconst_null
+   invokestatic kotlin/text/StringsKt/contains$default (Ljava/lang/CharSequence;CZILjava/lang/Object;)Z
+   ifeq L_010b
+L_0102:
+   .line 63
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingWarnType/SeemsNestedButNoEnclosing Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getClassName ()Lcom/anatawa12/jasm/tree/ClassDirective;
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addWarn (Lcom/anatawa12/jasm/assembler/VerifyingWarnType;Lcom/anatawa12/jasm/tree/Node;)V
+   goto L_010b
+L_010b:
+   .line 67
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/ClassHeader
+      locals Object com/anatawa12/jasm/tree/EnclosingDirective
+      locals Object java/lang/Object
+   .end stack
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getDebug ()Lcom/anatawa12/jasm/tree/DebugDirective;
+   ifnull L_0112
+L_0112:
+   .line 70
+   .stack use locals
+   .end stack
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/ClassHeader/getInnerClasses ()Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 3
+L_0119:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/ClassHeader
+      locals Object java/lang/Object
+      locals Object java/util/Iterator
+   .end stack
+   aload 3
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_0133
+   aload 3
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast com/anatawa12/jasm/tree/InnerClassDirective
+   astore 2
+L_0122:
+   .line 71
+   .var 2 is innerClass Lcom/anatawa12/jasm/tree/InnerClassDirective; from L_0122 to L_0130
+   aload 0
+   aload 2
+   invokevirtual com/anatawa12/jasm/tree/InnerClassDirective/getAccessFlags ()Lcom/anatawa12/jasm/tree/AccessFlags;
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verifyInnerClassAccessFlag (Lcom/anatawa12/jasm/tree/AccessFlags;)V
+L_0128:
+   .line 72
+   aload 0
+   aload 2
+   invokevirtual com/anatawa12/jasm/tree/InnerClassDirective/getName ()Ljava/lang/String;
+   aload 2
+   checkcast com/anatawa12/jasm/tree/Node
+   invokevirtual com/anatawa12/jasm/assembler/Verifier/verifyInternalName$jasm (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+L_0130:
+   .line 70
+   goto L_0119
+L_0133:
+   .line 74
+   .stack use locals
+   .end stack
+   return
+L_0137:
+.end method
+
+.method private verify (Lcom/anatawa12/jasm/tree/MethodBlock;)V
+   .limit stack 3
+   .limit local 12
+L_0000:
+   .line 81
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0150
+   .var 1 is method Lcom/anatawa12/jasm/tree/MethodBlock; from L_0000 to L_0150
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/MethodBlock/getAccessFlags ()Lcom/anatawa12/jasm/tree/AccessFlags;
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verifyMethodFlag (Lcom/anatawa12/jasm/tree/AccessFlags;)V
+L_0006:
+   .line 82
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/MethodBlock/getName ()Ljava/lang/String;
+   aload 1
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verifyMethodName (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+L_000e:
+   .line 83
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/MethodBlock/getDescriptor ()Ljava/lang/String;
+   aload 1
+   checkcast com/anatawa12/jasm/tree/Node
+   invokevirtual com/anatawa12/jasm/assembler/Verifier/verifyMethodDescriptor$jasm (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+L_0016:
+   .line 84
+   iconst_0
+   istore 2
+L_001a:
+   .line 85
+   .var 2 is hadStackLimit Z from L_001a to L_0150
+   iconst_0
+   istore 3
+L_001e:
+   .line 86
+   .var 3 is hadLocalLimit Z from L_001e to L_0150
+   iconst_0
+   istore 4
+L_0022:
+   .line 87
+   .var 4 is hadSignature Z from L_0022 to L_0150
+   iconst_0
+   istore 5
+L_0026:
+   .line 88
+   .var 5 is hadDeprecated Z from L_0026 to L_0150
+   iconst_0
+   istore 6
+L_002a:
+   .line 89
+   .var 6 is hadInstructionMetadata Z from L_002a to L_0150
+   iconst_0
+   istore 7
+L_002e:
+   .line 90
+   .var 7 is hadInstruction Z from L_002e to L_0150
+   iconst_0
+   istore 8
+L_0032:
+   .line 92
+   .var 8 is hadAnnotationDefault Z from L_0032 to L_0150
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/MethodBlock/getStatements ()Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 10
+L_0038:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/MethodBlock
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   aload 10
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_0122
+   aload 10
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast com/anatawa12/jasm/tree/MethodStatement
+   astore 9
+L_0041:
+   .line 93
+   .var 9 is statement Lcom/anatawa12/jasm/tree/MethodStatement; from L_0041 to L_011d
+   aload 9
+   astore 11
+L_0045:
+   .line 94
+   aload 11
+   instanceof com/anatawa12/jasm/tree/StackLimit
+   ifeq L_0059
+L_004a:
+   .line 95
+   iload 2
+   ifeq L_0053
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/TwoOrMoreStackLimit Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 9
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_0053:
+   .line 96
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/MethodBlock
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Object com/anatawa12/jasm/tree/MethodStatement
+      locals Object java/util/Iterator
+      locals Object com/anatawa12/jasm/tree/MethodStatement
+   .end stack
+   iconst_1
+   istore 2
+   goto L_011d
+L_0059:
+   .line 98
+   .stack use locals
+   .end stack
+   aload 11
+   instanceof com/anatawa12/jasm/tree/LocalLimit
+   ifeq L_006e
+L_005f:
+   .line 99
+   iload 3
+   ifeq L_0068
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/TwoOrMoreLocalLimit Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 9
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_0068:
+   .line 100
+   .stack use locals
+   .end stack
+   iconst_1
+   istore 3
+   goto L_011d
+L_006e:
+   .line 102
+   .stack use locals
+   .end stack
+   aload 11
+   instanceof com/anatawa12/jasm/tree/LineNumber
+   ifeq L_0086
+L_0074:
+   .line 103
+   iconst_1
+   istore 6
+L_0078:
+   .line 104
+   aload 0
+   getfield com/anatawa12/jasm/assembler/Verifier/options Lcom/anatawa12/jasm/assembler/AssemblerOptions;
+   invokevirtual com/anatawa12/jasm/assembler/AssemblerOptions/getAutoLine ()Z
+   ifeq L_011d
+L_007e:
+   .line 105
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingWarnType/LineNumberWillIgnoredOnAutoLineMode Lcom/anatawa12/jasm/assembler/VerifyingWarnType;
+   aload 9
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addWarn (Lcom/anatawa12/jasm/assembler/VerifyingWarnType;Lcom/anatawa12/jasm/tree/Node;)V
+   goto L_011d
+L_0086:
+   .line 107
+   .stack use locals
+   .end stack
+   aload 11
+   instanceof com/anatawa12/jasm/tree/LocalVar
+   ifeq L_008d
+   goto L_00a1
+L_008d:
+   .line 108
+   .stack use locals
+   .end stack
+   aload 11
+   instanceof com/anatawa12/jasm/tree/TryCatch
+   ifeq L_0094
+   goto L_00a1
+L_0094:
+   .line 109
+   .stack use locals
+   .end stack
+   aload 11
+   instanceof com/anatawa12/jasm/tree/LabelDefinition
+   ifeq L_009b
+   goto L_00a1
+L_009b:
+   .line 110
+   .stack use locals
+   .end stack
+   aload 11
+   instanceof com/anatawa12/jasm/tree/StackFrame
+   ifeq L_00a7
+L_00a1:
+   .line 111
+   .stack use locals
+   .end stack
+   iconst_1
+   istore 6
+   goto L_011d
+L_00a7:
+   .line 113
+   .stack use locals
+   .end stack
+   aload 11
+   instanceof com/anatawa12/jasm/tree/Throws
+   ifeq L_00b7
+L_00ad:
+   .line 114
+   aload 0
+   aload 9
+   checkcast com/anatawa12/jasm/tree/Throws
+   invokevirtual com/anatawa12/jasm/tree/Throws/getInternalName ()Ljava/lang/String;
+   aload 9
+   checkcast com/anatawa12/jasm/tree/Node
+   invokevirtual com/anatawa12/jasm/assembler/Verifier/verifyInternalName$jasm (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+   goto L_011d
+L_00b7:
+   .line 116
+   .stack use locals
+   .end stack
+   aload 11
+   instanceof com/anatawa12/jasm/tree/MethodSignature
+   ifeq L_00d7
+L_00bd:
+   .line 117
+   iload 4
+   ifeq L_00c7
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/TwoOrMoreSignature Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 9
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+   goto L_00d1
+L_00c7:
+   .line 118
+   .stack use locals
+   .end stack
+   aload 0
+   aload 9
+   checkcast com/anatawa12/jasm/tree/MethodSignature
+   invokevirtual com/anatawa12/jasm/tree/MethodSignature/getMethodSignature ()Ljava/lang/String;
+   aload 9
+   checkcast com/anatawa12/jasm/tree/Node
+   invokevirtual com/anatawa12/jasm/assembler/Verifier/verifyMethodSignature$jasm (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+L_00d1:
+   .line 119
+   .stack use locals
+   .end stack
+   iconst_1
+   istore 4
+   goto L_011d
+L_00d7:
+   .line 121
+   .stack use locals
+   .end stack
+   aload 11
+   instanceof com/anatawa12/jasm/tree/MethodDeprecated
+   ifeq L_00ec
+L_00dd:
+   .line 122
+   iload 5
+   ifeq L_00e6
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/TwoOrMoreDeprecated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 9
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_00e6:
+   .line 123
+   .stack use locals
+   .end stack
+   iconst_1
+   istore 5
+   goto L_011d
+L_00ec:
+   .line 125
+   .stack use locals
+   .end stack
+   aload 11
+   instanceof com/anatawa12/jasm/tree/MethodAnnotation
+   ifeq L_0112
+L_00f2:
+   .line 126
+   aload 9
+   checkcast com/anatawa12/jasm/tree/MethodAnnotation
+   invokevirtual com/anatawa12/jasm/tree/MethodAnnotation/getAnnotation ()Lcom/anatawa12/jasm/tree/Annotation;
+   invokevirtual com/anatawa12/jasm/tree/Annotation/getType ()Lcom/anatawa12/jasm/tree/AnnotationType;
+   instanceof com/anatawa12/jasm/tree/AnnotationType$Default
+   ifeq L_0108
+L_00fa:
+   .line 127
+   iload 8
+   ifeq L_0103
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/TwoOrMoreAnnotationDefault Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 9
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_0103:
+   .line 128
+   .stack use locals
+   .end stack
+   iconst_1
+   istore 8
+L_0108:
+   .line 130
+   .stack use locals
+   .end stack
+   aload 0
+   aload 9
+   checkcast com/anatawa12/jasm/tree/MethodAnnotation
+   invokevirtual com/anatawa12/jasm/tree/MethodAnnotation/getAnnotation ()Lcom/anatawa12/jasm/tree/Annotation;
+   iconst_1
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verify (Lcom/anatawa12/jasm/tree/Annotation;Z)V
+   goto L_011d
+L_0112:
+   .line 132
+   .stack use locals
+   .end stack
+   aload 11
+   instanceof com/anatawa12/jasm/tree/Instruction
+   ifeq L_011d
+L_0118:
+   .line 133
+   iconst_1
+   istore 7
+   goto L_011d
+L_011d:
+   .line 92
+   .stack use locals
+   .end stack
+   goto L_0038
+L_0122:
+   .line 137
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/MethodBlock
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   iload 6
+   ifeq L_0130
+   iload 7
+   ifne L_0130
+L_0129:
+   .line 138
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/NoInstructionButSomeMeta Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_0130:
+   .line 139
+   .stack use locals
+   .end stack
+   iload 7
+   ifeq L_013e
+   iload 2
+   ifne L_013e
+L_0137:
+   .line 140
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InstructionButNoStackLimit Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_013e:
+   .line 141
+   .stack use locals
+   .end stack
+   iload 7
+   ifeq L_014c
+   iload 3
+   ifne L_014c
+L_0145:
+   .line 142
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InstructionButNoLocalLimit Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_014c:
+   .line 143
+   .stack use locals
+   .end stack
+   return
+L_0150:
+.end method
+
+.method private verify (Lcom/anatawa12/jasm/tree/FieldBlock;)V
+   .limit stack 3
+   .limit local 7
+L_0000:
+   .line 150
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0109
+   .var 1 is field Lcom/anatawa12/jasm/tree/FieldBlock; from L_0000 to L_0109
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/FieldBlock/getAccessFlags ()Lcom/anatawa12/jasm/tree/AccessFlags;
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verifyMethodFlag (Lcom/anatawa12/jasm/tree/AccessFlags;)V
+L_0006:
+   .line 151
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/FieldBlock/getName ()Ljava/lang/String;
+   aload 1
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verifyMethodName (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+L_000e:
+   .line 152
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/FieldBlock/getDescriptor ()Ljava/lang/String;
+   aload 1
+   checkcast com/anatawa12/jasm/tree/Node
+   invokevirtual com/anatawa12/jasm/assembler/Verifier/verifyFieldDescriptor$jasm (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+L_0016:
+   .line 154
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/FieldBlock/getDefault ()Lcom/anatawa12/jasm/tree/Value;
+   dup
+   ifnull L_001e
+   invokevirtual com/anatawa12/jasm/tree/Value/getValue ()Ljava/lang/Object;
+   goto L_0022
+L_001e:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/FieldBlock
+      stacks Object com/anatawa12/jasm/tree/Value
+   .end stack
+   pop
+   aconst_null
+L_0022:
+   .stack use locals
+      stacks Object java/lang/Object
+   .end stack
+   astore 2
+   aload 2
+   ifnonnull L_0028
+   goto L_00a0
+L_0028:
+   .line 156
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/FieldBlock
+      locals Object java/lang/Object
+   .end stack
+   aload 2
+   instanceof java/lang/Integer
+   ifeq L_0040
+L_002e:
+   .line 157
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/FieldBlock/getDescriptor ()Ljava/lang/String;
+   ldc "I"
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   iconst_1
+   ixor
+   ifeq L_00a0
+L_0037:
+   .line 158
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidDefaultValueForType Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/FieldBlock/getDefault ()Lcom/anatawa12/jasm/tree/Value;
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+   goto L_00a0
+L_0040:
+   .line 160
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof java/lang/Double
+   ifeq L_0058
+L_0046:
+   .line 161
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/FieldBlock/getDescriptor ()Ljava/lang/String;
+   ldc "D"
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   iconst_1
+   ixor
+   ifeq L_00a0
+L_004f:
+   .line 162
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidDefaultValueForType Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/FieldBlock/getDefault ()Lcom/anatawa12/jasm/tree/Value;
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+   goto L_00a0
+L_0058:
+   .line 164
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof java/lang/Long
+   ifeq L_0070
+L_005e:
+   .line 165
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/FieldBlock/getDescriptor ()Ljava/lang/String;
+   ldc "J"
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   iconst_1
+   ixor
+   ifeq L_00a0
+L_0067:
+   .line 166
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidDefaultValueForType Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/FieldBlock/getDefault ()Lcom/anatawa12/jasm/tree/Value;
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+   goto L_00a0
+L_0070:
+   .line 168
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof java/lang/Float
+   ifeq L_0088
+L_0076:
+   .line 169
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/FieldBlock/getDescriptor ()Ljava/lang/String;
+   ldc "F"
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   iconst_1
+   ixor
+   ifeq L_00a0
+L_007f:
+   .line 170
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidDefaultValueForType Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/FieldBlock/getDefault ()Lcom/anatawa12/jasm/tree/Value;
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+   goto L_00a0
+L_0088:
+   .line 172
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof java/lang/String
+   ifeq L_00a0
+L_008e:
+   .line 173
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/FieldBlock/getDescriptor ()Ljava/lang/String;
+   ldc "Ljava/lang/String;"
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   iconst_1
+   ixor
+   ifeq L_00a0
+L_0097:
+   .line 174
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidDefaultValueForType Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/FieldBlock/getDefault ()Lcom/anatawa12/jasm/tree/Value;
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+   goto L_00a0
+L_00a0:
+   .line 178
+   .stack use locals
+   .end stack
+   iconst_0
+   istore 2
+L_00a6:
+   .line 179
+   .var 2 is hadSignature Z from L_00a6 to L_0109
+   iconst_0
+   istore 3
+L_00aa:
+   .line 181
+   .var 3 is hadDeprecated Z from L_00aa to L_0109
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/FieldBlock/getAttributes ()Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 5
+L_00b0:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/FieldBlock
+      locals Integer
+      locals Integer
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   aload 5
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_0105
+   aload 5
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast com/anatawa12/jasm/tree/FieldAttributes
+   astore 4
+L_00b9:
+   .line 182
+   .var 4 is attribute Lcom/anatawa12/jasm/tree/FieldAttributes; from L_00b9 to L_0100
+   aload 4
+   astore 6
+L_00bd:
+   .line 183
+   aload 6
+   instanceof com/anatawa12/jasm/tree/FieldDeprecated
+   ifeq L_00d1
+L_00c2:
+   .line 184
+   iload 3
+   ifeq L_00cb
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/TwoOrMoreDeprecated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 4
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_00cb:
+   .line 185
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/FieldBlock
+      locals Integer
+      locals Integer
+      locals Object com/anatawa12/jasm/tree/FieldAttributes
+      locals Object java/util/Iterator
+      locals Object com/anatawa12/jasm/tree/FieldAttributes
+   .end stack
+   iconst_1
+   istore 3
+   goto L_0100
+L_00d1:
+   .line 187
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/FieldSignature
+   ifeq L_00f1
+L_00d7:
+   .line 188
+   iload 2
+   ifeq L_00e1
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/TwoOrMoreSignature Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 4
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+   goto L_00eb
+L_00e1:
+   .line 189
+   .stack use locals
+   .end stack
+   aload 0
+   aload 4
+   checkcast com/anatawa12/jasm/tree/FieldSignature
+   invokevirtual com/anatawa12/jasm/tree/FieldSignature/getSignature ()Ljava/lang/String;
+   aload 4
+   checkcast com/anatawa12/jasm/tree/Node
+   invokevirtual com/anatawa12/jasm/assembler/Verifier/verifyFieldSignature$jasm (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+L_00eb:
+   .line 190
+   .stack use locals
+   .end stack
+   iconst_1
+   istore 2
+   goto L_0100
+L_00f1:
+   .line 192
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/FieldAnnotation
+   ifeq L_0100
+L_00f7:
+   .line 193
+   aload 0
+   aload 4
+   checkcast com/anatawa12/jasm/tree/FieldAnnotation
+   invokevirtual com/anatawa12/jasm/tree/FieldAnnotation/getAnnotation ()Lcom/anatawa12/jasm/tree/Annotation;
+   iconst_0
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verify (Lcom/anatawa12/jasm/tree/Annotation;Z)V
+   goto L_0100
+L_0100:
+   .line 181
+   .stack use locals
+   .end stack
+   goto L_00b0
+L_0105:
+   .line 197
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/FieldBlock
+      locals Integer
+      locals Integer
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   return
+L_0109:
+.end method
+
+.method private verify (Lcom/anatawa12/jasm/tree/Annotation;Z)V
+   .limit stack 3
+   .limit local 3
+L_0000:
+   .line 204
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0013
+   .var 1 is annotation Lcom/anatawa12/jasm/tree/Annotation; from L_0000 to L_0013
+   .var 2 is isMethod Z from L_0000 to L_0013
+   iload 2
+   ifne L_000f
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/Annotation/getType ()Lcom/anatawa12/jasm/tree/AnnotationType;
+   instanceof com/anatawa12/jasm/tree/AnnotationType$Default
+   ifeq L_000f
+L_0008:
+   .line 205
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/AnnotationDefaultNotSupported Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_000f:
+   .line 206
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/Annotation
+      locals Integer
+   .end stack
+   return
+L_0013:
+.end method
+
+.method public verifyInternalName$jasm (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 3
+   .limit local 7
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0056
+   .var 1 is internalName Ljava/lang/String; from L_0000 to L_0056
+   .var 2 is errorAt Lcom/anatawa12/jasm/tree/Node; from L_0000 to L_0056
+   aload 1
+   ldc "internalName"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 2
+   ldc "errorAt"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0007:
+   .line 209
+   aload 1
+   checkcast java/lang/CharSequence
+   astore 3
+   iconst_0
+   istore 4
+   aload 3
+   invokeinterface java/lang/CharSequence/length ()I
+   ifne L_0013
+   iconst_1
+   goto L_0016
+L_0013:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object java/lang/String
+      locals Object com/anatawa12/jasm/tree/Node
+      locals Object java/lang/CharSequence
+      locals Integer
+   .end stack
+   iconst_0
+L_0016:
+   .stack use locals
+      stacks Integer
+   .end stack
+   ifeq L_0020
+L_0019:
+   .line 210
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/ClassNameEmpty Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 2
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+   return
+L_0020:
+   .line 211
+   .stack use locals
+   .end stack
+   aload 1
+   astore 5
+   aload 5
+   invokevirtual java/lang/String/length ()I
+   istore 6
+   iconst_0
+   istore 4
+L_002a:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object java/lang/String
+      locals Object com/anatawa12/jasm/tree/Node
+      locals Top
+      locals Integer
+      locals Object java/lang/String
+      locals Integer
+   .end stack
+   iload 4
+   iload 6
+   if_icmpge L_0052
+   aload 5
+   iload 4
+   invokevirtual java/lang/String/charAt (I)C
+   istore 3
+L_0033:
+   .line 212
+   .var 3 is c C from L_0033 to L_0050
+   iload 3
+   bipush 46
+   if_icmpeq L_0044
+   iload 3
+   bipush 59
+   if_icmpeq L_0044
+   iload 3
+   bipush 91
+   if_icmpeq L_0044
+   iload 3
+   bipush 60
+   if_icmpeq L_0044
+   iload 3
+   bipush 62
+   if_icmpne L_004c
+L_0044:
+   .line 213
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object java/lang/String
+      locals Object com/anatawa12/jasm/tree/Node
+      locals Integer
+      locals Integer
+      locals Object java/lang/String
+      locals Integer
+   .end stack
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidClassName Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 2
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+   return
+L_004c:
+   .line 211
+   .stack use locals
+   .end stack
+   iinc 4 1
+L_0050:
+   goto L_002a
+L_0052:
+   .line 215
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object java/lang/String
+      locals Object com/anatawa12/jasm/tree/Node
+      locals Top
+      locals Integer
+      locals Object java/lang/String
+      locals Integer
+   .end stack
+   return
+L_0056:
+.end method
+
+.method private verifyMethodName (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+   .limit stack 3
+   .limit local 7
+L_0000:
+   .line 218
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0062
+   .var 1 is methodName Ljava/lang/String; from L_0000 to L_0062
+   .var 2 is errorAt Lcom/anatawa12/jasm/tree/Node; from L_0000 to L_0062
+   aload 1
+   checkcast java/lang/CharSequence
+   astore 3
+   iconst_0
+   istore 4
+   aload 3
+   invokeinterface java/lang/CharSequence/length ()I
+   ifne L_000c
+   iconst_1
+   goto L_000f
+L_000c:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object java/lang/String
+      locals Object com/anatawa12/jasm/tree/Node
+      locals Object java/lang/CharSequence
+      locals Integer
+   .end stack
+   iconst_0
+L_000f:
+   .stack use locals
+      stacks Integer
+   .end stack
+   ifeq L_0019
+L_0012:
+   .line 219
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/MethodNameEmpty Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 2
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+   return
+L_0019:
+   .line 220
+   .stack use locals
+   .end stack
+   aload 1
+   ldc "<init>"
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0021
+   return
+L_0021:
+   .line 221
+   .stack use locals
+   .end stack
+   aload 1
+   ldc "<clinit>"
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0029
+   return
+L_0029:
+   .line 222
+   .stack use locals
+   .end stack
+   aload 1
+   astore 5
+   aload 5
+   invokevirtual java/lang/String/length ()I
+   istore 6
+   iconst_0
+   istore 4
+L_0033:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object java/lang/String
+      locals Object com/anatawa12/jasm/tree/Node
+      locals Top
+      locals Integer
+      locals Object java/lang/String
+      locals Integer
+   .end stack
+   iload 4
+   iload 6
+   if_icmpge L_005e
+   aload 5
+   iload 4
+   invokevirtual java/lang/String/charAt (I)C
+   istore 3
+L_003c:
+   .line 223
+   .var 3 is c C from L_003c to L_005c
+   iload 3
+   bipush 46
+   if_icmpeq L_0050
+   iload 3
+   bipush 59
+   if_icmpeq L_0050
+   iload 3
+   bipush 91
+   if_icmpeq L_0050
+   iload 3
+   bipush 47
+   if_icmpeq L_0050
+   iload 3
+   bipush 60
+   if_icmpeq L_0050
+   iload 3
+   bipush 62
+   if_icmpne L_0058
+L_0050:
+   .line 224
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object java/lang/String
+      locals Object com/anatawa12/jasm/tree/Node
+      locals Integer
+      locals Integer
+      locals Object java/lang/String
+      locals Integer
+   .end stack
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidMethodName Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 2
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+   return
+L_0058:
+   .line 222
+   .stack use locals
+   .end stack
+   iinc 4 1
+L_005c:
+   goto L_0033
+L_005e:
+   .line 226
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object java/lang/String
+      locals Object com/anatawa12/jasm/tree/Node
+      locals Top
+      locals Integer
+      locals Object java/lang/String
+      locals Integer
+   .end stack
+   return
+L_0062:
+.end method
+
+.method private verifyClassAccessFlag (Lcom/anatawa12/jasm/tree/AccessFlags;)V
+   .limit stack 4
+   .limit local 7
+L_0000:
+   .line 233
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_00e2
+   .var 1 is accessFlags Lcom/anatawa12/jasm/tree/AccessFlags; from L_0000 to L_00e2
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/AccessFlags/getFlags ()Ljava/util/List;
+   invokeinterface java/util/List/size ()I
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/AccessFlags/getFlags ()Ljava/util/List;
+   checkcast java/lang/Iterable
+   invokestatic kotlin/collections/CollectionsKt/toSet (Ljava/lang/Iterable;)Ljava/util/Set;
+   invokeinterface java/util/Set/size ()I
+   if_icmpne L_000e
+   iconst_1
+   goto L_0011
+L_000e:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/AccessFlags
+      stacks Object com/anatawa12/jasm/assembler/Verifier
+   .end stack
+   iconst_0
+L_0011:
+   .stack use locals
+      stacks Object com/anatawa12/jasm/assembler/Verifier
+      stacks Integer
+   .end stack
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/FlagDuplicated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verify (ZLcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_0017:
+   .line 234
+   iconst_0
+   istore 2
+L_001b:
+   .line 235
+   .var 2 is hadClassType Z from L_001b to L_00e2
+   iconst_0
+   istore 3
+L_001f:
+   .line 236
+   .var 3 is erroredClassType Z from L_001f to L_00e2
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/AccessFlags/getFlags ()Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 5
+L_0025:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/AccessFlags
+      locals Integer
+      locals Integer
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   aload 5
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_00de
+   aload 5
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast com/anatawa12/jasm/tree/AccessFlag
+   astore 4
+L_002e:
+   .line 237
+   .var 4 is flag Lcom/anatawa12/jasm/tree/AccessFlag; from L_002e to L_00d9
+   aload 4
+   astore 6
+L_0032:
+   .line 238
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Public
+   ifeq L_0038
+   goto L_00d9
+L_0038:
+   .line 239
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/AccessFlags
+      locals Integer
+      locals Integer
+      locals Object com/anatawa12/jasm/tree/AccessFlag
+      locals Object java/util/Iterator
+      locals Object com/anatawa12/jasm/tree/AccessFlag
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Final
+   ifeq L_003f
+   goto L_00d9
+L_003f:
+   .line 240
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Synthetic
+   ifeq L_0046
+   goto L_00d9
+L_0046:
+   .line 244
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Interface
+   ifeq L_004d
+   goto L_0061
+L_004d:
+   .line 245
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Abstract
+   ifeq L_0054
+   goto L_0061
+L_0054:
+   .line 246
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Annotation
+   ifeq L_005b
+   goto L_0061
+L_005b:
+   .line 247
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Enum
+   ifeq L_007d
+L_0061:
+   .line 248
+   .stack use locals
+   .end stack
+   iload 3
+   ifeq L_0067
+   goto L_00d9
+L_0067:
+   .line 249
+   .stack use locals
+   .end stack
+   iload 2
+   ifeq L_0077
+L_006c:
+   .line 250
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/ClassTypeDuplicated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_0073:
+   .line 251
+   iconst_1
+   istore 3
+L_0077:
+   .line 253
+   .stack use locals
+   .end stack
+   iconst_1
+   istore 2
+   goto L_00d9
+L_007d:
+   .line 256
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Private
+   ifeq L_0084
+   goto L_00d0
+L_0084:
+   .line 257
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Protected
+   ifeq L_008b
+   goto L_00d0
+L_008b:
+   .line 258
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Static
+   ifeq L_0092
+   goto L_00d0
+L_0092:
+   .line 259
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Super
+   ifeq L_0099
+   goto L_00d0
+L_0099:
+   .line 260
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Synchronized
+   ifeq L_00a0
+   goto L_00d0
+L_00a0:
+   .line 261
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Volatile
+   ifeq L_00a7
+   goto L_00d0
+L_00a7:
+   .line 262
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Bridge
+   ifeq L_00ae
+   goto L_00d0
+L_00ae:
+   .line 263
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Varargs
+   ifeq L_00b5
+   goto L_00d0
+L_00b5:
+   .line 264
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Transient
+   ifeq L_00bc
+   goto L_00d0
+L_00bc:
+   .line 265
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Native
+   ifeq L_00c3
+   goto L_00d0
+L_00c3:
+   .line 266
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Strict
+   ifeq L_00ca
+   goto L_00d0
+L_00ca:
+   .line 267
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Mandated
+   ifeq L_00d9
+L_00d0:
+   .line 268
+   .stack use locals
+   .end stack
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/UnsupportedAccessForClass Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 4
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+   goto L_00d9
+L_00d9:
+   .line 236
+   .stack use locals
+   .end stack
+   goto L_0025
+L_00de:
+   .line 272
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/AccessFlags
+      locals Integer
+      locals Integer
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   return
+L_00e2:
+.end method
+
+.method private verifyInnerClassAccessFlag (Lcom/anatawa12/jasm/tree/AccessFlags;)V
+   .limit stack 4
+   .limit local 9
+L_0000:
+   .line 275
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0105
+   .var 1 is accessFlags Lcom/anatawa12/jasm/tree/AccessFlags; from L_0000 to L_0105
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/AccessFlags/getFlags ()Ljava/util/List;
+   invokeinterface java/util/List/size ()I
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/AccessFlags/getFlags ()Ljava/util/List;
+   checkcast java/lang/Iterable
+   invokestatic kotlin/collections/CollectionsKt/toSet (Ljava/lang/Iterable;)Ljava/util/Set;
+   invokeinterface java/util/Set/size ()I
+   if_icmpne L_000e
+   iconst_1
+   goto L_0011
+L_000e:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/AccessFlags
+      stacks Object com/anatawa12/jasm/assembler/Verifier
+   .end stack
+   iconst_0
+L_0011:
+   .stack use locals
+      stacks Object com/anatawa12/jasm/assembler/Verifier
+      stacks Integer
+   .end stack
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/FlagDuplicated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verify (ZLcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_0017:
+   .line 276
+   iconst_0
+   istore 2
+L_001b:
+   .line 277
+   .var 2 is hadClassType Z from L_001b to L_0105
+   iconst_0
+   istore 3
+L_001f:
+   .line 278
+   .var 3 is erroredClassType Z from L_001f to L_0105
+   iconst_0
+   istore 4
+L_0023:
+   .line 279
+   .var 4 is hadAccessType Z from L_0023 to L_0105
+   iconst_0
+   istore 5
+L_0027:
+   .line 280
+   .var 5 is erroredAccessType Z from L_0027 to L_0105
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/AccessFlags/getFlags ()Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 7
+L_002d:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/AccessFlags
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   aload 7
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_0101
+   aload 7
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast com/anatawa12/jasm/tree/AccessFlag
+   astore 6
+L_0036:
+   .line 281
+   .var 6 is flag Lcom/anatawa12/jasm/tree/AccessFlag; from L_0036 to L_00fc
+   aload 6
+   astore 8
+L_003a:
+   .line 282
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Public
+   ifeq L_0040
+   goto L_004d
+L_0040:
+   .line 283
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/AccessFlags
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Object com/anatawa12/jasm/tree/AccessFlag
+      locals Object java/util/Iterator
+      locals Object com/anatawa12/jasm/tree/AccessFlag
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Private
+   ifeq L_0047
+   goto L_004d
+L_0047:
+   .line 284
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Protected
+   ifeq L_0069
+L_004d:
+   .line 285
+   .stack use locals
+   .end stack
+   iload 5
+   ifeq L_0053
+   goto L_00fc
+L_0053:
+   .line 286
+   .stack use locals
+   .end stack
+   iload 4
+   ifeq L_0063
+L_0058:
+   .line 287
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/AccessDuplicated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_005f:
+   .line 288
+   iconst_1
+   istore 5
+L_0063:
+   .line 290
+   .stack use locals
+   .end stack
+   iconst_1
+   istore 4
+   goto L_00fc
+L_0069:
+   .line 293
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Static
+   ifeq L_0070
+   goto L_00fc
+L_0070:
+   .line 294
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Final
+   ifeq L_0077
+   goto L_00fc
+L_0077:
+   .line 295
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Synthetic
+   ifeq L_007e
+   goto L_00fc
+L_007e:
+   .line 299
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Interface
+   ifeq L_0085
+   goto L_0099
+L_0085:
+   .line 300
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Abstract
+   ifeq L_008c
+   goto L_0099
+L_008c:
+   .line 301
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Annotation
+   ifeq L_0093
+   goto L_0099
+L_0093:
+   .line 302
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Enum
+   ifeq L_00b5
+L_0099:
+   .line 303
+   .stack use locals
+   .end stack
+   iload 3
+   ifeq L_009f
+   goto L_00fc
+L_009f:
+   .line 304
+   .stack use locals
+   .end stack
+   iload 2
+   ifeq L_00af
+L_00a4:
+   .line 305
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/ClassTypeDuplicated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_00ab:
+   .line 306
+   iconst_1
+   istore 3
+L_00af:
+   .line 308
+   .stack use locals
+   .end stack
+   iconst_1
+   istore 2
+   goto L_00fc
+L_00b5:
+   .line 311
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Super
+   ifeq L_00bc
+   goto L_00f3
+L_00bc:
+   .line 312
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Synchronized
+   ifeq L_00c3
+   goto L_00f3
+L_00c3:
+   .line 313
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Volatile
+   ifeq L_00ca
+   goto L_00f3
+L_00ca:
+   .line 314
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Bridge
+   ifeq L_00d1
+   goto L_00f3
+L_00d1:
+   .line 315
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Varargs
+   ifeq L_00d8
+   goto L_00f3
+L_00d8:
+   .line 316
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Transient
+   ifeq L_00df
+   goto L_00f3
+L_00df:
+   .line 317
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Native
+   ifeq L_00e6
+   goto L_00f3
+L_00e6:
+   .line 318
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Strict
+   ifeq L_00ed
+   goto L_00f3
+L_00ed:
+   .line 319
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Mandated
+   ifeq L_00fc
+L_00f3:
+   .line 320
+   .stack use locals
+   .end stack
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/UnsupportedAccessForInnerClass Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 6
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+   goto L_00fc
+L_00fc:
+   .line 280
+   .stack use locals
+   .end stack
+   goto L_002d
+L_0101:
+   .line 324
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/AccessFlags
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   return
+L_0105:
+.end method
+
+.method private verifyMethodFlag (Lcom/anatawa12/jasm/tree/AccessFlags;)V
+   .limit stack 4
+   .limit local 7
+L_0000:
+   .line 327
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_00e2
+   .var 1 is accessFlags Lcom/anatawa12/jasm/tree/AccessFlags; from L_0000 to L_00e2
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/AccessFlags/getFlags ()Ljava/util/List;
+   invokeinterface java/util/List/size ()I
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/AccessFlags/getFlags ()Ljava/util/List;
+   checkcast java/lang/Iterable
+   invokestatic kotlin/collections/CollectionsKt/toSet (Ljava/lang/Iterable;)Ljava/util/Set;
+   invokeinterface java/util/Set/size ()I
+   if_icmpne L_000e
+   iconst_1
+   goto L_0011
+L_000e:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/AccessFlags
+      stacks Object com/anatawa12/jasm/assembler/Verifier
+   .end stack
+   iconst_0
+L_0011:
+   .stack use locals
+      stacks Object com/anatawa12/jasm/assembler/Verifier
+      stacks Integer
+   .end stack
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/FlagDuplicated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/verify (ZLcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_0017:
+   .line 328
+   iconst_0
+   istore 2
+L_001b:
+   .line 329
+   .var 2 is hadAccessType Z from L_001b to L_00e2
+   iconst_0
+   istore 3
+L_001f:
+   .line 330
+   .var 3 is erroredAccessType Z from L_001f to L_00e2
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/AccessFlags/getFlags ()Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 5
+L_0025:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/AccessFlags
+      locals Integer
+      locals Integer
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   aload 5
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_00de
+   aload 5
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast com/anatawa12/jasm/tree/AccessFlag
+   astore 4
+L_002e:
+   .line 331
+   .var 4 is flag Lcom/anatawa12/jasm/tree/AccessFlag; from L_002e to L_00d9
+   aload 4
+   astore 6
+L_0032:
+   .line 332
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Public
+   ifeq L_0038
+   goto L_0045
+L_0038:
+   .line 333
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/AccessFlags
+      locals Integer
+      locals Integer
+      locals Object com/anatawa12/jasm/tree/AccessFlag
+      locals Object java/util/Iterator
+      locals Object com/anatawa12/jasm/tree/AccessFlag
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Private
+   ifeq L_003f
+   goto L_0045
+L_003f:
+   .line 334
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Protected
+   ifeq L_0061
+L_0045:
+   .line 335
+   .stack use locals
+   .end stack
+   iload 3
+   ifeq L_004b
+   goto L_00d9
+L_004b:
+   .line 336
+   .stack use locals
+   .end stack
+   iload 2
+   ifeq L_005b
+L_0050:
+   .line 337
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/AccessDuplicated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 1
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_0057:
+   .line 338
+   iconst_1
+   istore 3
+L_005b:
+   .line 340
+   .stack use locals
+   .end stack
+   iconst_1
+   istore 2
+   goto L_00d9
+L_0061:
+   .line 343
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Static
+   ifeq L_0068
+   goto L_00d9
+L_0068:
+   .line 344
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Final
+   ifeq L_006f
+   goto L_00d9
+L_006f:
+   .line 345
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Synchronized
+   ifeq L_0076
+   goto L_00d9
+L_0076:
+   .line 346
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Bridge
+   ifeq L_007d
+   goto L_00d9
+L_007d:
+   .line 347
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Varargs
+   ifeq L_0084
+   goto L_00d9
+L_0084:
+   .line 348
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Native
+   ifeq L_008b
+   goto L_00d9
+L_008b:
+   .line 349
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Abstract
+   ifeq L_0092
+   goto L_00d9
+L_0092:
+   .line 350
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Strict
+   ifeq L_0099
+   goto L_00d9
+L_0099:
+   .line 351
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Synthetic
+   ifeq L_00a0
+   goto L_00d9
+L_00a0:
+   .line 357
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Super
+   ifeq L_00a7
+   goto L_00d0
+L_00a7:
+   .line 358
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Volatile
+   ifeq L_00ae
+   goto L_00d0
+L_00ae:
+   .line 359
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Transient
+   ifeq L_00b5
+   goto L_00d0
+L_00b5:
+   .line 360
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Interface
+   ifeq L_00bc
+   goto L_00d0
+L_00bc:
+   .line 361
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Annotation
+   ifeq L_00c3
+   goto L_00d0
+L_00c3:
+   .line 362
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Enum
+   ifeq L_00ca
+   goto L_00d0
+L_00ca:
+   .line 363
+   .stack use locals
+   .end stack
+   aload 6
+   instanceof com/anatawa12/jasm/tree/AccessFlag$Mandated
+   ifeq L_00d9
+L_00d0:
+   .line 364
+   .stack use locals
+   .end stack
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/UnsupportedAccessForMethod Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 4
+   checkcast com/anatawa12/jasm/tree/Node
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+   goto L_00d9
+L_00d9:
+   .line 330
+   .stack use locals
+   .end stack
+   goto L_0025
+L_00de:
+   .line 368
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object com/anatawa12/jasm/tree/AccessFlags
+      locals Integer
+      locals Integer
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   return
+L_00e2:
+.end method
+
+.method public verifyClassSignature$jasm (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 3
+   .limit local 3
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0019
+   .var 1 is signature Ljava/lang/String; from L_0000 to L_0019
+   .var 2 is errorAt Lcom/anatawa12/jasm/tree/Node; from L_0000 to L_0019
+   aload 1
+   ldc "signature"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 2
+   ldc "errorAt"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0007:
+   .line 375
+   new com/anatawa12/jasm/assembler/SignatureVerifier
+   dup
+   aload 1
+   invokespecial com/anatawa12/jasm/assembler/SignatureVerifier/<init> (Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/classSignature ()Z
+   ifne L_0015
+L_000f:
+   .line 376
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidClassSignature Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 2
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_0015:
+   .line 377
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object java/lang/String
+      locals Object com/anatawa12/jasm/tree/Node
+   .end stack
+   return
+L_0019:
+.end method
+
+.method public verifyMethodDescriptor$jasm (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 3
+   .limit local 3
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0019
+   .var 1 is descriptor Ljava/lang/String; from L_0000 to L_0019
+   .var 2 is errorAt Lcom/anatawa12/jasm/tree/Node; from L_0000 to L_0019
+   aload 1
+   ldc "descriptor"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 2
+   ldc "errorAt"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0007:
+   .line 380
+   new com/anatawa12/jasm/assembler/SignatureVerifier
+   dup
+   aload 1
+   invokespecial com/anatawa12/jasm/assembler/SignatureVerifier/<init> (Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/methodDescriptor ()Z
+   ifne L_0015
+L_000f:
+   .line 381
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidMethodDescriptor Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 2
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_0015:
+   .line 382
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object java/lang/String
+      locals Object com/anatawa12/jasm/tree/Node
+   .end stack
+   return
+L_0019:
+.end method
+
+.method public verifyMethodSignature$jasm (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 3
+   .limit local 3
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0019
+   .var 1 is signature Ljava/lang/String; from L_0000 to L_0019
+   .var 2 is errorAt Lcom/anatawa12/jasm/tree/Node; from L_0000 to L_0019
+   aload 1
+   ldc "signature"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 2
+   ldc "errorAt"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0007:
+   .line 385
+   new com/anatawa12/jasm/assembler/SignatureVerifier
+   dup
+   aload 1
+   invokespecial com/anatawa12/jasm/assembler/SignatureVerifier/<init> (Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/methodSignature ()Z
+   ifne L_0015
+L_000f:
+   .line 386
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidMethodSignature Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 2
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_0015:
+   .line 387
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object java/lang/String
+      locals Object com/anatawa12/jasm/tree/Node
+   .end stack
+   return
+L_0019:
+.end method
+
+.method public verifyFieldDescriptor$jasm (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 3
+   .limit local 3
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0019
+   .var 1 is descriptor Ljava/lang/String; from L_0000 to L_0019
+   .var 2 is errorAt Lcom/anatawa12/jasm/tree/Node; from L_0000 to L_0019
+   aload 1
+   ldc "descriptor"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 2
+   ldc "errorAt"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0007:
+   .line 390
+   new com/anatawa12/jasm/assembler/SignatureVerifier
+   dup
+   aload 1
+   invokespecial com/anatawa12/jasm/assembler/SignatureVerifier/<init> (Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/fieldDescriptor ()Z
+   ifne L_0015
+L_000f:
+   .line 391
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidFieldDescriptor Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 2
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_0015:
+   .line 392
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object java/lang/String
+      locals Object com/anatawa12/jasm/tree/Node
+   .end stack
+   return
+L_0019:
+.end method
+
+.method public verifyFieldSignature$jasm (Ljava/lang/String;Lcom/anatawa12/jasm/tree/Node;)V
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 3
+   .limit local 3
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0019
+   .var 1 is signature Ljava/lang/String; from L_0000 to L_0019
+   .var 2 is errorAt Lcom/anatawa12/jasm/tree/Node; from L_0000 to L_0019
+   aload 1
+   ldc "signature"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 2
+   ldc "errorAt"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0007:
+   .line 395
+   new com/anatawa12/jasm/assembler/SignatureVerifier
+   dup
+   aload 1
+   invokespecial com/anatawa12/jasm/assembler/SignatureVerifier/<init> (Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/assembler/SignatureVerifier/fieldSignature ()Z
+   ifne L_0015
+L_000f:
+   .line 396
+   aload 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidFieldSignature Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 2
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_0015:
+   .line 397
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Object java/lang/String
+      locals Object com/anatawa12/jasm/tree/Node
+   .end stack
+   return
+L_0019:
+.end method
+
+.method private verify (ZLcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+   .limit stack 3
+   .limit local 4
+L_0000:
+   .line 402
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_000e
+   .var 1 is boolean Z from L_0000 to L_000e
+   .var 2 is error Lcom/anatawa12/jasm/assembler/VerifyingErrorType; from L_0000 to L_000e
+   .var 3 is at Lcom/anatawa12/jasm/tree/Node; from L_0000 to L_000e
+   iload 1
+   ifne L_000a
+L_0004:
+   .line 403
+   aload 0
+   aload 2
+   aload 3
+   invokespecial com/anatawa12/jasm/assembler/Verifier/addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+L_000a:
+   .line 404
+   .stack
+      locals Object com/anatawa12/jasm/assembler/Verifier
+      locals Integer
+      locals Object com/anatawa12/jasm/assembler/VerifyingErrorType
+      locals Object com/anatawa12/jasm/tree/Node
+   .end stack
+   return
+L_000e:
+.end method
+
+.method public getErrors ()Ljava/util/List;
+   .signature "()Ljava/util/List<Lcom/anatawa12/jasm/assembler/VerifyingError;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 406
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/assembler/Verifier/errors Ljava/util/List;
+   areturn
+L_0005:
+.end method
+
+.method public getWarns ()Ljava/util/List;
+   .signature "()Ljava/util/List<Lcom/anatawa12/jasm/assembler/VerifyingWarn;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 407
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/assembler/Verifier/warns Ljava/util/List;
+   areturn
+L_0005:
+.end method
+
+.method private addError (Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;)V
+   .limit stack 6
+   .limit local 12
+L_0000:
+   .line 410
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0020
+   .var 1 is error Lcom/anatawa12/jasm/assembler/VerifyingErrorType; from L_0000 to L_0020
+   .var 2 is at Lcom/anatawa12/jasm/tree/Node; from L_0000 to L_0020
+   aload 0
+   getfield com/anatawa12/jasm/assembler/Verifier/errors Ljava/util/List;
+   aload 1
+   aload 2
+   astore 7
+   astore 6
+   astore 3
+   iconst_0
+   anewarray java/lang/Object
+   astore 8
+   aload 3
+   aload 6
+   aload 7
+   aload 8
+L_0010:
+   .line 410
+   astore 9
+   astore 10
+   astore 11
+   new com/anatawa12/jasm/assembler/VerifyingError
+   dup
+   aload 11
+   aload 10
+   aload 9
+   invokespecial com/anatawa12/jasm/assembler/VerifyingError/<init> "(Lcom/anatawa12/jasm/assembler/VerifyingErrorType;Lcom/anatawa12/jasm/tree/Node;[Ljava/lang/Object;)V"
+   invokeinterface java/util/List/add (Ljava/lang/Object;)Z
+   pop
+L_001d:
+   .line 411
+   return
+L_0020:
+.end method
+
+.method private addWarn (Lcom/anatawa12/jasm/assembler/VerifyingWarnType;Lcom/anatawa12/jasm/tree/Node;)V
+   .limit stack 6
+   .limit local 12
+L_0000:
+   .line 414
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0020
+   .var 1 is warn Lcom/anatawa12/jasm/assembler/VerifyingWarnType; from L_0000 to L_0020
+   .var 2 is at Lcom/anatawa12/jasm/tree/Node; from L_0000 to L_0020
+   aload 0
+   getfield com/anatawa12/jasm/assembler/Verifier/warns Ljava/util/List;
+   aload 1
+   aload 2
+   astore 7
+   astore 6
+   astore 3
+   iconst_0
+   anewarray java/lang/Object
+   astore 8
+   aload 3
+   aload 6
+   aload 7
+   aload 8
+L_0010:
+   .line 414
+   astore 9
+   astore 10
+   astore 11
+   new com/anatawa12/jasm/assembler/VerifyingWarn
+   dup
+   aload 11
+   aload 10
+   aload 9
+   invokespecial com/anatawa12/jasm/assembler/VerifyingWarn/<init> "(Lcom/anatawa12/jasm/assembler/VerifyingWarnType;Lcom/anatawa12/jasm/tree/Node;[Ljava/lang/Object;)V"
+   invokeinterface java/util/List/add (Ljava/lang/Object;)Z
+   pop
+L_001d:
+   .line 415
+   return
+L_0020:
+.end method
+
+.method public getOptions ()Lcom/anatawa12/jasm/assembler/AssemblerOptions;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 8
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/assembler/Verifier/options Lcom/anatawa12/jasm/assembler/AssemblerOptions;
+   areturn
+L_0005:
+.end method
+
+.method public <init> (Lcom/anatawa12/jasm/assembler/AssemblerOptions;)V
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 5
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/assembler/Verifier; from L_0000 to L_0028
+   .var 1 is options Lcom/anatawa12/jasm/assembler/AssemblerOptions; from L_0000 to L_0028
+   aload 1
+   ldc "options"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0004:
+   .line 8
+   aload 0
+   invokespecial java/lang/Object/<init> ()V
+   aload 0
+   aload 1
+   putfield com/anatawa12/jasm/assembler/Verifier/options Lcom/anatawa12/jasm/assembler/AssemblerOptions;
+L_000b:
+   .line 406
+   aload 0
+   astore 3
+   iconst_0
+   istore 2
+   new java/util/ArrayList
+   dup
+   invokespecial java/util/ArrayList/<init> ()V
+   checkcast java/util/List
+   astore 4
+   aload 3
+   aload 4
+   putfield com/anatawa12/jasm/assembler/Verifier/errors Ljava/util/List;
+L_0019:
+   .line 407
+   aload 0
+   astore 3
+   iconst_0
+   istore 2
+   new java/util/ArrayList
+   dup
+   invokespecial java/util/ArrayList/<init> ()V
+   checkcast java/util/List
+   astore 4
+   aload 3
+   aload 4
+   putfield com/anatawa12/jasm/assembler/Verifier/warns Ljava/util/List;
+   return
+L_0028:
+.end method
+
+.field private errors Ljava/util/List;
+   .signature "Ljava/util/List<Lcom/anatawa12/jasm/assembler/VerifyingError;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+
+.field private warns Ljava/util/List;
+   .signature "Ljava/util/List<Lcom/anatawa12/jasm/assembler/VerifyingWarn;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+
+.field private options Lcom/anatawa12/jasm/assembler/AssemblerOptions;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+

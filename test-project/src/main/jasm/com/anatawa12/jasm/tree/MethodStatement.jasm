@@ -1,0 +1,65 @@
+.bytecode 52.0
+.source "MethodStatement.kt"
+.class public com/anatawa12/jasm/tree/MethodStatement
+.super com/anatawa12/jasm/tree/BranchNode
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002\u0082\u0001\u000c\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\u000c\r\u000e¨\u0006\u000f"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/tree/MethodStatement;"
+      s = "Lcom/anatawa12/jasm/tree/BranchNode;"
+      s = "()V"
+      s = "Lcom/anatawa12/jasm/tree/StackLimit;"
+      s = "Lcom/anatawa12/jasm/tree/LocalLimit;"
+      s = "Lcom/anatawa12/jasm/tree/LineNumber;"
+      s = "Lcom/anatawa12/jasm/tree/LocalVar;"
+      s = "Lcom/anatawa12/jasm/tree/Throws;"
+      s = "Lcom/anatawa12/jasm/tree/TryCatch;"
+      s = "Lcom/anatawa12/jasm/tree/MethodSignature;"
+      s = "Lcom/anatawa12/jasm/tree/MethodDeprecated;"
+      s = "Lcom/anatawa12/jasm/tree/LabelDefinition;"
+      s = "Lcom/anatawa12/jasm/tree/StackFrame;"
+      s = "Lcom/anatawa12/jasm/tree/MethodAnnotation;"
+      s = "Lcom/anatawa12/jasm/tree/Instruction;"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method private <init> ()V
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 4
+   .var 0 is this Lcom/anatawa12/jasm/tree/MethodStatement; from L_0000 to L_0005
+   aload 0
+   invokespecial com/anatawa12/jasm/tree/BranchNode/<init> ()V
+   return
+L_0005:
+.end method
+
+.method public <init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+   .limit stack 1
+   .limit local 2
+L_0000:
+   .line 4
+   .var 0 is this Lcom/anatawa12/jasm/tree/MethodStatement; from L_0000 to L_0005
+   .var 1 is $constructor_marker Lkotlin/jvm/internal/DefaultConstructorMarker; from L_0000 to L_0005
+   aload 0
+   invokespecial com/anatawa12/jasm/tree/MethodStatement/<init> ()V
+   return
+L_0005:
+.end method
+

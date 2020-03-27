@@ -1,0 +1,572 @@
+.bytecode 52.0
+.source "Others.kt"
+.class public com/anatawa12/jasm/tree/AnnotationArray
+.super com/anatawa12/jasm/tree/AnnotationValue
+.implements java/util/List
+.implements kotlin/jvm/internal/markers/KMappedMarker
+.signature "Lcom/anatawa12/jasm/tree/AnnotationValue;Ljava/util/List<Lcom/anatawa12/jasm/tree/AnnotationValue;>;Lkotlin/jvm/internal/markers/KMappedMarker;"
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u00008\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u001e\n\u0002\b\u0005\n\u0002\u0010(\n\u0002\b\u0002\n\u0002\u0010*\n\u0002\b\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u00012\u00020\u0002B\u0013\u0012\u000c\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001¢\u0006\u0002\u0010\u0004J\u0011\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\r\u001a\u00020\u0002H\u0096\u0003J\u0017\u0010\u000e\u001a\u00020\u000c2\u000c\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00020\u0010H\u0096\u0001J\u0011\u0010\u0011\u001a\u00020\u00022\u0006\u0010\u0012\u001a\u00020\u0006H\u0096\u0003J\u0011\u0010\u0013\u001a\u00020\u00062\u0006\u0010\r\u001a\u00020\u0002H\u0096\u0001J\t\u0010\u0014\u001a\u00020\u000cH\u0096\u0001J\u000f\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00020\u0016H\u0096\u0003J\u0011\u0010\u0017\u001a\u00020\u00062\u0006\u0010\r\u001a\u00020\u0002H\u0096\u0001J\u000f\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00020\u0019H\u0096\u0001J\u0017\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00020\u00192\u0006\u0010\u0012\u001a\u00020\u0006H\u0096\u0001J\u001f\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\u00020\u00012\u0006\u0010\u001b\u001a\u00020\u00062\u0006\u0010\u001c\u001a\u00020\u0006H\u0096\u0001R\u0012\u0010\u0005\u001a\u00020\u0006X\u0096\u0005¢\u0006\u0006\u001a\u0004\b\u0007\u0010\bR\u0017\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\n¨\u0006\u001d"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/tree/AnnotationArray;"
+      s = ""
+      s = "Lcom/anatawa12/jasm/tree/AnnotationValue;"
+      s = "values"
+      s = "(Ljava/util/List;)V"
+      s = "size"
+      s = ""
+      s = "getSize"
+      s = "()I"
+      s = "getValues"
+      s = "()Ljava/util/List;"
+      s = "contains"
+      s = ""
+      s = "element"
+      s = "containsAll"
+      s = "elements"
+      s = ""
+      s = "get"
+      s = "index"
+      s = "indexOf"
+      s = "isEmpty"
+      s = "iterator"
+      s = ""
+      s = "lastIndexOf"
+      s = "listIterator"
+      s = ""
+      s = "subList"
+      s = "fromIndex"
+      s = "toIndex"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method public getValues ()Ljava/util/List;
+   .signature "()Ljava/util/List<Lcom/anatawa12/jasm/tree/AnnotationValue;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 9
+   .var 0 is this Lcom/anatawa12/jasm/tree/AnnotationArray; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/AnnotationArray/values Ljava/util/List;
+   areturn
+L_0005:
+.end method
+
+.method public <init> (Ljava/util/List;)V
+   .signature "(Ljava/util/List<+Lcom/anatawa12/jasm/tree/AnnotationValue;>;)V"
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 2
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/AnnotationArray; from L_0000 to L_000d
+   .var 1 is values Ljava/util/List; from L_0000 to L_000d
+   aload 1
+   ldc "values"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0004:
+   .line 9
+   aload 0
+   aconst_null
+   invokespecial com/anatawa12/jasm/tree/AnnotationValue/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+   aload 0
+   aload 1
+   putfield com/anatawa12/jasm/tree/AnnotationArray/values Ljava/util/List;
+   return
+L_000d:
+.end method
+
+.method public getSize ()I
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/AnnotationArray; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/AnnotationArray/values Ljava/util/List;
+   invokeinterface java/util/List/size ()I
+   ireturn
+L_0005:
+.end method
+
+.method public size ()I
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 9
+   aload 0
+   invokevirtual com/anatawa12/jasm/tree/AnnotationArray/getSize ()I
+   ireturn
+.end method
+
+.method public contains (Lcom/anatawa12/jasm/tree/AnnotationValue;)Z
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 2
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/AnnotationArray; from L_0000 to L_0009
+   .var 1 is element Lcom/anatawa12/jasm/tree/AnnotationValue; from L_0000 to L_0009
+   aload 1
+   ldc "element"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 0
+   getfield com/anatawa12/jasm/tree/AnnotationArray/values Ljava/util/List;
+   aload 1
+   invokeinterface java/util/List/contains (Ljava/lang/Object;)Z
+   ireturn
+L_0009:
+.end method
+
+.method public contains (Ljava/lang/Object;)Z
+   .limit stack 2
+   .limit local 2
+L_0000:
+   .line 9
+   aload 1
+   instanceof com/anatawa12/jasm/tree/AnnotationValue
+   ifeq L_0006
+   goto L_000a
+L_0006:
+   .stack
+      locals Object com/anatawa12/jasm/tree/AnnotationArray
+      locals Object java/lang/Object
+   .end stack
+   iconst_0
+   ireturn
+L_000a:
+   .stack use locals
+   .end stack
+   aload 0
+   aload 1
+   checkcast com/anatawa12/jasm/tree/AnnotationValue
+   invokevirtual com/anatawa12/jasm/tree/AnnotationArray/contains (Lcom/anatawa12/jasm/tree/AnnotationValue;)Z
+   ireturn
+.end method
+
+.method public containsAll (Ljava/util/Collection;)Z
+   .signature "(Ljava/util/Collection<+Ljava/lang/Object;>;)Z"
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 2
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/AnnotationArray; from L_0000 to L_0009
+   .var 1 is elements Ljava/util/Collection; from L_0000 to L_0009
+   aload 1
+   ldc "elements"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 0
+   getfield com/anatawa12/jasm/tree/AnnotationArray/values Ljava/util/List;
+   aload 1
+   invokeinterface java/util/List/containsAll (Ljava/util/Collection;)Z
+   ireturn
+L_0009:
+.end method
+
+.method public get (I)Lcom/anatawa12/jasm/tree/AnnotationValue;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 3
+   .limit local 2
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/AnnotationArray; from L_0000 to L_000a
+   .var 1 is index I from L_0000 to L_000a
+   aload 0
+   getfield com/anatawa12/jasm/tree/AnnotationArray/values Ljava/util/List;
+   iload 1
+   invokeinterface java/util/List/get (I)Ljava/lang/Object;
+   dup
+   ldc "get(...)"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   checkcast com/anatawa12/jasm/tree/AnnotationValue
+   areturn
+L_000a:
+.end method
+
+.method public get (I)Ljava/lang/Object;
+   .limit stack 2
+   .limit local 2
+L_0000:
+   .line 9
+   aload 0
+   iload 1
+   invokevirtual com/anatawa12/jasm/tree/AnnotationArray/get (I)Lcom/anatawa12/jasm/tree/AnnotationValue;
+   areturn
+.end method
+
+.method public indexOf (Lcom/anatawa12/jasm/tree/AnnotationValue;)I
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 2
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/AnnotationArray; from L_0000 to L_0009
+   .var 1 is element Lcom/anatawa12/jasm/tree/AnnotationValue; from L_0000 to L_0009
+   aload 1
+   ldc "element"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 0
+   getfield com/anatawa12/jasm/tree/AnnotationArray/values Ljava/util/List;
+   aload 1
+   invokeinterface java/util/List/indexOf (Ljava/lang/Object;)I
+   ireturn
+L_0009:
+.end method
+
+.method public indexOf (Ljava/lang/Object;)I
+   .limit stack 2
+   .limit local 2
+L_0000:
+   .line 9
+   aload 1
+   instanceof com/anatawa12/jasm/tree/AnnotationValue
+   ifeq L_0006
+   goto L_000a
+L_0006:
+   .stack
+      locals Object com/anatawa12/jasm/tree/AnnotationArray
+      locals Object java/lang/Object
+   .end stack
+   iconst_m1
+   ireturn
+L_000a:
+   .stack use locals
+   .end stack
+   aload 0
+   aload 1
+   checkcast com/anatawa12/jasm/tree/AnnotationValue
+   invokevirtual com/anatawa12/jasm/tree/AnnotationArray/indexOf (Lcom/anatawa12/jasm/tree/AnnotationValue;)I
+   ireturn
+.end method
+
+.method public isEmpty ()Z
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/AnnotationArray; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/AnnotationArray/values Ljava/util/List;
+   invokeinterface java/util/List/isEmpty ()Z
+   ireturn
+L_0005:
+.end method
+
+.method public iterator ()Ljava/util/Iterator;
+   .signature "()Ljava/util/Iterator<Lcom/anatawa12/jasm/tree/AnnotationValue;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/AnnotationArray; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/AnnotationArray/values Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   areturn
+L_0005:
+.end method
+
+.method public lastIndexOf (Lcom/anatawa12/jasm/tree/AnnotationValue;)I
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 2
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/AnnotationArray; from L_0000 to L_0009
+   .var 1 is element Lcom/anatawa12/jasm/tree/AnnotationValue; from L_0000 to L_0009
+   aload 1
+   ldc "element"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 0
+   getfield com/anatawa12/jasm/tree/AnnotationArray/values Ljava/util/List;
+   aload 1
+   invokeinterface java/util/List/lastIndexOf (Ljava/lang/Object;)I
+   ireturn
+L_0009:
+.end method
+
+.method public lastIndexOf (Ljava/lang/Object;)I
+   .limit stack 2
+   .limit local 2
+L_0000:
+   .line 9
+   aload 1
+   instanceof com/anatawa12/jasm/tree/AnnotationValue
+   ifeq L_0006
+   goto L_000a
+L_0006:
+   .stack
+      locals Object com/anatawa12/jasm/tree/AnnotationArray
+      locals Object java/lang/Object
+   .end stack
+   iconst_m1
+   ireturn
+L_000a:
+   .stack use locals
+   .end stack
+   aload 0
+   aload 1
+   checkcast com/anatawa12/jasm/tree/AnnotationValue
+   invokevirtual com/anatawa12/jasm/tree/AnnotationArray/lastIndexOf (Lcom/anatawa12/jasm/tree/AnnotationValue;)I
+   ireturn
+.end method
+
+.method public listIterator ()Ljava/util/ListIterator;
+   .signature "()Ljava/util/ListIterator<Lcom/anatawa12/jasm/tree/AnnotationValue;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/AnnotationArray; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/AnnotationArray/values Ljava/util/List;
+   invokeinterface java/util/List/listIterator ()Ljava/util/ListIterator;
+   areturn
+L_0005:
+.end method
+
+.method public listIterator (I)Ljava/util/ListIterator;
+   .signature "(I)Ljava/util/ListIterator<Lcom/anatawa12/jasm/tree/AnnotationValue;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 2
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/AnnotationArray; from L_0000 to L_0006
+   .var 1 is index I from L_0000 to L_0006
+   aload 0
+   getfield com/anatawa12/jasm/tree/AnnotationArray/values Ljava/util/List;
+   iload 1
+   invokeinterface java/util/List/listIterator (I)Ljava/util/ListIterator;
+   areturn
+L_0006:
+.end method
+
+.method public subList (II)Ljava/util/List;
+   .signature "(II)Ljava/util/List<Lcom/anatawa12/jasm/tree/AnnotationValue;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 3
+   .limit local 3
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/AnnotationArray; from L_0000 to L_0007
+   .var 1 is fromIndex I from L_0000 to L_0007
+   .var 2 is toIndex I from L_0000 to L_0007
+   aload 0
+   getfield com/anatawa12/jasm/tree/AnnotationArray/values Ljava/util/List;
+   iload 1
+   iload 2
+   invokeinterface java/util/List/subList (II)Ljava/util/List;
+   areturn
+L_0007:
+.end method
+
+.method public add (Lcom/anatawa12/jasm/tree/AnnotationValue;)Z
+   .limit stack 3
+   .limit local 2
+   new java/lang/UnsupportedOperationException
+   dup
+   ldc "Operation is not supported for read-only collection"
+   invokespecial java/lang/UnsupportedOperationException/<init> (Ljava/lang/String;)V
+   athrow
+.end method
+
+.method public add (ILcom/anatawa12/jasm/tree/AnnotationValue;)V
+   .limit stack 3
+   .limit local 3
+   new java/lang/UnsupportedOperationException
+   dup
+   ldc "Operation is not supported for read-only collection"
+   invokespecial java/lang/UnsupportedOperationException/<init> (Ljava/lang/String;)V
+   athrow
+.end method
+
+.method public addAll (ILjava/util/Collection;)Z
+   .signature "(ILjava/util/Collection<+Lcom/anatawa12/jasm/tree/AnnotationValue;>;)Z"
+   .limit stack 3
+   .limit local 3
+   new java/lang/UnsupportedOperationException
+   dup
+   ldc "Operation is not supported for read-only collection"
+   invokespecial java/lang/UnsupportedOperationException/<init> (Ljava/lang/String;)V
+   athrow
+.end method
+
+.method public addAll (Ljava/util/Collection;)Z
+   .signature "(Ljava/util/Collection<+Lcom/anatawa12/jasm/tree/AnnotationValue;>;)Z"
+   .limit stack 3
+   .limit local 2
+   new java/lang/UnsupportedOperationException
+   dup
+   ldc "Operation is not supported for read-only collection"
+   invokespecial java/lang/UnsupportedOperationException/<init> (Ljava/lang/String;)V
+   athrow
+.end method
+
+.method public clear ()V
+   .limit stack 3
+   .limit local 1
+   new java/lang/UnsupportedOperationException
+   dup
+   ldc "Operation is not supported for read-only collection"
+   invokespecial java/lang/UnsupportedOperationException/<init> (Ljava/lang/String;)V
+   athrow
+.end method
+
+.method public remove (Ljava/lang/Object;)Z
+   .limit stack 3
+   .limit local 2
+   new java/lang/UnsupportedOperationException
+   dup
+   ldc "Operation is not supported for read-only collection"
+   invokespecial java/lang/UnsupportedOperationException/<init> (Ljava/lang/String;)V
+   athrow
+.end method
+
+.method public removeAll (Ljava/util/Collection;)Z
+   .signature "(Ljava/util/Collection<+Ljava/lang/Object;>;)Z"
+   .limit stack 3
+   .limit local 2
+   new java/lang/UnsupportedOperationException
+   dup
+   ldc "Operation is not supported for read-only collection"
+   invokespecial java/lang/UnsupportedOperationException/<init> (Ljava/lang/String;)V
+   athrow
+.end method
+
+.method public remove (I)Lcom/anatawa12/jasm/tree/AnnotationValue;
+   .limit stack 3
+   .limit local 2
+   new java/lang/UnsupportedOperationException
+   dup
+   ldc "Operation is not supported for read-only collection"
+   invokespecial java/lang/UnsupportedOperationException/<init> (Ljava/lang/String;)V
+   athrow
+.end method
+
+.method public replaceAll (Ljava/util/function/UnaryOperator;)V
+   .signature "(Ljava/util/function/UnaryOperator<Lcom/anatawa12/jasm/tree/AnnotationValue;>;)V"
+   .limit stack 3
+   .limit local 2
+   new java/lang/UnsupportedOperationException
+   dup
+   ldc "Operation is not supported for read-only collection"
+   invokespecial java/lang/UnsupportedOperationException/<init> (Ljava/lang/String;)V
+   athrow
+.end method
+
+.method public retainAll (Ljava/util/Collection;)Z
+   .signature "(Ljava/util/Collection<+Ljava/lang/Object;>;)Z"
+   .limit stack 3
+   .limit local 2
+   new java/lang/UnsupportedOperationException
+   dup
+   ldc "Operation is not supported for read-only collection"
+   invokespecial java/lang/UnsupportedOperationException/<init> (Ljava/lang/String;)V
+   athrow
+.end method
+
+.method public set (ILcom/anatawa12/jasm/tree/AnnotationValue;)Lcom/anatawa12/jasm/tree/AnnotationValue;
+   .limit stack 3
+   .limit local 3
+   new java/lang/UnsupportedOperationException
+   dup
+   ldc "Operation is not supported for read-only collection"
+   invokespecial java/lang/UnsupportedOperationException/<init> (Ljava/lang/String;)V
+   athrow
+.end method
+
+.method public sort (Ljava/util/Comparator;)V
+   .signature "(Ljava/util/Comparator<-Lcom/anatawa12/jasm/tree/AnnotationValue;>;)V"
+   .limit stack 3
+   .limit local 2
+   new java/lang/UnsupportedOperationException
+   dup
+   ldc "Operation is not supported for read-only collection"
+   invokespecial java/lang/UnsupportedOperationException/<init> (Ljava/lang/String;)V
+   athrow
+.end method
+
+.method public add (Ljava/lang/Object;)Z
+   .limit stack 3
+   .limit local 2
+   new java/lang/UnsupportedOperationException
+   dup
+   ldc "Operation is not supported for read-only collection"
+   invokespecial java/lang/UnsupportedOperationException/<init> (Ljava/lang/String;)V
+   athrow
+.end method
+
+.method public add (ILjava/lang/Object;)V
+   .limit stack 3
+   .limit local 3
+   new java/lang/UnsupportedOperationException
+   dup
+   ldc "Operation is not supported for read-only collection"
+   invokespecial java/lang/UnsupportedOperationException/<init> (Ljava/lang/String;)V
+   athrow
+.end method
+
+.method public remove (I)Ljava/lang/Object;
+   .limit stack 3
+   .limit local 2
+   new java/lang/UnsupportedOperationException
+   dup
+   ldc "Operation is not supported for read-only collection"
+   invokespecial java/lang/UnsupportedOperationException/<init> (Ljava/lang/String;)V
+   athrow
+.end method
+
+.method public set (ILjava/lang/Object;)Ljava/lang/Object;
+   .limit stack 3
+   .limit local 3
+   new java/lang/UnsupportedOperationException
+   dup
+   ldc "Operation is not supported for read-only collection"
+   invokespecial java/lang/UnsupportedOperationException/<init> (Ljava/lang/String;)V
+   athrow
+.end method
+
+.method public toArray "()[Ljava/lang/Object;"
+   .limit stack 1
+   .limit local 1
+   aload 0
+   invokestatic kotlin/jvm/internal/CollectionToArray/toArray "(Ljava/util/Collection;)[Ljava/lang/Object;"
+   areturn
+.end method
+
+.method public toArray "([Ljava/lang/Object;)[Ljava/lang/Object;"
+   .signature "<T:Ljava/lang/Object;>([TT;)[TT;"
+   .limit stack 2
+   .limit local 2
+   aload 0
+   aload 1
+   invokestatic kotlin/jvm/internal/CollectionToArray/toArray "(Ljava/util/Collection;[Ljava/lang/Object;)[Ljava/lang/Object;"
+   areturn
+.end method
+
+.field private values Ljava/util/List;
+   .signature "Ljava/util/List<Lcom/anatawa12/jasm/tree/AnnotationValue;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+

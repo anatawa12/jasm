@@ -6,10 +6,14 @@ import org.objectweb.asm.tree.ClassNode
 import java.io.File
 
 fun main(args: Array<String>) {
-    val reader = ClassReader(File(args[0]).readBytes())
+    File(args[1]).writeText(disassemble(File(args[0]).readBytes()))
+}
+
+fun disassemble(classFile: ByteArray): String {
+    val reader = ClassReader(classFile)
     val node = ClassNode()
     reader.accept(node, arrayOf(DeprecatedAttribute), ClassReader.EXPAND_FRAMES)
     val disassembler = Disassembler()
     disassembler.disassemble(node)
-    File(args[1]).writeText(disassembler.file.getString())
+    return disassembler.file.getString()
 }

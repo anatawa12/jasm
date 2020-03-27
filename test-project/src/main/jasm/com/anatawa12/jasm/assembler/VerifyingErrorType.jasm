@@ -1,0 +1,547 @@
+.bytecode 52.0
+.source "VerifyError.kt"
+.class public com/anatawa12/jasm/assembler/VerifyingErrorType
+.super java/lang/Enum
+.signature "Ljava/lang/Enum<Lcom/anatawa12/jasm/assembler/VerifyingErrorType;>;"
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u001e\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\nj\u0002\b\u000bj\u0002\b\u000cj\u0002\b\rj\u0002\b\u000ej\u0002\b\u000fj\u0002\b\u0010j\u0002\b\u0011j\u0002\b\u0012j\u0002\b\u0013j\u0002\b\u0014j\u0002\b\u0015j\u0002\b\u0016j\u0002\b\u0017j\u0002\b\u0018j\u0002\b\u0019j\u0002\b\u001aj\u0002\b\u001bj\u0002\b\u001cj\u0002\b\u001dj\u0002\b\u001ej\u0002\b\u001fj\u0002\b ¨\u0006!"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/assembler/VerifyingErrorType;"
+      s = ""
+      s = "message"
+      s = ""
+      s = "(Ljava/lang/String;ILjava/lang/String;)V"
+      s = "getMessage"
+      s = "()Ljava/lang/String;"
+      s = "UnsupportedBytecode"
+      s = "ClassNameEmpty"
+      s = "MethodNameEmpty"
+      s = "InvalidClassName"
+      s = "InvalidMethodName"
+      s = "InvalidClassSignature"
+      s = "InvalidMethodDescriptor"
+      s = "InvalidMethodSignature"
+      s = "InvalidFieldDescriptor"
+      s = "InvalidFieldSignature"
+      s = "InvalidDefaultValueForType"
+      s = "AnnotationDefaultNotSupported"
+      s = "TwoOrMoreStackLimit"
+      s = "TwoOrMoreLocalLimit"
+      s = "TwoOrMoreSignature"
+      s = "TwoOrMoreDeprecated"
+      s = "TwoOrMoreAnnotationDefault"
+      s = "NoInstructionButSomeMeta"
+      s = "InstructionButNoStackLimit"
+      s = "InstructionButNoLocalLimit"
+      s = "ClassTypeDuplicated"
+      s = "AccessDuplicated"
+      s = "UnsupportedAccessForClass"
+      s = "UnsupportedAccessForInnerClass"
+      s = "UnsupportedAccessForMethod"
+      s = "FlagDuplicated"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method static <clinit> ()V
+   .limit stack 9
+   .limit local 0
+   bipush 26
+   anewarray com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   dup
+   iconst_0
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "UnsupportedBytecode"
+   iconst_0
+L_0009:
+   .line 28
+   ldc "unsupported bytecode version. must be in 45..52"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/UnsupportedBytecode Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   iconst_1
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "ClassNameEmpty"
+   iconst_1
+L_0016:
+   .line 29
+   ldc "class name must not be empty"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/ClassNameEmpty Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   iconst_2
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "MethodNameEmpty"
+   iconst_2
+L_0023:
+   .line 30
+   ldc "class name must not be empty"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/MethodNameEmpty Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   iconst_3
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "InvalidClassName"
+   iconst_3
+L_0030:
+   .line 32
+   ldc "class name is not valid"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidClassName Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   iconst_4
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "InvalidMethodName"
+   iconst_4
+L_003d:
+   .line 33
+   ldc "method name is not valid"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidMethodName Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   iconst_5
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "InvalidClassSignature"
+   iconst_5
+L_004a:
+   .line 35
+   ldc "class signature is not valid."
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidClassSignature Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 6
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "InvalidMethodDescriptor"
+   bipush 6
+L_0057:
+   .line 36
+   ldc "method descriptor is not valid."
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidMethodDescriptor Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 7
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "InvalidMethodSignature"
+   bipush 7
+L_0064:
+   .line 37
+   ldc "method signature is not valid."
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidMethodSignature Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 8
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "InvalidFieldDescriptor"
+   bipush 8
+L_0071:
+   .line 38
+   ldc "field descriptor is not valid."
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidFieldDescriptor Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 9
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "InvalidFieldSignature"
+   bipush 9
+L_007e:
+   .line 39
+   ldc "field signature is not valid."
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidFieldSignature Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 10
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "InvalidDefaultValueForType"
+   bipush 10
+L_008b:
+   .line 41
+   ldc "type mismatch: default value and descriptor"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InvalidDefaultValueForType Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 11
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "AnnotationDefaultNotSupported"
+   bipush 11
+L_0098:
+   .line 42
+   ldc ".annotation default not supported for this target"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/AnnotationDefaultNotSupported Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 12
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "TwoOrMoreStackLimit"
+   bipush 12
+L_00a5:
+   .line 44
+   ldc "two or more .limit stack found"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/TwoOrMoreStackLimit Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 13
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "TwoOrMoreLocalLimit"
+   bipush 13
+L_00b2:
+   .line 45
+   ldc "two or more .limit local found"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/TwoOrMoreLocalLimit Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 14
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "TwoOrMoreSignature"
+   bipush 14
+L_00bf:
+   .line 46
+   ldc "two or more .signature found"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/TwoOrMoreSignature Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 15
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "TwoOrMoreDeprecated"
+   bipush 15
+L_00cc:
+   .line 47
+   ldc "two or more .deprecated found"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/TwoOrMoreDeprecated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 16
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "TwoOrMoreAnnotationDefault"
+   bipush 16
+L_00d9:
+   .line 48
+   ldc "two ore more .annotation default found"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/TwoOrMoreAnnotationDefault Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 17
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "NoInstructionButSomeMeta"
+   bipush 17
+L_00e6:
+   .line 50
+   ldc "instructions not found but .line .var .try label: or .stack"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/NoInstructionButSomeMeta Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 18
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "InstructionButNoStackLimit"
+   bipush 18
+L_00f3:
+   .line 51
+   ldc "instructions found but .limit stack not found"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InstructionButNoStackLimit Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 19
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "InstructionButNoLocalLimit"
+   bipush 19
+L_0100:
+   .line 52
+   ldc "instructions found but .limit local not found"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/InstructionButNoLocalLimit Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 20
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "ClassTypeDuplicated"
+   bipush 20
+L_010d:
+   .line 54
+   ldc "cannot set two ore more interface, abstract, anotation, or enum."
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/ClassTypeDuplicated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 21
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "AccessDuplicated"
+   bipush 21
+L_011a:
+   .line 55
+   ldc "cannot set two ore more public, private, or protected."
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/AccessDuplicated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 22
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "UnsupportedAccessForClass"
+   bipush 22
+L_0127:
+   .line 56
+   ldc "this flag is not supported for class"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/UnsupportedAccessForClass Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 23
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "UnsupportedAccessForInnerClass"
+   bipush 23
+L_0134:
+   .line 57
+   ldc "this flag is not supported for inner class"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/UnsupportedAccessForInnerClass Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 24
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "UnsupportedAccessForMethod"
+   bipush 24
+L_0141:
+   .line 58
+   ldc "this flag is not supported for method"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/UnsupportedAccessForMethod Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   dup
+   bipush 25
+   new com/anatawa12/jasm/assembler/VerifyingErrorType
+   dup
+   ldc "FlagDuplicated"
+   bipush 25
+L_014e:
+   .line 59
+   ldc "some acces flags are duplicated"
+   invokespecial com/anatawa12/jasm/assembler/VerifyingErrorType/<init> (Ljava/lang/String;ILjava/lang/String;)V
+   dup
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/FlagDuplicated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aastore
+   putstatic com/anatawa12/jasm/assembler/VerifyingErrorType/$VALUES "[Lcom/anatawa12/jasm/assembler/VerifyingErrorType;"
+   return
+.end method
+
+.method public getMessage ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 27
+   .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingErrorType; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/assembler/VerifyingErrorType/message Ljava/lang/String;
+   areturn
+L_0005:
+.end method
+
+.method private <init> (Ljava/lang/String;ILjava/lang/String;)V
+   .signature "(Ljava/lang/String;)V"
+   .limit stack 3
+   .limit local 4
+L_0000:
+   .line 27
+   .var 0 is this Lcom/anatawa12/jasm/assembler/VerifyingErrorType; from L_0000 to L_000a
+   .var 1 is $enum_name_or_ordinal$0 Ljava/lang/String; from L_0000 to L_000a
+   .var 2 is $enum_name_or_ordinal$1 I from L_0000 to L_000a
+   .var 3 is message Ljava/lang/String; from L_0000 to L_000a
+   aload 0
+   aload 1
+   iload 2
+   invokespecial java/lang/Enum/<init> (Ljava/lang/String;I)V
+   aload 0
+   aload 3
+   putfield com/anatawa12/jasm/assembler/VerifyingErrorType/message Ljava/lang/String;
+   return
+L_000a:
+.end method
+
+.method public values "()[Lcom/anatawa12/jasm/assembler/VerifyingErrorType;"
+   .limit stack 1
+   .limit local 0
+   getstatic com/anatawa12/jasm/assembler/VerifyingErrorType/$VALUES "[Lcom/anatawa12/jasm/assembler/VerifyingErrorType;"
+   invokevirtual "[Lcom/anatawa12/jasm/assembler/VerifyingErrorType;"/clone ()Ljava/lang/Object;
+   checkcast "[Lcom/anatawa12/jasm/assembler/VerifyingErrorType;"
+   areturn
+.end method
+
+.method public valueOf (Ljava/lang/String;)Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   .limit stack 2
+   .limit local 1
+   ldc class Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+   aload 0
+   invokestatic java/lang/Enum/valueOf (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+   checkcast com/anatawa12/jasm/assembler/VerifyingErrorType
+   areturn
+.end method
+
+.field public UnsupportedBytecode Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public ClassNameEmpty Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public MethodNameEmpty Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public InvalidClassName Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public InvalidMethodName Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public InvalidClassSignature Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public InvalidMethodDescriptor Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public InvalidMethodSignature Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public InvalidFieldDescriptor Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public InvalidFieldSignature Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public InvalidDefaultValueForType Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public AnnotationDefaultNotSupported Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public TwoOrMoreStackLimit Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public TwoOrMoreLocalLimit Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public TwoOrMoreSignature Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public TwoOrMoreDeprecated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public TwoOrMoreAnnotationDefault Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public NoInstructionButSomeMeta Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public InstructionButNoStackLimit Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public InstructionButNoLocalLimit Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public ClassTypeDuplicated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public AccessDuplicated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public UnsupportedAccessForClass Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public UnsupportedAccessForInnerClass Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public UnsupportedAccessForMethod Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field public FlagDuplicated Lcom/anatawa12/jasm/assembler/VerifyingErrorType;
+.end field
+
+.field private $VALUES "[Lcom/anatawa12/jasm/assembler/VerifyingErrorType;"
+.end field
+
+.field private message Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+

@@ -1,0 +1,101 @@
+.bytecode 52.0
+.class public com/anatawa12/jasm/parser/Parser$WhenMappings
+.super java/lang/Object
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 3
+.end annotation
+
+.method static <clinit> ()V
+   .limit stack 3
+   .limit local 0
+   invokestatic com/anatawa12/jasm/parser/InstrucionType/values "()[Lcom/anatawa12/jasm/parser/InstrucionType;"
+   arraylength
+   newarray int
+   putstatic com/anatawa12/jasm/parser/Parser$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/parser/Parser$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   invokevirtual com/anatawa12/jasm/parser/InstrucionType/ordinal ()I
+   iconst_1
+   iastore
+   getstatic com/anatawa12/jasm/parser/Parser$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/parser/InstrucionType/IntInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   invokevirtual com/anatawa12/jasm/parser/InstrucionType/ordinal ()I
+   iconst_2
+   iastore
+   getstatic com/anatawa12/jasm/parser/Parser$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/parser/InstrucionType/NewarrayInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   invokevirtual com/anatawa12/jasm/parser/InstrucionType/ordinal ()I
+   iconst_3
+   iastore
+   getstatic com/anatawa12/jasm/parser/Parser$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/parser/InstrucionType/VarInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   invokevirtual com/anatawa12/jasm/parser/InstrucionType/ordinal ()I
+   iconst_4
+   iastore
+   getstatic com/anatawa12/jasm/parser/Parser$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/parser/InstrucionType/TypeInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   invokevirtual com/anatawa12/jasm/parser/InstrucionType/ordinal ()I
+   iconst_5
+   iastore
+   getstatic com/anatawa12/jasm/parser/Parser$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/parser/InstrucionType/FieldInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   invokevirtual com/anatawa12/jasm/parser/InstrucionType/ordinal ()I
+   bipush 6
+   iastore
+   getstatic com/anatawa12/jasm/parser/Parser$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/parser/InstrucionType/MethodInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   invokevirtual com/anatawa12/jasm/parser/InstrucionType/ordinal ()I
+   bipush 7
+   iastore
+   getstatic com/anatawa12/jasm/parser/Parser$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/parser/InstrucionType/InvokeDynamicInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   invokevirtual com/anatawa12/jasm/parser/InstrucionType/ordinal ()I
+   bipush 8
+   iastore
+   getstatic com/anatawa12/jasm/parser/Parser$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   invokevirtual com/anatawa12/jasm/parser/InstrucionType/ordinal ()I
+   bipush 9
+   iastore
+   getstatic com/anatawa12/jasm/parser/Parser$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/parser/InstrucionType/LdcInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   invokevirtual com/anatawa12/jasm/parser/InstrucionType/ordinal ()I
+   bipush 10
+   iastore
+   getstatic com/anatawa12/jasm/parser/Parser$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/parser/InstrucionType/IincInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   invokevirtual com/anatawa12/jasm/parser/InstrucionType/ordinal ()I
+   bipush 11
+   iastore
+   getstatic com/anatawa12/jasm/parser/Parser$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/parser/InstrucionType/TableSwitchInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   invokevirtual com/anatawa12/jasm/parser/InstrucionType/ordinal ()I
+   bipush 12
+   iastore
+   getstatic com/anatawa12/jasm/parser/Parser$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/parser/InstrucionType/LookupSwitchInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   invokevirtual com/anatawa12/jasm/parser/InstrucionType/ordinal ()I
+   bipush 13
+   iastore
+   getstatic com/anatawa12/jasm/parser/Parser$WhenMappings/$EnumSwitchMapping$0 "[I"
+   getstatic com/anatawa12/jasm/parser/InstrucionType/MultiANewArrayInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   invokevirtual com/anatawa12/jasm/parser/InstrucionType/ordinal ()I
+   bipush 14
+   iastore
+   return
+.end method
+
+.field public $EnumSwitchMapping$0 "[I"
+.end field
+

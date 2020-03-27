@@ -1,0 +1,134 @@
+.bytecode 52.0
+.source "LexingError.kt"
+.class public com/anatawa12/jasm/parser/LexingError
+.super java/lang/Exception
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\b\n\u0002\b\b\u0018\u00002\u00060\u0001j\u0002`\u0002B\u001d\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0006¢\u0006\u0002\u0010\bR\u0011\u0010\u0007\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\u000cR\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\n¨\u0006\u000e"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/parser/LexingError;"
+      s = "Ljava/lang/Exception;"
+      s = "Lkotlin/Exception;"
+      s = "error"
+      s = ""
+      s = "line"
+      s = ""
+      s = "column"
+      s = "(Ljava/lang/String;II)V"
+      s = "getColumn"
+      s = "()I"
+      s = "getError"
+      s = "()Ljava/lang/String;"
+      s = "getLine"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method public getError ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 3
+   .var 0 is this Lcom/anatawa12/jasm/parser/LexingError; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/parser/LexingError/error Ljava/lang/String;
+   areturn
+L_0005:
+.end method
+
+.method public getLine ()I
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 3
+   .var 0 is this Lcom/anatawa12/jasm/parser/LexingError; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/parser/LexingError/line I
+   ireturn
+L_0005:
+.end method
+
+.method public getColumn ()I
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 3
+   .var 0 is this Lcom/anatawa12/jasm/parser/LexingError; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/parser/LexingError/column I
+   ireturn
+L_0005:
+.end method
+
+.method public <init> (Ljava/lang/String;II)V
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 3
+   .limit local 4
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/parser/LexingError; from L_0000 to L_0022
+   .var 1 is error Ljava/lang/String; from L_0000 to L_0022
+   .var 2 is line I from L_0000 to L_0022
+   .var 3 is column I from L_0000 to L_0022
+   aload 1
+   ldc "error"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0004:
+   .line 3
+   aload 0
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   bipush 40
+   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+   iload 2
+   invokevirtual java/lang/StringBuilder/append (I)Ljava/lang/StringBuilder;
+   ldc ", "
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   iload 3
+   invokevirtual java/lang/StringBuilder/append (I)Ljava/lang/StringBuilder;
+   ldc "): "
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 1
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   invokespecial java/lang/Exception/<init> (Ljava/lang/String;)V
+   aload 0
+   aload 1
+   putfield com/anatawa12/jasm/parser/LexingError/error Ljava/lang/String;
+   aload 0
+   iload 2
+   putfield com/anatawa12/jasm/parser/LexingError/line I
+   aload 0
+   iload 3
+   putfield com/anatawa12/jasm/parser/LexingError/column I
+   return
+L_0022:
+.end method
+
+.field private error Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+
+.field private line I
+.end field
+
+.field private column I
+.end field
+

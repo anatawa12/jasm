@@ -1,0 +1,98 @@
+.bytecode 52.0
+.source "Parser.kt"
+.class final com/anatawa12/jasm/parser/Parser$class_element$1
+.super kotlin/jvm/internal/Lambda
+.implements kotlin/jvm/functions/Function0
+.signature "Lkotlin/jvm/internal/Lambda;Lkotlin/jvm/functions/Function0<Ljava/util/Set<+Lcom/anatawa12/jasm/parser/TokenType<+Ljava/lang/Object;>;>;>;"
+.enclosing method com/anatawa12/jasm/parser/Parser <init> "(Lcom/anatawa12/jasm/parser/ILexer;)V"
+.inner static com/anatawa12/jasm/parser/Parser$class_element$1
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 3
+   d1 [ = .annotation array
+      s = "\u0000\u0010\n\u0000\n\u0002\u0010\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\u0010\u0000\u001a\u0010\u0012\u000c\u0012\n\u0012\u0006\b\u0001\u0012\u00020\u00030\u00020\u0001H\n¢\u0006\u0002\b\u0004"
+   .end annotation
+   d2 [ = .annotation array
+      s = "<anonymous>"
+      s = ""
+      s = "Lcom/anatawa12/jasm/parser/TokenType;"
+      s = ""
+      s = "invoke"
+   .end annotation
+.end annotation
+
+.method public invoke ()Ljava/lang/Object;
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 6
+   aload 0
+   invokevirtual com/anatawa12/jasm/parser/Parser$class_element$1/invoke ()Ljava/util/Set;
+   areturn
+.end method
+
+.method public invoke ()Ljava/util/Set;
+   .signature "()Ljava/util/Set<Lcom/anatawa12/jasm/parser/TokenType<+Ljava/lang/Object;>;>;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 1
+L_0000:
+   .line 112
+   .var 0 is this Lcom/anatawa12/jasm/parser/Parser$class_element$1; from L_0000 to L_001e
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$class_element$1/this$0 Lcom/anatawa12/jasm/parser/Parser;
+   invokevirtual com/anatawa12/jasm/parser/Parser/getMethod_block ()Lcom/anatawa12/jasm/parser/Grammar;
+   invokevirtual com/anatawa12/jasm/parser/Grammar/getStart ()Ljava/util/Set;
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$class_element$1/this$0 Lcom/anatawa12/jasm/parser/Parser;
+   invokevirtual com/anatawa12/jasm/parser/Parser/getField_block ()Lcom/anatawa12/jasm/parser/Grammar;
+   invokevirtual com/anatawa12/jasm/parser/Grammar/getStart ()Ljava/util/Set;
+   checkcast java/lang/Iterable
+   invokestatic kotlin/collections/SetsKt/plus (Ljava/util/Set;Ljava/lang/Iterable;)Ljava/util/Set;
+L_000c:
+   .line 113
+   aload 0
+   getfield com/anatawa12/jasm/parser/Parser$class_element$1/this$0 Lcom/anatawa12/jasm/parser/Parser;
+   invokevirtual com/anatawa12/jasm/parser/Parser/getMember_annotation_block ()Lcom/anatawa12/jasm/parser/Grammar;
+   invokevirtual com/anatawa12/jasm/parser/Grammar/getStart ()Ljava/util/Set;
+   checkcast java/lang/Iterable
+L_0013:
+   .line 112
+   invokestatic kotlin/collections/SetsKt/plus (Ljava/util/Set;Ljava/lang/Iterable;)Ljava/util/Set;
+L_0016:
+   .line 113
+   getstatic com/anatawa12/jasm/parser/Parser/Companion Lcom/anatawa12/jasm/parser/Parser$Companion;
+   invokevirtual com/anatawa12/jasm/parser/Parser$Companion/getDotDeprecated ()Lcom/anatawa12/jasm/parser/TokenType$DotedKeyWord;
+   invokestatic kotlin/collections/SetsKt/setOf (Ljava/lang/Object;)Ljava/util/Set;
+   checkcast java/lang/Iterable
+   invokestatic kotlin/collections/SetsKt/plus (Ljava/util/Set;Ljava/lang/Iterable;)Ljava/util/Set;
+   areturn
+L_001e:
+.end method
+
+.method <init> (Lcom/anatawa12/jasm/parser/Parser;)V
+   .limit stack 2
+   .limit local 2
+   aload 0
+   aload 1
+   putfield com/anatawa12/jasm/parser/Parser$class_element$1/this$0 Lcom/anatawa12/jasm/parser/Parser;
+   aload 0
+   iconst_0
+   invokespecial kotlin/jvm/internal/Lambda/<init> (I)V
+   return
+.end method
+
+.field final this$0 Lcom/anatawa12/jasm/parser/Parser;
+.end field
+

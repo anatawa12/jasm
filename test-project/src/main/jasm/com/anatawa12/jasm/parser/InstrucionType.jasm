@@ -1,0 +1,274 @@
+.bytecode 52.0
+.source "InstructionGrammar.kt"
+.class public com/anatawa12/jasm/parser/InstrucionType
+.super java/lang/Enum
+.signature "Ljava/lang/Enum<Lcom/anatawa12/jasm/parser/InstrucionType;>;"
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0010\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\nj\u0002\b\u000bj\u0002\b\u000cj\u0002\b\rj\u0002\b\u000ej\u0002\b\u000fj\u0002\b\u0010¨\u0006\u0011"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/parser/InstrucionType;"
+      s = ""
+      s = "(Ljava/lang/String;I)V"
+      s = "FieldInsn"
+      s = "IincInsn"
+      s = "Insn"
+      s = "IntInsn"
+      s = "NewarrayInsn"
+      s = "InvokeDynamicInsn"
+      s = "JumpInsn"
+      s = "LdcInsn"
+      s = "LookupSwitchInsn"
+      s = "MethodInsn"
+      s = "MultiANewArrayInsn"
+      s = "TableSwitchInsn"
+      s = "TypeInsn"
+      s = "VarInsn"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method static <clinit> ()V
+   .limit stack 8
+   .limit local 0
+   bipush 14
+   anewarray com/anatawa12/jasm/parser/InstrucionType
+   dup
+   dup
+   iconst_0
+   new com/anatawa12/jasm/parser/InstrucionType
+   dup
+   ldc "FieldInsn"
+   iconst_0
+   invokespecial com/anatawa12/jasm/parser/InstrucionType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/InstrucionType/FieldInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   aastore
+   dup
+   iconst_1
+   new com/anatawa12/jasm/parser/InstrucionType
+   dup
+   ldc "IincInsn"
+   iconst_1
+   invokespecial com/anatawa12/jasm/parser/InstrucionType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/InstrucionType/IincInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   aastore
+   dup
+   iconst_2
+   new com/anatawa12/jasm/parser/InstrucionType
+   dup
+   ldc "Insn"
+   iconst_2
+   invokespecial com/anatawa12/jasm/parser/InstrucionType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/InstrucionType/Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+   aastore
+   dup
+   iconst_3
+   new com/anatawa12/jasm/parser/InstrucionType
+   dup
+   ldc "IntInsn"
+   iconst_3
+   invokespecial com/anatawa12/jasm/parser/InstrucionType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/InstrucionType/IntInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   aastore
+   dup
+   iconst_4
+   new com/anatawa12/jasm/parser/InstrucionType
+   dup
+   ldc "NewarrayInsn"
+   iconst_4
+   invokespecial com/anatawa12/jasm/parser/InstrucionType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/InstrucionType/NewarrayInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   aastore
+   dup
+   iconst_5
+   new com/anatawa12/jasm/parser/InstrucionType
+   dup
+   ldc "InvokeDynamicInsn"
+   iconst_5
+   invokespecial com/anatawa12/jasm/parser/InstrucionType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/InstrucionType/InvokeDynamicInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   aastore
+   dup
+   bipush 6
+   new com/anatawa12/jasm/parser/InstrucionType
+   dup
+   ldc "JumpInsn"
+   bipush 6
+   invokespecial com/anatawa12/jasm/parser/InstrucionType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/InstrucionType/JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   aastore
+   dup
+   bipush 7
+   new com/anatawa12/jasm/parser/InstrucionType
+   dup
+   ldc "LdcInsn"
+   bipush 7
+   invokespecial com/anatawa12/jasm/parser/InstrucionType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/InstrucionType/LdcInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   aastore
+   dup
+   bipush 8
+   new com/anatawa12/jasm/parser/InstrucionType
+   dup
+   ldc "LookupSwitchInsn"
+   bipush 8
+   invokespecial com/anatawa12/jasm/parser/InstrucionType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/InstrucionType/LookupSwitchInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   aastore
+   dup
+   bipush 9
+   new com/anatawa12/jasm/parser/InstrucionType
+   dup
+   ldc "MethodInsn"
+   bipush 9
+   invokespecial com/anatawa12/jasm/parser/InstrucionType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/InstrucionType/MethodInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   aastore
+   dup
+   bipush 10
+   new com/anatawa12/jasm/parser/InstrucionType
+   dup
+   ldc "MultiANewArrayInsn"
+   bipush 10
+   invokespecial com/anatawa12/jasm/parser/InstrucionType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/InstrucionType/MultiANewArrayInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   aastore
+   dup
+   bipush 11
+   new com/anatawa12/jasm/parser/InstrucionType
+   dup
+   ldc "TableSwitchInsn"
+   bipush 11
+   invokespecial com/anatawa12/jasm/parser/InstrucionType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/InstrucionType/TableSwitchInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   aastore
+   dup
+   bipush 12
+   new com/anatawa12/jasm/parser/InstrucionType
+   dup
+   ldc "TypeInsn"
+   bipush 12
+   invokespecial com/anatawa12/jasm/parser/InstrucionType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/InstrucionType/TypeInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   aastore
+   dup
+   bipush 13
+   new com/anatawa12/jasm/parser/InstrucionType
+   dup
+   ldc "VarInsn"
+   bipush 13
+   invokespecial com/anatawa12/jasm/parser/InstrucionType/<init> (Ljava/lang/String;I)V
+   dup
+   putstatic com/anatawa12/jasm/parser/InstrucionType/VarInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+   aastore
+   putstatic com/anatawa12/jasm/parser/InstrucionType/$VALUES "[Lcom/anatawa12/jasm/parser/InstrucionType;"
+   return
+.end method
+
+.method private <init> (Ljava/lang/String;I)V
+   .signature "()V"
+   .limit stack 3
+   .limit local 3
+L_0000:
+   .line 168
+   .var 0 is this Lcom/anatawa12/jasm/parser/InstrucionType; from L_0000 to L_0007
+   .var 1 is $enum_name_or_ordinal$0 Ljava/lang/String; from L_0000 to L_0007
+   .var 2 is $enum_name_or_ordinal$1 I from L_0000 to L_0007
+   aload 0
+   aload 1
+   iload 2
+   invokespecial java/lang/Enum/<init> (Ljava/lang/String;I)V
+   return
+L_0007:
+.end method
+
+.method public values "()[Lcom/anatawa12/jasm/parser/InstrucionType;"
+   .limit stack 1
+   .limit local 0
+   getstatic com/anatawa12/jasm/parser/InstrucionType/$VALUES "[Lcom/anatawa12/jasm/parser/InstrucionType;"
+   invokevirtual "[Lcom/anatawa12/jasm/parser/InstrucionType;"/clone ()Ljava/lang/Object;
+   checkcast "[Lcom/anatawa12/jasm/parser/InstrucionType;"
+   areturn
+.end method
+
+.method public valueOf (Ljava/lang/String;)Lcom/anatawa12/jasm/parser/InstrucionType;
+   .limit stack 2
+   .limit local 1
+   ldc class Lcom/anatawa12/jasm/parser/InstrucionType;
+   aload 0
+   invokestatic java/lang/Enum/valueOf (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+   checkcast com/anatawa12/jasm/parser/InstrucionType
+   areturn
+.end method
+
+.field public FieldInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+.end field
+
+.field public IincInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+.end field
+
+.field public Insn Lcom/anatawa12/jasm/parser/InstrucionType;
+.end field
+
+.field public IntInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+.end field
+
+.field public NewarrayInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+.end field
+
+.field public InvokeDynamicInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+.end field
+
+.field public JumpInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+.end field
+
+.field public LdcInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+.end field
+
+.field public LookupSwitchInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+.end field
+
+.field public MethodInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+.end field
+
+.field public MultiANewArrayInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+.end field
+
+.field public TableSwitchInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+.end field
+
+.field public TypeInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+.end field
+
+.field public VarInsn Lcom/anatawa12/jasm/parser/InstrucionType;
+.end field
+
+.field private $VALUES "[Lcom/anatawa12/jasm/parser/InstrucionType;"
+.end field
+

@@ -1,0 +1,154 @@
+.bytecode 52.0
+.source "AssemblerOptions.kt"
+.class public com/anatawa12/jasm/assembler/AssemblerOptions$Companion
+.super java/lang/Object
+.inner public com/anatawa12/jasm/assembler/AssemblerOptions$Companion inner Companion outer com/anatawa12/jasm/assembler/AssemblerOptions
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0007\u001a\u00020\u00042\u0006\u0010\b\u001a\u00020\tR\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006¨\u0006\n"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/assembler/AssemblerOptions\$Companion;"
+      s = ""
+      s = "()V"
+      s = "default"
+      s = "Lcom/anatawa12/jasm/assembler/AssemblerOptions;"
+      s = "getDefault"
+      s = "()Lcom/anatawa12/jasm/assembler/AssemblerOptions;"
+      s = "parse"
+      s = "header"
+      s = "Lcom/anatawa12/jasm/tree/JasmHeader;"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method public parse (Lcom/anatawa12/jasm/tree/JasmHeader;)Lcom/anatawa12/jasm/assembler/AssemblerOptions;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 3
+   .limit local 6
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/assembler/AssemblerOptions$Companion; from L_0000 to L_0030
+   .var 1 is header Lcom/anatawa12/jasm/tree/JasmHeader; from L_0000 to L_0030
+   aload 1
+   ldc "header"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0004:
+   .line 12
+   iconst_0
+   istore 2
+L_0008:
+   .line 13
+   .var 2 is autoLine Z from L_0008 to L_0030
+   aload 1
+   invokevirtual com/anatawa12/jasm/tree/JasmHeader/getElements ()Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 4
+L_000e:
+   .stack
+      locals Object com/anatawa12/jasm/assembler/AssemblerOptions$Companion
+      locals Object com/anatawa12/jasm/tree/JasmHeader
+      locals Integer
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   aload 4
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_0028
+   aload 4
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast com/anatawa12/jasm/tree/JasmHeaderElement
+   astore 3
+L_0017:
+   .line 14
+   .var 3 is element Lcom/anatawa12/jasm/tree/JasmHeaderElement; from L_0017 to L_0023
+   aload 3
+   astore 5
+L_001b:
+   .line 15
+   aload 5
+   instanceof com/anatawa12/jasm/tree/JasmAutoline
+   ifeq L_0023
+   iconst_1
+   istore 2
+   goto L_0023
+L_0023:
+   .line 13
+   .stack
+      locals Object com/anatawa12/jasm/assembler/AssemblerOptions$Companion
+      locals Object com/anatawa12/jasm/tree/JasmHeader
+      locals Integer
+      locals Object com/anatawa12/jasm/tree/JasmHeaderElement
+      locals Object java/util/Iterator
+      locals Object com/anatawa12/jasm/tree/JasmHeaderElement
+   .end stack
+   goto L_000e
+L_0028:
+   .line 18
+   .stack
+      locals Object com/anatawa12/jasm/assembler/AssemblerOptions$Companion
+      locals Object com/anatawa12/jasm/tree/JasmHeader
+      locals Integer
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   new com/anatawa12/jasm/assembler/AssemblerOptions
+   dup
+   iload 2
+   invokespecial com/anatawa12/jasm/assembler/AssemblerOptions/<init> (Z)V
+   areturn
+L_0030:
+.end method
+
+.method public getDefault ()Lcom/anatawa12/jasm/assembler/AssemblerOptions;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 21
+   .var 0 is this Lcom/anatawa12/jasm/assembler/AssemblerOptions$Companion; from L_0000 to L_0004
+   invokestatic com/anatawa12/jasm/assembler/AssemblerOptions/access$getDefault$cp ()Lcom/anatawa12/jasm/assembler/AssemblerOptions;
+   areturn
+L_0004:
+.end method
+
+.method private <init> ()V
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 10
+   .var 0 is this Lcom/anatawa12/jasm/assembler/AssemblerOptions$Companion; from L_0000 to L_0005
+   aload 0
+   invokespecial java/lang/Object/<init> ()V
+   return
+L_0005:
+.end method
+
+.method public <init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+   .limit stack 1
+   .limit local 2
+L_0000:
+   .line 10
+   .var 0 is this Lcom/anatawa12/jasm/assembler/AssemblerOptions$Companion; from L_0000 to L_0005
+   .var 1 is $constructor_marker Lkotlin/jvm/internal/DefaultConstructorMarker; from L_0000 to L_0005
+   aload 0
+   invokespecial com/anatawa12/jasm/assembler/AssemblerOptions$Companion/<init> ()V
+   return
+L_0005:
+.end method
+

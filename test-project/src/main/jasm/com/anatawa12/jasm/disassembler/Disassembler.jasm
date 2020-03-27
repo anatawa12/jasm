@@ -1,0 +1,4809 @@
+.bytecode 52.0
+.source "Disassembler.kt"
+.class public com/anatawa12/jasm/disassembler/Disassembler
+.super java/lang/Object
+.debug "SMAP\nDisassembler.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Disassembler.kt\ncom/anatawa12/jasm/disassembler/Disassembler\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,458:1\n704#2:459\n777#2,2:460\n704#2:462\n777#2,2:463\n*E\n*S KotlinDebug\n*F\n+ 1 Disassembler.kt\ncom/anatawa12/jasm/disassembler/Disassembler\n*L\n261#1:459\n261#1,2:460\n268#1:462\n268#1,2:463\n*E\n"
+.inner private com/anatawa12/jasm/disassembler/Disassembler$AccessTo inner AccessTo outer com/anatawa12/jasm/disassembler/Disassembler
+.inner static com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+.inner static com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$9
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001:\u0001#B\u0005¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nJ\u0018\u0010\u000b\u001a\u00020\b2\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000fH\u0002J\u001a\u0010\u0010\u001a\u00020\b2\u0006\u0010\u0011\u001a\u00020\u00122\b\u0010\u0013\u001a\u0004\u0018\u00010\u0014H\u0002J\u0014\u0010\u0015\u001a\u00020\b2\n\u0010\u0016\u001a\u0006\u0012\u0002\b\u00030\u0017H\u0002J\u0010\u0010\u0018\u001a\u00020\b2\u0006\u0010\u0019\u001a\u00020\u0001H\u0002J\u0010\u0010\u001a\u001a\u00020\b2\u0006\u0010\u001b\u001a\u00020\u001cH\u0002J\u0010\u0010\u001d\u001a\u00020\b2\u0006\u0010\u001e\u001a\u00020\u001fH\u0002J\u0012\u0010 \u001a\u00020\b2\b\u0010\u0019\u001a\u0004\u0018\u00010\u0001H\u0002J\u0010\u0010!\u001a\u00020\b2\u0006\u0010\u0011\u001a\u00020\"H\u0002R\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006¨\u0006\$"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/disassembler/Disassembler;"
+      s = ""
+      s = "()V"
+      s = "file"
+      s = "Lcom/anatawa12/jasm/disassembler/Printer;"
+      s = "getFile"
+      s = "()Lcom/anatawa12/jasm/disassembler/Printer;"
+      s = "disassemble"
+      s = ""
+      s = "classNode"
+      s = "Lorg/objectweb/asm/tree/ClassNode;"
+      s = "disassembleAccess"
+      s = "access"
+      s = ""
+      s = "accessTo"
+      s = "Lcom/anatawa12/jasm/disassembler/Disassembler\$AccessTo;"
+      s = "disassembleAnnotation"
+      s = "method"
+      s = "Lorg/objectweb/asm/tree/AnnotationNode;"
+      s = "type"
+      s = "Lcom/anatawa12/jasm/tree/AnnotationType;"
+      s = "disassembleAnnotationArray"
+      s = "values"
+      s = ""
+      s = "disassembleAnnotationValue"
+      s = "value"
+      s = "disassembleField"
+      s = "field"
+      s = "Lorg/objectweb/asm/tree/FieldNode;"
+      s = "disassembleHandle"
+      s = "handle"
+      s = "Lorg/objectweb/asm/Handle;"
+      s = "disassembleLdcConstant"
+      s = "disassembleMethod"
+      s = "Lorg/objectweb/asm/tree/MethodNode;"
+      s = "AccessTo"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method public getFile ()Lcom/anatawa12/jasm/disassembler/Printer;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 11
+   .var 0 is this Lcom/anatawa12/jasm/disassembler/Disassembler; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   areturn
+L_0005:
+.end method
+
+.method public disassemble (Lorg/objectweb/asm/tree/ClassNode;)V
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 4
+   .limit local 9
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/disassembler/Disassembler; from L_0000 to L_01f0
+   .var 1 is classNode Lorg/objectweb/asm/tree/ClassNode; from L_0000 to L_01f0
+   aload 1
+   ldc "classNode"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0004:
+   .line 13
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".bytecode"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/version I
+   ldc 1048575
+   iand
+   invokevirtual java/lang/StringBuilder/append (I)Ljava/lang/StringBuilder;
+   bipush 46
+   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/version I
+   bipush 16
+   ishr
+   invokevirtual java/lang/StringBuilder/append (I)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_001c:
+   .line 14
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/sourceFile Ljava/lang/String;
+   ifnull L_002c
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".source"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/sourceFile Ljava/lang/String;
+   dup
+   ldc "classNode.sourceFile"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/str (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_002c:
+   .line 15
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/ClassNode
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".class"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   astore 2
+   iconst_0
+   istore 3
+   iconst_0
+   istore 4
+   aload 2
+   astore 5
+L_003a:
+   .var 5 is it Lcom/anatawa12/jasm/disassembler/Printer; from L_003a to L_0044
+   iconst_0
+   istore 6
+L_003d:
+   .line 15
+   .var 6 is "\$i\$a\$-also-Disassembler\$disassemble\$1" I from L_003d to L_0044
+   aload 0
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/access I
+   getstatic com/anatawa12/jasm/disassembler/Disassembler$AccessTo/Class Lcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleAccess (ILcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;)V
+L_0044:
+   .line 15
+   aload 2
+L_0047:
+   .line 15
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/name Ljava/lang/String;
+   dup
+   ldc "classNode.name"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0050:
+   .line 16
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/superName Ljava/lang/String;
+   ifnull L_0060
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".super"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/superName Ljava/lang/String;
+   dup
+   ldc "classNode.superName"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0060:
+   .line 17
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/ClassNode
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/interfaces Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 3
+L_0067:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/ClassNode
+      locals Object java/lang/Object
+      locals Object java/util/Iterator
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+   .end stack
+   aload 3
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_007d
+   aload 3
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast java/lang/String
+   astore 2
+L_0070:
+   .var 2 is interfaceName Ljava/lang/String; from L_0070 to L_007b
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".implements"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 2
+   dup
+   ldc "interfaceName"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_007b:
+   goto L_0067
+L_007d:
+   .line 18
+   .stack use locals
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/signature Ljava/lang/String;
+   ifnull L_008e
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".signature"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/signature Ljava/lang/String;
+   dup
+   ldc "classNode.signature"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/str (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_008e:
+   .line 19
+   .stack use locals
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/outerClass Ljava/lang/String;
+   ifnull L_00c8
+L_0094:
+   .line 20
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/outerMethod Ljava/lang/String;
+   ifnull L_00b8
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/outerMethodDesc Ljava/lang/String;
+   ifnull L_00b8
+L_009c:
+   .line 21
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".enclosing"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "method"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/outerClass Ljava/lang/String;
+   dup
+   ldc "classNode.outerClass"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/outerMethod Ljava/lang/String;
+   dup
+   ldc "classNode.outerMethod"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/outerMethodDesc Ljava/lang/String;
+   dup
+   ldc "classNode.outerMethodDesc"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_00c8
+L_00b8:
+   .line 23
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".enclosing"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "class"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/outerClass Ljava/lang/String;
+   dup
+   ldc "classNode.outerClass"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_00c8:
+   .line 25
+   .stack use locals
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/sourceDebug Ljava/lang/String;
+   ifnull L_00d9
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".debug"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/sourceDebug Ljava/lang/String;
+   dup
+   ldc "classNode.sourceDebug"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/str (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_00d9:
+   .line 26
+   .stack use locals
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/innerClasses Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 3
+L_00e0:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/ClassNode
+      locals Object java/lang/Object
+      locals Object java/util/Iterator
+      locals Top
+      locals Top
+      locals Integer
+   .end stack
+   aload 3
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_0155
+   aload 3
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast org/objectweb/asm/tree/InnerClassNode
+   astore 2
+L_00e9:
+   .line 27
+   .var 2 is inner Lorg/objectweb/asm/tree/InnerClassNode; from L_00e9 to L_0152
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".inner"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   astore 4
+   iconst_0
+   istore 5
+   iconst_0
+   istore 6
+   aload 4
+   astore 7
+L_00fc:
+   .var 7 is it Lcom/anatawa12/jasm/disassembler/Printer; from L_00fc to L_0106
+   iconst_0
+   istore 8
+L_00ff:
+   .line 27
+   .var 8 is "\$i\$a\$-also-Disassembler\$disassemble\$2" I from L_00ff to L_0106
+   aload 0
+   aload 2
+   getfield org/objectweb/asm/tree/InnerClassNode/access I
+   getstatic com/anatawa12/jasm/disassembler/Disassembler$AccessTo/Class Lcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleAccess (ILcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;)V
+L_0106:
+   .line 27
+   aload 4
+L_0109:
+   .line 27
+   aload 2
+   getfield org/objectweb/asm/tree/InnerClassNode/name Ljava/lang/String;
+   dup
+   ldc "inner.name"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   astore 4
+L_0112:
+   .line 28
+   iconst_0
+   istore 5
+   iconst_0
+   istore 6
+   aload 4
+   astore 7
+L_011a:
+   .var 7 is it Lcom/anatawa12/jasm/disassembler/Printer; from L_011a to L_012c
+   iconst_0
+   istore 8
+L_011d:
+   .line 28
+   .var 8 is "\$i\$a\$-also-Disassembler\$disassemble\$3" I from L_011d to L_012c
+   aload 2
+   getfield org/objectweb/asm/tree/InnerClassNode/innerName Ljava/lang/String;
+   ifnull L_012c
+   aload 7
+   ldc "inner"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 2
+   getfield org/objectweb/asm/tree/InnerClassNode/innerName Ljava/lang/String;
+   dup
+   ldc "inner.innerName"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_012c:
+   .line 28
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/ClassNode
+      locals Object org/objectweb/asm/tree/InnerClassNode
+      locals Object java/util/Iterator
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+   .end stack
+   aload 4
+   astore 4
+L_0131:
+   .line 29
+   iconst_0
+   istore 5
+   iconst_0
+   istore 6
+   aload 4
+   astore 7
+L_0139:
+   .var 7 is it Lcom/anatawa12/jasm/disassembler/Printer; from L_0139 to L_014b
+   iconst_0
+   istore 8
+L_013c:
+   .line 29
+   .var 8 is "\$i\$a\$-also-Disassembler\$disassemble\$4" I from L_013c to L_014b
+   aload 2
+   getfield org/objectweb/asm/tree/InnerClassNode/outerName Ljava/lang/String;
+   ifnull L_014b
+   aload 7
+   ldc "outer"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 2
+   getfield org/objectweb/asm/tree/InnerClassNode/outerName Ljava/lang/String;
+   dup
+   ldc "inner.outerName"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_014b:
+   .line 29
+   .stack use locals
+   .end stack
+   aload 4
+L_014f:
+   .line 29
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0152:
+   .line 26
+   goto L_00e0
+L_0155:
+   .line 32
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/ClassNode
+      locals Object java/lang/Object
+      locals Object java/util/Iterator
+      locals Top
+      locals Top
+      locals Integer
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_015b:
+   .line 34
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/visibleAnnotations Ljava/util/List;
+   ifnull L_0183
+L_0160:
+   .line 35
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/visibleAnnotations Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 3
+L_0166:
+   .stack use locals
+   .end stack
+   aload 3
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_0183
+   aload 3
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast org/objectweb/asm/tree/AnnotationNode
+   astore 2
+L_016f:
+   .line 36
+   .var 2 is annotation Lorg/objectweb/asm/tree/AnnotationNode; from L_016f to L_0180
+   aload 0
+   aload 2
+   dup
+   ldc "annotation"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   new com/anatawa12/jasm/tree/AnnotationType$Visible
+   dup
+   invokespecial com/anatawa12/jasm/tree/AnnotationType$Visible/<init> ()V
+   checkcast com/anatawa12/jasm/tree/AnnotationType
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleAnnotation (Lorg/objectweb/asm/tree/AnnotationNode;Lcom/anatawa12/jasm/tree/AnnotationType;)V
+L_017b:
+   .line 37
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0180:
+   .line 35
+   goto L_0166
+L_0183:
+   .line 39
+   .stack use locals
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/invisibleAnnotations Ljava/util/List;
+   ifnull L_01ac
+L_0189:
+   .line 40
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/invisibleAnnotations Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 3
+L_018f:
+   .stack use locals
+   .end stack
+   aload 3
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_01ac
+   aload 3
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast org/objectweb/asm/tree/AnnotationNode
+   astore 2
+L_0198:
+   .line 41
+   .var 2 is annotation Lorg/objectweb/asm/tree/AnnotationNode; from L_0198 to L_01a9
+   aload 0
+   aload 2
+   dup
+   ldc "annotation"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   new com/anatawa12/jasm/tree/AnnotationType$Invisible
+   dup
+   invokespecial com/anatawa12/jasm/tree/AnnotationType$Invisible/<init> ()V
+   checkcast com/anatawa12/jasm/tree/AnnotationType
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleAnnotation (Lorg/objectweb/asm/tree/AnnotationNode;Lcom/anatawa12/jasm/tree/AnnotationType;)V
+L_01a4:
+   .line 42
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_01a9:
+   .line 40
+   goto L_018f
+L_01ac:
+   .line 44
+   .stack use locals
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/methods Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 3
+L_01b3:
+   .stack use locals
+   .end stack
+   aload 3
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_01cc
+   aload 3
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast org/objectweb/asm/tree/MethodNode
+   astore 2
+L_01bc:
+   .line 45
+   .var 2 is method Lorg/objectweb/asm/tree/MethodNode; from L_01bc to L_01c9
+   aload 0
+   aload 2
+   dup
+   ldc "method"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleMethod (Lorg/objectweb/asm/tree/MethodNode;)V
+L_01c4:
+   .line 46
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_01c9:
+   .line 44
+   goto L_01b3
+L_01cc:
+   .line 48
+   .stack use locals
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/ClassNode/fields Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 3
+L_01d3:
+   .stack use locals
+   .end stack
+   aload 3
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_01ec
+   aload 3
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast org/objectweb/asm/tree/FieldNode
+   astore 2
+L_01dc:
+   .line 49
+   .var 2 is field Lorg/objectweb/asm/tree/FieldNode; from L_01dc to L_01e9
+   aload 0
+   aload 2
+   dup
+   ldc "field"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleField (Lorg/objectweb/asm/tree/FieldNode;)V
+L_01e4:
+   .line 50
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_01e9:
+   .line 48
+   goto L_01d3
+L_01ec:
+   .line 52
+   .stack use locals
+   .end stack
+   return
+L_01f0:
+.end method
+
+.method private disassembleAnnotationValue (Ljava/lang/Object;)V
+   .limit stack 5
+   .limit local 3
+L_0000:
+   .line 55
+   .var 0 is this Lcom/anatawa12/jasm/disassembler/Disassembler; from L_0000 to L_0127
+   .var 1 is value Ljava/lang/Object; from L_0000 to L_0127
+   aload 1
+   astore 2
+L_0004:
+   .line 56
+   aload 2
+   instanceof java/lang/Byte
+   ifeq L_0014
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "B"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   invokestatic java/lang/String/valueOf (Ljava/lang/Object;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0122
+L_0014:
+   .line 57
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object java/lang/Object
+      locals Object java/lang/Object
+   .end stack
+   aload 2
+   instanceof java/lang/Character
+   ifeq L_0027
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "C"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   checkcast java/lang/Character
+   invokevirtual java/lang/Character/charValue ()C
+   invokestatic java/lang/String/valueOf (I)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0122
+L_0027:
+   .line 58
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof java/lang/Double
+   ifeq L_0038
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "D"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   invokestatic java/lang/String/valueOf (Ljava/lang/Object;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0122
+L_0038:
+   .line 59
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof java/lang/Float
+   ifeq L_004f
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "F"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   aload 1
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   bipush 102
+   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0122
+L_004f:
+   .line 60
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof java/lang/Integer
+   ifeq L_0060
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "I"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   invokestatic java/lang/String/valueOf (Ljava/lang/Object;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0122
+L_0060:
+   .line 61
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof java/lang/Long
+   ifeq L_0077
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "J"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   aload 1
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   bipush 108
+   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0122
+L_0077:
+   .line 62
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof java/lang/Short
+   ifeq L_0088
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "S"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   invokestatic java/lang/String/valueOf (Ljava/lang/Object;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0122
+L_0088:
+   .line 64
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof java/lang/Boolean
+   ifeq L_0099
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "z"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   invokestatic java/lang/String/valueOf (Ljava/lang/Object;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0122
+L_0099:
+   .line 65
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof java/lang/String
+   ifeq L_00aa
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "s"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   checkcast java/lang/String
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/str (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0122
+L_00aa:
+   .line 66
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof org/objectweb/asm/Type
+   ifeq L_00bf
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "c"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   checkcast org/objectweb/asm/Type
+   invokevirtual org/objectweb/asm/Type/getDescriptor ()Ljava/lang/String;
+   dup
+   ldc "value.descriptor"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/str (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0122
+L_00bf:
+   .line 67
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof "[Ljava/lang/Object;"
+   ifeq L_00f5
+L_00c5:
+   .line 68
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "@"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   checkcast "[Ljava/lang/Object;"
+   iconst_0
+   aaload
+   dup
+   ifnonnull L_00d8
+   new kotlin/TypeCastException
+   dup
+   ldc "null cannot be cast to non-null type kotlin.String"
+   invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
+   athrow
+L_00d8:
+   .stack use locals
+      stacks Object com/anatawa12/jasm/disassembler/Printer
+      stacks Object java/lang/Object
+   .end stack
+   checkcast java/lang/String
+   invokestatic org/objectweb/asm/Type/getType (Ljava/lang/String;)Lorg/objectweb/asm/Type;
+   dup
+   ldc "Type.getType(value[0] as String)"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual org/objectweb/asm/Type/getInternalName ()Ljava/lang/String;
+   dup
+   ldc "Type.getType(value[0] as String).internalName"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   checkcast "[Ljava/lang/Object;"
+   iconst_1
+   aaload
+   dup
+   ifnonnull L_00ef
+   new kotlin/TypeCastException
+   dup
+   ldc "null cannot be cast to non-null type kotlin.String"
+   invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
+   athrow
+L_00ef:
+   .stack use locals
+      stacks Object com/anatawa12/jasm/disassembler/Printer
+      stacks Object java/lang/Object
+   .end stack
+   checkcast java/lang/String
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0122
+L_00f5:
+   .line 70
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof org/objectweb/asm/tree/AnnotationNode
+   ifeq L_010c
+L_00fb:
+   .line 71
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "@"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_0104:
+   .line 72
+   aload 0
+   aload 1
+   checkcast org/objectweb/asm/tree/AnnotationNode
+   aconst_null
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleAnnotation (Lorg/objectweb/asm/tree/AnnotationNode;Lcom/anatawa12/jasm/tree/AnnotationType;)V
+   goto L_0122
+L_010c:
+   .line 74
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof java/util/List
+   ifeq L_0122
+L_0112:
+   .line 75
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "["
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_011b:
+   .line 76
+   aload 0
+   aload 1
+   checkcast java/util/List
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleAnnotationArray (Ljava/util/List;)V
+   goto L_0122
+L_0122:
+   .line 79
+   .stack use locals
+   .end stack
+   return
+L_0127:
+.end method
+
+.method private disassembleAnnotationArray (Ljava/util/List;)V
+   .signature "(Ljava/util/List<*>;)V"
+   .limit stack 3
+   .limit local 4
+L_0000:
+   .line 82
+   .var 0 is this Lcom/anatawa12/jasm/disassembler/Disassembler; from L_0000 to L_003c
+   .var 1 is values Ljava/util/List; from L_0000 to L_003c
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".annotation"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "array"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0009:
+   .line 83
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/indent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_000f:
+   .line 84
+   aload 1
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 3
+L_0014:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object java/util/List
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   aload 3
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_0029
+   aload 3
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   astore 2
+L_001c:
+   .line 85
+   .var 2 is value Ljava/lang/Object; from L_001c to L_0026
+   aload 0
+   aload 2
+   dup
+   ifnonnull L_0023
+   invokestatic kotlin/jvm/internal/Intrinsics/throwNpe ()V
+L_0023:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object java/util/List
+      locals Object java/lang/Object
+      locals Object java/util/Iterator
+      stacks Object com/anatawa12/jasm/disassembler/Disassembler
+      stacks Object java/lang/Object
+   .end stack
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleAnnotationValue (Ljava/lang/Object;)V
+L_0026:
+   .line 84
+   goto L_0014
+L_0029:
+   .line 87
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object java/util/List
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/outdent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_0030:
+   .line 88
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".end"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "annotation"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0039:
+   .line 89
+   return
+L_003c:
+.end method
+
+.method private disassembleAnnotation (Lorg/objectweb/asm/tree/AnnotationNode;Lcom/anatawa12/jasm/tree/AnnotationType;)V
+   .limit stack 5
+   .limit local 9
+L_0000:
+   .line 92
+   .var 0 is this Lcom/anatawa12/jasm/disassembler/Disassembler; from L_0000 to L_00e2
+   .var 1 is method Lorg/objectweb/asm/tree/AnnotationNode; from L_0000 to L_00e2
+   .var 2 is type Lcom/anatawa12/jasm/tree/AnnotationType; from L_0000 to L_00e2
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".annotation"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   astore 3
+   iconst_0
+   istore 4
+   iconst_0
+   istore 5
+   aload 3
+   astore 6
+L_0011:
+   .var 6 is it Lcom/anatawa12/jasm/disassembler/Printer; from L_0011 to L_005d
+   iconst_0
+   istore 7
+L_0014:
+   .line 93
+   .var 7 is "\$i\$a\$-also-Disassembler\$disassembleAnnotation\$1" I from L_0014 to L_005d
+   aload 2
+   astore 8
+L_0018:
+   .line 94
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AnnotationType$Visible
+   ifeq L_0022
+   aload 6
+   ldc "visible"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_005d
+L_0022:
+   .line 95
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/AnnotationNode
+      locals Object com/anatawa12/jasm/tree/AnnotationType
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Object com/anatawa12/jasm/tree/AnnotationType
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AnnotationType$Invisible
+   ifeq L_002d
+   aload 6
+   ldc "invisible"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_005d
+L_002d:
+   .line 96
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AnnotationType$VisiblePararm
+   ifeq L_003d
+   aload 6
+   ldc "visiblepararm"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 2
+   checkcast com/anatawa12/jasm/tree/AnnotationType$VisiblePararm
+   invokevirtual com/anatawa12/jasm/tree/AnnotationType$VisiblePararm/getPararmIndex ()I
+   invokestatic java/lang/String/valueOf (I)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_005d
+L_003d:
+   .line 97
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AnnotationType$InvisiblePararm
+   ifeq L_004d
+   aload 6
+   ldc "invisiblepararm"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 2
+   checkcast com/anatawa12/jasm/tree/AnnotationType$InvisiblePararm
+   invokevirtual com/anatawa12/jasm/tree/AnnotationType$InvisiblePararm/getPararmIndex ()I
+   invokestatic java/lang/String/valueOf (I)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_005d
+L_004d:
+   .line 98
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof com/anatawa12/jasm/tree/AnnotationType$Default
+   ifeq L_0058
+   aload 6
+   ldc "default"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_005d
+L_0058:
+   .stack use locals
+   .end stack
+   aload 8
+   ifnonnull L_005d
+   goto L_005d
+L_005d:
+   .line 101
+   .stack use locals
+   .end stack
+   nop
+L_0062:
+   .line 92
+   aload 3
+L_0065:
+   .line 101
+   aload 1
+   getfield org/objectweb/asm/tree/AnnotationNode/desc Ljava/lang/String;
+   invokestatic org/objectweb/asm/Type/getType (Ljava/lang/String;)Lorg/objectweb/asm/Type;
+   dup
+   ldc "Type.getType(method.desc)"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual org/objectweb/asm/Type/getInternalName ()Ljava/lang/String;
+   dup
+   ldc "Type.getType(method.desc).internalName"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0073:
+   .line 102
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/indent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_0079:
+   .line 103
+   aload 2
+   instanceof com/anatawa12/jasm/tree/AnnotationType$Default
+   ifne L_00cf
+L_007e:
+   .line 106
+   aload 1
+   getfield org/objectweb/asm/tree/AnnotationNode/values Ljava/util/List;
+   astore 5
+   iconst_0
+   istore 6
+   aload 5
+   dup
+   ifnull L_0089
+   goto L_008d
+L_0089:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/AnnotationNode
+      locals Object com/anatawa12/jasm/tree/AnnotationType
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Object java/util/List
+      locals Integer
+      locals Integer
+      locals Object com/anatawa12/jasm/tree/AnnotationType
+      stacks Object java/util/List
+   .end stack
+   pop
+   invokestatic kotlin/collections/CollectionsKt/emptyList ()Ljava/util/List;
+L_008d:
+   .stack use locals
+      stacks Object java/util/List
+   .end stack
+   checkcast java/lang/Iterable
+L_0090:
+   .line 106
+   iconst_2
+   invokestatic kotlin/collections/CollectionsKt/chunked (Ljava/lang/Iterable;I)Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 4
+L_0096:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/AnnotationNode
+      locals Object com/anatawa12/jasm/tree/AnnotationType
+      locals Object java/lang/Object
+      locals Object java/util/Iterator
+      locals Object java/lang/Object
+   .end stack
+   aload 4
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_00cf
+   aload 4
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast java/util/List
+   astore 3
+   aload 3
+   astore 7
+   iconst_0
+   istore 8
+   aload 7
+   iconst_0
+   invokeinterface java/util/List/get (I)Ljava/lang/Object;
+L_00a6:
+   .line 106
+   astore 5
+   aload 3
+   astore 7
+   iconst_0
+   istore 8
+   aload 7
+   iconst_1
+   invokeinterface java/util/List/get (I)Ljava/lang/Object;
+L_00b0:
+   .line 106
+   astore 6
+L_00b3:
+   .line 107
+   .var 6 is value Ljava/lang/Object; from L_00b3 to L_00cc
+   .var 5 is key Ljava/lang/Object; from L_00b3 to L_00cc
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 5
+   dup
+   ifnonnull L_00bf
+   new kotlin/TypeCastException
+   dup
+   ldc "null cannot be cast to non-null type kotlin.String"
+   invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
+   athrow
+L_00bf:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/AnnotationNode
+      locals Object com/anatawa12/jasm/tree/AnnotationType
+      locals Object java/util/List
+      locals Object java/util/Iterator
+      locals Object java/lang/Object
+      locals Object java/lang/Object
+      locals Object java/util/List
+      locals Integer
+      stacks Object com/anatawa12/jasm/disassembler/Printer
+      stacks Object java/lang/Object
+   .end stack
+   checkcast java/lang/String
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_00c4:
+   .line 108
+   aload 0
+   aload 6
+   dup
+   ldc "value"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleAnnotationValue (Ljava/lang/Object;)V
+L_00cc:
+   .line 106
+   goto L_0096
+L_00cf:
+   .line 111
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/AnnotationNode
+      locals Object com/anatawa12/jasm/tree/AnnotationType
+      locals Object java/lang/Object
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/outdent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_00d6:
+   .line 112
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".end"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "annotation"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_00df:
+   .line 113
+   return
+L_00e2:
+.end method
+
+.method private disassembleMethod (Lorg/objectweb/asm/tree/MethodNode;)V
+   .limit stack 5
+   .limit local 21
+L_0000:
+   .line 116
+   .var 0 is this Lcom/anatawa12/jasm/disassembler/Disassembler; from L_0000 to L_0719
+   .var 1 is method Lorg/objectweb/asm/tree/MethodNode; from L_0000 to L_0719
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".method"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   astore 2
+   iconst_0
+   istore 3
+   iconst_0
+   istore 4
+   aload 2
+   astore 5
+L_0013:
+   .var 5 is it Lcom/anatawa12/jasm/disassembler/Printer; from L_0013 to L_001d
+   iconst_0
+   istore 6
+L_0016:
+   .line 116
+   .var 6 is "\$i\$a\$-also-Disassembler\$disassembleMethod\$1" I from L_0016 to L_001d
+   aload 0
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/access I
+   getstatic com/anatawa12/jasm/disassembler/Disassembler$AccessTo/Method Lcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleAccess (ILcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;)V
+L_001d:
+   getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
+L_001f:
+   .line 116
+   pop
+   aload 2
+L_0023:
+   .line 117
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/name Ljava/lang/String;
+   dup
+   ldc "method.name"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/desc Ljava/lang/String;
+   dup
+   ldc "method.desc"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/mDesc (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0032:
+   .line 118
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/indent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_0038:
+   .line 120
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/signature Ljava/lang/String;
+   ifnull L_004a
+L_003d:
+   .line 121
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".signature"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/signature Ljava/lang/String;
+   dup
+   ldc "method.signature"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/str (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_004a:
+   .line 123
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/exceptions Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 3
+L_0051:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object java/lang/Object
+      locals Object java/util/Iterator
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+   .end stack
+   aload 3
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_0069
+   aload 3
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast java/lang/String
+   astore 2
+L_005a:
+   .line 124
+   .var 2 is exception Ljava/lang/String; from L_005a to L_0066
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".throws"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 2
+   dup
+   ldc "exception"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0066:
+   .line 123
+   goto L_0051
+L_0069:
+   .line 127
+   .stack use locals
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/visibleAnnotations Ljava/util/List;
+   ifnull L_008d
+L_006f:
+   .line 128
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/visibleAnnotations Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 3
+L_0075:
+   .stack use locals
+   .end stack
+   aload 3
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_008d
+   aload 3
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast org/objectweb/asm/tree/AnnotationNode
+   astore 2
+L_007e:
+   .line 129
+   .var 2 is annotation Lorg/objectweb/asm/tree/AnnotationNode; from L_007e to L_008a
+   aload 0
+   aload 2
+   dup
+   ldc "annotation"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   new com/anatawa12/jasm/tree/AnnotationType$Visible
+   dup
+   invokespecial com/anatawa12/jasm/tree/AnnotationType$Visible/<init> ()V
+   checkcast com/anatawa12/jasm/tree/AnnotationType
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleAnnotation (Lorg/objectweb/asm/tree/AnnotationNode;Lcom/anatawa12/jasm/tree/AnnotationType;)V
+L_008a:
+   .line 128
+   goto L_0075
+L_008d:
+   .line 131
+   .stack use locals
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/invisibleAnnotations Ljava/util/List;
+   ifnull L_00b1
+L_0093:
+   .line 132
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/invisibleAnnotations Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 3
+L_0099:
+   .stack use locals
+   .end stack
+   aload 3
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_00b1
+   aload 3
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast org/objectweb/asm/tree/AnnotationNode
+   astore 2
+L_00a2:
+   .line 133
+   .var 2 is annotation Lorg/objectweb/asm/tree/AnnotationNode; from L_00a2 to L_00ae
+   aload 0
+   aload 2
+   dup
+   ldc "annotation"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   new com/anatawa12/jasm/tree/AnnotationType$Invisible
+   dup
+   invokespecial com/anatawa12/jasm/tree/AnnotationType$Invisible/<init> ()V
+   checkcast com/anatawa12/jasm/tree/AnnotationType
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleAnnotation (Lorg/objectweb/asm/tree/AnnotationNode;Lcom/anatawa12/jasm/tree/AnnotationType;)V
+L_00ae:
+   .line 132
+   goto L_0099
+L_00b1:
+   .line 135
+   .stack use locals
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/visibleParameterAnnotations "[Ljava/util/List;"
+   ifnull L_00fe
+L_00b7:
+   .line 136
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/visibleParameterAnnotations "[Ljava/util/List;"
+   dup
+   ldc "method.visibleParameterAnnotations"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   astore 4
+   aload 4
+   arraylength
+   istore 5
+   iconst_0
+   istore 2
+L_00c4:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Integer
+      locals Object java/lang/Object
+      locals Object "[Ljava/util/List;"
+      locals Integer
+   .end stack
+   iload 2
+   iload 5
+   if_icmpge L_00fe
+   aload 4
+   iload 2
+   aaload
+   astore 3
+L_00cd:
+   .line 137
+   .var 3 is annotations Ljava/util/List; from L_00cd to L_00fc
+   .var 2 is pararm I from L_00cd to L_00fc
+   aload 3
+   astore 8
+   iconst_0
+   istore 9
+   aload 8
+   dup
+   ifnull L_00d7
+   goto L_00db
+L_00d7:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Integer
+      locals Object java/util/List
+      locals Object "[Ljava/util/List;"
+      locals Integer
+      locals Top
+      locals Top
+      locals Object java/util/List
+      locals Integer
+      stacks Object java/util/List
+   .end stack
+   pop
+   invokestatic kotlin/collections/CollectionsKt/emptyList ()Ljava/util/List;
+L_00db:
+   .stack use locals
+      stacks Object java/util/List
+   .end stack
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 7
+L_00df:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Integer
+      locals Object java/util/List
+      locals Object "[Ljava/util/List;"
+      locals Integer
+      locals Top
+      locals Object java/util/Iterator
+      locals Object java/util/List
+      locals Integer
+   .end stack
+   aload 7
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_00f8
+   aload 7
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast org/objectweb/asm/tree/AnnotationNode
+   astore 6
+L_00e8:
+   .line 138
+   .var 6 is annotation Lorg/objectweb/asm/tree/AnnotationNode; from L_00e8 to L_00f5
+   aload 0
+   aload 6
+   dup
+   ldc "annotation"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   new com/anatawa12/jasm/tree/AnnotationType$VisiblePararm
+   dup
+   iload 2
+   invokespecial com/anatawa12/jasm/tree/AnnotationType$VisiblePararm/<init> (I)V
+   checkcast com/anatawa12/jasm/tree/AnnotationType
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleAnnotation (Lorg/objectweb/asm/tree/AnnotationNode;Lcom/anatawa12/jasm/tree/AnnotationType;)V
+L_00f5:
+   .line 137
+   goto L_00df
+L_00f8:
+   .line 136
+   .stack use locals
+   .end stack
+   iinc 2 1
+L_00fc:
+   goto L_00c4
+L_00fe:
+   .line 140
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Top
+      locals Object java/lang/Object
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/invisibleParameterAnnotations "[Ljava/util/List;"
+   ifnull L_014b
+L_0104:
+   .line 141
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/invisibleParameterAnnotations "[Ljava/util/List;"
+   dup
+   ldc "method.invisibleParameterAnnotations"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   astore 4
+   aload 4
+   arraylength
+   istore 5
+   iconst_0
+   istore 2
+L_0111:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Integer
+      locals Object java/lang/Object
+      locals Object "[Ljava/util/List;"
+      locals Integer
+   .end stack
+   iload 2
+   iload 5
+   if_icmpge L_014b
+   aload 4
+   iload 2
+   aaload
+   astore 3
+L_011a:
+   .line 142
+   .var 3 is annotations Ljava/util/List; from L_011a to L_0149
+   .var 2 is pararm I from L_011a to L_0149
+   aload 3
+   astore 8
+   iconst_0
+   istore 9
+   aload 8
+   dup
+   ifnull L_0124
+   goto L_0128
+L_0124:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Integer
+      locals Object java/util/List
+      locals Object "[Ljava/util/List;"
+      locals Integer
+      locals Top
+      locals Top
+      locals Object java/util/List
+      locals Integer
+      stacks Object java/util/List
+   .end stack
+   pop
+   invokestatic kotlin/collections/CollectionsKt/emptyList ()Ljava/util/List;
+L_0128:
+   .stack use locals
+      stacks Object java/util/List
+   .end stack
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 7
+L_012c:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Integer
+      locals Object java/util/List
+      locals Object "[Ljava/util/List;"
+      locals Integer
+      locals Top
+      locals Object java/util/Iterator
+      locals Object java/util/List
+      locals Integer
+   .end stack
+   aload 7
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_0145
+   aload 7
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast org/objectweb/asm/tree/AnnotationNode
+   astore 6
+L_0135:
+   .line 143
+   .var 6 is annotation Lorg/objectweb/asm/tree/AnnotationNode; from L_0135 to L_0142
+   aload 0
+   aload 6
+   dup
+   ldc "annotation"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   new com/anatawa12/jasm/tree/AnnotationType$InvisiblePararm
+   dup
+   iload 2
+   invokespecial com/anatawa12/jasm/tree/AnnotationType$InvisiblePararm/<init> (I)V
+   checkcast com/anatawa12/jasm/tree/AnnotationType
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleAnnotation (Lorg/objectweb/asm/tree/AnnotationNode;Lcom/anatawa12/jasm/tree/AnnotationType;)V
+L_0142:
+   .line 142
+   goto L_012c
+L_0145:
+   .line 141
+   .stack use locals
+   .end stack
+   iinc 2 1
+L_0149:
+   goto L_0111
+L_014b:
+   .line 145
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Top
+      locals Object java/lang/Object
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/attrs Ljava/util/List;
+   astore 2
+   iconst_0
+   istore 3
+   aload 2
+   dup
+   ifnull L_0157
+   goto L_015b
+L_0157:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object java/util/List
+      locals Integer
+      stacks Object java/util/List
+   .end stack
+   pop
+   invokestatic kotlin/collections/CollectionsKt/emptyList ()Ljava/util/List;
+L_015b:
+   .line 145
+   .stack use locals
+      stacks Object java/util/List
+   .end stack
+   getstatic com/anatawa12/jasm/DeprecatedAttribute/INSTANCE Lcom/anatawa12/jasm/DeprecatedAttribute;
+   invokeinterface java/util/List/contains (Ljava/lang/Object;)Z
+   ifeq L_0168
+L_0161:
+   .line 146
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".deprecated"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0168:
+   .line 148
+   .stack use locals
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/instructions Lorg/objectweb/asm/tree/InsnList;
+   ifnull L_0706
+L_016e:
+   .line 149
+   new com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+   dup
+   aload 1
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/<init> (Lorg/objectweb/asm/tree/MethodNode;)V
+   astore 2
+L_0175:
+   .line 151
+   .var 2 is $fun$disassembleLabel$2 Lcom/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2; from L_0175 to L_0706
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".limit"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "stack"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/maxStack I
+   invokestatic java/lang/String/valueOf (I)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0182:
+   .line 152
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".limit"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "local"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/maxLocals I
+   invokestatic java/lang/String/valueOf (I)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_018f:
+   .line 154
+   iconst_0
+   istore 4
+   new java/util/LinkedHashMap
+   dup
+   invokespecial java/util/LinkedHashMap/<init> ()V
+   checkcast java/util/Map
+L_0197:
+   .line 154
+   astore 3
+L_019a:
+   .line 155
+   .var 3 is lineNumber Ljava/util/Map; from L_019a to L_0706
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/instructions Lorg/objectweb/asm/tree/InsnList;
+   invokevirtual org/objectweb/asm/tree/InsnList/iterator ()Ljava/util/ListIterator;
+   astore 5
+L_01a0:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Top
+      locals Object java/util/ListIterator
+   .end stack
+   aload 5
+   invokeinterface java/util/ListIterator/hasNext ()Z
+   ifeq L_01c7
+   aload 5
+   invokeinterface java/util/ListIterator/next ()Ljava/lang/Object;
+   checkcast org/objectweb/asm/tree/AbstractInsnNode
+   astore 4
+L_01a9:
+   .line 156
+   .var 4 is instruction Lorg/objectweb/asm/tree/AbstractInsnNode; from L_01a9 to L_01c2
+   aload 4
+   astore 6
+L_01ad:
+   .line 157
+   aload 6
+   instanceof org/objectweb/asm/tree/LineNumberNode
+   ifeq L_01c2
+L_01b2:
+   .line 158
+   aload 3
+   aload 4
+   checkcast org/objectweb/asm/tree/LineNumberNode
+   getfield org/objectweb/asm/tree/LineNumberNode/start Lorg/objectweb/asm/tree/LabelNode;
+   dup
+   ldc "instruction.start"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 4
+   checkcast org/objectweb/asm/tree/LineNumberNode
+   getfield org/objectweb/asm/tree/LineNumberNode/line I
+   invokestatic java/lang/Integer/valueOf (I)Ljava/lang/Integer;
+   invokeinterface java/util/Map/put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+   pop
+   goto L_01c2
+L_01c2:
+   .line 155
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+   .end stack
+   goto L_01a0
+L_01c7:
+   .line 163
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Top
+      locals Object java/util/ListIterator
+   .end stack
+   aconst_null
+   checkcast java/util/List
+   astore 4
+L_01cd:
+   .line 165
+   .var 4 is lastLocal Ljava/util/List; from L_01cd to L_0706
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/instructions Lorg/objectweb/asm/tree/InsnList;
+   invokevirtual org/objectweb/asm/tree/InsnList/iterator ()Ljava/util/ListIterator;
+   astore 6
+L_01d3:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object java/lang/Object
+      locals Object java/util/ListIterator
+   .end stack
+   aload 6
+   invokeinterface java/util/ListIterator/hasNext ()Z
+   ifeq L_0706
+   aload 6
+   invokeinterface java/util/ListIterator/next ()Ljava/lang/Object;
+   checkcast org/objectweb/asm/tree/AbstractInsnNode
+   astore 5
+L_01dc:
+   .line 166
+   .var 5 is instruction Lorg/objectweb/asm/tree/AbstractInsnNode; from L_01dc to L_0701
+   aload 5
+   dup
+   ldc "instruction"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual org/objectweb/asm/tree/AbstractInsnNode/getOpcode ()I
+   iconst_m1
+   if_icmpne L_01e7
+   ldc ""
+   goto L_0202
+L_01e7:
+   .line 167
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+   .end stack
+   getstatic org/objectweb/asm/util/Printer/OPCODES "[Ljava/lang/String;"
+   aload 5
+   invokevirtual org/objectweb/asm/tree/AbstractInsnNode/getOpcode ()I
+   aaload
+   dup
+   ldc "org.objectweb.asm.util.P…CODES[instruction.opcode]"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   astore 8
+   iconst_0
+   istore 9
+   aload 8
+   dup
+   ifnonnull L_01fc
+   new kotlin/TypeCastException
+   dup
+   ldc "null cannot be cast to non-null type java.lang.String"
+   invokespecial kotlin/TypeCastException/<init> (Ljava/lang/String;)V
+   athrow
+L_01fc:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Top
+      locals Object java/lang/String
+      locals Integer
+      stacks Object java/lang/String
+   .end stack
+   invokevirtual java/lang/String/toLowerCase ()Ljava/lang/String;
+   dup
+   ldc "(this as java.lang.String).toLowerCase()"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0202:
+   .line 166
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      stacks Object java/lang/String
+   .end stack
+   astore 7
+L_0206:
+   .line 169
+   .var 7 is opcode Ljava/lang/String; from L_0206 to L_0701
+   aload 5
+   astore 8
+L_020a:
+   .line 170
+   aload 8
+   instanceof org/objectweb/asm/tree/InsnNode
+   ifeq L_0217
+L_020f:
+   .line 171
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 7
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0701
+L_0217:
+   .line 173
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+   .end stack
+   aload 8
+   instanceof org/objectweb/asm/tree/IntInsnNode
+   ifeq L_02a6
+L_021d:
+   .line 174
+   aload 5
+   checkcast org/objectweb/asm/tree/IntInsnNode
+   invokevirtual org/objectweb/asm/tree/IntInsnNode/getOpcode ()I
+   sipush 188
+   if_icmpne L_0296
+L_0224:
+   .line 175
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 7
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   astore 9
+   iconst_0
+   istore 10
+   iconst_0
+   istore 11
+   aload 9
+   astore 12
+L_0233:
+   .var 12 is it Lcom/anatawa12/jasm/disassembler/Printer; from L_0233 to L_028a
+   iconst_0
+   istore 13
+L_0236:
+   .line 176
+   .var 13 is "\$i\$a\$-also-Disassembler\$disassembleMethod\$3" I from L_0236 to L_028a
+   aload 5
+   checkcast org/objectweb/asm/tree/IntInsnNode
+   getfield org/objectweb/asm/tree/IntInsnNode/operand I
+   tableswitch 4
+      L_023c
+      L_0244
+      L_024c
+      L_0254
+      L_025c
+      L_0264
+      L_026c
+      L_0274
+      default: L_027c
+L_023c:
+   .line 177
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+   .end stack
+   aload 12
+   ldc "boolean"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_028a
+L_0244:
+   .line 178
+   .stack use locals
+   .end stack
+   aload 12
+   ldc "char"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_028a
+L_024c:
+   .line 179
+   .stack use locals
+   .end stack
+   aload 12
+   ldc "float"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_028a
+L_0254:
+   .line 180
+   .stack use locals
+   .end stack
+   aload 12
+   ldc "double"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_028a
+L_025c:
+   .line 181
+   .stack use locals
+   .end stack
+   aload 12
+   ldc "byte"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_028a
+L_0264:
+   .line 182
+   .stack use locals
+   .end stack
+   aload 12
+   ldc "short"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_028a
+L_026c:
+   .line 183
+   .stack use locals
+   .end stack
+   aload 12
+   ldc "int"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_028a
+L_0274:
+   .line 184
+   .stack use locals
+   .end stack
+   aload 12
+   ldc "long"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_028a
+L_027c:
+   .line 185
+   .stack use locals
+   .end stack
+   ldc ""
+   astore 14
+   iconst_0
+   istore 15
+   new java/lang/IllegalStateException
+   dup
+   aload 14
+   invokevirtual java/lang/Object/toString ()Ljava/lang/String;
+   invokespecial java/lang/IllegalStateException/<init> (Ljava/lang/String;)V
+   checkcast java/lang/Throwable
+   athrow
+L_028a:
+   .line 187
+   .stack use locals
+   .end stack
+   getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
+L_028e:
+   .line 175
+   pop
+   aload 9
+L_0292:
+   .line 187
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0701
+L_0296:
+   .line 189
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 7
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 5
+   checkcast org/objectweb/asm/tree/IntInsnNode
+   getfield org/objectweb/asm/tree/IntInsnNode/operand I
+   invokestatic java/lang/String/valueOf (I)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_02a3:
+   .line 190
+   goto L_0701
+L_02a6:
+   .line 192
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof org/objectweb/asm/tree/VarInsnNode
+   ifeq L_02b9
+L_02ac:
+   .line 193
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 7
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 5
+   checkcast org/objectweb/asm/tree/VarInsnNode
+   getfield org/objectweb/asm/tree/VarInsnNode/var I
+   invokestatic java/lang/String/valueOf (I)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0701
+L_02b9:
+   .line 195
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof org/objectweb/asm/tree/TypeInsnNode
+   ifeq L_02ce
+L_02bf:
+   .line 196
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 7
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 5
+   checkcast org/objectweb/asm/tree/TypeInsnNode
+   getfield org/objectweb/asm/tree/TypeInsnNode/desc Ljava/lang/String;
+   dup
+   ldc "instruction.desc"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0701
+L_02ce:
+   .line 198
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof org/objectweb/asm/tree/FieldInsnNode
+   ifeq L_02f9
+L_02d4:
+   .line 199
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 7
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 5
+   checkcast org/objectweb/asm/tree/FieldInsnNode
+   getfield org/objectweb/asm/tree/FieldInsnNode/owner Ljava/lang/String;
+   dup
+   ldc "instruction.owner"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   bipush 47
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/c (C)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 5
+   checkcast org/objectweb/asm/tree/FieldInsnNode
+   getfield org/objectweb/asm/tree/FieldInsnNode/name Ljava/lang/String;
+   dup
+   ldc "instruction.name"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+L_02ee:
+   .line 200
+   aload 5
+   checkcast org/objectweb/asm/tree/FieldInsnNode
+   getfield org/objectweb/asm/tree/FieldInsnNode/desc Ljava/lang/String;
+   dup
+   ldc "instruction.desc"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0701
+L_02f9:
+   .line 202
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof org/objectweb/asm/tree/MethodInsnNode
+   ifeq L_0353
+L_02ff:
+   .line 203
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 7
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   astore 9
+L_0312:
+   .line 204
+   iconst_0
+   istore 10
+   iconst_0
+   istore 11
+   aload 9
+   astore 12
+L_031a:
+   .var 12 is it Lcom/anatawa12/jasm/disassembler/Printer; from L_031a to L_032e
+   iconst_0
+   istore 13
+L_031d:
+   .line 205
+   .var 13 is "\$i\$a\$-also-Disassembler\$disassembleMethod\$4" I from L_031d to L_032e
+   aload 5
+   checkcast org/objectweb/asm/tree/MethodInsnNode
+   getfield org/objectweb/asm/tree/MethodInsnNode/itf Z
+   ifeq L_032e
+   aload 5
+   checkcast org/objectweb/asm/tree/MethodInsnNode
+   invokevirtual org/objectweb/asm/tree/MethodInsnNode/getOpcode ()I
+   sipush 185
+   if_icmpeq L_032e
+L_0328:
+   .line 206
+   aload 12
+   ldc "interface"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_032e:
+   .line 207
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+   .end stack
+   getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
+L_0332:
+   .line 204
+   pop
+   aload 9
+L_0336:
+   .line 208
+   aload 5
+   checkcast org/objectweb/asm/tree/MethodInsnNode
+   getfield org/objectweb/asm/tree/MethodInsnNode/owner Ljava/lang/String;
+   dup
+   ldc "instruction.owner"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   bipush 47
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/c (C)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 5
+   checkcast org/objectweb/asm/tree/MethodInsnNode
+   getfield org/objectweb/asm/tree/MethodInsnNode/name Ljava/lang/String;
+   dup
+   ldc "instruction.name"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+L_0348:
+   .line 209
+   aload 5
+   checkcast org/objectweb/asm/tree/MethodInsnNode
+   getfield org/objectweb/asm/tree/MethodInsnNode/desc Ljava/lang/String;
+   dup
+   ldc "instruction.desc"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/mDesc (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0701
+L_0353:
+   .line 211
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+   .end stack
+   aload 8
+   instanceof org/objectweb/asm/tree/InvokeDynamicInsnNode
+   ifeq L_03a4
+L_0359:
+   .line 212
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 7
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 5
+   checkcast org/objectweb/asm/tree/InvokeDynamicInsnNode
+   getfield org/objectweb/asm/tree/InvokeDynamicInsnNode/name Ljava/lang/String;
+   dup
+   ldc "instruction.name"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 5
+   checkcast org/objectweb/asm/tree/InvokeDynamicInsnNode
+   getfield org/objectweb/asm/tree/InvokeDynamicInsnNode/desc Ljava/lang/String;
+   dup
+   ldc "instruction.desc"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/mDesc (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_036e:
+   .line 213
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/indent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_0374:
+   .line 214
+   aload 0
+   aload 5
+   checkcast org/objectweb/asm/tree/InvokeDynamicInsnNode
+   getfield org/objectweb/asm/tree/InvokeDynamicInsnNode/bsm Lorg/objectweb/asm/Handle;
+   dup
+   ldc "instruction.bsm"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleHandle (Lorg/objectweb/asm/Handle;)V
+L_037e:
+   .line 215
+   aload 5
+   checkcast org/objectweb/asm/tree/InvokeDynamicInsnNode
+   getfield org/objectweb/asm/tree/InvokeDynamicInsnNode/bsmArgs "[Ljava/lang/Object;"
+   astore 11
+   aload 11
+   arraylength
+   istore 12
+   iconst_0
+   istore 10
+L_0389:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Top
+      locals Integer
+      locals Object "[Ljava/lang/Object;"
+      locals Integer
+   .end stack
+   iload 10
+   iload 12
+   if_icmpge L_039c
+   aload 11
+   iload 10
+   aaload
+   astore 9
+L_0392:
+   .line 216
+   .var 9 is bsmArg Ljava/lang/Object; from L_0392 to L_039a
+   aload 0
+   aload 9
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleLdcConstant (Ljava/lang/Object;)V
+L_0397:
+   .line 215
+   iinc 10 1
+L_039a:
+   goto L_0389
+L_039c:
+   .line 218
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/outdent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0701
+L_03a4:
+   .line 220
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+   .end stack
+   aload 8
+   instanceof org/objectweb/asm/tree/JumpInsnNode
+   ifeq L_03b8
+L_03aa:
+   .line 221
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 7
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 2
+   aload 5
+   checkcast org/objectweb/asm/tree/JumpInsnNode
+   getfield org/objectweb/asm/tree/JumpInsnNode/label Lorg/objectweb/asm/tree/LabelNode;
+   invokevirtual com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/invoke (Lorg/objectweb/asm/tree/LabelNode;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0701
+L_03b8:
+   .line 223
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof org/objectweb/asm/tree/LdcInsnNode
+   ifeq L_03cd
+L_03be:
+   .line 224
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 7
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_03c5:
+   .line 225
+   aload 0
+   aload 5
+   checkcast org/objectweb/asm/tree/LdcInsnNode
+   getfield org/objectweb/asm/tree/LdcInsnNode/cst Ljava/lang/Object;
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleLdcConstant (Ljava/lang/Object;)V
+   goto L_0701
+L_03cd:
+   .line 227
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof org/objectweb/asm/tree/IincInsnNode
+   ifeq L_03e5
+L_03d3:
+   .line 228
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 7
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 5
+   checkcast org/objectweb/asm/tree/IincInsnNode
+   getfield org/objectweb/asm/tree/IincInsnNode/var I
+   invokestatic java/lang/String/valueOf (I)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 5
+   checkcast org/objectweb/asm/tree/IincInsnNode
+   getfield org/objectweb/asm/tree/IincInsnNode/incr I
+   invokestatic java/lang/String/valueOf (I)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0701
+L_03e5:
+   .line 230
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof org/objectweb/asm/tree/TableSwitchInsnNode
+   ifeq L_042e
+L_03eb:
+   .line 231
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 7
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 5
+   checkcast org/objectweb/asm/tree/TableSwitchInsnNode
+   getfield org/objectweb/asm/tree/TableSwitchInsnNode/min I
+   invokestatic java/lang/String/valueOf (I)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_03f7:
+   .line 232
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/indent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_03fd:
+   .line 233
+   aload 5
+   checkcast org/objectweb/asm/tree/TableSwitchInsnNode
+   getfield org/objectweb/asm/tree/TableSwitchInsnNode/labels Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 10
+L_0404:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   aload 10
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_0419
+   aload 10
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast org/objectweb/asm/tree/LabelNode
+   astore 9
+L_040d:
+   .line 234
+   .var 9 is label Lorg/objectweb/asm/tree/LabelNode; from L_040d to L_0416
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 2
+   aload 9
+   invokevirtual com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/invoke (Lorg/objectweb/asm/tree/LabelNode;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0416:
+   .line 233
+   goto L_0404
+L_0419:
+   .line 236
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "default:"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 2
+   aload 5
+   checkcast org/objectweb/asm/tree/TableSwitchInsnNode
+   getfield org/objectweb/asm/tree/TableSwitchInsnNode/dflt Lorg/objectweb/asm/tree/LabelNode;
+   invokevirtual com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/invoke (Lorg/objectweb/asm/tree/LabelNode;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0427:
+   .line 237
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/outdent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0701
+L_042e:
+   .line 239
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+   .end stack
+   aload 8
+   instanceof org/objectweb/asm/tree/LookupSwitchInsnNode
+   ifeq L_048f
+L_0434:
+   .line 240
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 7
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_043b:
+   .line 241
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/indent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_0441:
+   .line 242
+   aload 5
+   checkcast org/objectweb/asm/tree/LookupSwitchInsnNode
+   getfield org/objectweb/asm/tree/LookupSwitchInsnNode/keys Ljava/util/List;
+   dup
+   ldc "instruction.keys"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   checkcast java/lang/Iterable
+   aload 5
+   checkcast org/objectweb/asm/tree/LookupSwitchInsnNode
+   getfield org/objectweb/asm/tree/LookupSwitchInsnNode/labels Ljava/util/List;
+   dup
+   ldc "instruction.labels"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   checkcast java/lang/Iterable
+   invokestatic kotlin/collections/CollectionsKt/zip (Ljava/lang/Iterable;Ljava/lang/Iterable;)Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 10
+L_0454:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   aload 10
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_047a
+   aload 10
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast kotlin/Pair
+   astore 9
+   aload 9
+   invokevirtual kotlin/Pair/component1 ()Ljava/lang/Object;
+   checkcast java/lang/Integer
+   astore 11
+   aload 9
+   invokevirtual kotlin/Pair/component2 ()Ljava/lang/Object;
+   checkcast org/objectweb/asm/tree/LabelNode
+   astore 12
+L_0465:
+   .line 243
+   .var 12 is label Lorg/objectweb/asm/tree/LabelNode; from L_0465 to L_0477
+   .var 11 is key Ljava/lang/Integer; from L_0465 to L_0477
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   aload 11
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   bipush 58
+   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 2
+   aload 12
+   invokevirtual com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/invoke (Lorg/objectweb/asm/tree/LabelNode;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0477:
+   .line 242
+   goto L_0454
+L_047a:
+   .line 245
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "default:"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 2
+   aload 5
+   checkcast org/objectweb/asm/tree/LookupSwitchInsnNode
+   getfield org/objectweb/asm/tree/LookupSwitchInsnNode/dflt Lorg/objectweb/asm/tree/LabelNode;
+   invokevirtual com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/invoke (Lorg/objectweb/asm/tree/LabelNode;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0488:
+   .line 246
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/outdent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0701
+L_048f:
+   .line 248
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+   .end stack
+   aload 8
+   instanceof org/objectweb/asm/tree/MultiANewArrayInsnNode
+   ifeq L_04a9
+L_0495:
+   .line 249
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 7
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 5
+   checkcast org/objectweb/asm/tree/MultiANewArrayInsnNode
+   getfield org/objectweb/asm/tree/MultiANewArrayInsnNode/desc Ljava/lang/String;
+   dup
+   ldc "instruction.desc"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 5
+   checkcast org/objectweb/asm/tree/MultiANewArrayInsnNode
+   getfield org/objectweb/asm/tree/MultiANewArrayInsnNode/dims I
+   invokestatic java/lang/String/valueOf (I)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_0701
+L_04a9:
+   .line 252
+   .stack use locals
+   .end stack
+   aload 8
+   instanceof org/objectweb/asm/tree/LabelNode
+   ifeq L_063c
+L_04af:
+   .line 253
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/outdent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_04b5:
+   .line 254
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   aload 2
+   aload 5
+   checkcast org/objectweb/asm/tree/LabelNode
+   invokevirtual com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/invoke (Lorg/objectweb/asm/tree/LabelNode;)Ljava/lang/String;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   bipush 58
+   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_04c6:
+   .line 255
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/indent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_04cc:
+   .line 257
+   aload 3
+   aload 5
+   invokeinterface java/util/Map/get (Ljava/lang/Object;)Ljava/lang/Object;
+   checkcast java/lang/Integer
+   astore 9
+L_04d3:
+   .line 258
+   .var 9 is line Ljava/lang/Integer; from L_04d3 to L_063c
+   aload 9
+   ifnull L_04e1
+L_04d7:
+   .line 259
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".line"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 9
+   invokestatic java/lang/String/valueOf (Ljava/lang/Object;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_04e1:
+   .line 261
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/lang/Integer
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/tryCatchBlocks Ljava/util/List;
+   dup
+   ldc "method.tryCatchBlocks"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   checkcast java/lang/Iterable
+   astore 12
+L_04eb:
+   .var 12 is $this$filter$iv Ljava/lang/Iterable; from L_04eb to L_0522
+   iconst_0
+   istore 13
+L_04ee:
+   .line 459
+   .var 13 is $i$f$filter I from L_04ee to L_0522
+   aload 12
+   astore 14
+   new java/util/ArrayList
+   dup
+   invokespecial java/util/ArrayList/<init> ()V
+   checkcast java/util/Collection
+   astore 15
+L_04f7:
+   .var 14 is $this$filterTo$iv$iv Ljava/lang/Iterable; from L_04f7 to L_0520
+   .var 15 is destination$iv$iv Ljava/util/Collection; from L_04f7 to L_0520
+   iconst_0
+   istore 16
+L_04fa:
+   .line 460
+   .var 16 is $i$f$filterTo I from L_04fa to L_0520
+   aload 14
+   invokeinterface java/lang/Iterable/iterator ()Ljava/util/Iterator;
+   astore 17
+L_04ff:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/lang/Integer
+      locals Top
+      locals Top
+      locals Object java/lang/Iterable
+      locals Integer
+      locals Object java/lang/Iterable
+      locals Object java/util/Collection
+      locals Integer
+      locals Object java/util/Iterator
+   .end stack
+   aload 17
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_051c
+   aload 17
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   astore 18
+L_0507:
+   .var 18 is element$iv$iv Ljava/lang/Object; from L_0507 to L_051a
+   aload 18
+   checkcast org/objectweb/asm/tree/TryCatchBlockNode
+   astore 19
+L_050b:
+   .var 19 is it Lorg/objectweb/asm/tree/TryCatchBlockNode; from L_050b to L_0514
+   iconst_0
+   istore 20
+L_050e:
+   .line 261
+   .var 20 is "\$i\$a\$-filter-Disassembler\$disassembleMethod\$5" I from L_050e to L_0514
+   aload 19
+   getfield org/objectweb/asm/tree/TryCatchBlockNode/start Lorg/objectweb/asm/tree/LabelNode;
+   aload 5
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+L_0514:
+   ifeq L_04ff
+   aload 15
+   aload 18
+   invokeinterface java/util/Collection/add (Ljava/lang/Object;)Z
+   pop
+L_051a:
+   goto L_04ff
+L_051c:
+   .line 461
+   .stack use locals
+   .end stack
+   aload 15
+L_0520:
+   checkcast java/util/List
+L_0522:
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 11
+L_0525:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/lang/Integer
+      locals Top
+      locals Object java/util/Iterator
+      locals Object java/lang/Object
+      locals Integer
+      locals Top
+      locals Object java/lang/Object
+      locals Integer
+      locals Object java/util/Iterator
+   .end stack
+   aload 11
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_0588
+   aload 11
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast org/objectweb/asm/tree/TryCatchBlockNode
+   astore 10
+L_052e:
+   .line 262
+   .var 10 is tryCatchBlockNode Lorg/objectweb/asm/tree/TryCatchBlockNode; from L_052e to L_0585
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".catch"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   astore 12
+   iconst_0
+   istore 13
+   iconst_0
+   istore 14
+   aload 12
+   astore 15
+L_0549:
+   .var 15 is it Lcom/anatawa12/jasm/disassembler/Printer; from L_0549 to L_0560
+   iconst_0
+   istore 16
+L_054c:
+   .line 262
+   .var 16 is "\$i\$a\$-also-Disassembler\$disassembleMethod\$6" I from L_054c to L_0560
+   aload 10
+   getfield org/objectweb/asm/tree/TryCatchBlockNode/type Ljava/lang/String;
+   ifnonnull L_0556
+   aload 15
+   ldc "*"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0560
+L_0556:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/lang/Integer
+      locals Object org/objectweb/asm/tree/TryCatchBlockNode
+      locals Object java/util/Iterator
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Object java/util/Iterator
+   .end stack
+   aload 15
+   aload 10
+   getfield org/objectweb/asm/tree/TryCatchBlockNode/type Ljava/lang/String;
+   dup
+   ldc "tryCatchBlockNode.type"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_0560:
+   .stack use locals
+   .end stack
+   getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
+L_0563:
+   .line 262
+   pop
+   aload 12
+L_0567:
+   .line 263
+   ldc "from"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 2
+   aload 10
+   getfield org/objectweb/asm/tree/TryCatchBlockNode/start Lorg/objectweb/asm/tree/LabelNode;
+   invokevirtual com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/invoke (Lorg/objectweb/asm/tree/LabelNode;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+L_0570:
+   .line 264
+   ldc "to"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 2
+   aload 10
+   getfield org/objectweb/asm/tree/TryCatchBlockNode/end Lorg/objectweb/asm/tree/LabelNode;
+   invokevirtual com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/invoke (Lorg/objectweb/asm/tree/LabelNode;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+L_0579:
+   .line 265
+   ldc "using"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 2
+   aload 10
+   getfield org/objectweb/asm/tree/TryCatchBlockNode/handler Lorg/objectweb/asm/tree/LabelNode;
+   invokevirtual com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/invoke (Lorg/objectweb/asm/tree/LabelNode;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+L_0582:
+   .line 266
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0585:
+   .line 261
+   goto L_0525
+L_0588:
+   .line 268
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/lang/Integer
+      locals Top
+      locals Object java/util/Iterator
+      locals Object java/lang/Object
+      locals Integer
+      locals Top
+      locals Object java/lang/Object
+      locals Integer
+      locals Object java/util/Iterator
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/MethodNode/localVariables Ljava/util/List;
+   dup
+   ldc "method.localVariables"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   checkcast java/lang/Iterable
+   astore 12
+L_0592:
+   .var 12 is $this$filter$iv Ljava/lang/Iterable; from L_0592 to L_05c9
+   iconst_0
+   istore 13
+L_0595:
+   .line 462
+   .var 13 is $i$f$filter I from L_0595 to L_05c9
+   aload 12
+   astore 14
+   new java/util/ArrayList
+   dup
+   invokespecial java/util/ArrayList/<init> ()V
+   checkcast java/util/Collection
+   astore 15
+L_059e:
+   .var 14 is $this$filterTo$iv$iv Ljava/lang/Iterable; from L_059e to L_05c7
+   .var 15 is destination$iv$iv Ljava/util/Collection; from L_059e to L_05c7
+   iconst_0
+   istore 16
+L_05a1:
+   .line 463
+   .var 16 is $i$f$filterTo I from L_05a1 to L_05c7
+   aload 14
+   invokeinterface java/lang/Iterable/iterator ()Ljava/util/Iterator;
+   astore 17
+L_05a6:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/lang/Integer
+      locals Top
+      locals Object java/util/Iterator
+      locals Object java/lang/Iterable
+      locals Integer
+      locals Object java/lang/Iterable
+      locals Object java/util/Collection
+      locals Integer
+      locals Object java/util/Iterator
+   .end stack
+   aload 17
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_05c3
+   aload 17
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   astore 18
+L_05ae:
+   .var 18 is element$iv$iv Ljava/lang/Object; from L_05ae to L_05c1
+   aload 18
+   checkcast org/objectweb/asm/tree/LocalVariableNode
+   astore 19
+L_05b2:
+   .var 19 is it Lorg/objectweb/asm/tree/LocalVariableNode; from L_05b2 to L_05bb
+   iconst_0
+   istore 20
+L_05b5:
+   .line 268
+   .var 20 is "\$i\$a\$-filter-Disassembler\$disassembleMethod\$7" I from L_05b5 to L_05bb
+   aload 19
+   getfield org/objectweb/asm/tree/LocalVariableNode/start Lorg/objectweb/asm/tree/LabelNode;
+   aload 5
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+L_05bb:
+   ifeq L_05a6
+   aload 15
+   aload 18
+   invokeinterface java/util/Collection/add (Ljava/lang/Object;)Z
+   pop
+L_05c1:
+   goto L_05a6
+L_05c3:
+   .line 464
+   .stack use locals
+   .end stack
+   aload 15
+L_05c7:
+   checkcast java/util/List
+L_05c9:
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 11
+L_05cc:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/lang/Integer
+      locals Top
+      locals Object java/util/Iterator
+      locals Object java/lang/Object
+      locals Integer
+      locals Top
+      locals Object java/lang/Object
+      locals Integer
+      locals Object java/util/Iterator
+   .end stack
+   aload 11
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_0701
+   aload 11
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast org/objectweb/asm/tree/LocalVariableNode
+   astore 10
+L_05d5:
+   .line 269
+   .var 10 is localVariableNode Lorg/objectweb/asm/tree/LocalVariableNode; from L_05d5 to L_0639
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".var"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 10
+   getfield org/objectweb/asm/tree/LocalVariableNode/index I
+   invokestatic java/lang/String/valueOf (I)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "is"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+L_05f1:
+   .line 270
+   aload 10
+   getfield org/objectweb/asm/tree/LocalVariableNode/name Ljava/lang/String;
+   dup
+   ldc "localVariableNode.name"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 10
+   getfield org/objectweb/asm/tree/LocalVariableNode/desc Ljava/lang/String;
+   dup
+   ldc "localVariableNode.desc"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   astore 12
+L_0600:
+   .line 271
+   iconst_0
+   istore 13
+   iconst_0
+   istore 14
+   aload 12
+   astore 15
+L_0608:
+   .var 15 is it Lcom/anatawa12/jasm/disassembler/Printer; from L_0608 to L_061c
+   iconst_0
+   istore 16
+L_060b:
+   .line 272
+   .var 16 is "\$i\$a\$-also-Disassembler\$disassembleMethod\$8" I from L_060b to L_061c
+   aload 10
+   getfield org/objectweb/asm/tree/LocalVariableNode/signature Ljava/lang/String;
+   ifnull L_061c
+L_0610:
+   .line 273
+   aload 15
+   ldc "signature"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 10
+   getfield org/objectweb/asm/tree/LocalVariableNode/signature Ljava/lang/String;
+   dup
+   ldc "localVariableNode.signature"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/str (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_061c:
+   .line 274
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/lang/Integer
+      locals Object org/objectweb/asm/tree/LocalVariableNode
+      locals Object java/util/Iterator
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Object java/util/Iterator
+   .end stack
+   getstatic kotlin/Unit/INSTANCE Lkotlin/Unit;
+L_0620:
+   .line 271
+   pop
+   aload 12
+L_0624:
+   .line 275
+   ldc "from"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 2
+   aload 10
+   getfield org/objectweb/asm/tree/LocalVariableNode/start Lorg/objectweb/asm/tree/LabelNode;
+   invokevirtual com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/invoke (Lorg/objectweb/asm/tree/LabelNode;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+L_062d:
+   .line 276
+   ldc "to"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 2
+   aload 10
+   getfield org/objectweb/asm/tree/LocalVariableNode/end Lorg/objectweb/asm/tree/LabelNode;
+   invokevirtual com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2/invoke (Lorg/objectweb/asm/tree/LabelNode;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+L_0636:
+   .line 277
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0639:
+   .line 268
+   goto L_05cc
+L_063c:
+   .line 280
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+   .end stack
+   aload 8
+   instanceof org/objectweb/asm/tree/FrameNode
+   ifeq L_0701
+L_0642:
+   .line 281
+   aload 5
+   checkcast org/objectweb/asm/tree/FrameNode
+   getfield org/objectweb/asm/tree/FrameNode/type I
+   iconst_m1
+   if_icmpne L_064b
+   iconst_1
+   goto L_064e
+L_064b:
+   .stack use locals
+   .end stack
+   iconst_0
+L_064e:
+   .stack use locals
+      stacks Integer
+   .end stack
+   istore 9
+   iconst_0
+   istore 10
+   iconst_0
+   istore 11
+   iconst_0
+   istore 11
+   iconst_0
+   istore 12
+   iload 9
+   ifne L_0666
+   iconst_0
+   istore 13
+   ldc "Check failed."
+   astore 12
+   new java/lang/IllegalStateException
+   dup
+   aload 12
+   invokevirtual java/lang/Object/toString ()Ljava/lang/String;
+   invokespecial java/lang/IllegalStateException/<init> (Ljava/lang/String;)V
+   checkcast java/lang/Throwable
+   athrow
+L_0666:
+   .line 282
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Integer
+      locals Integer
+      locals Integer
+      locals Integer
+   .end stack
+   aload 4
+   aload 5
+   checkcast org/objectweb/asm/tree/FrameNode
+   getfield org/objectweb/asm/tree/FrameNode/local Ljava/util/List;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   istore 9
+L_066f:
+   .line 283
+   .var 9 is useLocal Z from L_066f to L_06ff
+   aload 5
+   checkcast org/objectweb/asm/tree/FrameNode
+   getfield org/objectweb/asm/tree/FrameNode/local Ljava/util/List;
+   astore 4
+L_0675:
+   .line 284
+   new com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$9
+   dup
+   aload 0
+   aload 2
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$9/<init> (Lcom/anatawa12/jasm/disassembler/Disassembler;Lcom/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2;)V
+   astore 10
+L_067d:
+   .line 297
+   .var 10 is $fun$disassembleFrame$9 Lcom/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$9; from L_067d to L_06ff
+   iload 9
+   ifeq L_0693
+L_0681:
+   .line 298
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".stack"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "use"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "locals"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_068c:
+   .line 299
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/indent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_06c7
+L_0693:
+   .line 301
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$9
+      locals Integer
+      locals Integer
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".stack"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_069b:
+   .line 302
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/indent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_06a1:
+   .line 303
+   aload 5
+   checkcast org/objectweb/asm/tree/FrameNode
+   getfield org/objectweb/asm/tree/FrameNode/local Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 12
+L_06a8:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$9
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   aload 12
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_06c7
+   aload 12
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   astore 11
+L_06b0:
+   .line 304
+   .var 11 is frame Ljava/lang/Object; from L_06b0 to L_06c4
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "locals"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_06b7:
+   .line 305
+   aload 10
+   aload 11
+   dup
+   ldc "frame"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$9/invoke (Ljava/lang/Object;)V
+L_06bf:
+   .line 306
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_06c4:
+   .line 303
+   goto L_06a8
+L_06c7:
+   .line 309
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$9
+   .end stack
+   aload 5
+   checkcast org/objectweb/asm/tree/FrameNode
+   getfield org/objectweb/asm/tree/FrameNode/stack Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 12
+L_06d0:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$9
+      locals Top
+      locals Object java/util/Iterator
+   .end stack
+   aload 12
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_06ef
+   aload 12
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   astore 11
+L_06d8:
+   .line 310
+   .var 11 is frame Ljava/lang/Object; from L_06d8 to L_06ec
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "stacks"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_06df:
+   .line 311
+   aload 10
+   aload 11
+   dup
+   ldc "frame"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$9/invoke (Ljava/lang/Object;)V
+L_06e7:
+   .line 312
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_06ec:
+   .line 309
+   goto L_06d0
+L_06ef:
+   .line 314
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/outdent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_06f6:
+   .line 315
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".end"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "stack"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_06ff:
+   goto L_0701
+L_0701:
+   .line 165
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$disassembleMethod$2
+      locals Object java/util/Map
+      locals Object java/util/List
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+      locals Object java/util/ListIterator
+      locals Object java/lang/String
+      locals Object org/objectweb/asm/tree/AbstractInsnNode
+   .end stack
+   goto L_01d3
+L_0706:
+   .line 321
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/MethodNode
+      locals Object java/lang/Object
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/outdent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_070d:
+   .line 322
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".end"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "method"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0716:
+   .line 323
+   return
+L_0719:
+.end method
+
+.method private disassembleLdcConstant (Ljava/lang/Object;)V
+   .limit stack 4
+   .limit local 8
+L_0000:
+   .line 326
+   .var 0 is this Lcom/anatawa12/jasm/disassembler/Disassembler; from L_0000 to L_00b5
+   .var 1 is value Ljava/lang/Object; from L_0000 to L_00b5
+   aload 1
+   dup
+   ifnonnull L_0006
+   invokestatic kotlin/jvm/internal/Intrinsics/throwNpe ()V
+L_0006:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object java/lang/Object
+      stacks Object java/lang/Object
+   .end stack
+   pop
+L_0009:
+   .line 327
+   aload 1
+   astore 2
+L_000d:
+   .line 328
+   aload 2
+   instanceof java/lang/Integer
+   ifeq L_0019
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   invokestatic java/lang/String/valueOf (Ljava/lang/Object;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_00b0
+L_0019:
+   .line 329
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object java/lang/Object
+      locals Object java/lang/Object
+   .end stack
+   aload 2
+   instanceof java/lang/Double
+   ifeq L_0026
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   invokestatic java/lang/String/valueOf (Ljava/lang/Object;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_00b0
+L_0026:
+   .line 330
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof java/lang/Long
+   ifeq L_0039
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   aload 1
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   bipush 76
+   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_00b0
+L_0039:
+   .line 331
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof java/lang/Float
+   ifeq L_004c
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   aload 1
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   bipush 102
+   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_00b0
+L_004c:
+   .line 332
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof java/lang/String
+   ifeq L_0059
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   checkcast java/lang/String
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/str (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_00b0
+L_0059:
+   .line 333
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof org/objectweb/asm/Type
+   ifeq L_0085
+L_005f:
+   .line 334
+   aload 1
+   checkcast org/objectweb/asm/Type
+   invokevirtual org/objectweb/asm/Type/getSort ()I
+   bipush 11
+   if_icmpne L_0075
+L_0066:
+   .line 335
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "methodtype"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   checkcast org/objectweb/asm/Type
+   invokevirtual org/objectweb/asm/Type/getDescriptor ()Ljava/lang/String;
+   dup
+   ldc "value.descriptor"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_00b0
+L_0075:
+   .line 337
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "class"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   checkcast org/objectweb/asm/Type
+   invokevirtual org/objectweb/asm/Type/getDescriptor ()Ljava/lang/String;
+   dup
+   ldc "value.descriptor"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+   goto L_00b0
+L_0085:
+   .line 339
+   .stack use locals
+   .end stack
+   aload 2
+   instanceof org/objectweb/asm/Handle
+   ifeq L_00a2
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "handle"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   astore 3
+   iconst_0
+   istore 4
+   iconst_0
+   istore 5
+   aload 3
+   astore 6
+L_0096:
+   .var 6 is it Lcom/anatawa12/jasm/disassembler/Printer; from L_0096 to L_009f
+   iconst_0
+   istore 7
+L_0099:
+   .line 339
+   .var 7 is "\$i\$a\$-also-Disassembler\$disassembleLdcConstant\$1" I from L_0099 to L_009f
+   aload 0
+   aload 1
+   checkcast org/objectweb/asm/Handle
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleHandle (Lorg/objectweb/asm/Handle;)V
+L_009f:
+   .line 339
+   goto L_00b0
+L_00a2:
+   .line 340
+   .stack use locals
+   .end stack
+   ldc ""
+   astore 3
+   iconst_0
+   istore 4
+   new java/lang/IllegalStateException
+   dup
+   aload 3
+   invokevirtual java/lang/Object/toString ()Ljava/lang/String;
+   invokespecial java/lang/IllegalStateException/<init> (Ljava/lang/String;)V
+   checkcast java/lang/Throwable
+   athrow
+L_00b0:
+   .line 342
+   .stack use locals
+   .end stack
+   return
+L_00b5:
+.end method
+
+.method private disassembleHandle (Lorg/objectweb/asm/Handle;)V
+   .limit stack 4
+   .limit local 2
+L_0000:
+   .line 345
+   .var 0 is this Lcom/anatawa12/jasm/disassembler/Disassembler; from L_0000 to L_007f
+   .var 1 is handle Lorg/objectweb/asm/Handle; from L_0000 to L_007f
+   aload 1
+   invokevirtual org/objectweb/asm/Handle/getTag ()I
+   tableswitch 1
+      L_0005
+      L_000e
+      L_0017
+      L_0020
+      L_0029
+      L_0032
+      L_003b
+      L_0044
+      L_004d
+      default: L_0056
+L_0005:
+   .line 346
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/Handle
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "getfield"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0056
+L_000e:
+   .line 347
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "getstatic"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0056
+L_0017:
+   .line 348
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "putfield"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0056
+L_0020:
+   .line 349
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "putstatic"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0056
+L_0029:
+   .line 350
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "invokevirtual"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0056
+L_0032:
+   .line 351
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "invokestatic"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0056
+L_003b:
+   .line 352
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "invokespecial"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0056
+L_0044:
+   .line 353
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "newinvokespecial"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0056
+L_004d:
+   .line 354
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "invokeinterface"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0056
+L_0056:
+   .line 356
+   .stack use locals
+   .end stack
+   aload 1
+   invokevirtual org/objectweb/asm/Handle/isInterface ()Z
+   ifeq L_0062
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "interface"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_0062:
+   .line 357
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   invokevirtual org/objectweb/asm/Handle/getOwner ()Ljava/lang/String;
+   dup
+   ldc "handle.owner"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   bipush 47
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/c (C)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   invokevirtual org/objectweb/asm/Handle/getName ()Ljava/lang/String;
+   dup
+   ldc "handle.name"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   invokevirtual org/objectweb/asm/Handle/getDesc ()Ljava/lang/String;
+   dup
+   ldc "handle.desc"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/mDesc (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_007c:
+   .line 358
+   return
+L_007f:
+.end method
+
+.method private disassembleField (Lorg/objectweb/asm/tree/FieldNode;)V
+   .limit stack 4
+   .limit local 8
+L_0000:
+   .line 361
+   .var 0 is this Lcom/anatawa12/jasm/disassembler/Disassembler; from L_0000 to L_0137
+   .var 1 is field Lorg/objectweb/asm/tree/FieldNode; from L_0000 to L_0137
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".field"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   astore 2
+   iconst_0
+   istore 3
+   iconst_0
+   istore 4
+   aload 2
+   astore 5
+L_0015:
+   .var 5 is it Lcom/anatawa12/jasm/disassembler/Printer; from L_0015 to L_001f
+   iconst_0
+   istore 6
+L_0018:
+   .line 361
+   .var 6 is "\$i\$a\$-also-Disassembler\$disassembleField\$1" I from L_0018 to L_001f
+   aload 0
+   aload 1
+   getfield org/objectweb/asm/tree/FieldNode/access I
+   getstatic com/anatawa12/jasm/disassembler/Disassembler$AccessTo/Method Lcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleAccess (ILcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;)V
+L_001f:
+   .line 361
+   aload 2
+L_0022:
+   .line 362
+   aload 1
+   getfield org/objectweb/asm/tree/FieldNode/name Ljava/lang/String;
+   dup
+   ldc "field.name"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   getfield org/objectweb/asm/tree/FieldNode/desc Ljava/lang/String;
+   dup
+   ldc "field.desc"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/name (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   astore 2
+L_0031:
+   .line 363
+   iconst_0
+   istore 3
+   iconst_0
+   istore 4
+   aload 2
+   astore 5
+L_0039:
+   .var 5 is it Lcom/anatawa12/jasm/disassembler/Printer; from L_0039 to L_009c
+   iconst_0
+   istore 6
+L_003c:
+   .line 364
+   .var 6 is "\$i\$a\$-also-Disassembler\$disassembleField\$2" I from L_003c to L_009c
+   aload 1
+   getfield org/objectweb/asm/tree/FieldNode/value Ljava/lang/Object;
+   astore 7
+L_0041:
+   .line 365
+   aload 7
+   instanceof java/lang/String
+   ifeq L_0050
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   getfield org/objectweb/asm/tree/FieldNode/value Ljava/lang/Object;
+   invokestatic java/lang/String/valueOf (Ljava/lang/Object;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/str (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_009c
+L_0050:
+   .line 366
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/FieldNode
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Object java/lang/Object
+   .end stack
+   aload 7
+   instanceof java/lang/Integer
+   ifeq L_0060
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   getfield org/objectweb/asm/tree/FieldNode/value Ljava/lang/Object;
+   invokestatic java/lang/String/valueOf (Ljava/lang/Object;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_009c
+L_0060:
+   .line 367
+   .stack use locals
+   .end stack
+   aload 7
+   instanceof java/lang/Double
+   ifeq L_0070
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   getfield org/objectweb/asm/tree/FieldNode/value Ljava/lang/Object;
+   invokestatic java/lang/String/valueOf (Ljava/lang/Object;)Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_009c
+L_0070:
+   .line 368
+   .stack use locals
+   .end stack
+   aload 7
+   instanceof java/lang/Float
+   ifeq L_0086
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   aload 1
+   getfield org/objectweb/asm/tree/FieldNode/value Ljava/lang/Object;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   bipush 102
+   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_009c
+L_0086:
+   .line 369
+   .stack use locals
+   .end stack
+   aload 7
+   instanceof java/lang/Long
+   ifeq L_009c
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "="
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   aload 1
+   getfield org/objectweb/asm/tree/FieldNode/value Ljava/lang/Object;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   bipush 76
+   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_009c
+L_009c:
+   .line 371
+   .stack use locals
+   .end stack
+   nop
+L_00a1:
+   .line 363
+   aload 2
+L_00a4:
+   .line 371
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_00a7:
+   .line 372
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/indent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_00ad:
+   .line 374
+   aload 1
+   getfield org/objectweb/asm/tree/FieldNode/signature Ljava/lang/String;
+   ifnull L_00bf
+L_00b2:
+   .line 375
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".signature"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   aload 1
+   getfield org/objectweb/asm/tree/FieldNode/signature Ljava/lang/String;
+   dup
+   ldc "field.signature"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/str (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_00bf:
+   .line 377
+   .stack use locals
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/FieldNode/visibleAnnotations Ljava/util/List;
+   ifnull L_00e3
+L_00c5:
+   .line 378
+   aload 1
+   getfield org/objectweb/asm/tree/FieldNode/visibleAnnotations Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 3
+L_00cb:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/FieldNode
+      locals Object java/lang/Object
+      locals Object java/util/Iterator
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Object java/lang/Object
+   .end stack
+   aload 3
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_00e3
+   aload 3
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast org/objectweb/asm/tree/AnnotationNode
+   astore 2
+L_00d4:
+   .line 379
+   .var 2 is annotation Lorg/objectweb/asm/tree/AnnotationNode; from L_00d4 to L_00e0
+   aload 0
+   aload 2
+   dup
+   ldc "annotation"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   new com/anatawa12/jasm/tree/AnnotationType$Visible
+   dup
+   invokespecial com/anatawa12/jasm/tree/AnnotationType$Visible/<init> ()V
+   checkcast com/anatawa12/jasm/tree/AnnotationType
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleAnnotation (Lorg/objectweb/asm/tree/AnnotationNode;Lcom/anatawa12/jasm/tree/AnnotationType;)V
+L_00e0:
+   .line 378
+   goto L_00cb
+L_00e3:
+   .line 381
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/FieldNode
+      locals Object java/lang/Object
+      locals Top
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Object java/lang/Object
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/FieldNode/invisibleAnnotations Ljava/util/List;
+   ifnull L_0107
+L_00e9:
+   .line 382
+   aload 1
+   getfield org/objectweb/asm/tree/FieldNode/invisibleAnnotations Ljava/util/List;
+   invokeinterface java/util/List/iterator ()Ljava/util/Iterator;
+   astore 3
+L_00ef:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/FieldNode
+      locals Object java/lang/Object
+      locals Object java/util/Iterator
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Object java/lang/Object
+   .end stack
+   aload 3
+   invokeinterface java/util/Iterator/hasNext ()Z
+   ifeq L_0107
+   aload 3
+   invokeinterface java/util/Iterator/next ()Ljava/lang/Object;
+   checkcast org/objectweb/asm/tree/AnnotationNode
+   astore 2
+L_00f8:
+   .line 383
+   .var 2 is annotation Lorg/objectweb/asm/tree/AnnotationNode; from L_00f8 to L_0104
+   aload 0
+   aload 2
+   dup
+   ldc "annotation"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkExpressionValueIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   new com/anatawa12/jasm/tree/AnnotationType$Invisible
+   dup
+   invokespecial com/anatawa12/jasm/tree/AnnotationType$Invisible/<init> ()V
+   checkcast com/anatawa12/jasm/tree/AnnotationType
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/disassembleAnnotation (Lorg/objectweb/asm/tree/AnnotationNode;Lcom/anatawa12/jasm/tree/AnnotationType;)V
+L_0104:
+   .line 382
+   goto L_00ef
+L_0107:
+   .line 385
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/FieldNode
+      locals Object java/lang/Object
+      locals Top
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Object java/lang/Object
+   .end stack
+   aload 1
+   getfield org/objectweb/asm/tree/FieldNode/attrs Ljava/util/List;
+   astore 2
+   iconst_0
+   istore 3
+   aload 2
+   dup
+   ifnull L_0113
+   goto L_0117
+L_0113:
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Object org/objectweb/asm/tree/FieldNode
+      locals Object java/util/List
+      locals Integer
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Printer
+      locals Integer
+      locals Object java/lang/Object
+      stacks Object java/util/List
+   .end stack
+   pop
+   invokestatic kotlin/collections/CollectionsKt/emptyList ()Ljava/util/List;
+L_0117:
+   .line 385
+   .stack use locals
+      stacks Object java/util/List
+   .end stack
+   getstatic com/anatawa12/jasm/DeprecatedAttribute/INSTANCE Lcom/anatawa12/jasm/DeprecatedAttribute;
+   invokeinterface java/util/List/contains (Ljava/lang/Object;)Z
+   ifeq L_0124
+L_011d:
+   .line 386
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".deprecated"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0124:
+   .line 388
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/outdent ()Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+L_012b:
+   .line 389
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc ".end"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "field"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/nl ()V
+L_0134:
+   .line 390
+   return
+L_0137:
+.end method
+
+.method private disassembleAccess (ILcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;)V
+   .limit stack 2
+   .limit local 3
+L_0000:
+   .line 393
+   .var 0 is this Lcom/anatawa12/jasm/disassembler/Disassembler; from L_0000 to L_0118
+   .var 1 is access I from L_0000 to L_0118
+   .var 2 is accessTo Lcom/anatawa12/jasm/disassembler/Disassembler$AccessTo; from L_0000 to L_0118
+   nop
+L_0003:
+   .line 394
+   iload 1
+   iconst_1
+   iand
+   ifeq L_0011
+L_0009:
+   .line 395
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "public"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_0011:
+   .line 397
+   .stack
+      locals Object com/anatawa12/jasm/disassembler/Disassembler
+      locals Integer
+      locals Object com/anatawa12/jasm/disassembler/Disassembler$AccessTo
+   .end stack
+   iload 1
+   iconst_2
+   iand
+   ifeq L_0020
+L_0018:
+   .line 398
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "private"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_0020:
+   .line 400
+   .stack use locals
+   .end stack
+   iload 1
+   iconst_4
+   iand
+   ifeq L_002f
+L_0027:
+   .line 401
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "protected"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_002f:
+   .line 403
+   .stack use locals
+   .end stack
+   iload 1
+   bipush 8
+   iand
+   ifeq L_003e
+L_0036:
+   .line 404
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "static"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_003e:
+   .line 406
+   .stack use locals
+   .end stack
+   iload 1
+   bipush 16
+   iand
+   ifeq L_004d
+L_0045:
+   .line 407
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "final"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_004d:
+   .line 409
+   .stack use locals
+   .end stack
+   iload 1
+   bipush 32
+   iand
+   ifeq L_0061
+L_0054:
+   .line 410
+   aload 2
+   getstatic com/anatawa12/jasm/disassembler/Disassembler$AccessTo/Class Lcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;
+   if_acmpeq L_0113
+L_0059:
+   .line 411
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "synchronized"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_0061:
+   .line 413
+   .stack use locals
+   .end stack
+   iload 1
+   bipush 64
+   iand
+   ifeq L_007e
+L_0068:
+   .line 414
+   aload 2
+   getstatic com/anatawa12/jasm/disassembler/Disassembler$AccessTo/Field Lcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;
+   if_acmpeq L_0075
+L_006d:
+   .line 415
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "volatile"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_0075:
+   .line 417
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "bridge"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_007e:
+   .line 419
+   .stack use locals
+   .end stack
+   iload 1
+   sipush 128
+   iand
+   ifeq L_009b
+L_0085:
+   .line 420
+   aload 2
+   getstatic com/anatawa12/jasm/disassembler/Disassembler$AccessTo/Field Lcom/anatawa12/jasm/disassembler/Disassembler$AccessTo;
+   if_acmpeq L_0092
+L_008a:
+   .line 421
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "transient"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_0092:
+   .line 423
+   .stack use locals
+   .end stack
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "varargs"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_009b:
+   .line 425
+   .stack use locals
+   .end stack
+   iload 1
+   sipush 256
+   iand
+   ifeq L_00aa
+L_00a2:
+   .line 426
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "native"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_00aa:
+   .line 428
+   .stack use locals
+   .end stack
+   iload 1
+   sipush 512
+   iand
+   ifeq L_00b9
+L_00b1:
+   .line 429
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "interface"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_00b9:
+   .line 431
+   .stack use locals
+   .end stack
+   iload 1
+   sipush 1024
+   iand
+   ifeq L_00c8
+L_00c0:
+   .line 432
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "abstract"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_00c8:
+   .line 434
+   .stack use locals
+   .end stack
+   iload 1
+   sipush 2048
+   iand
+   ifeq L_00d7
+L_00cf:
+   .line 435
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "strict"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_00d7:
+   .line 437
+   .stack use locals
+   .end stack
+   iload 1
+   sipush 4096
+   iand
+   ifeq L_00e6
+L_00de:
+   .line 438
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "synthetic"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_00e6:
+   .line 440
+   .stack use locals
+   .end stack
+   iload 1
+   sipush 8192
+   iand
+   ifeq L_00f5
+L_00ed:
+   .line 441
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "annotation"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_00f5:
+   .line 443
+   .stack use locals
+   .end stack
+   iload 1
+   sipush 16384
+   iand
+   ifeq L_0104
+L_00fc:
+   .line 444
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "enum"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_0104:
+   .line 446
+   .stack use locals
+   .end stack
+   iload 1
+   ldc 32768
+   iand
+   ifeq L_0113
+L_010b:
+   .line 447
+   aload 0
+   getfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   ldc "mandated"
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/key (Ljava/lang/String;)Lcom/anatawa12/jasm/disassembler/Printer;
+   pop
+   goto L_0113
+L_0113:
+   .line 450
+   .stack use locals
+   .end stack
+   return
+L_0118:
+.end method
+
+.method public <init> ()V
+   .limit stack 3
+   .limit local 1
+L_0000:
+   .line 10
+   .var 0 is this Lcom/anatawa12/jasm/disassembler/Disassembler; from L_0000 to L_000c
+   aload 0
+   invokespecial java/lang/Object/<init> ()V
+L_0004:
+   .line 11
+   aload 0
+   new com/anatawa12/jasm/disassembler/Printer
+   dup
+   invokespecial com/anatawa12/jasm/disassembler/Printer/<init> ()V
+   putfield com/anatawa12/jasm/disassembler/Disassembler/file Lcom/anatawa12/jasm/disassembler/Printer;
+   return
+L_000c:
+.end method
+
+.field private file Lcom/anatawa12/jasm/disassembler/Printer;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+

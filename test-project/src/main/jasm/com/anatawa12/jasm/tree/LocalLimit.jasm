@@ -1,0 +1,184 @@
+.bytecode 52.0
+.source "MethodStatement.kt"
+.class public com/anatawa12/jasm/tree/LocalLimit
+.super com/anatawa12/jasm/tree/MethodStatement
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\t\u0010\u0007\u001a\u00020\u0003HÆ\u0003J\u0013\u0010\b\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\t\u001a\u00020\n2\b\u0010\u000b\u001a\u0004\u0018\u00010\u000cHÖ\u0003J\t\u0010\r\u001a\u00020\u0003HÖ\u0001J\t\u0010\u000e\u001a\u00020\u000fHÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006¨\u0006\u0010"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/tree/LocalLimit;"
+      s = "Lcom/anatawa12/jasm/tree/MethodStatement;"
+      s = "maxLocal"
+      s = ""
+      s = "(I)V"
+      s = "getMaxLocal"
+      s = "()I"
+      s = "component1"
+      s = "copy"
+      s = "equals"
+      s = ""
+      s = "other"
+      s = ""
+      s = "hashCode"
+      s = "toString"
+      s = ""
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method public getMaxLocal ()I
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 7
+   .var 0 is this Lcom/anatawa12/jasm/tree/LocalLimit; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/LocalLimit/maxLocal I
+   ireturn
+L_0005:
+.end method
+
+.method public <init> (I)V
+   .limit stack 2
+   .limit local 2
+L_0000:
+   .line 7
+   .var 0 is this Lcom/anatawa12/jasm/tree/LocalLimit; from L_0000 to L_0009
+   .var 1 is maxLocal I from L_0000 to L_0009
+   aload 0
+   aconst_null
+   invokespecial com/anatawa12/jasm/tree/MethodStatement/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+   aload 0
+   iload 1
+   putfield com/anatawa12/jasm/tree/LocalLimit/maxLocal I
+   return
+L_0009:
+.end method
+
+.method public component1 ()I
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/LocalLimit; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/LocalLimit/maxLocal I
+   ireturn
+L_0004:
+.end method
+
+.method public copy (I)Lcom/anatawa12/jasm/tree/LocalLimit;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 3
+   .limit local 2
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/LocalLimit; from L_0000 to L_0006
+   .var 1 is maxLocal I from L_0000 to L_0006
+   new com/anatawa12/jasm/tree/LocalLimit
+   dup
+   iload 1
+   invokespecial com/anatawa12/jasm/tree/LocalLimit/<init> (I)V
+   areturn
+L_0006:
+.end method
+
+.method public copy$default (Lcom/anatawa12/jasm/tree/LocalLimit;IILjava/lang/Object;)Lcom/anatawa12/jasm/tree/LocalLimit;
+   .limit stack 2
+   .limit local 4
+   iload 2
+   iconst_1
+   iand
+   ifeq L_0007
+   aload 0
+   getfield com/anatawa12/jasm/tree/LocalLimit/maxLocal I
+   istore 1
+L_0007:
+   .stack
+      locals Object com/anatawa12/jasm/tree/LocalLimit
+      locals Integer
+      locals Integer
+      locals Object java/lang/Object
+   .end stack
+   aload 0
+   iload 1
+   invokevirtual com/anatawa12/jasm/tree/LocalLimit/copy (I)Lcom/anatawa12/jasm/tree/LocalLimit;
+   areturn
+.end method
+
+.method public toString ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 1
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   ldc "LocalLimit(maxLocal="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/LocalLimit/maxLocal I
+   invokevirtual java/lang/StringBuilder/append (I)Ljava/lang/StringBuilder;
+   ldc ")"
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   areturn
+.end method
+
+.method public hashCode ()I
+   .limit stack 1
+   .limit local 1
+   aload 0
+   getfield com/anatawa12/jasm/tree/LocalLimit/maxLocal I
+   invokestatic java/lang/Integer/hashCode (I)I
+   ireturn
+.end method
+
+.method public equals (Ljava/lang/Object;)Z
+   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 2
+   .limit local 3
+   aload 0
+   aload 1
+   if_acmpeq L_000e
+   aload 1
+   instanceof com/anatawa12/jasm/tree/LocalLimit
+   ifeq L_0012
+   aload 1
+   checkcast com/anatawa12/jasm/tree/LocalLimit
+   astore 2
+   aload 0
+   getfield com/anatawa12/jasm/tree/LocalLimit/maxLocal I
+   aload 2
+   getfield com/anatawa12/jasm/tree/LocalLimit/maxLocal I
+   if_icmpne L_0012
+L_000e:
+   .stack
+      locals Object com/anatawa12/jasm/tree/LocalLimit
+      locals Object java/lang/Object
+   .end stack
+   iconst_1
+   ireturn
+L_0012:
+   .stack use locals
+   .end stack
+   iconst_0
+   ireturn
+.end method
+
+.field private maxLocal I
+.end field
+

@@ -1,0 +1,119 @@
+.bytecode 52.0
+.source "Utils.kt"
+.class public com/anatawa12/jasm/parser/UtilsKt
+.super java/lang/Object
+.debug "SMAP\nUtils.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Utils.kt\ncom/anatawa12/jasm/parser/UtilsKt\n*L\n1#1,8:1\n*E\n"
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 2
+   d1 [ = .annotation array
+      s = "\u0000\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\u0010\u000c\n\u0002\b\u0003\u001a\u0011\u0010\u0000\u001a\u00020\u0001*\u0004\u0018\u00010\u0002¢\u0006\u0002\u0010\u0003\u001a\u0011\u0010\u0004\u001a\u00020\u0001*\u0004\u0018\u00010\u0002¢\u0006\u0002\u0010\u0003¨\u0006\u0005"
+   .end annotation
+   d2 [ = .annotation array
+      s = "isTokenSplitChar"
+      s = ""
+      s = ""
+      s = "(Ljava/lang/Character;)Z"
+      s = "isWardChar"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method public isWardChar (Ljava/lang/Character;)Z
+   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 2
+   .limit local 3
+L_0000:
+   .line 4
+   .var 0 is $this$isWardChar Ljava/lang/Character; from L_0000 to L_001f
+   aload 0
+   ifnull L_0018
+   aload 0
+   invokevirtual java/lang/Character/charValue ()C
+   istore 1
+   iconst_0
+   istore 2
+   iload 1
+   invokestatic java/lang/Character/isJavaIdentifierPart (C)Z
+   ifne L_0014
+   aload 0
+   invokevirtual java/lang/Character/charValue ()C
+   bipush 60
+   if_icmpeq L_0014
+   aload 0
+   invokevirtual java/lang/Character/charValue ()C
+   bipush 62
+   if_icmpne L_0018
+L_0014:
+   .stack
+      locals Object java/lang/Character
+      locals Integer
+      locals Integer
+   .end stack
+   iconst_1
+   goto L_001b
+L_0018:
+   .stack
+      locals Object java/lang/Character
+   .end stack
+   iconst_0
+L_001b:
+   .line 4
+   .stack use locals
+      stacks Integer
+   .end stack
+   ireturn
+L_001f:
+.end method
+
+.method public isTokenSplitChar (Ljava/lang/Character;)Z
+   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 2
+   .limit local 1
+L_0000:
+   .line 7
+   .var 0 is $this$isTokenSplitChar Ljava/lang/Character; from L_0000 to L_001a
+   aload 0
+   ifnull L_0010
+   aload 0
+   invokevirtual java/lang/Character/charValue ()C
+   invokestatic kotlin/text/CharsKt/isWhitespace (C)Z
+   ifne L_0010
+   aload 0
+   invokevirtual java/lang/Character/charValue ()C
+   bipush 58
+   if_icmpeq L_0010
+   aload 0
+   invokevirtual java/lang/Character/charValue ()C
+   bipush 46
+   if_icmpne L_0014
+L_0010:
+   .stack
+      locals Object java/lang/Character
+   .end stack
+   iconst_1
+   goto L_0017
+L_0014:
+   .stack use locals
+   .end stack
+   iconst_0
+L_0017:
+   .stack use locals
+      stacks Integer
+   .end stack
+   ireturn
+L_001a:
+.end method
+

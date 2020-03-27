@@ -1,0 +1,138 @@
+.bytecode 52.0
+.source "TokenType.kt"
+.class public com/anatawa12/jasm/parser/TokenType$DotedKeyWord
+.super com/anatawa12/jasm/parser/TokenType
+.signature "Lcom/anatawa12/jasm/parser/TokenType<Lkotlin/Unit;>;"
+.inner public com/anatawa12/jasm/parser/TokenType$DotedKeyWord inner DotedKeyWord outer com/anatawa12/jasm/parser/TokenType
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\r\u0012\u0006\u0010\u0003\u001a\u00020\u0004¢\u0006\u0002\u0010\u0005J\u0017\u0010\b\u001a\u0004\u0018\u00010\u00022\u0006\u0010\t\u001a\u00020\nH\u0016¢\u0006\u0002\u0010\u000bJ\b\u0010\u000c\u001a\u00020\u0004H\u0016R\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007¨\u0006\r"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/parser/TokenType\$DotedKeyWord;"
+      s = "Lcom/anatawa12/jasm/parser/TokenType;"
+      s = ""
+      s = "value"
+      s = ""
+      s = "(Ljava/lang/String;)V"
+      s = "getValue"
+      s = "()Ljava/lang/String;"
+      s = "accept"
+      s = "visitor"
+      s = "Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;"
+      s = "(Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;)Lkotlin/Unit;"
+      s = "toString"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method public accept (Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;)Lkotlin/Unit;
+   .annotation invisible org/jetbrains/annotations/Nullable
+   .end annotation
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 2
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/parser/TokenType$DotedKeyWord; from L_0000 to L_000a
+   .var 1 is visitor Lcom/anatawa12/jasm/parser/ITokenVisitorNullable; from L_0000 to L_000a
+   aload 1
+   ldc "visitor"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0004:
+   .line 17
+   aload 1
+   aload 0
+   invokeinterface com/anatawa12/jasm/parser/ITokenVisitorNullable/visitDotedKeyWord (Lcom/anatawa12/jasm/parser/TokenType$DotedKeyWord;)Lkotlin/Unit;
+   areturn
+L_000a:
+.end method
+
+.method public accept (Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;)Ljava/lang/Object;
+   .limit stack 2
+   .limit local 2
+L_0000:
+   .line 16
+   aload 0
+   aload 1
+   invokevirtual com/anatawa12/jasm/parser/TokenType$DotedKeyWord/accept (Lcom/anatawa12/jasm/parser/ITokenVisitorNullable;)Lkotlin/Unit;
+   areturn
+.end method
+
+.method public toString ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 1
+L_0000:
+   .line 18
+   .var 0 is this Lcom/anatawa12/jasm/parser/TokenType$DotedKeyWord; from L_0000 to L_000e
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   ldc "\'."
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/parser/TokenType$DotedKeyWord/value Ljava/lang/String;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   bipush 39
+   invokevirtual java/lang/StringBuilder/append (C)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   areturn
+L_000e:
+.end method
+
+.method public getValue ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 16
+   .var 0 is this Lcom/anatawa12/jasm/parser/TokenType$DotedKeyWord; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/parser/TokenType$DotedKeyWord/value Ljava/lang/String;
+   areturn
+L_0005:
+.end method
+
+.method public <init> (Ljava/lang/String;)V
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 2
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/parser/TokenType$DotedKeyWord; from L_0000 to L_000d
+   .var 1 is value Ljava/lang/String; from L_0000 to L_000d
+   aload 1
+   ldc "value"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0004:
+   .line 16
+   aload 0
+   aconst_null
+   invokespecial com/anatawa12/jasm/parser/TokenType/<init> (Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+   aload 0
+   aload 1
+   putfield com/anatawa12/jasm/parser/TokenType$DotedKeyWord/value Ljava/lang/String;
+   return
+L_000d:
+.end method
+
+.field private value Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+

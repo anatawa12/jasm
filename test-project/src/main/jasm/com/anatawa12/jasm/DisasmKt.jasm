@@ -1,0 +1,132 @@
+.bytecode 52.0
+.source "Disasm.kt"
+.class public com/anatawa12/jasm/DisasmKt
+.super java/lang/Object
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 2
+   d1 [ = .annotation array
+      s = "\u0000\u001c\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\b\u0002\u001a\u000e\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003\u001a\u0019\u0010\u0004\u001a\u00020\u00052\u000c\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00010\u0007¢\u0006\u0002\u0010\b¨\u0006\t"
+   .end annotation
+   d2 [ = .annotation array
+      s = "disassemble"
+      s = ""
+      s = "classFile"
+      s = ""
+      s = "main"
+      s = ""
+      s = "args"
+      s = ""
+      s = "([Ljava/lang/String;)V"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method public main "([Ljava/lang/String;)V"
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 5
+   .limit local 1
+L_0000:
+   .var 0 is args "[Ljava/lang/String;" from L_0000 to L_001b
+   aload 0
+   ldc "args"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0004:
+   .line 9
+   new java/io/File
+   dup
+   aload 0
+   iconst_1
+   aaload
+   invokespecial java/io/File/<init> (Ljava/lang/String;)V
+   new java/io/File
+   dup
+   aload 0
+   iconst_0
+   aaload
+   invokespecial java/io/File/<init> (Ljava/lang/String;)V
+   invokestatic kotlin/io/FilesKt/readBytes "(Ljava/io/File;)[B"
+   invokestatic com/anatawa12/jasm/DisasmKt/disassemble "([B)Ljava/lang/String;"
+   aconst_null
+   iconst_2
+   aconst_null
+   invokestatic kotlin/io/FilesKt/writeText$default (Ljava/io/File;Ljava/lang/String;Ljava/nio/charset/Charset;ILjava/lang/Object;)V
+L_0018:
+   .line 10
+   return
+L_001b:
+.end method
+
+.method public disassemble "([B)Ljava/lang/String;"
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 6
+   .limit local 4
+L_0000:
+   .var 0 is classFile "[B" from L_0000 to L_0030
+   aload 0
+   ldc "classFile"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0004:
+   .line 13
+   new org/objectweb/asm/ClassReader
+   dup
+   aload 0
+   invokespecial org/objectweb/asm/ClassReader/<init> "([B)V"
+   astore 1
+L_000b:
+   .line 14
+   .var 1 is reader Lorg/objectweb/asm/ClassReader; from L_000b to L_0030
+   new org/objectweb/asm/tree/ClassNode
+   dup
+   invokespecial org/objectweb/asm/tree/ClassNode/<init> ()V
+   astore 2
+L_0011:
+   .line 15
+   .var 2 is node Lorg/objectweb/asm/tree/ClassNode; from L_0011 to L_0030
+   aload 1
+   aload 2
+   checkcast org/objectweb/asm/ClassVisitor
+   iconst_1
+   anewarray com/anatawa12/jasm/DeprecatedAttribute
+   dup
+   iconst_0
+   getstatic com/anatawa12/jasm/DeprecatedAttribute/INSTANCE Lcom/anatawa12/jasm/DeprecatedAttribute;
+   aastore
+   checkcast "[Lorg/objectweb/asm/Attribute;"
+   bipush 8
+   invokevirtual org/objectweb/asm/ClassReader/accept "(Lorg/objectweb/asm/ClassVisitor;[Lorg/objectweb/asm/Attribute;I)V"
+L_001f:
+   .line 16
+   new com/anatawa12/jasm/disassembler/Disassembler
+   dup
+   invokespecial com/anatawa12/jasm/disassembler/Disassembler/<init> ()V
+   astore 3
+L_0025:
+   .line 17
+   .var 3 is disassembler Lcom/anatawa12/jasm/disassembler/Disassembler; from L_0025 to L_0030
+   aload 3
+   aload 2
+   invokevirtual com/anatawa12/jasm/disassembler/Disassembler/disassemble (Lorg/objectweb/asm/tree/ClassNode;)V
+L_002a:
+   .line 18
+   aload 3
+   invokevirtual com/anatawa12/jasm/disassembler/Disassembler/getFile ()Lcom/anatawa12/jasm/disassembler/Printer;
+   invokevirtual com/anatawa12/jasm/disassembler/Printer/getString ()Ljava/lang/String;
+   areturn
+L_0030:
+.end method
+

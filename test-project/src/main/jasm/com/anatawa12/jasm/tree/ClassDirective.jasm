@@ -1,0 +1,312 @@
+.bytecode 52.0
+.source "ClassHeader.kt"
+.class public com/anatawa12/jasm/tree/ClassDirective
+.super com/anatawa12/jasm/tree/BranchNode
+
+.annotation visible kotlin/Metadata
+   mv [ = .annotation array
+      I = 1
+      I = 1
+      I = 16
+   .end annotation
+   bv [ = .annotation array
+      I = 1
+      I = 0
+      I = 3
+   .end annotation
+   k I = 1
+   d1 [ = .annotation array
+      s = "\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\t\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\t\u0010\u000b\u001a\u00020\u0003HÆ\u0003J\t\u0010\u000c\u001a\u00020\u0005HÆ\u0003J\u001d\u0010\r\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0005HÆ\u0001J\u0013\u0010\u000e\u001a\u00020\u000f2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011HÖ\u0003J\t\u0010\u0012\u001a\u00020\u0013HÖ\u0001J\t\u0010\u0014\u001a\u00020\u0005HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\n¨\u0006\u0015"
+   .end annotation
+   d2 [ = .annotation array
+      s = "Lcom/anatawa12/jasm/tree/ClassDirective;"
+      s = "Lcom/anatawa12/jasm/tree/BranchNode;"
+      s = "accessFlags"
+      s = "Lcom/anatawa12/jasm/tree/AccessFlags;"
+      s = "internalName"
+      s = ""
+      s = "(Lcom/anatawa12/jasm/tree/AccessFlags;Ljava/lang/String;)V"
+      s = "getAccessFlags"
+      s = "()Lcom/anatawa12/jasm/tree/AccessFlags;"
+      s = "getInternalName"
+      s = "()Ljava/lang/String;"
+      s = "component1"
+      s = "component2"
+      s = "copy"
+      s = "equals"
+      s = ""
+      s = "other"
+      s = ""
+      s = "hashCode"
+      s = ""
+      s = "toString"
+      s = "jasm"
+   .end annotation
+.end annotation
+
+.method public getAccessFlags ()Lcom/anatawa12/jasm/tree/AccessFlags;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 17
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassDirective; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassDirective/accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   areturn
+L_0005:
+.end method
+
+.method public getInternalName ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .line 17
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassDirective; from L_0000 to L_0005
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassDirective/internalName Ljava/lang/String;
+   areturn
+L_0005:
+.end method
+
+.method public <init> (Lcom/anatawa12/jasm/tree/AccessFlags;Ljava/lang/String;)V
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 3
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassDirective; from L_0000 to L_0012
+   .var 1 is accessFlags Lcom/anatawa12/jasm/tree/AccessFlags; from L_0000 to L_0012
+   .var 2 is internalName Ljava/lang/String; from L_0000 to L_0012
+   aload 1
+   ldc "accessFlags"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 2
+   ldc "internalName"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+L_0007:
+   .line 17
+   aload 0
+   invokespecial com/anatawa12/jasm/tree/BranchNode/<init> ()V
+   aload 0
+   aload 1
+   putfield com/anatawa12/jasm/tree/ClassDirective/accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   aload 0
+   aload 2
+   putfield com/anatawa12/jasm/tree/ClassDirective/internalName Ljava/lang/String;
+   return
+L_0012:
+.end method
+
+.method public component1 ()Lcom/anatawa12/jasm/tree/AccessFlags;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassDirective; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassDirective/accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   areturn
+L_0004:
+.end method
+
+.method public component2 ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 1
+   .limit local 1
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassDirective; from L_0000 to L_0004
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassDirective/internalName Ljava/lang/String;
+   areturn
+L_0004:
+.end method
+
+.method public copy (Lcom/anatawa12/jasm/tree/AccessFlags;Ljava/lang/String;)Lcom/anatawa12/jasm/tree/ClassDirective;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 0 org/jetbrains/annotations/NotNull
+   .end annotation
+   .annotation invisiblepararm 1 org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 4
+   .limit local 3
+L_0000:
+   .var 0 is this Lcom/anatawa12/jasm/tree/ClassDirective; from L_0000 to L_000d
+   .var 1 is accessFlags Lcom/anatawa12/jasm/tree/AccessFlags; from L_0000 to L_000d
+   .var 2 is internalName Ljava/lang/String; from L_0000 to L_000d
+   aload 1
+   ldc "accessFlags"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   aload 2
+   ldc "internalName"
+   invokestatic kotlin/jvm/internal/Intrinsics/checkParameterIsNotNull (Ljava/lang/Object;Ljava/lang/String;)V
+   new com/anatawa12/jasm/tree/ClassDirective
+   dup
+   aload 1
+   aload 2
+   invokespecial com/anatawa12/jasm/tree/ClassDirective/<init> (Lcom/anatawa12/jasm/tree/AccessFlags;Ljava/lang/String;)V
+   areturn
+L_000d:
+.end method
+
+.method public copy$default (Lcom/anatawa12/jasm/tree/ClassDirective;Lcom/anatawa12/jasm/tree/AccessFlags;Ljava/lang/String;ILjava/lang/Object;)Lcom/anatawa12/jasm/tree/ClassDirective;
+   .limit stack 3
+   .limit local 5
+   iload 3
+   iconst_1
+   iand
+   ifeq L_0007
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassDirective/accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   astore 1
+L_0007:
+   .stack
+      locals Object com/anatawa12/jasm/tree/ClassDirective
+      locals Object com/anatawa12/jasm/tree/AccessFlags
+      locals Object java/lang/String
+      locals Integer
+      locals Object java/lang/Object
+   .end stack
+   iload 3
+   iconst_2
+   iand
+   ifeq L_0010
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassDirective/internalName Ljava/lang/String;
+   astore 2
+L_0010:
+   .stack use locals
+   .end stack
+   aload 0
+   aload 1
+   aload 2
+   invokevirtual com/anatawa12/jasm/tree/ClassDirective/copy (Lcom/anatawa12/jasm/tree/AccessFlags;Ljava/lang/String;)Lcom/anatawa12/jasm/tree/ClassDirective;
+   areturn
+.end method
+
+.method public toString ()Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+   .limit stack 2
+   .limit local 1
+   new java/lang/StringBuilder
+   dup
+   invokespecial java/lang/StringBuilder/<init> ()V
+   ldc "ClassDirective(accessFlags="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassDirective/accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   ldc ", internalName="
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassDirective/internalName Ljava/lang/String;
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   ldc ")"
+   invokevirtual java/lang/StringBuilder/append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+   invokevirtual java/lang/StringBuilder/toString ()Ljava/lang/String;
+   areturn
+.end method
+
+.method public hashCode ()I
+   .limit stack 3
+   .limit local 1
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassDirective/accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   dup
+   ifnull L_0006
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_000a
+L_0006:
+   .stack
+      locals Object com/anatawa12/jasm/tree/ClassDirective
+      stacks Object com/anatawa12/jasm/tree/AccessFlags
+   .end stack
+   pop
+   iconst_0
+L_000a:
+   .stack use locals
+      stacks Integer
+   .end stack
+   bipush 31
+   imul
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassDirective/internalName Ljava/lang/String;
+   dup
+   ifnull L_0014
+   invokevirtual java/lang/Object/hashCode ()I
+   goto L_0018
+L_0014:
+   .stack use locals
+      stacks Integer
+      stacks Object java/lang/String
+   .end stack
+   pop
+   iconst_0
+L_0018:
+   .stack use locals
+      stacks Integer
+      stacks Integer
+   .end stack
+   iadd
+   ireturn
+.end method
+
+.method public equals (Ljava/lang/Object;)Z
+   .annotation invisiblepararm 0 org/jetbrains/annotations/Nullable
+   .end annotation
+   .limit stack 2
+   .limit local 3
+   aload 0
+   aload 1
+   if_acmpeq L_0015
+   aload 1
+   instanceof com/anatawa12/jasm/tree/ClassDirective
+   ifeq L_0019
+   aload 1
+   checkcast com/anatawa12/jasm/tree/ClassDirective
+   astore 2
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassDirective/accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   aload 2
+   getfield com/anatawa12/jasm/tree/ClassDirective/accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0019
+   aload 0
+   getfield com/anatawa12/jasm/tree/ClassDirective/internalName Ljava/lang/String;
+   aload 2
+   getfield com/anatawa12/jasm/tree/ClassDirective/internalName Ljava/lang/String;
+   invokestatic kotlin/jvm/internal/Intrinsics/areEqual (Ljava/lang/Object;Ljava/lang/Object;)Z
+   ifeq L_0019
+L_0015:
+   .stack
+      locals Object com/anatawa12/jasm/tree/ClassDirective
+      locals Object java/lang/Object
+   .end stack
+   iconst_1
+   ireturn
+L_0019:
+   .stack use locals
+   .end stack
+   iconst_0
+   ireturn
+.end method
+
+.field private accessFlags Lcom/anatawa12/jasm/tree/AccessFlags;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+
+.field private internalName Ljava/lang/String;
+   .annotation invisible org/jetbrains/annotations/NotNull
+   .end annotation
+.end field
+
