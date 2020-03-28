@@ -65,7 +65,7 @@ class Disassembler {
             is String -> file.key("s").key("=").str(value).nl()
             is Type -> file.key("c").key("=").str(value.descriptor).nl()
             is Array<*> -> {
-                file.key("@").key("=").name(Type.getType(value[0] as String).internalName).name(value[1] as String).nl()
+                file.key("e").key("=").name(Type.getType(value[0] as String).internalName).name(value[1] as String).nl()
             }
             is AnnotationNode -> {
                 file.key("@").key("=")
