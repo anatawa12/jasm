@@ -244,26 +244,16 @@ class Verifier(val options: AssemblerOptions) {
 
     private fun verifyClassAccessFlag(accessFlags: AccessFlags) {
         verify(accessFlags.flags.size == accessFlags.flags.toSet().size, FlagDuplicated, accessFlags)
-        var hadClassType = false
-        var erroredClassType = false
         loop@ for (flag in accessFlags.flags) {
             when (flag) {
                 is AccessFlag.Public,
                 is AccessFlag.Final,
-                is AccessFlag.Synthetic -> {
-                    // no operation
-                }
-
                 is AccessFlag.Interface,
                 is AccessFlag.Abstract,
+                is AccessFlag.Synthetic,
                 is AccessFlag.Annotation,
                 is AccessFlag.Enum -> {
-                    if (erroredClassType) continue@loop
-                    if (hadClassType) {
-                        addError(ClassTypeDuplicated, accessFlags)
-                        erroredClassType = true
-                    }
-                    hadClassType = true
+                    // no operation
                 }
 
                 is AccessFlag.Private,
@@ -286,8 +276,6 @@ class Verifier(val options: AssemblerOptions) {
 
     private fun verifyInnerClassAccessFlag(accessFlags: AccessFlags) {
         verify(accessFlags.flags.size == accessFlags.flags.toSet().size, FlagDuplicated, accessFlags)
-        var hadClassType = false
-        var erroredClassType = false
         var hadAccessType = false
         var erroredAccessType = false
         loop@ for (flag in accessFlags.flags) {
@@ -305,20 +293,12 @@ class Verifier(val options: AssemblerOptions) {
 
                 is AccessFlag.Static,
                 is AccessFlag.Final,
-                is AccessFlag.Synthetic -> {
-                    // no operation
-                }
-
                 is AccessFlag.Interface,
                 is AccessFlag.Abstract,
+                is AccessFlag.Synthetic,
                 is AccessFlag.Annotation,
                 is AccessFlag.Enum -> {
-                    if (erroredClassType) continue@loop
-                    if (hadClassType) {
-                        addError(ClassTypeDuplicated, accessFlags)
-                        erroredClassType = true
-                    }
-                    hadClassType = true
+                    // no operation
                 }
 
                 is AccessFlag.Super,
