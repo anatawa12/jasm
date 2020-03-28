@@ -55,7 +55,8 @@ internal class LexerTest {
     @Test
     fun doReadDouble() {
         val strings = listOf(
-            """ 0.1 """ to 0.1
+            """ 0.1 """ to 0.1,
+            """ 7 """ to null
         )
         for ((value, string) in strings) withTesting(value){
             assertEquals(string, Lexer(StringLexerReader(value)).doRead(TokenType.Double))
@@ -66,10 +67,36 @@ internal class LexerTest {
     fun doReadInt() {
         val strings = listOf(
             """ 0.1 """ to 0,
-            """ 1 """ to 1
+            """ 1 """ to 1,
+            """ 7 """ to 7
         )
         for ((value, string) in strings) withTesting(value){
             assertEquals(string, Lexer(StringLexerReader(value)).doRead(TokenType.Integer))
+        }
+    }
+
+    @Test
+    fun doReadFloat() {
+        val strings = listOf(
+            """ 100.0f """ to 100.0f,
+            """ 7 """ to null
+        )
+        for ((value, string) in strings) withTesting(value){
+            assertEquals(string, Lexer(StringLexerReader(value)).doRead(TokenType.Float))
+        }
+    }
+
+    @Test
+    fun doReadLong() {
+        val strings = listOf(
+            """ 0.1 """ to null,
+            """ 1 """ to null,
+            """ 7 """ to null,
+            """ 1L """ to 1L,
+            """ 7L """ to 7L
+        )
+        for ((value, string) in strings) withTesting(value){
+            assertEquals(string, Lexer(StringLexerReader(value)).doRead(TokenType.Long))
         }
     }
 }
