@@ -154,7 +154,11 @@ class Verifier(val options: AssemblerOptions) {
         when (field.default?.value) {
             null -> {}
             is Int -> {
-                if (field.descriptor != "I")
+                if (field.descriptor != "I"
+                    && field.descriptor != "S"
+                    && field.descriptor != "C"
+                    && field.descriptor != "B"
+                    && field.descriptor != "Z")
                     addError(InvalidDefaultValueForType, field.default)
             }
             is Double -> {
