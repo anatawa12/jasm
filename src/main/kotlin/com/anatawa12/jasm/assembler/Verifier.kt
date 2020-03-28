@@ -398,7 +398,7 @@ class Verifier(val options: AssemblerOptions) {
                 is AccessFlag.Abstract,
                 is AccessFlag.Strict,
                 is AccessFlag.Mandated -> {
-                    addError(UnsupportedAccessForMethod, flag)
+                    addError(UnsupportedAccessForField, flag)
                 }
             }
         }

@@ -58,6 +58,7 @@ enum class VerifyingErrorType(val message: String) {
     UnsupportedAccessForClass("this flag is not supported for class"),
     UnsupportedAccessForInnerClass("this flag is not supported for inner class"),
     UnsupportedAccessForMethod("this flag is not supported for method"),
+    UnsupportedAccessForField("this flag is not supported for field"),
     FlagDuplicated("some acces flags are duplicated"),
 }
 
