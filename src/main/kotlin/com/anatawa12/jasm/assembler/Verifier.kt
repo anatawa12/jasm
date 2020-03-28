@@ -59,7 +59,7 @@ class Verifier(val options: AssemblerOptions) {
                 verifyMethodDescriptor(header.enclosing.descriptor, header.enclosing)
             }
             null -> {
-                if (header.className.internalName.contains('$')) {
+                if (header.className.internalName.substringAfterLast('$', "-").all { it in '0'..'9' }) {
                     addWarn(SeemsNestedButNoEnclosing, header.className)
                 }
             }
