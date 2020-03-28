@@ -1,15 +1,21 @@
 package com.anatawa12.jasm.plugins.gradle
 
+import groovy.lang.Closure
 import org.gradle.api.Action
 import org.gradle.api.Project
 import org.gradle.api.file.SourceDirectorySet
 import org.gradle.api.internal.file.DefaultSourceDirectorySet
 import org.gradle.api.internal.file.FileResolver
 import org.gradle.api.model.ObjectFactory
+import org.gradle.util.ConfigureUtil
 import java.lang.reflect.Constructor
 
 open class JasmSourceSetExtension(project: Project, resolver: FileResolver) {
     val jasm: SourceDirectorySet = createDefaultSourceDirectorySet(project, "jasm", resolver)
+
+    fun jasm(configureClosure: Closure<Any?>) {
+        ConfigureUtil.configure(configureClosure, jasm)
+    }
 
     fun jasm(block: Action<SourceDirectorySet>) {
         block.execute(jasm)

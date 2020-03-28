@@ -13,7 +13,7 @@ open class JasmPlugin @Inject constructor(val resolver: FileResolver) : Plugin<P
         project.plugins.apply(JavaPlugin::class.java)
         project.convention.getByType(SourceSetContainer::class.java).all { sourceSet ->
             val extension = JasmSourceSetExtension(project, resolver)
-            (sourceSet as HasConvention).convention.add("jasm", extension)
+            (sourceSet as HasConvention).convention.plugins["jasm"] = extension
             extension.jasm.srcDirs(project.projectDir.resolve("src/${sourceSet.name}/jasm"))
             extension.jasm.srcDirs(project.projectDir.resolve("src/${sourceSet.name}/java"))
             extension.jasm.filter.include("**/*.jasm")
