@@ -40,7 +40,7 @@ enum class VerifyingErrorType(val message: String) {
     InvalidFieldDescriptor("field descriptor is not valid."),
     InvalidFieldSignature("field signature is not valid."),
 
-    InvalidDefaultValueForType("type mismatch: default value and descriptor"),
+    InvalidDefaultValueForType("type mismatch: constant value and descriptor"),
     AnnotationDefaultNotSupported (".annotation default not supported for this target"),
 
     TwoOrMoreStackLimit("two or more .limit stack found"),
