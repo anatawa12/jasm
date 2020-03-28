@@ -9,6 +9,8 @@ buildscript {
 
 plugins {
     kotlin("jvm")
+
+    id("com.gradle.plugin-publish") version "0.11.0"
 }
 
 apply {
@@ -46,4 +48,27 @@ configure<com.novoda.gradle.release.PublishExtension> {
 
     bintrayUser = project.findProperty("BINTRAY_USER")?.toString() ?: ""
     bintrayKey = project.findProperty("BINTRAY_KEY")?.toString() ?: ""
+}
+
+pluginBundle {
+    website = "http://www.gradle.org/"
+    vcsUrl = "https://github.com/gradle/gradle"
+
+    description = "Greetings from here!"
+
+    plugins {
+        // first plugin
+        register("jasmPlugin") {
+            id = "com.anatawa12.jasm"
+            displayName = "Jasm plugin"
+            tags = listOf("language", "assembly")
+            version = "${project.version}"
+        }
+    }
+
+    mavenCoordinates {
+        groupId = "${project.group}"
+        artifactId = project.name
+        version = "${project.version}"
+    }
 }
