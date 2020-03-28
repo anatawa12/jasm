@@ -95,17 +95,21 @@ class Lexer(private val reading: Reader) : ILexer {
         override fun visitDouble(tokenType: TokenType.Double): Double? {
             val sign = readSign()
             if (get() !in '0'.. '9') return null
+            var isDouble = false
             var result: Double = readInt().first.toDouble()
             if (getOrNull() == '.') {
+                isDouble = true
                 getAndNext()
                 val (coefficient, digits) = readInt()
                 result += coefficient * (0.1).pow(digits)
             }
             if (getOrNull() == 'e' || getOrNull() == 'E') {
+                isDouble = true
                 getAndNext()
                 val sign = readSign() * readInt().first.toInt()
                 result *= 10.0.pow(sign)
             }
+            if (!isDouble) return null
             if (!getOrNull().isTokenSplitChar()) return null
             return sign*result
         }
