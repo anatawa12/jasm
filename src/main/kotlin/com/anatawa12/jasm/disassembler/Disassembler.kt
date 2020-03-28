@@ -390,62 +390,60 @@ class Disassembler {
     }
 
     private fun disassembleAccess(access: Int, accessTo: AccessTo) {
-        when {
-            0 != access and Opcodes.ACC_PUBLIC -> {
-                file.key("public")
-            }
-            0 != access and Opcodes.ACC_PRIVATE -> {
-                file.key("private")
-            }
-            0 != access and Opcodes.ACC_PROTECTED -> {
-                file.key("protected")
-            }
-            0 != access and Opcodes.ACC_STATIC -> {
-                file.key("static")
-            }
-            0 != access and Opcodes.ACC_FINAL -> {
-                file.key("final")
-            }
-            0 != access and Opcodes.ACC_SYNCHRONIZED -> {
-                if (accessTo != AccessTo.Class)
-                    file.key("synchronized")
-            }
-            0 != access and Opcodes.ACC_VOLATILE -> {
-                if (accessTo != AccessTo.Field)
-                    file.key("volatile")
-                else
-                    file.key("bridge")
-            }
-            0 != access and Opcodes.ACC_VARARGS -> {
-                if (accessTo != AccessTo.Field)
-                    file.key("transient")
-                else
-                    file.key("varargs")
-            }
-            0 != access and Opcodes.ACC_NATIVE -> {
-                file.key("native")
-            }
-            0 != access and Opcodes.ACC_INTERFACE -> {
-                file.key("interface")
-            }
-            0 != access and Opcodes.ACC_ABSTRACT -> {
-                file.key("abstract")
-            }
-            0 != access and Opcodes.ACC_STRICT -> {
-                file.key("strict")
-            }
-            0 != access and Opcodes.ACC_SYNTHETIC -> {
-                file.key("synthetic")
-            }
-            0 != access and Opcodes.ACC_ANNOTATION -> {
-                file.key("annotation")
-            }
-            0 != access and Opcodes.ACC_ENUM -> {
-                file.key("enum")
-            }
-            0 != access and Opcodes.ACC_MANDATED -> {
-                file.key("mandated")
-            }
+        if (0 != access and Opcodes.ACC_PUBLIC) {
+            file.key("public")
+        }
+        if (0 != access and Opcodes.ACC_PRIVATE) {
+            file.key("private")
+        }
+        if (0 != access and Opcodes.ACC_PROTECTED) {
+            file.key("protected")
+        }
+        if (0 != access and Opcodes.ACC_STATIC) {
+            file.key("static")
+        }
+        if (0 != access and Opcodes.ACC_FINAL) {
+            file.key("final")
+        }
+        if (0 != access and Opcodes.ACC_SYNCHRONIZED) {
+            if (accessTo != AccessTo.Class)
+                file.key("synchronized")
+        }
+        if (0 != access and Opcodes.ACC_VOLATILE) {
+            if (accessTo == AccessTo.Field)
+                file.key("volatile")
+            else
+                file.key("bridge")
+        }
+        if (0 != access and Opcodes.ACC_VARARGS) {
+            if (accessTo == AccessTo.Field)
+                file.key("transient")
+            else
+                file.key("varargs")
+        }
+        if (0 != access and Opcodes.ACC_NATIVE) {
+            file.key("native")
+        }
+        if (0 != access and Opcodes.ACC_INTERFACE) {
+            file.key("interface")
+        }
+        if (0 != access and Opcodes.ACC_ABSTRACT) {
+            file.key("abstract")
+        }
+        if (0 != access and Opcodes.ACC_STRICT) {
+            file.key("strict")
+        }
+        if (0 != access and Opcodes.ACC_SYNTHETIC) {
+            file.key("synthetic")
+        }
+        if (0 != access and Opcodes.ACC_ANNOTATION) {
+            file.key("annotation")
+        }
+        if (0 != access and Opcodes.ACC_ENUM) {
+            file.key("enum")
+        }
+        if (0 != access and Opcodes.ACC_MANDATED) {
+            file.key("mandated")
         }
     }
 
