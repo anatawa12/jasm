@@ -358,7 +358,7 @@ class Disassembler {
     }
 
     private fun disassembleField(field: FieldNode) {
-        file.key(".field").also { disassembleAccess(field.access, AccessTo.Method) }
+        file.key(".field").also { disassembleAccess(field.access, AccessTo.Field) }
             .name(field.name).name(field.desc)
             .also {
                 when (field.value) {
