@@ -133,7 +133,8 @@ class Lexer(private val reading: Reader) : ILexer {
                 val sign = readSign() * readInt().first.toInt()
                 result *= 10.0.pow(sign)
             }
-            if (getAndNext() != 'f' || getAndNext() != 'F') return null
+            if (getOrNull() != 'f' && getOrNull() != 'F') return null
+            getAndNext()
             if (!getOrNull().isTokenSplitChar()) return null
             return sign*result.toFloat()
         }
