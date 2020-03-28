@@ -7,6 +7,8 @@ import com.anatawa12.jasm.verifyFile
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.*
 import java.io.File
+import java.util.concurrent.Executors
+import java.util.concurrent.TimeUnit
 
 open class CompileJasmTask : DefaultTask() {
     @Internal
@@ -15,16 +17,28 @@ open class CompileJasmTask : DefaultTask() {
     @get:OutputDirectory val dir get() = extension.jasm.outputDir
     @get:InputFiles val files get() = extension.jasm
 
+    @Internal
+    @Transient
+    var hadError = false
+
     @TaskAction
     fun compile() {
         extension.jasm.outputDir.deleteRecursively()
 
         val files = extension.jasm
-        var hadError = false
+        val pool = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors())
+        hadError = false
+        val outputDir = files.outputDir
+
         for (file in files) {
-            if (!compileFile(file, files.outputDir))
-                hadError = true
+            pool.submit {
+                if (!compileFile(file, outputDir))
+                    hadError = true
+            }
         }
+
+        pool.shutdown()
+        while (!pool.awaitTermination(Long.MAX_VALUE, TimeUnit.DAYS)){}
 
         if (hadError)
             throw RuntimeException("some compile error has occeed")
