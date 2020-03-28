@@ -1,6 +1,8 @@
 buildscript {
     ext {
-        usePluginFromMaven = true
+        usePluginFromMaven = false
+        pluginJar = "${rootProject.projectDir}/jasm-gradle-plugin/build/libs/jasm-gradle-plugin-${version}.jar"
+        jasmJar = "${rootProject.projectDir}/build/libs/jasm-${version}.jar"
     }
 
     repositories {
@@ -12,9 +14,9 @@ buildscript {
     dependencies {
         if (usePluginFromMaven) {
             classpath("com.anatawa12.jasm:jasm-gradle-plugin:1.0.0")
-        } else if (file("${rootProject.projectDir}/jasm-gradle-plugin/build/libs/jasm-gradle-plugin-1.0-SNAPSHOT.jar").exists()) {
-            classpath files(file("${rootProject.projectDir}/jasm-gradle-plugin/build/libs/jasm-gradle-plugin-1.0-SNAPSHOT.jar"))
-            classpath files(file("${rootProject.projectDir}/build/libs/jasm-1.0-SNAPSHOT.jar"))
+        } else if (file(pluginJar).exists()) {
+            classpath files(file(pluginJar))
+            classpath files(file(jasmJar))
             classpath("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.70")
             classpath("org.ow2.asm:asm-debug-all:5.2")
         }
@@ -22,11 +24,11 @@ buildscript {
 }
 
 if (usePluginFromMaven ||
-        file("${rootProject.projectDir}/jasm-gradle-plugin/build/libs/jasm-gradle-plugin-1.0-SNAPSHOT.jar").exists()) {
+        file(pluginJar).exists()) {
     apply plugin: "com.anatawa12.jasm"
 
     task disassembleJasmMain(type: com.anatawa12.jasm.plugins.gradle.DisassembleToJasm) {
-        files = zipTree("${rootProject.projectDir}/build/libs/jasm-${version}.jar").matching {
+        files = zipTree(pluginJar).matching {
             include "**/*.class"
         }
         outputTo = file("$projectDir/src/main/jasm")
