@@ -92,8 +92,38 @@ class Lexer(private val reading: Reader) : ILexer {
             return sign*result.toInt()
         }
 
+        private fun isInfinity(): Boolean {
+            val cur = index
+            for (c in "Infinity") {
+                if (getAndNextOrNull() != c) {
+                    index = cur
+                    return false
+                }
+            }
+            return true
+        }
+
+        private fun isNaN(): Boolean {
+            val cur = index
+            for (c in "NaN") {
+                if (getAndNextOrNull() != c) {
+                    index = cur
+                    return false
+                }
+            }
+            return true
+        }
+
         override fun visitDouble(tokenType: TokenType.Double): Double? {
+            if (isNaN()) {
+                if (!getOrNull().isTokenSplitChar()) return null
+                return Double.NaN
+            }
             val sign = readSign()
+            if (isInfinity()) {
+                if (!getOrNull().isTokenSplitChar()) return null
+                return sign * Double.POSITIVE_INFINITY
+            }
             if (get() !in '0'.. '9') return null
             var isDouble = false
             var result: Double = readInt().first.toDouble()
@@ -124,7 +154,19 @@ class Lexer(private val reading: Reader) : ILexer {
         }
 
         override fun visitFloat(tokenType: TokenType.Float): Float? {
+            if (isNaN()) {
+                if (getOrNull() != 'f' && getOrNull() != 'F') return null
+                getAndNext()
+                if (!getOrNull().isTokenSplitChar()) return null
+                return Float.NaN
+            }
             val sign = readSign()
+            if (isInfinity()) {
+                if (getOrNull() != 'f' && getOrNull() != 'F') return null
+                getAndNext()
+                if (!getOrNull().isTokenSplitChar()) return null
+                return sign * Float.POSITIVE_INFINITY
+            }
             if (get() !in '0'.. '9') return null
             var result: Double = readInt().first.toDouble()
             if (getOrNull() == '.') {
