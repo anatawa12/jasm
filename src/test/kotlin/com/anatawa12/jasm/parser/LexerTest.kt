@@ -56,10 +56,25 @@ internal class LexerTest {
     fun doReadDouble() {
         val strings = listOf(
             """ 0.1 """ to 0.1,
-            """ 7 """ to null
+            """ 7 """ to null,
+            """ Infinity """ to Double.POSITIVE_INFINITY,
+            """ +Infinity """ to Double.POSITIVE_INFINITY,
+            """ -Infinity """ to Double.NEGATIVE_INFINITY,
+            """ Infinityf """ to null,
+            """ NaN """ to Double.NaN,
+            """ +NaN """ to null,
+            """ -NaN """ to null,
+            """ NaNf """ to null
         )
-        for ((value, string) in strings) withTesting(value){
-            assertEquals(string, Lexer(StringLexerReader(value)).doRead(TokenType.Double))
+        for ((value, expected) in strings) withTesting(value) {
+            val actual = Lexer(StringLexerReader(value)).doRead(TokenType.Double)
+            if (expected == null) {
+                assertEquals(expected, actual)
+            } else if (actual == null) {
+                assertEquals(expected, actual)
+            } else {
+                assertEquals(expected, actual)
+            }
         }
     }
 
@@ -79,10 +94,25 @@ internal class LexerTest {
     fun doReadFloat() {
         val strings = listOf(
             """ 100.0f """ to 100.0f,
-            """ 7 """ to null
+            """ 7 """ to null,
+            """ Infinityf """ to Float.POSITIVE_INFINITY,
+            """ +Infinityf """ to Float.POSITIVE_INFINITY,
+            """ -Infinityf """ to Float.NEGATIVE_INFINITY,
+            """ Infinityff """ to null,
+            """ NaNf """ to Float.NaN,
+            """ +NaNf """ to null,
+            """ -NaNf """ to null,
+            """ NaNff """ to null
         )
-        for ((value, string) in strings) withTesting(value){
-            assertEquals(string, Lexer(StringLexerReader(value)).doRead(TokenType.Float))
+        for ((value, expected) in strings) withTesting(value) {
+            val actual = Lexer(StringLexerReader(value)).doRead(TokenType.Float)
+            if (expected == null) {
+                assertEquals(expected, actual)
+            } else if (actual == null) {
+                assertEquals(expected, actual)
+            } else {
+                assertEquals(expected, actual)
+            }
         }
     }
 
