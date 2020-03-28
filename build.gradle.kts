@@ -19,9 +19,9 @@ apply {
 
 group = "com.anatawa12.jasm"
 if (project.hasProperty("push_release")) {
-    version = "1.0.0"
+    version = "1.0.1"
 } else {
-    version = "1.0.1-SNAPSHOT"
+    version = "1.0.2-SNAPSHOT"
 }
 
 subprojects {
