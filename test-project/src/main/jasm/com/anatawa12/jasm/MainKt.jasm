@@ -393,7 +393,7 @@ L_005d:
 L_0066:
     .line 48
     .var 6 is at Lcom/anatawa12/jasm/tree/CharPosition; from L_0066 to L_0082
-    getstatic java/lang/System/err Ljava/io/PrintStream;
+    getstatic java/lang/System/out Ljava/io/PrintStream;
     new java/lang/StringBuilder
     dup
     invokespecial java/lang/StringBuilder/<init> ()V

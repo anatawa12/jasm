@@ -62,7 +62,7 @@ L_0007:
     .line 483
     aload 0
     getfield com/anatawa12/jasm/parser/Parser$ldc_constant$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
-    getstatic com/anatawa12/jasm/parser/TokenType$Integer/INSTANCE Lcom/anatawa12/jasm/parser/TokenType$Integer;
+    getstatic com/anatawa12/jasm/parser/TokenType$Double/INSTANCE Lcom/anatawa12/jasm/parser/TokenType$Double;
     checkcast com/anatawa12/jasm/parser/TokenType
     invokeinterface com/anatawa12/jasm/parser/ILexer/isNext (Lcom/anatawa12/jasm/parser/TokenType;)Z
     ifeq L_001c
@@ -73,7 +73,7 @@ L_000f:
     aload 1
     aload 0
     getfield com/anatawa12/jasm/parser/Parser$ldc_constant$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
-    getstatic com/anatawa12/jasm/parser/TokenType$Integer/INSTANCE Lcom/anatawa12/jasm/parser/TokenType$Integer;
+    getstatic com/anatawa12/jasm/parser/TokenType$Double/INSTANCE Lcom/anatawa12/jasm/parser/TokenType$Double;
     checkcast com/anatawa12/jasm/parser/TokenType
     invokeinterface com/anatawa12/jasm/parser/Grammar$GrammarScope/read (Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Object;
     invokespecial com/anatawa12/jasm/tree/Value/<init> (Ljava/lang/Object;)V
@@ -87,7 +87,7 @@ L_001c:
     .end stack
     aload 0
     getfield com/anatawa12/jasm/parser/Parser$ldc_constant$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
-    getstatic com/anatawa12/jasm/parser/TokenType$Double/INSTANCE Lcom/anatawa12/jasm/parser/TokenType$Double;
+    getstatic com/anatawa12/jasm/parser/TokenType$Integer/INSTANCE Lcom/anatawa12/jasm/parser/TokenType$Integer;
     checkcast com/anatawa12/jasm/parser/TokenType
     invokeinterface com/anatawa12/jasm/parser/ILexer/isNext (Lcom/anatawa12/jasm/parser/TokenType;)Z
     ifeq L_0032
@@ -98,7 +98,7 @@ L_0025:
     aload 1
     aload 0
     getfield com/anatawa12/jasm/parser/Parser$ldc_constant$1/$lex Lcom/anatawa12/jasm/parser/ILexer;
-    getstatic com/anatawa12/jasm/parser/TokenType$Double/INSTANCE Lcom/anatawa12/jasm/parser/TokenType$Double;
+    getstatic com/anatawa12/jasm/parser/TokenType$Integer/INSTANCE Lcom/anatawa12/jasm/parser/TokenType$Integer;
     checkcast com/anatawa12/jasm/parser/TokenType
     invokeinterface com/anatawa12/jasm/parser/Grammar$GrammarScope/read (Lcom/anatawa12/jasm/parser/ILexer;Lcom/anatawa12/jasm/parser/TokenType;)Ljava/lang/Object;
     invokespecial com/anatawa12/jasm/tree/Value/<init> (Ljava/lang/Object;)V
