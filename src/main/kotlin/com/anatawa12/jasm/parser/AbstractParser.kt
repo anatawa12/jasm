@@ -50,5 +50,9 @@ abstract class AbstractParser(protected val lex: ILexer) {
         }
     }
 
-    fun <T : Node> run(grammar: Grammar<T>): T = GrammarScopeImpl().run { grammar() }
+    fun <T : Node> run(grammar: Grammar<T>): T = GrammarScopeImpl().run {
+        val result = grammar()
+        lex.read(TokenType.EOF)
+        result
+    }
 }
