@@ -596,7 +596,7 @@ class Parser(lex: ILexer) : AbstractParser(lex) {
         } else {
             null
         }
-        if (!lex.isNext(field_attribute.start) && lex.isNext(dotEnd)) return@grammar FieldBlock(
+        if (!lex.isNext(field_attribute.start) && !lex.isNext(dotEnd)) return@grammar FieldBlock(
             access,
             name,
             descriptor,
