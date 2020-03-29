@@ -437,6 +437,14 @@ class Lexer(private val reading: Reader) : ILexer {
             if (!getOrNull().isTokenSplitChar()) return null
             return id
         }
+
+        override fun visitEOF(tokenType: TokenType.EOF): Unit? {
+            if (getOrNull() == null) {
+                return Unit
+            } else {
+                return null
+            }
+        }
     }
 
     internal fun <T : Any> doRead(expect: TokenType<T>): T? {

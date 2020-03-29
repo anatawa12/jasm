@@ -65,6 +65,10 @@ sealed class TokenType<T : Any>() {
         override fun accept(visitor: ITokenVisitorNullable) = visitor.visitIdentifier(this)
         override fun toString(): kotlin.String = "identifier"
     }
+    object EOF : TokenType<kotlin.Unit>() {
+        override fun accept(visitor: ITokenVisitorNullable) = visitor.visitEOF(this)
+        override fun toString(): kotlin.String = "EOF"
+    }
 }
 
 interface ITokenVisitorNullable {
@@ -82,6 +86,7 @@ interface ITokenVisitorNullable {
     fun visitFieldDescriptor(tokenType: TokenType.FieldDescriptor): String?
     fun visitMethodDescriptor(tokenType: TokenType.MethodDescriptor): String?
     fun visitIdentifier(tokenType: TokenType.Identifier): String?
+    fun visitEOF(tokenType: TokenType.EOF): Unit?
 }
 
 interface ITokenVisitor : ITokenVisitorNullable {
@@ -99,4 +104,5 @@ interface ITokenVisitor : ITokenVisitorNullable {
     override fun visitFieldDescriptor(tokenType: TokenType.FieldDescriptor): String
     override fun visitMethodDescriptor(tokenType: TokenType.MethodDescriptor): String
     override fun visitIdentifier(tokenType: TokenType.Identifier): String
+    override fun visitEOF(tokenType: TokenType.EOF): Unit
 }
