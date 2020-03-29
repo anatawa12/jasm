@@ -29,5 +29,6 @@ class StringLexerReader(private val string: String) : Lexer.Reader {
         column
     )
 
-    override fun subString(start: Int, end: Int): String = string.substring(index + start, index + end)
+    override fun subString(start: Int, end: Int): String
+            = string.substring((index + start).coerceAtMost(string.length), (index + end).coerceAtMost(string.length))
 }
