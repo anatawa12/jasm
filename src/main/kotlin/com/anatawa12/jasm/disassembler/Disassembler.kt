@@ -162,6 +162,14 @@ class Disassembler {
 
             var lastLocal: List<Any>? = null
 
+            for (tryCatchBlockNode in method.tryCatchBlocks) {
+                file.key(".catch").also { if(tryCatchBlockNode.type == null)it.key("*") else it.name(tryCatchBlockNode.type) }
+                    .key("from").key(disassembleLabel(tryCatchBlockNode.start))
+                    .key("to").key(disassembleLabel(tryCatchBlockNode.end))
+                    .key("using").key(disassembleLabel(tryCatchBlockNode.handler))
+                    .nl()
+            }
+
             for (instruction in method.instructions) {
                 val opcode = if (instruction.opcode == -1) ""
                 else org.objectweb.asm.util.Printer.OPCODES[instruction.opcode].toLowerCase()
@@ -257,13 +265,6 @@ class Disassembler {
                         val line = lineNumber[instruction]
                         if (line != null) {
                             file.key(".line").key("$line").nl()
-                        }
-                        for (tryCatchBlockNode in method.tryCatchBlocks.filter { it.start == instruction }) {
-                            file.key(".catch").also { if(tryCatchBlockNode.type == null)it.key("*") else it.name(tryCatchBlockNode.type) }
-                                .key("from").key(disassembleLabel(tryCatchBlockNode.start))
-                                .key("to").key(disassembleLabel(tryCatchBlockNode.end))
-                                .key("using").key(disassembleLabel(tryCatchBlockNode.handler))
-                                .nl()
                         }
                         for (localVariableNode in method.localVariables.filter { it.start == instruction }) {
                             file.key(".var").key("${localVariableNode.index}").key("is")
