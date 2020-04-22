@@ -12,7 +12,7 @@ class Assembler(val options: AssemblerOptions) {
 
     fun assemble(file: JasmFile) {
         classWriter.visit(assembleVersion(file.classHeader.bytecode),
-            assembleAccess(file.classHeader.className.accessFlags) or assembleAutoSuper(file.classHeader.bytecode),
+            assembleAutoSuper(assembleAccess(file.classHeader.className.accessFlags), file.classHeader.bytecode),
             file.classHeader.className.internalName, file.classHeader.signature?.signature,
             file.classHeader.superName?.internalName, file.classHeader.implements.map { it.internalName }.toTypedArray())
         assembleHeader(file.classHeader)
@@ -361,13 +361,18 @@ class Assembler(val options: AssemblerOptions) {
         return access
     }
 
-    private fun assembleAutoSuper(bytecode: BytecodeDirective?): Int {
-        if (bytecode == null) return ACC_SUPER
-        if (46 <= bytecode.major) return ACC_SUPER // java 1.k for k >= 2
-        if (3 < bytecode.minor) return ACC_SUPER // java 1.1.*
-        return 0 // java 1.0.2
+    private fun assembleAutoSuper(baseAccess: Int, bytecode: BytecodeDirective?): Int {
+        if (baseAccess and ACC_INTERFACE != 0) return baseAccess
+        if (addAutoSuper(bytecode)) return baseAccess or ACC_SUPER
+        return baseAccess
     }
 
+    private fun addAutoSuper(bytecode: BytecodeDirective?): Boolean {
+        if (bytecode == null) return true
+        if (46 <= bytecode.major) return true // java 1.k for k >= 2
+        if (3 < bytecode.minor) return true // java 1.1.*
+        return false // java 1.0.2
+    }
     private class LabelTable {
         private val table = mutableMapOf<String, Label>()
         operator fun get(name: LabelName): Label = table.getOrPut(name.name, ::Label)
