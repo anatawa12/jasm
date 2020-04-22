@@ -41,12 +41,12 @@ class Disassembler {
                 disassembleAnnotation(annotation, AnnotationType.Invisible())
                 file.nl()
             }
-        for (method in classNode.methods) {
-            disassembleMethod(method)
-            file.nl()
-        }
         for (field in classNode.fields) {
             disassembleField(field)
+            file.nl()
+        }
+        for (method in classNode.methods) {
+            disassembleMethod(method)
             file.nl()
         }
     }
