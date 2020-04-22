@@ -11,7 +11,8 @@ class Assembler(val options: AssemblerOptions) {
     val classWriter = ClassWriter(0)
 
     fun assemble(file: JasmFile) {
-        classWriter.visit(assembleVersion(file.classHeader.bytecode), assembleAccess(file.classHeader.className.accessFlags),
+        classWriter.visit(assembleVersion(file.classHeader.bytecode),
+            assembleAccess(file.classHeader.className.accessFlags) or assembleAutoSuper(file.classHeader.bytecode),
             file.classHeader.className.internalName, file.classHeader.signature?.signature,
             file.classHeader.superName?.internalName, file.classHeader.implements.map { it.internalName }.toTypedArray())
         assembleHeader(file.classHeader)
@@ -358,6 +359,13 @@ class Assembler(val options: AssemblerOptions) {
             }
         }
         return access
+    }
+
+    private fun assembleAutoSuper(bytecode: BytecodeDirective?): Int {
+        if (bytecode == null) return ACC_SUPER
+        if (46 <= bytecode.major) return ACC_SUPER // java 1.k for k >= 2
+        if (3 < bytecode.minor) return ACC_SUPER // java 1.1.*
+        return 0 // java 1.0.2
     }
 
     private class LabelTable {
