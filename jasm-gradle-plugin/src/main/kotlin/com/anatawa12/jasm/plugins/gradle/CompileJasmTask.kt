@@ -37,10 +37,8 @@ open class CompileJasmTask : DefaultTask() {
         for (file in files) {
             pool.execute {
                 try {
-                    println("compiling $file")
                     if (!compileFile(file, outputDir))
                         hadError = true
-                    println("compiled $file")
                 } catch (e: Exception) {
                     errors.add(RuntimeException("compiling $file", e))
                 }
@@ -51,11 +49,10 @@ open class CompileJasmTask : DefaultTask() {
         while (!pool.awaitTermination(Long.MAX_VALUE, TimeUnit.DAYS)){}
 
         if (errors.isNotEmpty()) {
-            throw RuntimeException("some errors has occurred").apply {
-                for (error in errors) {
-                    addSuppressed(error)
-                }
+            for (error in errors) {
+                error.printStackTrace()
             }
+            throw RuntimeException("some errors has occurred")
         }
 
         if (hadError)
