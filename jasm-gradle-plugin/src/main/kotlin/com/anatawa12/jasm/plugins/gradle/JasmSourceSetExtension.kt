@@ -8,6 +8,7 @@ import org.gradle.api.internal.file.DefaultSourceDirectorySet
 import org.gradle.api.internal.file.FileResolver
 import org.gradle.api.model.ObjectFactory
 import org.gradle.util.ConfigureUtil
+import org.gradle.util.GradleVersion
 import java.lang.reflect.Constructor
 
 open class JasmSourceSetExtension(project: Project, resolver: FileResolver) {
@@ -23,6 +24,14 @@ open class JasmSourceSetExtension(project: Project, resolver: FileResolver) {
 
     companion object {
         private fun createDefaultSourceDirectorySet(project: Project, name: String, resolver: FileResolver): SourceDirectorySet {
+            if (GradleVersion.version("5.0") < GradleVersion.current()) {
+                GradleVersion.current()
+                val objects = project.objects
+                val sourceDirectorySetMethod =
+                    objects.javaClass.methods.single { it.name == "sourceDirectorySet" && it.parameterCount == 2 }
+                return sourceDirectorySetMethod(objects, name, name) as SourceDirectorySet
+            }
+
             val klass = DefaultSourceDirectorySet::class.java
             val defaultConstructor = klass.constructorOrNull(String::class.java, FileResolver::class.java)
 
