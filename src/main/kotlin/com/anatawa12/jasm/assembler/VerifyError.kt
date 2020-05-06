@@ -60,6 +60,10 @@ enum class VerifyingErrorType(val message: String) {
     UnsupportedAccessForMethod("this flag is not supported for method"),
     UnsupportedAccessForField("this flag is not supported for field"),
     FlagDuplicated("some acces flags are duplicated"),
+
+    // code verify
+    LabelDuplicated("label definition duplicated"),
+    LabelIsNotDefined("the label is not defined."),
 }
 
 data class VerifyingWarn(val warn: VerifyingWarnType, val at: Node, val params: Array<Any?>) {

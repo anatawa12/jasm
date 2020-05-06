@@ -140,6 +140,90 @@ class Verifier(val options: AssemblerOptions) {
             addError(InstructionButNoStackLimit, method)
         if (hadInstruction && !hadLocalLimit)
             addError(InstructionButNoLocalLimit, method)
+        if (hadInstruction)
+            verifyCode(method)
+    }
+
+    private fun verifyCode(method: MethodBlock) {
+        verifyCodeLabels(method)
+    }
+
+    private fun verifyCodeLabels(method: MethodBlock) {
+        val labels = mutableSetOf<String>()
+
+        for (statement in method.statements.asSequence().filterIsInstance<LabelDefinition>()) {
+            if (statement.name.name in labels) {
+                addError(LabelDuplicated, statement.name)
+            } else {
+                labels.add(statement.name.name)
+            }
+        }
+
+        for (statement in method.statements) {
+            when (statement) {
+                is LabelDefinition -> { /* no labels */ }
+                is StackLimit -> { /* no labels */ }
+                is LocalLimit -> { /* no labels */ }
+                is LineNumber -> { /* no labels */ }
+                is Throws -> { /* no labels */ }
+                is MethodSignature -> { /* no labels */ }
+                is MethodDeprecated -> { /* no labels */ }
+                is MethodAnnotation -> { /* no labels */ }
+                is Insn -> { /* no labels */ }
+                is IntInsn -> { /* no labels */ }
+                is FieldInsn -> { /* no labels */ }
+                is IincInsn -> { /* no labels */ }
+                is InvokeDynamicInsn -> { /* no labels */ }
+                is LdcInsn -> { /* no labels */ }
+                is MethodInsn -> { /* no labels */ }
+                is MultiANewArrayInsn -> { /* no labels */ }
+                is TypeInsn -> { /* no labels */ }
+                is VarInsn -> { /* no labels */ }
+
+                is LocalVar -> {
+                    if (statement.from.name !in labels)
+                        addError(LabelIsNotDefined, statement.from)
+                    if (statement.to.name !in labels)
+                        addError(LabelIsNotDefined, statement.to)
+                }
+                is TryCatch -> {
+                    if (statement.from.name !in labels)
+                        addError(LabelIsNotDefined, statement.from)
+                    if (statement.to.name !in labels)
+                        addError(LabelIsNotDefined, statement.to)
+                    if (statement.using.name !in labels)
+                        addError(LabelIsNotDefined, statement.using)
+                }
+                is StackFrame -> {
+                    val uninitializeds = (statement.locals?.asSequence().orEmpty() + statement.stacks.asSequence())
+                        .filterIsInstance<StackFrameType.Uninitialized>()
+                    for (uninitialized in uninitializeds) {
+                        if (uninitialized.madeAt.name !in labels)
+                            addError(LabelIsNotDefined, uninitialized.madeAt)
+                    }
+                }
+                is JumpInsn -> {
+                    if (statement.label.name !in labels)
+                        addError(LabelIsNotDefined, statement.label)
+                }
+                is LookupSwitchInsn -> {
+                    if (statement.dflt.name !in labels)
+                        addError(LabelIsNotDefined, statement.dflt)
+                    for ((_, label) in statement.pairs) {
+                        if (label.name !in labels)
+                            addError(LabelIsNotDefined, label)
+                    }
+                }
+                is TableSwitchInsn -> {
+                    if (statement.dflt.name !in labels)
+                        addError(LabelIsNotDefined, statement.dflt)
+                    for (label in statement.labels) {
+                        if (label.name !in labels)
+                            addError(LabelIsNotDefined, label)
+                    }
+                }
+            }
+        }
     }
 
     // endregion method
