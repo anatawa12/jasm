@@ -146,6 +146,7 @@ class Verifier(val options: AssemblerOptions) {
 
     private fun verifyCode(method: MethodBlock) {
         verifyCodeLabels(method)
+        verifyCodeStackFrames(method)
     }
 
     private fun verifyCodeLabels(method: MethodBlock) {
@@ -220,6 +221,76 @@ class Verifier(val options: AssemblerOptions) {
                     for (label in statement.labels) {
                         if (label.name !in labels)
                             addError(LabelIsNotDefined, label)
+                    }
+                }
+            }
+        }
+    }
+
+    private fun verifyCodeStackFrames(method: MethodBlock) {
+        val jumpableLabels = mutableSetOf<String>()
+
+        var hadFrame = false
+        val currentLabels = mutableSetOf<String>()
+        for (statement in method.statements.asSequence()) {
+            when (statement) {
+                is StackLimit -> { /*nop*/ }
+                is LocalLimit -> { /*nop*/ }
+                is LineNumber -> { /*nop*/ }
+                is LocalVar -> { /*nop*/ }
+                is TryCatch -> { /*nop*/ }
+                is Throws -> { /*nop*/ }
+                is MethodSignature -> { /*nop*/ }
+                is MethodDeprecated -> { /*nop*/ }
+                is MethodAnnotation -> { /*nop*/ }
+                is LabelDefinition -> {
+                    if (hadFrame)
+                        jumpableLabels += statement.name.name
+                    else
+                        currentLabels += statement.name.name
+                }
+                is StackFrame -> { 
+                    hadFrame = true
+                    jumpableLabels += currentLabels
+                }
+                is Instruction -> {
+                    currentLabels.clear()
+                    hadFrame = false
+                }
+            }
+        }
+
+        for (statement in method.statements.asSequence().filterIsInstance<Instruction>()) {
+            when (statement) {
+                is Insn -> { /* no labels */ }
+                is IntInsn -> { /* no labels */ }
+                is FieldInsn -> { /* no labels */ }
+                is IincInsn -> { /* no labels */ }
+                is InvokeDynamicInsn -> { /* no labels */ }
+                is LdcInsn -> { /* no labels */ }
+                is MethodInsn -> { /* no labels */ }
+                is MultiANewArrayInsn -> { /* no labels */ }
+                is TypeInsn -> { /* no labels */ }
+                is VarInsn -> { /* no labels */ }
+
+                is JumpInsn -> {
+                    if (statement.label.name !in jumpableLabels)
+                        addError(StackIsNotDefined, statement.label)
+                }
+                is LookupSwitchInsn -> {
+                    if (statement.dflt.name !in jumpableLabels)
+                        addError(StackIsNotDefined, statement.dflt)
+                    for ((_, label) in statement.pairs) {
+                        if (label.name !in jumpableLabels)
+                            addError(StackIsNotDefined, label)
+                    }
+                }
+                is TableSwitchInsn -> {
+                    if (statement.dflt.name !in jumpableLabels)
+                        addError(StackIsNotDefined, statement.dflt)
+                    for (label in statement.labels) {
+                        if (label.name !in jumpableLabels)
+                            addError(StackIsNotDefined, label)
                     }
                 }
             }

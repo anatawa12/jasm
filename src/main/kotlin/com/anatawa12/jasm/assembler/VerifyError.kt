@@ -64,6 +64,7 @@ enum class VerifyingErrorType(val message: String) {
     // code verify
     LabelDuplicated("label definition duplicated"),
     LabelIsNotDefined("the label is not defined."),
+    StackIsNotDefined("the stack frame for the label is not defined."),
 }
 
 data class VerifyingWarn(val warn: VerifyingWarnType, val at: Node, val params: Array<Any?>) {
