@@ -154,6 +154,7 @@ class Assembler(val options: AssemblerOptions) {
                 }
                 is LabelDefinition -> {
                     methodWriter.visitLabel(table[statement.name])
+                    table.define(statement.name)
                 }
                 is StackFrame -> {
                     val locals = statement.locals ?: lastLocals!!
@@ -214,12 +215,17 @@ class Assembler(val options: AssemblerOptions) {
                 is MethodSignature, is MethodDeprecated, is MethodAnnotation -> {}
             }
         }
+
+        statements.filterIsInstance<LocalVar>()
+            .sortedWith(compareBy<LocalVar> { table.getIndex(it.to) }
+                .thenBy { it.variable })
+            .forEach { statement ->
+                methodWriter.visitLocalVariable(statement.name, statement.descriptor, statement.signature,
+                    table[statement.from], table[statement.to], statement.variable)
+            }
+
         for (statement in statements) {
             when (statement) {
-                is LocalVar -> {
-                    methodWriter.visitLocalVariable(statement.name, statement.descriptor, statement.signature,
-                        table[statement.from], table[statement.to], statement.variable)
-                }
                 is TryCatch -> {
                     methodWriter.visitTryCatchBlock(table[statement.from], table[statement.to],
                         table[statement.using], statement.exception)
@@ -374,7 +380,15 @@ class Assembler(val options: AssemblerOptions) {
         return false // java 1.0.2
     }
     private class LabelTable {
+        private val indices = mutableListOf<String>()
         private val table = mutableMapOf<String, Label>()
         operator fun get(name: LabelName): Label = table.getOrPut(name.name, ::Label)
+
+        fun define(name: LabelName) {
+            indices.add(name.name)
+        }
+
+        fun getIndex(name: LabelName) = indices.indexOf(name.name).takeUnless { it == -1 } 
+            ?: throw IllegalStateException("$name is not defined")
     }
 }
