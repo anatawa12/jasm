@@ -30,6 +30,13 @@ class Lexer(private val reading: Reader) : ILexer {
     private fun skipSpace() {
         while (reading.getOrNull(index)?.isWhitespace() == true)
             getAndNext()
+        while (reading.getOrNull(index) == '#') {
+            getAndNext()
+            while (!reading.getOrNull(index).isLineSeparator())
+                getAndNext()
+            while (reading.getOrNull(index)?.isWhitespace() == true)
+                getAndNext()
+        }
         reading.setCurrentTo(index)
         index = 0
     }

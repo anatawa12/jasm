@@ -5,3 +5,6 @@ fun Char?.isWardChar()
 
 fun Char?.isTokenSplitChar()
         = this == null || this.isWhitespace() || this == ':' || this == '.'
+
+fun Char?.isLineSeparator(): Boolean =
+    this == null || this == '\n' || this == '\r'
