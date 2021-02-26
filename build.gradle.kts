@@ -16,9 +16,9 @@ plugins {
 
 group = "com.anatawa12.jasm"
 if (project.hasProperty("push_release")) {
-    version = "1.0.7"
+    version = "1.0.8"
 } else {
-    version = "1.0.8-SNAPSHOT"
+    version = "1.0.9-SNAPSHOT"
 }
 
 subprojects {
