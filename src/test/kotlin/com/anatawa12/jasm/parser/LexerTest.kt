@@ -129,4 +129,17 @@ internal class LexerTest {
             assertEquals(string, Lexer(StringLexerReader(value)).doRead(TokenType.Long))
         }
     }
+
+    @Test
+    fun skippingComments() {
+        val intenalNames = listOf(
+            " # comment \n java/lang/String  aaaa" to "java/lang/String",
+            " # comment \r java/lang/String  aaaa" to "java/lang/String",
+            " # comment \r# comment \njava/lang/String  aaaa" to "java/lang/String",
+            " # comment \r\njava/lang/String  aaaa" to "java/lang/String"
+        )
+        for ((str, intenalName) in intenalNames) withTesting(str) {
+            assertEquals(intenalName, Lexer(StringLexerReader(str)).doRead(TokenType.InternalName))
+        }
+    }
 }
