@@ -13,10 +13,6 @@ plugins {
     id("com.gradle.plugin-publish") version "0.11.0"
 }
 
-apply {
-    plugin("com.novoda.bintray-release")
-}
-
 repositories {
     mavenCentral()
 }
@@ -36,18 +32,9 @@ tasks {
     }
 }
 
-configure<com.novoda.gradle.release.PublishExtension> {
-    userOrg = "anatawa12"
-    setLicences("MIT")
-    groupId = project.group.toString()
-    artifactId = project.name
-    publishVersion = project.version.toString()
-    desc = "a simple, new assembly language."
-    website = "https://github.com/anatawa12/jasm"
-    uploadName = "$groupId.$artifactId"
-
-    bintrayUser = project.findProperty("BINTRAY_USER")?.toString() ?: ""
-    bintrayKey = project.findProperty("BINTRAY_KEY")?.toString() ?: ""
+java {
+    withJavadocJar()
+    withSourcesJar()
 }
 
 pluginBundle {
@@ -71,4 +58,8 @@ pluginBundle {
         artifactId = project.name
         version = "${project.version}"
     }
+}
+
+tasks.withType<PublishToMavenRepository>().configureEach {
+    onlyIf { publication.name != "jasmPluginPluginMarkerMaven" }
 }

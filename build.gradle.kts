@@ -10,11 +10,8 @@ buildscript {
 plugins {
     id("org.jetbrains.intellij") version "0.4.16" apply false
     kotlin("jvm") version "1.3.70"
-    id("com.jfrog.bintray") version "1.8.4"
-}
-
-apply {
-    plugin("com.novoda.bintray-release")
+    `maven-publish`
+    signing
 }
 
 group = "com.anatawa12.jasm"
@@ -51,30 +48,79 @@ tasks {
     test {
         useJUnitPlatform()
     }
+}
 
-    register("javadocJar", Jar::class.java) {
-        dependsOn(javadoc.get())
-        from(javadoc)
-        archiveClassifier.set("javadoc")
+java {
+    withJavadocJar()
+    withSourcesJar()
+}
+
+fun isReleaseBuild() = !version.toString().contains("SNAPSHOT")
+
+fun getReleaseRepositoryUrl(): String {
+    return project.findProperty("RELEASE_REPOSITORY_URL")?.toString()
+        ?: "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+}
+
+fun getSnapshotRepositoryUrl(): String {
+    return project.findProperty("SNAPSHOT_REPOSITORY_URL")?.toString()
+        ?: "https://oss.sonatype.org/content/repositories/snapshots/"
+}
+
+fun Project.configurePublish() {
+    publishing.publications.create<MavenPublication>("maven") {
+        from(components["java"])
+        pom {
+            name.set("jasm")
+            description.set("a simple, new assembly language.")
+            url.set("https://github.com/anatawa12/jasm")
+            licenses {
+                license {
+                    name.set("MIT License")
+                    url.set("https://github.com/anatawa12/jasm/blob/master/LICENSE.txt")
+                }
+            }
+            developers {
+                developer {
+                    id.set("anatawa12")
+                    name.set("anatawa12")
+                    email.set("anatawa12@icloud.com")
+                }
+            }
+            scm {
+                connection.set("scm:git:git://github.com/anatawa12/jasm.git")
+                developerConnection.set("scm:git:ssh://github.com:anatawa12/jasm.git")
+                url.set("https://github.com/anatawa12/jasm")
+            }
+        }
     }
 
-    register("sourcesJar", Jar::class.java) {
-        dependsOn(javadoc.get())
-        from(sourceSets.main.get().allSource)
-        archiveClassifier.set("sources")
+    signing {
+        publishing.publications.forEach { publication ->
+            sign(publication)
+        }
+    }
+
+    publishing {
+        repositories {
+            maven {
+                name = "mavenCentral"
+                url = uri(if (isReleaseBuild()) getReleaseRepositoryUrl() else getSnapshotRepositoryUrl())
+
+                credentials {
+                    username = project.findProperty("com.anatawa12.sonatype.username")?.toString() ?: ""
+                    password = project.findProperty("com.anatawa12.sonatype.passeord")?.toString() ?: ""
+                }
+            }
+        }
     }
 }
 
-configure<com.novoda.gradle.release.PublishExtension> {
-    userOrg = "anatawa12"
-    setLicences("MIT")
-    groupId = project.group.toString()
-    artifactId = project.name
-    publishVersion = project.version.toString()
-    desc = "a simple, new assembly language."
-    website = "https://github.com/anatawa12/jasm"
-    uploadName = "$groupId.$artifactId"
-
-    bintrayUser = project.findProperty("BINTRAY_USER")?.toString() ?: ""
-    bintrayKey = project.findProperty("BINTRAY_KEY")?.toString() ?: ""
+configurePublish()
+project(":jasm-gradle-plugin").run {
+    apply(plugin = "maven-publish")
+    apply(plugin = "signing")
+    afterEvaluate {
+        configurePublish()
+    }
 }
