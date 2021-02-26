@@ -14,7 +14,7 @@ dependencies {
 }
 
 application {
-    mainClassName = "com.anatawa12.jasm.MainKt"
+    mainClassName = "com.anatawa12.jasm.cli.MainKt"
 }
 
 tasks {
